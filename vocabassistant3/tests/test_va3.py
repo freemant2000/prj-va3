@@ -18,3 +18,10 @@ class TestVA3(TestCase):
     def test_get_snts_in_exercise(self):
         snts=get_snts_in_exercise(0)
         self.assertEquals(len(snts), 3)
+
+    def test_get_word_and_meanings(self):
+        wams=get_word_and_meanings([0, 1, 3])
+        self.assertEquals(len(wams), 3)
+        d=wams[0].get_display()
+        self.assertTrue("steep" in d)
+        self.assertTrue("陡峭" in d)

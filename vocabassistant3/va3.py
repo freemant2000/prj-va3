@@ -34,18 +34,18 @@ def get_wd_in_exercise(e_id: int)->Sequence[str]:
         c.close()
     return [r[0] for r in rs]
 
-def get_word_and_meanings(wd_id: int)->str:
+def get_word_and_meanings(wd_ids: Sequence[int])->Sequence[WordAndMeaning]:
      with db.connect() as conn:
         c=conn.cursor()
         c.execute("""
         select word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id where wd.id in %s order by wd.id;
-        """, (tuple(wd_id),))
+        """, (tuple(wd_ids),))
         rs=c.fetchall()
         gs=groupby(rs, key=lambda t: t[0])
         ws=[]
         for (g, ms) in gs:
             wam=WordAndMeaning(g)
-            wam.meanings=ms
+            wam.meanings=[(p_of_s, m) for (w, p_of_s, m) in ms]
             ws.append(wam)
         c.close()
         return ws
