@@ -39,6 +39,28 @@ def add_word_and_meaning(wam: WordAndMeaning)->int:
         c.close()
         return id
 
+def del_word_and_meaning(wd_id: int)->None:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("""
+        delete from word_meanings where wd_id=%s
+        """, (wd_id,))
+        c.execute("""
+        delete from word_defs where id=%s
+        """, (wd_id,))
+        conn.commit()
+        c.close()
+        return id
+
+def set_word_seq(v: int)->None:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("""
+        select setval('word_seq', %s)
+        """, (v,))
+        c.close()
+        return id
+
 def get_similar_words(wd_prefix: str, limit: int=5)->Sequence[WordAndMeaning]:
     with db.connect() as conn:
         c=conn.cursor()

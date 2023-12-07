@@ -12,7 +12,7 @@ from vocabassistant3.va3 import *
 # for e in wams:
 #     print(e.get_display())
 
-wam=WordAndMeaning("wind")
-wam.add_meaning("n", "風")
-wam.add_meaning("v", "緾繞")
-add_word_and_meaning(wam)
+# wam=WordAndMeaning("wind")
+# wam.add_meaning("n", "風")
+# wam.add_meaning("v", "緾繞")
+# add_word_and_meaning(wam)
