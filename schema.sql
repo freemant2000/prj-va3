@@ -22,6 +22,9 @@ insert into bank_word values(1, 4, 16);
 insert into bank_word values(1, 5, 17);
 insert into bank_word values(1, 6, 18);
 
+create sequence word_seq;
+select setval('word_seq', 20);
+
 insert into word_defs values(0, 'steep');
 insert into word_meanings values(0, 0, 'adj', '陡峭（斜）的');
 insert into word_defs values(1, 'mountain');
@@ -74,7 +77,6 @@ create table exercises(id integer, dt date);
 create table exercise_word_def(e_id integer, wd_id integer, primary key(e_id, wd_id));
 create table exercise_snt(e_id integer, s_id integer, primary key(e_id, s_id));
 create table sprint_exercise(sp_id integer, idx integer, e_id integer, primary key(sp_id, idx));
-
 
 insert into practices values(0, 0, 0, 10, 0, '2023-12-1');
 insert into practices values(1, 1, 0, 7, 0, '2023-12-2');

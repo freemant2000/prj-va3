@@ -25,3 +25,25 @@ class TestVA3(TestCase):
         d=wams[0].get_display()
         self.assertTrue("steep" in d)
         self.assertTrue("陡峭" in d)
+
+    def test_get_similar_words(self):
+        wams=get_similar_words("f", limit=3)
+        self.assertEquals(len(wams), 2)
+        self.assertEquals(wams[0].word, "fight")
+        self.assertEquals(wams[1].word, "flow")
+
+    def test_add_word_and_meaning(self):
+        wam=WordAndMeaning(None, "wind")
+        wam.add_meaning("n", "風")
+        wam.add_meaning("v", "緾繞")
+        id=add_word_and_meaning(wam)
+        self.assertEquals(id, 21)
+        wams2=get_word_and_meanings([21])
+        self.assertEquals(len(wams2), 1)
+        d=wams2[0].get_display()
+        self.assertTrue("wind" in d)
+        del_word_and_meaning(21)
+        self.reset_word_seq()
+
+    def reset_word_seq(self):
+        set_word_seq(20)

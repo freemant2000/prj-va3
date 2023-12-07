@@ -8,6 +8,11 @@ from vocabassistant3.va3 import *
 # for s in snts:
 #     print(s)
 
-wams=get_word_and_meanings([0, 1, 3])
-for e in wams:
-    print(e.get_display())
+# wams=get_word_and_meanings([0, 1, 3])
+# for e in wams:
+#     print(e.get_display())
+
+# wam=WordAndMeaning("wind")
+# wam.add_meaning("n", "風")
+# wam.add_meaning("v", "緾繞")
+# add_word_and_meaning(wam)

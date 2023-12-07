@@ -1,7 +1,7 @@
 from itertools import groupby
 from typing import Sequence
-import vocabassistant3.db as db
-from vocabassistant3.word_meaning import WordAndMeaning
+from . import db
+from .models import WordAndMeaning
 
 def find_sentences(word: Sequence[str])->Sequence[str]:
     with db.connect() as conn:
@@ -24,6 +24,56 @@ def get_wd_in_sprint(sp_id: int)->Sequence[str]:
         c.close()
     return [r[0] for r in rs]
 
+def add_word_and_meaning(wam: WordAndMeaning)->int:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("select nextval('word_seq')")
+        id=c.fetchone()[0]
+        c.execute("""
+        insert into word_defs values(%s, %s)
+        """, (id, wam.word))
+        for (idx, (p_of_s, m)) in enumerate(wam.meanings):
+            c.execute("insert into word_meanings values (%s, %s, %s, %s)", 
+                      (id, idx, p_of_s, m))
+        conn.commit()
+        c.close()
+        return id
+
+def del_word_and_meaning(wd_id: int)->None:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("""
+        delete from word_meanings where wd_id=%s
+        """, (wd_id,))
+        c.execute("""
+        delete from word_defs where id=%s
+        """, (wd_id,))
+        conn.commit()
+        c.close()
+        return id
+
+def set_word_seq(v: int)->None:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("""
+        select setval('word_seq', %s)
+        """, (v,))
+        c.close()
+        return id
+
+def get_similar_words(wd_prefix: str, limit: int=5)->Sequence[WordAndMeaning]:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("""
+        select wd.id, word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id 
+                  where wd.word like %s
+                  order by word asc;
+        """, (wd_prefix+"%",))
+        rs=c.fetchmany(limit)
+        ws=extract_words_and_meanings(rs)
+        c.close()
+        return ws
+
 def get_wd_in_exercise(e_id: int)->Sequence[str]:
     with db.connect() as conn:
         c=conn.cursor()
@@ -38,17 +88,21 @@ def get_word_and_meanings(wd_ids: Sequence[int])->Sequence[WordAndMeaning]:
      with db.connect() as conn:
         c=conn.cursor()
         c.execute("""
-        select word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id where wd.id in %s order by wd.id;
+        select wd.id, word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id where wd.id in %s order by wd.id;
         """, (tuple(wd_ids),))
         rs=c.fetchall()
-        gs=groupby(rs, key=lambda t: t[0])
-        ws=[]
-        for (g, ms) in gs:
-            wam=WordAndMeaning(g)
-            wam.meanings=[(p_of_s, m) for (w, p_of_s, m) in ms]
-            ws.append(wam)
+        ws=extract_words_and_meanings(rs)
         c.close()
         return ws
+
+def extract_words_and_meanings(rs: Sequence)->Sequence[WordAndMeaning]:
+    gs=groupby(rs, key=lambda t: (t[0], t[1]))
+    ws=[]
+    for ((id, w), ts) in gs:
+        wam=WordAndMeaning(id, w)
+        wam.meanings=[(p_of_s, m) for (id, w, p_of_s, m) in ts]
+        ws.append(wam)
+    return ws
 
 def get_snts_in_exercise(e_id: int)->Sequence[str]:
     with db.connect() as conn:
