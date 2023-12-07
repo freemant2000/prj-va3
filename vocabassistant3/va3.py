@@ -1,17 +1,67 @@
 from itertools import groupby
-from typing import Sequence
+from typing import Sequence, Tuple
 from . import db
-from .models import WordAndMeaning
+from .models import Exercise, Sentence, WordAndMeaning, Sprint
 
-def find_sentences(word: Sequence[str])->Sequence[str]:
+def find_sentences(word: Sequence[str])->Sequence[Sentence]:
     with db.connect() as conn:
         c=conn.cursor()
-        c.execute("select s.text from sentences s join snt_keywords k on s.id=k.snt_id where k.word in %s group by s.id order by count(s.id) desc", (tuple(word),))
+        c.execute("""
+        select s.id, s.text from sentences s join snt_keywords k on s.id=k.snt_id 
+            join word_defs wd on wd.id=k.wd_id
+            where wd.word in %s group by s.id order by count(s.id) desc;
+        """, (tuple(word),))
         rs=c.fetchall()
+        snts=extract_sentences(rs)
         c.close()
-    return [r[0] for r in rs]
+    return snts
 
-def get_wd_in_sprint(sp_id: int)->Sequence[str]:
+def load_keywords(snts: Sequence[Sentence])->None:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("""
+        select k.snt_id, k.wd_id, wd.word, wm.p_of_s, wm.meaning from snt_keywords k join word_meanings wm on k.wd_id=wm.wd_id and k.wm_idx=wm.idx 
+            join word_defs wd on wm.wd_id=wd.id
+            where k.snt_id in %s order by k.snt_id, k.wd_id, k.wm_idx;
+        """, (tuple([snt.id for snt in snts]),))
+        rs=c.fetchall()
+        extract_keywords(snts, rs)
+        c.close()
+    return snts
+
+def extract_keywords(snts: Sequence[Sentence], rs: Sequence[Tuple])->None:
+    d={snt.id:snt for snt in snts}
+    gs=groupby(rs, lambda t: t[0])
+    for (snt_id, sub_list) in gs:
+        sub_list2=map(lambda t: t[1:], sub_list)
+        d[snt_id].keywords=extract_words_and_meanings(sub_list2)
+    return snts
+
+def extract_sentences(rs: Sequence[Tuple])->Sequence[Sentence]:
+    snts=[Sentence(id, text) for (id, text) in rs]
+    return snts
+
+def get_sprint(sp_id: int)->Sprint:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("""
+        select s.id, s.start_dt, se.idx, se.e_id, e.dt from sprints s join sprint_exercise se on s.id=se.sp_id 
+                join exercises e on e.id=se.e_id where s.id=%s order by s.id, se.idx;
+        """, (sp_id,))
+        rs=c.fetchall()
+        sp=extract_sprint(rs)
+        c.close()
+    wd_ids=get_wd_in_sprint(sp_id)
+    sp.wams=get_word_and_meanings(wd_ids)
+    return sp
+
+def extract_sprint(rs: Sequence[Tuple])->Sprint:
+    sp=Sprint(rs[0][0], rs[0][1])
+    for t in rs:
+        sp.execs.append(Exercise(t[3], t[4]))
+    return sp
+
+def get_wd_in_sprint(sp_id: int)->Sequence[int]:
     with db.connect() as conn:
         c=conn.cursor()
         c.execute("""
@@ -74,7 +124,7 @@ def get_similar_words(wd_prefix: str, limit: int=5)->Sequence[WordAndMeaning]:
         c.close()
         return ws
 
-def get_wd_in_exercise(e_id: int)->Sequence[str]:
+def get_wd_in_exercise(e_id: int)->Sequence[int]:
     with db.connect() as conn:
         c=conn.cursor()
         c.execute("""

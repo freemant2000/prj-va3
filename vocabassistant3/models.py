@@ -32,3 +32,11 @@ class Exercise:
         self.wams.append(wam)
     def add_sentence(self, snt: Sentence)->None:
         self.snts.append(snt)
+
+@dataclass
+class Sprint:
+    id: int
+    start_dt: date
+    wams: List[WordAndMeaning]=field(default_factory=list)
+    execs: List[Exercise]=field(default_factory=list)
+

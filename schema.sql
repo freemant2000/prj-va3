@@ -12,6 +12,13 @@ insert into bank_word values(0, 2, 2);
 insert into bank_word values(0, 3, 3);
 insert into bank_word values(0, 4, 4);
 insert into bank_word values(0, 5, 5);
+insert into bank_word values(0, 6, 6);
+insert into bank_word values(0, 7, 7);
+insert into bank_word values(0, 8, 8);
+insert into bank_word values(0, 9, 9);
+insert into bank_word values(0, 10, 10);
+insert into bank_word values(0, 11, 11);
+insert into bank_word values(0, 12, 19);
 
 insert into word_banks values(1, 'fighting-goats-and-jackal-level-2');
 insert into bank_word values(1, 0, 12);
@@ -21,6 +28,7 @@ insert into bank_word values(1, 3, 15);
 insert into bank_word values(1, 4, 16);
 insert into bank_word values(1, 5, 17);
 insert into bank_word values(1, 6, 18);
+
 
 create sequence word_seq;
 select setval('word_seq', 20);
@@ -69,6 +77,9 @@ insert into word_defs values(18, 'fight');
 insert into word_meanings values(18, 0, 'n', '打鬥');
 insert into word_meanings values(18, 1, 'v', '打鬥');
 insert into verb_forms values(18, 'fought', 'fought', NULL);
+insert into word_defs values(19, 'river');
+insert into word_meanings values(19, 0, 'n', '河流');
+
 
 create table practices(id integer primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only integer, eval_dt date);
 create table sprints(id integer primary key, start_dt date);
@@ -79,14 +90,14 @@ create table exercise_snt(e_id integer, s_id integer, primary key(e_id, s_id));
 create table sprint_exercise(sp_id integer, idx integer, e_id integer, primary key(sp_id, idx));
 
 insert into practices values(0, 0, 0, 10, 0, '2023-12-1');
-insert into practices values(1, 1, 0, 7, 0, '2023-12-2');
+insert into practices values(1, 1, 0, 6, 0, '2023-12-2');
 insert into sprints values(0, '2023-12-4');
 insert into sprint_practice values(0, 0);
 insert into sprint_practice values(0, 1);
 insert into exercises values(0, '2023-12-4');
 insert into exercises values(1, '2023-12-5');
-insert into sprint_exercise values(0, 0);
-insert into sprint_exercise values(0, 1);
+insert into sprint_exercise values(0, 0, 0);
+insert into sprint_exercise values(0, 1, 1);
 insert into exercise_word_def values(0, 0);
 insert into exercise_word_def values(0, 1);
 insert into exercise_word_def values(0, 2);
@@ -110,30 +121,30 @@ insert into exercise_snt values(1, 5);
 
 
 create table sentences(id integer primary key, text varchar(100));
-create table snt_keywords(snt_id integer, word varchar(50), primary key(snt_id, word));
-create index on snt_keywords(word);
+create table snt_keywords(snt_id integer, wd_id integer, wm_idx integer, primary key(snt_id, wd_id, wm_idx));
+create index on snt_keywords(wd_id);
 
 insert into sentences values(0, '這個山很陡峭。');
-insert into snt_keywords values(0, 'mountain');
-insert into snt_keywords values(0, 'steep');
+insert into snt_keywords values(0, 1, 0);
+insert into snt_keywords values(0, 0, 0);
 insert into sentences values(1, '這條河裡的水在快速地流動。');
-insert into snt_keywords values(1, 'river');
-insert into snt_keywords values(1, 'flow');
+insert into snt_keywords values(1, 19, 0);
+insert into snt_keywords values(1, 2, 0);
 insert into sentences values(2, '一隻松鼠爬上了這條樹幹。');
-insert into snt_keywords values(2, 'squirrel');
-insert into snt_keywords values(2, 'trunk');
+insert into snt_keywords values(2, 4, 0);
+insert into snt_keywords values(2, 3, 0);
 insert into sentences values(3, '一隻松鼠住在這個山谷裡。');
-insert into snt_keywords values(3, 'squirrel');
-insert into snt_keywords values(3, 'valley');
+insert into snt_keywords values(3, 4, 0);
+insert into snt_keywords values(3, 5, 0);
 insert into sentences values(4, '這個山上的岩石很堅硬。');
-insert into snt_keywords values(4, 'rock');
-insert into snt_keywords values(4, 'mountain');
+insert into snt_keywords values(4, 6, 0);
+insert into snt_keywords values(4, 1, 0);
 insert into sentences values(5, '這個山谷裡的空氣慢慢地流動。');
-insert into snt_keywords values(5, 'flow');
-insert into snt_keywords values(5, 'valley');
+insert into snt_keywords values(5, 2, 0);
+insert into snt_keywords values(5, 5, 0);
 insert into sentences values(6, '那隻害怕的松鼠去了相反的方向。');
-insert into snt_keywords values(6, 'squirrel');
-insert into snt_keywords values(6, 'scared');
-insert into snt_keywords values(6, 'opposite');
-insert into snt_keywords values(6, 'direction');
+insert into snt_keywords values(6, 4, 0);
+insert into snt_keywords values(6, 7, 0);
+insert into snt_keywords values(6, 8, 0);
+insert into snt_keywords values(6, 9, 0);
 

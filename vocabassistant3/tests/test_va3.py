@@ -1,15 +1,24 @@
 from unittest import TestCase
 from vocabassistant3.va3 import *
+from datetime import date
 
 class TestVA3(TestCase):
     def test_find(self):
         snts=find_sentences(["squirrel", "river", "trunk"])
         self.assertEquals(len(snts), 4)
-        self.assertEquals(snts[0], u"一隻松鼠爬上了這條樹幹。")
+        self.assertEquals(snts[0].text, u"一隻松鼠爬上了這條樹幹。")
+
+    def test_get_sprint(self):
+        sp=get_sprint(0)
+        self.assertEquals(sp.start_dt, date(2023, 12, 4))
+        self.assertEquals(len(sp.execs), 2)
+        self.assertEquals(sp.execs[0].dt, date(2023, 12, 4))
+        self.assertEquals(sp.execs[1].dt, date(2023, 12, 5))
+        self.assertEquals(len(sp.wams), 18)
 
     def test_get_wd_in_sprint(self):
         snts=get_wd_in_sprint(0)
-        self.assertEquals(len(snts), 13)
+        self.assertEquals(len(snts), 18)
 
     def test_get_wd_in_exercise(self):
         snts=get_wd_in_exercise(0)
@@ -47,3 +56,10 @@ class TestVA3(TestCase):
 
     def reset_word_seq(self):
         set_word_seq(20)
+
+    def test_load_keywords(self):
+        snts=[Sentence(0, "abc"), Sentence(1, "def")]
+        load_keywords(snts)
+        self.assertEquals(len(snts), 2)
+        self.assertEquals(snts[0].keywords[0].word, "steep")
+        self.assertEquals(snts[0].keywords[1].word, "mountain")
