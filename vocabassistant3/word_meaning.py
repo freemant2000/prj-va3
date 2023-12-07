@@ -3,6 +3,7 @@ from typing import List, Tuple
 
 @dataclass
 class WordAndMeaning:
+    id: int
     word: str
     meanings: List[Tuple[str, str]]=field(default_factory=list)
 
