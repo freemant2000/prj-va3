@@ -53,6 +53,10 @@ def get_sprint(sp_id: int)->Sprint:
         c.close()
     wd_ids=get_wd_in_sprint(sp_id)
     sp.wams=get_word_and_meanings(wd_ids)
+    for e in sp.execs:
+        wd_ids=get_wd_in_exercise(e.id)
+        e.wams=get_word_and_meanings(wd_ids)
+        e.snts=get_snts_in_exercise(e.id)
     return sp
 
 def extract_sprint(rs: Sequence[Tuple])->Sprint:
@@ -154,12 +158,13 @@ def extract_words_and_meanings(rs: Sequence)->Sequence[WordAndMeaning]:
         ws.append(wam)
     return ws
 
-def get_snts_in_exercise(e_id: int)->Sequence[str]:
+def get_snts_in_exercise(e_id: int)->Sequence[Sentence]:
     with db.connect() as conn:
         c=conn.cursor()
         c.execute("""
-        select s.text from exercises e join exercise_snt es on e.id=es.e_id join sentences s on es.s_id=s.id where e.id=%s;
+        select s.id, s.text from exercises e join exercise_snt es on e.id=es.e_id join sentences s on es.s_id=s.id where e.id=%s;
         """, (e_id,))
         rs=c.fetchall()
+        snts=extract_sentences(rs)
         c.close()
-    return [r[0] for r in rs]
+    return snts

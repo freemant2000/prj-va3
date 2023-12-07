@@ -22,9 +22,17 @@ def show_execs_in_sprint():
     sp_id=0
     sp=get_sprint(sp_id)
     print(f"Sprint {sp.id} started on {sp.start_dt}")
+    print("Words")
     for wam in sp.wams:
-        print(wam.get_display())
-
+        print("\t"+wam.get_display())
+    for e in sp.execs:
+        print(f"Exercise {e.id} on {e.dt}")
+        for wam in e.wams:
+            print("\t"+wam.get_display())
+        print("\t=========")
+        for snt in e.snts:
+            print("\t"+snt.text)
+    
 def show_words_in_sprint():
     sp_id=0
     wd_ids=get_wd_in_sprint(sp_id)

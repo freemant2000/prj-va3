@@ -13,6 +13,7 @@ class TestVA3(TestCase):
         self.assertEquals(sp.start_dt, date(2023, 12, 4))
         self.assertEquals(len(sp.execs), 2)
         self.assertEquals(sp.execs[0].dt, date(2023, 12, 4))
+        self.assertEquals(len(sp.execs[0].wams), 8)
         self.assertEquals(sp.execs[1].dt, date(2023, 12, 5))
         self.assertEquals(len(sp.wams), 18)
 
