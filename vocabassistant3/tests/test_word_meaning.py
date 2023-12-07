@@ -1,5 +1,5 @@
 from unittest import TestCase
-from vocabassistant3.word_meaning import *
+from vocabassistant3.models import *
 
 class TestWordAndMeaning(TestCase):
     def test_display(self):

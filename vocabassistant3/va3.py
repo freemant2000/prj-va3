@@ -1,7 +1,7 @@
 from itertools import groupby
 from typing import Sequence
-import vocabassistant3.db as db
-from vocabassistant3.word_meaning import WordAndMeaning
+from . import db
+from .models import WordAndMeaning
 
 def find_sentences(word: Sequence[str])->Sequence[str]:
     with db.connect() as conn:
