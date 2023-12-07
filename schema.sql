@@ -22,6 +22,9 @@ insert into bank_word values(1, 4, 16);
 insert into bank_word values(1, 5, 17);
 insert into bank_word values(1, 6, 18);
 
+create sequence word_seq;
+select setval('word_seq', 20);
+
 insert into word_defs values(0, 'steep');
 insert into word_meanings values(0, 0, 'adj', '陡峭（斜）的');
 insert into word_defs values(1, 'mountain');

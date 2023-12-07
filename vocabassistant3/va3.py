@@ -24,6 +24,21 @@ def get_wd_in_sprint(sp_id: int)->Sequence[str]:
         c.close()
     return [r[0] for r in rs]
 
+def add_word_and_meaning(wam: WordAndMeaning)->int:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("select nextval('word_seq')")
+        id=c.fetchone()[0]
+        c.execute("""
+        insert into word_defs values(%s, %s)
+        """, (id, wam.word))
+        for (idx, (p_of_s, m)) in enumerate(wam.meanings):
+            c.execute("insert into word_meanings values (%s, %s, %s, %s)", 
+                      (id, idx, p_of_s, m))
+        conn.commit()
+        c.close()
+        return id
+
 def get_similar_words(wd_prefix: str, limit: int=5)->Sequence[WordAndMeaning]:
     with db.connect() as conn:
         c=conn.cursor()
