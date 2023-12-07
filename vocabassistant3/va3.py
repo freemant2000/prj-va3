@@ -43,7 +43,7 @@ def get_similar_words(wd_prefix: str, limit: int=5)->Sequence[WordAndMeaning]:
     with db.connect() as conn:
         c=conn.cursor()
         c.execute("""
-        select word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id 
+        select wd.id, word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id 
                   where wd.word like %s
                   order by word asc;
         """, (wd_prefix+"%",))
@@ -66,7 +66,7 @@ def get_word_and_meanings(wd_ids: Sequence[int])->Sequence[WordAndMeaning]:
      with db.connect() as conn:
         c=conn.cursor()
         c.execute("""
-        select word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id where wd.id in %s order by wd.id;
+        select wd.id, word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id where wd.id in %s order by wd.id;
         """, (tuple(wd_ids),))
         rs=c.fetchall()
         ws=extract_words_and_meanings(rs)
@@ -74,11 +74,11 @@ def get_word_and_meanings(wd_ids: Sequence[int])->Sequence[WordAndMeaning]:
         return ws
 
 def extract_words_and_meanings(rs: Sequence)->Sequence[WordAndMeaning]:
-    gs=groupby(rs, key=lambda t: t[0])
+    gs=groupby(rs, key=lambda t: (t[0], t[1]))
     ws=[]
-    for (g, ms) in gs:
-        wam=WordAndMeaning(g)
-        wam.meanings=[(p_of_s, m) for (w, p_of_s, m) in ms]
+    for ((id, w), ts) in gs:
+        wam=WordAndMeaning(id, w)
+        wam.meanings=[(p_of_s, m) for (id, w, p_of_s, m) in ts]
         ws.append(wam)
     return ws
 
