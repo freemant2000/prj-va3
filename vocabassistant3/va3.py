@@ -24,6 +24,19 @@ def get_wd_in_sprint(sp_id: int)->Sequence[str]:
         c.close()
     return [r[0] for r in rs]
 
+def get_similar_words(wd_prefix: str, limit: int=5)->Sequence[WordAndMeaning]:
+    with db.connect() as conn:
+        c=conn.cursor()
+        c.execute("""
+        select word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id 
+                  where wd.word like %s
+                  order by word asc;
+        """, (wd_prefix+"%",))
+        rs=c.fetchmany(limit)
+        ws=extract_words_and_meanings(rs)
+        c.close()
+        return ws
+
 def get_wd_in_exercise(e_id: int)->Sequence[str]:
     with db.connect() as conn:
         c=conn.cursor()
@@ -41,14 +54,18 @@ def get_word_and_meanings(wd_ids: Sequence[int])->Sequence[WordAndMeaning]:
         select word, p_of_s, meaning from word_defs wd join word_meanings wm on wd.id=wm.wd_id where wd.id in %s order by wd.id;
         """, (tuple(wd_ids),))
         rs=c.fetchall()
-        gs=groupby(rs, key=lambda t: t[0])
-        ws=[]
-        for (g, ms) in gs:
-            wam=WordAndMeaning(g)
-            wam.meanings=[(p_of_s, m) for (w, p_of_s, m) in ms]
-            ws.append(wam)
+        ws=extract_words_and_meanings(rs)
         c.close()
         return ws
+
+def extract_words_and_meanings(rs: Sequence)->Sequence[WordAndMeaning]:
+    gs=groupby(rs, key=lambda t: t[0])
+    ws=[]
+    for (g, ms) in gs:
+        wam=WordAndMeaning(g)
+        wam.meanings=[(p_of_s, m) for (w, p_of_s, m) in ms]
+        ws.append(wam)
+    return ws
 
 def get_snts_in_exercise(e_id: int)->Sequence[str]:
     with db.connect() as conn:

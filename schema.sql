@@ -75,7 +75,6 @@ create table exercise_word_def(e_id integer, wd_id integer, primary key(e_id, wd
 create table exercise_snt(e_id integer, s_id integer, primary key(e_id, s_id));
 create table sprint_exercise(sp_id integer, idx integer, e_id integer, primary key(sp_id, idx));
 
-
 insert into practices values(0, 0, 0, 10, 0, '2023-12-1');
 insert into practices values(1, 1, 0, 7, 0, '2023-12-2');
 insert into sprints values(0, '2023-12-4');

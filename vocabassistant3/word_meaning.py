@@ -1,10 +1,10 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import List, Tuple
 
 @dataclass
 class WordAndMeaning:
     word: str
-    meanings=[]
+    meanings: List[Tuple(str, str)]=field(default_factory=list)
 
     def add_meaning(self, p_of_s: str, meaning: str)->None:
         self.meanings.append((p_of_s, meaning))

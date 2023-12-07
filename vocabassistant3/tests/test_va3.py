@@ -25,3 +25,9 @@ class TestVA3(TestCase):
         d=wams[0].get_display()
         self.assertTrue("steep" in d)
         self.assertTrue("陡峭" in d)
+
+    def test_get_similar_words(self):
+        wams=get_similar_words("f", limit=3)
+        self.assertEquals(len(wams), 2)
+        self.assertEquals(wams[0].word, "fight")
+        self.assertEquals(wams[1].word, "flow")
