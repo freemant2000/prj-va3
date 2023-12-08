@@ -1,5 +1,5 @@
 create table word_banks(id integer primary key, name varchar(50));
-create table bank_word(wb_id integer, idx integer, wd_id integer, primary key(wb_id, wd_id));
+create table bank_word(wb_id integer, idx integer, wd_id integer, primary key(wb_id, idx));
 create table word_defs(id integer primary key, word varchar(50));
 create index on word_defs(word);
 create table word_meanings(wd_id integer, idx integer, p_of_s varchar(10), meaning varchar(50), primary key(wd_id, idx));
@@ -81,10 +81,10 @@ insert into word_defs values(19, 'river');
 insert into word_meanings values(19, 0, 'n', '河流');
 
 
-create table practices(id integer primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only integer, eval_dt date);
+create table practices(id integer primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only integer, assess_dt date);
 create table sprints(id integer primary key, start_dt date);
 create table sprint_practice(sp_id integer, p_id integer, primary key(sp_id, p_id));
-create table exercises(id integer, dt date);
+create table exercises(id integer primary key, dt date);
 create table exercise_word_def(e_id integer, wd_id integer, primary key(e_id, wd_id));
 create table exercise_snt(e_id integer, s_id integer, primary key(e_id, s_id));
 create table sprint_exercise(sp_id integer, idx integer, e_id integer, primary key(sp_id, idx));
