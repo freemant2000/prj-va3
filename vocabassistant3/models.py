@@ -1,7 +1,7 @@
-from sqlalchemy import ForeignKey, Table, Column, ForeignKeyConstraint
+from sqlalchemy import ForeignKey, Table, Column, ForeignKeyConstraint, Sequence
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from sqlalchemy.types import String, Integer, Date, Boolean
-from typing import List, Sequence
+from typing import List
 import datetime   
 
 class Base(DeclarativeBase):
@@ -9,13 +9,14 @@ class Base(DeclarativeBase):
 
 class WordDef(Base):
     __tablename__="word_defs"
-    id: Mapped[int]=mapped_column(primary_key=True)
+    id: Mapped[int]=mapped_column(Integer, Sequence("word_seq"), primary_key=True)
     word: Mapped[str]=mapped_column(String)
-    meanings: Mapped[List["WordMeaning"]]=relationship("WordMeaning", order_by="asc(WordMeaning.idx)", back_populates="wd")
+    meanings: Mapped[List["WordMeaning"]]=relationship("WordMeaning", order_by="asc(WordMeaning.idx)", back_populates="wd", cascade="all, delete-orphan")
     def add_meaning(self, p_of_s: str, meaning: str)->None:
         m=WordMeaning()
         m.p_of_s=p_of_s
         m.meaning=meaning
+        m.idx=len(self.meanings)
         self.meanings.append(m)
     def get_display(self)->str:
         return self.word+"\t"+self.get_meanings()

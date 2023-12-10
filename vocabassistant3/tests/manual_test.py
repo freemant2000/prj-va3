@@ -1,8 +1,5 @@
 from vocabassistant3.va3 import *
 
-with open_session() as s:
-  get_sprint(s, 0)
-
 def show_sprint(sp):
     print(sp.id, sp.start_dt)
     for p in sp.pracs:
@@ -25,3 +22,23 @@ def show_word_def(wd):
     print(wd.word)
     for m in wd.meanings:
       print("\t"+m.meaning)
+
+def use_word_def():
+    wd=WordDef(id=0, word="hand")
+    wd.add_meaning("n", "手")
+    wd.add_meaning("v", "遞給")
+    print(wd.id, wd.word, wd.get_display())
+    for m in wd.meanings:
+        print(m.p_of_s)
+        print(m.meaning)
+
+def add_word_def(s: Session):
+    wd=WordDef(word="hand")
+    wd.add_meaning("n", "手")
+    wd.add_meaning("v", "遞給")
+    s.add(wd)
+    s.commit()
+    print(wd.id)
+
+with open_session() as s:
+  add_word_def(s)

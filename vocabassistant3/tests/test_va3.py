@@ -1,6 +1,7 @@
 from unittest import TestCase
 from vocabassistant3.va3 import *
 from datetime import date
+from sqlalchemy import text
 
 class TestVA3(TestCase):
     def setUp(self) -> None:
@@ -40,19 +41,23 @@ class TestVA3(TestCase):
         self.assertEquals(wds[0].word, "flow")
         self.assertEquals(wds[1].word, "fight")
 
-    # def test_add_word_and_meaning(self):
-    #     wam=WordAndMeaning(None, "wind")
-    #     wam.add_meaning("n", "風")
-    #     wam.add_meaning("v", "緾繞")
-    #     id=add_word_and_meaning(wam)
-    #     self.assertEquals(id, 21)
-    #     wams2=get_word_and_meanings([21])
-    #     self.assertEquals(len(wams2), 1)
-    #     d=wams2[0].get_display()
-    #     self.assertTrue("wind" in d)
-    #     del_word_and_meaning(21)
-    #     self.reset_word_seq()
+    def test_add_word_def(self):
+        wd=WordDef(word="hand")
+        wd.add_meaning("n", "手")
+        wd.add_meaning("v", "遞給")
+        self.s.add(wd)
+        self.s.commit()
+        self.assertEquals(wd.id, 21)
+        wd2=get_word_defs(self.s, [21])
+        self.assertEquals(len(wd2), 1)
+        d=wd2[0].get_display()
+        self.assertTrue("hand" in d)
+        self.s.close()
+        self.s=open_session()
+        del_word_def(self.s, 21)
+        self.s.commit()
+        self.reset_word_seq()
 
-    # def reset_word_seq(self):
-    #     set_word_seq(20)
+    def reset_word_seq(self):
+        self.s.execute(text("select setval('word_seq', 20)"))
 

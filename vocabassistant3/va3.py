@@ -16,6 +16,12 @@ def get_word_defs(s: Session, wd_ids: Sequence[int])->Sequence[WordDef]:
   wds=r.unique().all()
   return wds
 
+def del_word_def(s: Session, wd_id: int)->None:
+  q=select(WordDef).where(WordDef.id==(wd_id))
+  r=s.scalars(q)
+  wd=r.unique().first()
+  s.delete(wd)
+
 def get_similar_words(s: Session, pref: str, limit:int=5)->Sequence[WordDef]:
   q=select(WordDef).where(WordDef.word.like(pref+"%")).options(joinedload(WordDef.meanings)) \
       .order_by(WordDef.id.asc())
