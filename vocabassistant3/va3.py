@@ -23,7 +23,13 @@ def del_word_def(s: Session, wd_id: int)->None:
   s.delete(wd)
 
 def get_similar_words(s: Session, pref: str, limit:int=5)->Sequence[WordDef]:
-  q=select(WordDef).where(WordDef.word.like(pref+"%")).options(joinedload(WordDef.meanings)) \
+  return get_words_by_pattern(s, pref+"%", limit)
+
+def get_word_def(s: Session, word: str, limit:int=5)->Sequence[WordDef]:
+  return get_words_by_pattern(s, word, limit)
+
+def get_words_by_pattern(s: Session, pattern: str, limit:int=5)->Sequence[WordDef]:
+  q=select(WordDef).where(WordDef.word.like(pattern)).options(joinedload(WordDef.meanings)) \
       .order_by(WordDef.id.asc())
   r=s.scalars(q)
   wds=r.unique().all()

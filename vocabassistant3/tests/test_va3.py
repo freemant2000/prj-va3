@@ -1,3 +1,4 @@
+from curses import echo
 from unittest import TestCase
 from vocabassistant3.va3 import *
 from datetime import date
@@ -42,21 +43,17 @@ class TestVA3(TestCase):
         self.assertEquals(wds[1].word, "fight")
 
     def test_add_word_def(self):
+        self.s.begin()
         wd=WordDef(word="hand")
         wd.add_meaning("n", "手")
         wd.add_meaning("v", "遞給")
         self.s.add(wd)
-        self.s.commit()
-        self.assertEquals(wd.id, 21)
         wd2=get_word_defs(self.s, [21])
         self.assertEquals(len(wd2), 1)
         d=wd2[0].get_display()
         self.assertTrue("hand" in d)
-        self.s.close()
-        self.s=open_session()
-        del_word_def(self.s, 21)
-        self.s.commit()
-        self.reset_word_seq()
+        self.reset_word_seq() # seq is done outside transaction
+        self.s.rollback()
 
     def reset_word_seq(self):
         self.s.execute(text("select setval('word_seq', 20)"))
