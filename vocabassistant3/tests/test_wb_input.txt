@@ -6,6 +6,9 @@ sick
     adj,病的
     adj,想嘔的
     adj,厭倦的
+fight<=18,0-1
+    v,打鬥
+    n,打鬥
 wife
     n,妻子
 

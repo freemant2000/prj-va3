@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from vocabassistant3.va3 import *
-from typing import Union
+from typing import Dict, Union
 
 def add_or_use_word_def(s):
   word=input()
@@ -41,35 +41,42 @@ class WordBankItemOld:
 
 @dataclass
 class WordBankDraft:
-  items: Sequence[Union[WordDef, WordBankItemOld]] = field(default_factory=list)
+  wds: Sequence[WordDef] = field(default_factory=list)
+  use_old_wds: Dict[WordDef, WordBankItemOld]= field(default_factory=dict)
 
 def check_wb_draft():
   wbd=WordBankDraft()
-  wbd.items=[WordDef()]
+
 
 def show_wb_draft(wbd: WordBankDraft):
-  for e in wbd.items:
+  for e in wbd.wds:
     print(e)
+  print("Using existing WordDefs")
+  for (wd, io) in wbd.use_old_wds.items():
+    print(wd)
+    print(io.wb_id, io.m_indice)
 
 def load_wb_input()->WordBankDraft:
   wbd=WordBankDraft()
-  wbd.items=[]
-  wb=None
+  wbd.wds=[]
   with open("vocabassistant3/tests/test_wb_input.txt") as f:
     for line in f.readlines():
       if line.startswith(" ") or line.startswith("\t"): # a meaning
           line=line.strip()
           if line:
             p_of_s, m=line.split(",")
-            wb.add_meaning(p_of_s, m)
+            wbd.wds[-1].add_meaning(p_of_s, m)
       else: #start a new word
         line=line.strip()
         if line:
-          if wb:
-            wbd.items.append(wb)
-          wb=WordDef(word=line)
-    if wb:
-      wbd.items.append(wb)
+          tp=line.split("<=")
+          wd=WordDef(id=None, word=tp[0])
+          wbd.wds.append(wd)
+          if len(tp)==2: #use a WordDef
+            _, p2=tp
+            wd_id, m_indice=p2.split(",")
+            m_indice=m_indice.replace("-", ",")
+            wbd.use_old_wds[wd]=WordBankItemOld(int(wd_id), m_indice)
   return wbd
 
 # with open_session() as s:
