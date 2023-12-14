@@ -1,34 +1,13 @@
-from curses import echo
 from unittest import TestCase
-from vocabassistant3.va3 import *
-from datetime import date
+from vocabassistant3.db_base import open_session
+from vocabassistant3.word_def import get_word_defs, get_similar_words, WordDef
 from sqlalchemy import text
 
-class TestVA3(TestCase):
+class TestWordDef(TestCase):
     def setUp(self) -> None:
         self.s=open_session()
     def tearDown(self) -> None:
         self.s.close()
-    def test_find_snts(self):
-        snts=get_snts(self.s, ["squirrel", "river", "trunk"])
-        self.assertEquals(len(snts), 4)
-        self.assertEquals(snts[0].text, "這條河裡的水在快速地流動。")
-
-    def test_get_sprint(self):
-        sp=get_sprint(self.s, 0)
-        self.assertEquals(sp.start_dt, date(2023, 12, 4))
-        self.assertEquals(len(sp.execs), 2)
-        self.assertEquals(sp.execs[0].dt, date(2023, 12, 4))
-        self.assertEquals(len(sp.execs[0].ews), 8)
-        self.assertEquals(sp.execs[1].dt, date(2023, 12, 5))
-        total=sum(len(p.get_bws()) for p in sp.pracs)
-        self.assertEquals(total, 18)
-
-    def test_get_exercise(self):
-        e=get_exec(self.s, 0)
-        self.assertEquals(len(e.ews), 8)
-        self.assertEquals(len(e.snts), 3)
-
     def test_get_word_def(self):
         wds=get_word_defs(self.s, [0, 1, 3])
         self.assertEquals(len(wds), 3)
@@ -41,10 +20,6 @@ class TestVA3(TestCase):
         self.assertEquals(len(wds), 2)
         self.assertEquals(wds[0].word, "flow")
         self.assertEquals(wds[1].word, "fight")
-
-    def test_get_word_bank(self):
-        wb=get_word_bank(self.s, 0)
-        self.assertEquals(len(wb.bws), 13)
 
     def test_add_word_def(self):
         self.s.begin()

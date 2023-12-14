@@ -1,9 +1,8 @@
 from dataclasses import dataclass, field
 import re
 from typing import Dict, Sequence, List
-from sqlalchemy import ForeignKey, Sequence
-from sqlalchemy.orm import Session
-from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import select, ForeignKey, Sequence
+from sqlalchemy.orm import Session, Mapped, mapped_column, relationship, joinedload
 from sqlalchemy.types import String, Integer
 from .db_base import Base
 from .word_def import get_word_def, WordDef
@@ -24,6 +23,14 @@ class WordBank(Base):
     bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb")
     def __str__(self) -> str:
         return f"WordBank {self.id} {self.name} {len(self.bws)} words"
+
+def get_word_bank(s: Session, wb_id: int)->WordBank:
+  q=select(WordBank).where(WordBank.id==wb_id) \
+    .options(joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings))
+  r=s.scalars(q)
+  exec=r.unique().first()
+  return exec
+
 
 def show_word_def(wd):
     print(f"Id {wd.id} {wd.word}")
@@ -67,10 +74,10 @@ def show_wb_draft(wbd: WordBankDraft):
     print(wd)
     print(io.wb_id, io.m_indice)
 
-def load_wb_input()->WordBankDraft:
+def load_wb_input(path: str)->WordBankDraft:
   wbd=WordBankDraft()
   wbd.wds=[]
-  with open("vocabassistant3/tests/test_wb_input.txt") as f:
+  with open(path) as f:
     lines=f.readlines()
     head=lines.pop(0)
     m=re.match(r"\[(.+)\]", head)
