@@ -1,4 +1,6 @@
+from dataclasses import dataclass, field
 from vocabassistant3.va3 import *
+from typing import Union
 
 def add_or_use_word_def(s):
   word=input()
@@ -32,5 +34,46 @@ def add_word_def(s: Session):
     s.commit()
     print(wd.id)
 
-with open_session() as s:
-  add_or_use_word_def(s)
+@dataclass
+class WordBankItemOld:
+  wb_id: int
+  m_indice: Sequence[int] = field(default_factory=list)
+
+@dataclass
+class WordBankDraft:
+  items: Sequence[Union[WordDef, WordBankItemOld]] = field(default_factory=list)
+
+def check_wb_draft():
+  wbd=WordBankDraft()
+  wbd.items=[WordDef()]
+
+def show_wb_draft(wbd: WordBankDraft):
+  for e in wbd.items:
+    print(e)
+
+def load_wb_input()->WordBankDraft:
+  wbd=WordBankDraft()
+  wbd.items=[]
+  wb=None
+  with open("vocabassistant3/tests/test_wb_input.txt") as f:
+    for line in f.readlines():
+      if line.startswith(" ") or line.startswith("\t"): # a meaning
+          line=line.strip()
+          if line:
+            p_of_s, m=line.split(",")
+            wb.add_meaning(p_of_s, m)
+      else: #start a new word
+        line=line.strip()
+        if line:
+          if wb:
+            wbd.items.append(wb)
+          wb=WordDef(word=line)
+    if wb:
+      wbd.items.append(wb)
+  return wbd
+
+# with open_session() as s:
+#   add_or_use_word_def(s)
+
+wbd=load_wb_input()
+show_wb_draft(wbd)

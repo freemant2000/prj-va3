@@ -1,0 +1,23 @@
+humble
+    adj,謙卑的
+fisherman
+    n,漁夫
+sick
+    adj,病的
+    adj,想嘔的
+    adj,厭倦的
+wife
+    n,妻子
+
+mango
+    n,芒果
+
+peach
+    n,桃
+hut
+    n,（如石或草造的）小屋
+hook
+    v,鈎
+    n,鈎
+fish
+    n,魚
