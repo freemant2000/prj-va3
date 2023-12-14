@@ -5,7 +5,7 @@ from .models import Exercise, Practice, Sentence, Sprint, WordBank, WordDef, Wor
 
 
 def open_session():
-  eng=create_engine(f"postgresql://dba:abc123@localhost/va3", echo=True)
+  eng=create_engine(f"postgresql://dba:abc123@localhost/va3", echo=False)
   s=Session(eng)
   return s
 
