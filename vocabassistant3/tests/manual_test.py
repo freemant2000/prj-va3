@@ -40,6 +40,13 @@ def add_word_def(s: Session):
     s.commit()
     print(wd.id)
 
+def show_exec(exec: Exercise):
+  print(exec)
+  print(len(exec.snts))
+  for ew in exec.ews:
+    print(ew)
+
 with open_session() as s:
   exec=get_exec(s, 0)
-  print(exec)
+  show_exec(exec)
+  

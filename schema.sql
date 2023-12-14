@@ -1,7 +1,10 @@
+-- createdb -O dba -E UTF8 va3
+
 create table word_banks(id integer primary key, name varchar(50));
 create table bank_word(wb_id integer, idx integer, wd_id integer, m_indice varchar(50), primary key(wb_id, idx));
 create table word_defs(id integer primary key, word varchar(50));
 create index on word_defs(word);
+create index on word_defs using gin (word);
 create table word_meanings(wd_id integer, idx integer, p_of_s varchar(10), meaning varchar(50), primary key(wd_id, idx));
 create table verb_forms(wd_id integer primary key, past_form varchar(50), pp_form varchar(50), ing_form varchar(50));
 

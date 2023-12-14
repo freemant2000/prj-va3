@@ -68,9 +68,11 @@ class ExeciseWord(Base):
     __tablename__="exercise_word"
     e_id: Mapped[int]=mapped_column(Integer, ForeignKey("exercises.id"), primary_key=True)
     exec: Mapped["Exercise"]=relationship("Exercise", back_populates="ews")
-    wd_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_defs.id"))
+    wd_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_defs.id"), primary_key=True)
     wd: Mapped[WordDef]=relationship(WordDef)
     m_indice: Mapped[str]=mapped_column(String)
+    def __str__(self) -> str:
+        return f"exercise word {self.wd.word}"
 
 exec_snt_tbl=Table("exercise_snt", Base.metadata, 
                     Column("e_id", Integer, ForeignKey("exercises.id"), primary_key=True),
@@ -80,8 +82,10 @@ class Exercise(Base):
     __tablename__="exercises"
     id: Mapped[int]=mapped_column(Integer, primary_key=True)
     dt: Mapped[datetime.date]=mapped_column(Date)
-    ews: Mapped[List[ExeciseWord]]=relationship(ExeciseWord, back_populates="exec")
+    ews: Mapped[List[ExeciseWord]]=relationship(ExeciseWord, order_by="asc(ExeciseWord.wd_id)", back_populates="exec")
     snts: Mapped[List[Sentence]]=relationship("Sentence", secondary=exec_snt_tbl)
+    def __str__(self) -> str:
+        return f"exercise {self.id} {len(self.ews)} words"
 
 sprint_prac_tbl=Table("sprint_practice", Base.metadata, 
                     Column("sp_id", Integer, ForeignKey("sprints.id"), primary_key=True),
