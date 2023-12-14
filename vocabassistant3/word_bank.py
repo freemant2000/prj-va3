@@ -20,7 +20,7 @@ class WordBank(Base):
     __tablename__="word_banks"
     id: Mapped[int]=mapped_column(Integer, primary_key=True)
     name: Mapped[str]=mapped_column(String)
-    bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb")
+    bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb", cascade="all")
     def __str__(self) -> str:
         return f"WordBank {self.id} {self.name} {len(self.bws)} words"
 
@@ -73,6 +73,22 @@ def show_wb_draft(wbd: WordBankDraft):
   for (wd, io) in wbd.use_old_wds.items():
     print(wd)
     print(io.wb_id, io.m_indice)
+
+def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
+    for wd in wbd.wds:
+        if not (wd in wbd.use_old_wds):
+            s.add(wd)
+    s.flush()  #make sure the IDs are assigned
+    wb=WordBank(name=wbd.name)
+    for (idx, wd) in enumerate(wbd.wds):
+        if not (wd in wbd.use_old_wds):
+            bw=BankWord(idx=idx, wd_id=wd.id, m_indice=wd.get_all_m_indice())
+        else:
+            oi=wbd.use_old_wds[wd]
+            bw=BankWord(idx=idx, wd_id=oi.wb_id, m_indice=oi.m_indice)
+        wb.bws.append(bw)
+    s.add(wb)
+    return wb
 
 def load_wb_input(path: str)->WordBankDraft:
   wbd=WordBankDraft()

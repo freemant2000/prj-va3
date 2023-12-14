@@ -19,6 +19,8 @@ class WordDef(Base):
         return self.word+"\t"+self.get_meanings()
     def get_meanings(self)->str:
         return u"、".join([f"{m.meaning}({m.p_of_s})" for m in self.meanings])
+    def get_all_m_indice(self)->str:
+        return ",".join([str(idx) for idx in range(len(self.meanings))])
     def __str__(self) -> str:
         return f"WordDef {self.word} with {len(self.meanings)} meanings"
 

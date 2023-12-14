@@ -20,6 +20,12 @@ class TestWordDef(TestCase):
         self.assertEquals(len(wds), 2)
         self.assertEquals(wds[0].word, "flow")
         self.assertEquals(wds[1].word, "fight")
+    
+    def test_get_all_m_indice(self):
+        wd=WordDef(word="hand")
+        wd.add_meaning("n", "手")
+        wd.add_meaning("v", "遞給")
+        self.assertEquals(wd.get_all_m_indice(), "0,1")
 
     def test_add_word_def(self):
         self.s.begin()
