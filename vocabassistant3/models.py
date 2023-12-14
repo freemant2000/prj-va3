@@ -4,51 +4,6 @@ from sqlalchemy.types import String, Integer, Date, Boolean
 from typing import List
 import datetime   
 
-class Base(DeclarativeBase):
-    pass
-
-class WordDef(Base):
-    __tablename__="word_defs"
-    id: Mapped[int]=mapped_column(Integer, Sequence("word_seq"), primary_key=True)
-    word: Mapped[str]=mapped_column(String)
-    meanings: Mapped[List["WordMeaning"]]=relationship("WordMeaning", order_by="asc(WordMeaning.idx)", back_populates="wd", cascade="all, delete-orphan")
-    def add_meaning(self, p_of_s: str, meaning: str)->None:
-        m=WordMeaning()
-        m.p_of_s=p_of_s
-        m.meaning=meaning
-        m.idx=len(self.meanings)
-        self.meanings.append(m)
-    def get_display(self)->str:
-        return self.word+"\t"+self.get_meanings()
-    def get_meanings(self)->str:
-        return u"、".join([f"{m.meaning}({m.p_of_s})" for m in self.meanings])
-    def __str__(self) -> str:
-        return f"WordDef {self.word} with {len(self.meanings)} meanings"
-
-class WordMeaning(Base):
-    __tablename__="word_meanings"
-    wd_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_defs.id"), primary_key=True)
-    wd: Mapped[WordDef]=relationship("WordDef", back_populates="meanings")
-    idx: Mapped[int]=mapped_column(Integer, primary_key=True)
-    p_of_s: Mapped[str]=mapped_column(String)
-    meaning: Mapped[str]=mapped_column(String)
-
-class BankWord(Base):
-    __tablename__="bank_word"
-    wb_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_banks.id"), primary_key=True)
-    wb: Mapped["WordBank"]=relationship("WordBank", back_populates="bws")
-    idx: Mapped[int]=mapped_column(Integer, primary_key=True)
-    wd_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_defs.id"))
-    wd: Mapped[WordDef]=relationship(WordDef)
-    m_indice: Mapped[str]=mapped_column(String)
-
-class WordBank(Base):
-    __tablename__="word_banks"
-    id: Mapped[int]=mapped_column(Integer, primary_key=True)
-    name: Mapped[str]=mapped_column(String)
-    bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb")
-    def __str__(self) -> str:
-        return f"WordBank {self.id} {self.name} {len(self.bws)} words"
 
 snt_wd_tbl=Table("snt_keywords", Base.metadata, 
                     Column("snt_id", Integer, ForeignKey("sentences.id"), primary_key=True),

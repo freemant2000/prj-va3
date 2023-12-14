@@ -1,31 +1,34 @@
 from dataclasses import dataclass, field
 import re
-from vocabassistant3.va3 import *
-from typing import Dict
+from typing import Dict, Sequence, List
+from sqlalchemy import ForeignKey, Sequence
+from sqlalchemy.orm import Session
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy.types import String, Integer
+from .db_base import Base
+from .word_def import get_word_def, WordDef
 
-def add_or_use_word_def(s):
-  word=input()
-  wds=get_word_def(s, word)
-  if wds:
-    print("Found existing")
-    for wd in wds:
-      show_word_def(wd)
-  else:
-    print("Not found")
+class BankWord(Base):
+    __tablename__="bank_word"
+    wb_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_banks.id"), primary_key=True)
+    wb: Mapped["WordBank"]=relationship("WordBank", back_populates="bws")
+    idx: Mapped[int]=mapped_column(Integer, primary_key=True)
+    wd_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_defs.id"))
+    wd: Mapped[WordDef]=relationship(WordDef)
+    m_indice: Mapped[str]=mapped_column(String)
+
+class WordBank(Base):
+    __tablename__="word_banks"
+    id: Mapped[int]=mapped_column(Integer, primary_key=True)
+    name: Mapped[str]=mapped_column(String)
+    bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb")
+    def __str__(self) -> str:
+        return f"WordBank {self.id} {self.name} {len(self.bws)} words"
 
 def show_word_def(wd):
     print(f"Id {wd.id} {wd.word}")
     for m in wd.meanings:
       print(f"\t{m.idx} {m.meaning}")
-
-def use_word_def():
-    wd=WordDef(id=0, word="hand")
-    wd.add_meaning("n", "手")
-    wd.add_meaning("v", "遞給")
-    print(wd.id, wd.word, wd.get_display())
-    for m in wd.meanings:
-        print(m.p_of_s)
-        print(m.meaning)
 
 def add_word_def(s: Session):
     wd=WordDef(word="hand")
@@ -93,7 +96,3 @@ def load_wb_input()->WordBankDraft:
             wbd.use_old_wds[wd]=WordBankItemOld(int(wd_id), m_indice)
   return wbd
 
-with open_session() as s:
-  wbd=load_wb_input()
-  show_wb_draft(wbd)
-  #check_wb_draft(s, wbd)
