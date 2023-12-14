@@ -31,17 +31,26 @@ class WordMeaning(Base):
     p_of_s: Mapped[str]=mapped_column(String)
     meaning: Mapped[str]=mapped_column(String)
 
-bank_wd_tbl=Table("bank_word", Base.metadata, 
-                    Column("wb_id", Integer, ForeignKey("word_banks.id"), primary_key=True),
-                    Column("idx", Integer, primary_key=True),
-                    Column("wd_id", Integer, ForeignKey("word_defs.id")))
+# bank_wd_tbl=Table("bank_word", Base.metadata, 
+#                     Column("wb_id", Integer, ForeignKey("word_banks.id"), primary_key=True),
+#                     Column("idx", Integer, primary_key=True),
+#                     Column("wd_id", Integer, ForeignKey("word_defs.id")),
+#                     Column("m_indce", String))
 
+class BankWord(Base):
+    __tablename__="bank_words"
+    wb_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_banks.id"), primary_key=True)
+    wb: Mapped["WordBank"]=relationship("WordBank", back_populates="bws")
+    idx: Mapped[int]=mapped_column(Integer, primary_key=True)
+    wd_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_defs.id"))
+    wd: Mapped[WordDef]=relationship(WordDef)
+    m_indice: Mapped[str]=mapped_column(String)
 
 class WordBank(Base):
     __tablename__="word_banks"
     id: Mapped[int]=mapped_column(Integer, primary_key=True)
     name: Mapped[str]=mapped_column(String)
-    wds: Mapped[List[WordDef]]=relationship("WordDef", secondary=bank_wd_tbl)
+    bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb")
 
 snt_wd_tbl=Table("snt_keywords", Base.metadata, 
                     Column("snt_id", Integer, ForeignKey("sentences.id"), primary_key=True),
@@ -55,9 +64,13 @@ class Sentence(Base):
     text: Mapped[str]=mapped_column(String)
     keywords: Mapped[List[WordMeaning]]=relationship("WordMeaning", secondary=snt_wd_tbl)
 
-exec_wd_tbl=Table("exercise_word_def", Base.metadata, 
-                    Column("e_id", Integer, ForeignKey("exercises.id"), primary_key=True),
-                    Column("wd_id", Integer, ForeignKey("word_defs.id"), primary_key=True))
+class ExeciseWord(Base):
+    __tablename__="exercise_word"
+    e_id: Mapped[int]=mapped_column(Integer, ForeignKey("exercises.id"), primary_key=True)
+    exec: Mapped["Exercise"]=relationship("Exercise", back_populates="ews")
+    wd_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_defs.id"))
+    wd: Mapped[WordDef]=relationship(WordDef)
+    m_indice: Mapped[str]=mapped_column(String)
 
 exec_snt_tbl=Table("exercise_snt", Base.metadata, 
                     Column("e_id", Integer, ForeignKey("exercises.id"), primary_key=True),
@@ -67,7 +80,7 @@ class Exercise(Base):
     __tablename__="exercises"
     id: Mapped[int]=mapped_column(Integer, primary_key=True)
     dt: Mapped[datetime.date]=mapped_column(Date)
-    wds: Mapped[List[WordDef]]=relationship("WordDef", secondary=exec_wd_tbl)
+    ews: Mapped[List[ExeciseWord]]=relationship(ExeciseWord, back_populates="exec")
     snts: Mapped[List[Sentence]]=relationship("Sentence", secondary=exec_snt_tbl)
 
 sprint_prac_tbl=Table("sprint_practice", Base.metadata, 

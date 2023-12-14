@@ -1,7 +1,7 @@
 from typing import Sequence
 from sqlalchemy import create_engine, select
 from sqlalchemy.orm import Session, joinedload
-from .models import Exercise, Practice, Sentence, Sprint, WordBank, WordDef, WordMeaning
+from .models import Exercise, Practice, Sentence, Sprint, WordBank, WordDef, WordMeaning, BankWord, ExeciseWord
 
 
 def open_session():
@@ -43,14 +43,16 @@ def get_snts(s: Session, words: Sequence[str])->Sequence[Sentence]:
   return r.unique().all()
 
 def get_exec(s: Session, e_id: int)->Exercise:
-  q=select(Exercise).where(Exercise.id==e_id).options(joinedload(Exercise.wds)).options(joinedload(Exercise.snts).joinedload(Sentence.keywords))
+  q=select(Exercise).where(Exercise.id==e_id) \
+    .options(joinedload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings)) \
+    .options(joinedload(Exercise.snts).joinedload(Sentence.keywords))
   r=s.scalars(q)
   exec=r.unique().first()
   return exec
 
 def get_sprint(s: Session, sp_id: int)->Sprint:
   q=select(Sprint).where(Sprint.id==sp_id) \
-    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).joinedload(WordBank.wds).joinedload(WordDef.meanings)) \
+    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).joinedload(WordBank.wbs).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
     .options(joinedload(Sprint.execs).joinedload(Exercise.wds).joinedload(WordDef.meanings))
   r=s.scalars(q)
   sp=r.unique().first()

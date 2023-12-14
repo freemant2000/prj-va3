@@ -41,4 +41,5 @@ def add_word_def(s: Session):
     print(wd.id)
 
 with open_session() as s:
-  add_word_def(s)
+  exec=get_exec(s, 0)
+  print(exec)
