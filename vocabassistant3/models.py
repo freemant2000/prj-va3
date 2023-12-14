@@ -31,14 +31,8 @@ class WordMeaning(Base):
     p_of_s: Mapped[str]=mapped_column(String)
     meaning: Mapped[str]=mapped_column(String)
 
-# bank_wd_tbl=Table("bank_word", Base.metadata, 
-#                     Column("wb_id", Integer, ForeignKey("word_banks.id"), primary_key=True),
-#                     Column("idx", Integer, primary_key=True),
-#                     Column("wd_id", Integer, ForeignKey("word_defs.id")),
-#                     Column("m_indce", String))
-
 class BankWord(Base):
-    __tablename__="bank_words"
+    __tablename__="bank_word"
     wb_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_banks.id"), primary_key=True)
     wb: Mapped["WordBank"]=relationship("WordBank", back_populates="bws")
     idx: Mapped[int]=mapped_column(Integer, primary_key=True)
@@ -51,6 +45,8 @@ class WordBank(Base):
     id: Mapped[int]=mapped_column(Integer, primary_key=True)
     name: Mapped[str]=mapped_column(String)
     bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb")
+    def __str__(self) -> str:
+        return f"WordBank {self.id} {self.name} {len(self.bws)} words"
 
 snt_wd_tbl=Table("snt_keywords", Base.metadata, 
                     Column("snt_id", Integer, ForeignKey("sentences.id"), primary_key=True),
@@ -101,8 +97,8 @@ class Practice(Base):
     hard_only: Mapped[bool]=mapped_column(Boolean)
     assess_dt: Mapped[datetime.date]=mapped_column(Date)
 
-    def get_wds(self)->Sequence[WordDef]:
-        return self.wb.wds[self.fr_idx:self.to_idx+1]
+    def get_bws(self)->Sequence[BankWord]:
+        return self.wb.bws[self.fr_idx:self.to_idx+1]
 
 sprint_exec_tbl=Table("sprint_exercise", Base.metadata, 
                     Column("sp_id", Integer, ForeignKey("sprints.id"), primary_key=True),

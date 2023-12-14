@@ -50,10 +50,17 @@ def get_exec(s: Session, e_id: int)->Exercise:
   exec=r.unique().first()
   return exec
 
+def get_word_bank(s: Session, wb_id: int)->WordBank:
+  q=select(WordBank).where(WordBank.id==wb_id) \
+    .options(joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings))
+  r=s.scalars(q)
+  exec=r.unique().first()
+  return exec
+
 def get_sprint(s: Session, sp_id: int)->Sprint:
   q=select(Sprint).where(Sprint.id==sp_id) \
-    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).joinedload(WordBank.wbs).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
-    .options(joinedload(Sprint.execs).joinedload(Exercise.wds).joinedload(WordDef.meanings))
+    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
+    .options(joinedload(Sprint.execs).joinedload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
   r=s.scalars(q)
   sp=r.unique().first()
   return sp

@@ -19,14 +19,14 @@ class TestVA3(TestCase):
         self.assertEquals(sp.start_dt, date(2023, 12, 4))
         self.assertEquals(len(sp.execs), 2)
         self.assertEquals(sp.execs[0].dt, date(2023, 12, 4))
-        self.assertEquals(len(sp.execs[0].wds), 8)
+        self.assertEquals(len(sp.execs[0].ews), 8)
         self.assertEquals(sp.execs[1].dt, date(2023, 12, 5))
-        total=sum(len(p.get_wds()) for p in sp.pracs)
+        total=sum(len(p.get_bws()) for p in sp.pracs)
         self.assertEquals(total, 18)
 
     def test_get_exercise(self):
         e=get_exec(self.s, 0)
-        self.assertEquals(len(e.wds), 8)
+        self.assertEquals(len(e.ews), 8)
         self.assertEquals(len(e.snts), 3)
 
     def test_get_word_def(self):
@@ -41,6 +41,10 @@ class TestVA3(TestCase):
         self.assertEquals(len(wds), 2)
         self.assertEquals(wds[0].word, "flow")
         self.assertEquals(wds[1].word, "fight")
+
+    def test_get_word_bank(self):
+        wb=get_word_bank(self.s, 0)
+        self.assertEquals(len(wb.bws), 13)
 
     def test_add_word_def(self):
         self.s.begin()

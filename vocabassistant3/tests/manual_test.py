@@ -46,7 +46,10 @@ def show_exec(exec: Exercise):
   for ew in exec.ews:
     print(ew)
 
+def show_word_bank(wb: WordBank):
+  print(wb)
+
 with open_session() as s:
-  exec=get_exec(s, 0)
-  show_exec(exec)
+  wb=get_word_bank(s, 0)
+  show_word_bank(wb)
   
