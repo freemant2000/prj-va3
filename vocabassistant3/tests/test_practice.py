@@ -12,6 +12,8 @@ class TestPractice(TestCase):
         self.assertEquals(p.fr_idx, 0)
         self.assertEquals(p.to_idx, 10)
         self.assertEquals(p.wb.name, "two-goats-level-2")
+        self.assertEquals(len(p.hard_w_indice), 3)
+
     def test_add_practice(self):
         self.s.begin()
         add_practice(self.s, 1, 3, 4)

@@ -4,7 +4,13 @@ from sqlalchemy.types import Integer, Date, Boolean
 from datetime import date
 from .db_base import Base
 from .word_bank import WordBank, BankWord, get_word_bank
-from typing import Sequence
+from typing import List, Sequence, Tuple
+
+class PracticeHard(Base):
+    __tablename__="practice_hard"
+    p_id: Mapped[int]=mapped_column(Integer, ForeignKey("practices.id"), primary_key=True)
+    prac: Mapped["Practice"]=relationship("Practice", back_populates="hard_w_indice")
+    w_idx: Mapped[int]=mapped_column(Integer, primary_key=True)
 
 class Practice(Base):
     __tablename__="practices"
@@ -15,6 +21,8 @@ class Practice(Base):
     to_idx: Mapped[int]=mapped_column(Integer)
     hard_only: Mapped[bool]=mapped_column(Boolean)
     assess_dt: Mapped[date]=mapped_column(Date)
+    stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"), primary_key=True)
+    hard_w_indice: Mapped[List[int]]=relationship(PracticeHard, back_populates="prac")
 
     def get_bws(self)->Sequence[BankWord]:
         return self.wb.bws[self.fr_idx:self.to_idx+1]
@@ -22,7 +30,9 @@ class Practice(Base):
         return self.to_idx-self.fr_idx+1
 
 def get_practice(s: Session, p_id: int)->Practice:
-    q=select(Practice).where(Practice.id==p_id).options(joinedload(Practice.wb))
+    q=select(Practice).where(Practice.id==p_id)\
+        .options(joinedload(Practice.wb))\
+        .options(joinedload(Practice.hard_w_indice))
     r=s.scalars(q)
     p=r.unique().first()
     return p
@@ -47,7 +57,7 @@ def add_next_practice(s: Session, p_id: int):
     p=Practice(wb_id=p.wb_id, fr_idx=fr_idx, to_idx=to_idx, hard_only=False, assess_dt=date.today())
     s.add(p)
 
-def adjust_range(wb: WordBank, fr_idx: int, to_idx: int)->(int, int):
+def adjust_range(wb: WordBank, fr_idx: int, to_idx: int)->Tuple[int, int]:
     max_idx=len(wb.bws)-1
     fr_idx=min(fr_idx, max_idx)
     to_idx=min(to_idx, max_idx)
