@@ -16,6 +16,15 @@ class TestPractice(TestCase):
         p.hard_only=True
         self.assertEquals(p.get_no_words(), 3)
 
+    def test_get_words(self):
+       p=get_practice(self.s, 0)
+       bws=p.get_bws()
+       self.assertEquals(len(bws), 11)
+       p.hard_only=True
+       bws=p.get_bws()
+       self.assertEquals(len(bws), 3)
+       self.assertEquals(bws[0].wd_id, 1)
+
     def test_get_practice(self):
         p=get_practice(self.s, 0)
         self.assertEquals(p.fr_idx, 0)

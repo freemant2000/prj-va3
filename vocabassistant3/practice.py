@@ -29,7 +29,12 @@ class Practice(Base):
     hard_w_indice: Mapped[List[PracticeHard]]=relationship(PracticeHard, back_populates="prac")
 
     def get_bws(self)->Sequence[BankWord]:
-        return self.wb.bws[self.fr_idx:self.to_idx+1]
+        bws=self.wb.bws[self.fr_idx:self.to_idx+1]
+        if self.hard_only:
+            return [self.wb.bws[ph.w_idx] for ph in self.hard_w_indice]
+        else:
+            return bws
+
     def get_no_words(self)->int:
         return self.to_idx-self.fr_idx+1 if not self.hard_only else len(self.hard_w_indice)
 
