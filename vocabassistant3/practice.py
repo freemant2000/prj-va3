@@ -18,6 +18,8 @@ class Practice(Base):
 
     def get_bws(self)->Sequence[BankWord]:
         return self.wb.bws[self.fr_idx:self.to_idx+1]
+    def get_no_words(self)->int:
+        return self.to_idx-self.fr_idx+1
 
 def get_practice(s: Session, p_id: int)->Practice:
     q=select(Practice).where(Practice.id==p_id).options(joinedload(Practice.wb))
@@ -26,14 +28,31 @@ def get_practice(s: Session, p_id: int)->Practice:
     return p
 
 def add_practice(s: Session, wb_id: int, fr_idx: int, to_idx: int):
-    if fr_idx>to_idx or fr_idx<0:
-        raise ValueError(f"Practice word range is invalid: {fr_idx} to {to_idx}")
     wb=get_word_bank(s, wb_id)
     if not wb:
         raise ValueError(f"WordBank {wb_id} not found")
+    fr_idx, to_idx=adjust_range(wb, fr_idx, to_idx)
+    validate_range(fr_idx, to_idx)
+    p=Practice(wb_id=wb_id, fr_idx=fr_idx, to_idx=to_idx, hard_only=False, assess_dt=date.today())
+    s.add(p)
+
+def add_next_practice(s: Session, p_id: int):
+    p=get_practice(p_id)
+    if not p:
+        raise ValueError(f"Practice {p_id} not found")
+    fr_idx=p.to_idx+1
+    to_idx=p.fr_idx+p.get_no_words()
+    fr_idx, to_idx=adjust_range(p.wb, fr_idx, to_idx)
+    validate_range(fr_idx, to_idx)
+    p=Practice(wb_id=p.wb_id, fr_idx=fr_idx, to_idx=to_idx, hard_only=False, assess_dt=date.today())
+    s.add(p)
+
+def adjust_range(wb: WordBank, fr_idx: int, to_idx: int)->(int, int):
     max_idx=len(wb.bws)-1
     fr_idx=min(fr_idx, max_idx)
     to_idx=min(to_idx, max_idx)
-    p=Practice(wb_id=wb_id, fr_idx=fr_idx, to_idx=to_idx, hard_only=0, assess_dt=date.today())
-    s.add(p)
+    return (fr_idx, to_idx)
 
+def validate_range(fr_idx: int, to_idx: int):
+    if fr_idx>to_idx or fr_idx<0:
+        raise ValueError(f"Practice word range is invalid: {fr_idx} to {to_idx}")
