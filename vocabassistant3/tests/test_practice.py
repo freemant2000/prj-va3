@@ -1,12 +1,21 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.practice import add_practice, get_practice
+from vocabassistant3.practice import Practice, PracticeHard, add_practice, get_practice, get_student
 
 class TestPractice(TestCase):
     def setUp(self) -> None:
         self.s=open_session()
     def tearDown(self) -> None:
         self.s.close()
+    def test_no_words(self):
+        p=Practice(fr_idx=1, to_idx=5)
+        p.hard_w_indice.append(PracticeHard(w_idx=2))
+        p.hard_w_indice.append(PracticeHard(w_idx=3))
+        p.hard_w_indice.append(PracticeHard(w_idx=5))
+        self.assertEquals(p.get_no_words(), 5)
+        p.hard_only=True
+        self.assertEquals(p.get_no_words(), 3)
+
     def test_get_practice(self):
         p=get_practice(self.s, 0)
         self.assertEquals(p.fr_idx, 0)
@@ -27,3 +36,9 @@ class TestPractice(TestCase):
 
     def reset_word_seq(self):
         set_seq_val(self.s, "practice_seq", 10)
+
+    def test_get_student(self):
+        stu=get_student(self.s, 0)
+        self.assertEquals(stu.name, "Jodie")
+        self.assertEquals(len(stu.pracs), 2)
+

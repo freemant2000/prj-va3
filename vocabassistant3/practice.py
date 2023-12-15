@@ -1,10 +1,13 @@
+from turtle import back
 from sqlalchemy import ForeignKey, Sequence as Seq, select
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
-from sqlalchemy.types import Integer, Date, Boolean
+from sqlalchemy.types import Integer, Date, Boolean, String
 from datetime import date
 from .db_base import Base
 from .word_bank import WordBank, BankWord, get_word_bank
 from typing import List, Sequence, Tuple
+
+
 
 class PracticeHard(Base):
     __tablename__="practice_hard"
@@ -22,12 +25,25 @@ class Practice(Base):
     hard_only: Mapped[bool]=mapped_column(Boolean)
     assess_dt: Mapped[date]=mapped_column(Date)
     stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"), primary_key=True)
-    hard_w_indice: Mapped[List[int]]=relationship(PracticeHard, back_populates="prac")
+    student: Mapped["Student"]=relationship("Student", back_populates="pracs")
+    hard_w_indice: Mapped[List[PracticeHard]]=relationship(PracticeHard, back_populates="prac")
 
     def get_bws(self)->Sequence[BankWord]:
         return self.wb.bws[self.fr_idx:self.to_idx+1]
     def get_no_words(self)->int:
-        return self.to_idx-self.fr_idx+1
+        return self.to_idx-self.fr_idx+1 if not self.hard_only else len(self.hard_w_indice)
+
+class Student(Base):
+    __tablename__="students"
+    id: Mapped[int]=mapped_column(Integer, Seq("student_seq"), primary_key=True)
+    name: Mapped[str]=mapped_column(String)
+    pracs: Mapped[Practice]=relationship(Practice, back_populates="student")
+
+def get_student(s: Session, stu_id: int)->Student:
+    q=select(Student).where(Student.id==stu_id)\
+        .options(joinedload(Student.pracs).joinedload(Practice.wb).joinedload(WordBank.bws))
+    stu=s.scalars(q).first()
+    return stu
 
 def get_practice(s: Session, p_id: int)->Practice:
     q=select(Practice).where(Practice.id==p_id)\
