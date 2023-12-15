@@ -1,10 +1,11 @@
+-- create extension pg_trgm;
 -- createdb -O dba -E UTF8 va3
 
 create table word_banks(id integer primary key, name varchar(50));
 create table bank_word(wb_id integer, idx integer, wd_id integer, m_indice varchar(50), primary key(wb_id, idx));
 create table word_defs(id integer primary key, word varchar(50));
 create index on word_defs(word);
-create index on word_defs using gin (word);
+create index on word_defs using gin (word gin_trgm_ops);
 create table word_meanings(wd_id integer, idx integer, p_of_s varchar(10), meaning varchar(50), primary key(wd_id, idx));
 create table verb_forms(wd_id integer primary key, past_form varchar(50), pp_form varchar(50), ing_form varchar(50));
 
@@ -90,7 +91,8 @@ insert into word_defs values(19, 'river');
 insert into word_meanings values(19, 0, 'n', '河流');
 
 
-create table practices(id integer primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only boolean, assess_dt date);
+create table practices(id integer primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only boolean, assess_dt date, stu_id integer);
+create table practice_hard(p_id integer, w_idx integer, primary key(p_id, w_idx));
 create table sprints(id integer primary key, start_dt date);
 create table sprint_practice(sp_id integer, p_id integer, primary key(sp_id, p_id));
 create table exercises(id integer primary key, dt date);
@@ -98,8 +100,11 @@ create table exercise_word(e_id integer, wd_id integer, m_indice varchar(50), pr
 create table exercise_snt(e_id integer, s_id integer, primary key(e_id, s_id));
 create table sprint_exercise(sp_id integer, idx integer, e_id integer, primary key(sp_id, idx));
 
-insert into practices values(0, 0, 0, 10, 'f', '2023-12-1');
-insert into practices values(1, 1, 0, 6, 'f', '2023-12-2');
+insert into practices values(0, 0, 0, 10, 'f', '2023-12-1', 0);
+insert into practice_hard values(0, 1);
+insert into practice_hard values(0, 3);
+insert into practice_hard values(0, 8);
+insert into practices values(1, 1, 0, 6, 'f', '2023-12-2', 0);
 insert into sprints values(0, '2023-12-4');
 insert into sprint_practice values(0, 0);
 insert into sprint_practice values(0, 1);
@@ -157,3 +162,8 @@ insert into snt_keywords values(6, 7, 0);
 insert into snt_keywords values(6, 8, 0);
 insert into snt_keywords values(6, 9, 0);
 
+create table students(id integer primary key, name varchar(100));
+create index on students(name);
+create index on students using gin (name gin_trgm_ops);
+insert into students values(0, 'Jodie');
+insert into students values(1, 'Holly');
