@@ -38,4 +38,5 @@ class TestWordBank(TestCase):
         self.s.rollback()
 
     def reset_word_seq(self):
+        set_seq_val(self.s, "word_def_seq", 20)
         set_seq_val(self.s, "word_bank_seq", 10)
