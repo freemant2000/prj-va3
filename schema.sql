@@ -33,11 +33,11 @@ insert into bank_word values(1, 5, 17, '0');
 insert into bank_word values(1, 6, 18, '0,1');
 
 
-create sequence word_seq;
-select setval('word_seq', 20);
+create sequence word_def_seq;
+select setval('word_def_seq', 20);
 
-create sequence word_bank;
-select setval('word_bank', 10);
+create sequence word_bank_seq;
+select setval('word_bank_seq', 10);
 
 insert into word_defs values(0, 'steep');
 insert into word_meanings values(0, 0, 'adj', '陡峭（斜）的');

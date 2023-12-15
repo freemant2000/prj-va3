@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 import re
 from typing import Dict, Sequence, List
-from sqlalchemy import select, ForeignKey, Sequence
+from sqlalchemy import select, ForeignKey, Sequence as Seq
 from sqlalchemy.orm import Session, Mapped, mapped_column, relationship, joinedload
 from sqlalchemy.types import String, Integer
 from .db_base import Base
@@ -18,7 +18,7 @@ class BankWord(Base):
 
 class WordBank(Base):
     __tablename__="word_banks"
-    id: Mapped[int]=mapped_column(Integer, primary_key=True)
+    id: Mapped[int]=mapped_column(Integer, Seq("word_bank_seq"), primary_key=True)
     name: Mapped[str]=mapped_column(String)
     bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb", cascade="all")
     def __str__(self) -> str:

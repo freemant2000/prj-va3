@@ -1,5 +1,5 @@
 from unittest import TestCase
-from vocabassistant3.db_base import open_session
+from vocabassistant3.db_base import open_session, set_seq_val
 from vocabassistant3.word_bank import WordBankDraft, WordBankItemOld, load_wb_input, get_word_bank, add_wb_draft
 from vocabassistant3.word_def import WordDef
 from sqlalchemy import text
@@ -30,9 +30,12 @@ class TestWordBank(TestCase):
         wd.add_meaning("n", "山")
         wbd.wds.append(wd)
         wbd.use_old_wds[wd]=WordBankItemOld(1, "0")
-        wb=add_wb_draft(self.s, wbd)
+        add_wb_draft(self.s, wbd)
+        wb=get_word_bank(self.s, 11)
+        self.assertEquals(wb.name, "my wb1")
+        self.assertEquals(len(wb.bws), 2)
         self.reset_word_seq() # seq is done outside transaction
         self.s.rollback()
 
     def reset_word_seq(self):
-        self.s.execute(text("select setval('word_bank', 10)"))
+        set_seq_val(self.s, "word_bank_seq", 10)

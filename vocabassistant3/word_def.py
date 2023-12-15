@@ -6,7 +6,7 @@ from .db_base import Base
 
 class WordDef(Base):
     __tablename__="word_defs"
-    id: Mapped[int]=mapped_column(Integer, Seq("word_seq"), primary_key=True)
+    id: Mapped[int]=mapped_column(Integer, Seq("word_def_seq"), primary_key=True)
     word: Mapped[str]=mapped_column(String)
     meanings: Mapped[List["WordMeaning"]]=relationship("WordMeaning", order_by="asc(WordMeaning.idx)", back_populates="wd", cascade="all, delete-orphan")
     def add_meaning(self, p_of_s: str, meaning: str)->None:
