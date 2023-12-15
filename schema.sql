@@ -39,6 +39,9 @@ select setval('word_def_seq', 20);
 create sequence word_bank_seq;
 select setval('word_bank_seq', 10);
 
+create sequence practice_seq;
+select setval('practice_seq', 10);
+
 insert into word_defs values(0, 'steep');
 insert into word_meanings values(0, 0, 'adj', '陡峭（斜）的');
 insert into word_defs values(1, 'mountain');
@@ -87,7 +90,7 @@ insert into word_defs values(19, 'river');
 insert into word_meanings values(19, 0, 'n', '河流');
 
 
-create table practices(id integer primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only integer, assess_dt date);
+create table practices(id integer primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only boolean, assess_dt date);
 create table sprints(id integer primary key, start_dt date);
 create table sprint_practice(sp_id integer, p_id integer, primary key(sp_id, p_id));
 create table exercises(id integer primary key, dt date);
@@ -95,8 +98,8 @@ create table exercise_word(e_id integer, wd_id integer, m_indice varchar(50), pr
 create table exercise_snt(e_id integer, s_id integer, primary key(e_id, s_id));
 create table sprint_exercise(sp_id integer, idx integer, e_id integer, primary key(sp_id, idx));
 
-insert into practices values(0, 0, 0, 10, 0, '2023-12-1');
-insert into practices values(1, 1, 0, 6, 0, '2023-12-2');
+insert into practices values(0, 0, 0, 10, 'f', '2023-12-1');
+insert into practices values(1, 1, 0, 6, 'f', '2023-12-2');
 insert into sprints values(0, '2023-12-4');
 insert into sprint_practice values(0, 0);
 insert into sprint_practice values(0, 1);

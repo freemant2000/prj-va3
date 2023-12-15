@@ -1,7 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
 from vocabassistant3.word_def import get_word_defs, get_similar_words, WordDef
-from sqlalchemy import text
 
 class TestWordDef(TestCase):
     def setUp(self) -> None:
