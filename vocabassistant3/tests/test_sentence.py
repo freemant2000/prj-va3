@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.sentence import SentenceDraft, add_snt_draft, get_snt, get_snts
+from vocabassistant3.sentence import SentenceDraft, add_snt_draft, get_snt, get_snts, load_snt_draft
 from vocabassistant3.word_def import WordMeaning
 
 class TestWordBank(TestCase):
@@ -12,6 +12,12 @@ class TestWordBank(TestCase):
         snts=get_snts(self.s, ["squirrel", "river", "trunk"])
         self.assertEquals(len(snts), 4)
         self.assertEquals(snts[0].text, "這條河裡的水在快速地流動。")
+    def test_load_snt_draft(self):
+        sd=load_snt_draft("vocabassistant3/tests/test_snt_draft.txt")
+        self.assertEquals(sd.text, "這個山谷有巨大的有角的松鼠。")
+        self.assertEquals(len(sd.keywords), 3)
+        self.assertEquals(len(sd.kw_meanings), 1)
+
     def test_add_snt_draft(self):
         self.s.begin()
         sd=SentenceDraft(text="這個山谷有巨大的有角的松鼠。", 

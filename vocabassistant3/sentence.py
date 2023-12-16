@@ -43,8 +43,8 @@ def get_snts_from_text(s: Session, text: str)->Sequence[Sentence]:
 
 @dataclass
 class SentenceDraft:
-    text: str
-    keywords: Sequence[str] = field(default_factory=list)
+    text: str = ""
+    keywords: List[str] = field(default_factory=list)
     kw_meanings: Dict[str, WordMeaning] = field(default_factory=dict)
     kw_cands: Dict[str, Sequence[WordMeaning]] = field(default_factory=dict)    
 
@@ -94,5 +94,32 @@ def refine_snt_draft(s: Session, sd: SentenceDraft):
                         sd.kw_cands[kw]=wd.meanings
                 else:
                     sd.kw_cands[kw]=[wm for wm in wd.meanings for wd in wds]
+
+def load_snt_draft(path: str)->SentenceDraft:
+  sd=SentenceDraft()
+  with open(path) as f:
+    lines=f.readlines()
+    head=lines.pop(0).strip()
+    if not head:
+      raise ValueError("The first line is empty")
+    sd.text=head
+    for line in lines:
+      if line.startswith(" ") or line.startswith("\t"): # a keyword
+            line=line.strip()
+            if line:
+                ps=line.split("<=")
+                if len(ps)==1:
+                    sd.keywords.append(line)
+                elif len(ps)==2:
+                    kw=ps[0]
+                    wm_str=ps[1]
+                    wm_parts=wm_str.split(",")
+                    if len(wm_parts)!=2:
+                        raise ValueError(f"Invalid WordMeaning {wm_str}")
+                    sd.keywords.append(kw)
+                    sd.kw_meanings[kw]=WordMeaning(wd_id=int(wm_parts[0]), idx=int(wm_parts[1]))
+      else:
+          raise ValueError("Indented keyword expected")
+    return sd
 
 
