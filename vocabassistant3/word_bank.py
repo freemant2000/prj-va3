@@ -46,11 +46,19 @@ def add_word_def(s: Session):
 
 @dataclass
 class WordBankDraft:
-  name: str=""
-  wds: Sequence[WordDef] = field(default_factory=list)
-  word_usages: Dict[WordDef, WordUsage]= field(default_factory=dict)
-  cands: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
-  mismatches: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
+    name: str=""
+    wds: Sequence[WordDef] = field(default_factory=list)
+    word_usages: Dict[WordDef, WordUsage]= field(default_factory=dict)
+    cands: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
+    mismatches: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
+
+    def is_complete(self)->bool:
+        if self.cands or self.mismatches:
+            return False
+        for wd in self.wds:
+            if not wd.meanings:
+                return False
+        return True
 
 def refine_wb_draft(s: Session, wbd: WordBankDraft):
   wbd.cands.clear()
@@ -88,6 +96,7 @@ def show_wb_draft(wbd: WordBankDraft):
             print(wd.word)
             print("-------")
             show_word_def(wd2)
+    print("Complete" if wbd.is_complete() else "Incomplete")
 
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
     for wd in wbd.wds:
