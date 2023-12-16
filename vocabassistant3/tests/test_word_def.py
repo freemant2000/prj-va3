@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_def import get_word_defs, get_similar_words, WordDef
+from vocabassistant3.word_def import get_word_defs, get_similar_words, WordDef, get_word_meaning, get_word_meanings
 
 class TestWordDef(TestCase):
     def setUp(self) -> None:
@@ -25,6 +25,18 @@ class TestWordDef(TestCase):
         wd.add_meaning("n", "手")
         wd.add_meaning("v", "遞給")
         self.assertEquals(wd.get_all_m_indice(), "0,1")
+
+    def test_get_word_meaning(self):
+        wm=get_word_meaning(self.s, 3, 2)
+        self.assertEquals(wm.wd.word, "trunk")
+        self.assertEquals(wm.meaning, "大木箱")
+
+    def test_get_word_meanings(self):
+        wms=get_word_meanings(self.s, [3, 10], [2, 0])
+        self.assertEquals(wms[0].wd.word, "trunk")
+        self.assertEquals(wms[0].meaning, "大木箱")
+        self.assertEquals(wms[1].wd.word, "horn")
+        self.assertEquals(wms[1].meaning, "（動物）角")
 
     def test_add_word_def(self):
         self.s.begin()

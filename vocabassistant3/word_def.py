@@ -1,4 +1,5 @@
-from sqlalchemy import ForeignKey, Sequence as Seq, select
+from operator import and_
+from sqlalchemy import ForeignKey, Sequence as Seq, select, or_
 from sqlalchemy.orm import Session, joinedload, Mapped, mapped_column, relationship
 from sqlalchemy.types import String, Integer
 from typing import Sequence, List
@@ -31,6 +32,23 @@ class WordMeaning(Base):
     idx: Mapped[int]=mapped_column(Integer, primary_key=True)
     p_of_s: Mapped[str]=mapped_column(String)
     meaning: Mapped[str]=mapped_column(String)
+
+def get_word_meaning(s: Session, wd_id: int, idx: int)->WordMeaning:
+    q=select(WordMeaning).where(WordMeaning.wd_id==wd_id, WordMeaning.idx==idx)\
+        .options(joinedload(WordMeaning.wd))
+    r=s.scalars(q)
+    wm=r.first()
+    return wm
+
+def get_word_meanings(s: Session, wd_ids: Sequence[int], indice: Sequence[int])->Sequence[WordMeaning]:
+    q=select(WordMeaning)\
+        .options(joinedload(WordMeaning.wd)) \
+        .order_by(WordMeaning.wd_id.asc(), WordMeaning.idx.asc())
+    q=q.where(or_(*[
+        and_(WordMeaning.wd_id==wd_ids[i], WordMeaning.idx==indice[i]) for i in range(len(wd_ids))]))
+    r=s.scalars(q)
+    wms=r.unique().all()
+    return wms
 
 def get_word_defs(s: Session, wd_ids: Sequence[int])->Sequence[WordDef]:
   q=select(WordDef).where(WordDef.id.in_(wd_ids)).options(joinedload(WordDef.meanings)) \

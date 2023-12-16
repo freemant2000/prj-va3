@@ -43,6 +43,9 @@ select setval('word_bank_seq', 10);
 create sequence practice_seq;
 select setval('practice_seq', 10);
 
+create sequence sentence_seq;
+select setval('sentence_seq', 10);
+
 insert into word_defs values(0, 'steep');
 insert into word_meanings values(0, 0, 'adj', '陡峭（斜）的');
 insert into word_defs values(1, 'mountain');

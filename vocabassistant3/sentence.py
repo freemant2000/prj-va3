@@ -1,12 +1,13 @@
+from ast import keyword
 from dataclasses import dataclass, field
-from sqlalchemy import select, ForeignKey, Table, Column, ForeignKeyConstraint
+from sqlalchemy import select, ForeignKey, Table, Column, ForeignKeyConstraint, Sequence as Seq
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import String, Integer
 from typing import Dict, List, Sequence
 
 from vocabassistant3.word_bank import show_word_def
 from .db_base import Base
-from .word_def import WordDef, WordMeaning, get_word_def
+from .word_def import WordDef, WordMeaning, get_word_def, get_word_meanings
 
 snt_wd_tbl=Table("snt_keywords", Base.metadata, 
                     Column("snt_id", Integer, ForeignKey("sentences.id"), primary_key=True),
@@ -16,7 +17,7 @@ snt_wd_tbl=Table("snt_keywords", Base.metadata,
 
 class Sentence(Base):
     __tablename__="sentences"
-    id: Mapped[int]=mapped_column(Integer, primary_key=True)
+    id: Mapped[int]=mapped_column(Integer, Seq("sentence_seq"), primary_key=True)
     text: Mapped[str]=mapped_column(String)
     keywords: Mapped[List[WordMeaning]]=relationship("WordMeaning", secondary=snt_wd_tbl)
 
@@ -40,6 +41,19 @@ class SentenceDraft:
     keywords: Sequence[str] = field(default_factory=list)
     kw_meanings: Dict[str, WordMeaning] = field(default_factory=dict)
     kw_cands: Dict[str, Sequence[WordMeaning]] = field(default_factory=dict)    
+
+    def check_complete(self):
+        for kw in self.keywords:
+            if not kw in self.kw_meanings:
+                raise ValueError(f"Keyword {kw} in {self.text} has no assigned meaning")
+
+def add_snt_draft(s: Session, sd: SentenceDraft):
+    sd.check_complete()
+    snt=Sentence(text=sd.text)
+    snt.keywords=get_word_meanings(s, \
+                        [wm.wd_id for wm in sd.kw_meanings.values()], \
+                        [wm.idx for wm in sd.kw_meanings.values()])
+    s.add(snt)
 
 def show_snt_draft(sd: SentenceDraft):
     print(sd.text)

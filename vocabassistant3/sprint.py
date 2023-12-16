@@ -87,6 +87,9 @@ class ExerciseDraft:
 def select_words_make_draft(sp: Sprint, indice: Sequence[int]):
     pass
 
+def add_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
+    pass
+
 def show_exec_draft(ed: ExerciseDraft):
     for word in ed.words:
         if word in ed.wus:
