@@ -133,13 +133,8 @@ def show_exec_draft(ed: ExerciseDraft):
             print(f"{word}<={wu.wd.id},{wu.m_indice.replace(',', '-')}")
         else:
             print(word)
-    for st in ed.snt_texts:
-        if st in ed.old_snts:
-            snt=ed.old_snts[st]
-            print(f"{st}<={snt.id}")
-        elif st in ed.new_snt_drafts:
-            sd=ed.new_snt_drafts[st]
-            show_snt_draft(sd)
+    for sd in ed.sds:
+        show_snt_draft(sd)
             
 def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
     for word in ed.words:
@@ -148,21 +143,9 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
             if bws:
                 wu=WordUsage(wd=bws[0].wd, m_indice=bws[0].m_indice)
                 ed.wus[word]=wu
-    for st in ed.snt_texts:
-        if st in ed.new_snt_drafts:
-            sd=ed.new_snt_drafts[st]
-            refine_snt_draft(s, sd)
-        elif not st in ed.old_snts:
-            snts=get_snts_from_text(s, st)
-            if snts:
-                if len(snts)==1:
-                    ed.old_snts[st]=snts[0]
-                else:
-                    print("Found multiple sentence matches")
-                    for snt in snts:
-                        show_snt(snt)
-            else:
-                print(f"Sentence {st} not found")
+    for sd in ed.sds:
+        refine_snt_draft(s, sd)
+
 
 def show_sprint(sp: Sprint):
     print(f"Spring {sp.id} started on {sp.start_dt}")

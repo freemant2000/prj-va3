@@ -54,7 +54,7 @@ class SentenceDraft:
                 raise ValueError(f"Keyword {kw} in {self.text} has no assigned meaning")
 
     def is_complete(self):
-        return len(self.keywords)==len(self.kw_meanings)
+        return self.keywords and len(self.keywords)==len(self.kw_meanings)
 
 def add_snt_draft(s: Session, sd: SentenceDraft):
     sd.check_complete()
@@ -87,6 +87,10 @@ def show_snt(snt: Sentence):
 
 def refine_snt_draft(s: Session, sd: SentenceDraft):
     sd.kw_cands.clear()
+    #TODO if snt_id is specified, check if it is correct and matches the text.
+    #if snt_id is not specified, use the text to search for candidates.
+    #get_snts_from_text(sd.text)
+
     for kw in sd.keywords:
         if kw in sd.kw_meanings:
             wm=sd.kw_meanings[kw]
