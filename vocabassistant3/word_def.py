@@ -51,6 +51,9 @@ class WordMeaning(Base):
     idx: Mapped[int]=mapped_column(Integer, primary_key=True)
     p_of_s: Mapped[str]=mapped_column(String)
     meaning: Mapped[str]=mapped_column(String)
+    
+    def get_display(self)->str:
+        return f"{self.p_of_s},{self.meaning}"
 
 def get_word_meaning(s: Session, wd_id: int, idx: int)->WordMeaning:
     q=select(WordMeaning).where(WordMeaning.wd_id==wd_id, WordMeaning.idx==idx)\

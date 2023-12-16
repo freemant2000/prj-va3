@@ -31,11 +31,10 @@ def get_word_bank(s: Session, wb_id: int)->WordBank:
   exec=r.unique().first()
   return exec
 
-
-def show_word_def(wd):
-    print(f"Id {wd.id} {wd.word}")
+def show_word_def(wd: WordDef):
+    print(f"{wd.word}<={wd.id},{wd.get_all_m_indice()}")
     for m in wd.meanings:
-      print(f"\t{m.idx} {m.meaning}")
+      print("\t"+m.get_display())
 
 def add_word_def(s: Session):
     wd=WordDef(word="hand")
@@ -59,6 +58,7 @@ def refine_wb_draft(s: Session, wbd: WordBankDraft):
   for wd in wbd.wds:
     if wd in wbd.word_usages:
         wu=wbd.word_usages[wd]
+        wd.id=wu.wd.id
         wd2=get_word_def_by_id(s, wu.wd.id)
         if not wd2.is_usage(wd, wu.m_indice):
             wbd.mismatches[wd]=wd2
@@ -72,18 +72,22 @@ def show_wb_draft(wbd: WordBankDraft):
     for wd in wbd.wds:
         if wd in wbd.word_usages:
             wu=wbd.word_usages[wd]
-            print(f"{wd.word}<={wu.wd.id},{wu.m_indice}.replace(',', '-')")
+            print(f"{wd.word}<={wu.wd.id},{wu.m_indice.replace(',', '-')}")
         else:
             print(wd.word)
         for wm in wd.meanings:
             print("\t"+wm.get_display())
-    print(f"Possible matches")
-    for wd, wds in wbd.cands.items():
-        for old_wd in wds:
-            show_word_def(old_wd)
-    print(f"Mismatches")
-    for wd, wd2 in wbd.mismatches.items():
-        show_word_def(wd2)
+    if wbd.cands:
+        print(f"Possible matches")
+        for wd, wds in wbd.cands.items():
+            for old_wd in wds:
+                show_word_def(old_wd)
+    if wbd.mismatches:
+        print(f"Mismatches")
+        for wd, wd2 in wbd.mismatches.items():
+            print(wd.word)
+            print("-------")
+            show_word_def(wd2)
 
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
     for wd in wbd.wds:

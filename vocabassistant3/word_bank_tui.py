@@ -10,6 +10,6 @@ def refine_wb_draft_tui():
             wbd=parse_wb_draft(lines)
             with open_session() as s:
                 refine_wb_draft(s, wbd)
-            show_wb_draft(wbd)
+                show_wb_draft(wbd)
         except Exception as e:
             print(str(e))
