@@ -5,9 +5,9 @@ greedy
 jackal
 horn
 ==============
-this is a test.<=0
-this is a test.<=2
+這個山很陡峭。
+一隻松鼠爬上了這條樹幹。<=2
 那隻松鼠病了。
-    squirrel
+    squirrel<=4,0,n,松鼠
     sick
-this is a test.<=3
+this is a test.

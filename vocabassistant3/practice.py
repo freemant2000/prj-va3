@@ -38,6 +38,9 @@ class Practice(Base):
     def get_no_words(self)->int:
         return self.to_idx-self.fr_idx+1 if not self.hard_only else len(self.hard_w_indice)
 
+    def find_bank_words(self, word: str)->Sequence[BankWord]:
+        return [bw for bw in self.get_bws() if bw.wd.word==word]
+
 class Student(Base):
     __tablename__="students"
     id: Mapped[int]=mapped_column(Integer, Seq("student_seq"), primary_key=True)

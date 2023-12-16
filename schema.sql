@@ -135,6 +135,7 @@ insert into exercise_snt values(1, 5);
 
 
 create table sentences(id integer primary key, text varchar(100));
+create index on sentences(text);
 create table snt_keywords(snt_id integer, wd_id integer, wm_idx integer, primary key(snt_id, wd_id, wm_idx));
 create index on snt_keywords(wd_id);
 

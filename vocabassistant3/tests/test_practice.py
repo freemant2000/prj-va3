@@ -25,6 +25,13 @@ class TestPractice(TestCase):
        self.assertEquals(len(bws), 3)
        self.assertEquals(bws[0].wd_id, 1)
 
+    def test_find_bank_words(self):
+       p=get_practice(self.s, 0)
+       bws=p.find_bank_words("valley")
+       self.assertEquals(len(bws), 1)
+       bws=p.find_bank_words("wise")
+       self.assertEquals(len(bws), 0)
+
     def test_get_practice(self):
         p=get_practice(self.s, 0)
         self.assertEquals(p.fr_idx, 0)

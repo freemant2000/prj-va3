@@ -19,6 +19,15 @@ class TestSpring(TestCase):
         total=sum(len(p.get_bws()) for p in sp.pracs)
         self.assertEquals(total, 18)
 
+    def test_find_bank_words(self):
+        sp=get_sprint(self.s, 0)
+        bws=sp.find_bank_words("valley")
+        self.assertEquals(len(bws), 1)
+        bws=sp.find_bank_words("wise")
+        self.assertEquals(len(bws), 1)
+        bws=sp.find_bank_words("river")
+        self.assertEquals(len(bws), 0)
+
     def test_get_exercise(self):
         e=get_exec(self.s, 0)
         self.assertEquals(len(e.ews), 8)
