@@ -1,7 +1,7 @@
 from unittest import TestCase
 from datetime import date
 from vocabassistant3.db_base import open_session
-from vocabassistant3.sprint import get_sprint, get_exec
+from vocabassistant3.sprint import get_sprint, get_exec, load_exec_draft
 
 class TestSpring(TestCase):
     def setUp(self) -> None:
@@ -32,4 +32,9 @@ class TestSpring(TestCase):
         e=get_exec(self.s, 0)
         self.assertEquals(len(e.ews), 8)
         self.assertEquals(len(e.snts), 3)
+
+    def test_load_exec_draft(self):
+        ed=load_exec_draft("vocabassistant3/tests/test_exec_draft.txt")
+        self.assertEquals(len(ed.words), 6)
+        self.assertEquals(len(ed.sds), 4)
 

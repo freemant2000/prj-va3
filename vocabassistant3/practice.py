@@ -7,8 +7,6 @@ from .db_base import Base
 from .word_bank import WordBank, BankWord, get_word_bank
 from typing import List, Sequence, Tuple
 
-
-
 class PracticeHard(Base):
     __tablename__="practice_hard"
     p_id: Mapped[int]=mapped_column(Integer, ForeignKey("practices.id"), primary_key=True)

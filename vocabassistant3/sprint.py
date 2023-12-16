@@ -6,7 +6,7 @@ from typing import Dict, List, Sequence, Tuple
 import datetime   
 from .db_base import Base
 from .word_def import WordDef, WordMeaning, WordUsage
-from .sentence import Sentence, SentenceDraft, get_snts_from_text, refine_snt_draft, show_snt, show_snt_draft
+from .sentence import Sentence, SentenceDraft, get_snts_from_text, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
 from .practice import Practice
 from .word_bank import WordBank, BankWord
 
@@ -73,17 +73,58 @@ def get_sprint(s: Session, sp_id: int)->Sprint:
 
 @dataclass
 class ExerciseDraft:
-    words: Sequence[str] = field(default_factory=list)
+    words: List[str] = field(default_factory=list)
     wus: Dict[str, WordUsage] = field(default_factory=dict)
-    snt_texts: Sequence[str] = field(default_factory=list)
-    old_snts: Dict[str, Sentence] = field(default_factory=dict)
-    new_snt_drafts: Dict[str, SentenceDraft] = field(default_factory=dict)
+    sds: List[SentenceDraft] = field(default_factory=list)
 
 def select_words_make_draft(sp: Sprint, indice: Sequence[int]):
     pass
 
 def add_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
     pass
+
+def load_exec_draft(path: str)->ExerciseDraft:
+  with open(path) as f:
+    lines=f.readlines()
+    ed=parse_exec_draft(lines)
+    return ed
+
+def parse_exec_draft(lines: Sequence[str])->ExerciseDraft:
+    ed=ExerciseDraft()
+    expect_words=True
+    snt_lines=[]
+    for line in lines:
+        if line:
+            if expect_words:
+                line=line.strip()
+                if line.count("=")==len(line): # ==== line
+                    expect_words=False
+                    continue
+                ps=line.split("<=")
+                if len(ps)==1:
+                    ed.words.append(ps[0])
+                elif len(ps)==2:
+                    word=ps[0]
+                    wu_parts=ps[1].split(",")
+                    if len(wu_parts)!=2:
+                        raise ValueError(f"Invalid word usage {wu_parts} for {word}")
+                    wd_id=int(wu_parts[0])
+                    m_indice=wu_parts[1].replace("-", ",")
+                    ed.words.append(word)
+                    ed.wus[word]=WordUsage(WordDef(id=wd_id), m_indice=m_indice)
+                else:
+                    raise ValueError(f"Invalid word line {line}")
+            else:
+                if line.startswith(" ") or line.startswith("\t"):
+                    snt_lines.append(line)
+                else: # start a new sentence draft
+                    line=line.strip()
+                    if snt_lines:
+                        ed.sds.append(parse_snt_draft(snt_lines))
+                    snt_lines=[line]
+    if snt_lines:
+        ed.sds.append(parse_snt_draft(snt_lines))
+    return ed
 
 def show_exec_draft(ed: ExerciseDraft):
     for word in ed.words:
