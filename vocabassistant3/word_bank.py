@@ -55,15 +55,15 @@ class WordBankDraft:
   name: str=""
   wds: Sequence[WordDef] = field(default_factory=list)
   use_old_wds: Dict[WordDef, WordBankItemOld]= field(default_factory=dict)
+  cands: Dict[WordDef, Sequence[WordDef]]= field(default_factory=dict)
 
-def check_wb_draft(s: Session, wbd: WordBankDraft):
+def refine_wb_draft(s: Session, wbd: WordBankDraft):
+  wbd.cands.clear()
   for wd in wbd.wds:
     if not (wd in wbd.use_old_wds):
       wds=get_word_def(s, wd.word)
       if wds:
-        print(f"Possible matches for {wd.word}")
-        for wd2 in wds:
-          show_word_def(wd2)
+        wbd.cands[wd]=wds
 
 def show_wb_draft(wbd: WordBankDraft):
   print("WordBank "+wbd.name)
@@ -73,6 +73,10 @@ def show_wb_draft(wbd: WordBankDraft):
   for (wd, io) in wbd.use_old_wds.items():
     print(wd)
     print(io.wb_id, io.m_indice)
+  print(f"Possible matches")
+  for wd, wds in wbd.cands.items():
+    for old_wd in wds:
+      show_word_def(old_wd)
 
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
     for wd in wbd.wds:
