@@ -37,6 +37,28 @@ class TestWordDef(TestCase):
         self.assertEquals(wms[0].meaning, "大木箱")
         self.assertEquals(wms[1].wd.word, "horn")
         self.assertEquals(wms[1].meaning, "（動物）角")
+ 
+    def test_is_usage(self):
+        wd=WordDef(id=100, word="cry")
+        wd.add_meaning("n", "大叫")
+        wd.add_meaning("v", "大叫")
+        wd.add_meaning("v", "哭")
+        wd2=WordDef(id=100, word="cry")
+        wd2.add_meaning("v", "大叫")
+        wd2.add_meaning("v", "哭")
+        self.assertTrue(wd.is_usage(wd2, "1,2"))
+        wd2=WordDef(id=100, word="cry")
+        wd2.add_meaning("v", "大叫")
+        wd2.add_meaning("v", "哭")
+        self.assertFalse(wd.is_usage(wd2, "1,3"))
+        wd2=WordDef(id=100, word="abc")
+        wd2.add_meaning("v", "大叫")
+        wd2.add_meaning("v", "哭")
+        self.assertFalse(wd.is_usage(wd2, "1,3"))
+        wd2=WordDef(id=100, word="cry")
+        wd2.add_meaning("n", "大叫")
+        wd2.add_meaning("v", "哭")
+        self.assertFalse(wd.is_usage(wd2, "1,2"))
 
     def test_add_word_def(self):
         self.s.begin()

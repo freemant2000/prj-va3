@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from operator import and_
 from sqlalchemy import ForeignKey, Sequence as Seq, select, or_
 from sqlalchemy.orm import Session, joinedload, Mapped, mapped_column, relationship
@@ -24,6 +25,24 @@ class WordDef(Base):
         return ",".join([str(idx) for idx in range(len(self.meanings))])
     def __str__(self) -> str:
         return f"WordDef {self.word} with {len(self.meanings)} meanings"
+    def is_usage(self, wd: "WordDef", m_indice: str)->bool:
+        if wd.id != self.id or wd.word != self.word:
+            return False
+        for idx, m_idx in enumerate(m_indice.split(",")):
+            m_idx=int(m_idx)
+            if m_idx<len(self.meanings):
+                wm1=self.meanings[m_idx]
+                wm2=wd.meanings[idx]
+                if wm1.p_of_s!=wm2.p_of_s or wm1.meaning!=wm2.meaning:
+                    return False
+            else:
+                return False
+        return True
+
+@dataclass
+class WordUsage:
+    wd: WordDef
+    m_indice: str
 
 class WordMeaning(Base):
     __tablename__="word_meanings"
@@ -56,6 +75,12 @@ def get_word_defs(s: Session, wd_ids: Sequence[int])->Sequence[WordDef]:
   r=s.scalars(q)
   wds=r.unique().all()
   return wds
+
+def get_word_def_by_id(s: Session, wd_id: int)->WordDef:
+  q=select(WordDef).where(WordDef.id==(wd_id))
+  r=s.scalars(q)
+  wd=r.unique().first()
+  return wd
 
 def del_word_def(s: Session, wd_id: int)->None:
   q=select(WordDef).where(WordDef.id==(wd_id))

@@ -5,7 +5,7 @@ from sqlalchemy.types import String, Integer, Date
 from typing import Dict, List, Sequence, Tuple
 import datetime   
 from .db_base import Base
-from .word_def import WordDef, WordMeaning
+from .word_def import WordDef, WordMeaning, WordUsage
 from .sentence import Sentence, SentenceDraft, get_snts_from_text, refine_snt_draft, show_snt, show_snt_draft
 from .practice import Practice
 from .word_bank import WordBank, BankWord
@@ -70,11 +70,6 @@ def get_sprint(s: Session, sp_id: int)->Sprint:
   r=s.scalars(q)
   sp=r.unique().first()
   return sp
-
-@dataclass
-class WordUsage:
-    wd: WordDef
-    m_indice: str
 
 @dataclass
 class ExerciseDraft:

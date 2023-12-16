@@ -1,7 +1,7 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_bank import WordBankDraft, WordBankItemOld, load_wb_input, get_word_bank, add_wb_draft
-from vocabassistant3.word_def import WordDef
+from vocabassistant3.word_bank import WordBankDraft, load_wb_input, get_word_bank, add_wb_draft
+from vocabassistant3.word_def import WordDef, WordMeaning, WordUsage
 from sqlalchemy import text
 
 class TestWordBank(TestCase):
@@ -14,7 +14,7 @@ class TestWordBank(TestCase):
         self.assertEquals(wbd.name, "fisherman-and-wife-1")
         self.assertEquals(len(wbd.wds), 11)
         self.assertEquals(wbd.wds[0].word, "humble")
-        self.assertEquals(len(wbd.use_old_wds), 1)
+        self.assertEquals(len(wbd.word_usages), 1)
     def test_get_word_bank(self):
         wb=get_word_bank(self.s, 0)
         self.assertEquals(len(wb.bws), 13)
@@ -29,7 +29,9 @@ class TestWordBank(TestCase):
         wd=WordDef(word="mountain")
         wd.add_meaning("n", "山")
         wbd.wds.append(wd)
-        wbd.use_old_wds[wd]=WordBankItemOld(1, "0")
+        wbd.word_usages[wd]=WordUsage(
+            WordDef(id=1, word="mountain", meanings=[WordMeaning(wd_id=1, p_of_s="n", meaning="山")]),
+            m_indice="0")
         add_wb_draft(self.s, wbd)
         wb=get_word_bank(self.s, 11)
         self.assertEquals(wb.name, "my wb1")

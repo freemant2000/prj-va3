@@ -5,7 +5,7 @@ from sqlalchemy import select, ForeignKey, Sequence as Seq
 from sqlalchemy.orm import Session, Mapped, mapped_column, relationship, joinedload
 from sqlalchemy.types import String, Integer
 from .db_base import Base
-from .word_def import get_word_def, WordDef
+from .word_def import get_word_def, WordDef, get_word_def_by_id, WordUsage
 
 class BankWord(Base):
     __tablename__="bank_word"
@@ -46,59 +46,70 @@ def add_word_def(s: Session):
     print(wd.id)
 
 @dataclass
-class WordBankItemOld:
-  wb_id: int
-  m_indice: Sequence[int] = field(default_factory=list)
-
-@dataclass
 class WordBankDraft:
   name: str=""
   wds: Sequence[WordDef] = field(default_factory=list)
-  use_old_wds: Dict[WordDef, WordBankItemOld]= field(default_factory=dict)
-  cands: Dict[WordDef, Sequence[WordDef]]= field(default_factory=dict)
+  word_usages: Dict[WordDef, WordUsage]= field(default_factory=dict)
+  cands: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
+  mismatches: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
 
 def refine_wb_draft(s: Session, wbd: WordBankDraft):
   wbd.cands.clear()
+  wbd.mismatches.clear()
   for wd in wbd.wds:
-    if not (wd in wbd.use_old_wds):
-      wds=get_word_def(s, wd.word)
-      if wds:
-        wbd.cands[wd]=wds
+    if wd in wbd.word_usages:
+        wu=wbd.word_usages[wd]
+        wd2=get_word_def_by_id(s, wu.wd.id)
+        if not wd2.is_usage(wd, wu.m_indice):
+            wbd.mismatches[wd]=wd2
+    else:
+        wds=get_word_def(s, wd.word)
+        if wds:
+            wbd.cands[wd]=wds
 
 def show_wb_draft(wbd: WordBankDraft):
-  print("WordBank "+wbd.name)
-  for e in wbd.wds:
-    print(e)
-  print("Using existing WordDefs")
-  for (wd, io) in wbd.use_old_wds.items():
-    print(wd)
-    print(io.wb_id, io.m_indice)
-  print(f"Possible matches")
-  for wd, wds in wbd.cands.items():
-    for old_wd in wds:
-      show_word_def(old_wd)
+    print("WordBank "+wbd.name)
+    for wd in wbd.wds:
+        if wd in wbd.word_usages:
+            wu=wbd.word_usages[wd]
+            print(f"{wd.word}<={wu.wd.id},{wu.m_indice}.replace(',', '-')")
+        else:
+            print(wd.word)
+        for wm in wd.meanings:
+            print("\t"+wm.get_display())
+    print(f"Possible matches")
+    for wd, wds in wbd.cands.items():
+        for old_wd in wds:
+            show_word_def(old_wd)
+    print(f"Mismatches")
+    for wd, wd2 in wbd.mismatches.items():
+        show_word_def(wd2)
 
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
     for wd in wbd.wds:
-        if not (wd in wbd.use_old_wds):
+        if not (wd in wbd.word_usages):
             s.add(wd)
     s.flush()  #make sure the IDs are assigned
     wb=WordBank(name=wbd.name)
     for (idx, wd) in enumerate(wbd.wds):
-        if not (wd in wbd.use_old_wds):
+        if not (wd in wbd.word_usages):
             bw=BankWord(idx=idx, wd_id=wd.id, m_indice=wd.get_all_m_indice())
         else:
-            oi=wbd.use_old_wds[wd]
-            bw=BankWord(idx=idx, wd_id=oi.wb_id, m_indice=oi.m_indice)
+            wu=wbd.word_usages[wd]
+            bw=BankWord(idx=idx, wd_id=wu.wd.id, m_indice=wu.m_indice)
         wb.bws.append(bw)
     s.add(wb)
     return wb
 
 def load_wb_input(path: str)->WordBankDraft:
-  wbd=WordBankDraft()
-  wbd.wds=[]
   with open(path) as f:
     lines=f.readlines()
+    wbd=parse_wb_draft(lines)
+    return wbd
+    
+def parse_wb_draft(lines: Sequence[str])->WordBankDraft:    
+    wbd=WordBankDraft()
+    wbd.wds=[]
     head=lines.pop(0)
     m=re.match(r"\[(.+)\]", head)
     if not m:
@@ -120,6 +131,6 @@ def load_wb_input(path: str)->WordBankDraft:
             _, p2=tp
             wd_id, m_indice=p2.split(",")
             m_indice=m_indice.replace("-", ",")
-            wbd.use_old_wds[wd]=WordBankItemOld(int(wd_id), m_indice)
-  return wbd
+            wbd.word_usages[wd]=WordUsage(WordDef(id=int(wd_id)), m_indice)
+    return wbd
 

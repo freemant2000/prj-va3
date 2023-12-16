@@ -4,7 +4,7 @@ from .sentence import parse_snt_draft, refine_snt_draft, show_snt_draft
 
 def refine_snt_draft_tui():
     while True:
-        print("Paste a new sentence, followed by indented keywords.")
+        print("Paste a new sentence, followed by indented keywords:")
         try:
             lines=get_lines_until_empty()
             sd=parse_snt_draft(lines)
