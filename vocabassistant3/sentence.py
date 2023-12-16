@@ -21,6 +21,12 @@ class Sentence(Base):
     text: Mapped[str]=mapped_column(String)
     keywords: Mapped[List[WordMeaning]]=relationship("WordMeaning", secondary=snt_wd_tbl)
 
+def get_snt(s: Session, id: int)->Sentence:
+  q=select(Sentence).where(Sentence.id==id) \
+      .options(joinedload(Sentence.keywords).joinedload(WordMeaning.wd))
+  r=s.scalars(q)
+  return r.unique().first()
+
 def get_snts(s: Session, words: Sequence[str])->Sequence[Sentence]:
   q=select(Sentence).where(Sentence.keywords.any(WordMeaning.wd.has(WordDef.word.in_(words)))) \
       .options(joinedload(Sentence.keywords).joinedload(WordMeaning.wd)) \
