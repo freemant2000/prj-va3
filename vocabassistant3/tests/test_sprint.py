@@ -35,6 +35,10 @@ class TestSprint(TestCase):
 
     def test_get_revision_dates(self):
         rds=get_revision_dates(self.s, 0)
-        self.assertEquals(len(rds[(0, "0")]), 2)
-        self.assertEquals(len(rds[(1, "0")]), 1)
-        self.assertEquals(len(rds[(2, "0")]), 2)
+        for ew, ds in rds.items():
+            if ew.wd_id==0 and ew.m_indice=="0" or \
+               ew.wd_id==2 and ew.m_indice=="0":
+                self.assertEquals(len(ds), 2)
+            elif ew.wd_id==1 and ew.m_indice=="0":
+                self.assertEquals(len(ds), 1)
+        

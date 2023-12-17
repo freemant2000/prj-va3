@@ -89,7 +89,7 @@ def get_sprints_for(s: Session, stu_id: int)->List[Sprint]:
   sps=r.unique().all()
   return sps
 
-def get_revision_dates(s: Session, sp_id: int)->Dict[Tuple[int, str], List[datetime.date]]:
+def get_revision_dates(s: Session, sp_id: int)->Dict[ExeciseWord, List[datetime.date]]:
     q=select(Exercise, ExeciseWord).join(sprint_exec_tbl).join(Sprint) \
         .where(Sprint.id==sp_id, ExeciseWord.e_id==Exercise.id) \
         .order_by(ExeciseWord.wd_id, ExeciseWord.m_indice, Exercise.dt)
@@ -97,7 +97,10 @@ def get_revision_dates(s: Session, sp_id: int)->Dict[Tuple[int, str], List[datet
     rs=r.unique().all()
     rds={}
     for k, sub_seq in groupby(rs, key=lambda r: (r[1].wd_id, r[1].m_indice)):
-        rds[k]=[exec.dt for (exec, ew) in sub_seq]
+        ds=[]
+        for exec, ew in sub_seq:
+            ds.append(exec.dt)
+        rds[ew]=ds
     return rds
 
 @dataclass
