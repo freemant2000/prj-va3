@@ -96,7 +96,8 @@ insert into word_meanings values(19, 0, 'n', '河流');
 
 create table practices(id integer primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only boolean, assess_dt date, stu_id integer);
 create table practice_hard(p_id integer, w_idx integer, primary key(p_id, w_idx));
-create table sprints(id integer primary key, start_dt date);
+create table sprints(id integer primary key, start_dt date, stu_id integer);
+create index on sprints(stu_id);
 create table sprint_practice(sp_id integer, p_id integer, primary key(sp_id, p_id));
 create table exercises(id integer primary key, dt date);
 create table exercise_word(e_id integer, wd_id integer, m_indice varchar(50), primary key(e_id, wd_id));
@@ -108,7 +109,7 @@ insert into practice_hard values(0, 1);
 insert into practice_hard values(0, 3);
 insert into practice_hard values(0, 8);
 insert into practices values(1, 1, 0, 6, 'f', '2023-12-2', 0);
-insert into sprints values(0, '2023-12-4');
+insert into sprints values(0, '2023-12-4', 0);
 insert into sprint_practice values(0, 0);
 insert into sprint_practice values(0, 1);
 insert into exercises values(0, '2023-12-4');

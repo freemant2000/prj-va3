@@ -1,4 +1,3 @@
-from turtle import back
 from sqlalchemy import ForeignKey, Sequence as Seq, select
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import Integer, Date, Boolean, String
@@ -38,12 +37,17 @@ class Practice(Base):
 
     def find_bank_words(self, word: str)->Sequence[BankWord]:
         return [bw for bw in self.get_bws() if bw.wd.word==word]
+    def get_display(self)->str:
+        return f"{str(self)}\t{self.get_no_words()}\t{self.assess_dt}"
+    def __str__(self) -> str:
+        return f"{self.wb.name} {self.fr_idx}-{self.to_idx}"
+
 
 class Student(Base):
     __tablename__="students"
     id: Mapped[int]=mapped_column(Integer, Seq("student_seq"), primary_key=True)
     name: Mapped[str]=mapped_column(String)
-    pracs: Mapped[Practice]=relationship(Practice, back_populates="student")
+    pracs: Mapped[List[Practice]]=relationship(Practice, back_populates="student")
     t_id: Mapped[int]=mapped_column(Integer, ForeignKey("teachers.id"))
     teacher: Mapped["Teacher"]=relationship("Teacher", back_populates="stus")
 

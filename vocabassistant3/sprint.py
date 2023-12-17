@@ -2,12 +2,12 @@ from dataclasses import dataclass, field
 from sqlalchemy import ForeignKey, Table, Column, select
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import String, Integer, Date
-from typing import Dict, List, Sequence, Tuple
+from typing import Dict, List, Sequence
 import datetime   
 from .db_base import Base
-from .word_def import WordDef, WordMeaning, WordUsage
-from .sentence import Sentence, SentenceDraft, get_snts_from_keywords, get_snts_from_text, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
-from .practice import Practice
+from .word_def import WordDef, WordUsage
+from .sentence import Sentence, SentenceDraft, get_snts_from_keywords, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
+from .practice import Practice, Student
 from .word_bank import WordBank, BankWord
 
 class ExeciseWord(Base):
@@ -48,6 +48,8 @@ class Sprint(Base):
     start_dt: Mapped[datetime.date]=mapped_column(Date)
     pracs: Mapped[List[Practice]]=relationship("Practice", secondary=sprint_prac_tbl)
     execs: Mapped[List[Exercise]]=relationship("Exercise", secondary=sprint_exec_tbl, order_by=sprint_exec_tbl.c.idx)
+    stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"))
+    stu: Mapped[Student]=relationship(Student)
     
     def find_bank_words(self, word: str)->Sequence[BankWord]:
         bws=[]
@@ -70,6 +72,14 @@ def get_sprint(s: Session, sp_id: int)->Sprint:
   r=s.scalars(q)
   sp=r.unique().first()
   return sp
+
+def get_sprints_for(s: Session, stu_id: int)->List[Sprint]:
+  q=select(Sprint).where(Sprint.stu_id==stu_id) \
+    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
+    .options(joinedload(Sprint.execs).joinedload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
+  r=s.scalars(q)
+  sps=r.unique().all()
+  return sps
 
 @dataclass
 class ExerciseDraft:
