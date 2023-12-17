@@ -1,9 +1,8 @@
-from ast import keyword
 from dataclasses import dataclass, field
 from sqlalchemy import select, ForeignKey, Table, Column, ForeignKeyConstraint, Sequence as Seq
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import String, Integer
-from typing import Dict, List, Sequence
+from typing import Dict, List, Sequence, Tuple
 
 from vocabassistant3.word_bank import show_word_def
 from .db_base import Base
@@ -20,6 +19,9 @@ class Sentence(Base):
     id: Mapped[int]=mapped_column(Integer, Seq("sentence_seq"), primary_key=True)
     text: Mapped[str]=mapped_column(String)
     keywords: Mapped[List[WordMeaning]]=relationship("WordMeaning", secondary=snt_wd_tbl)
+    
+    def count_matches(self, kws: Sequence[str])->int:
+        return sum(1 for kw in self.keywords if kw.wd.word in kws)
 
 def get_snt(s: Session, id: int)->Sentence:
   q=select(Sentence).where(Sentence.id==id) \
@@ -27,12 +29,19 @@ def get_snt(s: Session, id: int)->Sentence:
   r=s.scalars(q)
   return r.unique().first()
 
-def get_snts(s: Session, words: Sequence[str])->Sequence[Sentence]:
+def get_snts(s: Session, words: Sequence[str], limit: int=20)->Sequence[Sentence]:
   q=select(Sentence).where(Sentence.keywords.any(WordMeaning.wd.has(WordDef.word.in_(words)))) \
       .options(joinedload(Sentence.keywords).joinedload(WordMeaning.wd)) \
       .order_by(Sentence.id.asc())
   r=s.scalars(q)
   return r.unique().all()
+
+def get_snts_from_keywords(s: Session, kws: Sequence[str], limit: int=20)->Sequence[Tuple[Sentence, int]]:
+    kws=[kw.strip() for kw in kws]
+    snts=get_snts(s, kws, limit)
+    rs=[(snt, snt.count_matches(kws)) for snt in snts]
+    rs=sorted(rs, key=lambda t: t[1], reverse=True)
+    return rs
 
 def get_snts_from_text(s: Session, text: str)->Sequence[Sentence]:
   q=select(Sentence).where(Sentence.text==text) \
@@ -44,17 +53,27 @@ def get_snts_from_text(s: Session, text: str)->Sequence[Sentence]:
 @dataclass
 class SentenceDraft:
     text: str = ""
+    snt_id: int=None
+    snt_candidates: List[Sentence]= field(default_factory=list)
     keywords: List[str] = field(default_factory=list)
     kw_meanings: Dict[str, WordMeaning] = field(default_factory=dict)
     kw_cands: Dict[str, Sequence[WordMeaning]] = field(default_factory=dict)    
 
     def check_complete(self):
+        if self.snt_id==None:
+            raise ValueError(f"Not ID is specified for {self.text}")
+        if self.keywords:
+            raise ValueError(f"Not keywords are specified for {self.text}")
         for kw in self.keywords:
             if not kw in self.kw_meanings:
                 raise ValueError(f"Keyword {kw} in {self.text} has no assigned meaning")
 
     def is_complete(self):
-        return self.keywords and len(self.keywords)==len(self.kw_meanings)
+        try:
+            self.check_complete()
+            return True
+        except:
+            return False
 
 def add_snt_draft(s: Session, sd: SentenceDraft):
     sd.check_complete()
@@ -66,6 +85,10 @@ def add_snt_draft(s: Session, sd: SentenceDraft):
 
 def show_snt_draft(sd: SentenceDraft):
     print(sd.text)
+    if sd.snt_candidates:
+        print("Sentence candidates")
+        for snt in sd.snt_candidates:
+            print(f"{snt.text}<={snt.id}")
     for kw in sd.keywords:
         if kw in sd.kw_meanings:
             wm=sd.kw_meanings[kw]
@@ -86,11 +109,17 @@ def show_snt(snt: Sentence):
         print(f"\t{wm.wd.word}<={wm.wd_id},{wm.idx},{wm.p_of_s},{wm.meaning}")
 
 def refine_snt_draft(s: Session, sd: SentenceDraft):
+    if sd.snt_id!=None:
+        snt=get_snt(s, sd.snt)
+        if snt:
+            if sd.text!=snt.text:
+                raise ValueError(f"The text of sentence {sd.snt_id} is not {sd.text}")
+        else:
+            raise ValueError(f"Sentence {sd.snt_id} not found")
+    else: # use the text as keywords to search for sentence candidates
+        kws=sd.text.split(",")
+        sd.snt_candidates=[t[0] for t in get_snts_from_keywords(s, kws)]
     sd.kw_cands.clear()
-    #TODO if snt_id is specified, check if it is correct and matches the text.
-    #if snt_id is not specified, use the text to search for candidates.
-    #get_snts_from_text(sd.text)
-
     for kw in sd.keywords:
         if kw in sd.kw_meanings:
             wm=sd.kw_meanings[kw]

@@ -1,0 +1,4 @@
+valley,squirrel
+    valley
+    squirrel<=4,0
+    horn
