@@ -1,11 +1,11 @@
 from dataclasses import dataclass, field
-from sqlalchemy import ForeignKey, Table, Column, select
+from sqlalchemy import ForeignKey, Table, Column, select, Sequence as Seq
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import String, Integer, Date
 from typing import Dict, List, Sequence
 import datetime   
 from .db_base import Base
-from .word_def import WordDef, WordUsage
+from .word_def import WordDef, WordMeaning, WordUsage, get_word_meaning
 from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
 from .practice import Practice, Student
 from .word_bank import WordBank, BankWord
@@ -26,9 +26,9 @@ exec_snt_tbl=Table("exercise_snt", Base.metadata,
 
 class Exercise(Base):
     __tablename__="exercises"
-    id: Mapped[int]=mapped_column(Integer, primary_key=True)
+    id: Mapped[int]=mapped_column(Integer, Seq("exercise_seq"), primary_key=True)
     dt: Mapped[datetime.date]=mapped_column(Date)
-    ews: Mapped[List[ExeciseWord]]=relationship(ExeciseWord, order_by="asc(ExeciseWord.wd_id)", back_populates="exec")
+    ews: Mapped[List[ExeciseWord]]=relationship(ExeciseWord, order_by="asc(ExeciseWord.wd_id)", back_populates="exec", cascade="all, delete-orphan")
     snts: Mapped[List[Sentence]]=relationship("Sentence", secondary=exec_snt_tbl)
     def __str__(self) -> str:
         return f"exercise {self.id} {len(self.ews)} words"
@@ -39,15 +39,14 @@ sprint_prac_tbl=Table("sprint_practice", Base.metadata,
 
 sprint_exec_tbl=Table("sprint_exercise", Base.metadata, 
                     Column("sp_id", Integer, ForeignKey("sprints.id"), primary_key=True),
-                    Column("idx", Integer, primary_key=True),
-                    Column("e_id", Integer, ForeignKey("exercises.id")))
+                    Column("e_id", Integer, ForeignKey("exercises.id"), primary_key=True))
 
 class Sprint(Base):
     __tablename__="sprints"
     id: Mapped[int]=mapped_column(Integer, primary_key=True)
     start_dt: Mapped[datetime.date]=mapped_column(Date)
     pracs: Mapped[List[Practice]]=relationship("Practice", secondary=sprint_prac_tbl)
-    execs: Mapped[List[Exercise]]=relationship("Exercise", secondary=sprint_exec_tbl, order_by=sprint_exec_tbl.c.idx)
+    execs: Mapped[List[Exercise]]=relationship("Exercise", secondary=sprint_exec_tbl, order_by=sprint_exec_tbl.c.e_id)
     stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"))
     stu: Mapped[Student]=relationship(Student)
     
@@ -88,12 +87,39 @@ class ExerciseDraft:
     sds: List[SentenceDraft] = field(default_factory=list)
     snt_cands: List[Sentence] = field(default_factory=list)
     extra_kws: List[str] = field(default_factory=list)
+    
+    def check_complete(self):
+        for word in self.words:
+            if word not in self.wus:
+                raise ValueError(f"{word} is undefined")
+        for sd in self.sds:
+            sd.check_complete()
 
 def select_words_make_draft(sp: Sprint, indice: Sequence[int]):
     pass
 
-def add_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
-    pass
+def add_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft)->Exercise:
+    ed.check_complete()
+    exec=Exercise()
+    exec.dt=datetime.date.today()
+    for kw in ed.words:
+        wu=ed.wus[kw]
+        ew=ExeciseWord(wd_id=wu.wd.id, m_indice=wu.m_indice)
+        exec.ews.append(ew)
+    for sd in ed.sds:
+        if sd.snt_id==None: # new sentence
+            snt=Sentence(text=sd.text)
+            for kw in sd.keywords:
+                wm=sd.kw_meanings[kw]
+                wm=get_word_meaning(s, wm.wd_id, wm.idx)
+                snt.keywords.append(wm)
+                s.add(snt)
+        else:
+            snt=get_snt(s, sd.snt_id)
+        exec.snts.append(snt)
+    s.add(exec)
+    sp.execs.append(exec)
+    return exec
 
 def load_exec_draft(path: str)->ExerciseDraft:
   with open(path) as f:

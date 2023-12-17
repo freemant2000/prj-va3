@@ -6,7 +6,7 @@ class Base(DeclarativeBase):
     pass
 
 def open_session()->Session:
-    eng=create_engine(f"postgresql://dba:abc123@localhost/va3", echo=False)
+    eng=create_engine(f"postgresql://dba:abc123@localhost/va3", echo=True)
     s=Session(eng)
     return s
 
