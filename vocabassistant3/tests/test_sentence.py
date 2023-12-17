@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.sentence import Sentence, SentenceDraft, add_snt_draft, get_snt, get_snts, get_snts_from_keywords, load_snt_draft
+from vocabassistant3.sentence import Sentence, SentenceDraft, add_snt_draft, get_snt, get_snts, get_snts_from_keywords, load_snt_draft, refine_snt_draft
 from vocabassistant3.word_def import WordMeaning
 
 class TestWordBank(TestCase):
@@ -24,6 +24,17 @@ class TestWordBank(TestCase):
         self.assertEquals(sd.text, "這個山谷有巨大的有角的松鼠。")
         self.assertEquals(len(sd.keywords), 3)
         self.assertEquals(len(sd.kw_meanings), 1)
+    def test_find_kw_candidates(self):
+        sd=load_snt_draft("vocabassistant3/tests/test_snt_draft.txt")
+        refine_snt_draft(self.s, sd)
+        self.assertEquals(len(sd.kw_meanings), 2)
+        self.assertEquals(len(sd.kw_cands), 1)
+        self.assertEquals(len(sd.kw_cands["horn"]), 2)        
+    def test_find_snt_candidates(self):
+        sd=load_snt_draft("vocabassistant3/tests/test_snt_draft2.txt")
+        refine_snt_draft(self.s, sd)
+        self.assertEquals(len(sd.snt_candidates), 4)
+        self.assertEquals(sd.snt_candidates[0].text, "一隻松鼠住在這個山谷裡。")
 
     def test_add_snt_draft(self):
         self.s.begin()

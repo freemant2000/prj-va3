@@ -60,9 +60,7 @@ class SentenceDraft:
     kw_cands: Dict[str, Sequence[WordMeaning]] = field(default_factory=dict)    
 
     def check_complete(self):
-        if self.snt_id==None:
-            raise ValueError(f"Not ID is specified for {self.text}")
-        if self.keywords:
+        if not self.keywords:
             raise ValueError(f"Not keywords are specified for {self.text}")
         for kw in self.keywords:
             if not kw in self.kw_meanings:
@@ -109,16 +107,19 @@ def show_snt(snt: Sentence):
         print(f"\t{wm.wd.word}<={wm.wd_id},{wm.idx},{wm.p_of_s},{wm.meaning}")
 
 def refine_snt_draft(s: Session, sd: SentenceDraft):
-    if sd.snt_id!=None:
+    if sd.snt_id!=None: # use an existing sentence
         snt=get_snt(s, sd.snt)
         if snt:
             if sd.text!=snt.text:
                 raise ValueError(f"The text of sentence {sd.snt_id} is not {sd.text}")
         else:
             raise ValueError(f"Sentence {sd.snt_id} not found")
-    else: # use the text as keywords to search for sentence candidates
-        kws=sd.text.split(",")
-        sd.snt_candidates=[t[0] for t in get_snts_from_keywords(s, kws)]
+    else:
+        if sd.text.startswith("/"):  # search using keywords
+            kws=sd.text[1:].split(",")
+            sd.snt_candidates=[t[0] for t in get_snts_from_keywords(s, kws)]
+        else:
+            pass # new sentence
     sd.kw_cands.clear()
     for kw in sd.keywords:
         if kw in sd.kw_meanings:
