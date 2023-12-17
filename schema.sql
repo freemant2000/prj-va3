@@ -166,8 +166,19 @@ insert into snt_keywords values(6, 7, 0);
 insert into snt_keywords values(6, 8, 0);
 insert into snt_keywords values(6, 9, 0);
 
-create table students(id integer primary key, name varchar(100));
+create sequence student_seq;
+select setval('student_seq', 10);
+
+create sequence teacher_seq;
+select setval('teacher_seq', 10);
+
+create table students(id integer primary key, name varchar(100), t_id integer);
 create index on students(name);
 create index on students using gin (name gin_trgm_ops);
-insert into students values(0, 'Jodie');
-insert into students values(1, 'Holly');
+create index on students(t_id);
+insert into students values(0, 'Jodie', 0);
+insert into students values(1, 'Holly', 0);
+
+create table teachers(id integer primary key, gmail varchar(100));
+insert into teachers values(0, 'kent.tong.mo@gmail.com');
+create index on teachers(gmail);
