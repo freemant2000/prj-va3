@@ -6,7 +6,7 @@ from typing import Dict, List, Sequence
 import datetime   
 from .db_base import Base
 from .word_def import WordDef, WordUsage
-from .sentence import Sentence, SentenceDraft, get_snts_from_keywords, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
+from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
 from .practice import Practice, Student
 from .word_bank import WordBank, BankWord
 
@@ -87,6 +87,7 @@ class ExerciseDraft:
     wus: Dict[str, WordUsage] = field(default_factory=dict)
     sds: List[SentenceDraft] = field(default_factory=list)
     snt_cands: List[Sentence] = field(default_factory=list)
+    extra_kws: List[str] = field(default_factory=list)
 
 def select_words_make_draft(sp: Sprint, indice: Sequence[int]):
     pass
@@ -147,6 +148,10 @@ def show_exec_draft(ed: ExerciseDraft):
     print("===========")
     for sd in ed.sds:
         show_snt_draft(sd)
+    if ed.extra_kws:
+        print("\nExtra keywords used in the sentences")
+        for kw in ed.extra_kws:
+            print("\t"+kw)
     print("\nAvailable sentences")
     for snt in ed.snt_cands:
         print(f"{snt.text}<={snt.id}")
@@ -161,6 +166,17 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
     for sd in ed.sds:
         refine_snt_draft(s, sd)
     ed.snt_cands=[t[0] for t in get_snts_from_keywords(s, ed.words)]
+    ed.extra_kws.clear()
+    for sd in ed.sds:
+        if sd.snt_id!=None:
+            snt=get_snt(s, sd.snt_id)
+            for wm in snt.keywords:
+                if wm.wd.word not in ed.words:
+                    ed.extra_kws.append(wm.wd.word)
+        else:
+            for kw in sd.keywords:
+                if kw not in ed.words:
+                    ed.extra_kws.append(kw)
 
 def show_sprint(sp: Sprint):
     print(f"Spring {sp.id} started on {sp.start_dt}")

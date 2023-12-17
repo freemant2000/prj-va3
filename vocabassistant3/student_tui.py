@@ -8,7 +8,11 @@ def student_tui():
     with open_session() as s:
         stu=get_student(s, stu_id)
         show_student(stu)
-        sps=get_sprints_for(s, stu.id)
+
+def student_sprints_tui():
+    stu_id=input("Input student ID: ")
+    with open_session() as s:
+        sps=get_sprints_for(s, stu_id)
         print("Sprints")
         for sp in sps:
             show_sprint(sp)
