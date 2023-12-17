@@ -55,3 +55,4 @@ class TestSpring(TestCase):
 
     def reset_seq(self):
         set_seq_val(self.s, "exercise_seq", 10)
+        set_seq_val(self.s, "sentence_seq", 10)
