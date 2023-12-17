@@ -3,11 +3,11 @@ squirrel
 sick
 greedy
 jackal
+trunk
 horn
 ==============
-這個山很陡峭。
+那隻角很貪心。
 一隻松鼠爬上了這條樹幹。<=2
 那隻松鼠病了。
     squirrel<=4,0,n,松鼠
     sick
-this is a test.

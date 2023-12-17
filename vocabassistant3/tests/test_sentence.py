@@ -35,7 +35,13 @@ class TestWordBank(TestCase):
         refine_snt_draft(self.s, sd)
         self.assertEquals(len(sd.snt_candidates), 4)
         self.assertEquals(sd.snt_candidates[0].text, "一隻松鼠住在這個山谷裡。")
-
+    def test_find_snt_bad_text(self):
+        sd=load_snt_draft("vocabassistant3/tests/test_snt_draft3.txt")
+        try:
+            refine_snt_draft(self.s, sd)
+            self.fail()
+        except Exception as e:
+            self.assertTrue("text of sentence" in str(e))
     def test_add_snt_draft(self):
         self.s.begin()
         sd=SentenceDraft(text="這個山谷有巨大的有角的松鼠。", 

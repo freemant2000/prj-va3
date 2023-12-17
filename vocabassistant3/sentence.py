@@ -60,7 +60,7 @@ class SentenceDraft:
     kw_cands: Dict[str, Sequence[WordMeaning]] = field(default_factory=dict)    
 
     def check_complete(self):
-        if not self.keywords:
+        if not self.keywords and self.snt_id==None:
             raise ValueError(f"Not keywords are specified for {self.text}")
         for kw in self.keywords:
             if not kw in self.kw_meanings:
@@ -108,7 +108,7 @@ def show_snt(snt: Sentence):
 
 def refine_snt_draft(s: Session, sd: SentenceDraft):
     if sd.snt_id!=None: # use an existing sentence
-        snt=get_snt(s, sd.snt)
+        snt=get_snt(s, sd.snt_id)
         if snt:
             if sd.text!=snt.text:
                 raise ValueError(f"The text of sentence {sd.snt_id} is not {sd.text}")
@@ -147,12 +147,17 @@ def load_snt_draft(path: str)->SentenceDraft:
     lines=f.readlines()
     return parse_snt_draft(lines)
 
-def parse_snt_draft(lines: Sequence[str])->SentenceDraft:
+def parse_snt_draft(lines: List[str])->SentenceDraft:
     sd=SentenceDraft()
     head=lines.pop(0).strip()
     if not head:
       raise ValueError("The first line is empty")
-    sd.text=head
+    ps=head.split("<=")
+    if len(ps)==2:
+        sd.text=ps[0]
+        sd.snt_id=int(ps[1])
+    else:
+        sd.text=head
     for line in lines:
       if line.startswith(" ") or line.startswith("\t"): # a keyword
             line=line.strip()

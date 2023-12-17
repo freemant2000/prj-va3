@@ -1,7 +1,7 @@
 from vocabassistant3.sprint import parse_exec_draft
 from .db_base import open_session
 from .console_utils import get_lines_until_empty
-from .sprint import Sprint, get_sprint, parse_exec_draft, refine_exec_draft, show_exec_draft
+from .sprint import get_sprint, parse_exec_draft, refine_exec_draft, show_exec_draft
 
 def refine_exec_draft_tui():
     with open_session() as s:

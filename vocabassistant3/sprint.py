@@ -6,7 +6,7 @@ from typing import Dict, List, Sequence, Tuple
 import datetime   
 from .db_base import Base
 from .word_def import WordDef, WordMeaning, WordUsage
-from .sentence import Sentence, SentenceDraft, get_snts_from_text, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
+from .sentence import Sentence, SentenceDraft, get_snts_from_keywords, get_snts_from_text, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
 from .practice import Practice
 from .word_bank import WordBank, BankWord
 
@@ -76,6 +76,7 @@ class ExerciseDraft:
     words: List[str] = field(default_factory=list)
     wus: Dict[str, WordUsage] = field(default_factory=dict)
     sds: List[SentenceDraft] = field(default_factory=list)
+    snt_cands: List[Sentence] = field(default_factory=list)
 
 def select_words_make_draft(sp: Sprint, indice: Sequence[int]):
     pass
@@ -133,9 +134,13 @@ def show_exec_draft(ed: ExerciseDraft):
             print(f"{word}<={wu.wd.id},{wu.m_indice.replace(',', '-')}")
         else:
             print(word)
+    print("===========")
     for sd in ed.sds:
         show_snt_draft(sd)
-            
+    print("\nAvailable sentences")
+    for snt in ed.snt_cands:
+        print(f"{snt.text}<={snt.id}")
+
 def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
     for word in ed.words:
         if not (word in ed.wus):
@@ -145,7 +150,7 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
                 ed.wus[word]=wu
     for sd in ed.sds:
         refine_snt_draft(s, sd)
-
+    ed.snt_cands=[t[0] for t in get_snts_from_keywords(s, ed.words)]
 
 def show_sprint(sp: Sprint):
     print(f"Spring {sp.id} started on {sp.start_dt}")
@@ -161,6 +166,7 @@ def show_sprint(sp: Sprint):
 def show_exec(exec: Exercise):
     print(f"Exercise {exec.id} created on {exec.dt}")
     for ew in exec.ews:
-      print("\t"+ew.wd.word)
+        print("\t"+ew.wd.word)
     for snt in exec.snts:
-      print("\t"+snt.text)
+        print("\t"+snt.text)
+    
