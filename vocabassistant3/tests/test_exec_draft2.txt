@@ -1,0 +1,9 @@
+squirrel
+greedy
+jackal
+horn
+==============
+一隻松鼠爬上了這條樹幹。<=2
+那隻松鼠是死的。
+    squirrel<=4,0,n,松鼠
+    dead

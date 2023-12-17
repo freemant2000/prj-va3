@@ -1,7 +1,7 @@
 from unittest import TestCase
 from datetime import date
 from vocabassistant3.db_base import open_session
-from vocabassistant3.sprint import get_sprint, get_exec, load_exec_draft
+from vocabassistant3.sprint import get_sprint, get_exec, load_exec_draft, refine_exec_draft
 
 class TestSpring(TestCase):
     def setUp(self) -> None:
@@ -38,3 +38,25 @@ class TestSpring(TestCase):
         self.assertEquals(len(ed.words), 7)
         self.assertEquals(len(ed.sds), 3)
 
+    def test_refine_exec_draft_wu(self):
+        ed=load_exec_draft("vocabassistant3/tests/test_exec_draft.txt")
+        sp=get_sprint(self.s, 0)
+        refine_exec_draft(self.s, sp, ed)
+        self.assertEquals(len(ed.wus), 6)
+        wu=ed.wus["squirrel"]
+        self.assertEquals(wu.wd.id, 4)
+        self.assertEquals(wu.m_indice, "0")
+
+    def test_refine_exec_draft_snt_cands(self):
+        ed=load_exec_draft("vocabassistant3/tests/test_exec_draft2.txt")
+        sp=get_sprint(self.s, 0)
+        refine_exec_draft(self.s, sp, ed)
+        self.assertEquals(len(ed.snt_cands), 3)
+
+    def test_refine_exec_draft_extra_kw(self):
+        ed=load_exec_draft("vocabassistant3/tests/test_exec_draft2.txt")
+        sp=get_sprint(self.s, 0)
+        refine_exec_draft(self.s, sp, ed)
+        self.assertEquals(len(ed.extra_kws), 2)
+        self.assertEquals(ed.extra_kws[0], "trunk")
+        self.assertEquals(ed.extra_kws[1], "dead")
