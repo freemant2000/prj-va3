@@ -1,11 +1,12 @@
 from dataclasses import dataclass, field
+from itertools import groupby
 from sqlalchemy import ForeignKey, Table, Column, select, Sequence as Seq
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import String, Integer, Date
-from typing import Dict, List, Sequence
+from typing import Dict, List, Sequence, Tuple
 import datetime   
 from .db_base import Base
-from .word_def import WordDef, WordMeaning, WordUsage, get_word_meaning
+from .word_def import WordDef, WordUsage, get_word_meaning
 from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
 from .practice import Practice, Student
 from .word_bank import WordBank, BankWord
@@ -55,6 +56,14 @@ class Sprint(Base):
         for prac in self.pracs:
             bws.extend(prac.find_bank_words(word))
         return bws
+    def get_bws(self)->Sequence[BankWord]:
+        bws=[]
+        for p in self.pracs:
+            bws2=p.get_bws()
+            for bw in bws2:
+                if bw not in bws:
+                    bws.append(bw)
+        return bws
 
 def get_exec(s: Session, e_id: int)->Exercise:
   q=select(Exercise).where(Exercise.id==e_id) \
@@ -79,6 +88,17 @@ def get_sprints_for(s: Session, stu_id: int)->List[Sprint]:
   r=s.scalars(q)
   sps=r.unique().all()
   return sps
+
+def get_revision_dates(s: Session, sp_id: int)->Dict[Tuple[int, str], List[datetime.date]]:
+    q=select(Exercise, ExeciseWord).join(sprint_exec_tbl).join(Sprint) \
+        .where(Sprint.id==sp_id, ExeciseWord.e_id==Exercise.id) \
+        .order_by(ExeciseWord.wd_id, ExeciseWord.m_indice, Exercise.dt)
+    r=s.execute(q)
+    rs=r.unique().all()
+    rds={}
+    for k, sub_seq in groupby(rs, key=lambda r: (r[1].wd_id, r[1].m_indice)):
+        rds[k]=[exec.dt for (exec, ew) in sub_seq]
+    return rds
 
 @dataclass
 class ExerciseDraft:
@@ -206,12 +226,12 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
 
 def show_sprint(sp: Sprint):
     print(f"Spring {sp.id} started on {sp.start_dt}")
-    print("Practices")
+    print("\nPractices")
     for p in sp.pracs:
       print(p.id, p.wb.name)
       for bw in p.get_bws():
         print("\t"+bw.wd.word)
-    print("Exercises")
+    print("\nExercises")
     for exec in sp.execs:
       show_exec(exec)
 

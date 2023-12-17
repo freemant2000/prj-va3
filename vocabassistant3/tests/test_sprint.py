@@ -1,9 +1,9 @@
 from unittest import TestCase
 from datetime import date
 from vocabassistant3.db_base import open_session
-from vocabassistant3.sprint import get_sprint
+from vocabassistant3.sprint import get_revision_dates, get_sprint
 
-class TestSpring(TestCase):
+class TestSprint(TestCase):
     def setUp(self) -> None:
         self.s=open_session()
     def tearDown(self) -> None:
@@ -27,3 +27,14 @@ class TestSpring(TestCase):
         self.assertEquals(len(bws), 1)
         bws=sp.find_bank_words("river")
         self.assertEquals(len(bws), 0)
+
+    def test_get_bank_words(self):
+        sp=get_sprint(self.s, 0)
+        bws=sp.get_bws()
+        self.assertEquals(len(bws), 18)
+
+    def test_get_revision_dates(self):
+        rds=get_revision_dates(self.s, 0)
+        self.assertEquals(len(rds[(0, "0")]), 2)
+        self.assertEquals(len(rds[(1, "0")]), 1)
+        self.assertEquals(len(rds[(2, "0")]), 2)
