@@ -35,6 +35,6 @@ class TestSpring(TestCase):
 
     def test_load_exec_draft(self):
         ed=load_exec_draft("vocabassistant3/tests/test_exec_draft.txt")
-        self.assertEquals(len(ed.words), 6)
-        self.assertEquals(len(ed.sds), 4)
+        self.assertEquals(len(ed.words), 7)
+        self.assertEquals(len(ed.sds), 3)
 
