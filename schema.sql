@@ -1,5 +1,5 @@
--- create extension pg_trgm;
 -- createdb -O dba -E UTF8 va3
+-- create extension pg_trgm;
 
 create table word_banks(id integer primary key, name varchar(50));
 create table bank_word(wb_id integer, idx integer, wd_id integer, m_indice varchar(50), primary key(wb_id, idx));
@@ -176,13 +176,16 @@ select setval('student_seq', 10);
 create sequence teacher_seq;
 select setval('teacher_seq', 10);
 
-create table students(id integer primary key, name varchar(100), t_id integer);
+create table students(id integer primary key, name varchar(100));
 create index on students(name);
 create index on students using gin (name gin_trgm_ops);
-create index on students(t_id);
-insert into students values(0, 'Jodie', 0);
-insert into students values(1, 'Holly', 0);
+insert into students values(0, 'Jodie');
+insert into students values(1, 'Holly');
 
 create table teachers(id integer primary key, gmail varchar(100));
 insert into teachers values(0, 'kent.tong.mo@gmail.com');
 create index on teachers(gmail);
+
+create table teacher_student(tch_id integer, stu_id integer, primary key(tch_id, stu_id));
+insert into teacher_student values(0, 0);
+insert into teacher_student values(0, 1);

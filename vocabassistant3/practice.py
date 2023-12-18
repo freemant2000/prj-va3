@@ -48,26 +48,12 @@ class Student(Base):
     id: Mapped[int]=mapped_column(Integer, Seq("student_seq"), primary_key=True)
     name: Mapped[str]=mapped_column(String)
     pracs: Mapped[List[Practice]]=relationship(Practice, back_populates="student")
-    t_id: Mapped[int]=mapped_column(Integer, ForeignKey("teachers.id"))
-    teacher: Mapped["Teacher"]=relationship("Teacher", back_populates="stus")
-
-class Teacher(Base):
-    __tablename__="teachers"
-    id: Mapped[int]=mapped_column(Integer, Seq("teacher_seq"), primary_key=True)
-    gmail: Mapped[str]=mapped_column(String)
-    stus: Mapped[Student]=relationship(Student, back_populates="teacher")
 
 def get_student(s: Session, stu_id: int)->Student:
     q=select(Student).where(Student.id==stu_id)\
         .options(joinedload(Student.pracs).joinedload(Practice.wb).joinedload(WordBank.bws))
     stu=s.scalars(q).first()
     return stu
-
-def get_teacher(s: Session, t_id: int)->Teacher:
-    q=select(Teacher).where(Teacher.id==t_id) \
-        .options(joinedload(Teacher.stus).joinedload(Student.pracs).joinedload(Practice.wb).joinedload(WordBank.bws))
-    tch=s.scalars(q).first()
-    return tch
 
 def show_student(stud: Student):
     print(f"Student {stud.id} {stud.name}")

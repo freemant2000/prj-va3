@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.practice import Practice, PracticeHard, add_practice, get_practice, get_student, get_teacher
+from vocabassistant3.practice import Practice, PracticeHard, add_practice, get_practice, get_student
 
 class TestPractice(TestCase):
     def setUp(self) -> None:
@@ -57,8 +57,3 @@ class TestPractice(TestCase):
         stu=get_student(self.s, 0)
         self.assertEquals(stu.name, "Jodie")
         self.assertEquals(len(stu.pracs), 2)
-
-    def test_get_teacher(self):
-        tch=get_teacher(self.s, 0)
-        self.assertEquals(tch.gmail, "kent.tong.mo@gmail.com")
-        self.assertEquals(len(tch.stus), 2)
