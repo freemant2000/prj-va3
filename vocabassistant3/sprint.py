@@ -121,6 +121,9 @@ class ExerciseDraft:
 def select_words_make_draft(sp: Sprint, indice: Sequence[int]):
     pass
 
+def mark_words_hard(sp: Sprint, w_indice: Sequence[int]):
+    sp.get_bws()
+
 def add_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft)->Exercise:
     ed.check_complete()
     exec=Exercise()
