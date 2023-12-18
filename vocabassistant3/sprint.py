@@ -46,7 +46,7 @@ class Sprint(Base):
     __tablename__="sprints"
     id: Mapped[int]=mapped_column(Integer, primary_key=True)
     start_dt: Mapped[datetime.date]=mapped_column(Date)
-    pracs: Mapped[List[Practice]]=relationship("Practice", secondary=sprint_prac_tbl)
+    pracs: Mapped[List[Practice]]=relationship("Practice", secondary=sprint_prac_tbl, order_by=sprint_prac_tbl.c.p_id)
     execs: Mapped[List[Exercise]]=relationship("Exercise", secondary=sprint_exec_tbl, order_by=sprint_exec_tbl.c.e_id)
     stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"))
     stu: Mapped[Student]=relationship(Student)
@@ -64,6 +64,20 @@ class Sprint(Base):
                 if bw not in bws:
                     bws.append(bw)
         return bws
+    def clear_hard(self):
+        for p in self.pracs:
+            p.clear_hard()
+    def mark_words_hard(self, w_indice: Sequence[int]):
+        bws=self.get_bws()
+        for bw in bws:
+            print(bw.wd.word)
+        selected_bws=[]
+        for idx in w_indice:
+            if not 0<=idx<len(bws):
+                raise ValueError(f"Invalid index {idx}")
+            selected_bws.append(bws[idx])
+        for p in self.pracs:
+            p.mark_words_hard(selected_bws)
 
 def get_exec(s: Session, e_id: int)->Exercise:
   q=select(Exercise).where(Exercise.id==e_id) \
@@ -121,8 +135,6 @@ class ExerciseDraft:
 def select_words_make_draft(sp: Sprint, indice: Sequence[int]):
     pass
 
-def mark_words_hard(sp: Sprint, w_indice: Sequence[int]):
-    sp.get_bws()
 
 def add_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft)->Exercise:
     ed.check_complete()

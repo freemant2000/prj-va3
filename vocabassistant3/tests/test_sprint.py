@@ -1,6 +1,7 @@
 from unittest import TestCase
 from datetime import date
 from vocabassistant3.db_base import open_session
+from vocabassistant3.practice import get_practice
 from vocabassistant3.sprint import get_revision_dates, get_sprint
 
 class TestSprint(TestCase):
@@ -41,4 +42,14 @@ class TestSprint(TestCase):
                 self.assertEquals(len(ds), 2)
             elif ew.wd_id==1 and ew.m_indice=="0":
                 self.assertEquals(len(ds), 1)
-        
+
+    def test_mark_as_hard(self):
+       self.s.begin()
+       sp=get_sprint(self.s, 0)
+       sp.clear_hard()
+       sp.mark_words_hard([2, 12])
+       self.s.flush()
+       p=get_practice(self.s, 1)
+       self.assertEquals(len(p.hard_w_indice), 1)
+       self.assertEquals(p.hard_w_indice[0].w_idx, 1)
+       self.s.rollback()

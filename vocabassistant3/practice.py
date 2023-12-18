@@ -21,9 +21,10 @@ class Practice(Base):
     to_idx: Mapped[int]=mapped_column(Integer)
     hard_only: Mapped[bool]=mapped_column(Boolean)
     assess_dt: Mapped[date]=mapped_column(Date)
-    stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"), primary_key=True)
+    stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"))
     student: Mapped["Student"]=relationship("Student", back_populates="pracs")
-    hard_w_indice: Mapped[List[PracticeHard]]=relationship(PracticeHard, back_populates="prac")
+    # the indice are relative to the WordBank
+    hard_w_indice: Mapped[List[PracticeHard]]=relationship(PracticeHard, back_populates="prac", cascade="all, delete-orphan")
 
     def get_bws(self)->Sequence[BankWord]:
         bws=self.wb.bws[self.fr_idx:self.to_idx+1]
@@ -31,17 +32,22 @@ class Practice(Base):
             return [self.wb.bws[ph.w_idx] for ph in self.hard_w_indice]
         else:
             return bws
-
     def get_no_words(self)->int:
         return self.to_idx-self.fr_idx+1 if not self.hard_only else len(self.hard_w_indice)
-
+    def clear_hard(self):
+        self.hard_w_indice.clear()
+    def mark_words_hard(self, bws: Sequence[BankWord]):
+        bws2=self.wb.bws[self.fr_idx:self.to_idx+1]
+        for idx, bw in enumerate(bws2):
+            if bw in bws:
+                ph=PracticeHard(p_id=self.id, w_idx=self.fr_idx+idx)
+                self.hard_w_indice.append(ph)
     def find_bank_words(self, word: str)->Sequence[BankWord]:
         return [bw for bw in self.get_bws() if bw.wd.word==word]
     def get_display(self)->str:
         return f"{str(self)}\t{self.get_no_words()}\t{self.assess_dt}"
     def __str__(self) -> str:
         return f"{self.wb.name} {self.fr_idx}-{self.to_idx}"
-
 
 class Student(Base):
     __tablename__="students"

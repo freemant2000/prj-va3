@@ -25,6 +25,20 @@ class TestPractice(TestCase):
        self.assertEquals(len(bws), 3)
        self.assertEquals(bws[0].wd_id, 1)
 
+    def test_mark_as_hard(self):
+       self.s.begin()
+       p=get_practice(self.s, 0)
+       bws=p.get_bws()
+       p.hard_only=True
+       p.clear_hard()
+       p.mark_words_hard([bws[0], bws[4]])
+       self.s.flush()
+       bws=p.get_bws()
+       self.assertEquals(len(bws), 2)
+       self.assertEquals(bws[0].wd.word, "steep")
+       self.assertEquals(bws[1].wd.word, "squirrel")
+       self.s.rollback()
+
     def test_find_bank_words(self):
        p=get_practice(self.s, 0)
        bws=p.find_bank_words("valley")
