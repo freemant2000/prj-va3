@@ -1,5 +1,6 @@
+from .teacher import get_teacher
 from .db_base import open_session
-from .practice import get_teacher
+from .user_prod_tui import get_current_user
 
 def teacher_tui():
     with open_session() as s:
@@ -7,3 +8,9 @@ def teacher_tui():
         print("Students:")
         for stu in tch.stus:
             print(f"{stu.id} {stu.name}")
+
+def show_students():
+    tch=get_current_user()
+    for stu in tch.stus:
+        print(f"{stu.id} {stu.name}")
+
