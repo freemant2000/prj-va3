@@ -23,13 +23,23 @@ class WordBank(Base):
     bws: Mapped[List[BankWord]]=relationship(BankWord, order_by="asc(BankWord.idx)", back_populates="wb", cascade="all")
     def __str__(self) -> str:
         return f"WordBank {self.id} {self.name} {len(self.bws)} words"
+    def get_no_words(self)->int:
+        return len(self.bws)
 
 def get_word_bank(s: Session, wb_id: int)->WordBank:
   q=select(WordBank).where(WordBank.id==wb_id) \
     .options(joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings))
   r=s.scalars(q)
-  exec=r.unique().first()
-  return exec
+  wb=r.unique().first()
+  return wb
+
+def get_word_banks(s: Session, offset: int, limit: int)->List[WordBank]:
+  q=select(WordBank) \
+    .options(joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
+    .order_by(WordBank.id).offset(offset).limit(limit)
+  r=s.scalars(q)
+  wbs=r.unique().all()
+  return wbs
 
 def show_word_def(wd: WordDef):
     print(f"{wd.word}<={wd.id},{wd.get_all_m_indice()}")

@@ -1,4 +1,5 @@
 from vocabassistant3.student_tui import show_student_tui
+from vocabassistant3.word_bank_tui import show_word_banks_tui
 from .teacher_tui import show_students_tui
 from .db_base import open_session
 from .teacher import get_teacher
@@ -10,7 +11,8 @@ def show_help():
 
 cmds={"help": ("Show available commands", show_help), 
       "sss": ("Show Students", show_students_tui),
-      "ss": ("Show Student", show_student_tui)}
+      "ss": ("Show Student", show_student_tui),
+      "swbs": ("Show Word Banks", show_word_banks_tui)}
 
 def main_tui():
     log_in()
