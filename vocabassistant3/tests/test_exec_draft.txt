@@ -1,4 +1,4 @@
-mountain<=0,0-1
+mountain<=1,0-1
 squirrel
 sick
 greedy
@@ -7,7 +7,7 @@ trunk
 horn
 ==============
 那隻角很貪心。
-一隻松鼠爬上了這條樹幹。<=2
+一隻松鼠爬上了這條樹幹。<=3
 那隻松鼠病了。
-    squirrel<=4,0,n,松鼠
+    squirrel<=5,0,n,松鼠
     sick

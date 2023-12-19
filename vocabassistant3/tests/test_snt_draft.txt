@@ -1,4 +1,4 @@
 這個山谷有巨大的有角的松鼠。
     valley
-    squirrel<=4,0
+    squirrel<=5,0
     horn

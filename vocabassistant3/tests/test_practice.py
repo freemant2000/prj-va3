@@ -17,17 +17,17 @@ class TestPractice(TestCase):
         self.assertEquals(p.get_no_words(), 3)
 
     def test_get_words(self):
-       p=get_practice(self.s, 0)
+       p=get_practice(self.s, 1)
        bws=p.get_bws()
        self.assertEquals(len(bws), 11)
        p.hard_only=True
        bws=p.get_bws()
        self.assertEquals(len(bws), 3)
-       self.assertEquals(bws[0].wd_id, 1)
+       self.assertEquals(bws[0].wd_id, 2)
 
     def test_mark_as_hard(self):
        self.s.begin()
-       p=get_practice(self.s, 0)
+       p=get_practice(self.s, 1)
        bws=p.get_bws()
        p.hard_only=True
        p.clear_hard()
@@ -40,14 +40,14 @@ class TestPractice(TestCase):
        self.s.rollback()
 
     def test_find_bank_words(self):
-       p=get_practice(self.s, 0)
+       p=get_practice(self.s, 1)
        bws=p.find_bank_words("valley")
        self.assertEquals(len(bws), 1)
        bws=p.find_bank_words("wise")
        self.assertEquals(len(bws), 0)
 
     def test_get_practice(self):
-        p=get_practice(self.s, 0)
+        p=get_practice(self.s, 1)
         self.assertEquals(p.fr_idx, 0)
         self.assertEquals(p.to_idx, 10)
         self.assertEquals(p.wb.name, "two-goats-level-2")
@@ -55,19 +55,19 @@ class TestPractice(TestCase):
 
     def test_add_practice(self):
         self.s.begin()
-        add_practice(self.s, 1, 3, 4)
+        add_practice(self.s, 2, 3, 4)
         self.s.flush()
-        p=get_practice(self.s, 11)
+        p=get_practice(self.s, 3)
         self.assertEquals(p.fr_idx, 3)
         self.assertEquals(p.to_idx, 4)
         self.assertEquals(p.wb.name, "fighting-goats-and-jackal-level-2")
-        self.reset_word_seq() # seq is done outside transaction
         self.s.rollback()
+        self.reset_word_seq() # seq is done outside transaction
 
     def reset_word_seq(self):
-        set_seq_val(self.s, "practice_seq", 10)
+        set_seq_val(self.s, "practices")
 
     def test_get_student(self):
-        stu=get_student(self.s, 0)
+        stu=get_student(self.s, 1)
         self.assertEquals(stu.name, "Jodie")
         self.assertEquals(len(stu.pracs), 2)

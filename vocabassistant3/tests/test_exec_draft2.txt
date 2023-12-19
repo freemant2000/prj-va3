@@ -3,7 +3,7 @@ greedy
 jackal
 horn
 ==============
-一隻松鼠爬上了這條樹幹。<=2
+一隻松鼠爬上了這條樹幹。<=3
 那隻松鼠是死的。
-    squirrel<=4,0,n,松鼠
+    squirrel<=5,0,n,松鼠
     dead

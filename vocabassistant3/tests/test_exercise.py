@@ -9,7 +9,7 @@ class TestSpring(TestCase):
         self.s.close()
 
     def test_get_exercise(self):
-        e=get_exec(self.s, 0)
+        e=get_exec(self.s, 1)
         self.assertEquals(len(e.ews), 8)
         self.assertEquals(len(e.snts), 3)
 
@@ -20,22 +20,22 @@ class TestSpring(TestCase):
 
     def test_refine_exec_draft_wu(self):
         ed=load_exec_draft("vocabassistant3/tests/test_exec_draft.txt")
-        sp=get_sprint(self.s, 0)
+        sp=get_sprint(self.s, 1)
         refine_exec_draft(self.s, sp, ed)
         self.assertEquals(len(ed.wus), 6)
         wu=ed.wus["squirrel"]
-        self.assertEquals(wu.wd.id, 4)
+        self.assertEquals(wu.wd.id, 5)
         self.assertEquals(wu.m_indice, "0")
 
     def test_refine_exec_draft_snt_cands(self):
         ed=load_exec_draft("vocabassistant3/tests/test_exec_draft2.txt")
-        sp=get_sprint(self.s, 0)
+        sp=get_sprint(self.s, 1)
         refine_exec_draft(self.s, sp, ed)
         self.assertEquals(len(ed.snt_cands), 3)
 
     def test_refine_exec_draft_extra_kw(self):
         ed=load_exec_draft("vocabassistant3/tests/test_exec_draft2.txt")
-        sp=get_sprint(self.s, 0)
+        sp=get_sprint(self.s, 1)
         refine_exec_draft(self.s, sp, ed)
         self.assertEquals(len(ed.extra_kws), 2)
         self.assertEquals(ed.extra_kws[0], "trunk")
@@ -44,15 +44,15 @@ class TestSpring(TestCase):
     def test_save_exec_draft(self):
         ed=load_exec_draft("vocabassistant3/tests/test_exec_draft3.txt")
         self.s.begin()
-        sp=get_sprint(self.s, 0)
+        sp=get_sprint(self.s, 1)
         add_exec_draft(self.s, sp, ed)
         self.s.flush()
-        exec=get_exec(self.s, 11)
+        exec=get_exec(self.s, 3)
         self.assertEquals(len(exec.ews), 3)
         self.assertEquals(len(exec.snts), 2)
         self.s.rollback()
         self.reset_seq()
 
     def reset_seq(self):
-        set_seq_val(self.s, "exercise_seq", 10)
-        set_seq_val(self.s, "sentence_seq", 10)
+        set_seq_val(self.s, "exercises")
+        set_seq_val(self.s, "sentences")

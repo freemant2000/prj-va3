@@ -16,7 +16,7 @@ class TestWordBank(TestCase):
         self.assertEquals(wbd.wds[0].word, "humble")
         self.assertEquals(len(wbd.word_usages), 1)
     def test_get_word_bank(self):
-        wb=get_word_bank(self.s, 0)
+        wb=get_word_bank(self.s, 1)
         self.assertEquals(len(wb.bws), 13)
     def test_add_draft(self):
         self.s.begin()
@@ -33,12 +33,13 @@ class TestWordBank(TestCase):
             WordDef(id=1, word="mountain", meanings=[WordMeaning(wd_id=1, p_of_s="n", meaning="山")]),
             m_indice="0")
         add_wb_draft(self.s, wbd)
-        wb=get_word_bank(self.s, 11)
+        self.s.flush()
+        wb=get_word_bank(self.s, 3)
         self.assertEquals(wb.name, "my wb1")
         self.assertEquals(len(wb.bws), 2)
-        self.reset_word_seq() # seq is done outside transaction
         self.s.rollback()
+        self.reset_word_seq() # seq is done outside transaction
 
     def reset_word_seq(self):
-        set_seq_val(self.s, "word_def_seq", 20)
-        set_seq_val(self.s, "word_bank_seq", 10)
+        set_seq_val(self.s, "word_defs")
+        set_seq_val(self.s, "word_banks")

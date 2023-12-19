@@ -8,7 +8,7 @@ class TestWordDef(TestCase):
     def tearDown(self) -> None:
         self.s.close()
     def test_get_word_def(self):
-        wds=get_word_defs(self.s, [0, 1, 3])
+        wds=get_word_defs(self.s, [1, 2, 4])
         self.assertEquals(len(wds), 3)
         d=wds[0].get_display()
         self.assertTrue("steep" in d)
@@ -27,12 +27,12 @@ class TestWordDef(TestCase):
         self.assertEquals(wd.get_all_m_indice(), "0,1")
 
     def test_get_word_meaning(self):
-        wm=get_word_meaning(self.s, 3, 2)
+        wm=get_word_meaning(self.s, 4, 2)
         self.assertEquals(wm.wd.word, "trunk")
         self.assertEquals(wm.meaning, "大木箱")
 
     def test_get_word_meanings(self):
-        wms=get_word_meanings(self.s, [3, 10], [2, 0])
+        wms=get_word_meanings(self.s, [4, 11], [2, 0])
         self.assertEquals(wms[0].wd.word, "trunk")
         self.assertEquals(wms[0].meaning, "大木箱")
         self.assertEquals(wms[1].wd.word, "horn")
@@ -66,6 +66,7 @@ class TestWordDef(TestCase):
         wd.add_meaning("n", "手")
         wd.add_meaning("v", "遞給")
         self.s.add(wd)
+        self.s.flush()
         wd2=get_word_defs(self.s, [21])
         self.assertEquals(len(wd2), 1)
         d=wd2[0].get_display()
@@ -74,5 +75,5 @@ class TestWordDef(TestCase):
         self.s.rollback()
 
     def reset_word_seq(self):
-        set_seq_val(self.s, "word_def_seq", 20)
+        set_seq_val(self.s, "word_defs")
 

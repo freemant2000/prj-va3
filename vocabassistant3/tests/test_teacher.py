@@ -9,6 +9,6 @@ class TestPractice(TestCase):
         self.s.close()
 
     def test_get_teacher(self):
-        tch=get_teacher(self.s, 0)
+        tch=get_teacher(self.s, 1)
         self.assertEquals(tch.gmail, "kent.tong.mo@gmail.com")
         self.assertEquals(len(tch.stus), 2)

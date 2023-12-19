@@ -6,9 +6,10 @@ class Base(DeclarativeBase):
     pass
 
 def open_session()->Session:
-    eng=create_engine(f"postgresql://dba:abc123@localhost/va3", echo=False)
+    eng=create_engine(f"mysql+pymysql://dba:abc123@localhost/va3", echo=True)
     s=Session(eng)
     return s
 
-def set_seq_val(s: Session, seq_name: str, val: int):
-    s.execute(text(f"select setval(:sn, :v)"), {"sn": seq_name, "v": val})
+def set_seq_val(s: Session, tbl_name: str):
+    s.execute(text(f"alter table {tbl_name} auto_increment=1"))
+
