@@ -1,4 +1,5 @@
-from .teacher_tui import show_students
+from vocabassistant3.student_tui import show_student_tui
+from .teacher_tui import show_students_tui
 from .db_base import open_session
 from .teacher import get_teacher
 from .user_prod_tui import set_current_user
@@ -8,14 +9,18 @@ def show_help():
         print(f"{cmd}: {descp}")
 
 cmds={"help": ("Show available commands", show_help), 
-      "sss": ("Show Students", show_students)}
+      "sss": ("Show Students", show_students_tui),
+      "ss": ("Show Student", show_student_tui)}
 
 def main_tui():
     log_in()
     while True:
         cmd=input("Input command: ")
         if cmd in cmds:
-            cmds[cmd][1]()
+            try:
+                cmds[cmd][1]()
+            except Exception as e:
+                print("Error: "+str(e))
         else:
             print("Command unknown. Type help to see all commands.")
 

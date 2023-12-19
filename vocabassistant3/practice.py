@@ -61,14 +61,6 @@ def get_student(s: Session, stu_id: int)->Student:
     stu=s.scalars(q).first()
     return stu
 
-def show_student(stud: Student):
-    print(f"Student {stud.id} {stud.name}")
-    for prac in stud.pracs:
-        show_practice(prac)
-
-def show_practice(prac: Practice):
-    print(f"Practice {prac.id} {prac.wb.name} {prac.fr_idx}-{prac.to_idx} {prac.get_no_words()} {prac.assess_dt}")
-
 def get_practice(s: Session, p_id: int)->Practice:
     q=select(Practice).where(Practice.id==p_id)\
         .options(joinedload(Practice.wb))\
