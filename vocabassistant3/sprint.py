@@ -242,21 +242,3 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
                 if kw not in ed.words:
                     ed.extra_kws.append(kw)
 
-def show_sprint(sp: Sprint):
-    print(f"Spring {sp.id} started on {sp.start_dt}")
-    print("\nPractices")
-    for p in sp.pracs:
-      print(p.id, p.wb.name)
-      for bw in p.get_bws():
-        print("\t"+bw.wd.word)
-    print("\nExercises")
-    for exec in sp.execs:
-      show_exec(exec)
-
-def show_exec(exec: Exercise):
-    print(f"Exercise {exec.id} created on {exec.dt}")
-    for ew in exec.ews:
-        print("\t"+ew.wd.word)
-    for snt in exec.snts:
-        print("\t"+snt.text)
-    

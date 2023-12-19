@@ -1,6 +1,6 @@
 from .db_base import open_session
 from .console_utils import get_lines_until_empty
-from .sprint import Sprint, get_exec, get_sprint, parse_exec_draft, refine_exec_draft, show_exec_draft, show_sprint
+from .sprint import Exercise, get_exec, get_sprint, parse_exec_draft, refine_exec_draft, show_exec_draft
 
 def refine_exec_draft_tui():
     with open_session() as s:
@@ -50,4 +50,14 @@ def show_exec_html():
             html+=f"<div>{snt.text}</div>"
     html+="</div>"
     print(html)
-            
+
+def show_exec(exec: Exercise):
+    print(f"Exercise {exec.id} created on {exec.dt}")
+    for ew in exec.ews:
+        print("\t"+ew.wd.word)
+    for snt in exec.snts:
+        print("\t"+snt.text)
+    
+def show_exec_summary(exec: Exercise, tab_count: int=0):
+    tabs="\t"*tab_count
+    print(f"{tabs}Exercise {exec.id} created on {exec.dt} {len(exec.ews)} words")
