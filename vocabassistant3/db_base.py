@@ -6,7 +6,7 @@ class Base(DeclarativeBase):
     pass
 
 def open_session()->Session:
-    eng=create_engine(f"mysql+pymysql://dba:abc123@localhost/va3", echo=True)
+    eng=create_engine(f"mysql+pymysql://dba:abc123@localhost/va3", echo=False)
     s=Session(eng)
     return s
 
