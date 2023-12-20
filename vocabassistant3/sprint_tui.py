@@ -4,7 +4,7 @@ from glob import glob
 from vocabassistant3.console_utils import indent_pr
 from .cmd_handler import CmdHandler
 from .practice import Practice
-from .exercise_tui import show_exec, show_exec_summary
+from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec, show_exec_summary
 from .db_base import open_session
 from .sprint import Sprint, add_sprint, get_revision_dates, get_sprint, get_sprints_for
 from sqlalchemy.orm import Session
@@ -52,7 +52,9 @@ def sprint_tui():
     with open_session() as s:
         sp=get_sprint(s, sp_id)
     cmds={"show": ("List practices and exercises in the sprint", show_sprint_tui),
-          "add": ("Add an exercise to the sprint", add_exec_tui),
+          "sum": ("Show a summary of the sprint", show_sprint_summary_tui),
+          "re": ("Refine an exercise draft for the sprint", lambda: refine_exec_draft_tui(sp_id)),
+          "ae": ("Add an exercise to the sprint", lambda: add_exec_draft_tui(sp_id)),
           "del": ("Delete this sprint", del_sprint_tui),
           "sw": ("Show all the words in the sprint", show_words_tui),
           "ch": ("Clear all the hard words in the sprint", None),
@@ -64,9 +66,6 @@ def show_sprint_tui():
     with open_session() as s:
         sp=get_sprint(s, sp_id)
         show_sprint_struct(sp)
-
-def add_exec_tui():
-    pass
 
 def show_words_tui():
     with open_session() as s:
@@ -92,18 +91,23 @@ def show_sprint_struct(sp: Sprint, pr=print):
 def show_practice(p: Practice, pr=print):
     pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {p.get_no_words()} {p.hard_only} {p.assess_dt}")
 
-def show_sprint_summary(s: Session, sp: Sprint):
-    print(f"Sprint {sp.id} started on {sp.start_dt}")
-    print("Words")
-    for bw in sp.get_bws():
-        print(f"\t{bw.wd.get_display()}\t{bw.m_indice}")
-    print("Revision summary")
-    today=date.today()
-    rds=get_revision_dates(s, sp.id)
-    for ew, ds in rds.items():
-        days=[str((today-d).days) for d in ds]
-        days=",".join(days)
-        print(f"\t{ew.wd.word}\trevised {days} day(s) ago")
+def show_sprint_summary_tui():
+    with open_session() as s:
+        sp=get_sprint(s, sp_id)
+        print(f"Sprint {sp.id} started on {sp.start_dt}")
+        print("Revision summary")
+        today=date.today()
+        rds=get_revision_dates(s, sp.id)
+        wd_ds={ew.wd: ds for (ew, ds) in rds.items()}
+        for idx, bw in enumerate(sp.get_bws()):
+            if bw.wd in wd_ds:
+                ds=wd_ds.get(bw.wd)
+                days=[str((today-d).days) for d in ds]
+                days=",".join(days)
+                rev_info=f"revised {days} day(s) ago"
+            else:
+                rev_info=""
+            print(f"{str(idx).ljust(3)} {bw.wd.word.ljust(20)}\t{bw.wd.get_meanings()}\t{rev_info}")
 
 def show_sprint_details(sp: Sprint):
     print(f"Sprint {sp.id} started on {sp.start_dt}")
