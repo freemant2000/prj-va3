@@ -1,0 +1,27 @@
+[fisherman-and-wife-1]
+humble
+    adj,謙卑的
+fisherman
+    n,漁夫
+sick
+    adj,病的
+    adj,想嘔的
+    adj,厭倦的
+fight<=18,0-1-F
+    v,打鬥
+    n,打鬥
+wife
+    n,妻子
+mango
+    n,芒果
+peach
+    n,桃
+trunk
+    n,樹幹
+hut
+    n,（如石或草造的）小屋
+hook
+    v,鈎
+    n,鈎
+fish
+    n,魚

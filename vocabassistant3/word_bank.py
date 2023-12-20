@@ -41,11 +41,6 @@ def get_word_banks(s: Session, offset: int, limit: int)->List[WordBank]:
   wbs=r.unique().all()
   return wbs
 
-def show_word_def(wd: WordDef):
-    print(f"{wd.word}<={wd.id},{wd.get_all_m_indice()}")
-    for m in wd.meanings:
-      print("\t"+m.get_display())
-
 def add_word_def(s: Session):
     wd=WordDef(word="hand")
     wd.add_meaning("n", "手")
@@ -84,29 +79,6 @@ def refine_wb_draft(s: Session, wbd: WordBankDraft):
         wds=get_word_def(s, wd.word)
         if wds:
             wbd.cands[wd]=wds
-
-def show_wb_draft(wbd: WordBankDraft):
-    print("WordBank "+wbd.name)
-    for wd in wbd.wds:
-        if wd in wbd.word_usages:
-            wu=wbd.word_usages[wd]
-            print(f"{wd.word}<={wu.wd.id},{wu.m_indice.replace(',', '-')}")
-        else:
-            print(wd.word)
-        for wm in wd.meanings:
-            print("\t"+wm.get_display())
-    if wbd.cands:
-        print(f"Possible matches")
-        for wd, wds in wbd.cands.items():
-            for old_wd in wds:
-                show_word_def(old_wd)
-    if wbd.mismatches:
-        print(f"Mismatches")
-        for wd, wd2 in wbd.mismatches.items():
-            print(wd.word)
-            print("-------")
-            show_word_def(wd2)
-    print("Complete" if wbd.is_complete() else "Incomplete")
 
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
     for wd in wbd.wds:

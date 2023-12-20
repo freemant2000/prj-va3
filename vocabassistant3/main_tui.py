@@ -7,12 +7,11 @@ from .teacher import get_teacher
 from .user_prod_tui import set_current_user
 
 
-cmds={"sss": ("Show Students", show_students_tui),
-      "ss": ("Show Student", show_student_tui),
-      "wb": ("Word Banks", word_banks_tui)}
-
 def main_tui():
     log_in()
+    cmds={"sss": ("Show Students", show_students_tui),
+        "ss": ("Show Student", show_student_tui),
+        "wb": ("Word Banks", word_banks_tui)}
     ch=CmdHandler(">", cmds)
     ch.main_loop()
 

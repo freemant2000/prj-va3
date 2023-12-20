@@ -3,8 +3,6 @@ from sqlalchemy import select, ForeignKey, Table, Column, ForeignKeyConstraint, 
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import String, Integer
 from typing import Dict, List, Sequence, Tuple
-
-from vocabassistant3.word_bank import show_word_def
 from .db_base import Base
 from .word_def import WordDef, WordMeaning, get_word_def, get_word_meaning, get_word_meanings
 
