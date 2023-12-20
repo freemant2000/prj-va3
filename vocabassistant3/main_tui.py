@@ -9,9 +9,9 @@ from .user_prod_tui import set_current_user
 
 def main_tui():
     log_in()
-    cmds={"sss": ("Show Students", show_students_tui),
-        "ss": ("Show Student", show_student_tui),
-        "wb": ("Word Banks", word_banks_tui)}
+    cmds={"ss": ("Show Students", show_students_tui),
+        "s": ("Work on a Student", show_student_tui),
+        "wb": ("Work on Word Banks", word_banks_tui)}
     ch=CmdHandler(">", cmds)
     ch.main_loop()
 
