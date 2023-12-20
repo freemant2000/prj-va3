@@ -58,6 +58,5 @@ def show_exec(exec: Exercise):
     for snt in exec.snts:
         print("\t"+snt.text)
     
-def show_exec_summary(exec: Exercise, tab_count: int=0):
-    tabs="\t"*tab_count
-    print(f"{tabs}Exercise {exec.id} created on {exec.dt} {len(exec.ews)} words")
+def show_exec_summary(exec: Exercise, pr=print):
+    pr(f"Exercise {exec.id} created on {exec.dt} {len(exec.ews)} words")

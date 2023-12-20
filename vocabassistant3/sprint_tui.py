@@ -5,21 +5,19 @@ from .db_base import open_session
 from .sprint import Sprint, get_revision_dates, get_sprint
 from sqlalchemy.orm import Session
 
-def show_sprint_struct(sp: Sprint, tab_count: int=0):
-    tabs="\t"*tab_count
-    print(f"{tabs}Sprint {sp.id} started on {sp.start_dt}")
+def show_sprint_struct(sp: Sprint, pr=print):
+    pr(f"Sprint {sp.id} started on {sp.start_dt}")
     if sp.pracs:
-        print(f"{tabs}Practices")
+        pr(f"Practices")
         for p in sp.pracs:
-            show_practice(p, tab_count)
+            show_practice(p, pr=pr)
     if sp.execs:
-        print(f"{tabs}Exercises")
+        pr(f"Exercises")
         for exec in sp.execs:
-            show_exec_summary(exec, tab_count)
+            show_exec_summary(exec, pr=pr)
 
-def show_practice(p: Practice, tab_count: int=0):
-    tabs="\t"*tab_count
-    print(f"{tabs}{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {p.get_no_words()} {p.hard_only} {p.assess_dt}")
+def show_practice(p: Practice, pr=print):
+    pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {p.get_no_words()} {p.hard_only} {p.assess_dt}")
 
 def show_sprint_summary(s: Session, sp: Sprint):
     print(f"Sprint {sp.id} started on {sp.start_dt}")
