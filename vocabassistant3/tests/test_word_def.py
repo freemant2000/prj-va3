@@ -71,8 +71,8 @@ class TestWordDef(TestCase):
         self.assertEquals(len(wd2), 1)
         d=wd2[0].get_display()
         self.assertTrue("hand" in d)
-        self.reset_word_seq() # seq is done outside transaction
         self.s.rollback()
+        self.reset_word_seq() # seq is done outside transaction
 
     def reset_word_seq(self):
         set_seq_val(self.s, "word_defs")

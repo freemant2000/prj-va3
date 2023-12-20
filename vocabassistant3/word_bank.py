@@ -41,14 +41,6 @@ def get_word_banks(s: Session, offset: int, limit: int)->List[WordBank]:
   wbs=r.unique().all()
   return wbs
 
-def add_word_def(s: Session):
-    wd=WordDef(word="hand")
-    wd.add_meaning("n", "手")
-    wd.add_meaning("v", "遞給")
-    s.add(wd)
-    s.commit()
-    print(wd.id)
-
 @dataclass
 class WordBankDraft:
     name: str=""
@@ -58,12 +50,20 @@ class WordBankDraft:
     mismatches: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
 
     def is_complete(self)->bool:
-        if self.cands or self.mismatches:
+        try:
+            self.check_complete()
+            return True
+        except:
             return False
+
+    def check_complete(self):
+        if self.cands:
+            raise ValueError("There are words identical to existing ones")
+        if self.mismatches:
+            raise ValueError("WordDef ID is specified but the word or meanings are different")
         for wd in self.wds:
             if not wd.meanings:
-                return False
-        return True
+                raise ValueError(f"No ID is specified for {wd.word} but no meaning is given")
 
 def refine_wb_draft(s: Session, wbd: WordBankDraft):
   wbd.cands.clear()
@@ -81,6 +81,7 @@ def refine_wb_draft(s: Session, wbd: WordBankDraft):
             wbd.cands[wd]=wds
 
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
+    wbd.check_complete()
     for wd in wbd.wds:
         if not (wd in wbd.word_usages):
             s.add(wd)

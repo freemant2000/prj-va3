@@ -10,7 +10,7 @@ class TestWordBank(TestCase):
     def tearDown(self) -> None:
         self.s.close()
     def test_load_draft(self):
-        wbd=load_wb_input("vocabassistant3/tests/test_wb_input.txt")
+        wbd=load_wb_input("vocabassistant3/tests/test_wb_draft.txt")
         self.assertEquals(wbd.name, "fisherman-and-wife-1")
         self.assertEquals(len(wbd.wds), 11)
         self.assertEquals(wbd.wds[0].word, "humble")
