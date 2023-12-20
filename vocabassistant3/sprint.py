@@ -8,7 +8,7 @@ import datetime
 from .db_base import Base
 from .word_def import WordDef, WordUsage, get_word_meaning
 from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
-from .practice import Practice, Student
+from .practice import Practice, Student, get_practice
 from .word_bank import WordBank, BankWord
 
 class ExeciseWord(Base):
@@ -78,6 +78,16 @@ class Sprint(Base):
             selected_bws.append(bws[idx])
         for p in self.pracs:
             p.mark_words_hard(selected_bws)
+
+def add_sprint(s: Session, stu_id: int, p_ids: Sequence[int])->Sprint:
+    sp=Sprint()
+    sp.stu_id=stu_id
+    sp.start_dt=datetime.date.today()
+    for p_id in p_ids:
+        prac=get_practice(s, p_id)
+        sp.pracs.append(prac)
+    s.add(sp)
+    return sp
 
 def get_exec(s: Session, e_id: int)->Exercise:
   q=select(Exercise).where(Exercise.id==e_id) \

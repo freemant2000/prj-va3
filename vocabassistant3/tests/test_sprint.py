@@ -1,8 +1,8 @@
 from unittest import TestCase
 from datetime import date
-from vocabassistant3.db_base import open_session
+from vocabassistant3.db_base import open_session, set_seq_val
 from vocabassistant3.practice import get_practice
-from vocabassistant3.sprint import get_revision_dates, get_sprint
+from vocabassistant3.sprint import add_sprint, get_revision_dates, get_sprint
 
 class TestSprint(TestCase):
     def setUp(self) -> None:
@@ -19,6 +19,17 @@ class TestSprint(TestCase):
         self.assertEquals(sp.execs[1].dt, date(2023, 12, 5))
         total=sum(len(p.get_bws()) for p in sp.pracs)
         self.assertEquals(total, 18)
+
+    def test_add_sprint(self):
+        sp=add_sprint(self.s, 1, [2])
+        self.assertEquals(len(sp.pracs), 1)
+        self.s.flush()
+        sp2=get_sprint(self.s, 2)
+        self.assertEquals(len(sp2.pracs), 1)
+        self.assertEquals(sp2.pracs[0].id, 2)
+        self.assertEquals(len(sp2.execs), 0)
+        self.s.rollback()
+        self.reset_seq()
 
     def test_find_bank_words(self):
         sp=get_sprint(self.s, 1)
@@ -53,3 +64,7 @@ class TestSprint(TestCase):
        self.assertEquals(len(p.hard_w_indice), 1)
        self.assertEquals(p.hard_w_indice[0].w_idx, 1)
        self.s.rollback()
+
+    def reset_seq(self):
+        set_seq_val(self.s, "sprints")
+       
