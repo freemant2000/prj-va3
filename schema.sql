@@ -1,30 +1,6 @@
--- createdb -O dba -E UTF8 va3
--- create extension pg_trgm;
--- create index on word_defs using gin (word gin_trgm_ops);
--- create index on students using gin (name gin_trgm_ops);
+-- create database va3 character set UTF8;
+-- grant all on va3.* to 'dba'@'localhost';
 
-
--- create sequence word_def_seq;
--- select setval('word_def_seq', 20);
-
--- create sequence word_bank_seq;
--- select setval('word_bank_seq', 10);
-
--- create sequence practice_seq;
--- select setval('practice_seq', 10);
-
--- create sequence sentence_seq;
--- select setval('sentence_seq', 10);
-
--- create sequence exercise_seq;
--- select setval('exercise_seq', 10);
-
-
--- create sequence student_seq;
--- select setval('student_seq', 10);
-
--- create sequence teacher_seq;
--- select setval('teacher_seq', 10);
 
 create table word_banks(id integer auto_increment primary key, name varchar(50));
 create table bank_word(wb_id integer, idx integer, wd_id integer, m_indice varchar(50), primary key(wb_id, idx));
