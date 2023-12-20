@@ -69,13 +69,13 @@ def get_practice(s: Session, p_id: int)->Practice:
     p=r.unique().first()
     return p
 
-def add_practice(s: Session, wb_id: int, fr_idx: int, to_idx: int):
+def add_practice(s: Session, stu_id: int, wb_id: int, fr_idx: int, to_idx: int):
     wb=get_word_bank(s, wb_id)
     if not wb:
         raise ValueError(f"WordBank {wb_id} not found")
     fr_idx, to_idx=adjust_range(wb, fr_idx, to_idx)
     validate_range(fr_idx, to_idx)
-    p=Practice(wb_id=wb_id, fr_idx=fr_idx, to_idx=to_idx, hard_only=False, assess_dt=date.today())
+    p=Practice(wb_id=wb_id, fr_idx=fr_idx, to_idx=to_idx, hard_only=False, assess_dt=date.today(), stu_id=stu_id)
     s.add(p)
 
 def add_next_practice(s: Session, p_id: int):

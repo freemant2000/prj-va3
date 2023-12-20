@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from operator import or_
 import re
 from typing import Dict, Sequence, List
 from sqlalchemy import select, ForeignKey, Sequence as Seq
@@ -37,6 +38,16 @@ def get_word_banks(s: Session, offset: int, limit: int)->List[WordBank]:
   q=select(WordBank) \
     .options(joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
     .order_by(WordBank.id).offset(offset).limit(limit)
+  r=s.scalars(q)
+  wbs=r.unique().all()
+  return wbs
+
+def find_word_banks(s: Session, kw: str, limit: int=20)->List[WordBank]:
+  q=select(WordBank) \
+    .join(WordBank.bws).join(BankWord.wd) \
+    .where(or_(WordBank.name.contains(kw), WordDef.word==kw)) \
+    .options(joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
+    .order_by(WordBank.id).limit(limit)
   r=s.scalars(q)
   wbs=r.unique().all()
   return wbs

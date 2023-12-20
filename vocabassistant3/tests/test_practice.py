@@ -55,7 +55,7 @@ class TestPractice(TestCase):
 
     def test_add_practice(self):
         self.s.begin()
-        add_practice(self.s, 2, 3, 4)
+        add_practice(self.s, 1, 2, 3, 4)
         self.s.flush()
         p=get_practice(self.s, 3)
         self.assertEquals(p.fr_idx, 3)

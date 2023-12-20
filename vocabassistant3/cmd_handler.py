@@ -16,6 +16,9 @@ class CmdHandler:
             if cmd in self.cmds:
                 try:
                     self.cmds[cmd][1]()
+                except ExitException as e:
+                    self.quit=True
+                    return
                 except Exception as e:
                     print("Error: "+str(e))
             else:
@@ -25,3 +28,6 @@ class CmdHandler:
             print(f"{cmd}: {descp}")
     def do_quit(self):
         self.quit=True
+
+class ExitException(Exception):
+    pass

@@ -1,8 +1,7 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_bank import WordBankDraft, load_wb_input, get_word_bank, add_wb_draft
+from vocabassistant3.word_bank import WordBankDraft, find_word_banks, load_wb_input, get_word_bank, add_wb_draft
 from vocabassistant3.word_def import WordDef, WordMeaning, WordUsage
-from sqlalchemy import text
 
 class TestWordBank(TestCase):
     def setUp(self) -> None:
@@ -18,6 +17,14 @@ class TestWordBank(TestCase):
     def test_get_word_bank(self):
         wb=get_word_bank(self.s, 1)
         self.assertEquals(len(wb.bws), 13)
+    def test_find_word_banks_name(self):
+        wbs=find_word_banks(self.s, "jackal")
+        self.assertEquals(len(wbs), 1)
+        self.assertEquals(wbs[0].name, "fighting-goats-and-jackal-level-2")
+    def test_find_word_banks_word(self):
+        wbs=find_word_banks(self.s, "river")
+        self.assertEquals(len(wbs), 1)
+        self.assertEquals(wbs[0].name, "two-goats-level-2")
     def test_add_draft(self):
         self.s.begin()
         wbd=WordBankDraft(name="my wb1")
