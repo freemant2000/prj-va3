@@ -85,25 +85,3 @@ def show_exec_draft(ed: ExerciseDraft, sp: Sprint):
     for snt in ed.snt_cands:
         print(f"{snt.text}<={snt.id}")
 
-def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
-    for word in ed.words:
-        if not (word in ed.wus):
-            bws=sp.find_bank_words(word)
-            if bws:
-                wu=WordUsage(wd=bws[0].wd, m_indice=bws[0].m_indice)
-                ed.wus[word]=wu
-    for sd in ed.sds:
-        refine_snt_draft(s, sd)
-    ed.snt_cands=[t[0] for t in get_snts_from_keywords(s, ed.words)]
-    ed.extra_kws.clear()
-    for sd in ed.sds:
-        if sd.snt_id!=None:
-            snt=get_snt(s, sd.snt_id)
-            for wm in snt.keywords:
-                if wm.wd.word not in ed.words:
-                    ed.extra_kws.append(wm.wd.word)
-        else:
-            for kw in sd.keywords:
-                if kw not in ed.words:
-                    ed.extra_kws.append(kw)
-

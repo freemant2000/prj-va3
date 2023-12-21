@@ -17,8 +17,18 @@ class BankWord(Base):
     wd: Mapped[WordDef]=relationship(WordDef)
     m_indice: Mapped[str]=mapped_column(String)
     
+    def get_full_word(self)->str:
+        word=self.wd.word
+        m_indice=self.m_indice.split(",")
+        m_idx=next((m_idx for m_idx in m_indice if m_idx.endswith("F")), None)
+        if m_idx:
+           m_idx=int(m_idx.rstrip("F"))
+           fw=self.wd.meanings[m_idx].add_forms(word)
+           return fw
+        else:
+           return word
     def is_same(self, bw: "BankWord")->bool:
-       return self.wd_id==bw.wd_id and self.m_indice==bw.m_indice
+        return self.wd_id==bw.wd_id and self.m_indice==bw.m_indice
        
 class WordBank(Base):
     __tablename__="word_banks"

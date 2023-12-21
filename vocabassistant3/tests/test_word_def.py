@@ -13,31 +13,34 @@ class TestWordDef(TestCase):
         d=wds[0].get_display()
         self.assertTrue("steep" in d)
         self.assertTrue("陡峭" in d)
-
+    def test_display(self):
+        wd=WordDef(id=0, word="hand")
+        wd.add_meaning("n", "手")
+        wd.add_meaning("v", "遞給")
+        self.assertEquals(wd.get_display(), "hand\t手(n)、遞給(v)")
     def test_get_similar_words(self):
         wds=get_similar_words(self.s, "f", limit=3)
         self.assertEquals(len(wds), 2)
         self.assertEquals(wds[0].word, "flow")
         self.assertEquals(wds[1].word, "fight")
-    
     def test_get_all_m_indice(self):
         wd=WordDef(word="hand")
         wd.add_meaning("n", "手")
         wd.add_meaning("v", "遞給")
         self.assertEquals(wd.get_all_m_indice(), "0,1")
-
     def test_get_word_meaning(self):
         wm=get_word_meaning(self.s, 4, 2)
         self.assertEquals(wm.wd.word, "trunk")
         self.assertEquals(wm.meaning, "大木箱")
-
     def test_get_word_meanings(self):
         wms=get_word_meanings(self.s, [4, 11], [2, 0])
         self.assertEquals(wms[0].wd.word, "trunk")
         self.assertEquals(wms[0].meaning, "大木箱")
         self.assertEquals(wms[1].wd.word, "horn")
         self.assertEquals(wms[1].meaning, "（動物）角")
- 
+    def test_add_forms(self):
+        wm=get_word_meaning(self.s, 19, 1)
+        self.assertEquals(wm.add_forms("fight"), "fight, fought x2")
     def test_is_usage(self):
         wd=WordDef(id=100, word="cry")
         wd.add_meaning("n", "大叫")
@@ -59,7 +62,6 @@ class TestWordDef(TestCase):
         wd2.add_meaning("n", "大叫")
         wd2.add_meaning("v", "哭")
         self.assertFalse(wd.is_usage(wd2, "1,2"))
-
     def test_add_word_def(self):
         self.s.begin()
         wd=WordDef(word="hand")
@@ -67,13 +69,12 @@ class TestWordDef(TestCase):
         wd.add_meaning("v", "遞給")
         self.s.add(wd)
         self.s.flush()
-        wd2=get_word_defs(self.s, [21])
+        wd2=get_word_defs(self.s, [22])
         self.assertEquals(len(wd2), 1)
         d=wd2[0].get_display()
         self.assertTrue("hand" in d)
         self.s.rollback()
         self.reset_word_seq() # seq is done outside transaction
-
     def reset_word_seq(self):
         set_seq_val(self.s, "word_defs")
 

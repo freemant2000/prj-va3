@@ -51,7 +51,29 @@ class WordMeaning(Base):
     idx: Mapped[int]=mapped_column(Integer, primary_key=True)
     p_of_s: Mapped[str]=mapped_column(String)
     meaning: Mapped[str]=mapped_column(String)
+    form1: Mapped[str]=mapped_column(String)
+    form2: Mapped[str]=mapped_column(String)
+    form3: Mapped[str]=mapped_column(String)
     
+    def add_forms(self, word):
+        sf=""
+        if self.form1:
+            sf+=", "+self.form1
+            if self.form2:
+                if self.form2==self.form1:
+                    sf+=" x2"
+                else:
+                    sf+=", "+self.form2
+                if self.form3:
+                    sf+=", "+self.form3
+        if sf:
+            return word+sf
+        else:
+            return word
+    def get_forms(self)->List[str]:
+        forms=[self.form1, self.form2, self.form3]
+        forms=[f for f in forms if f]
+        return forms
     def get_display(self)->str:
         return f"{self.p_of_s},{self.meaning}"
 

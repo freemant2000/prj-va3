@@ -17,6 +17,10 @@ class TestWordBank(TestCase):
     def test_get_word_bank(self):
         wb=get_word_bank(self.s, 1)
         self.assertEquals(len(wb.bws), 13)
+    def test_get_full_word(self):
+        wb=get_word_bank(self.s, 3)
+        self.assertEquals(wb.bws[0].get_full_word(), "fight, fought x2")
+        self.assertEquals(wb.bws[1].get_full_word(), "person, people")
     def test_find_word_banks_name(self):
         wbs=find_word_banks(self.s, "jackal")
         self.assertEquals(len(wbs), 1)
@@ -41,7 +45,7 @@ class TestWordBank(TestCase):
             m_indice="0")
         add_wb_draft(self.s, wbd)
         self.s.flush()
-        wb=get_word_bank(self.s, 3)
+        wb=get_word_bank(self.s, 4)
         self.assertEquals(wb.name, "my wb1")
         self.assertEquals(len(wb.bws), 2)
         self.s.rollback()
