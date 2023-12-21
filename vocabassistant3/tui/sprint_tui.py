@@ -108,7 +108,7 @@ def show_sprint_summary_tui():
                 ds=wd_ds.get(bw.wd)
                 days=[str((today-d).days) for d in ds]
                 days=",".join(days)
-                rev_info=f"revised {days} day(s) ago"
+                rev_info=f"{days} day(s) ago"
             else:
                 rev_info=""
             print(f"{str(idx).ljust(3)} {bw.wd.word.ljust(20)}\t{bw.wd.get_meanings()}\t{rev_info}")
