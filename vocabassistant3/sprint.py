@@ -64,6 +64,16 @@ class Sprint(Base):
                 if bw not in bws:
                     bws.append(bw)
         return bws
+    
+    def get_all_bws(self)->Sequence[BankWord]:
+        bws=[]
+        for p in self.pracs:
+            bws2=p.get_all_bws()
+            for bw in bws2:
+                if bw not in bws:
+                    bws.append(bw)
+        return bws
+
     def clear_hard(self):
         for p in self.pracs:
             p.clear_hard()

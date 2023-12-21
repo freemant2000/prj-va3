@@ -32,6 +32,9 @@ class Practice(Base):
             return [self.wb.bws[ph.w_idx] for ph in self.hard_w_indice]
         else:
             return bws
+    def get_all_bws(self)->Sequence[BankWord]:
+        bws=self.wb.bws[self.fr_idx:self.to_idx+1]
+        return bws
     def get_no_words(self)->int:
         return self.to_idx-self.fr_idx+1 if not self.hard_only else len(self.hard_w_indice)
     def clear_hard(self):

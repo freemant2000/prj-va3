@@ -13,7 +13,7 @@ def refine_exec_draft_tui(sp_id):
         ed=parse_exec_draft(lines)
         sp=get_sprint(s, sp_id)
         refine_exec_draft(s, sp, ed)
-        show_exec_draft(ed)
+        show_exec_draft(ed, sp)
 
 def add_exec_draft_tui(sp_id):
     pass
@@ -63,7 +63,7 @@ def show_exec(exec: Exercise):
 def show_exec_summary(exec: Exercise, pr=print):
     pr(f"Exercise {exec.id} created on {exec.dt} {len(exec.ews)} words")
 
-def show_exec_draft(ed: ExerciseDraft):
+def show_exec_draft(ed: ExerciseDraft, sp: Sprint):
     for word in ed.words:
         if word in ed.wus:
             wu=ed.wus[word]
@@ -74,9 +74,17 @@ def show_exec_draft(ed: ExerciseDraft):
     for sd in ed.sds:
         show_snt_draft(sd)
     if ed.extra_kws:
+        bws=sp.get_bws()
+        all_bws=sp.get_all_bws()
         print("\nExtra keywords used in the sentences")
         for kw in ed.extra_kws:
-            print("\t"+kw)
+            if next((bw for bw in bws if bw.wd.word==kw), None):
+                status="in sprint"
+            elif next((bw for bw in all_bws if bw.wd.word==kw), None):
+                status="unmarked in a practice in the sprint"
+            else:
+                status="not in sprint"
+            print(f"\t{kw} ({status})")
     print("\nAvailable sentences")
     for snt in ed.snt_cands:
         print(f"{snt.text}<={snt.id}")

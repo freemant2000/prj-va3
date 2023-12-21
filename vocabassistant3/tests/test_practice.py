@@ -25,6 +25,12 @@ class TestPractice(TestCase):
        self.assertEquals(len(bws), 3)
        self.assertEquals(bws[0].wd_id, 2)
 
+    def test_get_all_words(self):
+       p=get_practice(self.s, 1)
+       p.hard_only=True
+       bws=p.get_all_bws()
+       self.assertEquals(len(bws), 11)
+
     def test_mark_as_hard(self):
        self.s.begin()
        p=get_practice(self.s, 1)
