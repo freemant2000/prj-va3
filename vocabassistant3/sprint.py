@@ -51,6 +51,8 @@ class Sprint(Base):
     stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"))
     stu: Mapped[Student]=relationship(Student)
     
+    def is_hard(self, bw: BankWord)->bool:
+        return any(prac.is_hard(bw) for prac in self.pracs)
     def find_bank_words(self, word: str)->Sequence[BankWord]:
         bws=[]
         for prac in self.pracs:
@@ -76,10 +78,11 @@ class Sprint(Base):
     def clear_hard(self):
         for p in self.pracs:
             p.clear_hard()
-    def mark_words_hard(self, w_indice: Sequence[int], hard=True):
+    def mark_all_hard(self, hard: bool):
+        for p in self.pracs:
+            p.mark_all_hard(hard)
+    def mark_words_hard(self, w_indice: Sequence[int], hard: bool=True):
         bws=self.get_bws()
-        for bw in bws:
-            print(bw.wd.word)
         selected_bws=[]
         for idx in w_indice:
             if not 0<=idx<len(bws):
@@ -114,6 +117,7 @@ def get_exec(s: Session, e_id: int)->Exercise:
 
 def get_sprint(s: Session, sp_id: int)->Sprint:
   q=select(Sprint).where(Sprint.id==sp_id) \
+    .options(joinedload(Sprint.pracs).joinedload(Practice.hard_w_indice)) \
     .options(joinedload(Sprint.pracs).joinedload(Practice.wb).joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
     .options(joinedload(Sprint.execs).joinedload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
   r=s.scalars(q)

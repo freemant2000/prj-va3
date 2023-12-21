@@ -1,6 +1,7 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
 from vocabassistant3.practice import Practice, PracticeHard, add_practice, get_practice, get_student
+from vocabassistant3.word_bank import BankWord
 
 class TestPractice(TestCase):
     def setUp(self) -> None:
@@ -57,6 +58,19 @@ class TestPractice(TestCase):
        self.assertEquals(bws[0].wd.word, "valley")
        self.assertEquals(bws[1].wd.word, "opposite")
        self.s.rollback()
+
+    def test_is_hard(self):
+       p=get_practice(self.s, 3)  #bk1 4-9, hard: 5, 6
+       self.assertTrue(p.is_hard(BankWord(wd_id=6, m_indice="0")))
+       self.assertTrue(p.is_hard(BankWord(wd_id=7, m_indice="0")))
+       self.assertFalse(p.is_hard(BankWord(wd_id=8, m_indice="0")))
+
+    def test_is_hard(self):
+       p=get_practice(self.s, 3)  #bk1 4-9, hard: 5, 6
+       p.mark_all_hard(True)
+       self.assertTrue(p.is_hard(BankWord(wd_id=5, m_indice="0")))
+       p.mark_all_hard(False)
+       self.assertFalse(p.is_hard(BankWord(wd_id=5, m_indice="0")))
 
     def test_find_bank_words(self):
        p=get_practice(self.s, 1)

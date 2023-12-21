@@ -1,5 +1,5 @@
 
-from typing import Callable, Dict, List, Sequence, Tuple
+from typing import Callable, Dict, Tuple
 
 
 class CmdHandler:

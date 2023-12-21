@@ -2,12 +2,11 @@ from datetime import date
 from glob import glob
 
 from vocabassistant3.console_utils import indent_pr
-from .cmd_handler import CmdHandler
+from .cmd_handler import CmdHandler, ExitException
 from .practice import Practice
 from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec, show_exec_summary
 from .db_base import open_session
-from .sprint import Sprint, add_sprint, get_revision_dates, get_sprint, get_sprints_for
-
+from .sprint import Sprint, add_sprint, get_revision_dates, get_sprint
 
 def add_sprint_tui(stu_id: int):
     p_ids=[int(p_id) for p_id in input("Input one or more practice IDs like 2,4,5: ").split(",")]
@@ -38,9 +37,7 @@ def sprint_main_tui():
           "ae": ("Add an exercise to the sprint", lambda: add_exec_draft_tui(sp_id)),
           "de": ("Delete an exercise from the sprint", del_exec_tui),          
           "del": ("Delete this sprint", del_sprint_tui),
-          "sw": ("Show all the words in the sprint", show_words_tui),
-          "ch": ("Clear the hard words in the sprint", clear_hard_words_tui),
-          "sh": ("Set the hard words in the sprint", None),}
+          "mw": ("Mark the words in the sprint", mark_words_tui)}
     ch=CmdHandler("sp>", cmds)
     ch.main_loop()
 
@@ -56,17 +53,33 @@ def show_words_tui():
 
 def show_words_in_sp(sp: Sprint):
     for idx, bw in enumerate(sp.get_bws()):
-        print(f"{str(idx).ljust(3)} {bw.wd.word.ljust(20)}\t{bw.wd.get_meanings()}")
+        status="*" if sp.is_hard(bw) else ""
+        print(f"{str(idx).ljust(3)} {(bw.wd.word+status).ljust(20)}\t{bw.wd.get_meanings()}")
 
-def clear_hard_words_tui():
+def mark_words_tui():
+    with open_session() as s:
+        sp=get_sprint(s, sp_id)
+    cmds={"sw": ("Show the words in the sprint", lambda: show_words_in_sp(sp)),
+          "ch": ("Clear the hard words in the sprint", lambda: mark_hard_words(sp, False)),
+          "sh": ("Set the hard words in the sprint", lambda: mark_hard_words(sp, True)),
+          "save": ("Save the markings and quit", lambda: save_sp(sp))}
+    ch=CmdHandler("mw>", cmds)
+    ch.main_loop()
+
+def save_sp(sp: Sprint):
+    with open_session() as s:
+        s.merge(sp)
+        s.commit()
+        print("OK")
+        raise ExitException()
+
+def mark_hard_words(sp: Sprint, hard: bool):
     indice=input("Input the indice like 0,3,7 or all: ")
     if indice=="all":
-        with open_session() as s:
-            sp=get_sprint(s, sp_id)
-            sp.clear_hard()
+        sp.mark_all_hard(hard)
     else:
         indice=[int(idx.strip()) for idx in indice.split(",")]
-        sp.clear_hard_at(indice)
+        sp.mark_words_hard(indice, hard)
     print("OK")
 
 def show_sprint_struct(sp: Sprint, pr=print):

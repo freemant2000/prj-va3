@@ -16,7 +16,10 @@ class BankWord(Base):
     wd_id: Mapped[int]=mapped_column(Integer, ForeignKey("word_defs.id"))
     wd: Mapped[WordDef]=relationship(WordDef)
     m_indice: Mapped[str]=mapped_column(String)
-
+    
+    def is_same(self, bw: "BankWord")->bool:
+       return self.wd_id==bw.wd_id and self.m_indice==bw.m_indice
+       
 class WordBank(Base):
     __tablename__="word_banks"
     id: Mapped[int]=mapped_column(Integer, Seq("word_bank_seq"), primary_key=True)
