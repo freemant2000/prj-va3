@@ -62,6 +62,15 @@ class TestWordDef(TestCase):
         wd2.add_meaning("n", "大叫")
         wd2.add_meaning("v", "哭")
         self.assertFalse(wd.is_usage(wd2, "1,2"))
+
+    def test_is_usage_forms(self):
+        wd=WordDef(id=100, word="go")
+        wd.add_meaning("v", "去", ["went", "gone"])
+        wd2=WordDef(id=100, word="go")
+        wd2.add_meaning("v", "去")
+        self.assertTrue(wd.is_usage(wd2, "0"))
+        self.assertTrue(wd.is_usage(wd2, "0F"))
+
     def test_add_word_def(self):
         self.s.begin()
         wd=WordDef(word="hand")

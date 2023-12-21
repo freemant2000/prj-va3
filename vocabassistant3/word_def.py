@@ -30,6 +30,8 @@ class WordDef(Base):
         if wd.id != self.id or wd.word != self.word:
             return False
         for idx, m_idx in enumerate(m_indice.split(",")):
+            if m_idx.endswith("F"):
+                m_idx=m_idx.rstrip("F")
             m_idx=int(m_idx)
             if m_idx<len(self.meanings):
                 wm1=self.meanings[m_idx]
