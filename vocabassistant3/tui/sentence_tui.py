@@ -1,6 +1,6 @@
-from ..cmd_handler import CmdHandler
+from .cmd_handler import CmdHandler
+from .console_utils import get_lines_until_empty
 from ..db_base import open_session
-from ..console_utils import get_lines_until_empty
 from ..sentence import Sentence, SentenceDraft, add_snt_draft, get_snts_from_keywords, parse_snt_draft, refine_snt_draft
 
 def snts_tui():

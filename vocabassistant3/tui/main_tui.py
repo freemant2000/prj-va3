@@ -1,11 +1,11 @@
+from .cmd_handler import CmdHandler
 from .sentence_tui import snts_tui
-from ..cmd_handler import CmdHandler
 from .student_tui import show_student_tui
 from .word_bank_tui import word_banks_tui
 from .teacher_tui import show_students_tui
+from .user_prod_tui import set_current_user
 from ..db_base import open_session
 from ..teacher import get_teacher
-from .user_prod_tui import set_current_user
 
 def main_tui():
     log_in()
