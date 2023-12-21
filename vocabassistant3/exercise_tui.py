@@ -3,34 +3,30 @@ from .sentence import get_snt, get_snts_from_keywords, refine_snt_draft
 from .word_def import WordUsage
 from .db_base import open_session
 from .console_utils import get_lines_until_empty
-from .sprint import Exercise, ExerciseDraft, Sprint, get_exec, get_sprint, parse_exec_draft
+from .sprint import Exercise, ExerciseDraft, Sprint, add_exec_draft, get_exec, get_sprint, parse_exec_draft
 from sqlalchemy.orm import Session
 
-def refine_exec_draft_tui(sp_id):
+
+def input_exec_draft()->ExerciseDraft:
     print("Paste a new exercise: words, ====, then sentences")
+    lines=get_lines_until_empty()
+    ed=parse_exec_draft(lines)
+    return ed
+
+def refine_exec_draft_tui(sp_id):
+    ed=input_exec_draft()
     with open_session() as s:
-        lines=get_lines_until_empty()
-        ed=parse_exec_draft(lines)
         sp=get_sprint(s, sp_id)
         refine_exec_draft(s, sp, ed)
         show_exec_draft(ed, sp)
 
 def add_exec_draft_tui(sp_id):
-    pass
-
-# def init_exec_draft_tui():
-#     with open_session() as s:
-#         sp=get_sprint(s, 0)
-#         show_sprint_for_new_exec(sp)
-#         print("Paste a new exercise: words, ====, then sentences")
-#         try:
-#             lines=get_lines_until_empty()
-#             ed=parse_exec_draft(lines)
-#             with open_session() as s:
-#                 refine_exec_draft(s, sp, ed)
-#                 show_exec_draft(ed)
-#         except Exception as e:
-#             print(str(e))
+    ed=input_exec_draft()
+    with open_session() as s:
+        sp=get_sprint(s, sp_id)
+        add_exec_draft(s, sp, ed)
+        s.commit()
+        print("OK")
 
 def show_exec_html():
     e_id=str(input("Enter exercise ID: "))
