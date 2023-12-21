@@ -1,10 +1,11 @@
 from .word_bank_search_tui import search_word_bank_tui
 from .cmd_handler import CmdHandler
 from .console_utils import indent_pr
-from .sprint_tui import make_sprint_tui, show_sprint_struct, sprints_tui
+from .sprint_tui import del_sprint_tui, add_sprint_tui, show_sprint_struct, sprint_main_tui
 from .db_base import open_session
 from .practice import Practice, add_practice, get_practice, get_student
 from .sprint import get_sprints_for
+from vocabassistant3 import sprint_tui
 
 stu_id=0
 
@@ -14,10 +15,11 @@ def show_student_tui():
     with open_session() as s:
         stu=get_student(s, stu_id)
     cmds={"show": ("List practices and sprints for the student", show_student),
-          "add": ("Add a practice for the student", add_practice_tui),
-          "del": ("Delete a practice for the student", del_practice_tui),
-          "ms": ("Create a sprint from some practices", lambda: make_sprint_tui(stu_id)),
-          "sps": ("Work on the sprints", lambda: sprints_tui(stu_id))}
+          "ap": ("Add a practice for the student", add_practice_tui),
+          "dp": ("Delete a practice for the student", del_practice_tui),
+          "asp": ("Add a sprint", lambda: add_sprint_tui(stu_id)),
+          "dsp": ("Delete a sprint", del_sprint_tui),
+          "sp": ("Work on a sprint", sprint_main_tui)}
     ch=CmdHandler(f"{stu.name}>", cmds)
     ch.main_loop()
 

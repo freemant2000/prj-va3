@@ -7,22 +7,9 @@ from .practice import Practice
 from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec, show_exec_summary
 from .db_base import open_session
 from .sprint import Sprint, add_sprint, get_revision_dates, get_sprint, get_sprints_for
-from sqlalchemy.orm import Session
 
-stu_id: int=None
-sp_id: int=None
 
-def sprints_tui(s_id: int):
-    global stu_id
-    stu_id=s_id
-    cmds={"show": ("List all the sprints for the student", show_sprints_tui),
-          "add": ("Add a sprint", lambda: make_sprint_tui(stu_id)),
-          "del": ("Delete a sprint", del_sprint_tui),
-          "sp": ("Work on a sprint", sprint_tui)}
-    ch=CmdHandler("sps>", cmds)
-    ch.main_loop()
-
-def make_sprint_tui(stu_id: int):
+def add_sprint_tui(stu_id: int):
     p_ids=[int(p_id) for p_id in input("Input one or more practice IDs like 2,4,5: ").split(",")]
     with open_session() as s:
         add_sprint(s, stu_id, p_ids)
@@ -46,7 +33,7 @@ def show_sprints_tui():
         for sp in sps:
             show_sprint_struct(sp)
 
-def sprint_tui():
+def sprint_main_tui():
     global sp_id
     sp_id=int(input("Input a Sprint ID: "))
     with open_session() as s:
