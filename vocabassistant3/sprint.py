@@ -3,11 +3,11 @@ from itertools import groupby
 from sqlalchemy import ForeignKey, Table, Column, select, Sequence as Seq
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import String, Integer, Date
-from typing import Dict, List, Sequence, Tuple
+from typing import Dict, List, Sequence
 import datetime   
 from .db_base import Base
 from .word_def import WordDef, WordUsage, get_word_meaning
-from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft
+from .sentence import Sentence, SentenceDraft, get_snt, parse_snt_draft
 from .practice import Practice, Student, get_practice
 from .word_bank import WordBank, BankWord
 

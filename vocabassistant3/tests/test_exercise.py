@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.sprint import add_exec_draft, get_sprint, get_exec, load_exec_draft, refine_exec_draft
+from vocabassistant3.sprint import add_exec_draft, get_sprint, get_exec, load_exec_draft
 
 class TestSpring(TestCase):
     def setUp(self) -> None:

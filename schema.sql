@@ -96,6 +96,10 @@ insert into practice_hard values(1, 1);
 insert into practice_hard values(1, 3);
 insert into practice_hard values(1, 8);
 insert into practices values(2, 2, 0, 6, false, '2023-12-2', 1);
+insert into practices values(3, 1, 4, 9, true, '2023-12-4', 2);
+insert into practice_hard values(3, 5);
+insert into practice_hard values(3, 6);
+
 insert into sprints values(1, '2023-12-4', 1);
 insert into sprint_practice values(1, 1);
 insert into sprint_practice values(1, 2);
