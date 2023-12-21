@@ -21,19 +21,16 @@ def add_snt_draft_tui():
     pass
 
 def refine_snt_draft_tui():
-    while True:
-        print("Paste a new sentence, followed by indented keywords:")
-        try:
-            lines=get_lines_until_empty()
-            sd=parse_snt_draft(lines)
-            with open_session() as s:
-                refine_snt_draft(s, sd)
-            show_snt_draft(sd)
-        except Exception as e:
-            print(str(e))
+    print("Paste a new sentence, followed by indented keywords:")
+    lines=get_lines_until_empty()
+    sd=parse_snt_draft(lines)
+    with open_session() as s:
+        refine_snt_draft(s, sd)
+    show_snt_draft(sd)
 
 def show_snt_draft(sd: SentenceDraft):
-    print(sd.text)
+    status="Complete" if sd.is_complete() else "Incomplete"
+    print(f"{sd.text} ({status})")
     if sd.snt_candidates:
         print("Sentence candidates")
         for snt in sd.snt_candidates:
@@ -50,7 +47,6 @@ def show_snt_draft(sd: SentenceDraft):
             print(f"For {kw}")
             for wm in cands:
                 print(f"\t{kw}<={wm.wd_id},{wm.idx},{wm.p_of_s},{wm.meaning}")
-    print("Complete" if sd.is_complete() else "Incomplete")
 
 def show_snt(snt: Sentence):
     print(f"{snt.text}")
