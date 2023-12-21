@@ -1,7 +1,7 @@
 from .cmd_handler import CmdHandler
 from .db_base import open_session
 from .console_utils import get_lines_until_empty
-from .sentence import Sentence, SentenceDraft, get_snts_from_keywords, parse_snt_draft, refine_snt_draft
+from .sentence import Sentence, SentenceDraft, add_snt_draft, get_snts_from_keywords, parse_snt_draft, refine_snt_draft
 
 def snts_tui():
     cmds={"find": ("Search for sentences with keywords", find_snts_tui),
@@ -17,13 +17,21 @@ def find_snts_tui():
     for snt, mc in snts:
         show_snt(snt)
 
-def add_snt_draft_tui():
-    pass
-
-def refine_snt_draft_tui():
+def input_snt_draft()->SentenceDraft:
     print("Paste a new sentence, followed by indented keywords:")
     lines=get_lines_until_empty()
     sd=parse_snt_draft(lines)
+    return sd
+
+def add_snt_draft_tui():
+    sd=input_snt_draft()
+    with open_session() as s:
+        add_snt_draft(s, sd)
+        s.commit()
+        print("OK")
+
+def refine_snt_draft_tui():
+    sd=input_snt_draft()
     with open_session() as s:
         refine_snt_draft(s, sd)
     show_snt_draft(sd)
