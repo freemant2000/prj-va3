@@ -121,7 +121,7 @@ def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
     s.add(wb)
     return wb
 
-def load_wb_input(path: str)->WordBankDraft:
+def load_wb_draft(path: str)->WordBankDraft:
   with open(path) as f:
     lines=f.readlines()
     wbd=parse_wb_draft(lines)
@@ -137,20 +137,36 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
     wbd.name=m.group(1)
     for line in lines:
       if line.startswith(" ") or line.startswith("\t"): # a meaning
-          line=line.strip()
-          if line:
-            p_of_s, m=line.split(",")
-            wbd.wds[-1].add_meaning(p_of_s, m)
+            line=line.strip()
+            if line:
+                ps=line.split(":")
+                if len(ps)==2:
+                    if forms:
+                        raise ValueError(f"Forms provided along with the word, but are specified again in {line}")
+                    forms=[f.strip() for f in ps[1].split(",")]
+                elif len(ps)==1:
+                    pass #apply the forms following the word (if any)
+                else:
+                    raise ValueError(f"Too many colons in {line}")
+                p_of_s, m=ps[0].split(",")
+                wbd.wds[-1].add_meaning(p_of_s, m, forms)
+                forms=[]  
       else: #start a new word
         line=line.strip()
         if line:
-          tp=line.split("<=")
-          wd=WordDef(id=None, word=tp[0])
-          wbd.wds.append(wd)
-          if len(tp)==2: #use a WordDef
-            _, p2=tp
-            wd_id, m_indice=p2.split(",")
-            m_indice=m_indice.replace("-", ",")
-            wbd.word_usages[wd]=WordUsage(WordDef(id=int(wd_id)), m_indice)
+            tp=line.split("<=")
+            word, forms=parse_full_word(tp[0])
+            wd=WordDef(id=None, word=word)
+            wbd.wds.append(wd)
+            if len(tp)==2: #use a WordDef
+                _, p2=tp
+                wd_id, m_indice=p2.split(",")
+                m_indice=m_indice.replace("-", ",")
+                wbd.word_usages[wd]=WordUsage(WordDef(id=int(wd_id)), m_indice)
     return wbd
 
+def parse_full_word(fw: str)->(str, List[str]):
+    ps=fw.split(",")
+    ps=[p.strip() for p in ps]
+    word=ps.pop(0)
+    return (word, ps)

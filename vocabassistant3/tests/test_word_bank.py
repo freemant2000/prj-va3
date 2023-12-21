@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_bank import WordBankDraft, find_word_banks, load_wb_input, get_word_bank, add_wb_draft
+from vocabassistant3.word_bank import WordBankDraft, find_word_banks, load_wb_draft, get_word_bank, add_wb_draft, parse_full_word
 from vocabassistant3.word_def import WordDef, WordMeaning, WordUsage
 
 class TestWordBank(TestCase):
@@ -9,7 +9,7 @@ class TestWordBank(TestCase):
     def tearDown(self) -> None:
         self.s.close()
     def test_load_draft(self):
-        wbd=load_wb_input("vocabassistant3/tests/test_wb_draft.txt")
+        wbd=load_wb_draft("vocabassistant3/tests/test_wb_draft.txt")
         self.assertEquals(wbd.name, "fisherman-and-wife-1")
         self.assertEquals(len(wbd.wds), 11)
         self.assertEquals(wbd.wds[0].word, "humble")
@@ -29,6 +29,16 @@ class TestWordBank(TestCase):
         wbs=find_word_banks(self.s, "river")
         self.assertEquals(len(wbs), 1)
         self.assertEquals(wbs[0].name, "two-goats-level-2")
+    def test_parse_full_word(self):
+        word, forms=parse_full_word("go, went, gone")
+        self.assertEquals(word, "go")
+        self.assertEquals(forms, ["went", "gone"])        
+    def test_parse_forms(self):
+        wbd=load_wb_draft("vocabassistant3/tests/test_wb_draft3.txt")
+        self.assertEquals(wbd.wds[0].meanings[0].get_forms(), ["went", "gone"])
+        self.assertEquals(wbd.wds[1].meanings[0].get_forms(), ["teeth"])
+        self.assertEquals(wbd.wds[2].meanings[0].get_forms(), ["hung", "hung"])
+        self.assertEquals(wbd.wds[2].meanings[1].get_forms(), ["hanged", "hanged"])
     def test_add_draft(self):
         self.s.begin()
         wbd=WordBankDraft(name="my wb1")
