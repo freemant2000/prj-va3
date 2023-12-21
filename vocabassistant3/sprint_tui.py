@@ -39,7 +39,7 @@ def sprint_main_tui():
           "de": ("Delete an exercise from the sprint", del_exec_tui),          
           "del": ("Delete this sprint", del_sprint_tui),
           "sw": ("Show all the words in the sprint", show_words_tui),
-          "ch": ("Clear all the hard words in the sprint", None),
+          "ch": ("Clear the hard words in the sprint", clear_hard_words_tui),
           "sh": ("Set the hard words in the sprint", None),}
     ch=CmdHandler("sp>", cmds)
     ch.main_loop()
@@ -57,6 +57,17 @@ def show_words_tui():
 def show_words_in_sp(sp: Sprint):
     for idx, bw in enumerate(sp.get_bws()):
         print(f"{str(idx).ljust(3)} {bw.wd.word.ljust(20)}\t{bw.wd.get_meanings()}")
+
+def clear_hard_words_tui():
+    indice=input("Input the indice like 0,3,7 or all: ")
+    if indice=="all":
+        with open_session() as s:
+            sp=get_sprint(s, sp_id)
+            sp.clear_hard()
+    else:
+        indice=[int(idx.strip()) for idx in indice.split(",")]
+        sp.clear_hard_at(indice)
+    print("OK")
 
 def show_sprint_struct(sp: Sprint, pr=print):
     pr(f"Sprint {sp.id} started on {sp.start_dt}")

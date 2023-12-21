@@ -39,12 +39,18 @@ class Practice(Base):
         return self.to_idx-self.fr_idx+1 if not self.hard_only else len(self.hard_w_indice)
     def clear_hard(self):
         self.hard_w_indice.clear()
-    def mark_words_hard(self, bws: Sequence[BankWord]):
+    def mark_words_hard(self, bws: Sequence[BankWord], hard=True):
         bws2=self.wb.bws[self.fr_idx:self.to_idx+1]
         for idx, bw in enumerate(bws2):
             if bw in bws:
                 ph=PracticeHard(p_id=self.id, w_idx=self.fr_idx+idx)
-                self.hard_w_indice.append(ph)
+                if hard:
+                    self.hard_w_indice.append(ph)
+                else:
+                    ph2=next((ph for ph in self.hard_w_indice if ph.w_idx==self.fr_idx+idx), None)
+                    if ph2:
+                        self.hard_w_indice.remove(ph2)
+
     def find_bank_words(self, word: str)->Sequence[BankWord]:
         return [bw for bw in self.get_bws() if bw.wd.word==word]
     def get_display(self)->str:

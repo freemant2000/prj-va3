@@ -73,11 +73,10 @@ class Sprint(Base):
                 if bw not in bws:
                     bws.append(bw)
         return bws
-
     def clear_hard(self):
         for p in self.pracs:
             p.clear_hard()
-    def mark_words_hard(self, w_indice: Sequence[int]):
+    def mark_words_hard(self, w_indice: Sequence[int], hard=True):
         bws=self.get_bws()
         for bw in bws:
             print(bw.wd.word)
@@ -87,7 +86,7 @@ class Sprint(Base):
                 raise ValueError(f"Invalid index {idx}")
             selected_bws.append(bws[idx])
         for p in self.pracs:
-            p.mark_words_hard(selected_bws)
+            p.mark_words_hard(selected_bws, hard)
     def del_exec(self, idx: int)->Exercise:
         if 0<=idx<len(self.execs):
             exec=self.execs.pop(idx)
