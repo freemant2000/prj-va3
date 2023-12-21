@@ -88,6 +88,12 @@ class Sprint(Base):
             selected_bws.append(bws[idx])
         for p in self.pracs:
             p.mark_words_hard(selected_bws)
+    def del_exec(self, idx: int)->Exercise:
+        if 0<=idx<len(self.execs):
+            exec=self.execs.pop(idx)
+            return exec
+        else:
+            raise ValueError(f"Index must be 0-{len(self.execs)-1}")
 
 def add_sprint(s: Session, stu_id: int, p_ids: Sequence[int])->Sprint:
     sp=Sprint()

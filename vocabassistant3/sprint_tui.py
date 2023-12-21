@@ -27,12 +27,6 @@ def del_sprint_tui():
         else:
             print(f"Sprint {sp_id} not found")
 
-def show_sprints_tui():
-    with open_session() as s:
-        sps=get_sprints_for(s, stu_id)
-        for sp in sps:
-            show_sprint_struct(sp)
-
 def sprint_main_tui():
     global sp_id
     sp_id=int(input("Input a Sprint ID: "))
@@ -42,6 +36,7 @@ def sprint_main_tui():
           "sum": ("Show a summary of the sprint", show_sprint_summary_tui),
           "re": ("Refine an exercise draft for the sprint", lambda: refine_exec_draft_tui(sp_id)),
           "ae": ("Add an exercise to the sprint", lambda: add_exec_draft_tui(sp_id)),
+          "de": ("Delete an exercise from the sprint", del_exec_tui),          
           "del": ("Delete this sprint", del_sprint_tui),
           "sw": ("Show all the words in the sprint", show_words_tui),
           "ch": ("Clear all the hard words in the sprint", None),
@@ -72,8 +67,8 @@ def show_sprint_struct(sp: Sprint, pr=print):
             show_practice(p, pr=pr2)
     if sp.execs:
         pr2(f"Exercises")
-        for exec in sp.execs:
-            show_exec_summary(exec, pr=pr2)
+        for idx, exec in enumerate(sp.execs):
+            show_exec_summary(idx, exec, pr=pr2)
 
 def show_practice(p: Practice, pr=print):
     pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {p.get_no_words()} {p.hard_only} {p.assess_dt}")
@@ -104,6 +99,14 @@ def show_sprint_details(sp: Sprint):
       for bw in p.get_bws():
         print("\t"+bw.wd.word)
     print("\nExercises")
-    for exec in sp.execs:
-      show_exec(exec)
+    for idx, exec in enumerate(sp.execs):
+      show_exec(idx, exec)
 
+def del_exec_tui():
+    idx=int(input("Input the index (0 or 1, etc.) of the exercise: "))
+    with open_session() as s:
+        sp=get_sprint(s, sp_id)
+        exec=sp.del_exec(idx)
+        s.delete(exec)
+        s.commit()
+        print("OK")

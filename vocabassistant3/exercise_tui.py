@@ -49,15 +49,15 @@ def show_exec_html():
     html+="</div>"
     print(html)
 
-def show_exec(exec: Exercise):
-    print(f"Exercise {exec.id} created on {exec.dt}")
+def show_exec(idx: int, exec: Exercise):
+    print(f"{idx} Exercise created on {exec.dt}")
     for ew in exec.ews:
         print("\t"+ew.wd.word)
     for snt in exec.snts:
         print("\t"+snt.text)
     
-def show_exec_summary(exec: Exercise, pr=print):
-    pr(f"Exercise {exec.id} created on {exec.dt} {len(exec.ews)} words")
+def show_exec_summary(idx: int, exec: Exercise, pr=print):
+    pr(f"{idx} Exercise created on {exec.dt} {len(exec.ews)} words")
 
 def show_exec_draft(ed: ExerciseDraft, sp: Sprint):
     for word in ed.words:
