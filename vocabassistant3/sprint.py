@@ -7,7 +7,7 @@ from typing import Dict, List, Sequence, Tuple
 import datetime   
 from .db_base import Base
 from .word_def import WordDef, WordUsage, get_word_meaning
-from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft, show_snt, show_snt_draft
+from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft
 from .practice import Practice, Student, get_practice
 from .word_bank import WordBank, BankWord
 
@@ -211,44 +211,4 @@ def parse_exec_draft(lines: Sequence[str])->ExerciseDraft:
     if snt_lines:
         ed.sds.append(parse_snt_draft(snt_lines))
     return ed
-
-def show_exec_draft(ed: ExerciseDraft):
-    for word in ed.words:
-        if word in ed.wus:
-            wu=ed.wus[word]
-            print(f"{word}<={wu.wd.id},{wu.m_indice.replace(',', '-')}")
-        else:
-            print(word)
-    print("===========")
-    for sd in ed.sds:
-        show_snt_draft(sd)
-    if ed.extra_kws:
-        print("\nExtra keywords used in the sentences")
-        for kw in ed.extra_kws:
-            print("\t"+kw)
-    print("\nAvailable sentences")
-    for snt in ed.snt_cands:
-        print(f"{snt.text}<={snt.id}")
-
-def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
-    for word in ed.words:
-        if not (word in ed.wus):
-            bws=sp.find_bank_words(word)
-            if bws:
-                wu=WordUsage(wd=bws[0].wd, m_indice=bws[0].m_indice)
-                ed.wus[word]=wu
-    for sd in ed.sds:
-        refine_snt_draft(s, sd)
-    ed.snt_cands=[t[0] for t in get_snts_from_keywords(s, ed.words)]
-    ed.extra_kws.clear()
-    for sd in ed.sds:
-        if sd.snt_id!=None:
-            snt=get_snt(s, sd.snt_id)
-            for wm in snt.keywords:
-                if wm.wd.word not in ed.words:
-                    ed.extra_kws.append(wm.wd.word)
-        else:
-            for kw in sd.keywords:
-                if kw not in ed.words:
-                    ed.extra_kws.append(kw)
 

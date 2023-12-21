@@ -1,3 +1,4 @@
+from .sentence_tui import snts_tui
 from .cmd_handler import CmdHandler
 from .student_tui import show_student_tui
 from .word_bank_tui import word_banks_tui
@@ -6,12 +7,12 @@ from .db_base import open_session
 from .teacher import get_teacher
 from .user_prod_tui import set_current_user
 
-
 def main_tui():
     log_in()
-    cmds={"ss": ("Show Students", show_students_tui),
-        "s": ("Work on a Student", show_student_tui),
-        "wb": ("Work on Word Banks", word_banks_tui)}
+    cmds={"ss": ("Show students", show_students_tui),
+        "s": ("Work on a student", show_student_tui),
+        "wbs": ("Work on the word banks", word_banks_tui),
+        "snts": ("Work on the sentences", snts_tui)}
     ch=CmdHandler(">", cmds)
     ch.main_loop()
 

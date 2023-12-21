@@ -1,7 +1,10 @@
+from .sentence_tui import show_snt_draft
+from .sentence import get_snt, get_snts_from_keywords, refine_snt_draft
+from .word_def import WordUsage
 from .db_base import open_session
 from .console_utils import get_lines_until_empty
-from .sprint import Exercise, get_exec, get_sprint, parse_exec_draft, refine_exec_draft, show_exec_draft
-
+from .sprint import Exercise, ExerciseDraft, Sprint, get_exec, get_sprint, parse_exec_draft
+from sqlalchemy.orm import Session
 
 def refine_exec_draft_tui(sp_id):
     print("Paste a new exercise: words, ====, then sentences")
@@ -59,3 +62,44 @@ def show_exec(exec: Exercise):
     
 def show_exec_summary(exec: Exercise, pr=print):
     pr(f"Exercise {exec.id} created on {exec.dt} {len(exec.ews)} words")
+
+def show_exec_draft(ed: ExerciseDraft):
+    for word in ed.words:
+        if word in ed.wus:
+            wu=ed.wus[word]
+            print(f"{word}<={wu.wd.id},{wu.m_indice.replace(',', '-')}")
+        else:
+            print(word)
+    print("===========")
+    for sd in ed.sds:
+        show_snt_draft(sd)
+    if ed.extra_kws:
+        print("\nExtra keywords used in the sentences")
+        for kw in ed.extra_kws:
+            print("\t"+kw)
+    print("\nAvailable sentences")
+    for snt in ed.snt_cands:
+        print(f"{snt.text}<={snt.id}")
+
+def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
+    for word in ed.words:
+        if not (word in ed.wus):
+            bws=sp.find_bank_words(word)
+            if bws:
+                wu=WordUsage(wd=bws[0].wd, m_indice=bws[0].m_indice)
+                ed.wus[word]=wu
+    for sd in ed.sds:
+        refine_snt_draft(s, sd)
+    ed.snt_cands=[t[0] for t in get_snts_from_keywords(s, ed.words)]
+    ed.extra_kws.clear()
+    for sd in ed.sds:
+        if sd.snt_id!=None:
+            snt=get_snt(s, sd.snt_id)
+            for wm in snt.keywords:
+                if wm.wd.word not in ed.words:
+                    ed.extra_kws.append(wm.wd.word)
+        else:
+            for kw in sd.keywords:
+                if kw not in ed.words:
+                    ed.extra_kws.append(kw)
+

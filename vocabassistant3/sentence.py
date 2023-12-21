@@ -30,7 +30,7 @@ def get_snt(s: Session, id: int)->Sentence:
 def get_snts(s: Session, words: Sequence[str], limit: int=20)->Sequence[Sentence]:
   q=select(Sentence).where(Sentence.keywords.any(WordMeaning.wd.has(WordDef.word.in_(words)))) \
       .options(joinedload(Sentence.keywords).joinedload(WordMeaning.wd)) \
-      .order_by(Sentence.id.asc())
+      .order_by(Sentence.id.asc()).limit(limit)
   r=s.scalars(q)
   return r.unique().all()
 
@@ -78,31 +78,6 @@ def add_snt_draft(s: Session, sd: SentenceDraft):
                         [wm.wd_id for wm in sd.kw_meanings.values()], \
                         [wm.idx for wm in sd.kw_meanings.values()])
     s.add(snt)
-
-def show_snt_draft(sd: SentenceDraft):
-    print(sd.text)
-    if sd.snt_candidates:
-        print("Sentence candidates")
-        for snt in sd.snt_candidates:
-            print(f"{snt.text}<={snt.id}")
-    for kw in sd.keywords:
-        if kw in sd.kw_meanings:
-            wm=sd.kw_meanings[kw]
-            print(f"\t{kw}<={wm.wd_id},{wm.idx},{wm.p_of_s},{wm.meaning}")
-        else:
-            print("\t"+kw)
-    if sd.kw_cands:
-        print("WordMeaning candidates")
-        for kw, cands in sd.kw_cands.items():
-            print(f"For {kw}")
-            for wm in cands:
-                print(f"\t{kw}<={wm.wd_id},{wm.idx},{wm.p_of_s},{wm.meaning}")
-    print("Complete" if sd.is_complete() else "Incomplete")
-
-def show_snt(snt: Sentence):
-    print(f"Sentence {snt.text}")
-    for wm in snt.keywords:
-        print(f"\t{wm.wd.word}<={wm.wd_id},{wm.idx},{wm.p_of_s},{wm.meaning}")
 
 def refine_snt_draft(s: Session, sd: SentenceDraft):
     if sd.snt_id!=None: # use an existing sentence
