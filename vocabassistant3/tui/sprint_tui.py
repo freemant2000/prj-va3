@@ -111,18 +111,8 @@ def show_sprint_summary_tui():
                 rev_info=f"{days} day(s) ago"
             else:
                 rev_info=""
-            print(f"{str(idx).ljust(3)} {bw.wd.word.ljust(20)}\t{bw.wd.get_meanings()}\t{rev_info}")
-
-def show_sprint_details(sp: Sprint):
-    print(f"Sprint {sp.id} started on {sp.start_dt}")
-    print("\nPractices")
-    for p in sp.pracs:
-      print(p.id, p.wb.name)
-      for bw in p.get_bws():
-        print("\t"+bw.wd.word)
-    print("\nExercises")
-    for idx, exec in enumerate(sp.execs):
-      show_exec(idx, exec)
+            fw=bw.get_full_word()
+            print(f"{str(idx).ljust(3)} {fw.ljust(20)}\t{bw.wd.get_meanings()}\t{rev_info}")
 
 def del_exec_tui():
     idx=int(input("Input the index (0 or 1, etc.) of the exercise: "))
