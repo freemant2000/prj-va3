@@ -1,8 +1,8 @@
-from vocabassistant3.word_def import WordDef
-from .cmd_handler import CmdHandler
-from .db_base import open_session
-from .console_utils import get_lines_until_empty
-from .word_bank import BankWord, WordBank, WordBankDraft, add_wb_draft, get_word_bank, get_word_banks, parse_wb_draft, refine_wb_draft
+from ..word_def import WordDef
+from ..cmd_handler import CmdHandler
+from ..db_base import open_session
+from ..console_utils import get_lines_until_empty
+from ..word_bank import BankWord, WordBank, WordBankDraft, add_wb_draft, get_word_bank, get_word_banks, parse_wb_draft, refine_wb_draft
 
 offset=0
 

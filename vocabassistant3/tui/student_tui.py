@@ -1,11 +1,10 @@
-from .word_bank_search_tui import search_word_bank_tui
-from .cmd_handler import CmdHandler
-from .console_utils import indent_pr
+from ..cmd_handler import CmdHandler
+from ..console_utils import indent_pr
 from .sprint_tui import del_sprint_tui, add_sprint_tui, show_sprint_struct, sprint_main_tui
-from .db_base import open_session
-from .practice import Practice, add_practice, get_practice, get_student
-from .sprint import get_sprints_for
-from vocabassistant3 import sprint_tui
+from ..db_base import open_session
+from ..practice import Practice, add_practice, get_practice, get_student
+from ..sprint import get_sprints_for
+from .word_bank_search_tui import search_word_bank_tui
 
 stu_id=0
 

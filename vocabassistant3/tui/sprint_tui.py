@@ -1,12 +1,10 @@
 from datetime import date
-from glob import glob
-
-from vocabassistant3.console_utils import indent_pr
-from .cmd_handler import CmdHandler, ExitException
-from .practice import Practice
+from ..console_utils import indent_pr
+from ..cmd_handler import CmdHandler, ExitException
+from ..practice import Practice
+from ..db_base import open_session
+from ..sprint import Sprint, add_sprint, get_revision_dates, get_sprint
 from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec, show_exec_summary
-from .db_base import open_session
-from .sprint import Sprint, add_sprint, get_revision_dates, get_sprint
 
 def add_sprint_tui(stu_id: int):
     p_ids=[int(p_id) for p_id in input("Input one or more practice IDs like 2,4,5: ").split(",")]

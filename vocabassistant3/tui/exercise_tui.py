@@ -1,9 +1,9 @@
 from .sentence_tui import show_snt_draft
-from .sentence import get_snt, get_snts_from_keywords, refine_snt_draft
-from .word_def import WordUsage
-from .db_base import open_session
-from .console_utils import get_lines_until_empty
-from .sprint import Exercise, ExerciseDraft, Sprint, add_exec_draft, get_exec, get_sprint, parse_exec_draft
+from ..sentence import get_snt, get_snts_from_keywords, refine_snt_draft
+from ..word_def import WordUsage
+from ..db_base import open_session
+from ..console_utils import get_lines_until_empty
+from ..sprint import Exercise, ExerciseDraft, Sprint, add_exec_draft, get_exec, get_sprint, parse_exec_draft
 from sqlalchemy.orm import Session
 
 

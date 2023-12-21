@@ -1,6 +1,6 @@
-from .word_bank import WordBank, find_word_banks, get_word_bank
-from .db_base import open_session
-from .cmd_handler import CmdHandler, ExitException
+from ..word_bank import WordBank, find_word_banks, get_word_bank
+from ..db_base import open_session
+from ..cmd_handler import CmdHandler, ExitException
 
 wb_selected: WordBank=None
 

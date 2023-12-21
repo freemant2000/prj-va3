@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Module",
+            "name": "Main TUI",
             "type": "python",
             "request": "launch",
-            "module": "vocabassistant3.tests.${fileBasenameNoExtension}"
+            "module": "vocabassistant3.tui.main_tui"
         }
     ]
 }

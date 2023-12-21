@@ -1,4 +1,4 @@
-from .teacher import Teacher
+from ..teacher import Teacher
 
 current_user:Teacher=None
 
