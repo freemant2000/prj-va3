@@ -12,10 +12,18 @@
             "justMyCode": true
         },
         {
-            "name": "Main TUI",
+            "name": "Main TUI (Test)",
             "type": "python",
             "request": "launch",
             "module": "vocabassistant3.tui.main_tui"
+        }
+        ,
+        {
+            "name": "Main TUI (Production)",
+            "type": "python",
+            "request": "launch",
+            "module": "vocabassistant3.tui.main_tui",
+            "args": ["-d", "va3"]
         }
     ]
 }

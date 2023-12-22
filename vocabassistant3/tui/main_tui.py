@@ -4,10 +4,15 @@ from .student_tui import show_student_tui
 from .word_bank_tui import word_banks_tui
 from .teacher_tui import show_students_tui
 from .user_prod_tui import set_current_user
-from ..db_base import open_session
+from ..db_base import open_session, set_dbname
 from ..teacher import get_teacher
+from argparse import ArgumentParser
 
 def main_tui():
+    ap=ArgumentParser()
+    ap.add_argument("-d", "--dbname", default="va3_test")
+    args=ap.parse_args()
+    set_dbname(args.dbname)
     log_in()
     cmds={"ss": ("Show students", show_students_tui),
         "s": ("Work on a student", show_student_tui),

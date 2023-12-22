@@ -1,3 +1,4 @@
+from .word_bank_search_tui import search_word_banks
 from .cmd_handler import CmdHandler
 from .console_utils import get_lines_until_empty
 from ..word_def import WordDef
@@ -8,11 +9,12 @@ offset=0
 
 def word_banks_tui():
     global offset
-    cmds={"list": ("List Word Banks", list_word_banks),
-      "reset": ("Restart from the beginning", reset),
-      "show": ("Show the words in a Word Bank", show_word_bank_tui),
-      "refine": ("Refine a Word Bank Draft", refine_wb_draft_tui),
-      "save": ("Save a Word Bank Draft as a Word Bank", save_wb_draft_tui)}
+    cmds={"list": ("List word banks", list_word_banks),
+      "reset": ("Restart the listing from the beginning", reset),
+      "search": ("Perform a keyword search for word banks", search_word_banks),
+      "show": ("Show the words in a word bank", show_word_bank_tui),
+      "refine": ("Refine a word bank draft", refine_wb_draft_tui),
+      "save": ("Save a word bank draft as a word bank", save_wb_draft_tui)}
     offset=0
     ch=CmdHandler("wbs>", cmds)
     ch.main_loop()

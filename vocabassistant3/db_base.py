@@ -5,8 +5,14 @@ from sqlalchemy import create_engine, text
 class Base(DeclarativeBase):
     pass
 
+dbname="va3_test"
+
+def set_dbname(dbn: str):
+    global dbname
+    dbname=dbn
+    
 def open_session()->Session:
-    eng=create_engine(f"mysql+pymysql://dba:abc123@localhost/va3_test", echo=False)
+    eng=create_engine(f"mysql+pymysql://dba:abc123@localhost/{dbname}", echo=False)
     s=Session(eng)
     return s
 

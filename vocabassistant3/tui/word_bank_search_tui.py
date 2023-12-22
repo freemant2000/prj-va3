@@ -5,8 +5,8 @@ from ..db_base import open_session
 wb_selected: WordBank=None
 
 def search_word_bank_tui()->WordBank:
-    cmds={"s": ("Perform a keyword search for Word Banks", search_word_banks),
-          "c": ("Choose a Word Bank", choose_word_bank)}
+    cmds={"s": ("Perform a keyword search for word banks", search_word_banks),
+          "c": ("Choose a word bank", choose_word_bank)}
     ch=CmdHandler(f"find-wb>", cmds)
     ch.main_loop()
     return wb_selected
