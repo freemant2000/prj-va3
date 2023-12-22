@@ -1,0 +1,275 @@
+[irregular verbs]
+become, became, become
+	v,變成
+break, broke, broken
+	v,打破
+  n,小息
+build, built, built
+	v,建造
+choose, chose, chosen
+	v,選擇
+begin, began, begun
+	v,開始
+write, wrote, written
+	v,寫
+buy, bought, bought
+	v,買
+bring, brought, brought
+	v,帶來
+catch, caught, caught=>308
+	v,捉住
+see, saw, seen=>93
+	v,看見
+come, came, come=>390
+	v,來
+find, found, found
+	v,找到、發現
+hear, heard, heard
+	v,聽到
+dig, dug, dug
+	v,掘
+do, did, done
+	v,做
+drink, drank, drunk=>362
+	v,喝
+  n,飲品
+drive, drove, driven=>220
+	v,駕駛
+lose, lost, lost
+	v,失去
+fall, fell, fallen
+	v,跌
+draw, drew, drawn=>764
+	v,畫
+eat, ate, eaten=>315
+	v,吃
+run, ran, run=>263
+	v,跑
+take, took, taken=>70
+	v,拿走
+  v,服（藥）:took, taken
+put, put, put=>684
+	v,放
+sleep, slept, slept=>116
+	v,睡
+have, had, had
+	v,有
+  v,享用: had, had
+say, said, said=>123
+	v,說
+get, got, got
+	v,得到
+sit, sat, sat=>65
+	v,坐
+teach, taught, taught=>556
+	v,教
+lend, lent, lent=>409
+	v,借出
+feel, felt, felt
+	v,感覺到
+know, knew, known
+	v,知道、認識
+forget, forgot, forgotten
+	v,忘記
+fight, fought, fought
+	v,打鬥
+	n,打鬥
+give, gave, given=>748
+	v,給
+speak, spoke, spoken=>439
+	v,講
+leave, left, left
+	v,離開
+make, made, made=>648
+	v,造
+  v,令: made, made
+swim, swam, swum=>54
+	v,游泳
+think, thought, thought=>272
+	v,思考、認為
+keep, kept, kept=>355
+	v,保持、不斷
+  v,養: kept, kept
+learn, learnt, learnt=>695
+	v,學懂
+meet, met, met=>543
+	v,遇見
+cut, cut, cut=>509
+	v,切
+  n,傷口（切）
+wear, wore, worn=>386
+	v,穿著
+sing, sang, sung=>528
+	v,唱
+spend, spent, spent
+	v,花費
+fly, flew, flown=>408
+	v,飛
+  n,蒼蠅
+ride, rode, ridden=>11
+	v,騎
+  n,車程
+show, showed, shown=>800
+	v,展示、顯示
+  n,展示、顯示
+throw, threw, thrown
+	v,拋
+hide, hid, hidden
+	v,躱藏、收藏
+hold, held, held
+	v,拿著
+hurt, hurt, hurt
+	v,傷害
+win, won, won
+	v,贏
+pay, paid, paid=>495
+	v,支付
+feed, fed, fed
+	v,餵
+sell, sold, sold
+	v,賣
+sink, sank, sunk
+	v,沉、使沉
+grow, grew, grown
+	v,生長
+  v,種植: grew, grown
+stand, stood, stood=>527
+	v,站
+steal, stole, stolen
+	v,偷
+cost, cost, cost=>529
+	v,值（多少錢）
+  n,成本
+let, let, let=>609
+	v,讓
+wake, woke, woken
+	v,醒來
+understand, understood, understood
+	v,明白
+ring=>428
+  n,戒指
+	v,響: rang, rung
+blow, blew, blown=>453
+	v,吹
+  n,打擊
+lie=>761
+  v,說謊: lied, lied, lying
+	v,躺: lay, lain, lying
+  n,謊言
+lay, laid, laid, laying
+	v,輕放
+  v,生（蛋）: laid, laid, laying
+bite, bit, bitten
+	v,咬
+  n,咬
+forgive, forgave, forgiven
+	v,原諒
+hang, hung, hung
+	v,掛
+  v,吊死: hanged, hanged
+prove, proved, proven
+	v,證明
+shut, shut, shut
+	v,關閉（大力、封閉）
+shoot, shot, shot
+	v,（用槍等）射擊
+freeze, froze, frozen
+	v,冷凍、停止不動
+bet, bet, bet
+	v,打賭
+  n,打賭
+quit, quit, quit
+	v,退出
+  v,辭職: quit, quit
+  v,戒（酒等）: quit, quit
+reset, reset, reset
+	v,重置
+rise, rose, risen
+	v,上升、站起來
+withdraw, withdrew, withdrawn
+	v,提款
+  v,退出: withdrew, withdrawn
+shrink, shrank, shrunk
+	v,縮小
+sew, sewed, sewn
+	v,繡、縫紉
+sweep, swept, swept
+	v,掃
+tear, tore, torn
+	v,撕爛
+beat, beat, beaten
+	v,打（幾下）
+  v,心跳: beat, beaten
+  v,打敗: beat, beaten
+light=>241
+  n,光
+  adj,輕的
+  n,燈
+	v,點燃、使光亮: lit, lit
+bend, bent, bent
+	v,（使）彎曲
+shake, shook, shaken
+	v,搖動
+bleed, bled, bled
+	v,流血
+bear=>548
+  n,熊
+	v,忍受: bore, born
+  v,生產（嬰兒等）: bore, born
+slide, slid, slid
+	v,滑行
+  n,滑梯
+smell, smelt, smelt
+	v,聞
+  n,氣味
+spin, spun, spun
+	v,自轉（快）
+swing, swung, swung
+	v,搖擺（千揪）
+  n,千揪
+stick, stuck, stuck
+	v,插入、卡住、粘住
+  n,棒
+sting, stung, stung
+	v,（昆蟲等）叮咬
+broadcast, broadcast, broadcast
+	v,廣播
+  n,廣播
+shine, shone, shone
+	v,發光
+arise, arose, arisen
+	v,（情況或困難）出現
+burst, burst, burst
+	v,爆開
+cling, clung, clung
+	v,抓緊
+creep, crept, crept
+	v,潜行（小心）
+knit, knit, knit
+	v,編織
+deal, dealt, dealt
+  v,處理
+	v,買賣（非法）: dealt, dealt
+  n,交易
+overcome, overcame, overcome
+	v,克服
+overtake, overtook, overtaken
+	v,超越
+sneak, snuck, snuck
+	v,潜行（欺瞞）
+overthrow, overthrew, overthrown
+	v,推翻
+seek, sought, sought=>514
+	v,找尋（努力，正式）
+wind=>60
+  n,風
+	v,盤繞、使盤繞: wound, wound
+rewind, rewound, rewound
+	v,回帶（重頭再播）
+shave, shaved, shaven
+	v,剃（臉、頭等）
+swear, swore, sworn
+	v,發誓
+  v,爆粗: swore, sworn
+dive, dived/dove, dived
+	v,潜水
