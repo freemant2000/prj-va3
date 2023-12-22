@@ -1,7 +1,7 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
 from vocabassistant3.word_bank import WordBankDraft, find_word_banks, load_wb_draft, get_word_bank, add_wb_draft, parse_full_word
-from vocabassistant3.word_def import WordDef, WordMeaning, WordUsage
+from vocabassistant3.word_def import WordDef, WordMeaning, WordUsage, get_word_def_by_id
 
 class TestWordBank(TestCase):
     def setUp(self) -> None:
@@ -65,6 +65,24 @@ class TestWordBank(TestCase):
         wb=get_word_bank(self.s, 4)
         self.assertEquals(wb.name, "my wb1")
         self.assertEquals(len(wb.bws), 2)
+        self.s.rollback()
+        self.reset_word_seq() # seq is done outside transaction
+
+    def test_add_draft_upd(self):
+        self.s.begin()
+        wbd=WordBankDraft(name="my wb1")
+        wd=WordDef(id=7, word="rock")
+        wd.add_meaning("n", "岩石")
+        wd.add_meaning("v", "遙動")
+        wbd.wds.append(wd)
+        wbd.word_updates[wd]=7
+        wbd.upd_targets[wd]=get_word_def_by_id(self.s, 7)
+        add_wb_draft(self.s, wbd)
+        self.s.flush()
+        wb=get_word_bank(self.s, 4)
+        self.assertEquals(wb.name, "my wb1")
+        self.assertEquals(len(wb.bws), 1)
+        self.assertEquals(len(wb.bws[0].wd.meanings) ,2)
         self.s.rollback()
         self.reset_word_seq() # seq is done outside transaction
 

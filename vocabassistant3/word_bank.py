@@ -119,16 +119,20 @@ def refine_wb_draft(s: Session, wbd: WordBankDraft):
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
     wbd.check_complete()
     for wd in wbd.wds:
-        if not (wd in wbd.word_usages):
+        if wd in wbd.word_usages:
+            pass
+        elif wd in wbd.word_updates:
+            s.merge(wd)
+        else:
             s.add(wd)
     s.flush()  #make sure the IDs are assigned
     wb=WordBank(name=wbd.name)
     for (idx, wd) in enumerate(wbd.wds):
-        if not (wd in wbd.word_usages):
-            bw=BankWord(idx=idx, wd_id=wd.id, m_indice=wd.get_all_m_indice())
-        else:
+        if wd in wbd.word_usages:
             wu=wbd.word_usages[wd]
             bw=BankWord(idx=idx, wd_id=wu.wd.id, m_indice=wu.m_indice)
+        else: # new or update
+            bw=BankWord(idx=idx, wd_id=wd.id, m_indice=wd.get_all_m_indice())
         wb.bws.append(bw)
     s.add(wb)
     return wb
