@@ -1,0 +1,610 @@
+[Primary 3]
+fresh
+    adj,新鮮的
+father
+    n,父親、爸爸
+big
+    adj,大的
+eraser
+    n,膠擦
+dad
+    n,爸爸（日常用語）
+third
+    ord,第三
+thirteen
+    num,十三
+above
+    prep,在...上方（沒有接觸）
+wet
+    adj,濕的
+notebook
+    n,筆記本
+ride
+    v,騎
+clear
+    adj,清楚的
+May
+    n,五月
+grandmother
+    n,祖母
+minute
+    n,分鐘
+little
+    adj,細小的
+    adj,少的（不可數）
+baby
+	n,嬰兒
+June
+    n,六月
+December
+    n,十二月
+farm
+	n,農場
+summer
+	n,夏天
+November
+	n,十一月
+cheap
+	adj,便宜的
+tell
+	v,告訴
+o'clock
+	n,點鐘
+excellent
+	adj,優秀的
+rain
+	n,雨
+	v,下雨
+book
+	n,書
+July
+	n,七月
+street
+	n,街
+rock
+	n,岩石
+mom
+	n,媽媽（日常用語）
+second
+	ord,第二
+	n,秒
+warm
+	adj,溫暖的
+forty
+	ord,四十
+ship
+	n,（大）船
+behind
+	prep,在...背後
+autumn
+	n,秋天
+ninth
+	ord,第九
+eighteen
+	num,十八
+student
+	n,學生
+station
+	n,車站
+could
+	m,can的過去式
+eleven
+	ord,十一
+kilogram
+	n,公斤
+south
+	n,南方
+cloudy
+	adj,多雲的
+night
+	n,夜晚
+future
+	n,將來
+twenty
+	ord,二十
+morning
+	n,早晨
+two
+	num,二
+grandfather
+	n,祖父
+swim
+	v,游泳
+businessman
+	n,生意人
+much
+	det,多（不可數）
+airport
+	n,飛機場
+circle
+	n,圓
+one
+	num,一
+wind
+	n,風
+cool
+	adj,涼的
+sixty
+	num,六十
+driver
+	n,司機
+pink
+	n,粉紅色
+	adj,粉紅色的
+sit
+	v,坐
+writer
+	n,作家
+thousand
+	num,一千
+pound
+	n,磅
+season
+	n,季節
+take
+	v,拿、帶
+yes
+	excl,是的
+teacher
+	n,老師
+west
+	n,西方
+return
+	v,回來
+	v,交回
+yesterday
+	n,昨天
+can
+    m,能夠
+car
+	n,車子
+boss
+	n,老闆
+moon
+	n,月亮
+thin
+	adj,瘦的
+	adj,簿的
+nineteen
+	num,十九
+at
+	prep,在（時刻、地點）
+east
+	n,東方
+husband
+	n,丈夫
+Monday
+	n,星期一
+child
+	n,孩子
+August
+	n,八月
+wife
+	n,妻子
+aunt
+	n,阿姨
+air
+	n,空氣
+boy
+	n,男孩
+hard
+	adj,困難的
+	adv,努力地
+see
+	v,看見
+fourth
+	ord,第四
+good
+	adj,好的
+ticket
+	n,票
+chalk
+	n,粉筆
+along
+	prep,沿著
+pass
+	v,通過
+	v,經過
+art
+	n,藝術
+four
+	num,四
+doctor
+	n,醫生
+white
+	n,白色
+	adj,白色的
+new
+	adj,新的
+gray
+	adj,灰色的
+long
+	adj,長的
+ice
+	n,冰
+below
+	prep,低於、小於
+February
+	n,二月
+eighty
+	num,八十
+box
+	n,箱子
+expensive
+	adj,昂貴的
+homework
+	n,家課
+Saturday
+	n,星期六
+twelve
+	num,十二
+sleep
+	v,睡覺
+wood
+	n,木
+rainy
+	adj,下雨的
+born
+	v,出生（被動）
+rich
+	adj,富有的
+real
+	adj,真實的
+ski
+	v,滑雪
+say
+	v,說
+north
+	n,北方
+dictionary
+	n,字典
+a.m.
+	suff,上午
+now
+	adv,現在
+sweet
+	adj,甜的
+thick
+	adj,厚的
+ten
+	num,十
+first
+	ord,第一
+	adv,首先
+evening
+	n,傍晚
+bike
+	n,單車
+	n,電單車
+seventy
+	num,七十
+might
+	m,可能
+star
+	n,星星
+Tuesday
+	n,星期二
+your
+	det,你的
+nine
+	num,九
+sister
+	n,姊妹
+family
+	n,家庭
+	n,家人
+month
+	n,月份
+into
+	prep,進入
+dry
+	adj,乾的
+place
+	n,地方
+mother
+	n,母親、媽媽
+half
+	n,一半
+heavy
+	adj,重的
+class
+	n,班
+farmer
+	n,農夫
+beside
+	prep,在...旁邊
+around
+	prep,圍繞
+seventeen
+	num,十七
+today
+	adv,今天
+	n,今天
+count
+	v,數
+daddy
+	n,爹哋（小孩用語）
+red
+	adj,紅色的
+weather
+	n,天氣
+between
+	prep,在...之間
+seventh
+	ord,第七
+sixth
+	ord,第六
+pencil
+	n,鉛筆
+fifty
+	num,五十
+truck
+	n,貨車
+brother
+	n,兄弟
+square
+	n,正方形
+	n,廣場
+five
+	num,五
+fifteen
+	num,十五
+bus
+	n,巴士
+fine
+	adj,好的
+	adj,精美的
+worker
+	n,工人
+yourself
+	pron,你自己
+year
+	n,年
+young
+	adj,年輕的
+purple
+	n,紫色
+	adj,紫色的
+ninety
+	num,九十
+top
+	n,頂端
+eighth
+	ord,第八
+orange
+	n,橙、橙色
+sixteen
+	num,十六
+back
+	adv,回來
+blackboard
+	n,黑板
+daughter
+	n,女兒
+pen
+	n,筆
+school
+	n,學校
+coffee
+	n,咖啡
+exercise
+	n,運動、鍛練
+	v,運動、鍛練	
+March
+	n,三月
+balloon
+	n,汽球
+brown
+	n,棕色
+	adj,棕色的
+cloud
+	n,雲
+past
+	adj,過去的
+short
+	adj,短的
+dead
+	adj,死的
+Thursday
+	n,星期四
+Wednesday
+	n,星期三
+music
+	n,音樂
+small
+	adj,小的
+mouth
+	n,嘴
+taxi
+	n,的士
+popcorn
+	n,爆谷
+spring
+	n,春天
+January
+	n,一月
+September
+	n,九月
+fifth
+	ord,第五
+afternoon
+	n,下午
+hour
+	n,小時
+three
+	num,三
+Sunday
+	n,星期日
+hundred
+	num,一百
+ruler
+	n,間尺
+playground
+	n,運動場，遊戲場
+son
+	n,兒子
+thirty
+	num,三十
+out
+	prep,出
+restroom
+	n,洗手間
+useful
+	adj,有用的
+October
+	n,十月
+English
+	n,英文
+drive
+	v,駕駛
+tomorrow
+	n,明天
+windy
+	adj,大風的
+fourteen
+	num,十四
+tenth
+	ord,第十
+mommy
+	n,媽咪（小孩用語）
+uncle
+	n,叔叔 
+near
+	prep,近
+road
+	n,路
+million
+	num,一百萬
+many
+	det,許多的（可數）
+front
+	n,前面
+sand
+	n,沙
+rainbow
+	n,彩虹
+yours
+	prop,你的xx
+brush
+	n,刷
+	v,刷
+pretty
+	adj,漂亮的
+p.m.
+	suff,下午（後綴）
+April
+	n,四月
+bad
+	adj,壞的
+on
+	prep,在...上面（有接觸）
+light
+	n,光
+	adj,輕的
+six
+	num,六
+sunny
+	adj,晴天的
+wrong
+	adj,錯誤的
+seven
+	num,七
+winter
+	n,冬天
+fire
+	n,火
+strong
+	adj,強壯的
+movie
+	n,電影
+girl
+	n,女孩
+yellow
+	n,黃色
+	adj,黃色的
+paper
+	n,紙
+blue
+	n,藍色
+	adj,藍色的
+spell
+	v,拼寫
+yourselves
+	pron,你們自己
+noon
+	n,中午
+black
+	n,黑色
+	adj,黑色的
+green
+	n,綠色
+	adj,綠色的
+few
+	det,少的（可數）
+train
+	n,火車
+Chinese
+	n,中文
+	adj,中國的
+	adj,中國人的
+may
+	m,可能
+run
+	v,跑
+tonight
+	adv,今晚
+classroom
+	n,課室
+eight
+	num,八
+left
+	n,左邊
+	adj,左邊的
+	v,leave的過去式和過去分詞
+Friday
+	n,星期五
+in
+	prep,在...裡面
+weak
+	adj,虛弱的
+OK
+	excl,沒問題
+think
+	v,想
+blind
+	adj,盲的
+sky
+	n,天空
+age
+	n,年齡
+step
+	n,步
+	v,踐踏
+under
+	prep,在...底下
+right
+    n,右邊
+    adj,右邊的
+	adj,正確的
+week
+	n,星期
+poor
+	adj,可憐的
+	adj,貧窮的
+old
+	adj,老的
+	adj,舊的
+time
+	n,時間
+	n,次數
+day
+	n,日
+fisherman
+	n,漁夫
+boat
+	n,小船
+history
+	n,歷史
+snow
+	n,雪
+	v,下雪

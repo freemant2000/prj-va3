@@ -168,9 +168,12 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
                     pass #apply the forms following the word (if any)
                 else:
                     raise ValueError(f"Too many colons in {line}")
-                p_of_s, m=ps[0].split(",")
-                wbd.wds[-1].add_meaning(p_of_s, m, forms)
-                forms=[]  
+                try:
+                    p_of_s, m=ps[0].split(",")
+                    wbd.wds[-1].add_meaning(p_of_s, m, forms)
+                    forms=[]  
+                except:
+                    raise ValueError(f"comma missing in {ps[0]}")
       else: #start a new word
         line=line.strip()
         if line:
