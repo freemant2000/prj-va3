@@ -1,7 +1,7 @@
 from .word_bank_search_tui import search_word_banks
 from .cmd_handler import CmdHandler
 from .console_utils import get_lines_until_empty
-from ..word_def import WordDef
+from ..word_def import WordDef, WordMeaning
 from ..db_base import open_session
 from ..word_bank import BankWord, WordBank, WordBankDraft, add_wb_draft, get_word_bank, get_word_banks, parse_wb_draft, refine_wb_draft
 
@@ -79,7 +79,7 @@ def show_wb_draft(wbd: WordBankDraft):
         else:
             print(wd.word)
         for wm in wd.meanings:
-            print("\t"+wm.get_display())
+            show_meaning(wm)
     if wbd.cands:
         print(f"Possible matches")
         for wd, wds in wbd.cands.items():
@@ -101,10 +101,13 @@ def show_wb_draft(wbd: WordBankDraft):
 def show_word_def(wd: WordDef):
     print(f"{wd.word}<={wd.id},{wd.get_all_m_indice().replace(',', '-')}")
     for m in wd.meanings:
-        forms=m.get_forms()
-        if forms:
-            fs=":"+", ".join(forms)
-        else:
-            fs=""
-        print("\t"+m.get_display()+fs)
+        show_meaning(m)
+
+def show_meaning(m: WordMeaning):
+    forms=m.get_forms()
+    if forms:
+        fs=":"+", ".join(forms)
+    else:
+        fs=""
+    print("\t"+m.get_display()+fs)
 

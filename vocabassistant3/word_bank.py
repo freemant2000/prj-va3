@@ -22,15 +22,10 @@ class BankWord(Base):
         m_indice=[int(m_idx.rstrip("F")) for m_idx in m_indice]
         return self.wd.get_selected_meanings(m_indice)
     def get_full_word(self)->str:
-        word=self.wd.word
         m_indice=self.m_indice.split(",")
-        m_idx=next((m_idx for m_idx in m_indice if m_idx.endswith("F")), None)
-        if m_idx:
-           m_idx=int(m_idx.rstrip("F"))
-           fw=self.wd.meanings[m_idx].add_forms(word)
-           return fw
-        else:
-           return word
+        m_indice=[int(m_idx.rstrip("F")) for m_idx in m_indice if m_idx.endswith("F")]
+        fw=self.wd.get_full_word(m_indice)
+        return fw
     def is_same(self, bw: "BankWord")->bool:
         return self.wd_id==bw.wd_id and self.m_indice==bw.m_indice
        

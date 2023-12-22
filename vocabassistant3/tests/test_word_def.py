@@ -49,6 +49,23 @@ class TestWordDef(TestCase):
         wd=WordDef(id=100, word="lie")
         wd.add_meaning("v", "躺", ["lay", "lain", "lying"])
         self.assertEquals(wd.meanings[0].add_forms("lie"), "lie, lay, lain, lying")
+    def test_get_full_word_single_forms(self):
+        wd=WordDef(id=100, word="fly")
+        wd.add_meaning("v", "飛", ["flew", "flown"])
+        wd.add_meaning("n", "蒼蠅")
+        self.assertEquals(wd.get_full_word([0]), "fly, flew, flown")
+    def test_get_full_word_shared_forms(self):
+        wd=WordDef(id=100, word="bear")
+        wd.add_meaning("v", "忍受", ["bore", "born"])
+        wd.add_meaning("v", "生產", ["bore", "born"])
+        wd.add_meaning("n", "熊")
+        self.assertEquals(wd.get_full_word([0, 1]), "bear, bore, born")
+    def test_get_full_word_diff_forms(self):
+        wd=WordDef(id=100, word="hang")
+        wd.add_meaning("v", "掛", ["hung", "hung"])
+        wd.add_meaning("v", "吊死", ["hanged", "hanged"])
+        self.assertEquals(wd.get_full_word([0, 1]), "hang; 0:hung,hung; 1:hanged,hanged")
+  
     def test_selected_meanings(self):
         wd=WordDef(id=100, word="cry")
         wd.add_meaning("n", "大叫")

@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_bank import WordBankDraft, find_word_banks, load_wb_draft, get_word_bank, add_wb_draft, parse_full_word
+from vocabassistant3.word_bank import BankWord, WordBankDraft, find_word_banks, load_wb_draft, get_word_bank, add_wb_draft, parse_full_word
 from vocabassistant3.word_def import WordDef, WordMeaning, WordUsage, get_word_def_by_id
 
 class TestWordBank(TestCase):
@@ -21,6 +21,25 @@ class TestWordBank(TestCase):
         wb=get_word_bank(self.s, 3)
         self.assertEquals(wb.bws[0].get_full_word(), "fight, fought x2")
         self.assertEquals(wb.bws[1].get_full_word(), "person, people")
+    def test_get_full_word_single_forms(self):
+        wd=WordDef(id=100, word="fly")
+        wd.add_meaning("v", "飛", ["flew", "flown"])
+        wd.add_meaning("n", "蒼蠅")
+        bw=BankWord(wd=wd, m_indice="0F,1")
+        self.assertEquals(bw.get_full_word(), "fly, flew, flown")
+    def test_get_full_word_shared_forms(self):
+        wd=WordDef(id=100, word="bear")
+        wd.add_meaning("v", "忍受", ["bore", "born"])
+        wd.add_meaning("v", "生產", ["bore", "born"])
+        wd.add_meaning("n", "熊")
+        bw=BankWord(wd=wd, m_indice="0F,1F,2")
+        self.assertEquals(bw.get_full_word(), "bear, bore, born")
+    def test_get_full_word_diff_forms(self):
+        wd=WordDef(id=100, word="hang")
+        wd.add_meaning("v", "掛", ["hung", "hung"])
+        wd.add_meaning("v", "吊死", ["hanged", "hanged"])
+        bw=BankWord(wd=wd, m_indice="0F,1F")
+        self.assertEquals(bw.get_full_word(), "hang; 0:hung,hung; 1:hanged,hanged")
     def test_find_word_banks_name(self):
         wbs=find_word_banks(self.s, "jackal")
         self.assertEquals(len(wbs), 1)

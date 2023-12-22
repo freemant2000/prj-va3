@@ -18,6 +18,20 @@ class WordDef(Base):
         m.idx=len(self.meanings)
         m.set_forms(forms)
         self.meanings.append(m)
+    def get_full_word(self, forms_indice: Sequence[int])->str:
+        word=self.word
+        if not forms_indice:
+            return word
+        first_idx=forms_indice[0]
+        first_forms=self.meanings[first_idx].get_forms()
+        if all(self.meanings[m_idx].get_forms()==first_forms for m_idx in forms_indice):
+            fw=self.meanings[first_idx].add_forms(word)
+            return fw
+        else:
+            forms=[f"{m_idx}:"+",".join(self.meanings[m_idx].get_forms()) for m_idx in forms_indice]
+            forms.insert(0, word)
+            fw="; ".join(forms)
+            return fw
     def get_display(self)->str:
         return self.word+"\t"+self.get_meanings()
     def get_meanings(self)->str:
@@ -60,6 +74,8 @@ class WordMeaning(Base):
     form2: Mapped[str]=mapped_column(String)
     form3: Mapped[str]=mapped_column(String)
     
+    def has_forms(self)->bool:
+        return self.form1!=None
     def set_forms(self, forms: Sequence[str]):
         if forms:
             self.form1=forms.pop(0)
