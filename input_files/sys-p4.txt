@@ -1,0 +1,568 @@
+[Primary 4]
+lake
+	n,湖
+water
+	n,水
+snake
+	n,蛇
+idea
+	n,想法
+lamp
+	n,燈（包燈罩）
+dog
+	n,狗
+band
+	n,樂隊
+horse
+	n,馬
+sandwich
+	n,三文治
+house
+	n,房子
+agree
+	v,同意
+bicycle
+	n,單車
+map
+	n,地圖
+by
+	prep,在...旁邊
+  prep,藉著（某方式）
+jacket
+	n,外套（半身）
+visit
+	n,探訪
+dark
+	adj,黑暗的
+belt
+	n,皮帶
+pig
+	n,豬
+vegetable
+	n,蔬菜
+catch
+	v,抓到
+stay
+	v,停留
+chicken
+	n,雞肉
+  n,小雞
+bell
+	n,鈴
+date
+	n,日期
+candy
+	n,糖果
+dance
+	v,跳舞
+eat
+	v,吃
+wash
+	v,洗
+cry
+	v,哭
+photo
+	n,照片
+cartoon
+	n,卡通
+another
+	det,另一個
+ham
+	n,火腿
+exist
+	v,存在
+knife
+	n,小刀
+excuse
+	v,原諒
+  n,藉口
+door
+	n,門
+already
+	adv,已經
+anything
+	prop,任何東西
+bottle
+	n,瓶子
+as
+	prep,作為
+travel
+	v,旅行
+flower
+	n,花
+butter
+	n,牛油
+about
+	prep,關於
+exit
+	n,出口（如房間的出口）
+bridge
+	n,橋樑
+hate
+	v,痛恨
+from
+	prep,從...而來
+Internet
+	n,互聯網
+dangerous
+	adj,危險的
+soap
+	n,肥皂
+change
+	v,改變
+	n,改變
+bright
+	adj,明亮的
+America
+	n,美國
+	n,美洲
+ice cream
+	n,冰淇淋
+sport
+	n,運動
+country
+	n,國家
+shy
+	adj,害羞的
+breakfast
+	n,早餐
+live
+	v,生活
+  v,居住
+polite
+	adj,禮貌的
+free
+	adj,空閒的
+  adj,免費的
+rose
+	n,玫瑰
+body
+	n,身體
+party
+	n,派對
+keep
+	v,保持
+shoe
+	n,鞋
+wonderful
+	adj,奇妙的
+meeting
+	n,會議
+pants
+	n,褲子
+shirt
+	n,恤衫
+city
+	n,城市
+drink
+	v,喝
+skirt
+	n,裙子（半身）
+any
+	det,任何
+restaurant
+	n,餐廳
+apartment
+	n,公寓（住宅單位）
+almost
+	adv,幾乎
+friend
+	n,朋友
+classmate
+	n,同學
+row
+	n,一行
+bedroom
+	n,睡房
+clock
+	n,時鐘
+cross
+	v,橫過
+  n,十字架
+glove
+	n,手套
+both
+	det,兩者都
+close
+	v,關閉
+  adj,靠近的
+carry
+	v,攜帶
+angel
+	n,天使
+hill
+	n,小山
+grass
+	n,草
+cup
+	n,（有耳、白色等）杯子
+speed
+	n,速度
+supermarket
+	n,超級市場
+fork
+	n,叉子
+soup
+	n,湯
+wear
+	v,穿著
+sugar
+	n,糖
+business
+	n,生意
+busy
+	adj,忙碌的
+come
+	v,來
+pizza
+	n,比薩
+Miss
+	n,小姐（稱謂）
+hope
+	v,希望
+	n,希望
+ago
+	adv,在（多久）以前
+tea
+	n,茶
+bathroom
+	n,浴室
+river
+	n,河流
+China
+	n,中國
+kiss
+	v,親吻
+	n,親吻
+animal
+	n,動物
+call
+	v,打電話
+arrive
+	v,到達
+milk
+	n,牛奶
+cheese
+	n,芝士
+funny
+	adj,好笑的
+wall
+	n,牆壁
+goat
+	n,山羊
+fly
+	v,飛
+lend
+	v,借出
+beef
+	n,牛肉
+after
+	conj,在...之後（緊接某事）
+	prep,在...之後
+coat
+	n,外套（全身）
+smile
+	v,微笑
+	n,微笑
+afraid
+	adj,害怕的
+because
+	conj,因為
+food
+	n,食物
+glass
+	n,玻璃
+  n,玻璃杯
+seed
+	n,種子
+play
+	v,玩
+American
+	n,美國人
+  adj,美國的
+sea
+	n,海
+banana
+	n,香蕉
+kitchen
+	n,廚房
+rabbit
+	n,兔子
+love
+	v,愛
+	n,愛
+club
+	n,俱樂部
+meal
+	n,餐
+ring
+	n,戒指
+noise
+	n,噪音
+floor
+	n,地板
+answer
+	n,答案
+	v,回答
+super
+	adj,超級的
+hot
+	adj,熱的
+juice
+	n,果汁
+Coke
+	n,可樂
+television
+	n,電視
+bowl
+	n,碗
+chair
+	n,椅子
+speak
+	v,說
+angry
+	adj,生氣的
+meat
+	n,肉
+sweater
+	n,毛衣
+check
+	v,檢查
+window
+	n,窗
+mouse
+	n,老鼠
+dinner
+	n,晚餐
+beach
+	n,沙灘
+railway
+	n,鐵路
+e-mail
+	n,電子郵件
+apple
+	n,蘋果
+tree
+	n,樹
+copy
+	v,覆制
+  v,抄襲
+blow
+	v,吹
+land
+	n,土地
+hat
+	n,帽子
+dining room
+	n phr,飯廳
+basket
+	n,籃子
+cold
+	adj,冷的
+uniform
+	n,制服
+pie
+	n,（蘋果批等）批
+leaf
+	n,樹葉
+chocolate
+	n,朱古力
+thank
+	v,感謝
+cap
+	n,鴨舌帽
+chopsticks
+	n,筷子
+video
+	n,影片
+monkey
+	n,猴子
+ask
+	v,詢問
+card
+	n,卡片
+birthday
+	n,生日
+exciting
+	adj,刺激的
+park
+	n,公園
+happy
+	adj,快樂的
+dear
+	adj,親愛的
+like
+	v,喜歡
+  prep,像
+lion
+	n,獅子
+mountain
+	n,山
+telephone
+	n,電話（全寫）
+phone
+	n,電話（簡寫）
+beautiful
+	adj,美麗的
+cow
+	n,母牛
+	n,牛（統稱）
+picnic
+	n,野餐
+laugh
+	v,笑
+bread
+	n,麵包
+line
+	n,線
+  n,行（文字等）
+fish
+	n,魚
+bed
+	n,床
+basketball
+	n,籃球
+hamburger
+	n,漢堡包
+famous
+	adj,著名的
+letter
+	n,信
+piano
+	n,鋼琴
+again
+	adv,再次
+dress
+	n,衣服
+  n,裙
+pay
+	v,支付
+living room
+	n phr,客廳
+tiger
+	n,老虎
+hot dog
+	n phr,熱狗
+hotel
+	n,酒店
+set
+	n,設定
+singer
+	n,歌手
+salt
+	n,鹽
+sad
+	adj,傷心的
+ball
+	n,球
+spoon
+	n,湯匙
+able
+	adj,能夠的
+plan
+	v,計畫
+	n,計畫
+clean
+	v,清潔
+	adj,清潔的
+cut
+	v,切
+send
+	v,傳送
+bird
+	n,小鳥
+and
+	conj,和
+tomato
+	n,番茄
+seek
+	v,追尋
+sorry
+	adj,抱歉的
+help
+	v,幫助
+	n,幫助
+sofa
+	n,梳化
+before
+	prep,在...之前
+	conj,在...之前
+salad
+	n,沙律
+button
+	n,按鈕
+cook
+  v,烹飪
+  n,廚師
+but
+	conj,但是
+worry
+	v,擔心
+care
+	v,關心、在乎
+	n,關心
+enough
+	adj,足夠的
+camera
+	n,相機
+stand
+	v,站
+sing
+	v,唱歌
+cost
+	v,花費
+  n,成本
+island
+	n,島嶼
+fruit
+	n,生果
+all
+	det,全部的
+cat
+	n,貓
+ease
+	n,輕鬆
+borrow
+	v,借入
+away
+	adv,離開
+rice
+	n,米
+	n,飯
+table
+	n,桌子
+egg
+	n,蛋
+zoo
+	n,動物園
+burn
+	v,燃燒
+desk
+	n,書桌
+meet
+	v,遇見
+lunch
+	n,午餐
+bag
+	n,袋
+cover
+	v,覆蓋
+	n,封面
+noodle
+	n,麵
+bear
+	n,熊
+	v,承受
+clothes
+	n,衣服
+sheep
+	n,綿羊
+elephant
+	n,大象
+number
+	n,數字
+cake
+	n,蛋糕
+also
+	adv,也
+
