@@ -49,6 +49,12 @@ class TestWordDef(TestCase):
         wd=WordDef(id=100, word="lie")
         wd.add_meaning("v", "躺", ["lay", "lain", "lying"])
         self.assertEquals(wd.meanings[0].add_forms("lie"), "lie, lay, lain, lying")
+    def test_selected_meanings(self):
+        wd=WordDef(id=100, word="cry")
+        wd.add_meaning("n", "大叫")
+        wd.add_meaning("v", "大叫")
+        wd.add_meaning("v", "哭")
+        self.assertEquals(wd.get_selected_meanings([0, 2]), "大叫(n)、哭(v)")
     def test_is_usage(self):
         wd=WordDef(id=100, word="cry")
         wd.add_meaning("n", "大叫")

@@ -46,7 +46,7 @@ def show_word_bank(wb: WordBank):
         show_bank_word(bw)
 
 def show_bank_word(bw: BankWord):
-    print(f"{bw.wd.word.ljust(20)} {bw.wd.get_meanings()}")
+    print(f"{bw.get_full_word().ljust(20)} {bw.get_meanings()}")
 
 def refine_wb_draft_tui():
     wbd=input_wb_draft()

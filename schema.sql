@@ -79,6 +79,7 @@ insert into word_defs values(17, 'goat');
 insert into word_meanings values(17, 0, 'n', '山羊', NULL, NULL, NULL);
 insert into word_defs values(18, 'injure');
 insert into word_meanings values(18, 0, 'v', '使受傷', NULL, NULL, NULL);
+insert into word_meanings values(18, 1, 'v', '損毀', NULL, NULL, NULL);
 insert into word_defs values(19, 'fight');
 insert into word_meanings values(19, 0, 'n', '打鬥', NULL, NULL, NULL);
 insert into word_meanings values(19, 1, 'v', '打鬥', 'fought', 'fought', NULL);
