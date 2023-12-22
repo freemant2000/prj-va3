@@ -2,7 +2,7 @@ from unittest import TestCase
 from vocabassistant3.db_base import open_session
 from vocabassistant3.teacher import get_teacher
 
-class TestPractice(TestCase):
+class TestTeacher(TestCase):
     def setUp(self) -> None:
         self.s=open_session()
     def tearDown(self) -> None:

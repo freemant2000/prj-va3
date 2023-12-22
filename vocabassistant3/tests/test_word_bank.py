@@ -39,6 +39,13 @@ class TestWordBank(TestCase):
         self.assertEquals(wbd.wds[1].meanings[0].get_forms(), ["teeth"])
         self.assertEquals(wbd.wds[2].meanings[0].get_forms(), ["hung", "hung"])
         self.assertEquals(wbd.wds[2].meanings[1].get_forms(), ["hanged", "hanged"])
+    def test_parse_updates(self):
+        wbd=load_wb_draft("vocabassistant3/tests/test_wb_draft5.txt")
+        self.assertEquals(len(wbd.word_updates), 2)
+        self.assertEquals(wbd.word_updates[wbd.wds[0]], 7)
+        self.assertEquals(wbd.word_updates[wbd.wds[1]], 19)
+        self.assertEquals(wbd.wds[0].word, "rock")
+        self.assertEquals(wbd.wds[1].word, "fight")
     def test_add_draft(self):
         self.s.begin()
         wbd=WordBankDraft(name="my wb1")

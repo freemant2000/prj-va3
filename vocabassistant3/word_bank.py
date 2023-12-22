@@ -70,8 +70,10 @@ class WordBankDraft:
     name: str=""
     wds: Sequence[WordDef] = field(default_factory=list)
     word_usages: Dict[WordDef, WordUsage]= field(default_factory=dict)
+    word_updates: Dict[WordDef, int]= field(default_factory=dict)
     cands: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
     mismatches: Dict[WordDef, List[WordDef]]= field(default_factory=dict)
+    upd_targets: Dict[WordDef, WordDef]= field(default_factory=dict)
 
     def is_complete(self)->bool:
         try:
@@ -84,22 +86,32 @@ class WordBankDraft:
         if self.cands:
             raise ValueError("There are words identical to existing ones")
         if self.mismatches:
-            raise ValueError("WordDef ID is specified but the word or meanings are different")
+            raise ValueError("Trying to use a word but the word or meanings are different")
         for wd in self.wds:
-            if not wd.meanings:
-                raise ValueError(f"No ID is specified for {wd.word} but no meaning is given")
+            if wd in self.word_usages:
+                pass
+            elif wd in self.word_updates:
+                if not wd.meanings:
+                    raise ValueError(f"Trying to update {wd.word} but no meaning is given")
+            else:
+                if not wd.meanings:
+                    raise ValueError(f"No ID is specified for {wd.word} but no meaning is given")
 
 def refine_wb_draft(s: Session, wbd: WordBankDraft):
   wbd.cands.clear()
   wbd.mismatches.clear()
+  wbd.upd_targets.clear()
   for wd in wbd.wds:
-    if wd in wbd.word_usages:
+    if wd in wbd.word_usages: # use existing WordDef
         wu=wbd.word_usages[wd]
         wd.id=wu.wd.id
         wd2=get_word_def_by_id(s, wu.wd.id)
         if not wd2.is_usage(wd, wu.m_indice):
             wbd.mismatches[wd]=wd2
-    else:
+    elif wd in wbd.word_updates: # update existing WordDef
+        wd2=get_word_def_by_id(s, wbd.word_updates[wd])
+        wbd.upd_targets[wd]=wd2
+    else: # new WordDef or undecided
         wds=get_word_def(s, wd.word)
         if wds:
             wbd.cands[wd]=wds
@@ -154,15 +166,26 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
       else: #start a new word
         line=line.strip()
         if line:
-            tp=line.split("<=")
-            word, forms=parse_full_word(tp[0])
+            usage_str=None
+            update_str=None
+            if "<=" in line:  # use some meanings from a WordDef
+                word_str, usage_str=line.split("<=")
+            elif "=>" in line:  # update a WordDef
+                word_str, update_str=line.split("=>")
+            else:
+                word_str=line
+            word, forms=parse_full_word(word_str)
             wd=WordDef(id=None, word=word)
             wbd.wds.append(wd)
-            if len(tp)==2: #use a WordDef
-                _, p2=tp
-                wd_id, m_indice=p2.split(",")
+            if usage_str:
+                wd_id, m_indice=update_str.split(",")
                 m_indice=m_indice.replace("-", ",")
                 wbd.word_usages[wd]=WordUsage(WordDef(id=int(wd_id)), m_indice)
+                wd.id=wd_id
+            elif update_str:
+                wd_id=int(update_str)
+                wbd.word_updates[wd]=wd_id
+                wd.id=wd_id
     return wbd
 
 def parse_full_word(fw: str)->(str, List[str]):

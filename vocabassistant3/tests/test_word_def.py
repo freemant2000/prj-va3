@@ -38,9 +38,17 @@ class TestWordDef(TestCase):
         self.assertEquals(wms[0].meaning, "大木箱")
         self.assertEquals(wms[1].wd.word, "horn")
         self.assertEquals(wms[1].meaning, "（動物）角")
-    def test_add_forms(self):
+    def test_add_forms_x2(self):
         wm=get_word_meaning(self.s, 19, 1)
         self.assertEquals(wm.add_forms("fight"), "fight, fought x2")
+    def test_add_forms_x3(self):
+        wd=WordDef(id=100, word="cut")
+        wd.add_meaning("v", "切", ["cut", "cut"])
+        self.assertEquals(wd.meanings[0].add_forms("cut"), "cut x3")
+    def test_add_forms_normal(self):
+        wd=WordDef(id=100, word="lie")
+        wd.add_meaning("v", "躺", ["lay", "lain", "lying"])
+        self.assertEquals(wd.meanings[0].add_forms("lie"), "lie, lay, lain, lying")
     def test_is_usage(self):
         wd=WordDef(id=100, word="cry")
         wd.add_meaning("n", "大叫")

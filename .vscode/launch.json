@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Run Current Test Module",
+            "type": "python",
+            "request": "launch",
+            "module": "vocabassistant3.tests.${fileBasenameNoExtension}",
+            "justMyCode": true
+        },
+        {
             "name": "Main TUI",
             "type": "python",
             "request": "launch",

@@ -66,20 +66,17 @@ class WordMeaning(Base):
                 if forms:
                     self.form3=forms.pop(0)
     def add_forms(self, word):
-        sf=""
-        if self.form1:
-            sf+=", "+self.form1
-            if self.form2:
-                if self.form2==self.form1:
-                    sf+=" x2"
-                else:
-                    sf+=", "+self.form2
-                if self.form3:
-                    sf+=", "+self.form3
-        if sf:
-            return word+sf
+        def concat(*ss):
+            return ", ".join([s for s in ss if s])
+        if word==self.form1 and word==self.form2:
+            fw=f"{word} x3"
+            fw=concat(fw, self.form3)
+        elif word==self.form1:
+            fw=f"{word} x2"
+            fw=concat(fw, self.form2, self.form3)
         else:
-            return word
+            fw=concat(word, self.form1, self.form2, self.form3)
+        return fw
     def get_forms(self)->List[str]:
         forms=[self.form1, self.form2, self.form3]
         forms=[f for f in forms if f]

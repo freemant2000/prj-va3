@@ -1,0 +1,7 @@
+[wb-C]
+rock
+    n,岩石
+    v,遙動
+fight
+    n,打鬥
+    v,打鬥、戰鬥:fought, fought

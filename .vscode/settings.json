@@ -1,9 +1,8 @@
 {
-    "python.pythonPath": "/home/kent/env-gen1/bin/python",
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./vocabassistant3/tests",
+        "./vocabassistant3/tests", 
         "-p",
         "test_*.py"
     ],

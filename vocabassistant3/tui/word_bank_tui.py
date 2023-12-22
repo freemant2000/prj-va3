@@ -14,7 +14,7 @@ def word_banks_tui():
       "refine": ("Refine a Word Bank Draft", refine_wb_draft_tui),
       "save": ("Save a Word Bank Draft as a Word Bank", save_wb_draft_tui)}
     offset=0
-    ch=CmdHandler("wb>", cmds)
+    ch=CmdHandler("wbs>", cmds)
     ch.main_loop()
 
 def reset():
@@ -72,6 +72,8 @@ def show_wb_draft(wbd: WordBankDraft):
         if wd in wbd.word_usages:
             wu=wbd.word_usages[wd]
             print(f"{wd.word}<={wu.wd.id},{wu.m_indice.replace(',', '-')}")
+        elif wd in wbd.word_updates:
+            print(f"{wd.word}=>{wbd.word_updates[wd]}")
         else:
             print(wd.word)
         for wm in wd.meanings:
@@ -87,9 +89,20 @@ def show_wb_draft(wbd: WordBankDraft):
             print(wd.word)
             print("-------")
             show_word_def(wd2)
+    if wbd.upd_targets:
+        print(f"Update targets")
+        for wd, wd2 in wbd.upd_targets.items():
+            print("-------")
+            show_word_def(wd)
+            show_word_def(wd2)
 
 def show_word_def(wd: WordDef):
     print(f"{wd.word}<={wd.id},{wd.get_all_m_indice().replace(',', '-')}")
     for m in wd.meanings:
-      print("\t"+m.get_display())
+        forms=m.get_forms()
+        if forms:
+            fs=":"+", ".join(forms)
+        else:
+            fs=""
+        print("\t"+m.get_display()+fs)
 
