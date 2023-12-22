@@ -1,0 +1,548 @@
+[Primary 5]
+if
+	conj,如果
+teach
+	v,教
+person
+	n,人
+modern
+	adj,現代的
+word
+	n,詞
+sharp
+	adj,鋒利的
+nobody
+	pron,沒有人
+why
+	adv,為什麼
+its
+	det,它的
+itself
+	pron,它自己
+factory
+	n,工廠
+fan
+	n,（歌、影）迷
+  n,風扇
+whether
+	conj,是否
+important
+	adj,重要的
+fun
+	n,趣味
+	adj,有趣的
+market
+	n,市場
+quite
+	adv,相當
+to
+	prep,去
+picture
+	n,圖畫
+up
+	adv,向上
+open
+	v,打開
+dollar
+	n,（貨幣）元
+loud
+	adj,大聲的
+socks
+	n,襪子
+yet
+	adv,尚（配合「未」）
+hospital
+	n,醫院
+start
+	v,開始
+	n,開始
+room
+	n,房間
+money
+	n,錢
+matter
+	n,物質
+  n,事情
+walk
+	v,走路
+read
+	v,讀
+slow
+	adj,慢的
+this
+	det,這個
+must
+	m,必須
+healthy
+	adj,健康的
+piece
+	n,一張、一片
+those
+	det,那些
+everything
+	pron,每件東西
+race
+	n,賽跑
+	v,賽跑
+talk
+	v,談話
+name
+	n,名字
+leg
+	n,腿
+cowboy
+	n,牛仔
+parent
+	n,父／母親
+pair
+	n,一對
+size
+	n,尺寸
+move
+	v,移動
+during
+	prep,在...期間
+mind
+	n,思想
+  v,介意
+ready
+	adj,準備好的
+quick
+	adj,快的（時間短）
+decide
+	v,決定
+full
+	adj,充滿的
+let
+	v,讓
+maybe
+	adv,也許
+asleep
+	adj,睡著的
+please
+	excl,請
+when
+	conj,當
+  pron,何時
+woman
+	n,女人
+ever
+	adv,曾經（用於問句）
+try
+	v,嘗試
+their
+	det,他們的
+theirs
+	pron,他們的xx
+themselves
+	pron,他們自己
+great
+	adj,大的
+  adj,偉大的
+very
+	adv,非常
+so
+	conj,因此
+  adv,如此
+some
+	det,一些
+fact
+	n,事實
+way
+	n,方式
+  n,道路
+last
+	det,最後的
+something
+	pron,一些東西
+friendly
+	adj,友善的
+grade
+	n,成績
+  n,等級
+popular
+	adj,受歡迎的
+every
+	det,每一個
+soon
+	adv,不久
+test
+	n,測驗
+	v,測試
+police
+	n,警方
+hand
+	n,手
+enjoy
+	v,享受
+will
+	aux,將會
+would
+	aux,will的過去式
+tall
+	adj,高的（如身高等）
+heart
+	n,心
+listen
+	v,聆聽
+for
+	prep,為了
+lazy
+	adj,懶惰的
+hello
+	excl,哈佬
+ground
+	n,地面
+push
+	v,推
+home
+	n,家
+  adv,在家
+make
+	v,製造
+  v,令
+round
+	adj,圓的
+garden
+	n,花園
+difficult
+	adj,困難的
+study
+	v,學習（溫習）
+head
+	n,頭
+mistake
+	n,錯誤
+Thanksgiving
+	n,感恩節
+rest
+	v,休息
+  pron,其餘的東西
+pick
+	v,拾起
+or
+	conj,或者
+too
+  adv,太
+  adv,也
+use
+	v,使用
+down
+	adv,向下
+	prep,向下
+own
+	v,擁有
+  adj,自己的
+sir
+	n,先生
+still
+	adv,仍然
+outside
+	adv,外面
+	n,外面
+	prep,外面
+here
+	adv,這裡
+eye
+	n,眼睛
+who
+	pron,誰
+total
+	n,總數
+	adj,總的
+jump
+	v,跳
+end
+	v,結束
+	n,結束
+page
+	n,頁
+story
+	n,故事
+language
+	n,語言
+life
+	n,生命
+different
+	adj,不同的
+not
+	adv,不是、不
+practice
+	n,練習
+wish
+	v,希望（不現實的）
+	n,希望（不現實的）
+without
+	prep,沒有
+usually
+	adv,通常
+inside
+	adv,裡面
+	n,裡面
+  prep,裡面
+whose
+  det,誰的
+put
+	v,放
+radio
+	v,收音機
+hungry
+	adj,饑餓的
+there
+	adv,那裡
+even
+	adv,甚至
+off
+	prep,向側移動
+  prep,中斷等
+high
+	adj,高的
+reach
+	v,到達
+  v,觸碰到
+kind
+	adj,仁慈的
+  n,種類
+town
+	n,城鎮
+library
+	n,圖書館
+learn
+	v,學懂
+stop
+	v,停止
+ear
+	n,耳朵
+sun
+	n,太陽
+several
+	det,幾個
+us
+	pron,我們（賓語）
+our
+	det,我們的
+ours
+	pron,我們的xx
+ourselves
+	pron,我們自己
+nothing
+	pron,沒有東西
+that
+	det,那
+save
+	v,儲存
+  v,拯救
+want
+	v,想要
+follow
+	v,跟隨
+possible
+	adj,可能的
+late
+	adj,遲的
+which
+	det,哪一個
+wait
+	v,等待
+delicious
+	adj,美味的
+thing
+	n,東西
+hair
+	n,頭髮
+game
+	n,遊戲
+turn
+	v,轉向
+  n,輪次
+problem
+	n,難題
+what
+	pron,什麼
+world
+	n,世界
+often
+	adv,時常
+goodbye
+	excl,再見（長寫）
+bye
+	excl,再見（簡寫）
+fee
+	n,費用
+same
+	adj,同樣的
+basic
+	adj,基礎的
+need
+	v,需要
+	n,需要
+these
+	det,這些
+dirty
+	adj,骯髒的
+die
+	v,死
+me
+	pron,我（賓語）
+my
+	det,我的
+mine
+	pron,我的xx
+myself
+	pron,我自己
+song
+	n,歌曲
+false
+	adj,假的
+over
+	prep,越過
+how
+	adv,如何
+serious
+	adj,嚴重的
+  adj,認真的
+join
+	v,參與
+well
+	adv,很好地
+trash
+	n,（美）垃圾
+team
+	n,團隊
+question
+	n,問題
+look
+	v,看
+give
+	v,給
+only
+	adv,只有
+hurry
+	v,忽忙
+  n,忽忙
+key
+	n,鎖匙
+other
+	det,其他的
+really
+	adv,真正地
+until
+	conj,直到
+	prep,直到
+face
+	n,臉
+large
+	adj,大的
+where
+	adv,哪裡
+holiday
+	n,假日
+knock
+	v,敲
+happen
+	v,發生
+either
+	adv,也（不）
+  det,其中之一
+glad
+	adj,高興的（放心）
+lie
+	v,說謊
+  v,躺
+of
+	prep,...的
+perhaps
+	adv,也許
+draw
+	v,畫
+machine
+	n,機器
+work
+	v,工作
+	n,工作
+later
+  adv,遲些
+	prep,（某發生了的事再多久）之後
+foreign
+	adj,外國的
+go
+	v,去
+quiet
+	adj,安靜的
+low
+	adj,低的
+news
+	n,新聞
+	n,消息
+welcome
+	excl,歡迎
+early
+	adv,早
+easy
+	adj,容易的
+never
+	adv,從不
+  adv,永不
+list
+	n,清單、列表
+nurse
+	n,護士
+just
+	adv,只是
+  adv,剛剛
+medicine
+	n,藥物
+pull
+	v,拉
+nice
+  adj,友好的
+	adj,好的
+people
+	n,人們
+lesson
+	n,課堂
+seat
+	n,座位
+moment
+	n,時刻
+except
+	prep,除了...之外（其他都...）
+office
+	n,辦公室
+museum
+	n,博物館
+group
+	n,小組
+him
+	pron,他（賓語）
+his
+	det,他的
+himself
+	pron,他自己
+side
+	n,邊
+  n,旁邊
+nose
+	n,鼻子
+each
+	det,每一個
+	pron,每一個
+sure
+	adj,肯定的
+trouble
+	n,麻煩（名）
+most
+	adv,最...的
+	det,最多的
+show
+	v,表演、展示
+	n,表演、展示
+sick
+	adj,生病的
+fill
+	v,填充
+once
+	adv,一次
+  adv,曾經（在某狀態）
+remember
+	v,記得
