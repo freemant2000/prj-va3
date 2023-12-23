@@ -59,7 +59,7 @@ class SentenceDraft:
 
     def check_complete(self):
         if not self.keywords and self.snt_id==None:
-            raise ValueError(f"Not keywords are specified for {self.text}")
+            raise ValueError(f"No keywords are specified for {self.text}")
         for kw in self.keywords:
             if not kw in self.kw_meanings:
                 raise ValueError(f"Keyword {kw} in {self.text} has no assigned meaning")
@@ -72,6 +72,7 @@ class SentenceDraft:
             return False
 
 def add_snt_draft(s: Session, sd: SentenceDraft):
+    refine_snt_draft(s, sd)  # some keywords may have a single meaning
     sd.check_complete()
     snt=Sentence(text=sd.text)
     snt.keywords=get_word_meanings(s, \
@@ -112,7 +113,7 @@ def refine_snt_draft(s: Session, sd: SentenceDraft):
                     else:
                         sd.kw_cands[kw]=wd.meanings
                 else:
-                    sd.kw_cands[kw]=[wm for wm in wd.meanings for wd in wds]
+                    sd.kw_cands[kw]=[wm for wd in wds for wm in wd.meanings]
 
 
 def load_snt_draft(path: str)->SentenceDraft:

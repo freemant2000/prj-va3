@@ -1,0 +1,365 @@
+我喜歡新鮮的蘋果。
+    like<=475,0
+    fresh<=1,0
+    apple<=450,0
+
+我爸爸在農場工作。
+    father<=2,0
+    farm<=20,0
+    work<=766,0
+
+我有一塊大石頭。
+    rock<=31,0
+
+我有一塊膠擦。
+    eraser<=4,0
+
+條街是濕的。
+    street<=30,0
+    wet<=9,0
+
+我有一本筆記本。
+    notebook<=10,0
+
+讓我們去騎馬吧。
+    let<=609,0
+    ride<=11,0
+    horse<=295,0
+
+五月我們會去香港(Hong Kong)。
+    may<=13,0
+
+這本書很清楚。
+    book
+    clear
+
+我的嫲嫲住(live)在這裡。
+    grandmother
+    here<=666,0
+
+這個嬰兒很小。
+    baby<=17,0
+    little<=16,0
+
+六月我們會去中國。
+    june
+    China
+
+六月我會看嫲嫲。
+    june
+    grandmother
+
+這水很清。
+    water
+    clear
+
+夏天我們會去看嬰兒。
+    summer
+    baby
+
+夏天我們會去農場。
+    summer
+    farm
+
+這塊膠擦很便宜。
+    eraser
+    cheap
+
+我會告訴我的嫲嫲。
+    tell
+    grandmother
+
+現在是9點鐘。
+    now
+    o'clock
+
+這本書很優秀。
+    book
+    excellent
+
+在夏天它經常下雨。
+    summer
+    rain<=27,1
+    often
+
+他是我的第九個學生。
+    ninth
+    student
+
+第二隻大船離開了。
+    second<=33,0
+    ship
+    left<=267,2
+
+這個車站是濕的。
+    station
+    wet
+
+這個嬰兒很溫暖。
+    baby
+    warm
+
+這個車站是粉紅色的。
+    station
+    pink<=64,1
+
+這個月亮很清楚。
+    moon
+    clear
+
+他的老闆是瘦的。
+    boss
+    thin<=80,0
+
+他有一千塊膠擦。
+    thousand
+    eraser
+
+春天(spring)是一個暖的季節。
+    warm
+    season
+
+這是一個極好的車站。
+    excellent
+    station
+
+他是一個極好的巴士司機。
+    excellent
+    bus
+    driver
+
+他有一個小孩。
+    child
+
+她的丈夫會在八月去月球。
+    husband
+    moon
+    august
+
+他的姨姨是一個教師。
+    aunt
+    teacher
+
+她是我的第四個妻子。
+    fourth
+    wife
+
+這風是涼的。
+    wind
+    cool
+
+他的妻子是一個極好的作家。
+    wife
+    excellent
+    writer
+
+在將來他會成為一個老師。
+    future
+    become
+    teacher
+
+這張票是貴的。
+    ticket
+    expensive
+
+你能畫一個圓嗎？
+    can
+    draw
+    circle
+
+我需要新鮮的空氣。
+    need<=727,0
+    fresh
+    air
+
+你可以給我一些貼士嗎？
+    can
+    give
+    tip
+
+我有一些粉筆。
+    chalk
+
+這張票很便宜。
+    ticket
+    cheap
+
+這本字典是厚和重的。
+    dictionary
+    thick
+    heavy
+
+這個嬰兒經常在黃昏睡覺。
+    baby
+    often
+    sleep
+    evening
+
+他出生在中國。
+    born
+    China
+
+他出生在一個大的家庭。
+    born
+    big
+    family<=141,0
+
+這只一個紙貨車，它不是真的。
+    paper
+    truck
+    real
+
+這塊岩石很重。
+    rock
+    heavy
+
+他有一個年輕的女兒。
+    young
+    daughter
+
+這些橙很貴。
+    these
+    orange
+    expensive
+
+
+他有一個灰色的盒。
+    gray
+    box
+
+他有一塊紫色的石頭。
+    purple<=175,1
+    rock
+
+你能畫一個正方形嗎？
+    can
+    draw
+    square<=166,0
+
+這粉筆是白色的。
+    chalk
+    white<=103,1
+
+他的姨姨有兩個兄弟。
+    aunt
+    brother
+
+他是一個真正的農夫。
+    real
+    farmer
+
+他有一架白色的電單車。
+    white<=103,1
+    bike<=133,1
+
+她的姨姨很瘦。
+    aunt
+    thin<=80,0
+
+這個老闆有四十個工人。
+    boss
+    forty
+    worker
+
+今天天氣是多雲的。
+    today<=154,1
+    weather
+    cloudy
+
+冬天裡天氣是乾的。
+    winter
+    weather
+    dry
+
+他的姨姨有一個小嘴巴。
+    aunt
+    small
+    mouth
+
+他出生在北方。
+    born
+    north
+
+他是一個貨車司機。
+    truck
+    driver
+
+她喜歡音樂。
+    like<=475,0
+    music
+
+請(please)數一數這些氣球。
+    count
+    balloon
+
+這是一個好地方。
+    good
+    place
+
+她有一盒粉筆。
+    box
+    chalk
+
+他在農場出生。
+    born
+    farm
+
+這些橙是很新鮮的。
+    these
+    orange
+    fresh
+
+老師是在黑板旁邊。
+    teacher
+    beside
+    blackboard
+
+這個醫生經常騎一架電單車。
+    doctor
+    ride
+    bike<=133,1
+
+這是一個大的廣場。
+    big
+    square<=166,1
+
+這個車站是在廣場的旁邊。
+    station
+    beside
+    square<=166,1
+
+我們的班有四十個學生。
+    class
+    forty
+    student
+
+學校在車站和廣場之間。
+    school
+    between
+    station
+    square<=166,1
+
+我有很多蘋果。
+    many
+    apple
+
+這架貨車很重。
+    truck
+    heavy
+    
+
+他每日都見到他的老闆。
+    see
+    boss
+    every day
+
+這個小孩每日都吃一個橙。
+    child
+
+老師在黑板上畫了一個圓。
+    teacher
+
+我們不能在船上滑雪。
+    cannot
+    ski
+    ship
