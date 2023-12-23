@@ -103,6 +103,9 @@ class WordMeaning(Base):
         elif word==self.form1:
             fw=f"{word} x2"
             fw=concat(fw, self.form2, self.form3)
+        elif self.form1 and self.form1==self.form2:
+            fw=f"{word}, {self.form1} x2"
+            fw=concat(fw, self.form3)
         else:
             fw=concat(word, self.form1, self.form2, self.form3)
         return fw
