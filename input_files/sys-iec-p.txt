@@ -1,0 +1,509 @@
+four	四
+run, ran, run	跑
+walk	走路
+apple	蘋果
+red	紅色的
+many	很多（可數）
+ago	在（多久）之前
+five	五
+eat, ate, eaten	吃
+sleep, slept, slept	睡
+now	現在
+bus	巴士
+three	三
+school	學校
+girl	女孩
+orange	橙色的、橙
+teach, taught, taught	教
+hot	熱的
+sister	姐妹
+pen	筆
+fat	肥的
+man	男人
+old	老的、舊的
+small	細的
+little	（年齡）細小的
+girl	女孩
+boy	男孩
+good	好的
+poor	窮的、可憐的
+Macao	澳門
+three	三
+some	一些
+like	喜歡、似
+never	永不、從不
+two	二
+some	一些
+cold	冷的
+water	水
+green	綠色的
+every day	每日
+car	車
+big	大的
+brother	兄弟
+year	年
+strong	強壯的
+wash	洗
+grandpa	祖父
+chicken	雞肉、小雞
+visit	探訪
+last week	上星期
+mother	媽媽
+green	綠色的
+woman	女人
+teacher	老師
+uncle	叔叔
+aunt	姨姨
+yesterday	昨天
+horse	馬
+house	房子
+bad	差的、壞的
+dog	狗
+cat	貓
+pig	豬
+fish	魚
+these	這些
+those	那些
+long	長的
+table	枱
+last night	昨晚
+last month	上個月
+Hong Kong	香港
+food	食物
+cup	白色有耳柄的茶杯
+toy	玩具
+milk	牛奶
+ball	球
+box	盒、箱
+home	家
+play	玩
+friend	朋友
+study	學習（做題等）
+ten	十
+large	大的
+black	黑
+book	書
+white	白色的
+baby	嬰兒
+Chinese	中文、中國的
+China	中國
+tomorrow	明天
+email	電郵
+day	日
+old	老的
+often	經常
+tree	樹
+six	六
+letter	信
+two	兩
+nine	九
+shop	商店
+bag	袋
+Macao	澳門
+happy	快樂的
+monkey	猴子
+night	夜晚
+homework	家課
+Hong Kong	香港
+sea	海
+chicken	小雞
+fire	火
+play	玩
+every	每
+usually	通常
+park	公園
+easy	容易的
+happy	快樂的
+clean	清潔的、清潔
+clear	清楚的、清的
+dance	舞蹈、跳舞
+always	總是
+breakfast	早餐
+door	門
+chair	椅子
+phone	電話
+shoe	鞋
+clothes	衣服
+tall	高的
+king	國王
+old	老的、舊的
+room	房間
+dinner	晚餐
+quick	快的
+bird	鳥
+window	窗
+last	上一個
+arrive	到達
+cow	牛
+sometimes	有時
+fruit	水果
+week	星期
+angry	憤怒的
+warm	使溫暖、溫暖的
+easy	容易的
+dirty	骯髒的
+short	矮的、短的
+today	今日
+young	年青的
+tea	茶
+lion	獅子
+ten	十
+Coke	可樂
+cake	蛋糕
+coffee	咖啡
+bread	麵包
+open	打開、開啟的
+basketball	籃球
+ice-cream	雪糕
+sweet	甜的
+idea	想法
+chocolate	朱古力
+vegetable	蔬菜
+movie	電影
+mouth	口
+month	月
+watch	觀看
+thin	瘦的、簿的
+live	生活、居住
+pet	寵物
+leg	腿
+party	派對
+bookshop	書店
+banana	香蕉
+hand	手
+hate	討厭
+afraid	害怕的
+football	足球
+email	電郵
+help	幫助（動、名）
+call	致電、呼叫
+paper	紙
+new	新的
+classroom	課室
+minute	分鐘
+yellow	黃色的
+Mr Chan	陳先生
+kill	殺死
+hour	小時
+clever	聰明的
+minute	分鐘
+TV	電視
+sun	太陽
+tiger	老虎
+coffee	咖啡
+US	美國
+beautiful	漂亮的、美妙的
+rain	雨水、下雨
+newspaper	報紙
+red	紅色的
+eye	眼睛
+animal	動物
+doll	洋娃娃
+moon	月亮
+floor	地板
+open	打開
+dry	乾的、弄乾
+
+
+fall, fell, fallen	掉
+coffee shop	咖啡室
+glass	透明玻璃杯、玻璃
+fall, fell, fallen	掉、下跌
+put, put, put	放
+men	男人（眾）
+sport	運動（名
+give, gave, given	給
+break, broke, broken	打破
+agree	同意
+speak	說話
+see, saw, seen	看、看見
+good to	對某人好（片）
+come out	出來（片）
+loud	大聲的
+quiet	安靜的
+quite	相當
+speak, spoke, spoken	說
+swim, swam, swum	游泳
+everything	所有東西
+write, wrote, written	寫
+stay	停留
+look at	看著
+catch, caught, caught	捉住
+wait	等待
+match	比賽、火柴
+build, built, built	建造
+go out	出去（片）
+piece	張、塊、片
+know, knew, known	知道
+have a party	開派對（片）
+tell, told, told	告訴
+sick	病的
+at night	在晚上
+my	我的
+candy	糖果
+bottle	瓶
+rice	米、飯
+plan	計劃
+bowl	碗
+take, took, taken	拿走
+can	能夠
+its	它的／牠的
+careful	小心的
+go, went, gone	去
+woman, women	女人
+come, came, come	來
+eat, ate, eaten	吃
+speak, spoke, spoken	講
+tell, told, told	告訴
+cry	叫、器
+understand	明白
+match	比賽、火柴、匹配
+talk	講座、談話、演說（名）
+drive	開車／駕駛
+run, ran, run	跑
+cook	廚師、煮
+know, knew, known	知道、識
+child	小孩（單）
+rest	休息
+break, broke, broken	折斷、打破
+good at	擅於...的（片）
+carry	擕帶
+cheese	芝士
+go, went, gone	去
+draw	畫
+buy, bought, bought	買
+get, got, got	取得
+borrow	借入
+still	依然
+find, found, found	發現、找到
+everything	每一個東西
+at 5pm	在5點
+listen to	聆聽某物（片）
+late	遲的
+speak	講話
+mouse, mice	老鼠
+useful	有用的
+fall, fell, fallen	跌
+understand, understood x2	明白
+face	臉
+watch	手錶、觀看
+Mrs Chan	陳太
+tonight	今晚
+cry	大叫、哭
+English	英國的、英文
+drive, drove, driven	駕駛
+sound	聲音
+person, people	人
+catch, caught, caught	抓住
+can	能夠（有能力）
+pencil	鉛筆
+leave, left, left	離開
+late	遲的
+break, broke, broken	折斷
+fly, flew, flown	飛
+Mrs	太太
+fish	魚（單、眾）
+feet	腳（眾）
+so	因此
+so	所以
+swim	游泳
+do	做
+sound	聲音
+time	時間
+hair	頭髮
+bring, brought, brought	帶來
+its	它的
+eleven	十一
+give, gave, given	給
+know, knew, known	認識、知道
+news	新聞、消息
+body	身體
+look at	望著
+carrot	蘿蔔
+strange	古怪的
+use	使用
+women	女人
+can	能夠
+sport	運動
+sit, sat, sat	坐
+send, sent, sent	寵物
+seven	七
+person, people	人／人們
+leave, left, left	離開
+buy	買
+put	放
+quiet	安靜的
+read	閱讀
+careful	小心的
+foot	腳（單）
+because	因為
+noise	噪音
+throw, threw, thrown	拋
+white	白色的
+talk about	談及
+foot, feet	腳
+eat	吃
+child, children	小孩
+library	圖書館
+black	黑色的
+take, took, taken	拿走
+grandmother	祖母
+itself	它自己
+sing, sang, sung	唱
+its	牠的、它的
+look at	看著（片）
+do, did, done	做
+sport	運動（名）
+although	雖然
+hear, heard, heard	聽到
+there	那裡
+wait for	等待某物
+a lot of	很多（片）
+see, saw, seen	看見
+put	放
+see, saw, seen	看見
+shoe	鞋
+listen	聆聽
+meeting	會議
+late	遲到的
+drink	喝
+its	牠的
+mice	老鼠
+but	但是
+match	火柴、比賽、匹配
+come, came, come	來
+small	（體積）小的
+like	喜歡
+when	當
+make, made, made	造
+throw, threw, thrown	拋
+here	這裡
+send, sent, sent	發送
+China	中國
+arrive at	到達某地點（片）
+sick	病
+idea	主意、想法
+phone	電話
+draw, drew, drawn	畫
+watch	觀看
+work	工作
+money	錢
+US	美國
+black	黑色的
+slow	慢的
+put, put, put	放
+sleep, slept, slept	睡
+book shop	書店
+mouse	老鼠
+find, found, found	找到
+face	臉
+have a party	開派對
+movie	電影
+hear, heard, heard	聽到
+speak, spoke, spoken	說
+work	工作（要做的事情）
+loud	大聲的
+mouse	老鼠（單）
+rest	休息
+twelve	十二
+send, sent, sent	發送
+person	人（單）
+news	消息、新聞
+close	關閉
+sing, sang, sung	唱
+arrive in	到達某大地方（片）
+thing	東西
+TV	電視
+angry with	對某人生氣（片）
+fall, fell, fallen	掉落
+women	女人（眾）
+Mr	先生
+make, made, made	作出
+cry	哭、大叫
+balloon	氣球
+break, broke, broken	弄壞
+music	音樂
+here	這裡
+speak	說
+come	來
+mice	老鼠（眾）
+sky	天空
+drink, drank, drunk	喝
+like	喜歡、似的
+catch, caught, caught	捉
+start	開始
+sleep, slept, slept	睡覺
+warm	暖的
+feel, felt, felt	覺得
+catch, caught, caught	抓住
+clothes	衣服
+run	跑
+make, made, made	製造
+speak	講
+foot	腳
+then	那時
+see, saw, seen	看到
+bring, brought, brought	帶來
+always	總是
+work	工作（動、名）
+may	可能
+eight	八
+look	望
+bring	帶來
+cry	哭
+study	研究、學習（做練習）
+grandma	祖母
+drink, drank, drunk	喝
+weather	天氣
+build, built, built	建造
+noise	聲音
+person	人
+usually	通常
+fly	飛
+agree with	同意某物／人（片）
+chicken	小雞、雞肉
+Mrs Chan	陳太
+into	進入（前置詞）
+game	遊戲
+itself	它／牠自己
+rabbit	兔子
+wait for	等待某物（片）
+short	矮的、短的
+swim, swam, swum	游泳
+work	工作
+break, broke, broken	弄壞、打破、折斷
+big	大的
+good for	對...有益的（片）
+like	喜歡、似的
+take out	拿出
+take	拿走
+brave	勇敢的
+catch	捉
+small	細的
+eleven	十一日
+learn	學懂
+move	移動
+fall	掉、跌
+there	那裡
+climb	爬
+Miss	小姐
+write, wrote, written	寫
+afraid of	害怕某物（片）
+win, won, won	贏
+sing, sang, sung	唱歌
+catch, caught, caught	捉住
+build, built, built	建議
+chicken	雞肉、小雞
+angry at	對某物生氣（片）
+people	人們
+read, read, read	閱讀
+story	故事
+take, took, taken	拿
+at work	在公司
+like	喜歡
+get, got, got	得到
+listen to	聆聽某物
+understand	明白
+sleep, slept, slept	睡覺
+buy, bought, bought	買
+sit, sat, sat	坐

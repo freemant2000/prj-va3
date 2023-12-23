@@ -24,6 +24,11 @@ create table exercise_word(e_id integer, wd_id integer, m_indice varchar(50), pr
 create table exercise_snt(e_id integer, s_id integer, primary key(e_id, s_id));
 create table sprint_exercise(sp_id integer, e_id integer, primary key(sp_id, e_id));
 
+create table sentences(id integer auto_increment primary key, text varchar(100));
+create index sentences_idx_text on sentences(text);
+create table snt_keywords(snt_id integer, wd_id integer, wm_idx integer, primary key(snt_id, wd_id, wm_idx));
+create index snt_keywords_idx_wd_id on snt_keywords(wd_id);
+
 create table students(id integer auto_increment primary key, name varchar(100));
 create index students_idx_name on students(name);
 create table teachers(id integer auto_increment primary key, gmail varchar(100));
@@ -153,11 +158,6 @@ insert into exercise_snt values(2, 4);
 insert into exercise_snt values(2, 5);
 insert into exercise_snt values(2, 6);
 
-
-create table sentences(id integer auto_increment primary key, text varchar(100));
-create index sentences_idx_text on sentences(text);
-create table snt_keywords(snt_id integer, wd_id integer, wm_idx integer, primary key(snt_id, wd_id, wm_idx));
-create index snt_keywords_idx_wd_id on snt_keywords(wd_id);
 
 insert into sentences values(1, '這個山很陡峭。');
 insert into snt_keywords values(1, 2, 0);

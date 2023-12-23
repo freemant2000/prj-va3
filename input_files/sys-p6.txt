@@ -1,385 +1,836 @@
 [Primary 6]
-university	大學
-grow	生長、種植
-kid	小孩
-neck	頸
-teenager	青少年
-motorcycle	電單車
-scene	風景、場景
-post office	郵局
-fry	煎
-wake	喚醒
-fat	肥的
-point	觀點、點、分數、指著
-regular	有規律的
-mark	做上記號、記號、得分（如測驗等）
-finish	結束
-seldom	很少（做某事）
-tip	貼士
-education	教育
-paint	油漆、涂上（油漆或顏料）
-however	但是（副）
-rule	規則
-airplane	飛機（美）
-plane	飛機（簡寫）、平面
-favorite	最愛的
-joy	喜悅
-system	系統
-with	與...一起、用（前置詞）
-embarrass	使...尷尬
-twice	兩次
-electric	電力的
-couch	長梳化
-lead	帶領
-sidewalk	人行道
-level	程度、水準
-envy	羡慕
-build	建造
-cell phone	手機（美）
-argue	爭論
-lucky	幸運的
-strange	古怪的
-least	最少的
-master	主人、師傅
-role	角色
-trip	旅行（名）
-together	一起
-junior high school	初中
-example	例子
-friendship	友誼
-tired	疲倦的
-more	更多的、更
-current	目前的
-jog	慢跑
-importance	重要性
-sale	銷售（名）
-century	世紀
-notice	注意到、告示
-indicate	指示出
-Christmas	聖誕節
-order	落訂、命令、次序
-camp	露營（動、名）
-foot	腳
-unhappy	不高興的
-dig	掘
-kill	殺死
-cent	分（十分等於一角）
-enter	進入
-price	價錢
-develop	發展
-cheer	歡呼（動）
-colorful	多色彩的
-general	 一般的
-man	男人
-finally	最終
-planet	行星
-lose	失去
-blame	責備
-senior high school	高中
-find	找到
-blood	血液
-public	公共的
-postcard	明信片
-fantastic	極好的
-correct	正確的、改正
-major	主要的
-hard-working	努力工作的
-share	分享
-department store	百貨公司
-toy	玩具
-latter	後者
-late	遲的
-childhood	童年
-lip	嘴唇
-simple	簡單的
-believe	相信
-headache	頭痛
-job	職業、工作
-doll	洋娃娃
-PE	體育科
-tennis	網球
-novel	小說、新穎的
-shape	形狀
-hit	打、擊中
-subject	學科、主語
-celebrate	慶祝
-cookie	曲奇
-repeat	重複
-special	特別的
-pet	寵物
-chart	圖表
-biology	生物學
-corner	角落
-divide	分割、除
-gas	氣體
-decrease	減少
-center	中心
-scenery	景色
-vacation	假期
-tooth	牙齒
-steak	牛排
-church	教堂
-wise	明智的
-pork	豬肉
-fancy	幻想、想要、喜歡（異性）、花巧的
-discuss	討論
-match	匹配、火柴、比賽
-convenient	方便的
-have	有、已經（助動詞）
-certain	肯定的
-dinosaur	恐龍
-foreigner	外國人
-garbage	垃圾
-program	節目、計劃
-hurt	傷害
-chemistry	化學
-dozen	一打（十二件）
-finger	手指
-insist	堅持
-therefore	因此
-stone	石頭
-waiter	侍應生
-flag	旗
-next	下一個
-effort	努力（名）
-cute	可愛的
-safe	安全的
-waterfall	瀑布
-crazy 	瘋狂的
-forget	忘記
-root	根
-comic	漫畫
-smart	醒目的
-successful	成功的
-result	結果
-gram	克
-belong	屬於
-recorder	錄音機
-medium	中間的、媒介
-towel	毛巾
-army	軍隊
-understand	了解
-shopkeeper	店主
-arm	手臂
-smoke	抽煙、煙
-sometimes	有時候
-voice	語音
-buy	買
-bored	感到悶的
-comfortable	舒服的
-duty	職責
-beauty	美麗、美人
-barbecue	巴別橋
-snack	小食
-fashionable	時髦的
-magic	魔術
-computer	電腦
-coast	海岸
-sense	感覺（名）、感應、感受
-menu	菜單
-shoot	射擊
-bookstore	書店
-chance	機會
-break	打破、小息
-leader	領導者
-write	寫
-traffic	交通
-theater	劇院
-climb	爬
-surf	滑浪
-block	街區、阻擋
-liter	公升
-available	可使用的
-feed	餵、飼養
-knowledge	知識
-powder	粉末
-package	包裹
-everyone	每人
-everybody	每人
-upper	上部的
-math	數學
-empty	空的
-gather	團聚
-surprise	驚訝
-cousin	堂／表兄弟姊妹
-careful	小心的
-case	情形、箱
-hide	隱藏
-fall	掉落
-media	媒體（眾數）
-bath	洗澡（動、名）
-proud	驕傲的
-handsome	英俊的
-giant	巨人、巨大的
-dish	碟
-win	嬴
-bring	帶
-bottom	底部
-fix	修理、固定
-do	做
-guess	猜
-bank	銀行
-lemon	檸檬
-terrific	好極的
-eve	前夕
-mile	英哩
-feel	感覺
-apologize	道歉
-umbrella	雨傘
-equal	相等的
-health	健康（名）
-wild	野生的
-sleepy	想睡的
-mean	意味著
-honest	誠實的
-shop	商店
-kilometer	公里
-national	國家的
-bakery	麵包店
-queen	皇后
-skate	溜冰
-marvelous	妙極的
-officer	官員
-player	球員、玩家
-stupid	愚蠢的
-bite	咬
-distant	遠離的
-physics	物理學
-choice	選擇（名）
-know	知道
-married	結婚的
-female	女性的、女性
-weekend	週末
-base	底部、根基
-income	收入
-suggest	建議
-increase	增加（動、名）
-sound	聲音、聽起來
-edge	邊緣
-ignore	忽略
-than	比...（更...）
-part	部分
-collect	收集
-mail	郵件
-her	她的
-hers	她的東西
-herself	她自己
-interesting	有趣的
-kick	踢
-anyone	任何人
-anybody	任何人
-latest	最近的
-backward	向後的
-considerate	體貼的
-a lot	許多（片語）
-haircut	剪頭髮（名）
-sentence	句子
-should	應該
-habit	習慣
-jeans	牛仔褲
-always	總是
-pack	一包、執行李
-furniture	家俬
-stomach	胃
-professor	教授
-report	報告
-smell	聞到
-lick	舔
-sell	賣
-shoulder	肩膀
-hold	拿著
-baseball	棒球
-likely	很可能地
-excited	興奮的
-helpful	有幫助的、樂於助人的
-reporter	記者
-then	之後、那時
-present	現在的、禮物、出席的
-state	州
-eagle	鷹
-information	資訊、訊息
-bathe	浸洗
-crayon	臘筆
-besides	除了...之外
-less	較少的（不可數）
-stationery	文具
-gift	禮物
-knee	膝蓋
-dream	夢、造夢、夢想
-Roller-blade	滾軸溜冰
-though	雖然
-although	雖然
-experience	經驗
-interest	興趣
-king	國王
-a few	幾個（可數）
-nod	點頭
-tape	錄音帶、膠紙
-a little	少量（不可數）
-boring	悶的
-USA	美國（簡稱）
-elementary school	小學
-somewhere	某處
-get	得到、變得
-spend	花費
-cheat	作弊、欺騙
-true	真正的
-scooter	滑板車
-skillful	熟練的
-beyond	超越（前置詞）
-bother	打擾
-talent	天分
-diet	飲食習慣
-genius	天才
-Taiwan	台灣
-taste	嚐起來、品味
-heat	熱力
-stranger	陌生人
-interested	對...感到興趣的
-lonely	寂寞的
-touch	接觸、碰到
-Valentine	情人節
-beginner	初學者
-hobby	嗜好
-oil	油
-festival	節日
-color	顏色
-waitress	女侍應生
-mailman	郵差
-mail carrier	郵差
-forward	向前的、向前地
-sight	景象、視力
-begin	開始
-fast	快速的
-leave	離開、把...留下來
-energetic	活力充沛的
-appear	出現
-store	士多、儲存
-concern	關心
-workbook	習題簿
-else	其他、否則
-pocket	口袋
-become	變成
-kite	風箏
-recycle	循環再造
-common	常見的
-formal	正式的
-someone	某人
-somebody	某人
-vendor	小販、銷售商
-describe	描寫
-shall	將會（用於I或we）
-prepare	準備
-surprised	吃驚的
-diplomat	外交官
-oneself	他／她自己
-refrigerator	雪櫃
-thirsty	口渴的
-hang	掛
-hear	聽見
-cause	導致
-weekday	周日
-drop	掉落
-dawn	黎明
-trick	把戲
-soul	靈魂
+university
+	n,大學
+grow
+	v,生長、種植
+kid
+	n,小孩
+neck
+	n,頸
+teenager
+	n,青少年
+motorcycle
+	n,電單車
+scene
+	n,場景
+    n,觀景
+post office
+	n phr,郵局
+fry
+	v,煎
+wake
+	v,喚醒
+fat
+	adj,肥的
+point
+	n,觀點
+    n,點
+    n,分數
+    v,指著
+regular
+	adj,有規律的
+mark
+	v,做上記號
+    n,記號
+    n,得分（如測驗等）
+finish
+	v,結束
+seldom
+	adv,很少（做某事）
+tip
+	n,貼士
+education
+	n,教育
+paint
+	n,油漆
+    v,涂上（油漆或顏料）
+however
+	adv,但是
+rule
+	n,規則
+airplane
+	n,飛機（美）
+plane
+	n,飛機（簡寫）
+    n,平面
+favorite
+	adj,最愛的
+joy
+	n,喜悅
+system
+	n,系統、制度
+with
+	prep,與...一起
+    prep,用
+embarrass
+	v,使...尷尬
+twice
+	adj,兩次
+electric
+	adj,電力的
+couch
+	n,長梳化
+lead
+	v,帶領
+sidewalk
+	n,人行道（美）
+level
+	n,程度、水準
+envy
+	v,羡慕
+build
+	v,建造
+mobile phone
+	v,手機
+argue
+	v,爭論
+lucky
+	adj,幸運的
+strange
+	adj,古怪的
+least
+	adj,最少的
+master
+	n,主人
+    n,師傅
+role
+	n,角色
+trip
+	n,旅行（名）
+together
+	adj,一起
+junior high school
+	n phr,初中
+example
+	n,例子
+friendship
+	n,友誼
+tired
+	adj,疲倦的
+more
+	adj,更多的
+    adv,更
+current
+	adj,目前的
+jog
+	v,慢跑
+importance
+	adj,重要性
+sale
+	n,銷售
+century
+	n,世紀
+notice
+	v,注意到
+    n,告示
+indicate
+	v,指示出
+Christmas
+	n,聖誕節
+order
+	v,落訂
+    v,命令
+    n,命令
+    n,次序
+camp
+	v,露營
+    n,露營
+foot
+	n,腳
+unhappy
+	adj,不高興的
+dig
+	v,掘
+kill
+	v,殺死
+cent
+	n,分（十分等於一角）
+enter
+	v,進入
+price
+	n,價錢
+develop
+	v,發展
+cheer
+	v,歡呼
+    n,歡呼
+colorful
+	adj,多色彩的
+general
+	adj,一般的
+man
+	n,男人
+finally
+	adv,最終
+planet
+	n,行星
+lose
+	v,失去
+blame
+	v,責備
+senior high school
+	n phr,高中
+find
+	v,找到
+blood
+	n,血液
+public
+	adj,公共的
+postcard
+	n,明信片
+fantastic
+	adj,極好的
+correct
+	adj,正確的
+    v,改正
+major
+	adj,主要的
+hard-working
+	adj,努力工作的
+share
+	adj,分享
+department store
+	n phr,百貨公司
+toy
+	n,玩具
+latter
+	n,後者
+late<=710,0
+	adj,遲的
+childhood
+	n,童年
+lip
+	n,嘴唇
+simple
+	adj,簡單的
+believe
+	v,相信
+headache
+	n,頭痛
+job
+	n,職業、工作
+doll
+	n,洋娃娃
+PE
+	n,體育科（縮寫）
+tennis
+	n,網球
+novel
+	n,（較長）小說
+    adj,新穎的
+shape
+	n,形狀
+hit
+	v,打（一下）
+    v,擊中
+subject
+	n,學科
+    n,主語
+celebrate
+	v,慶祝
+cookie
+	n,曲奇
+repeat
+	v,重複
+special
+	adj,特別的
+pet
+	n,寵物
+chart
+	n,圖表
+biology
+	n,生物學
+corner
+	n,角落
+divide
+	v,分割
+    v,除
+gas
+	n,氣體
+decrease
+	v,減少
+center
+	n,中心
+scenery
+	n,景色
+vacation
+	n,假期
+tooth
+	n,牙齒
+steak
+	n,牛排
+church
+	n,教堂
+wise
+	adj,明智的
+pork
+	n,豬肉
+fancy
+    adj,花巧的
+	v,幻想
+    v,想要
+    v,喜歡（異性）
+discuss
+	v,討論
+match
+	v,匹配
+    n,火柴
+    n,比賽
+convenient
+	adj,方便的
+certain
+	adj,肯定的
+dinosaur
+	n,恐龍
+foreigner
+	n,外國人
+garbage
+	n,垃圾（有機）
+program
+	n,節目
+    n,計劃
+hurt
+	v,傷害
+chemistry
+	n,化學
+dozen
+	n,一打（十二件）
+finger
+	n,手指
+insist
+	v,堅持
+therefore
+	adv,因此
+stone
+	n,石頭
+waiter
+	n,侍應生
+flag
+	n,旗
+next
+	adj,下一個
+effort
+	n,努力
+cute
+	adj,可愛的
+safe
+	adj,安全的
+waterfall
+	n,瀑布
+crazy
+	adj,瘋狂的
+forget
+	v,忘記
+root
+	n,根
+comic
+	n,漫畫
+smart
+	adj,醒目的
+successful
+	adj,成功的
+result
+	n,結果
+gram
+	n,克
+belong
+	v,屬於
+recorder
+	n,錄音機
+medium
+    n,媒介
+	adj,中間的
+towel
+	n,毛巾
+army
+	n,軍隊
+understand
+	v,了解
+shopkeeper
+	n,店主
+arm
+	n,手臂
+smoke
+    n,煙
+	v,抽煙
+sometimes
+	adj,有時候
+voice
+	n,語音
+buy
+	v,買
+bored
+	adj,感到悶的
+comfortable
+	adj,舒服的
+duty
+	n,職責
+beauty
+	n,美麗
+    n,美人
+barbecue
+	n,巴別橋
+snack
+	n,小食
+fashionable
+	adj,時髦的
+magic
+	n,魔術
+computer
+	n,電腦
+coast
+	n,海岸
+sense
+	n,感覺
+    v,感應、感受
+menu
+	n,菜單
+shoot
+	v,射擊
+bookstore
+	n,書店
+chance
+	n,機會
+break
+	v,打破
+    n,小息
+leader
+	n,領導者
+write
+	v,寫
+traffic
+	n,交通
+theater
+	n,劇院（美）
+climb
+	v,爬
+surf
+	v,滑浪
+block
+	n,街區
+    v,阻擋
+liter
+	n,公升（美）
+available
+	adj,可使用的
+feed
+	v,餵、飼養
+knowledge
+	n,知識
+powder
+	n,粉末
+package
+	n,包裹
+everyone
+	pron,每人
+everybody
+	pron,每人
+upper
+	adj,上部的
+math
+	n,數學（美）
+empty
+	adj,空的
+gather
+	v,團聚
+surprise
+	v,使驚訝
+	n,驚訝
+cousin
+	n,堂／表兄弟姊妹
+careful
+	adj,小心的
+case
+	n,情形
+    n,箱
+hide
+	v,隱藏
+fall
+	v,掉落
+media
+	n,媒體（眾數）
+bath
+	n,洗澡
+proud
+	adj,驕傲的
+handsome
+	adj,英俊的
+giant
+    adj,巨大的
+	n,巨人
+dish
+	n,碟
+win
+	v,嬴
+bring
+	v,帶
+bottom
+	n,底部
+fix
+	v,修理
+    v,固定
+guess
+	v,猜
+bank
+	n,銀行
+lemon
+	n,檸檬
+terrific
+	adj,好極的
+eve
+	n,前夕
+mile
+	n,英里
+feel
+	v,感覺
+apologize
+	v,道歉
+umbrella
+	n,雨傘
+equal
+	adj,相等的
+	v,等於
+health
+	n,健康
+wild
+	adj,野生的
+sleepy
+	adj,想睡的
+mean
+	v,意味著
+honest
+	adj,誠實的
+shop
+	n,商店
+kilometer
+	n,公里
+national
+	adj,全國的
+	adj,國家的
+bakery
+	n,麵包店
+queen
+	n,皇后
+skate
+	n,溜冰
+marvelous
+	adj,妙極的
+officer
+	n,長官（警察或政府部門）
+player
+	n,球員
+    n,玩家
+stupid
+	adj,愚蠢的
+bite
+	v,咬
+distant
+	adj,遠離的
+physics
+	n,物理學
+choice
+	n,選擇
+know
+	v,知道
+married
+	adj,結婚的
+female
+	adj,女性的
+    n,女性
+weekend
+	n,週末
+base
+	n,底部、根基
+income
+	n,收入
+suggest
+	v,建議
+increase
+	v,增加
+	n,增加
+sound
+	n,聲音
+    v,聽起來
+edge
+	n,邊緣
+ignore
+	v,忽略
+than
+	prep,比...（更...）
+part
+	n,部分
+collect
+	v,收集
+mail
+	n,郵件
+	v,郵寄
+her
+	det,她的
+hers
+	pron,她的xx
+herself
+	pron,她自己
+interesting
+	adj,有趣的
+kick
+	v,踢
+anyone
+	pron,任何人
+anybody
+	pron,任何人
+latest
+	adj,最近的
+backward
+	adv,向後
+considerate
+	adj,體貼的
+a lot
+	num phr,許多
+haircut
+	n,剪頭髮
+sentence
+	n,句子
+should
+	m,應該
+habit
+	n,習慣
+jeans
+	n,牛仔褲
+always
+	adv,總是
+pack
+	n,一包
+    v,執行李
+furniture
+	n,家俬
+stomach
+	n,胃
+professor
+	n,教授
+report
+	n,報告
+    v,報告
+smell
+	v,聞到
+    n,氣味
+lick
+	v,舔
+sell
+	v,賣
+shoulder
+	n,肩膀
+hold
+	v,拿著
+baseball
+	n,棒球
+likely
+	adv,很可能地
+excited
+	adj,興奮的
+helpful
+	adj,有幫助的
+    adj,樂於助人的
+reporter
+	n,記者
+then
+	adv,之後
+    adv,那時
+present
+	adj,現在的
+    n,禮物
+    adj,出席的
+state
+	n,州
+	v,指出
+eagle
+	n,鷹
+information
+	n,資訊、訊息
+bathe
+	v,浸洗
+crayon
+	n,臘筆
+besides
+	prep,除了...之外（也...）
+less
+	adj,較少的（不可數）
+    adv,更不
+stationery
+	n,文具
+gift
+	n,禮物
+knee
+	n,膝蓋
+dream
+	n,夢
+    v,造夢
+    v,夢想
+Roller-blade
+	v,滾軸溜冰
+though
+	conj,雖然（簡寫）
+although
+	conj,雖然
+experience
+	n,經驗
+interest
+	n,興趣
+king
+	n,國王
+a few
+	num phr,幾個（可數）
+nod
+	v,點頭
+tape
+	n,錄音帶
+    n,膠紙
+a little
+	num phr,少量（不可數）
+boring
+	adj,悶的
+USA
+	n,美國（縮寫）
+elementary school
+	n phr,小學
+somewhere
+	adv,某處
+get
+	v,得到
+    v,變得
+spend
+	v,花費
+cheat
+	v,作弊
+    v,欺騙
+true
+	adj,真正的
+scooter
+	n,滑板車
+skillful
+	adj,有技能的
+beyond
+	prep,超越
+bother
+	v,打擾
+talent
+	n,天分
+diet
+	n,飲食習慣
+genius
+	n,天才
+Taiwan
+	n,台灣
+taste
+    n,品味
+	v,嚐起來
+heat
+	n,熱力
+    v,加熱
+stranger
+	n,陌生人
+interested
+	adj,對...感到興趣的
+lonely
+	adj,孤寂的
+touch
+	v,接觸、碰到
+Valentine
+	n,情人節
+beginner
+	n,初學者
+hobby
+	n,嗜好
+oil
+	n,油
+festival
+	n,節日
+color
+	n,顏色（美）
+waitress
+	n,女侍應生
+mailman
+	n,郵差（男）
+mail carrier
+	n phr,郵差
+forward
+	adj,向前的
+    adv,向前
+sight
+	n,景象
+    n,視力
+begin
+	v,開始
+fast
+	adj,快速的
+leave
+	v,離開
+    v,把...留低
+energetic
+	adj,活力充沛的
+appear
+	v,出現
+store
+	n,士多
+    v,儲存
+concern
+	n,關心
+    v,使關心、使擔心
+workbook
+	n,習題簿
+else
+	adv,其他
+    adv,否則
+pocket
+	n,口袋
+become
+	v,變成
+kite
+	n,風箏
+recycle
+	v,循環再造
+common
+	adj,常見的
+formal
+	adj,正式的
+someone
+	pron,某人
+somebody
+	pron,某人
+vendor
+	n,小販
+    n,銷售商
+describe
+	v,描寫
+shall
+	aux,將會（用於I或we）
+prepare
+	v,準備
+surprised
+	v,吃驚的
+diplomat
+	n,外交官
+oneself
+	pron,他／她自己
+refrigerator
+	n,雪櫃
+thirsty
+	adj,口渴的
+hang
+	v,掛
+hear
+	v,聽見
+cause
+	v,導致
+    n,原因
+weekday
+	n,周日
+drop
+	v,掉落
+    n,滴
+dawn
+	n,黎明
+trick
+	n,把戲
+    v,戲弄
+soul
+	n,靈魂
