@@ -184,7 +184,7 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
             wd=WordDef(id=None, word=word)
             wbd.wds.append(wd)
             if usage_str:
-                wd_id, m_indice=update_str.split(",")
+                wd_id, m_indice=usage_str.split(",")
                 m_indice=m_indice.replace("-", ",")
                 wbd.word_usages[wd]=WordUsage(WordDef(id=int(wd_id)), m_indice)
                 wd.id=wd_id
