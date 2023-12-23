@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from itertools import groupby
 from operator import and_
 from sqlalchemy import ForeignKey, Sequence as Seq, select, or_
 from sqlalchemy.orm import Session, joinedload, Mapped, mapped_column, relationship
@@ -22,15 +23,25 @@ class WordDef(Base):
         word=self.word
         if not forms_indice:
             return word
-        first_idx=forms_indice[0]
-        first_forms=self.meanings[first_idx].get_forms()
-        if all(self.meanings[m_idx].get_forms()==first_forms for m_idx in forms_indice):
+        gs={}
+        for idx in forms_indice:
+            forms=",".join(self.meanings[idx].get_forms())
+            if forms in gs.keys():
+                gs[forms].append(idx)
+            else:
+                gs[forms]=[idx]
+        if len(gs)==1:
+            forms,indice=next(iter(gs.items()))
+            first_idx=indice[0]
             fw=self.meanings[first_idx].add_forms(word)
             return fw
         else:
-            forms=[f"{m_idx}:"+",".join(self.meanings[m_idx].get_forms()) for m_idx in forms_indice]
-            forms.insert(0, word)
-            fw="; ".join(forms)
+            all_forms=[]
+            for forms,indice in gs.items():
+                indice_str="-".join([str(idx) for idx in indice])
+                all_forms+=[f"{indice_str}:"+forms]
+            all_forms.insert(0, word)
+            fw="; ".join(all_forms)
             return fw
     def get_display(self)->str:
         return self.word+"\t"+self.get_meanings()
@@ -39,7 +50,7 @@ class WordDef(Base):
     def get_selected_meanings(self, m_indice:Sequence[int])->str:
         return u"、".join([f"{self.meanings[m_i].meaning}({self.meanings[m_i].p_of_s})" for m_i in m_indice])
     def get_all_m_indice(self)->str:
-        return ",".join([str(idx) for idx in range(len(self.meanings))])
+        return ",".join([str(idx)+("F" if self.meanings[idx].has_forms() else "") for idx in range(len(self.meanings))])
     def __str__(self) -> str:
         return f"WordDef {self.word} with {len(self.meanings)} meanings"
     def is_usage(self, wd: "WordDef", m_indice: str)->bool:

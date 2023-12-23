@@ -25,9 +25,9 @@ class TestWordDef(TestCase):
         self.assertEquals(wds[1].word, "fight")
     def test_get_all_m_indice(self):
         wd=WordDef(word="hand")
-        wd.add_meaning("n", "手")
+        wd.add_meaning("n", "手", ["handed", "handed"])
         wd.add_meaning("v", "遞給")
-        self.assertEquals(wd.get_all_m_indice(), "0,1")
+        self.assertEquals(wd.get_all_m_indice(), "0F,1")
     def test_get_word_meaning(self):
         wm=get_word_meaning(self.s, 4, 2)
         self.assertEquals(wm.wd.word, "trunk")
