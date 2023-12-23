@@ -1,20 +1,20 @@
 [irregular verbs]
-become, became, become
+become, became, become=>1160
 	v,變成
 break, broke, broken
 	v,打破
   n,小息
-build, built, built
+build, built, built=>840
 	v,建造
 choose, chose, chosen
 	v,選擇
-begin, began, begun
+begin, began, begun=>1152
 	v,開始
-write, wrote, written
+write, wrote, written=>986
 	v,寫
-buy, bought, bought
+buy, bought, bought=>968
 	v,買
-bring, brought, brought
+bring, brought, brought=>1017
 	v,帶來
 catch, caught, caught=>308
 	v,捉住
@@ -22,11 +22,11 @@ see, saw, seen=>93
 	v,看見
 come, came, come=>390
 	v,來
-find, found, found
+find, found, found=>882
 	v,找到、發現
-hear, heard, heard
+hear, heard, heard=>1179
 	v,聽到
-dig, dug, dug
+dig, dug, dug=>867
 	v,掘
 do, did, done
 	v,做
@@ -35,9 +35,10 @@ drink, drank, drunk=>362
   n,飲品
 drive, drove, driven=>220
 	v,駕駛
-lose, lost, lost
+lose, lost, lost=>879
 	v,失去
-fall, fell, fallen
+	v,輸
+fall, fell, fallen=>1009
 	v,跌
 draw, drew, drawn=>764
 	v,畫
@@ -57,19 +58,20 @@ have, had, had
   v,享用: had, had
 say, said, said=>123
 	v,說
-get, got, got
+get, got, got=>1123
 	v,得到
+	v,變得: got, got
 sit, sat, sat=>65
 	v,坐
 teach, taught, taught=>556
 	v,教
 lend, lent, lent=>409
 	v,借出
-feel, felt, felt
+feel, felt, felt=>1026
 	v,感覺到
-know, knew, known
+know, knew, known=>1049
 	v,知道、認識
-forget, forgot, forgotten
+forget, forgot, forgotten=>950
 	v,忘記
 fight, fought, fought
 	v,打鬥
@@ -78,8 +80,9 @@ give, gave, given=>748
 	v,給
 speak, spoke, spoken=>439
 	v,講
-leave, left, left
+leave, left, left=>1154
 	v,離開
+	v,把...留低
 make, made, made=>648
 	v,造
   v,令: made, made
@@ -101,7 +104,7 @@ wear, wore, worn=>386
 	v,穿著
 sing, sang, sung=>528
 	v,唱
-spend, spent, spent
+spend, spent, spent=>1124
 	v,花費
 fly, flew, flown=>408
 	v,飛
@@ -114,25 +117,26 @@ show, showed, shown=>800
   n,展示、顯示
 throw, threw, thrown
 	v,拋
-hide, hid, hidden
+hide, hid, hidden=>1008
 	v,躱藏、收藏
-hold, held, held
+hold, held, held=>1090
 	v,拿著
-hurt, hurt, hurt
+hurt, hurt, hurt=>935
 	v,傷害
-win, won, won
+win, won, won=>1016
 	v,贏
 pay, paid, paid=>495
 	v,支付
-feed, fed, fed
-	v,餵
-sell, sold, sold
+feed, fed, fed=>994
+	v,餵、飼養
+sell, sold, sold=>1088
 	v,賣
 sink, sank, sunk
 	v,沉、使沉
-grow, grew, grown
+grow, grew, grown=>806
 	v,生長
   v,種植: grew, grown
+	v,變得: grew, grown
 stand, stood, stood=>527
 	v,站
 steal, stole, stolen
@@ -142,8 +146,8 @@ cost, cost, cost=>529
   n,成本
 let, let, let=>609
 	v,讓
-wake, woke, woken
-	v,醒來
+wake, woke, woken=>814
+	v,醒來、喚醒
 understand, understood, understood
 	v,明白
 ring=>428
@@ -159,19 +163,19 @@ lie=>761
 lay, laid, laid, laying
 	v,輕放
   v,生（蛋）: laid, laid, laying
-bite, bit, bitten
+bite, bit, bitten=>1045
 	v,咬
   n,咬
 forgive, forgave, forgiven
 	v,原諒
-hang, hung, hung
+hang, hung, hung=>1178
 	v,掛
   v,吊死: hanged, hanged
 prove, proved, proven
 	v,證明
 shut, shut, shut
 	v,關閉（大力、封閉）
-shoot, shot, shot
+shoot, shot, shot=>981
 	v,（用槍等）射擊
 freeze, froze, frozen
 	v,冷凍、停止不動
@@ -219,8 +223,8 @@ bear=>548
 slide, slid, slid
 	v,滑行
   n,滑梯
-smell, smelt, smelt
-	v,聞
+smell, smelt, smelt=>1086
+	v,聞到
   n,氣味
 spin, spun, spun
 	v,自轉（快）
