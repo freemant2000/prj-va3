@@ -48,7 +48,10 @@ class WordDef(Base):
     def get_meanings(self)->str:
         return u"、".join([f"{m.meaning}({m.p_of_s})" for m in self.meanings])
     def get_selected_meanings(self, m_indice:Sequence[int])->str:
-        return u"、".join([f"{self.meanings[m_i].meaning}({self.meanings[m_i].p_of_s})" for m_i in m_indice])
+        try:
+            return u"、".join([f"{self.meanings[m_i].meaning}({self.meanings[m_i].p_of_s})" for m_i in m_indice])
+        except IndexError:
+            raise ValueError(f"Index out of range for word {self.word} with ID {self.id}")
     def get_all_m_indice(self)->str:
         return ",".join([str(idx)+("F" if self.meanings[idx].has_forms() else "") for idx in range(len(self.meanings))])
     def __str__(self) -> str:
@@ -62,6 +65,8 @@ class WordDef(Base):
             m_idx=int(m_idx)
             if m_idx<len(self.meanings):
                 wm1=self.meanings[m_idx]
+                if idx>=len(wd.meanings):
+                    return False
                 wm2=wd.meanings[idx]
                 if wm1.p_of_s!=wm2.p_of_s or wm1.meaning!=wm2.meaning:
                     return False

@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from operator import or_
 import re
-from typing import Dict, Sequence, List
+from typing import Dict, Sequence, List, Tuple
 from sqlalchemy import select, ForeignKey, Sequence as Seq
 from sqlalchemy.orm import Session, Mapped, mapped_column, relationship, joinedload
 from sqlalchemy.types import String, Integer
@@ -82,7 +82,7 @@ class WordBankDraft:
             return False
 
     def check_complete(self):
-        if self.cands:
+        if self.get_strict_cands():
             raise ValueError("There are words identical to existing ones")
         if self.mismatches:
             raise ValueError("Trying to use a word but the word or meanings are different")
@@ -95,6 +95,14 @@ class WordBankDraft:
             else:
                 if not wd.meanings:
                     raise ValueError(f"No ID is specified for {wd.word} but no meaning is given")
+
+    def get_strict_cands(self)->Dict[WordDef, List[WordDef]]:
+        s_cands={}
+        for wd, cands in self.cands.items():
+            rcs=[c for c in cands if wd.word==c.word]
+            if rcs:
+                s_cands[wd]=rcs
+        return s_cands
 
 def refine_wb_draft(s: Session, wbd: WordBankDraft):
   wbd.cands.clear()
@@ -180,6 +188,8 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
                 word_str, update_str=line.split("=>")
             else:
                 word_str=line
+                if "=" in word_str or ">" in word_str or "<" in word_str: 
+                    raise ValueError(f"{word_str} contains invalid characters")
             word, forms=parse_full_word(word_str)
             wd=WordDef(id=None, word=word)
             wbd.wds.append(wd)
@@ -194,7 +204,7 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
                 wd.id=wd_id
     return wbd
 
-def parse_full_word(fw: str)->(str, List[str]):
+def parse_full_word(fw: str)->Tuple[str, List[str]]:
     ps=fw.split(",")
     ps=[p.strip() for p in ps]
     word=ps.pop(0)

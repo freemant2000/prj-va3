@@ -1,388 +1,767 @@
-four	四
-run, ran, run	跑
-eat	吃
-walk	走路
-apple	蘋果
-red	紅色的
-many	很多（可數）
-ago	在（多久）之前
-five	五
-buy	買
-put	放
-read	閱讀
-now	現在
-bus	巴士
-three	三
-come	來
-drink	喝
-put	放
-school	學校
-girl	女孩
-orange	橙色的、橙
-speak	講
-hate	討厭
-hot	熱的
-sister	姐妹
-pen	筆
-fat	肥的
-man	男人
-old	老的、舊的
-swim	游泳
-small	（體積）小的
-little	（年齡）細小的
-girl	女孩
-boy	男孩
-good	好的
-draw	畫
-poor	窮的、可憐的
-like	喜歡、似
-never	永不、從不
-two	二
-some	一些
-cold	冷的
-water	水
-green	綠色的
-every day	每日
-car	車
-big	大的
-brother	兄弟
-year	年
-strong	強壯的
-wash	洗
-grandpa	祖父
-chicken	小雞、雞肉
-visit	探訪
-last week	上星期
-mother	媽媽
-green	綠色的
-woman	女人
-teacher	老師
-uncle	叔叔
-aunt	姨姨
-yesterday	昨天
-horse	馬
-house	房子
-bad	差的、壞的
-dog	狗
-cat	貓
-pig	豬
-fish	魚
-these	這些
-those	那些
-long	長的
-table	枱
-last night	昨晚
-last month	上個月
-food	食物
-cup	白色有耳柄的茶杯
-toy	玩具
-milk	牛奶
-ball	球
-box	盒、箱
-home	家
-drive	開車／駕駛
-play	玩
-friend	朋友
-study	學習（做題等）
-ten	十
-large	大的
-black	黑、黑色的
-book	書
-white	白色的
-baby	嬰兒
-Chinese	中文、中國的
-China	中國
-tomorrow	明天
-email	電郵
-day	日
-often	經常
-tree	樹
-six	六
-letter	信
-nine	九
-shop	商店
-bag	袋
-Macao	澳門
-happy	快樂的
-monkey	猴子
-night	夜晚
-homework	家課
-Hong Kong	香港
-sea	海
-fire	火
-play	玩
-every	每
-usually	通常
-park	公園
-easy	容易的
-clean	清潔的、清潔
-clear	清楚的、清的
-dance	舞蹈、跳舞
-always	總是
-eat, ate, eaten	吃
-sleep, slept, slept	睡
-teach, taught, taught	教
-breakfast	早餐
-door	門
-chair	椅子
-phone	電話
-shoe	鞋
-clothes	衣服
-tall	高的
-king	國王
-room	房間
-dinner	晚餐
-quick	快的
-bird	鳥
-window	窗
-last	上一個
-arrive	到達
-cow	牛
-sometimes	有時
-fruit	水果
-week	星期
-angry	憤怒的
-warm	使溫暖、溫暖的
-easy	容易的
-dirty	骯髒的
-short	矮的、短的
-today	今日
-young	年青的
-tea	茶
-drink, drank, drunk	喝
-lion	獅子
-ten	十
-Coke	可樂
-cake	蛋糕
-coffee	咖啡
-bread	麵包
-open	打開、開啟的
-basketball	籃球
-ice-cream	雪糕
-sweet	甜的
-idea	想法
-chocolate	朱古力
-vegetable	蔬菜
-movie	電影
-mouth	口
-month	月
-watch	觀看
-thin	瘦的、簿的
-live	生活、居住
-pet	寵物
-leg	腿
-party	派對
-bookshop	書店
-banana	香蕉
-hand	手
-afraid	害怕的
-football	足球
-help	幫助（動、名）
-call	致電、呼叫
-paper	紙
-new	新的
-classroom	課室
-minute	分鐘
-yellow	黃色的
-Mr Chan	陳先生
-kill	殺死
-hour	小時
-clever	聰明的
-TV	電視
-sun	太陽
-tiger	老虎
-fall, fell, fallen	掉、下跌
-put, put, put	放
-US	美國
-beautiful	漂亮的、美妙的
-rain	雨水、下雨
-newspaper	報紙
-go, went, gone	去
-take, took, taken	拿走
-come, came, come	來
-eye	眼睛
-animal	動物
-doll	洋娃娃
-moon	月亮
-floor	地板
-dry	乾的、弄乾
-coffee shop	咖啡室
-glass	透明玻璃杯、玻璃
-men	男人（眾）
-foot	腳
-give, gave, given	給
-break, broke, broken	打破
-agree	同意
-see, saw, seen	看、看見
-good to	對某人好（片）
-come out	出來（片）
-loud	大聲的
-quiet	安靜的
-quite	相當
-speak, spoke, spoken	講
-swim, swam, swum	游泳
-write, wrote, written	寫
-stay	停留
-look at	看著
-catch, caught, caught	捉住
-wait	等待
-build, built, built	建造
-go out	出去（片）
-piece	張、塊、片
-know, knew, known	認識、知道
-have a party	開派對（片）
-tell, told, told	告訴
-sick	病的
-at night	在晚上
-my	我的
-person	人
-candy	糖果
-bottle	瓶
-rice	米、飯
-plan	計劃
-bowl	碗
-can	能夠（有能力）
-its	它的／牠的
-careful	小心的
-woman, women	女人
-cry	哭、大叫
-understand	明白
-match	比賽、火柴、匹配
-talk	講座、談話、演說（名）
-run, ran, run	跑
-cook	廚師、煮
-child	小孩（單）
-rest	休息
-good at	擅於...的（片）
-carry	擕帶
-cheese	芝士
-buy, bought, bought	買
-get, got, got	取得
-borrow	借入
-still	依然
-find, found, found	發現、找到
-everything	每一個東西
-at 5pm	在5點
-listen to	聆聽某物（片）
-late	遲的
-mouse, mice	老鼠
-useful	有用的
-fall, fell, fallen	跌
-face	臉
-watch	手錶、觀看
-Mrs Chan	陳太
-tonight	今晚
-English	英國的、英文
-drive, drove, driven	駕駛
-sound	聲音
-person, people	人
-pencil	鉛筆
-understand, understood, understood	明白
-leave, left, left	離開
-break, broke, broken	折斷、打破、弄壞
-fly, flew, flown	飛
-Mrs	太太
-fish	魚（單、眾）
-feet	腳（眾）
-so	因此
-so	所以
-do	做
-time	時間
-hair	頭髮
-bring, brought, brought	帶來
-eleven	十一
-give, gave, given	給
-news	新聞、消息
-body	身體
-carrot	蘿蔔
-strange	古怪的
-hear, heard, heard	聽到
-use	使用
-women	女人
-sport	運動（名）
-sit, sat, sat	坐
-send, sent, sent	寵物
-seven	七
-careful	小心的
-because	因為
-noise	噪音
-throw, threw, thrown	拋
-talk about	談及
-foot, feet	腳
-child, children	小孩
-library	圖書館
-grandmother	祖母
-sing, sang, sung	唱
-do, did, done	做
-although	雖然
-there	那裡
-wait for	等待某物
-a lot of	很多（片）
-listen	聆聽
-meeting	會議
-but	但是
-like	喜歡
-when	當
-make, made, made	造、作出
-here	這裡
-arrive at	到達某地點（片）
-sick	病
-idea	主意、想法
-draw, drew, drawn	畫
-watch	觀看
-money	錢
-get, got, got	得到
-slow	慢的
-mouse	老鼠
-find, found, found	找到
-movie	電影
-twelve	十二
-close	關閉
-arrive in	到達某大地方（片）
-thing	東西
-angry with	對某人生氣（片）
-Mr	先生
-balloon	氣球
-music	音樂
-sky	天空
-start	開始
-warm	暖的
-feel, felt, felt	覺得
-run	跑
-then	那時
-always	總是
-work	工作（動、名）、工作（要做的事情）
-may	可能
-eight	八
-look	望
-bring	帶來
-study	研究、學習（做練習）
-grandma	祖母
-weather	天氣
-fly	飛
-agree with	同意某物／人（片）
-into	進入（前置詞）
-game	遊戲
-itself	它／牠自己
-rabbit	兔子
-swim, swam, swum	游泳
-break, broke, broken	弄壞、打破、折斷
-good for	對...有益的（片）
-take out	拿出
-take	拿走
-brave	勇敢的
-learn	學懂
-move	移動
-fall	掉、跌
-there	那裡
-climb	爬
-Miss	小姐
-afraid of	害怕某物（片）
-win, won, won	贏
-catch, caught, caught	捉住
-angry at	對某物生氣（片）
-people	人們
-read, read, read	閱讀
-story	故事
-at work	在公司
-buy, bought, bought	買
+[英文整合班低小]
+four<=101,0
+        num,四
+eat<=315,0F
+        v,吃:ate, eaten
+walk<=585,0
+        v,走路
+apple<=450,0
+        n,蘋果
+red<=157,0
+        adj,紅色的
+many<=230,0
+        det,許多的（可數）
+ago<=394,0
+        adv,在（多久）以前
+five<=167,0
+        num,五
+buy<=968,0
+        v,買
+put<=684,0
+        v,放
+read<=586,0
+        v,讀
+now<=127,0
+        adv,現在
+bus<=169,0
+        n,巴士
+three<=208,0
+        num,三
+come<=390,0
+        v,來
+drink<=362,0
+        v,喝
+school<=185,0
+        n,學校
+girl<=250,0
+        n,女孩
+orange=>179
+	n,橙、橙色
+    adj,橙色的
+speak<=439,0
+        v,講
+hate<=336,0
+        v,痛恨
+hot<=433,0
+        adj,熱的
+sister<=140,0
+        n,姊妹
+pen<=184,0
+        n,筆
+fat<=815,0
+        adj,肥的
+boy<=91,0
+        n,男孩
+man<=876,0
+        n,男人
+warm<=34,0
+        adj,溫暖的
+run<=263,0
+        v,跑
+old<=281,0-1
+        adj,老的
+        adj,舊的
+swim<=54,0
+        v,游泳
+small=>198
+        adj,（體積）小的
+little=>16
+        adj,（年齡或可愛）細小的
+        adj,少的（不可數）
+good<=95,0
+        adj,好的
+draw<=764,0
+        v,畫
+poor<=280,0-1
+        adj,可憐的
+        adj,貧窮的
+like<=475,0-1
+        v,喜歡
+        prep,像
+never<=776,0-1
+        adv,從不
+        adv,永不
+two<=52,0
+        num,二
+some<=623,0
+        det,一些
+cold<=458,0
+        adj,冷的
+water<=289,0
+        n,水
+green<=258,0-1
+        n,綠色
+        adj,綠色的
+every day
+	adv phr,每日
+car<=77,0
+        n,車子
+big<=3,0
+        adj,大的
+brother<=165,0
+        n,兄弟
+year<=173,0
+        n,年
+strong<=248,0
+        adj,強壯的
+wash<=316,0
+        v,洗
+grandpa
+    n,爺爺
+chicken<=310,0-1
+        n,雞肉
+        n,小雞
+visit<=303,0
+        n,探訪
+last week
+	n phr,上星期
+mother<=146,0
+        n,母親、媽媽
+green<=258,0-1
+        n,綠色
+        adj,綠色的
+woman<=614,0
+        n,女人
+teacher<=72,0
+        n,老師
+uncle<=226,0
+        n,叔叔
+aunt<=89,0
+        n,阿姨
+yesterday<=75,0
+        n,昨天
+horse<=295,0
+        n,馬
+house<=297,0
+        n,房子
+bad<=239,0
+        adj,壞的
+dog<=293,0
+        n,狗
+cat<=533,0
+        n,貓
+pig<=306,0
+        n,豬
+fish<=486,0
+        n,魚
+these<=728,0
+        det,這些
+those<=592,0
+        det,那些
+long<=106,0
+        adj,長的
+table<=538,0
+        n,桌子
+last night
+	adv phr,昨晚
+last month
+	adv phr,上個月
+food<=416,0
+        n,食物
+cup<=381,0
+        n,（有耳、白色等）杯子
+toy<=892,0
+        n,玩具
+milk<=403,0
+        n,牛奶
+ball<=504,0
+        n,球
+box=>111
+	n,盒、箱
+home<=647,0
+        n,家
+drive<=220,0
+        v,駕駛
+play<=419,0
+        v,玩
+friend<=368,0
+        n,朋友
+study=>652,0
+	v,學習（做題等）
+ten<=130,0
+        num,十
+large<=754,0
+        adj,大的
+black<=257,0-1
+        n,黑色
+        adj,黑色的
+book<=28,0
+        n,書
+white<=103,0-1
+        n,白色
+        adj,白色的
+baby<=17,0
+        n,嬰兒
+Chinese<=261,0-1-2
+        n,中文
+        adj,中國的
+        adj,中國人的
+China<=398,0
+        n,中國
+tomorrow<=221,0
+        n,明天
+email
+	n,電郵
+day<=283,0
+        n,日
+often<=721,0
+        adv,時常
+tree<=451,0
+        n,樹
+six<=242,0
+        num,六
+letter<=491,0
+        n,信
+nine<=139,0
+        num,九
+shop<=1035,0
+        n,商店
+bag<=545,0
+        n,袋
+Macao
+	n,澳門
+happy<=473,0
+        adj,快樂的
+monkey<=467,0
+        n,猴子
+night<=48,0
+        n,夜晚
+homework<=113,0
+        n,家課
+Hong Kong
+	n phr,香港
+sea<=421,0
+        n,海
+fire<=247,0
+        n,火
+every<=631,0
+        det,每一個
+usually<=681,0
+        adv,通常
+park<=472,0
+        n,公園
+easy<=775,0
+        adj,容易的
+clean<=508,0-1
+        v,清潔
+        adj,清潔的
+clear<=12,0
+        adj,清楚的
+dance<=314,0
+        v,跳舞
+        n,舞蹈
+always<=1080,0
+        adv,總是
+bring<=1017,0F
+        v,帶來:brought, brought
+go=>769
+        v,去:went, gone
+eat<=315,0F
+        v,吃:ate, eaten
+drink<=362,0F
+        v,喝:drank, drunk
+breakfast<=348,0
+        n,早餐
+door<=325,0
+        n,門
+chair<=438,0
+        n,椅子
+phone<=479,0
+        n,電話（簡寫）
+shoe<=356,0
+        n,鞋
+clothes<=549,0
+        n,衣服
+tall<=639,0
+        adj,高的（如身高等）
+king<=1114,0
+        n,國王
+room<=582,0
+        n,房間
+dinner<=446,0
+        n,晚餐
+quick<=606,0
+        adj,快的（時間短）
+bird<=511,0
+        n,小鳥
+window<=444,0
+        n,窗
+last<=626,0
+        det,最後的
+fall<=1009,0
+        v,跌
+arrive<=402,0
+        v,到達
+cow<=481,1
+        n,牛（統稱）
+sometimes<=966,0
+        adj,有時候
+fruit<=531,0
+        n,生果
+week<=279,0
+        n,星期
+angry<=440,0
+        adj,生氣的
+warm=>34
+	adj,溫暖的
+    v,使溫暖
+run<=263,0F
+        v,跑:ran, run
+easy<=775,0
+        adj,容易的
+dirty<=729,0
+        adj,骯髒的
+short=>193
+        adj,短的
+        adj,矮的
+today<=154,0-1
+        adv,今天
+        n,今天
+young<=174,0
+        adj,年輕的
+tea<=395,0
+        n,茶
+lion<=476,0
+        n,獅子
+ten<=130,0
+        num,十
+Coke<=435,0
+        n,可樂
+cake<=553,0
+        n,蛋糕
+coffee<=186,0
+        n,咖啡
+bread<=484,0
+        n,麵包
+open=>575
+	v,打開
+    adj,開啟的
+basketball<=488,0
+        n,籃球
+sweet<=128,0
+        adj,甜的
+ice-cream
+	n,雪糕
+idea<=291,0
+        n,想法
+chocolate<=462,0
+        n,朱古力
+vegetable<=307,0
+        n,蔬菜
+movie<=249,0
+        n,電影
+mouth<=199,0
+        n,嘴
+month<=142,0
+        n,月份
+thin<=80,0-1
+        adj,瘦的
+        adj,簿的
+live<=349,0-1
+        v,生活
+        v,居住
+take<=70,0
+    v,拿走
+pet<=911,0
+        n,寵物
+leg<=597,0
+        n,腿
+party<=354,0
+        n,派對
+buy<=968,0F
+        v,買:bought, bought
+get<=1123,0F
+        v,得到:got, got
+find<=882,0F
+        v,找到、發現:found, found
+bookshop
+	n,書店
+banana<=422,0
+        n,香蕉
+hand<=635,0
+        n,手
+afraid<=414,0
+        adj,害怕的
+fly<=408,0
+    v,飛
+football
+    n,足球
+climb<=989,0
+        v,爬
+help<=516,0-1
+        v,幫助
+        n,幫助
+call=>401
+	v,致電
+    v,呼叫
+paper<=252,0
+        n,紙
+new<=104,0
+        adj,新的
+classroom<=265,0
+        n,課室
+minute<=15,0
+        n,分鐘
+yellow<=251,0-1
+        n,黃色
+        adj,黃色的
+put<=684,0F
+        v,放:put, put
+take<=70,0F
+        v,拿走:took, taken
+come<=390,0F
+        v,來:came, come
+kill<=868,0
+        v,殺死
+Mr Chan
+	n phr,陳先生
+hour<=207,0
+        n,小時
+sun<=698,0
+        n,太陽
+TV
+	n,電視（縮寫）
+tiger<=497,0
+        n,老虎
+fall<=1009,0F
+        v,跌:fell, fallen
+US
+    n,美國（縮寫）
+beautiful=>480
+	adj,漂亮的
+    adj,美妙的
+rain<=27,0-1
+        n,雨
+        v,下雨
+newspaper
+    n,報紙
+eye<=667,0
+        n,眼睛
+animal<=400,0
+        n,動物
+doll<=900,0
+        n,洋娃娃
+moon<=79,0
+        n,月亮
+floor<=430,0
+        n,地板
+dry=>144
+	adj,乾的
+    v,弄乾
+coffee shop
+	n phr,咖啡室
+glass<=417,0-1
+        n,玻璃
+        n,玻璃杯
+men
+	n,男人（眾）
+foot<=865,0
+        n,腳
+give<=748,0F
+        v,給:gave, given
+break=>984
+    v,打破: broke, broken
+    n,小息
+	v,折斷: broke, broken
+    v,弄壞: broke, broken
+agree<=298,0
+        v,同意
+see<=93,0F
+        v,看見:saw, seen
+good to
+	adj phr,對某人好
+come out
+	v phr,出來
+loud<=577,0
+        adj,大聲的
+quiet<=770,0
+        adj,安靜的
+quite<=571,0
+        adv,相當
+speak<=439,0F
+        v,講:spoke, spoken
+swim<=54,0F
+        v,游泳:swam, swum
+write<=986,0F
+        v,寫:wrote, written
+stay<=309,0
+        v,停留
+catch<=308,0F
+        v,捉住:caught, caught
+wait<=712,0
+        v,等待
+build<=840,0F
+        v,建造:built, built
+go out
+	v phr,出去（片）
+piece=>591
+	n,張、塊、片
+know<=1049,0F
+        v,知道、認識:knew, known
+tell=>24
+        v,告訴:told, told
+have a party
+	v phr,開派對（片）
+sick<=801,0
+        adj,生病的
+at night
+	adv phr,在晚上
+my<=732,0
+        det,我的
+read=>586
+        v,讀:read, read
+person<=557,0
+        n,人
+candy<=313,0
+        n,糖果
+bottle<=328,0
+        n,瓶子
+rice<=537,0-1
+        n,米
+        n,飯
+plan<=507,0-1
+        v,計畫
+        n,計畫
+bowl<=437,0
+        n,碗
+can=>76
+        m,能夠（有能力）
+leave<=1154,0F-1
+        v,離開:left, left
+        v,把...留低
+drive<=220,0F
+        v,駕駛:drove, driven
+its=>563
+        det,它／牠的
+careful<=1006,0
+        adj,小心的
+woman=>614
+	n,女人:women
+cry=>317
+    v,哭
+    v,大叫
+understand<=962,0
+        v,了解
+match<=928,0-1-2
+        v,匹配
+        n,火柴
+        n,比賽
+talk=>595
+	v,談話
+    n,講座、演說
+cook<=521,0-1
+        v,烹飪
+        n,廚師
+child<=86,0
+        n,孩子
+fly<=408,0F
+        v,飛:flew, flown
+        n,蒼蠅
+rest<=656,0
+        v,休息
+good at
+	adj phr,擅於...的
+carry<=377,0
+        v,攜帶
+cheese<=404,0
+        n,芝士
+borrow<=535,0
+        v,借入
+still<=664,0
+        adv,仍然
+everything<=593,0
+        pron,每件東西
+at 5pm
+	adv phr,在5點
+listen to
+	v phr,聆聽某物
+late<=710,0
+        adj,遲的
+teach<=556,0F
+        v,教:taught, taught
+sleep<=116,0F
+        v,睡:slept, slept
+mouse=>445
+    n,老鼠:mice
+useful<=217,0
+        adj,有用的
+face<=753,0
+        n,臉
+watch
+	v,觀看
+    n,手錶
+Mrs Chan
+	n phr,陳太
+tonight<=264,0
+        adv,今晚
+English=>219
+        n,英文
+        adj,英國的
+sound<=1057,0
+        n,聲音
+person=>557
+    n,人:people
+pencil<=162,0
+        n,鉛筆
+Mrs
+	n,太太（稱謂）
+fish=>486
+	n,魚:fish
+feet
+	n,腳（眾）
+so<=622,0
+        conj,因此
+time<=282,0
+        n,時間
+hair<=715,0
+        n,頭髮
+make<=648,0F
+        v,造:made, made
+draw<=764,0F
+        v,畫:drew, drawn
+bring<=1017,0F
+        v,帶來:brought, brought
+eleven<=44,0
+        ord,十一
+news<=772,0-1
+        n,新聞
+        n,消息
+body<=353,0
+        n,身體
+strange<=844,0
+        adj,古怪的
+hear<=1179,0F
+        v,聽到:heard, heard
+use<=660,0
+        v,使用
+women
+	n,女人（眾）
+sport<=345,0
+        n,運動
+sit<=65,0F
+        v,坐:sat, sat
+send<=510,0
+        v,傳送
+seven<=245,0
+        num,七
+because<=415,0
+        conj,因為
+noise<=429,0
+        n,噪音
+throw<=1191,0F
+        v,拋:threw, thrown
+talk about
+	v phr,談及
+foot=>865
+    n,腳:feet
+child=>86
+    n,小孩:children
+library<=694,0
+        n,圖書館
+grandmother<=14,0
+        n,祖母
+sing<=528,0F
+        v,唱:sang, sung
+do<=1188,0F
+        v,做:did, done
+although<=1111,0
+        conj,雖然
+there<=687,0
+        adv,那裡
+wait for
+	v phr,等待某物
+a lot of
+	det,很多
+listen<=641,0
+        v,聆聽
+meeting<=358,0
+        n,會議
+but<=522,0
+        conj,但是
+like<=475,0-1
+        v,喜歡
+        prep,像
+when<=613,0
+        conj,當
+here<=666,0
+        adv,這裡
+arrive at
+	v phr,到達某地點
+arrive in
+	v phr,到達某大地方
+money<=583,0
+        n,錢
+slow<=587,0
+        adj,慢的
+twelve<=115,0
+        num,十二
+close<=376,0
+        v,關閉
+thing<=714,0
+        n,東西
+angry with
+	adj phr,對某人生氣
+angry at
+	adj phr,對某物生氣
+Mr
+	n,先生（稱謂）
+balloon<=189,0
+        n,汽球
+music<=197,0
+        n,音樂
+sky<=274,0
+        n,天空
+start<=581,0
+        v,開始
+feel<=1026,0F
+        v,感覺到:felt, felt
+then<=1096,1
+        adv,那時
+work=>766
+	v,工作
+    n,工作（要做的事情）
+may<=262,0
+        m,可能
+eight<=266,0
+        num,八
+look=>745
+        v,望
+look at
+	v phr,望著某物
+study=>652
+	v,學習（做練習）
+    v,研究
+weather<=158,0
+        n,天氣
+agree with
+	v phr,同意某物／人
+into<=143,0
+        prep,進入
+game<=716,0
+        n,遊戲
+itself=>564
+        pron,它／牠自己
+rabbit<=424,0
+        n,兔子
+good for
+	adj phr,對...有益的
+take out
+	v phr,拿出
+learn<=695,0F
+        v,學懂:learnt, learnt
+move<=602,0
+        v,移動
+Miss<=392,0
+        n,小姐（稱謂）
+afraid of
+    adj phr,害怕某物
+win<=1016,0F
+        v,贏:won, won
+people<=783,0
+        n,人們
+story<=673,0
+        n,故事
+at work
+	adv phr,在公司
+understand<=1194,0F
+        v,明白:understood, understood

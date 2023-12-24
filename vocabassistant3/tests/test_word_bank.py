@@ -52,6 +52,18 @@ class TestWordBank(TestCase):
         word, forms=parse_full_word("go, went, gone")
         self.assertEquals(word, "go")
         self.assertEquals(forms, ["went", "gone"])        
+    def test_strict_cands(self):
+        wbd=WordBankDraft()
+        wd1=WordDef(word="us")
+        wd2=WordDef(word="US")
+        wd3=WordDef(word="us")
+        wbd.cands[wd1]=[wd2, wd3]
+        self.assertEquals(len(wbd.get_strict_cands()[wd1]), 1)
+        wbd=WordBankDraft()
+        wd1=WordDef(word="us")
+        wd2=WordDef(word="US")
+        wbd.cands[wd1]=[wd2]
+        self.assertEquals(len(wbd.get_strict_cands()), 0)
     def test_parse_forms(self):
         wbd=load_wb_draft("vocabassistant3/tests/test_wb_draft3.txt")
         self.assertEquals(wbd.wds[0].meanings[0].get_forms(), ["went", "gone"])
@@ -65,6 +77,12 @@ class TestWordBank(TestCase):
         self.assertEquals(wbd.word_updates[wbd.wds[1]], 19)
         self.assertEquals(wbd.wds[0].word, "rock")
         self.assertEquals(wbd.wds[1].word, "fight")
+    def test_parse_updates(self):
+        try:
+            load_wb_draft("vocabassistant3/tests/test_wb_draft6.txt")
+            self.fail()
+        except ValueError:
+            pass
     def test_add_draft(self):
         self.s.begin()
         wbd=WordBankDraft(name="my wb1")
