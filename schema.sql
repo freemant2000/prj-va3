@@ -4,6 +4,9 @@
 -- create database va3_test character set UTF8;
 -- grant all on va3_test.* to 'dba'@'localhost';
 
+-- mysqldump -u root -p va3 > va3.dump
+-- mysql -u root -p < va3.dump
+
 create table word_defs(id integer auto_increment primary key, word varchar(50));
 create index word_defs_idx_word on word_defs(word);
 create table word_meanings(wd_id integer, idx integer, p_of_s varchar(10), 
