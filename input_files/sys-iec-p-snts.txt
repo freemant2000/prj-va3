@@ -1,0 +1,1148 @@
+他經常吃蘋果 。
+        often
+        eat
+        apple
+爸爸經常閱讀。
+        father
+        often
+        read
+媽媽經常閱讀。
+        mother
+        often
+        read
+那隻狗經常跑。
+        dog
+        often
+        run
+他昨天走了路。 
+        walk
+        yesterday
+爸爸每日都去這間屋。
+        father
+        go
+        house
+        every day
+他昨天吃了一個蘋果 。 
+        eat
+        apple
+        yesterday
+爸爸每日都去這間屋。
+        father
+        go
+        house
+        every day
+爸爸經常看見那隻狗。
+        father
+        often
+        see
+        dog
+那隻狗吃了那個蘋果 。 
+        dog
+        eat
+        apple
+我昨天去了那間屋。
+        go
+        house
+        yesterday
+那隻狗昨天喝了水。
+        dog
+        drink<=362,0
+        water
+        yesterday
+那個嬰兒昨天看見了一隻狗。
+        baby
+        see
+        dog
+        yesterday
+媽媽每日都看見爸爸。
+        mother
+        see
+        father
+        every day
+那個嬰兒去了那間屋。
+        baby
+        go
+        house
+媽媽經常讀這本書。
+        mother
+        read
+        often
+        book
+爸爸昨天探訪了祖母。
+        father
+        visit
+        grandmother
+        yesterday
+他昨天買了一本書。
+        buy
+        book
+        yesterday
+祖母經常看見那隻小的貓。
+        grandmother
+        see
+        often
+        little<=16,0
+        cat
+爸爸經常閱讀。
+        father
+        often
+        read
+嫲嫲經常買大的蘋果。
+        grandma
+        often
+        big
+        apple
+那個嬰兒昨天看見了一間大屋。
+        baby
+        see
+        big
+        house
+        yesterday
+媽媽喝了一些水。
+        mother
+        drink<=362,0
+        some
+        water
+嫲嫲去了那間大屋。
+        grandma
+        go
+        big
+        house
+爸爸閱讀了那本書。
+        father
+        read
+        book
+那隻小貓經常喝水。
+        little<=16,0
+        cat
+        often
+        drink<=362,0
+        water
+那個嬰兒去了香港。
+        baby
+        go
+        Hong Kong
+媽媽經常吃熱狗。
+        mother
+        often
+        eat
+        hot
+        dog
+爺爺昨天探訪了爸爸。
+        grandpa
+        visit
+        father
+        yesterday
+他2日前買了一本書。
+        buy
+        book
+        day
+        ago
+他喜歡嬰兒。
+        like<=475,0
+        baby
+爸爸有時吃蘋果。
+        father
+        sometimes
+        eat
+        apple
+他住在一間大屋裡。
+        live<=349,1
+        big
+        house
+他3日前去了香港。
+        go
+        day
+        ago
+        Hong Kong
+他昨天喝了熱的水。
+        drink<=362,0
+        hot
+        water
+        yesterday
+他喜歡熱狗。
+        like<=475,0
+        hot
+        dog
+他有時喝冷的水。
+        drink<=362,0
+        cold
+        water
+        sometimes
+他2日前吃了一個大的蘋果。
+        eat
+        big
+        apple
+        day
+        ago
+他住在一間冷的屋裡。
+        live<=349,1
+        cold
+        house
+他昨天吃了一個小的冷的蘋果。
+        eat
+        small
+        cold
+        apple
+        yesterday
+那隻小狗2日前去了一間小屋。
+        little<=16,0
+        dog
+        go
+        small
+        house
+        day
+        ago
+那隻小貓每日都吃一個熱的橙。
+        little<=16,0
+        cat
+        eat
+        hot
+        orange<=179,0
+        every day
+嫲嫲3日前探訪了香港。
+        grandma
+        visit
+        Hong Kong
+        day
+        ago
+那隻小狗住在一間小屋裡。
+        little<=16,0
+        dog
+        live<=349,1
+        small
+        house
+爺爺喜歡冷的橙。
+        grandpa
+        like<=475,0
+        cold
+        orange<=179,0
+那個男孩喜歡熱狗。
+        boy
+        like<=475,0
+        hot
+        dog
+爺爺有時會閱讀。
+        grandpa
+        sometimes
+        read
+那個女孩經常去香港。
+        girl
+        often
+        go
+        Hong Kong
+爺爺2日前看見了一個小男孩。
+        grandpa
+        see
+        little<=16,0
+        boy
+        day
+        ago
+那個小女孩有時跑。
+        little<=16,0
+        girl
+        sometimes
+        run
+那個男孩2日前喝了熱茶。
+        boy
+        drink<=362,0
+        hot
+        tea
+        day
+        ago
+嫲嫲3日前去了那間小屋。
+        grandma
+        go
+        small
+        house
+        day
+        ago
+那隻小貓有時吃一個冷的橙。
+        little<=16,0
+        cat
+        sometimes
+        eat
+        cold
+        orange<=179,0
+他有一間小屋。
+        have<=1189,0
+        small
+        house
+我有冷的茶。
+        have<=1189,0
+        cold
+        tea
+她有一隻小貓。
+        have<=1189,0
+        little<=16,0
+        cat
+你有一個熱的橙。
+        have<=1189,0
+        hot
+        orange<=179,0
+他有一架新車。  
+        have<=1189,0
+        new
+        car
+我3日前買了一間新屋。
+        buy
+        new
+        house
+        day
+        ago
+他們有一個好的爺爺。
+        have<=1189,0
+        good
+        grandpa
+那個好的男孩有一架小車。
+        good
+        boy
+        have<=1189,0
+        small
+        car
+那個小女孩有一件新的玩具。
+        little<=16,0
+        girl
+        have<=1189,0
+        new
+        toy
+那些男孩有一架新的玩具車。
+        those
+        boy
+        have<=1189,0
+        new
+        toy
+        car
+那些小女孩有時喝熱的茶。
+        little<=16,0
+        girl
+        sometimes
+        drink<=362,0
+        hot
+        tea
+那些好的男孩買了一間玩具屋。
+        those
+        good
+        boy
+        buy
+        toy
+        house
+那個男人有兩個小女孩。
+        man
+        have<=1189,0
+        two
+        little<=16,0
+        girl
+那些男孩有一隻新的玩具狗。
+        those
+        boy
+        have<=1189,0
+        new
+        toy
+        dog
+那個嬰兒昨天吃了那隻玩具貓。
+        baby
+        eat
+        toy
+        cat
+        yesterday
+那個男人10日前離開了香港。
+        man
+        leave<=1154,0
+        Hong Kong
+        day
+        ago
+那個女人昨天找到了那個嬰兒。
+        woman
+        find
+        baby
+        yesterday
+那隻玩具狗離開了那間冷的屋。
+        toy
+        dog
+        leave<=1154,0
+        cold
+        house
+爺爺有一架新的汽車。
+        grandpa
+        have<=1189,0
+        new
+        car
+嫲嫲2日前找到了那個好的女人。
+        grandma
+        find
+        those
+        good
+那些男孩離開了那架新的汽車。
+        those
+        boy
+        leave<=1154,0
+        new
+        car
+他們有一個溫暖的家。
+        have<=1189,0
+        warm<=34,0
+        home<=647,0
+那個女人離開了那間冷的屋。
+        woman
+        leave<=1154,0
+        cold
+        house
+爺爺找到了那件玩具。
+        grandpa
+        find
+        toy
+他們昨天喝了溫暖的茶。
+        drink<=362,0
+        warm<=34,0
+        tea
+        yesterday
+那些狗有一個新的家。
+        those
+        dog
+        new
+        home<=647,0
+他有一個好的姐妹。
+        have<=1189,0
+        good
+        sister
+他是好的。
+        good
+她們是高的。
+        tall
+你是一個男孩。
+        boy
+我是一個學生。
+        student
+你們是瘦的。
+        thin<=80,0
+牠是細小的。
+        little<=16,0
+牠們是大的。
+        big
+他的狗是好的。
+        his
+        dog
+        good
+她們的爸爸是高的。
+        their
+        father
+        tall
+你和John是朋友。
+        friend
+Amy和我是學生。
+        student
+他和John是瘦的。
+        thin<=80,0
+這些屋是細小的。
+        these
+        house
+        small
+他們的橙是大的。
+        their
+        orange<=179,0
+        big
+她們的朋友是肥的。
+        their
+        friend
+        fat
+你和John是仁慈的。
+        kind<=692,0
+Amy和Paul是好的學生。
+        good
+        student
+他和John是壞的學生。
+        bad
+        student
+這個嬰兒是細的。
+        baby
+        little<=16,0
+他們是仁慈的。
+        kind<=692,0
+牠是熱的。
+        hot
+你是冷的。
+        cold
+她們是壞的。
+        bad
+他們是瘦的。
+        thin<=80,0
+你是一個媽媽。
+        mother
+你是肥的。
+        fat
+我們是細小的(年齡)。
+        little<=16,0
+它是一架車。
+        car
+你們是朋友。
+        friend
+它是一個大的球。
+        big
+        ball
+你們是瘦的男孩。
+        thin<=80,0
+        boy
+你是一個高的學生。
+        tall
+        student
+她們是熱的女孩。
+        hot
+        girl
+我們是仁慈的爸爸。
+        kind<=692,0
+        father
+他們是壞的爺爺。
+        bad
+        grandpa
+牠是一隻冷的貓。
+        cold
+        cat
+它是一間大的屋。
+        big
+        house
+我們正在買書。
+        buy
+        book
+他們正在喝熱水。
+        drink<=362,0
+        hot
+        water
+他正在居住在香港。
+        live<=349,1
+        Hong Kong
+這個瘦的學生正在吃一個蘋果。
+        thin<=80,0
+        student
+        eat
+        apple
+這些高的朋友正在探訪我的嫲嫲。
+        these
+        tall
+        friend
+        visit
+這隻肥的貓正在吃一個橙。
+        fat
+        cat
+        eat
+        orange<=179,0
+這個仁慈的男人正在去香港。
+        kind<=692,0
+        man
+        go
+        Hong Kong
+那個高的女孩正在吃一個冷的橙。
+        tall
+        girl
+        eat
+        cold
+        orange<=179,0
+這些瘦的學生正在跑。
+        these
+        thin<=80,0
+        student
+        run
+那個仁慈的男人喜歡大的蘋果。
+        kind<=692,0
+        man
+        like<=475,0
+        big
+        apple
+你和John正在探訪嫲嫲。
+        visit
+        grandma
+這個高的學生經常唱歌。
+        tall
+        student
+        often
+        sing
+他們正在買一個橙。
+        buy
+        orange<=179,0
+你正在喝冷的茶。
+        drink<=362,0
+        cold
+        tea
+他居住在這裡。
+        live<=349,1
+        here
+我的爺爺是仁慈的。
+        my
+        grandpa
+        kind<=692,0
+你正在喝他的茶。
+        drink<=362,0
+        his
+        tea
+他們正在閱讀我的書。
+        read
+        my
+        book
+這隻瘦的貓正在探訪他們的肥的嫲嫲。
+        thin<=80,0
+        cat
+        visit
+        their
+        fat
+        grandma
+這個高的學生經常去我的屋。
+        tall
+        student
+        often
+        go
+        my
+        house
+你是他們的朋友。
+        their
+        friend
+你找到了我的新的玩具。
+        find
+        my
+        new
+        toy
+這些肥的狗正在探訪他們的仁慈的爺爺。
+        these
+        fat
+        dog
+        visit
+        their
+        kind<=692,0
+        grandpa
+這個好的學生正在唱歌。
+        good
+        student
+        sing
+那隻貓快樂地生活。
+        cat
+        live<=349,0
+        happily
+那隻快樂的狗正在快速地吃一個橙。
+        happy
+        dog
+        quickly
+        eat
+        orange<=179,0
+那個男人慢慢地拿走了那些錢。
+        man
+        slowly
+        take<=70,0
+        money
+那隻慢的馬正在跑。
+        slow
+        horse
+        run
+那個老的男人快速地拿了那些錢。
+        old<=281,0
+        man
+        quickly
+        take<=70,0
+        money
+那匹白色的馬正在慢慢跑。
+        white<=103,1
+        horse
+        slowly
+        run
+那條紅色的魚快樂地生活在那裡。
+        red
+        fish
+        live<=349,0
+        there
+        happily
+那個嬰兒正在大聲地哭。
+        baby
+        cry<=317,0
+        loudly
+那條白色的魚快樂地唱歌。
+        white<=103,1
+        fish
+        sing
+        happily
+那匹黑色的馬正在大聲地喝水。
+        black<=257,1
+        horse
+        drink<=362,0
+        water
+        loudly
+那個老的男人容易地找到了那個嬰兒。
+        old<=281,0
+        man
+        easily
+        find
+        baby
+那隻貓快速地捉住了那條黑色的魚。
+        cat
+        quickly
+        catch
+        black<=257,1
+        fish
+他總是清楚地講話。
+        always
+        speak
+        clearly
+他的姐妹經常快樂地走路。
+        sister
+        often
+        walk
+        happily
+那隻快樂的馬唱了一首歌。
+        happy
+        horse
+        sing
+        song
+這個瘦的學生喜歡這本書。
+        thin<=80,0
+        student
+        like<=475,0
+        book
+這匹馬總是喝紅色的可樂。
+        horse
+        always
+        drink<=362,0
+        red
+        Coke
+他有時吃綠色的香蕉。
+        sometimes
+        eat
+        green<=258,1
+        banana
+我經常快樂地跑。
+        often
+        run
+        happily
+他從不慢慢地走路。
+        never<=776,0
+        walk
+        slowly
+陳先生總是大聲地講話。
+        Mr Chan
+        always
+        speak
+        loudly
+那隻白色的貓容易地捉住了那隻大的老鼠。
+        white<=103,1
+        cat
+        catch
+        big
+        mouse
+        easily
+那個老的男人正在大聲地唱歌。
+        old<=281,0
+        man
+        sing
+        loudly
+那條紅色的魚有時吃橙。
+        red
+        fish
+        sometimes
+        eat
+        orange<=179,0
+陳先生明天將會快樂地喝綠色的可樂。
+        Mr Chan
+        drink<=362,0
+        green<=258,1
+        Coke
+        tomorrow
+陳先生總是使用那枝筆。
+        Mr Chan
+        always
+        use
+        pen
+那個男孩總是快樂地玩球。
+        boy
+        always
+        play
+        ball
+        happily
+這個老師有時使用一枝長的鉛筆。
+        teacher
+        sometimes
+        use
+        long
+        pencil
+陳先生從不慢跑。
+        Mr Chan
+        never<=776,0
+        run
+        slowly
+她的姨姨總是給那條魚好的食物。
+        aunt
+        always
+        give
+        good
+        food
+        fish
+那個女孩有時快速地造一些麵包。
+        girl
+        sometimes
+        make<=648,0
+        bread
+        quickly
+那隻綠色的牛快樂地喝了一些紅色的可樂。
+        green<=258,1
+        cow<=481,1
+        drink<=362,0
+        red
+        Coke
+        happily
+那隻憤怒的老鼠正在大聲地叫。
+        angry
+        mouse
+        cry<=317,1
+        loudly
+那隻老的牛從不憤怒地說話。
+        old<=281,0
+        cow<=481,1
+        never<=776,0
+        speak
+        angrily
+那個男人經常小心地清潔那張枱。
+        man
+        often
+        clean<=508,0
+        table
+        carefully
+他總是容易地講英文。
+        always
+        speak
+        English<=219,0
+        easily
+那隻黑色的老鼠正在快樂地吃早餐。
+        black<=257,1
+        mouse
+        eat
+        breakfast
+        happily
+這個可憐的男人經常憤怒地工作。
+        poor<=280,0
+        man
+        often
+        work<=766,0
+        angrily
+六小時零十分鐘前他快速地打開了那道門。
+        six
+        hour
+        ten
+        minute
+        ago
+        quickly
+        open<=575,0
+        door
+她的老的嫲嫲有時會靜靜地關閉那扇窗。
+        old<=281,0
+        grandma
+        sometimes
+        close<=376,0
+        window
+        quietly
+這隻可憐的猴子從不爬樹。
+        poor<=280,0
+        monkey
+        never<=776,0
+        climb
+        tree
+他正在巴士上吃一個橙。
+        eat
+        orange<=179,0
+        bus
+他昨天在車上畫了一條魚。
+        draw
+        fish
+        car
+        yesterday
+他經常在房裡看電視。
+        often
+        watch<=1266,0
+        TV
+        room
+他正在家裡慢慢地做家課。
+        do
+        homework
+        slowly
+        home<=647,0
+他昨天在車上容易地抓住了一隻老鼠。
+        catch
+        mouse
+        easily
+        car
+        yesterday
+他經常在學校快樂地學習英文。
+        often
+        study<=652,0
+        English<=219,0
+        happily
+        school
+這隻綠色的猴子總是在學校快速地爬樹。
+        green<=258,1
+        monkey
+        always
+        climb
+        tree
+        quickly
+        school
+她每日都靜靜地在房間裡讀英文報紙。
+        read
+        English<=219,0
+        newspaper
+        quietly
+        room
+        every day
+他的嫲嫲從不在巴士上憤怒地說話。
+        grandma
+        never<=776,0
+        speak
+        angrily
+        bus
+他有時在他的汽車上小心地喝茶。
+        sometimes
+        drink<=362,0
+        tea
+        carefully
+        car
+陳先生昨天在我的房子裡吃了早餐。
+        Mr Chan
+        eat
+        breakfast
+        house
+        yesterday
+這隻可憐的黑狗現在正在家裡觀看電視。
+        poor<=280,0
+        black<=257,1
+        dog
+        watch<=1266,0
+        TV
+        home<=647,0
+那時陳先生正在巴士上快樂地唱歌。
+        Mr Chan
+        sing
+        happily
+        bus
+        then<=1096,1
+他小心地在房間裡清潔了那張枱。
+        clean<=508,0
+        table
+        carefully
+        room
+那隻快樂的猴子從不在大樹上吃鉛筆。
+        happy
+        monkey
+        never<=776,0
+        eat
+        pencil
+        big
+        tree
+他的姨姨每日都在家安靜地吃早餐。
+        aunt
+        eat
+        breakfast
+        quietly
+        home<=647,0
+        every day
+他的姐妹在這棵樹上容易地找到了一些長的香蕉。
+        sister
+        find
+        long
+        banana
+        easily
+        tree
+我的兄弟在報紙裡看到了一些黑色的球。
+        brother
+        see
+        black<=257,1
+        ball
+        newspaper
+她的兄弟正在房間裡小心地工作。
+        brother
+        work<=766,0
+        carefully
+        room
+他的姐妹在家造了一些白色的麵包。
+        sister
+        make<=648,0
+        white<=103,1
+        bread
+        home<=647,0
+那時那隻黑色的老鼠正在枱上快速地跑。
+        black<=257,1
+        mouse
+        run
+        quickly
+        table
+        then<=1096,1
+那隻可憐的牛正在它的房子裡吃差的食物。
+        poor<=280,0
+        cow<=481,1
+        eat
+        bad
+        food
+        house
+那隻貓現在正在安靜地清潔它的腿。
+        cat
+        clean<=508,0
+        leg
+        quietly
+三小時以前那條魚找到了一間大屋。
+        fish
+        find
+        big
+        house
+        three
+        hour
+        ago
+我明天不會喝可樂。
+        drink<=362,0
+        Coke
+        tomorrow
+他不是正在工作。
+        work<=766,0
+那時他們不是正在讀報紙。
+        read
+        newspaper
+        then<=1096,1
+這個快樂的嫲嫲每日都發送電郵。
+        happy
+        grandma
+        send
+        e-mail
+        every day
+這隻慢的老鼠並不總是住在這裡。
+        slow
+        mouse
+        always
+        live<=349,1
+        here
+我們不是每日都喝茶。
+        drink<=362,0
+        tea
+        every day
+那時那隻白的貓不是正在捉魚。
+        white<=103,1
+        cat
+        catch
+        fish
+        then<=1096,1
+那時你不是正在玩球。
+        play
+        ball
+        then<=1096,1
+這隻肥的豬不是經常喝水。
+        fat
+        pig
+        often
+        drink<=362,0
+        water
+這隻小豬並不總是喝牛奶。
+        little<=16,0
+        pig
+        always
+        drink<=362,0
+        milk
+這隻小牛經常吃橙。
+        little<=16,0
+        cow<=481,1
+        often
+        eat
+        orange<=179,0
+陳太不是每日都離開。
+        Mrs Chan
+        leave<=1154,0
+        every day
+她的可憐的姐妹不是正在跳舞。
+        poor<=280,0
+        sister
+        dance<=314,0
+太陽不是經常都出來。
+        sun
+        often
+        come
+        out
+這隻小黑牛不會吃橙。
+        little<=16,0
+        black<=257,1
+        cow<=481,1
+        eat
+        orange<=179,0
+這些憤怒的豬不是經常清潔自己。
+        angry
+        pig
+        often
+        clean<=508,0
+        itself
+這隻大的老鼠有時喝牛奶。
+        big
+        mouse
+        sometimes
+        drink<=362,0
+        milk
+他的兄弟們不是每日都探訪我。
+        brother
+        visit
+        every day
+陳太經常跳舞。
+        Mrs Chan
+        often
+        dance<=314,0
+那個可憐的嬰兒那時不是正在哭。
+        poor<=280,0
+        baby
+        cry<=317,0
+        then<=1096,1
+這隻安靜的馬不會製造古怪的聲音。
+        quiet
+        horse
+        make<=648,0
+        strange
+        sound<=1057,0
+這個小心的男人從不發送電郵。
+        careful
+        man
+        never<=776,0
+        send
+        e-mail
+陳生和陳太不是每日都觀看電視。
+        Mr Chan
+        Mrs Chan
+        watch<=1266,0
+        TV
+        every day
+這些老的牛不是每日都睡覺。
+        old<=281,0
+        cow<=481,1
+        sleep
+        every day
+她的古怪的嫲嫲不是經常洗頭髮。
+        strange
+        grandma
+        often
+        wash
+        hair
+這些大樹從不說英文。
+        these
+        big
+        tree
+        never<=776,0
+        speak
+        English<=219,0
+他的姐妹明天不會離開。
+        sister
+        leave<=1154,0
+        tomorrow
+陳生的兄弟不是每日都學習英文。
+        Mr Chan
+        brother
+        study<=652,0
+        English<=219,0
+        every day
+這條古怪的魚正在發出聲音。
+        strange
+        fish
+        make<=648,0
+        sound<=1057,0
+這個憤怒的男人不是正在洗他的手。
+        angry
+        man
+        wash
+        hand
+陳太的嬰兒不是正在走路。
+        Mrs Chan
+        baby
+        walk

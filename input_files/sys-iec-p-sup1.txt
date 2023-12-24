@@ -1,0 +1,19 @@
+[英文整合班低小補充1]
+happily
+        adv,快樂地
+slowly
+        adv,慢慢地
+quickly
+        adv,快速地
+loudly
+        adv,大聲地
+easily
+        adv,容易地
+clearly
+        adv,清楚地
+angrily
+        adv,憤怒地
+carefully
+        adv,小心地          
+quietly
+        adv,安靜地
