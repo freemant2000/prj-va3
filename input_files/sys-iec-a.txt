@@ -1,5 +1,6 @@
 
 
+
 about
 	prep,關於
 accept
@@ -56,8 +57,6 @@ answer
 	n,回答
 ant
 	n,螞蟻
-any
-	det,任何的
 apple
 	n,蘋果
 area
@@ -87,8 +86,6 @@ bad
 	adj,壞的
 bag
 	n,袋
-ball
-	n,球
 balloon
 	n,氣球
 band
@@ -97,8 +94,6 @@ bank
 	n,銀行
 bark
 	v,吠
-basketball
-	n,籃球
 bear, bore, born
 	n,熊
   v,承擔、生（嬰兒等）
@@ -120,8 +115,6 @@ best
 	adj,最好的
 better
 	adj,更好的
-bicycle
-	n,單車
 big brother
 	n phr,哥哥
 bike
@@ -193,8 +186,6 @@ burn up
 	v phr,燒毀
 busy
 	adj,忙的
-but
-	conj,但是
 calculate
 	v,計算
 call
@@ -226,8 +217,6 @@ change
   n,改變
 chart
 	n,圖表
-check
-	v,檢查
 cheer
 	v,歡呼（動）
 cheer sb up
@@ -238,8 +227,6 @@ chemistry
 	n,化學
 chicken
 	n,小雞、雞肉
-China
-	n,中國
 Chinese
 	adj,中國的
   adj,中國人的
@@ -351,8 +338,6 @@ danger
 	n,危險
 daughter
 	n,女兒
-day
-	n,日
 dead
 	adj,死的
 decide
@@ -591,9 +576,6 @@ German
   n,德國人
 ghost
 	n,鬼
-glass
-	n,玻璃杯
-  n,玻璃
 go into hiding
 	v phr,躱起來
 good at
@@ -626,8 +608,6 @@ guess
   n,猜想
 guest
 	n,賓客
-hair
-	n,頭髮、毛
 hammer
 	n,鎚
 hand
@@ -765,8 +745,6 @@ king
 	n,國王
 kitten
 	n,小貓
-know, knew, known
-  v,懂得、知道、認識
 known
 	adj,已知的、被認識的
 lack
@@ -928,8 +906,6 @@ most
 	adv,最
 motorcycle
 	n,電單車
-mouth
-	n,口
 Mr
 	n,先生
 Mr Chan
@@ -1158,9 +1134,6 @@ reach
 	v,到達（努力後）
 ready
 	adj,準備好的
-real
-	adj,真實的
-  adj,真正的
 receive
 	v,收到
 red
@@ -1170,8 +1143,6 @@ regular
 	adj,有規律的
 rent
 	v,租
-repair
-	v,修理
 repeat
 	v,重做、重複
 reply
@@ -1295,8 +1266,6 @@ six
 	num,六
 sixth
 	ord,第六
-ski
-	v,滑雪
 skin
 	n,皮膚
 skirt
@@ -1335,10 +1304,6 @@ sound
 space
   n,空間
 	n,太空
-speak, spoke, spoken
-	v,說
-spend, spent, spent
-	v,花費
 sport
 	n,運動（名）
 spring
@@ -1400,9 +1365,6 @@ take care of
 	v phr,照顧（片）
 take out
 	v phr,拿出
-talk
-	n,演說（名）、講座
-  v,說話
 talk about
 	v phr,談及
 tall
@@ -1411,8 +1373,6 @@ taste
 	v,品嚐
   v,嘗起來
   n,味道
-tea
-	n,茶
 teach, taught, taught
 	v,教
 tear
@@ -1458,8 +1418,6 @@ throw away
 	v phr,扔掉
 throw, threw, thrown
 	v,拋
-Thursday
-	n,星期四
 tiger
 	n,老虎
 time
@@ -1539,8 +1497,6 @@ wave
 	n,波浪
 weak
 	adj,弱的
-weather
-	n,天氣
 wedding
 	n,婚禮
 Wednesday
@@ -1571,8 +1527,6 @@ wish
   v,希望（正式）、祝
 woman, women
 	n,女人
-wood
-	n,木
 word
 	n,詞語、說話
 worker

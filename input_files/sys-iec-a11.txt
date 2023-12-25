@@ -1,0 +1,51 @@
+[英文整合班高小11]
+real=>121
+	adj,真實的
+  adj,真正的
+basketball<=488,0
+        n,籃球
+Thursday<=195,0
+        n,星期四
+check<=443,0
+        v,檢查
+know=>1049
+        v,知道、認識、懂得:knew, known
+weather<=158,0
+        n,天氣
+ball<=504,0
+        n,球
+mouth<=199,0
+        n,嘴
+speak<=439,0F
+        v,講:spoke, spoken
+spend<=1124,0F
+        v,花費:spent, spent
+talk<=595,0-1
+        v,談話
+        n,講座、演說
+repair
+	v,修理
+talk<=595,0-1
+        v,談話
+        n,講座、演說
+bicycle<=299,0
+        n,單車
+tea<=395,0
+        n,茶
+wood<=117,0
+        n,木
+day<=283,0
+        n,日
+ski<=122,0
+        v,滑雪
+but<=522,0
+        conj,但是
+hair=>715
+	n,頭髮、毛
+any<=364,0
+        det,任何
+China<=398,0
+        n,中國
+glass<=417,0-1
+        n,玻璃
+        n,玻璃杯
