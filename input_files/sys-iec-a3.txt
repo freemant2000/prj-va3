@@ -1,0 +1,52 @@
+[英文整合班高小3]
+future<=49,0
+        n,將來
+airport<=57,0
+        n,飛機場
+pink<=64,0-1
+        n,粉紅色
+        adj,粉紅色的
+driver<=63,0
+        n,司機
+writer<=66,0
+        n,作家
+November<=22,0
+        n,十一月
+circle<=58,0
+        n,圓
+own<=662,1
+        adj,自己的
+thousand<=67,0
+        num,一千
+husband<=84,0
+        n,丈夫
+get=>1123
+        v,得到:got, got
+        v,變得:got, got
+			  v,走到: got, got
+walk<=585,0
+        v,走路
+monkey<=467,0
+        n,猴子
+will<=637,0
+        aux,將會
+can<=76,0
+        m,能夠（有能力）
+should<=1077,0
+        m,應該
+tomorrow<=221,0
+        n,明天
+boss<=78,0
+        n,老闆
+moon<=79,0
+        n,月亮
+thin<=80,0
+        adj,瘦的
+kill<=868,0
+        v,殺死
+look<=745,0
+        v,望
+west<=73,0
+        n,西方
+build<=840,0F
+        v,建造:built, built

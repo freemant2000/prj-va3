@@ -1,5 +1,4 @@
 
-
 about
 	prep,關於
 accept
@@ -35,8 +34,6 @@ air
 	n,空氣
 airplane
 	n,飛機（美）
-airport
-	n,飛機場
 air ticket
 	n phr,飛機票
 alive
@@ -194,8 +191,6 @@ boring
 	adj,令人悶的
 borrow
 	v,借入
-boss
-	n,老闆
 bottle
 	n,瓶
 bowl
@@ -226,8 +221,6 @@ brown
 brush
 	v,刷
   n,刷
-build, built, built
-	v,建造
 bully
 	v,欺凌
   n,欺凌者
@@ -250,8 +243,6 @@ call
 camp
 	v,露營
   n,露營
-can
-	m,能夠
 candy
 	n,糖果
 captain
@@ -349,8 +340,6 @@ Christmas
 	n,聖誕節
 church
 	n,教堂
-circle
-	n,圓
 city
 	n,城市
 classmate
@@ -543,8 +532,6 @@ dress
 	n,裙子（全身）
 drive, drove, driven
 	v,駕駛
-driver
-	n,司機
 drop
 	v,投放、掉落
 dry
@@ -733,8 +720,6 @@ fruit
 	n,水果
 fry
 	v,煎
-future
-	n,將來
 game
 	n,遊戲
 gather
@@ -745,9 +730,6 @@ German
 	n,德文
   adj,德國的
   n,德國人
-get, got, got
-	v,取得
-  v,走到: got, got
 ghost
 	n,鬼
 give, gave, given
@@ -867,8 +849,6 @@ hundred
 hurt, hurt, hurt
 	v,傷害
   v,覺得痛
-husband
-	n,丈夫
 ice
 	n,冰
 ice-cream
@@ -948,8 +928,6 @@ keep, kept, kept
   v,養: kept, kept
 kid
 	n,小孩
-kill
-	v,殺死
 kind
 	n,種類
   adj,仁慈的
@@ -1033,8 +1011,6 @@ London
 	n,倫敦
 long
 	adj,長的
-look
-	v,望
 look at
 	v phr,望著
 Lord
@@ -1135,14 +1111,10 @@ Monday
 	n,星期一
 money
 	n,錢
-monkey
-	n,猴子
 monster
 	n,怪物
 month
 	n,月
-moon
-	n,月亮
 more
 	adj,更多
 morning
@@ -1209,8 +1181,6 @@ notice
 novel
 	n,（長篇）小說
   adj,新穎的
-November
-	n,十一月
 now
 	adv,現在
 number
@@ -1257,8 +1227,6 @@ over
 	prep,上方跨過
   prep,在...上方
   prep,超過
-own
-	adj,自己的
 oxygen
 	n,氧氣
 paint
@@ -1309,9 +1277,6 @@ pig
 	n,豬
 pill
 	n,藥丸
-pink
-	n,粉紅色
-  adj,粉紅色的
 place
 	n,地方
 plan
@@ -1555,8 +1520,6 @@ shop
 	n,商店
 short
 	adj,矮的、短的
-should
-	m,應該
 show, showed, shown
 	v,展示
 sick
@@ -1760,9 +1723,6 @@ these
 	det,這些
 thick
 	adj,厚的
-thin
-	adj,瘦的
-  adj,簿的
 thing
 	n,東西
 think, thought, thought
@@ -1774,8 +1734,6 @@ this morning
 	adv phr,今早
 those
   det,那些
-thousand
-	num,千
 three
 	num,三
 throw away
@@ -1798,8 +1756,6 @@ together
 	adv,一起
 toilet
 	n,厠所
-tomorrow
-	adv,明天
 tonight
 	adv,今晚
 too
@@ -1873,8 +1829,6 @@ wait for
 	v phr,等待某物
 wake, woke, woken
 	v,喚醒、醒來
-walk
-	v,行走
 wall
 	n,牆
 want
@@ -1909,8 +1863,6 @@ week
 	n,星期
 well
 	adv,好好地
-west
-	n,西方
 what
 	pron,甚麼
 when
@@ -1928,8 +1880,6 @@ why
 	pron,為甚麼
 wife
 	n,妻子
-will
-	aux,將會
 wind
 	n,風
 window
@@ -1954,8 +1904,6 @@ worker
 	n,工人
 world
 	n,世界
-writer
-	n,作家
 write
   v,寫
 wrong
