@@ -1309,3 +1309,117 @@ Amy和Paul是好的學生。
         wash
         face
         every day
+一條小魚正在我的口裡游泳。
+        little<=16,0
+        fish
+        swim
+        mouth
+這隻鳥經常在天空裡飛。
+        bird
+        fly<=408,0
+        sky
+今日7pm時我正在煮晚餐。
+        cook<=521,0
+        dinner
+        today<=154,0
+那隻狗經常在枱上睡覺。
+        dog
+        often
+        sleep
+        table
+這憤怒的隻鳥快速地飛入了我的口。
+        angry
+        bird
+        fly<=408,0
+        mouth
+        quickly
+那隻猴子慢慢地放下了那隻綠色的香蕉。
+        monkey
+        put
+        green<=258,1
+        banana
+        slowly
+我不是經常望出隻窗。
+        look
+        window
+        often
+我的年青的叔叔去了一間水果店。
+        young
+        uncle
+        go
+        fruit
+        shop
+他憤怒地走出了那道門。
+        walk
+        door
+        angrily
+那條魚正在水中快樂地開派對。
+        fish
+        have a party
+        water
+        happily
+那隻黑色的兔子那時正在枱上吃糖果。
+        black<=257,1
+        rabbit
+        eat
+        candy
+        table
+        then<=1096,1
+他靜靜地走出了那間書店。
+        walk
+        bookshop
+        quietly
+這隻馬不會放下那黃色的水果。
+        horse
+        put
+        yellow<=251,1
+        fruit
+我的叔叔通常不在家學習英文。
+        uncle
+        usually
+        study<=652,0
+        English<=219,0
+        home<=647,0
+昨天7pm時那隻兔子正在洗它的口。
+        rabbit
+        wash
+        mouth
+        yesterday
+我十分鐘之前沒有爬上那棵樹。
+        climb
+        tree
+        ten
+        minute
+        ago
+那隻細小的白老鼠不是經常在這張枱上走路。
+        little<=16,0
+        white<=103,1
+        mouse
+        walk
+        often
+        table
+一個氣球正在天空裡飛。
+        balloon
+        fly<=408,0
+        sky
+今日我放了一些水果入他的口。
+        put
+        fruit
+        mouth
+        today<=154,0
+我的兄弟把那條牛腿拿出了我的屋。
+        brother
+        take<=70,0
+        cow<=481,1
+        leg
+        house
+那條魚正在水中生氣地製造古怪的聲音。
+        fish
+        make<=648,0
+        sound<=1057,0
+        angrily
+        water
+他的姐妹小心地坐下了。
+        sister
+        sit
+        carefully
