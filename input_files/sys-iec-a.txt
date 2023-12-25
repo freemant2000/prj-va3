@@ -38,8 +38,6 @@ a lot of
 	det phr,很多
 many
 	det,很多
-always
-	adv,總是
 America
 	n,美國
   n,美洲
@@ -86,8 +84,6 @@ away
 	adv,離去
 axe
 	n,斧頭
-back
-	adv,返
 bad
 	adj,壞的
 bag
@@ -230,8 +226,6 @@ century
 	n,世紀
 chair
 	n,椅子
-chalk
-	n,粉筆
 change
 	v,改變
   n,改變
@@ -284,8 +278,6 @@ code
 	n,代碼
 coffee shop
 	n,咖啡室
-coin
-	n,硬幣
 Coke
 	n,可樂
 cold
@@ -842,8 +834,6 @@ lip
 	n,嘴唇
 lip stick
 	n phr,唇膏
-listen to
-	v phr,聆聽某物
 little brother
 	n phr,弟弟
 live
@@ -943,8 +933,6 @@ mistake
 model
 	n,模型
   n,模特兒
-Monday
-	n,星期一
 money
 	n,錢
 monster
@@ -957,8 +945,6 @@ motorcycle
 	n,電單車
 mouth
 	n,口
-movie
-	n,電影（美）
 Mr
 	n,先生
 Mr Chan
@@ -1013,8 +999,6 @@ obey
 	v,遵從
 obtain
 	v,取得（努力後）
-o'clock
-	n,點鐘
 office
 	n,辦公室
 old
@@ -1070,8 +1054,6 @@ party
 patient
 	n,病人
   adj,有耐性的
-pay, paid, paid
-	v,支付
 pen
 	n,筆
 person, people
@@ -1080,8 +1062,6 @@ perform
 	v,表演
 pet
 	n,寵物
-phone
-	n,電話
 picture
 	n,圖畫
 piece
@@ -1417,8 +1397,6 @@ store
   n,士多
 storm
 	n,暴風雨
-story
-	n,故事
 strange
 	adj,古怪的
 strong
@@ -1438,8 +1416,6 @@ sun
 	n,太陽
 sunny
 	adj,多陽光的
-supermarket
-	n,超市
 suppress
 	v,壓制
 surprised
@@ -1450,8 +1426,6 @@ swim, swam, swum
 	v,游泳
 system
 	n,系統
-table
-	n,枱
 tail
 	n,尾
 take care of

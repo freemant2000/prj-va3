@@ -1,0 +1,27 @@
+[英文整合班高小9]
+supermarket<=383,0
+        n,超級市場
+movie=>249
+        n,電影（美）
+coin
+	n,硬幣
+table<=538,0
+        n,桌子
+phone<=479,0
+        n,電話（簡寫）
+o'clock<=25,0
+        n,點鐘
+back<=181,0
+        adv,回來
+pay<=495,0F
+        v,支付:paid, paid
+chalk<=97,0
+        n,粉筆
+story<=673,0
+        n,故事
+listen to<=1265,0
+        v phr,聆聽某物
+Monday<=85,0
+        n,星期一
+always<=1080,0
+        adv,總是
