@@ -1,0 +1,2100 @@
+about
+	prep,關於
+accept
+	v,接受
+accident
+	n,意外
+act
+	v,行為
+  n,行為
+action
+	n,行動
+add
+	v,加
+address
+	n,地址
+advantage
+	n,優勢
+aeroplane（英）
+	n,飛機
+plane
+	n,飛機
+afraid
+	adj,害怕的
+afraid of
+	adj phr,害怕某物
+afternoon
+	n,下午
+ago
+	adv,在（多久）之前
+agree
+	v,同意
+agree with
+	v phr,同意某物／人
+air
+	n,空氣
+airplane
+	n,飛機（美）
+airport
+	n,飛機場
+air ticket
+	n phr,飛機票
+alive
+	adj,活生生的
+along
+	prep,沿著
+a lot
+	num phr,很多
+a lot of
+	det phr,很多
+many
+	det,很多
+although
+	conj,雖然
+always
+	adv,總是
+America
+	n,美國
+  n,美洲
+anger
+	n,憤怒
+angry
+	adj,憤怒的
+angry at
+	adj phr,對某物生氣
+angry with
+	adj phr,對某人生氣
+animal
+	n,動物
+another
+	det,另一個
+answer
+	n,回答
+ant
+	n,螞蟻
+any
+	det,任何的
+apple
+	n,蘋果
+area
+	n,地區
+  n,面積
+arrive
+	v,到達
+art
+	n,藝術
+ask
+	v,詢問
+assistance
+	n,協助
+at 5pm
+	adv phr,在5點
+at night
+	adv phr,在晚上
+attend
+	v,出席
+at work
+	adv phr,在公司
+August
+	n,八月
+aunt
+	n,姨姨
+autumn
+	n,秋天
+award
+	n,（榮譽）獎項
+away
+	adv,離去
+axe
+	n,斧頭
+baby
+	n,嬰兒
+back
+	adv,返
+bad
+	adj,壞的
+bag
+	n,袋
+ball
+	n,球
+balloon
+	n,氣球
+banana
+	n,香蕉
+band
+	n,樂隊
+bank
+	n,銀行
+bark
+	v,吠
+basketball
+	n,籃球
+bear, bore, born
+	n,熊
+  v,承擔、生（嬰兒等）
+beautiful
+	adj,漂亮的
+because
+	conj,因為
+become, became, become
+	v,變成
+bed
+	n,床
+bedroom
+	n,睡房
+beef
+	n,牛肉
+begin, began, begun
+	v,開始
+behind
+	prep,在...背後
+Beijing
+	n,北京
+below
+	prep,低於、小於（前置詞）
+best
+	adj,最好的
+better
+	adj,更好的
+bicycle
+	n,單車
+big brother
+	n phr,哥哥
+bike
+	n,單車、電單車
+bill
+	n,賬單
+biology
+	n,生物
+bird
+	n,鳥
+birthday
+	n,生日
+bite, bit, bitten
+	v,咬
+black
+	adj,黑色的
+blackboard
+	n,黑板
+blame
+	v,責備
+blind
+	adj,盲的
+blood
+	n,血
+blow, blew, blown
+	v,吹
+boat
+	n,小船
+body
+	n,身體
+bomb
+	n,炸彈
+bone
+	n,骨
+book
+	n,書
+bookshop
+	n,書店
+bored
+	adj,覺得悶的
+boring
+	adj,令人悶的
+borrow
+	v,借入
+boss
+	n,老闆
+bottle
+	n,瓶
+bowl
+	n,碗
+box
+	n,盒
+brave
+	adj,勇敢的
+bread
+	n,麵包
+break, broke, broken
+	v,弄壞、打破、折斷
+breakfast
+	n,早餐
+breathe
+	v,呼吸
+bridge
+	n,橋
+bring, brought, brought
+	v,帶來
+bring up
+	v phr,提出
+brother
+	n,兄弟
+brown
+	n,棕色
+  adj,棕色的
+brush
+	v,刷
+  n,刷
+build, built, built
+	v,建造
+bully
+	v,欺凌
+  n,欺凌者
+burn
+	v,燃燒
+burn up
+	v phr,燒毀
+bus
+	n,巴士
+businessman
+	n,商人
+busy
+	adj,忙的
+but
+	conj,但是
+buy, bought, bought
+	v,買
+cake
+	n,蛋糕
+calculate
+	v,計算
+call
+	v,打電話、呼叫
+camp
+	v,露營
+  n,露營
+can
+	m,能夠
+candy
+	n,糖果
+captain
+	n,船長
+  n,隊長
+car
+	n,汽車
+careful
+	adj,小心的
+carefully
+	adv,小心地
+carrot
+	n,蘿蔔
+carry
+	v,㩦帶
+catch, caught, caught
+	v,抓住
+celebrate
+	v,慶祝
+century
+	n,世紀
+chair
+	n,椅子
+chalk
+	n,粉筆
+change
+	v,改變
+  n,改變
+chart
+	n,圖表
+cheap
+	adj,便宜的
+check
+	v,檢查
+cheer
+	v,歡呼（動）
+cheer sb up
+  v phr,使某人高興起來
+cheese
+	n,芝士
+chemistry
+	n,化學
+cheque
+	n,支票
+chicken
+	n,小雞、雞肉
+child	孩子
+child	孩子
+
+child	孩子
+
+child	孩子
+
+child	孩子
+
+child	孩子
+
+child	小孩
+
+child	小孩
+
+child	小孩（單）
+child	小孩（單）
+child	小孩（眾）
+children	孩子們
+children	孩子們
+children	孩子們
+children	孩子們
+children	孩子們
+
+children	孩子們
+
+children	孩子們
+
+children	孩子們
+
+children	孩子們
+
+children	孩子們
+
+children	孩子們
+
+children	孩子們
+
+children	小孩（眾）
+China
+	n,中國
+Chinese
+	adj,中國的
+  adj,中國人的
+  n,中文
+chocolate
+	n,朱古力
+choose, chose, chosen
+	v,選擇
+Christmas
+	n,聖誕節
+church
+	n,教堂
+circle
+	n,圓
+city
+	n,城市
+class
+	n,課、班
+classmate
+	n,同學
+classroom
+	n,課室
+clean
+	v,清潔
+  adj,清潔的
+clear
+	adj,清楚的、清的
+clever
+	adj,聰明的
+climb
+	v,爬
+close
+	v,關閉
+  adj,接近的
+closer
+	adj,更接近的
+clothes
+	n,衣服
+cloud
+	n,雲
+cloudy
+	adj,多雲的
+code
+	n,代碼
+coffee
+	n,咖啡
+coffee shop
+	n,咖啡室
+coin
+	n,硬幣
+Coke
+	n,可樂
+cold
+	adj,冷的
+collapse
+	v,倒塌
+collect
+	v,收集
+come, came, come
+	v,來
+come out
+	v phr,出來
+comfortable
+	adj,舒服的
+company
+	n,公司
+compare
+	v,比較
+competition
+	n,競賽
+computer
+	n,電腦
+confidence
+	n,信心
+confuse
+	v,使困惑
+confused
+	adj,困惑的
+contain
+	v,包含
+control
+	v,控制
+  n,控制
+cook
+	n,廚師
+  v,煮
+cookie
+	n,曲奇
+cool
+  adj,涼的
+  adj,酷的
+	v,使冷凍
+correct
+	v,改正
+  adj,正確的
+cost
+  v,值（多少錢）:cost, cost
+  n,成本
+couch
+	n,長梳化
+count
+	v,數
+country
+	n,國家
+course
+	n,課程
+court
+	n,（羽毛球等）球場
+  n,法庭
+cousin
+	n,表兄弟
+cow
+	n,牛
+credit card
+	n phr,信用卡
+criticise
+	v,批評
+crocodile
+	n,鱷魚
+cross
+	v,橫過
+cruel
+	adj,殘忍的
+cry
+	v,哭、大叫
+cup
+	n,白色有耳柄的茶杯
+current
+	adj,目前的
+customer
+	n,顧客
+cut, cut, cut
+	v,切,鎅破
+damage
+	v,損毀
+dance
+	v,跳舞
+  n,舞蹈
+danger
+	n,危險
+daughter
+	n,女兒
+day
+	n,日
+dead
+	adj,死的
+December
+	n,十二月
+decide
+	v,決定
+degree
+	n,度
+  n,學位
+  n,程度
+delicious
+	adj,美味的
+department store
+	n phr,百貨公司
+design
+	v,設計
+  n,設計
+desk
+	n,書桌
+destroy
+	v,破壞
+develop
+	v,發展
+device
+	n,設備
+diamond
+	n,鑽石
+dictionary
+	n,字典
+die
+	v,死去
+different
+	adj,不同的
+difficulty
+	n,困難
+dig, dug, dug
+	v,掘
+dig up
+	v phr,掘出
+dinner
+	n,晚餐
+dinosaur
+	n,恐龍
+direction
+	n,方向
+dirty
+	adj,骯髒的
+discover
+	v,發現（重大的東西）
+divide
+	v,分割
+  v,除
+doctor
+	n,醫生
+do, did, done
+	v,做
+doll
+	n,洋娃娃
+dollar
+	n,元
+donate
+	v,捐
+don't have to
+  m phr,不必
+door
+	n,門
+doubt
+	v,懷疑
+  n,懷疑
+draw, drew, drawn
+	v,畫
+dress
+	n,裙子（全身）
+drink, drank, drunk
+	v,喝
+drive, drove, driven
+	v,駕駛
+driver
+	n,司機
+drop
+	v,投放、掉落
+dry
+	adj,乾的
+  v,弄乾
+Earth
+	n,地球
+easier
+	adj,更容易的
+east
+	n,東方
+easy
+	adj,容易的
+eat, ate, eaten
+	v,吃
+economy
+	n,經濟
+education
+	n,教育
+egg
+	n,蛋
+eight
+	num,八
+eighties
+	num,八十至九十歲
+eighty
+	num,八十
+electric
+	adj,電動的
+eleven
+	num,十一
+e-mail
+	n,電郵
+embarrass
+	v,使...尷尬
+embarrassed
+	adj,覺得尷尬的
+empty
+	adj,空的
+England
+	n,英格蘭
+English
+	adj,英國的
+  n,英文
+enjoy
+	v,享受
+enough
+	adj,足夠的
+enter
+  v,進入
+	v,參加（比賽等）
+envy
+	v,羡慕
+equal
+	v,等於
+  adj,相等的
+eraser
+	n,擦膠
+essay
+	n,文章
+evening
+	n,傍晚
+every
+	det,每
+every day
+	n phr,每日
+everything
+	pron,所有東西
+evil
+	adj,邪惡的
+exam
+	n,考試
+excellent
+	adj,優秀的、極好的
+excited
+	adj,興奮的
+exciting
+	adj,令人興奮的
+exist
+	v,存在
+expensive
+	adj,昂貴的
+experience
+	n,經驗
+express
+	v,表達
+eye
+	n,眼睛
+face
+	n,臉
+fail
+	v,失敗
+fake
+	adj,假裝的
+fall, fell, fallen
+	v,掉、下跌
+family
+	n,家人
+  n,家庭
+famous
+	adj,出名的
+fantastic
+	adj,極好的
+farm
+	n,農場
+farmer
+	n,農夫
+farming
+	n,農耕
+fast
+	adj,快的
+  adv,快地
+fat
+	adj,肥的
+favourite
+	adj,最喜愛的
+  n,最愛的東西
+February
+	n,二月
+feed, fed, fed
+	v,餵
+feel, felt, felt
+	v,感受到、覺得
+feeling
+	n,感情、感受
+festival
+	n,節日、慶祝活動
+few
+  det,少（可數）、幾個
+fifth
+	ord,第五
+fight, fought, fought
+	v,戰鬥、打鬥
+  n,打鬥
+fight back
+	v phr,還擊
+film
+  n,電影
+	v,拍攝
+final
+	adj,最終的
+finally
+	adv,最終
+find, found, found
+	v,找到
+  v,發現
+finger
+	n,手指
+fire
+	n,火
+  v,開除
+first
+	ord,第一
+fish, fish
+	n,魚
+fisherman
+	n,漁夫
+five
+	num,五
+floor
+	n,地板
+  n,樓層
+flower
+	n,花
+fly, flew, flown
+	v,飛
+food
+	n,食物
+foot, feet
+	n,腳
+football
+	n,足球
+foreign	外來的
+foreign
+	adj,外國的、外來的
+forest
+	n,林林
+forget, forgot, forgotten
+	v,忘記
+Form one
+	n phr,中一
+forty
+	num,四十
+four
+	num,四
+fourth
+	ord,第四
+free
+	adj,免費的
+  adj,自由的
+  adj,有空的
+French
+	n,法文
+  adj,法國的
+  n,法國人（整體）
+fresh
+	adj,新鮮的
+friend
+	n,朋友
+friendship
+	n,友誼
+fruit
+	n,水果
+fry
+	v,煎
+future
+	n,將來
+game
+	n,遊戲
+gather
+	v,收集（資訊等）
+general
+	adj,一般的
+German
+	n,德文
+  adj,德國的
+  n,德國人
+get, got, got
+	v,取得
+  v,走到: got, got
+ghost
+	n,鬼
+give, gave, given
+	v,給
+glass
+	n,玻璃杯
+  n,玻璃
+go into hiding
+	v phr,躱起來
+good at
+	adj phr,擅於...的
+good for
+	adj phr,對...有益的
+good to
+	adj phr,對某人好
+go out
+	v phr,出去
+government
+	n,政府
+go, went, gone
+	v,去
+grade
+	n,成績
+  n,年級、等級
+gram
+	n,克
+grandfather
+	n,祖父
+grandmother
+	n,祖母
+great
+	adj,大的
+green
+	adj,綠色的
+grey
+	n,灰色
+  adj,灰色的
+ground
+	n,地面
+grow
+	v,種植:grew, grown
+  v,生長:grew, grown
+  v,增長:grew, grown
+guess
+	v,猜想
+  n,猜想
+guest
+	n,賓客
+hair
+	n,頭髮、毛
+hammer
+	n,鎚
+hand
+	n,手
+handle
+	v,處理
+happiness
+	n,快樂（名）
+happy
+	adj,快樂的
+hard
+	adj,困難的
+  adj,硬旳
+  adv,努力地
+hat
+	n,帽
+hate
+	v,討厭
+have a party
+	v phr,開派對
+have, had, had
+	v,有
+  v,享用
+head
+	n,頭
+headache
+	n,頭痛
+hear, heard, heard
+	v,聽到
+heart
+	n,心
+heavy
+	heavy,重的
+heavy rain
+	n phr,大雨
+help
+	v,幫助
+  n,幫助
+here
+	adv,這裡
+hide, hid, hidden
+	v,躱藏、隱藏
+high
+	adj,高的
+hill
+	n,小山
+hit, hit, hit
+	v,打、擊中
+hole
+	n,洞
+home
+	n,家
+homework
+	n,家課
+Hong Kong
+	n,香港
+hook
+	n,鈎
+  v,鈎
+hope
+	v,希望
+  n,希望
+horse
+	n,馬
+hospital
+	n,醫院
+hot
+	adj,熱的
+hour
+	n,小時
+house
+	n,屋
+how
+	adv,怎樣
+however
+	adv,但是（副）
+hundred
+	num,百
+hurt, hurt, hurt
+	v,傷害
+  v,覺得痛
+husband
+	n,丈夫
+ice
+	n,冰
+ice-cream
+	n,雪糕
+idea
+	n,想法
+identity
+	n,身份
+illness
+	n,病痛
+immediately
+	adv,立即
+important
+	adj,重要的
+improve
+	v,改善
+increase
+	v,增加
+in danger
+	adv phr,在危險之中
+India
+	n,印度
+Indian
+	n,印度人
+  n,印第安人（不禮貌）
+  adj,印度的
+indicate
+	v,顯示出
+information
+	n,資訊
+injure
+	v,使受傷
+insert
+	v,插入
+intense
+  adj,劇烈的、強烈的
+interest
+  n,興趣
+  n,利益
+	n,利息
+interesting
+	adj,有趣的
+Internet
+	n,互聯網
+in the past
+	adv phr,在以前
+into
+	prep,進入
+invent
+	v,發明
+invitation
+	n,邀請
+island
+	n,島
+its
+	det,它的／牠的
+itself
+	pron,它／牠自己
+January
+	n,一月
+Japan
+	n,日本
+Japanese
+  n,日文
+  n,日本人
+  adj,日本的
+job
+	n,（一份）工作
+jog
+	v,慢跑
+join
+	v,參加
+joy
+	n,喜悅
+July
+	n,七月
+June
+	n,六月
+keep, kept, kept
+	v,不斷、保持
+  v,養: kept, kept
+kid
+	n,小孩
+kill
+	v,殺死
+kilogram
+	n,公斤
+kind
+	n,種類
+  adj,仁慈的
+kindness
+	n,仁慈
+king
+	n,國王
+kitten
+	n,小貓
+know, knew, known
+  v,懂得、知道、認識
+known
+	adj,已知的、被認識的
+lack
+	v,缺乏
+  n,缺乏
+Lady
+	n,夫人、女士
+lake
+	n,湖
+lamp
+	n,燈（包燈罩和橙座等）
+land
+  n,土地
+	v,著陸
+language
+	n,語言
+large
+	adj,大的
+last
+	adj,上一個的
+last month
+	adv phr,上個月
+last night
+	adv phr,昨晚
+last week
+  adv phr,上星期
+late
+	adj,遲的
+learn
+	v,學懂
+leave, left, left
+  v,離開:left, left
+	v,留低
+leg
+	n,腿
+letter
+	n,信
+library
+	n,圖書館
+life, lives
+  n,生命
+  n,生活:lives
+light
+	n,光
+  adj,輕的
+like
+	v,喜歡
+  prep,似
+likely
+	adv,很可能
+line
+	n,線
+  n,行(文字等)
+lion
+	n,獅子
+lip
+	n,嘴唇
+lip stick
+	n phr,唇膏
+listen
+	v,聆聽
+listen to
+	v phr,聆聽某物
+little
+  adj,（年紀）細小的
+  adj,小量的（不可數）
+little brother
+	n phr,弟弟
+live
+	v,居住
+  v,生活
+location
+	n,位置
+London
+	n,倫敦
+long
+	adj,長的
+look
+	v,望
+look at
+	v phr,望著
+Lord
+	n,領主
+  n,天主
+lose, lost, lost
+	v,失去
+loud
+	adj,大聲的
+loudly	　大聲地
+love
+	v,愛
+  n,愛
+lower
+	adj,更低的
+  v,降低
+lunch
+	n,午餐
+lunch box
+	n phr,飯盒
+Macao
+	n,澳門
+magic
+	n,魔術
+major
+	adj,主要的
+Major
+	n,少校
+make, made, made
+	v,製造
+  v,令:made, made
+  v,作出:made, made
+manufacturer
+	n,製造商
+many
+	det,很多（可數）
+map
+	n,地圖
+March
+	n,三月
+mark
+	v,做上記號
+  v,打分
+  n,得分（如測驗等）
+Mars
+	n,火星
+martial arts
+	n phr,功夫
+master
+	n,大師
+  n,師父
+match
+	n,比賽
+  v,匹配
+  n,火柴
+Maths
+	n,數學
+matter
+	n,事件
+  n,物質
+may
+	m,可能
+McDonald's
+	n,麥當勞
+mean
+	v,意味著
+meaning
+	n,意思
+medicine
+	n,藥
+meeting
+	n,會議
+meet, met, met
+  v,遇見
+	v,結識
+man, men
+  n,男人
+message
+	n,訊息
+metre
+  n,公尺（米）
+mouse, mice
+  n,老鼠
+milk
+	n,牛奶
+million
+	num,百萬
+mind
+	n,思想
+minute
+	n,分鐘
+missing
+	adj,失踪的、不見了的
+mistake
+	n,錯誤
+model
+	n,模型
+  n,模特兒
+Monday
+	n,星期一
+money
+	n,錢
+monkey
+	n,猴子
+monster
+	n,怪物
+month
+	n,月
+moon
+	n,月亮
+more
+	adj,更多
+morning
+	n,早上
+most
+	adv,最
+motorcycle
+	n,電單車
+mouth
+	n,口
+move
+	v,移動、搬運
+  n,動作
+movie
+	n,電影（美）
+Mr
+	n,先生
+Mr Chan
+	n,陳先生
+Mrs
+	n,太太
+Mrs Chan
+	n,陳太
+music
+	n,音樂
+neck
+	n,頸
+need
+	v,需要
+  n,需要
+never
+	adv,從不、永不
+new
+	adj,新的
+news
+	n,新聞、消息
+newspaper
+	n,報紙
+next
+	det,下一個
+night
+	n,夜晚
+nine
+	num,九
+ninth
+	ord,第九
+nobody
+	pron,沒有人
+noise
+	n,噪音
+no longer
+	adv phr,不再
+noon
+	n,中午
+north
+	n,北方
+nose
+	n,鼻子
+notebook
+	n,筆記本
+nothing
+	pron,沒有東西
+notice
+	v,注意到
+  n,告示
+novel
+	n,（長篇）小說
+  adj,新穎的
+November
+	n,十一月
+now
+	adv,現在
+number
+	n,數字
+  n,編號
+obey
+	v,遵從
+obtain
+	v,取得（努力後）
+o'clock
+	n,點鐘
+office
+	n,辦公室
+often
+	adv,經常
+old
+	adj,老的
+  adj,舊的
+online
+	adj,網上的
+  adv,在網上
+open
+	v,打開
+open up
+	v phr,開放
+opportunity
+	n,機緣
+orange
+	n,橙
+  adj,橙色的
+order
+	v,命令
+  n,命令
+  v,訂購
+  n,訂單
+  n,次序
+organisation
+	n,機構、組織
+organise
+	v,組織
+others
+	pron,其他人
+outer space
+	n phr,外大空
+over
+	prep,上方跨過
+  prep,在...上方
+  prep,超過
+own
+	adj,自己的
+oxygen
+	n,氧氣
+paint
+	n,油漆
+  v,涂上（油漆或顏料）
+painting
+	n,油畫
+paper
+	n,紙
+paragraph
+	n,段落
+parent
+	n,父／母
+park
+	n,公園
+part
+	n,部份
+party
+	n,派對
+pass
+	v,通過、經過
+past
+	prep,（走）過
+  adj,以前的
+  n,以前
+patient
+	n,病人
+  adj,有耐性的
+pay, paid, paid
+	v,支付
+pen
+	n,筆
+pencil
+	n,鉛筆
+person, people
+	n,人
+perform
+	v,表演
+pet
+	n,寵物
+phone
+	n,電話
+picture
+	n,圖畫
+piece
+	n,張、塊、片
+pig
+	n,豬
+pill
+	n,藥丸
+pink
+	n,粉紅色
+  adj,粉紅色的
+place
+	n,地方
+plan
+  n,計劃
+	v,計劃
+plane
+	n,飛機
+planet
+	n,行星
+plant
+	n,植物
+play
+	v,玩
+  v,彈奏（音樂等）
+  v,扮演
+player
+	n,員球、玩家
+playground
+	n,操場
+play with
+	v phr,玩某物
+plus
+	v,加
+poem
+	n,詩
+point
+	n,觀點
+  n,點
+  v,指著
+pond
+	n,池塘
+poor
+	adj,可憐的
+  adj,窮的
+popcorn
+	n,爆谷
+pork
+	n,豬肉
+postcard
+	n,明信片
+post office
+	n phr,郵局
+potato
+	n,馬鈴薯
+pound
+	n,磅
+powerful
+	adj,強力的
+practice
+	n,練習
+practise
+	v,練習
+praise
+	v,讚賞
+prepare
+	v,準備
+presence
+	n,存在、在場
+present
+	n,禮物
+prince
+	n,王子
+princess
+	n,公主
+principal
+	n,校長
+prisoner
+	n,囚犯
+prize
+	n,獎（金）
+problem
+	n,問題、困難
+project
+	n,項目
+promise
+	v,承諾
+  n,承諾
+provide
+	v,提供
+public
+	adj,公共的
+pull
+	v,拉
+pull down
+	v phr,拉跌（拆毀）
+purple
+  n,紫色
+	adj,紫色的
+push
+	v,推
+put, put, put
+	v,放
+question
+	n,問題
+quick
+	adj,快速的
+quickly
+	adv,快速地
+quiet
+	adj,安靜的
+quite
+	adv,相當
+rabbit
+	n,兔子
+rain
+	n,雨
+  v,下雨
+rainbow
+	n,彩虹
+rainy
+	adj,下雨的、多雨的
+reach
+	v,到達（努力後）
+read, read, read
+	v,閱讀
+ready
+	adj,準備好的
+real
+	adj,真實的
+  adj,真正的
+receive
+	v,收到
+red
+  n,紅色
+  adj,紅色的
+regular
+	adj,有規律的
+rent
+	v,租
+repair
+	v,修理
+repeat
+	v,重做、重複
+reply
+	v,回覆
+  n,回覆
+report
+	n,報告
+  v,報告
+require
+	v,要求
+rest
+	v,休息
+restaurant
+	n,餐廳
+return
+	v,回來
+  v,退還
+rice
+	n,米、飯
+rich
+	adj,富有的
+ride, rode, ridden
+	v,騎
+right
+  n,右邊
+	adj,右邊的
+  adj,正確的
+river
+	n,河
+road
+	n,路
+rock
+	n,岩石
+role
+	n,角色
+  n,作用
+room
+	n,房間
+rope
+	n,繩
+row
+	n,排、行
+rubbish
+	n,垃圾（英）
+rule
+	n,規則
+ruler
+	n,間尺
+run, ran, run
+	v,跑
+sadness
+	n,悲傷
+sailor
+	n,水手
+sales
+	n,銷量
+salty
+	adj,鹹的
+same
+	adj,相同的
+sand
+	n,沙
+sandwich
+	n,三文治
+Saturday
+	n,星期六
+save
+  v,救
+	v,儲存
+  v,節省
+say, said, said
+	v,說
+school
+	n,學校
+scientist
+	n,科學家
+sea
+	n,海
+seal
+	v,封印
+seal off
+	v phr,封鎖（某地）（片）
+season
+	n,季節
+second
+	ord,第二
+  n,秒
+secret
+	n,秘密
+  adj,秘密的
+seem
+	v,似乎、看起來
+see, saw, seen
+	v,看到
+  v,觀看（戲院等）: saw, seen
+seldom
+	adj,很少（做某事）
+sell, sold, sold
+	v,賣
+send, sent, sent
+	v,發送
+senior high school
+	n phr,高中
+sense
+  v,感知到（某外界情況）
+  n,感應
+serve
+	v,奉上、上菜、服務（某人）
+set foot on
+	v phr,踏足
+seven
+	num,七
+several
+	det,幾
+shampoo
+	n,洗頭水
+shape
+	n,形狀
+share
+	v,分享
+shark
+	n,鯊魚
+ship
+	n,（大）船
+shirt
+	n,恤衫
+shoe
+	n,鞋
+shop
+	n,商店
+short
+	adj,矮的、短的
+should
+	m,應該
+show, showed, shown
+	v,展示
+sick
+	adj,病的
+side
+	n,側面
+signal
+	n,信號
+  v,（用信號）顯示
+since
+	prep,自從
+  conj,自從
+sing, sang, sung
+	v,唱
+sister
+	n,姐妹
+sit, sat, sat
+	v,坐
+six
+	num,六
+sixth
+	ord,第六
+ski
+	v,滑雪
+skin
+	n,皮膚
+skirt
+	n,半身裙
+sky
+	n,天空
+sleep, slept, slept
+	v,睡
+slow
+	adj,慢的
+small
+	adj,小的
+smart
+	adj,醒目
+smell, smelt, smelt
+	v,聞到
+smile
+	v,微笑
+  n,微笑
+snake
+	n,蛇
+so	因此
+so	所以
+so	所以
+so	所以
+so	所以
+sofa
+	n,梳化
+software
+	n,軟件
+soil
+	n,土壤、泥土
+solve
+	v,解決
+some
+	det,一些
+sometimes
+	adv,有時
+son
+	n,兒子
+soon
+	adv,不久
+sound
+	n,聲音
+south
+	n,南方
+space
+  n,空間
+	n,太空
+speak, spoke, spoken
+	v,說
+spend, spent, spent
+	v,花費
+sport
+	n,運動（名）
+spring
+	n,春天
+square
+	n,廣場
+  n,正方形
+stage
+	n,舞枱
+stand
+	v,站立
+star
+	v,星星
+start
+	v,開始
+station
+	n,車站
+stay
+	v,停留
+steak
+	n,牛扒
+steal, stole, stolen
+	v,偷
+still
+	adv,依然
+stomach
+	n,胃
+stop
+	v,停止
+store
+	v,儲存
+  n,士多
+storm
+	n,暴風雨
+story
+	n,故事
+strange
+	adj,古怪的
+street
+	n,街
+strong
+	adj,強壯的
+  adj,堅固的
+student
+	n,學生
+study
+	v,學習（做練習）
+  v,研究
+subject
+  n,科目、主語
+submit
+	v,提交
+substance
+	n,（擁有各自特性）物質
+successfully
+	adv,成功地
+suddenly
+	adv,突然
+summer
+	n,夏天
+sun
+	n,太陽
+Sunday
+	n,星期日
+sunny
+	adj,多陽光的
+supermarket
+	n,超市
+suppress
+	v,壓制
+surprised
+	adj,吃驚的
+sweet
+	adj,甜的
+swim, swam, swum
+	v,游泳
+system
+	n,系統
+table
+	n,枱
+tail
+	n,尾
+take care of
+	v phr,照顧（片）
+take out
+	v phr,拿出
+take, took, taken
+	v,拿
+  v,服用
+  v,採用
+  v,上（課）
+talk
+	n,演說（名）、講座
+  v,說話
+talk about
+	v phr,談及
+tall
+	adj,高的
+taste
+	v,品嚐
+  v,嘗起來
+  n,味道
+taxi
+	n,的士
+tea
+	n,茶
+teacher
+	n,老師
+teach, taught, taught
+	v,教
+tear
+	n,眼淚
+teenager
+	n,年青人
+tell, told, told
+	v,告訴
+temperature
+	n,溫度
+ten
+	num,十
+tennis
+	n,網球
+test
+	n,測試、測驗
+  v,測試
+than
+	prep,比...（更...）
+Thanksgiving
+	n,感恩節
+the 1980s
+	n phr,1980年代
+then
+	adv,那時
+  conj,然後
+the poor
+	n phr,窮人
+there
+	adv,那裡
+these
+	det,這些
+thick
+	adj,厚的
+thin
+	adj,瘦的
+  adj,簿的
+thing
+	n,東西
+think, thought, thought
+	v,想、思考
+  v,認為:thought, thought
+third
+	ord,第三
+thirteen
+	num,十三
+thirty
+	num,三十
+this morning
+	adv phr,今早
+those
+  det,那些
+thousand
+	num,千
+three
+	num,三
+throw away
+	v phr,扔掉
+throw, threw, thrown
+	v,拋
+Thursday
+	n,星期四
+ticket
+	n,票
+tiger
+	n,老虎
+time
+	n,時間
+tip
+	n,貼士
+tired
+	adj,疲倦的
+today
+	adv,今天
+together
+	adv,一起
+toilet
+	n,厠所
+tomorrow
+	adv,明天
+tonight
+	adv,今晚
+too
+	adv,太、也
+tooth, teeth
+	n,牙
+toy
+	n,玩具
+train
+	n,火車
+  v,培訓
+training
+	n,培訓（名）
+travel
+	v,旅行
+tree
+	n,樹
+trip
+	n,旅行（享受）
+truck
+	n,貨車
+try
+	v,嘗試
+Tuesday
+	n,星期二
+turn
+	v,轉
+TV
+	n,電視
+twelve
+	num,十二
+twenty
+	num,二十
+twice
+	adv,兩次
+typhoon
+	n,颱風
+umbrella
+	n,雨傘
+uncle
+	n,叔叔
+under
+	prep,在...底下
+understand, understood, understood
+	v,明白
+unhappiness
+	n,不高興
+unhappy
+	adj,不高興的
+university
+	n,大學
+unknown
+	adj,未知的、不被認識的
+US
+	n,美國
+use
+	v,使用
+useful
+	adj,有用的
+usually
+	adv,通常
+vacancy
+	n,空缺
+vacation
+	n,渡假
+vegetable
+	n,蔬菜
+video
+	n,短片
+village
+	n,村莊
+visit
+	v,探訪
+wait
+	v,等待
+wait for
+	v phr,等待某物
+wake, woke, woken
+	v,喚醒、醒來
+walk
+	v,行走
+wall
+	n,牆
+want
+	v,想要
+warm
+  adj,溫暖的
+	v,使暖
+wash
+	v,洗
+wash away
+	v phr,沖走
+washroom
+	n,洗手間
+restroom
+	n,洗手間（休息）
+waste
+	v,浪費
+  n,廢物
+watch
+  v,觀看
+	n,手錶
+water
+	n,水
+wave
+	n,波浪
+weak
+	adj,弱的
+wear, wore, worn
+	v,穿著
+weather
+	n,天氣
+wedding
+	n,婚禮
+Wednesday
+	n,星期三
+week
+	n,星期
+well
+	adv,好好地
+west
+	n,西方
+wet
+	adj,濕的
+what
+	pron,甚麼
+when
+  conj,當
+	pron,何時
+where
+  pron,哪裡
+which
+	det,哪一
+white
+	n,白色
+who
+	pron,誰
+why
+	pron,為甚麼
+wife
+	n,妻子
+will
+	aux,將會
+wind
+	n,風
+window
+	n,窗
+windy
+	adj,大風的
+win, won, won
+	v,贏
+wish
+	n,願望
+  v,希望（正式）、祝
+woman, women
+	n,女人
+wood
+	n,木
+word
+	n,詞語、說話
+work
+	v,工作
+  n,工作
+worker
+	n,工人
+world
+	n,世界
+writer
+	n,作家
+write
+  v,寫
+wrong
+	adj,錯的
+year
+	n,年
+yellow
+	adj,黃色的
+yesterday
+	adv,昨天
+young
+	adj,年輕的
