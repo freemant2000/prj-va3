@@ -1146,3 +1146,166 @@ Amy和Paul是好的學生。
         Mrs Chan
         baby
         walk
+她的爺爺並不總是看著太陽。
+        grandpa
+        always
+        look at
+        sun
+這隻兔子並不總是喝牛奶。
+        rabbit
+        always
+        drink<=362,0
+        milk
+陳太不是經常離開澳門。
+        Mrs Chan
+        often
+        leave<=1154,0
+        Macao
+這隻兔子不是經常在家洗它的腿。
+        rabbit
+        often
+        wash
+        leg
+        home<=647,0
+陳太憤怒地離開了澳門。
+        Mrs Chan
+        leave<=1154,0
+        Macao
+        angrily
+她的爺爺並不總是快速地說話。
+        grandpa
+        always
+        speak
+        quickly
+這個快樂的嫲嫲不是每日都發送電郵。
+        happy
+        grandma
+        send
+        e-mail
+        every day
+這隻的小心的老鼠昨天沒有離開。
+        careful
+        mouse
+        leave<=1154,0
+        yesterday        
+那時那隻白的貓不是正在捉魚。
+        white<=103,1
+        cat
+        catch
+        fish
+        then<=1096,1
+我們不是每日都喝綠茶（即綠色的茶）。
+        drink<=362,0
+        green<=258,1
+        tea
+        every day
+陳太快速地發送了一隻兔子給我。
+        Mrs Chan
+        send
+        rabbit
+        quickly
+這隻牛昨天沒有洗它的腿。
+        cow<=481,1
+        wash
+        leg
+        yesterday
+我的憤怒的爺爺不是經常作出古怪的聲音。
+        angry
+        grandpa
+        often
+        make<=648,0
+        strange
+        sound<=1057,0
+我正在發送一個容易的遊戲給他。
+        send
+        easy
+        game
+我的老的姨姨昨天沒有在公司慢慢地喝黃色的可樂。
+        old<=281,0
+        aunt
+        drink<=362,0
+        yellow<=251,1
+        Coke
+        at work
+這隻可憐的英國老鼠不是每日都在房間裡吃綠色的麵包。
+        poor<=280,0
+        English<=219,1
+        mouse
+        eat
+        green<=258,1
+        bread
+        room
+        every day
+這個古怪的國王每日都小心地爬這棵大樹。
+        strange
+        king
+        climb
+        tree
+        carefully
+        every day
+他在巴士上在報紙裡看見了他的姐妹。
+        see
+        sister
+        newspaper
+        bus
+他的兄弟昨天沒有煮早餐。
+        brother
+        cook<=521,0
+        breakfast
+        yesterday
+那時她不是正在家裡煮一條魚。
+        cook<=521,0
+        fish
+        home<=647,0
+他的嫲嫲昨天沒有大聲地關窗。
+        grandma
+        open<=575,0
+        window
+        loudly
+        yesterday
+我的叔叔在汽車上給了我一些糖果。
+        uncle
+        give
+        candy
+        car
+他的年青的叔叔經常安靜地走路。
+        young
+        uncle
+        often
+        walk
+        quietly
+這隻貓經常快速地洗臉。
+        cat
+        often
+        wash
+        face
+        quickly
+我的爺爺不喜歡動物。
+        grandpa
+        like<=475,0
+        animal
+他聽到了一些聲音。
+        hear
+        sound<=1057,0
+這個年青的男人不是經常去派對。
+        young
+        man
+        often
+        go
+        party
+那些動物快速地離開了那間黃色的屋。
+        animal
+        leave<=1154,0
+        yellow<=251,1
+        house
+        quickly
+她的叔叔昨天沒有吃晚餐。
+        uncle
+        eat
+        dinner
+        yesterday
+那些動物不是每日都洗牠們的臉。
+        animal
+        wash
+        face
+        every day
