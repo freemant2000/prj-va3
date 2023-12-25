@@ -1,0 +1,35 @@
+[英文整合班高小4]
+sing<=528,0F
+        v,唱:sang, sung
+child<=86,0F
+        n,孩子:children
+listen<=641,0
+        v,聆聽
+August<=87,0
+        n,八月
+wife<=88,0
+        n,妻子
+music<=197,0
+        n,音樂
+aunt<=89,0
+        n,阿姨
+hard=>92
+        adj,困難的
+        adv,努力地
+			  adj,硬旳
+east<=83,0
+        n,東方
+season<=69,0
+        n,季節
+banana<=422,0
+        n,香蕉
+draw<=764,0F
+        v,畫:drew, drawn
+water<=289,0
+        n,水
+in the past
+	adv phr,在以前
+visit=>303
+ 			v,探訪
+car<=77,0
+        n,車子

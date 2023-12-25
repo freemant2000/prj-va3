@@ -31,7 +31,7 @@ by
 jacket
 	n,外套（半身）
 visit
-	n,探訪
+	v,探訪
 dark
 	adj,黑暗的
 belt

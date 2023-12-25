@@ -92,10 +92,6 @@ attend
 	v,出席
 at work
 	adv phr,在公司
-August
-	n,八月
-aunt
-	n,姨姨
 award
 	n,（榮譽）獎項
 away
@@ -112,8 +108,6 @@ ball
 	n,球
 balloon
 	n,氣球
-banana
-	n,香蕉
 band
 	n,樂隊
 bank
@@ -248,8 +242,6 @@ candy
 captain
 	n,船長
   n,隊長
-car
-	n,汽車
 careful
 	adj,小心的
 carefully
@@ -287,45 +279,6 @@ cheque
 	n,支票
 chicken
 	n,小雞、雞肉
-child	孩子
-child	孩子
-
-child	孩子
-
-child	孩子
-
-child	孩子
-
-child	孩子
-
-child	小孩
-
-child	小孩
-
-child	小孩（單）
-child	小孩（單）
-child	小孩（眾）
-children	孩子們
-children	孩子們
-children	孩子們
-children	孩子們
-children	孩子們
-
-children	孩子們
-
-children	孩子們
-
-children	孩子們
-
-children	孩子們
-
-children	孩子們
-
-children	孩子們
-
-children	孩子們
-
-children	小孩（眾）
 China
 	n,中國
 Chinese
@@ -526,8 +479,6 @@ door
 doubt
 	v,懷疑
   n,懷疑
-draw, drew, drawn
-	v,畫
 dress
 	n,裙子（全身）
 drive, drove, driven
@@ -541,8 +492,6 @@ Earth
 	n,地球
 easier
 	adj,更容易的
-east
-	n,東方
 easy
 	adj,容易的
 economy
@@ -784,10 +733,6 @@ happiness
 	n,快樂（名）
 happy
 	adj,快樂的
-hard
-	adj,困難的
-  adj,硬旳
-  adv,努力地
 hat
 	n,帽
 have a party
@@ -891,8 +836,6 @@ interesting
 	adj,有趣的
 Internet
 	n,互聯網
-in the past
-	adv phr,在以前
 into
 	prep,進入
 invent
@@ -993,8 +936,6 @@ lip
 	n,嘴唇
 lip stick
 	n phr,唇膏
-listen
-	v,聆聽
 listen to
 	v phr,聆聽某物
 little
@@ -1138,8 +1079,6 @@ Mrs
 	n,太太
 Mrs Chan
 	n,陳太
-music
-	n,音樂
 neck
 	n,頸
 need
@@ -1478,8 +1417,6 @@ seal
 	v,封印
 seal off
 	v phr,封鎖（某地）（片）
-season
-	n,季節
 secret
 	n,秘密
   adj,秘密的
@@ -1532,8 +1469,6 @@ signal
 since
 	prep,自從
   conj,自從
-sing, sang, sung
-	v,唱
 sister
 	n,姐妹
 six
@@ -1821,8 +1756,6 @@ video
 	n,短片
 village
 	n,村莊
-visit
-	v,探訪
 wait
 	v,等待
 wait for
@@ -1847,8 +1780,6 @@ waste
 watch
   v,觀看
 	n,手錶
-water
-	n,水
 wave
 	n,波浪
 weak
@@ -1878,8 +1809,6 @@ who
 	pron,誰
 why
 	pron,為甚麼
-wife
-	n,妻子
 wind
 	n,風
 window
