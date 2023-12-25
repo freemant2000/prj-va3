@@ -1,0 +1,101 @@
+[約翰內斯堡]
+apartheid
+  n,種族隔離
+museum<=789,0
+	n,博物館
+exhibit
+	n,展品
+  v,展示
+approximately
+	adv,大約
+boast
+	v,誇耀、以...而自豪
+Siberian
+	adj,西伯利亞的
+sacrifice
+	v,犠牲
+  n,犠牲
+freedom
+	n,自由
+economic
+	adj,經濟的
+rollercoaster
+	n,過山車
+cradle
+	n,搖籃
+raft
+	n,獨木舟
+rafting
+	n,撐獨木舟（運動）
+traditionally
+	adv,傳統上
+species
+	n,物種
+originate
+	v,起源
+Africa
+	n,非洲
+theatre
+	n,劇院
+spot
+	v,看見（一眼）
+tourist
+	n,遊客
+courageous
+	n,勇敢的
+political
+	adj,政治的
+struggle
+	v,爭扎
+  n,爭扎
+socialise
+	v,進行社交活動
+
+這裡有一座種族隔離博物館。
+  museum
+  apartheid
+這件展品值大約一百萬元。
+  exhibit<=1300,0
+  cost<=529,0
+  million
+他以他的西伯利亞虎而自豪(不用proud或pride)。
+  boast
+  Siberian
+他們犠牲了自由為了得到經濟上的結果。
+  sacrifice<=1304,0
+  freedom
+  economic
+因為種族隔離，他不能坐過山車。
+  apartheid
+  rollercoaster
+這個西伯利亞搖籃不能被用作一隻獨木舟。
+  Siberian
+  cradle
+  raft
+在他們傳統上使用這種獨木舟。
+  traditionally
+  raft
+這個西伯利亞的物種大約一百萬年前起源於非洲。
+  Siberian
+  species
+  originate
+  Africa
+  approximately
+  million
+這件關於種族隔離的展品被放在這劇院裡。
+  exhibit<=1300,0
+  apartheid
+  theatre
+那個遊客看見了過山車上的一個搖籃。
+  tourist
+  cradle
+  rollercoaster
+那些勇敢的(不用brave)男人犠牲了他們的經濟自由。
+  courageous
+  sacrifice<=1304,0
+  economic
+  freedom
+在政治鬥爭中他依然同他人進行社交活動。
+  political
+  struggle<=1320,1
+  socialise

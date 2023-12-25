@@ -1,0 +1,148 @@
+[canterville-1]
+businessman<=55,0
+        n,生意人
+dangerous<=339,0
+	adj,危險的
+person<=557,0
+	n,人
+ghost
+	n,鬼
+appear<=1156,0
+	v,出現
+in front of
+	prep phr,在...面前
+Lord
+	n,領主
+  n,上主
+Duchess
+	n,公爵夫人
+dress=>494
+	n,衣服
+  n,全身裙
+  v,穿衣
+skeleton
+	n,骷髏骨
+  n,骨架
+wife<=88,0
+	n,妻子
+death
+	n,死亡
+die<=730,0
+        v,死
+dead<=194,0
+        adj,死的
+after<=411,0-1
+        conj,在...之後（緊接某事）
+        prep,在...之後
+see<=93,0F
+  v,看見
+American<=420,0-1
+        n,美國人
+        adj,美國的
+bird<=511,0
+	n,小鳥
+stand<=527,0F
+        v,站:stood, stood
+shoulder<=1089,0
+	n,肩膀
+nearly
+	adv,差不多
+know<=1049,0F
+        v,知道、認識:knew, known
+modern<=558,0
+	adj,現代的
+English<=219,0-1
+        n,英文
+        adj,英國的
+afraid=>414
+  adj,害怕的
+  adj,恐怕的
+as...as
+  prep phr,同...一樣
+famous<=490,0
+	adj,著名的
+make<=648,0F
+        v,造:made, made
+noise=>429
+	n,噪音、聲音
+British
+	adj,不列顛的
+  n,不列顛人
+sudden
+	adj,突然的
+suddenly
+	adv,突然地
+train=>260
+	n,火車
+  v,培訓
+tired<=853,0
+	adj,疲倦的
+beautiful<=480,0
+	adj,美麗的
+fast<=1153,0
+	adj,快速的
+
+這個商人是一個危險的人。
+  businessman
+  dangerous
+  person
+一隻鬼出現在公爵夫人的面前。
+  ghost
+  appear
+  in front of
+  Duchess
+那個領主的鬼魂正在穿衣。
+  ghost
+  Lord<=1324,0
+  dress<=494,2
+那副骷髏骨好像你的死了的妻子。
+  skeleton<=1326,0
+  dead
+  wife
+他的死之後，我就沒見過公爵夫人。
+  after<=411,1
+  death
+  see
+  Duchess
+一隻美國鳥正站在我的肩膊上。
+  American<=420,1
+  bird
+  shoulder
+我差不多無命（即死去），那太危險了。
+  nearly
+  die
+  dangerous
+他不懂現代的英文。
+  know
+  modern
+  English<=219,0
+我恐怕你太出名了。
+  afraid<=414,1
+  famous
+他同我一樣出名。
+  as...as
+  famous
+這副不列顛的骷髏骨正在發出（即製造）一些聲音（噪音）。
+  British<=1330,0
+  skeleton<=1326,0
+  make<=648,0
+  noise
+他的死很突然。
+  death
+  sudden
+一架火車突然出現了。
+  train<=260,0
+  appear
+  suddenly
+我的膊頭相當累。
+  shoulder
+  tired
+那隻鬼比你的妻子還漂亮。
+  ghost
+  beautiful<=480,0
+  wife
+我的汽車同一架火車一樣快。
+  car
+  train<=260,0
+  as...as
+  fast
