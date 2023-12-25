@@ -1,0 +1,83 @@
+[英文整合班高小5]
+ticket<=96,0
+        n,票
+bread<=484,0
+        n,麵包
+air<=90,0
+        n,空氣
+July<=29,0
+        n,七月
+June<=18,0
+        n,六月
+December<=19,0
+        n,十二月
+make=>648
+        v,造:made, made
+        v,令:made, made
+  v,作出:made, made
+pass<=99,0-1
+        v,通過
+        v,經過
+past=>192
+	prep,（走）過
+  adj,過去的
+  n,以前
+test=>633
+        n,測試、測驗
+        v,測試
+run<=263,0F
+        v,跑:ran, run
+along<=98,0
+        prep,沿著
+river<=397,0
+        n,河流
+then<=1096,0-1
+        adv,之後
+        adv,那時
+computer<=977,0
+        n,電腦
+every<=631,0
+        det,每一個
+week<=279,0
+        n,星期
+tonight<=264,0
+        adv,今晚
+wash<=316,0
+        v,洗
+study<=652,0-1
+        v,學習（做題等）
+        v,研究
+plane<=827,0
+        n,飛機（簡寫）
+fly<=408,0F-1
+        v,飛:flew, flown
+        n,蒼蠅
+month<=142,0
+        n,月份
+us<=700,0
+        pron,我們（賓語）
+US<=1249,0
+        n,美國（縮寫）
+move=>602
+        v,移動、搬運
+  n,動作
+home<=647,0
+        n,家
+pencil<=162,0
+        n,鉛筆
+eleven<=44,0
+        ord,十一
+face<=753,0
+        n,臉
+feed<=994,0F
+        v,餵、飼養:fed, fed
+cow<=481,1
+        n,牛（統稱）
+break<=984,0-2-3
+        v,打破:broke, broken
+        v,折斷:broke, broken
+        v,弄壞:broke, broken
+window<=444,0
+        n,窗
+umbrella<=1028,0
+        n,雨傘

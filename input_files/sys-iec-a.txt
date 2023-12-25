@@ -1,4 +1,5 @@
 
+
 about
 	prep,關於
 accept
@@ -18,8 +19,6 @@ advantage
 	n,優勢
 aeroplane（英）
 	n,飛機
-plane
-	n,飛機
 afraid
 	adj,害怕的
 afraid of
@@ -30,16 +29,12 @@ agree
 	v,同意
 agree with
 	v phr,同意某物／人
-air
-	n,空氣
 airplane
 	n,飛機（美）
 air ticket
 	n phr,飛機票
 alive
 	adj,活生生的
-along
-	prep,沿著
 a lot
 	num phr,很多
 a lot of
@@ -193,10 +188,6 @@ box
 	n,盒
 brave
 	adj,勇敢的
-bread
-	n,麵包
-break, broke, broken
-	v,弄壞、打破、折斷
 breakfast
 	n,早餐
 breathe
@@ -336,8 +327,6 @@ compare
 	v,比較
 competition
 	n,競賽
-computer
-	n,電腦
 confidence
 	n,信心
 confuse
@@ -377,8 +366,6 @@ court
   n,法庭
 cousin
 	n,表兄弟
-cow
-	n,牛
 credit card
 	n phr,信用卡
 criticise
@@ -412,8 +399,6 @@ day
 	n,日
 dead
 	adj,死的
-December
-	n,十二月
 decide
 	v,決定
 degree
@@ -508,8 +493,6 @@ eighty
 	num,八十
 electric
 	adj,電動的
-eleven
-	num,十一
 e-mail
 	n,電郵
 embarrass
@@ -539,8 +522,6 @@ essay
 	n,文章
 evening
 	n,傍晚
-every
-	det,每
 everything
 	pron,所有東西
 evil
@@ -561,8 +542,6 @@ express
 	v,表達
 eye
 	n,眼睛
-face
-	n,臉
 fail
 	v,失敗
 fake
@@ -592,8 +571,6 @@ favourite
   n,最愛的東西
 February
 	n,二月
-feed, fed, fed
-	v,餵
 feel, felt, felt
 	v,感受到、覺得
 feeling
@@ -632,8 +609,6 @@ floor
   n,樓層
 flower
 	n,花
-fly, flew, flown
-	v,飛
 food
 	n,食物
 foot, feet
@@ -767,8 +742,6 @@ hit, hit, hit
 	v,打、擊中
 hole
 	n,洞
-home
-	n,家
 homework
 	n,家課
 Hong Kong
@@ -862,10 +835,6 @@ join
 	v,參加
 joy
 	n,喜悅
-July
-	n,七月
-June
-	n,六月
 keep, kept, kept
 	v,不斷、保持
   v,養: kept, kept
@@ -980,10 +949,6 @@ major
 	adj,主要的
 Major
 	n,少校
-make, made, made
-	v,製造
-  v,令:made, made
-  v,作出:made, made
 manufacturer
 	n,製造商
 many
@@ -1054,8 +1019,6 @@ money
 	n,錢
 monster
 	n,怪物
-month
-	n,月
 more
 	adj,更多
 morning
@@ -1066,9 +1029,6 @@ motorcycle
 	n,電單車
 mouth
 	n,口
-move
-	v,移動、搬運
-  n,動作
 movie
 	n,電影（美）
 Mr
@@ -1185,12 +1145,6 @@ part
 	n,部份
 party
 	n,派對
-pass
-	v,通過、經過
-past
-	prep,（走）過
-  adj,以前的
-  n,以前
 patient
 	n,病人
   adj,有耐性的
@@ -1198,8 +1152,6 @@ pay, paid, paid
 	v,支付
 pen
 	n,筆
-pencil
-	n,鉛筆
 person, people
 	n,人
 perform
@@ -1364,8 +1316,6 @@ right
   n,右邊
 	adj,右邊的
   adj,正確的
-river
-	n,河
 road
 	n,路
 role
@@ -1383,8 +1333,6 @@ rule
 	n,規則
 ruler
 	n,間尺
-run, ran, run
-	v,跑
 sadness
 	n,悲傷
 sailor
@@ -1563,9 +1511,6 @@ strange
 strong
 	adj,強壯的
   adj,堅固的
-study
-	v,學習（做練習）
-  v,研究
 subject
   n,科目、主語
 submit
@@ -1638,18 +1583,12 @@ ten
 	num,十
 tennis
 	n,網球
-test
-	n,測試、測驗
-  v,測試
 than
 	prep,比...（更...）
 Thanksgiving
 	n,感恩節
 the 1980s
 	n phr,1980年代
-then
-	adv,那時
-  conj,然後
 the poor
 	n phr,窮人
 there
@@ -1677,8 +1616,6 @@ throw, threw, thrown
 	v,拋
 Thursday
 	n,星期四
-ticket
-	n,票
 tiger
 	n,老虎
 time
@@ -1691,8 +1628,6 @@ together
 	adv,一起
 toilet
 	n,厠所
-tonight
-	adv,今晚
 too
 	adv,太、也
 tooth, teeth
@@ -1724,8 +1659,6 @@ twice
 	adv,兩次
 typhoon
 	n,颱風
-umbrella
-	n,雨傘
 uncle
 	n,叔叔
 under
@@ -1740,8 +1673,6 @@ university
 	n,大學
 unknown
 	adj,未知的、不被認識的
-US
-	n,美國
 useful
 	adj,有用的
 usually
@@ -1766,8 +1697,6 @@ wall
 	n,牆
 want
 	v,想要
-wash
-	v,洗
 wash away
 	v phr,沖走
 washroom
@@ -1790,8 +1719,6 @@ wedding
 	n,婚禮
 Wednesday
 	n,星期三
-week
-	n,星期
 well
 	adv,好好地
 what
@@ -1811,8 +1738,6 @@ why
 	pron,為甚麼
 wind
 	n,風
-window
-	n,窗
 windy
 	adj,大風的
 win, won, won
