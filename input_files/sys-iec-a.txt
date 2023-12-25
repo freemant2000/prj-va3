@@ -41,8 +41,6 @@ a lot of
 	det phr,很多
 many
 	det,很多
-although
-	conj,雖然
 always
 	adv,總是
 America
@@ -122,8 +120,6 @@ become, became, become
 	v,變成
 bed
 	n,床
-bedroom
-	n,睡房
 begin, began, begun
 	v,開始
 Beijing
@@ -213,8 +209,6 @@ burn
 	v,燃燒
 burn up
 	v phr,燒毀
-bus
-	n,巴士
 busy
 	adj,忙的
 but
@@ -303,8 +297,6 @@ cloud
 	n,雲
 code
 	n,代碼
-coffee
-	n,咖啡
 coffee shop
 	n,咖啡室
 coin
@@ -343,10 +335,6 @@ cook
   v,煮
 cookie
 	n,曲奇
-cool
-  adj,涼的
-  adj,酷的
-	v,使冷凍
 correct
 	v,改正
   adj,正確的
@@ -447,8 +435,6 @@ discover
 divide
 	v,分割
   v,除
-doctor
-	n,醫生
 do, did, done
 	v,做
 doll
@@ -466,8 +452,6 @@ doubt
   n,懷疑
 dress
 	n,裙子（全身）
-drive, drove, driven
-	v,駕駛
 drop
 	v,投放、掉落
 dry
@@ -503,9 +487,6 @@ empty
 	adj,空的
 England
 	n,英格蘭
-English
-	adj,英國的
-  n,英文
 enjoy
 	v,享受
 enough
@@ -569,8 +550,6 @@ fat
 favourite
 	adj,最喜愛的
   n,最愛的東西
-February
-	n,二月
 feel, felt, felt
 	v,感受到、覺得
 feeling
@@ -682,9 +661,6 @@ great
 	adj,大的
 green
 	adj,綠色的
-grey
-	n,灰色
-  adj,灰色的
 ground
 	n,地面
 grow
@@ -715,8 +691,6 @@ have a party
 have, had, had
 	v,有
   v,享用
-head
-	n,頭
 headache
 	n,頭痛
 hear, heard, heard
@@ -767,8 +741,6 @@ hundred
 hurt, hurt, hurt
 	v,傷害
   v,覺得痛
-ice
-	n,冰
 ice-cream
 	n,雪糕
 identity
@@ -817,8 +789,6 @@ invitation
 	n,邀請
 island
 	n,島
-its
-	det,它的／牠的
 January
 	n,一月
 Japan
@@ -972,8 +942,6 @@ match
 	n,比賽
   v,匹配
   n,火柴
-Maths
-	n,數學
 matter
 	n,事件
   n,物質
@@ -1046,8 +1014,6 @@ need
   n,需要
 never
 	adv,從不、永不
-new
-	adj,新的
 news
 	n,新聞、消息
 newspaper
@@ -1164,8 +1130,6 @@ picture
 	n,圖畫
 piece
 	n,張、塊、片
-pig
-	n,豬
 pill
 	n,藥丸
 place
@@ -1355,8 +1319,6 @@ save
   v,節省
 say, said, said
 	v,說
-school
-	n,學校
 scientist
 	n,科學家
 sea
@@ -1632,11 +1594,6 @@ too
 	adv,太、也
 tooth, teeth
 	n,牙
-toy
-	n,玩具
-train
-	n,火車
-  v,培訓
 training
 	n,培訓（名）
 travel
@@ -1730,8 +1687,6 @@ where
   pron,哪裡
 which
 	det,哪一
-white
-	n,白色
 who
 	pron,誰
 why
@@ -1751,9 +1706,6 @@ wood
 	n,木
 word
 	n,詞語、說話
-work
-	v,工作
-  n,工作
 worker
 	n,工人
 world

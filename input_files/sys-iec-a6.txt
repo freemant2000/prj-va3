@@ -1,0 +1,50 @@
+[英文整合班高小6]
+school<=185,0
+        n,學校
+work<=766,0-1
+        v,工作
+        n,工作（要做的事情）
+bus<=169,0
+        n,巴士
+train<=260,0-1
+        n,火車
+        v,培訓
+bedroom<=371,0
+        n,睡房
+Maths
+	n,數學
+English<=219,0-1
+        n,英文
+        adj,英國的
+doctor<=102,0
+        n,醫生
+white<=103,0-1
+        n,白色
+        adj,白色的
+ice<=107,0
+        n,冰
+cool=>61
+        adj,涼的
+  adj,酷的
+	v,使冷凍
+head<=653,0
+        n,頭
+February<=109,0
+        n,二月
+drive<=220,0F
+        v,駕駛:drove, driven
+grey
+	n,灰色
+  adj,灰色的
+new<=104,0
+        adj,新的
+although<=1111,0
+        conj,雖然
+its<=563,0
+        det,它／牠的
+toy<=892,0
+        n,玩具
+pig<=306,0
+        n,豬
+coffee<=186,0
+        n,咖啡
