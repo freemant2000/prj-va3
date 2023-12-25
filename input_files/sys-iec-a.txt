@@ -1,4 +1,5 @@
 
+
 about
 	prep,關於
 accept
@@ -98,8 +99,6 @@ August
 	n,八月
 aunt
 	n,姨姨
-autumn
-	n,秋天
 award
 	n,（榮譽）獎項
 away
@@ -139,8 +138,6 @@ bed
 	n,床
 bedroom
 	n,睡房
-beef
-	n,牛肉
 begin, began, begun
 	v,開始
 Beijing
@@ -240,8 +237,6 @@ burn up
 	v phr,燒毀
 bus
 	n,巴士
-businessman
-	n,商人
 busy
 	adj,忙的
 but
@@ -373,8 +368,6 @@ closer
 	adj,更接近的
 cloud
 	n,雲
-cloudy
-	adj,多雲的
 code
 	n,代碼
 coffee
@@ -391,8 +384,6 @@ collapse
 	v,倒塌
 collect
 	v,收集
-come, came, come
-	v,來
 come out
 	v phr,出來
 comfortable
@@ -689,9 +680,6 @@ final
 	adj,最終的
 finally
 	adv,最終
-find, found, found
-	v,找到
-  v,發現
 finger
 	n,手指
 fire
@@ -725,8 +713,6 @@ forget, forgot, forgotten
 	v,忘記
 Form one
 	n phr,中一
-forty
-	num,四十
 four
 	num,四
 fourth
@@ -872,8 +858,6 @@ hot
 	adj,熱的
 hour
 	n,小時
-house
-	n,屋
 how
 	adv,怎樣
 however
@@ -966,8 +950,6 @@ kid
 	n,小孩
 kill
 	v,殺死
-kilogram
-	n,公斤
 kind
 	n,種類
   adj,仁慈的
@@ -1007,9 +989,6 @@ late
 	adj,遲的
 learn
 	v,學懂
-leave, left, left
-  v,離開:left, left
-	v,留低
 leg
 	n,腿
 letter
@@ -1419,8 +1398,6 @@ purple
 	adj,紫色的
 push
 	v,推
-put, put, put
-	v,放
 question
 	n,問題
 quick
@@ -1487,8 +1464,6 @@ river
 	n,河
 road
 	n,路
-rock
-	n,岩石
 role
 	n,角色
   n,作用
@@ -1540,9 +1515,6 @@ seal off
 	v phr,封鎖（某地）（片）
 season
 	n,季節
-second
-	ord,第二
-  n,秒
 secret
 	n,秘密
   adj,秘密的
@@ -1575,8 +1547,6 @@ share
 	v,分享
 shark
 	n,鯊魚
-ship
-	n,（大）船
 shirt
 	n,恤衫
 shoe
@@ -1649,8 +1619,6 @@ soon
 	adv,不久
 sound
 	n,聲音
-south
-	n,南方
 space
   n,空間
 	n,太空
@@ -1694,8 +1662,6 @@ story
 	n,故事
 strange
 	adj,古怪的
-street
-	n,街
 strong
 	adj,強壯的
   adj,堅固的
@@ -1828,8 +1794,6 @@ tip
 	n,貼士
 tired
 	adj,疲倦的
-today
-	adv,今天
 together
 	adv,一起
 toilet
@@ -1865,8 +1829,6 @@ TV
 	n,電視
 twelve
 	num,十二
-twenty
-	num,二十
 twice
 	adv,兩次
 typhoon
@@ -1917,9 +1879,6 @@ wall
 	n,牆
 want
 	v,想要
-warm
-  adj,溫暖的
-	v,使暖
 wash
 	v,洗
 wash away

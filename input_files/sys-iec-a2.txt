@@ -1,0 +1,45 @@
+[英文整合班高小2]
+come<=390,0F
+        v,來:came, come
+leave<=1154,0F-1
+        v,離開:left, left
+        v,把...留低
+find<=882,0F
+        v,找到、發現:found, found
+rock<=31,0
+        n,岩石
+second<=33,0-1
+        ord,第二
+        n,秒
+ship<=36,0
+        n,（大）船
+autumn<=38,0
+        n,秋天
+street<=30,0
+        n,街
+forty<=35,0
+        ord,四十
+kilogram<=45,0
+        n,公斤
+south<=46,0
+        n,南方
+cloudy<=47,0
+        adj,多雲的
+twenty<=50,0
+        ord,二十
+businessman<=55,0
+        n,生意人
+beef<=410,0
+        n,牛肉
+warm<=34,0-1
+        adj,溫暖的
+        v,使溫暖
+today<=154,0-1
+        adv,今天
+        n,今天
+buy<=968,0F
+        v,買:bought, bought
+put<=684,0F
+        v,放:put, put
+house<=297,0
+        n,房子
