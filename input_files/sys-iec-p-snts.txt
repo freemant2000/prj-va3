@@ -1563,3 +1563,130 @@ Amy和Paul是好的學生。
         often
         dance<=314,0
         school
+我的兄弟正在大聲地喝一杯可樂。
+        brother
+        drink<=362,0
+        glass<=417,1
+        Coke
+        loudly
+他在一張紙上寫了一些中文。
+        write
+        Chinese<=261,0
+        piece
+        paper
+他的叔叔買了一瓶黑咖啡。
+        uncle
+        buy
+        bottle
+        black<=257,1
+        coffee
+他用一枝鉛筆在一張黃色的紙上寫了一些古怪的英文。
+        write
+        strange
+        English<=219,0
+        piece
+        yellow<=251,1
+        paper
+        pencil
+我的姐妹正在用一把火暖一杯茶。
+        sister
+        warm<=34,1
+        cup
+        tea
+        fire
+她的爺爺在家裡安靜地吃了一塊麵包。
+        grandpa
+        eat
+        piece
+        bread
+        quietly
+        home<=647,0
+他在一張紙上用一枝鉛筆畫了一件玩具。
+        draw
+        toy
+        piece
+        paper
+        pencil
+你的嫲嫲慢慢地造了一杯古怪的綠茶（即綠色的茶）。
+        make<=648,0
+        cup
+        strange
+        green<=258,1
+        tea
+        slowly
+那隻牛在車裡發現了一塊麵包。
+        cow<=481,1
+        find
+        piece
+        bread
+        car
+他買了一張漂亮的椅子。
+        buy
+        beautiful<=480,0
+        chair
+他每日都喝一瓶黃色的可樂。
+        drink<=362,0
+        bottle
+        yellow<=251,1
+        Coke
+        every day
+那隻高的馬吃了一塊芝士。
+        tall
+        horse
+        eat
+        piece
+        cheese
+那時那隻牛正在那間屋子裡觀看一套電影。
+        cow<=481,1
+        watch<=1266,0
+        movie
+        house
+        then<=1096,1
+那隻兔子不是每星期都吃一塊芝士。
+        rabbit
+        eat
+        piece
+        cheese
+        every
+        week
+那隻猴子現在不是正在爬一棵高的樹。
+        monkey
+        climb
+        tall
+        tree
+        now
+我的叔叔生了（即製造了）一把火。
+        uncle
+        make<=648,0
+        fire
+我的寵物貓每日都喝一杯冷的水。
+        pet
+        cat
+        drink<=362,0
+        glass<=417,1
+        cold
+        water
+他在盒子裡發現了一隻鞋。
+        find
+        shoe
+        box
+我的姨姨十分鐘前買了一盒芝士。
+        aunt
+        buy
+        box
+        cheese
+        ten
+        minute
+        ago
+那隻鞋跌入了那骯髒的水中。
+        shoe
+        fall
+        dirty
+        water
+她的年輕的兄弟正在用火去暖他的寵物鼠。
+        young
+        brother
+        warm<=34,1
+        pet
+        mouse
+        fire
