@@ -1423,3 +1423,143 @@ Amy和Paul是好的學生。
         sister
         sit
         carefully
+我們每星期用水去清潔這架車。
+        clean<=508,0
+        car
+        every
+        week
+        water
+我用鉛筆畫了一隻兔子。
+        draw
+        rabbit
+        pencil
+今晚我將用火去煮一些雞肉。
+        cook<=521,0
+        chicken<=310,0
+        fire
+        tonight
+那個年輕的男人經常坐巴士去那個水果店。
+        young
+        man
+        go
+        fruit
+        shop
+        bus
+陳太用鉛筆打開了那道門。
+        Mrs Chan
+        open<=575,0
+        door
+        pencil
+那隻貓正在用水清潔牠的腿。
+        cat
+        clean<=508,0
+        leg
+        water
+那隻橙色的老鼠不是經常坐汽車去那個間書店。
+        orange<=179,1
+        mouse
+        go
+        bookshop
+        often
+        car
+陳生有時快樂地用一隻手開車。
+        Mr Chan
+        drive
+        hand
+        happily
+那隻小豬正在慢慢地用一把火溫暖牠的屋。
+        little<=16,0
+        pig
+        warm<=34,1
+        its
+        house
+        slowly
+他用腳容易地去打開隻窗。
+        open<=575,0
+        window
+        easily
+        foot
+那隻貓用牠的口去清潔了牠的腿。
+        cat
+        clean<=508,0
+        leg
+        its
+        mouth
+她的年青的姨姨經常坐巴士去澳門。
+        young
+        aunt
+        often
+        go
+        Macao
+        bus
+那隻牛用火去弄乾牠自己。
+        cow<=481,1
+        dry<=144,1
+        itself
+        fire
+她的年青的叔叔經常坐汽車去圖書館。
+        young
+        uncle
+        often
+        go
+        library
+        car
+那個可憐的嬰兒從不製造聲音。
+        poor<=280,0
+        baby
+        never<=776,0
+        make<=648,0
+        sound<=1057,0
+陳太經常攜帶一個漂亮的袋。
+        Mrs Chan
+        often
+        carry
+        beautiful<=480,0
+        bag
+嫲嫲昨天沒有用報紙弄乾她的臉。
+        grandma
+        dry<=144,1
+        face
+        newspaper
+        yesterday
+那隻肥的牛正在公園裡靜靜地看著天空。
+        fat
+        cow<=481,1
+        look at
+        sky
+        quietly
+        park
+陳生正在用手攜帶一些綠色的香蕉。
+        Mr Chan
+        carry
+        green<=258,1
+        banana
+        hand
+我的漂亮的姐姐放下了她的袋。
+        beautiful<=480,0
+        sister
+        put
+        bag
+那隻大的老鼠總是在公園裡快樂地喝可樂。
+        big
+        mouse
+        always
+        drink<=362,0
+        Coke
+        happily
+        park
+那隻馬發送了一部大的電視給我。
+        horse
+        send
+        big
+        TV
+那個憤怒的男人建造了一個漂亮的公園。
+        angry
+        man
+        build
+        beautiful<=480,0
+        park
+他們不是經常在學校裡跳舞。
+        often
+        dance<=314,0
+        school
