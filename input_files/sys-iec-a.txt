@@ -24,16 +24,12 @@ afraid
 	adj,害怕的
 afraid of
 	adj phr,害怕某物
-afternoon
-	n,下午
 agree
 	v,同意
 agree with
 	v phr,同意某物／人
 airplane
 	n,飛機（美）
-air ticket
-	n phr,飛機票
 alive
 	adj,活生生的
 a lot
@@ -80,8 +76,6 @@ assistance
 	n,協助
 at 5pm
 	adv phr,在5點
-at night
-	adv phr,在晚上
 attend
 	v,出席
 at work
@@ -141,8 +135,6 @@ bill
 	n,賬單
 biology
 	n,生物
-birthday
-	n,生日
 bite, bit, bitten
 	v,咬
 black
@@ -490,8 +482,6 @@ equal
   adj,相等的
 essay
 	n,文章
-evening
-	n,傍晚
 everything
 	pron,所有東西
 evil
@@ -594,8 +584,6 @@ Form one
 	n phr,中一
 four
 	num,四
-fourth
-	ord,第四
 free
 	adj,免費的
   adj,自由的
@@ -622,8 +610,6 @@ German
   n,德國人
 ghost
 	n,鬼
-give, gave, given
-	v,給
 glass
 	n,玻璃杯
   n,玻璃
@@ -713,8 +699,6 @@ hope
   n,希望
 hospital
 	n,醫院
-hot
-	adj,熱的
 hour
 	n,小時
 how
@@ -774,8 +758,6 @@ invitation
 	n,邀請
 island
 	n,島
-January
-	n,一月
 Japan
 	n,日本
 Japanese
@@ -862,9 +844,6 @@ lip stick
 	n phr,唇膏
 listen to
 	v phr,聆聽某物
-little
-  adj,（年紀）細小的
-  adj,小量的（不可數）
 little brother
 	n phr,弟弟
 live
@@ -972,8 +951,6 @@ monster
 	n,怪物
 more
 	adj,更多
-morning
-	n,早上
 most
 	adv,最
 motorcycle
@@ -1015,8 +992,6 @@ noise
 	n,噪音
 no longer
 	adv phr,不再
-noon
-	n,中午
 north
 	n,北方
 nose
@@ -1250,9 +1225,6 @@ rest
 	v,休息
 restaurant
 	n,餐廳
-return
-	v,回來
-  v,退還
 rice
 	n,米、飯
 rich
@@ -1426,8 +1398,6 @@ stage
 	n,舞枱
 stand
 	v,站立
-star
-	v,星星
 start
 	v,開始
 stay
@@ -1464,12 +1434,8 @@ successfully
 	adv,成功地
 suddenly
 	adv,突然
-summer
-	n,夏天
 sun
 	n,太陽
-Sunday
-	n,星期日
 sunny
 	adj,多陽光的
 supermarket
@@ -1613,8 +1579,6 @@ unknown
 	adj,未知的、不被認識的
 useful
 	adj,有用的
-usually
-	adv,通常
 vacancy
 	n,空缺
 vacation
@@ -1644,9 +1608,6 @@ restroom
 waste
 	v,浪費
   n,廢物
-watch
-  v,觀看
-	n,手錶
 wave
 	n,波浪
 weak

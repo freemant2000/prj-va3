@@ -1,0 +1,40 @@
+[英文整合班高小8]
+Sunday<=209,0
+        n,星期日
+birthday<=470,0
+        n,生日
+noon<=256,0
+        n,中午
+January<=203,0
+        n,一月
+summer<=21,0
+        n,夏天
+llittle<=16,0-1
+        adj,（年齡或可愛）細小的
+        adj,少的（不可數）
+give<=746,0
+        v,給
+watch<=1266,0-1
+        v,觀看
+        n,手錶
+star<=136,0
+        n,星星
+at night<=1260,0
+        adv phr,在晚上
+usually<=681,0
+        adv,通常
+morning<=51,0
+        n,早晨
+afternoon<=206,0
+        n,下午
+fourth<=94,0
+        ord,第四
+evening<=132,0
+        n,傍晚
+hot<=433,0
+        adj,熱的
+air ticket
+	n phr,飛機票
+return=>74
+        v,回來
+        v,交回、退還
