@@ -1,0 +1,94 @@
+[英文整合班高小1]
+notebook<=10,0
+        n,筆記本
+eat<=315,0F
+        v,吃:ate, eaten
+sometimes<=966,0
+        adj,有時候
+baby<=17,0
+        n,嬰兒
+drink<=362,0F-1
+        v,喝:drank, drunk
+        n,飲品
+minute<=15,0
+        n,分鐘
+ago<=394,0
+        adv,在（多久）以前
+hate<=336,0
+        v,痛恨
+play=>419
+	v,玩
+  v,彈奏（音樂等）
+  v,扮演
+wear<=386,0F
+        v,穿著:wore, worn
+often<=721,0
+        adv,時常
+excellent=>26
+        adj,優秀的、極好的
+cheap<=23,0
+        adj,便宜的
+horse<=295,0
+        n,馬
+grandfather<=53,0
+        n,祖父
+grandmother<=14,0
+        n,祖母
+see<=93,0F
+        v,看見:saw, seen
+teacher<=72,0
+        n,老師
+clothes<=549,0
+        n,衣服
+read<=586,0F
+        v,讀:read, read
+eraser<=4,0
+        n,膠擦
+use<=660,0
+        v,使用
+go<=769,0F
+        v,去:went, gone
+wet<=9,0
+        adj,濕的
+fresh<=1,0
+        adj,新鮮的
+ride<=11,0F-1
+        v,騎:rode, ridden
+        n,車程
+buy<=968,0F
+        v,買:bought, bought
+student<=41,0
+        n,學生
+wear<=386,0F
+        v,穿著:wore, worn
+behind<=37,0
+        prep,在...背後
+every day<=1235,0
+        adv phr,每日
+station<=42,0
+        n,車站
+tree<=451,0
+        n,樹
+sit<=65,0F
+        v,坐:sat, sat
+clean<=508,0-1
+        v,清潔
+        adj,清潔的
+clear<=12,0
+        adj,清楚的
+sky<=274,0
+        n,天空
+third<=6,0
+        ord,第三
+itself<=564,0
+        pron,它／牠自己
+lake<=288,0
+        n,湖
+idea<=291,0
+        n,想法
+thirteen<=7,0
+        num,十三
+class=>149
+	n,課、班
+fish<=486,0F
+        n,魚:fish

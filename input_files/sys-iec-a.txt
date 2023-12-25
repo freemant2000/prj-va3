@@ -1,3 +1,4 @@
+
 about
 	prep,關於
 accept
@@ -25,8 +26,6 @@ afraid of
 	adj phr,害怕某物
 afternoon
 	n,下午
-ago
-	adv,在（多久）之前
 agree
 	v,同意
 agree with
@@ -107,8 +106,6 @@ away
 	adv,離去
 axe
 	n,斧頭
-baby
-	n,嬰兒
 back
 	adv,返
 bad
@@ -146,8 +143,6 @@ beef
 	n,牛肉
 begin, began, begun
 	v,開始
-behind
-	prep,在...背後
 Beijing
 	n,北京
 below
@@ -251,8 +246,6 @@ busy
 	adj,忙的
 but
 	conj,但是
-buy, bought, bought
-	v,買
 cake
 	n,蛋糕
 calculate
@@ -294,8 +287,6 @@ change
   n,改變
 chart
 	n,圖表
-cheap
-	adj,便宜的
 check
 	v,檢查
 cheer
@@ -367,17 +358,10 @@ circle
 	n,圓
 city
 	n,城市
-class
-	n,課、班
 classmate
 	n,同學
 classroom
 	n,課室
-clean
-	v,清潔
-  adj,清潔的
-clear
-	adj,清楚的、清的
 clever
 	adj,聰明的
 climb
@@ -387,8 +371,6 @@ close
   adj,接近的
 closer
 	adj,更接近的
-clothes
-	n,衣服
 cloud
 	n,雲
 cloudy
@@ -568,8 +550,6 @@ draw, drew, drawn
 	v,畫
 dress
 	n,裙子（全身）
-drink, drank, drunk
-	v,喝
 drive, drove, driven
 	v,駕駛
 driver
@@ -587,8 +567,6 @@ east
 	n,東方
 easy
 	adj,容易的
-eat, ate, eaten
-	v,吃
 economy
 	n,經濟
 education
@@ -630,24 +608,18 @@ envy
 equal
 	v,等於
   adj,相等的
-eraser
-	n,擦膠
 essay
 	n,文章
 evening
 	n,傍晚
 every
 	det,每
-every day
-	n phr,每日
 everything
 	pron,所有東西
 evil
 	adj,邪惡的
 exam
 	n,考試
-excellent
-	adj,優秀的、極好的
 excited
 	adj,興奮的
 exciting
@@ -727,8 +699,6 @@ fire
   v,開除
 first
 	ord,第一
-fish, fish
-	n,魚
 fisherman
 	n,漁夫
 five
@@ -769,8 +739,6 @@ French
 	n,法文
   adj,法國的
   n,法國人（整體）
-fresh
-	adj,新鮮的
 friend
 	n,朋友
 friendship
@@ -813,17 +781,11 @@ go out
 	v phr,出去
 government
 	n,政府
-go, went, gone
-	v,去
 grade
 	n,成績
   n,年級、等級
 gram
 	n,克
-grandfather
-	n,祖父
-grandmother
-	n,祖母
 great
 	adj,大的
 green
@@ -860,8 +822,6 @@ hard
   adv,努力地
 hat
 	n,帽
-hate
-	v,討厭
 have a party
 	v phr,開派對
 have, had, had
@@ -906,8 +866,6 @@ hook
 hope
 	v,希望
   n,希望
-horse
-	n,馬
 hospital
 	n,醫院
 hot
@@ -931,8 +889,6 @@ ice
 	n,冰
 ice-cream
 	n,雪糕
-idea
-	n,想法
 identity
 	n,身份
 illness
@@ -983,8 +939,6 @@ island
 	n,島
 its
 	det,它的／牠的
-itself
-	pron,它／牠自己
 January
 	n,一月
 Japan
@@ -1032,8 +986,6 @@ lack
   n,缺乏
 Lady
 	n,夫人、女士
-lake
-	n,湖
 lamp
 	n,燈（包燈罩和橙座等）
 land
@@ -1193,8 +1145,6 @@ million
 	num,百萬
 mind
 	n,思想
-minute
-	n,分鐘
 missing
 	adj,失踪的、不見了的
 mistake
@@ -1272,8 +1222,6 @@ north
 	n,北方
 nose
 	n,鼻子
-notebook
-	n,筆記本
 nothing
 	pron,沒有東西
 notice
@@ -1297,8 +1245,6 @@ o'clock
 	n,點鐘
 office
 	n,辦公室
-often
-	adv,經常
 old
 	adj,老的
   adj,舊的
@@ -1398,10 +1344,6 @@ planet
 	n,行星
 plant
 	n,植物
-play
-	v,玩
-  v,彈奏（音樂等）
-  v,扮演
 player
 	n,員球、玩家
 playground
@@ -1500,8 +1442,6 @@ rainy
 	adj,下雨的、多雨的
 reach
 	v,到達（努力後）
-read, read, read
-	v,閱讀
 ready
 	adj,準備好的
 real
@@ -1539,8 +1479,6 @@ rice
 	n,米、飯
 rich
 	adj,富有的
-ride, rode, ridden
-	v,騎
 right
   n,右邊
 	adj,右邊的
@@ -1610,9 +1548,6 @@ secret
   adj,秘密的
 seem
 	v,似乎、看起來
-see, saw, seen
-	v,看到
-  v,觀看（戲院等）: saw, seen
 seldom
 	adj,很少（做某事）
 sell, sold, sold
@@ -1668,8 +1603,6 @@ sing, sang, sung
 	v,唱
 sister
 	n,姐妹
-sit, sat, sat
-	v,坐
 six
 	num,六
 sixth
@@ -1680,8 +1613,6 @@ skin
 	n,皮膚
 skirt
 	n,半身裙
-sky
-	n,天空
 sleep, slept, slept
 	v,睡
 slow
@@ -1712,8 +1643,6 @@ solve
 	v,解決
 some
 	det,一些
-sometimes
-	adv,有時
 son
 	n,兒子
 soon
@@ -1744,8 +1673,6 @@ star
 	v,星星
 start
 	v,開始
-station
-	n,車站
 stay
 	v,停留
 steak
@@ -1772,8 +1699,6 @@ street
 strong
 	adj,強壯的
   adj,堅固的
-student
-	n,學生
 study
 	v,學習（做練習）
   v,研究
@@ -1835,8 +1760,6 @@ taxi
 	n,的士
 tea
 	n,茶
-teacher
-	n,老師
 teach, taught, taught
 	v,教
 tear
@@ -1879,10 +1802,6 @@ thing
 think, thought, thought
 	v,想、思考
   v,認為:thought, thought
-third
-	ord,第三
-thirteen
-	num,十三
 thirty
 	num,三十
 this morning
@@ -1932,8 +1851,6 @@ training
 	n,培訓（名）
 travel
 	v,旅行
-tree
-	n,樹
 trip
 	n,旅行（享受）
 truck
@@ -1972,8 +1889,6 @@ unknown
 	adj,未知的、不被認識的
 US
 	n,美國
-use
-	v,使用
 useful
 	adj,有用的
 usually
@@ -2025,8 +1940,6 @@ wave
 	n,波浪
 weak
 	adj,弱的
-wear, wore, worn
-	v,穿著
 weather
 	n,天氣
 wedding
@@ -2039,8 +1952,6 @@ well
 	adv,好好地
 west
 	n,西方
-wet
-	adj,濕的
 what
 	pron,甚麼
 when
