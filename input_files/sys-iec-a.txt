@@ -1,6 +1,5 @@
 
 
-
 about
 	prep,關於
 accept
@@ -165,8 +164,6 @@ bottle
 	n,瓶
 bowl
 	n,碗
-box
-	n,盒
 brave
 	adj,勇敢的
 breakfast
@@ -218,8 +215,6 @@ carrot
 	n,蘿蔔
 carry
 	v,㩦帶
-catch, caught, caught
-	v,抓住
 celebrate
 	v,慶祝
 century
@@ -280,8 +275,6 @@ coffee shop
 	n,咖啡室
 Coke
 	n,可樂
-cold
-	adj,冷的
 collapse
 	v,倒塌
 collect
@@ -446,8 +439,6 @@ eight
 	num,八
 eighties
 	num,八十至九十歲
-eighty
-	num,八十
 electric
 	adj,電動的
 e-mail
@@ -486,8 +477,6 @@ exciting
 	adj,令人興奮的
 exist
 	v,存在
-expensive
-	adj,昂貴的
 experience
 	n,經驗
 express
@@ -679,8 +668,6 @@ hill
 	n,小山
 hole
 	n,洞
-homework
-	n,家課
 Hong Kong
 	n,香港
 hook
@@ -812,8 +799,6 @@ leg
 	n,腿
 letter
 	n,信
-library
-	n,圖書館
 life, lives
   n,生命
   n,生活:lives
@@ -1056,8 +1041,6 @@ patient
   adj,有耐性的
 pen
 	n,筆
-person, people
-	n,人
 perform
 	v,表演
 pet
@@ -1171,8 +1154,6 @@ rain
   v,下雨
 rainbow
 	n,彩虹
-rainy
-	adj,下雨的、多雨的
 reach
 	v,到達（努力後）
 ready
@@ -1207,8 +1188,6 @@ restaurant
 	n,餐廳
 rice
 	n,米、飯
-rich
-	adj,富有的
 right
   n,右邊
 	adj,右邊的
@@ -1298,8 +1277,6 @@ shoe
 	n,鞋
 shop
 	n,商店
-short
-	adj,矮的、短的
 show, showed, shown
 	v,展示
 sick
@@ -1324,8 +1301,6 @@ skin
 	n,皮膚
 skirt
 	n,半身裙
-sleep, slept, slept
-	v,睡
 slow
 	adj,慢的
 small
@@ -1334,9 +1309,6 @@ smart
 	adj,醒目
 smell, smelt, smelt
 	v,聞到
-smile
-	v,微笑
-  n,微笑
 snake
 	n,蛇
 so	因此
@@ -1390,8 +1362,6 @@ still
 	adv,依然
 stomach
 	n,胃
-stop
-	v,停止
 store
 	v,儲存
   n,士多
@@ -1412,8 +1382,6 @@ successfully
 	adv,成功地
 suddenly
 	adv,突然
-sun
-	n,太陽
 sunny
 	adj,多陽光的
 suppress
@@ -1432,11 +1400,6 @@ take care of
 	v phr,照顧（片）
 take out
 	v phr,拿出
-take, took, taken
-	v,拿
-  v,服用
-  v,採用
-  v,上（課）
 talk
 	n,演說（名）、講座
   v,說話
@@ -1448,8 +1411,6 @@ taste
 	v,品嚐
   v,嘗起來
   n,味道
-taxi
-	n,的士
 tea
 	n,茶
 teach, taught, taught
@@ -1531,16 +1492,10 @@ turn
 	v,轉
 TV
 	n,電視
-twelve
-	num,十二
 twice
 	adv,兩次
 typhoon
 	n,颱風
-uncle
-	n,叔叔
-under
-	prep,在...底下
 understand, understood, understood
 	v,明白
 unhappiness
@@ -1557,8 +1512,6 @@ vacancy
 	n,空缺
 vacation
 	n,渡假
-vegetable
-	n,蔬菜
 video
 	n,短片
 village

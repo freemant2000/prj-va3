@@ -1,0 +1,48 @@
+[英文整合班高小10]
+under<=277,0
+        prep,在...底下
+smile<=413,0-1
+        v,微笑
+        n,微笑
+sleep<=116,0F
+        v,睡:slept, slept
+uncle<=226,0
+        n,叔叔
+box<=111,0
+        n,盒、箱
+homework<=113,0
+        n,家課
+catch<=308,0F
+        v,捉住:caught, caught
+take=>70
+        v,拿走:took, taken
+        v,服（藥）:took, taken
+  v,採用:took, taken
+  v,上（課）:took, taken
+library<=694,0
+        n,圖書館
+taxi<=200,0
+        n,的士
+expensive<=112,0
+        adj,昂貴的
+twelve<=115,0
+        num,十二
+eighty<=110,0
+        num,八十
+stop<=696,0
+        v,停止
+cold<=458,0
+        adj,冷的
+vegetable<=307,0
+        n,蔬菜
+short<=193,0-1
+        adj,短的
+        adj,矮的
+person<=557,0F
+        n,人:people
+sun<=698,0
+        n,太陽
+rainy<=118,0
+        adj,下雨的
+rich<=120,0
+        adj,富有的
