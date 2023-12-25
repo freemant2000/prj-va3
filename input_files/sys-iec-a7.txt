@@ -1,0 +1,23 @@
+[英文整合班高小7]
+cheque
+	n,支票
+fruit<=531,0
+        n,生果
+cake<=553,0
+        n,蛋糕
+bird<=511,0
+        n,小鳥
+open<=575,0-1
+        v,打開
+        adj,開啟的
+door<=325,0
+        n,門
+hit<=905,0-1
+        v,打（一下）
+        v,擊中
+March<=188,0
+        n,三月
+book<=28,0
+        n,書
+credit card
+	n phr,信用卡

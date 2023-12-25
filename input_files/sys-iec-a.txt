@@ -1,5 +1,6 @@
 
 
+
 about
 	prep,關於
 accept
@@ -140,8 +141,6 @@ bill
 	n,賬單
 biology
 	n,生物
-bird
-	n,鳥
 birthday
 	n,生日
 bite, bit, bitten
@@ -166,8 +165,6 @@ bomb
 	n,炸彈
 bone
 	n,骨
-book
-	n,書
 bookshop
 	n,書店
 bored
@@ -213,8 +210,6 @@ busy
 	adj,忙的
 but
 	conj,但是
-cake
-	n,蛋糕
 calculate
 	v,計算
 call
@@ -260,8 +255,6 @@ cheese
 	n,芝士
 chemistry
 	n,化學
-cheque
-	n,支票
 chicken
 	n,小雞、雞肉
 China
@@ -354,8 +347,6 @@ court
   n,法庭
 cousin
 	n,表兄弟
-credit card
-	n phr,信用卡
 criticise
 	v,批評
 crocodile
@@ -445,8 +436,6 @@ donate
 	v,捐
 don't have to
   m phr,不必
-door
-	n,門
 doubt
 	v,懷疑
   n,懷疑
@@ -619,8 +608,6 @@ friend
 	n,朋友
 friendship
 	n,友誼
-fruit
-	n,水果
 fry
 	v,煎
 game
@@ -712,8 +699,6 @@ high
 	adj,高的
 hill
 	n,小山
-hit, hit, hit
-	v,打、擊中
 hole
 	n,洞
 homework
@@ -925,8 +910,6 @@ many
 	det,很多（可數）
 map
 	n,地圖
-March
-	n,三月
 mark
 	v,做上記號
   v,打分
@@ -1065,8 +1048,6 @@ old
 online
 	adj,網上的
   adv,在網上
-open
-	v,打開
 open up
 	v phr,開放
 opportunity
