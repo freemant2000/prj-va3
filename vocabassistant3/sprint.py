@@ -166,6 +166,7 @@ def select_words_make_draft(sp: Sprint, indice: Sequence[int]):
 
 
 def add_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft)->Exercise:
+    refine_exec_draft(s, sp, ed)
     ed.check_complete()
     exec=Exercise()
     exec.dt=datetime.date.today()
