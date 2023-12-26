@@ -1,7 +1,7 @@
 from datetime import date
 from .console_utils import indent_pr
 from .cmd_handler import CmdHandler, ExitException
-from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec, show_exec_summary
+from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec_summary, show_exec_tui
 from ..practice import Practice
 from ..db_base import open_session
 from ..sprint import Sprint, add_sprint, get_revision_dates, get_sprint
@@ -33,6 +33,7 @@ def sprint_main_tui():
           "sum": ("Show a summary of the sprint", show_sprint_summary_tui),
           "re": ("Refine an exercise draft for the sprint", lambda: refine_exec_draft_tui(sp_id)),
           "ae": ("Add an exercise to the sprint", lambda: add_exec_draft_tui(sp_id)),
+          "se": ("Show an exercise in the sprint", lambda: show_exec_tui(sp_id)),
           "de": ("Delete an exercise from the sprint", del_exec_tui),          
           "del": ("Delete this sprint", del_sprint_tui),
           "mw": ("Mark the words in the sprint", mark_words_tui)}

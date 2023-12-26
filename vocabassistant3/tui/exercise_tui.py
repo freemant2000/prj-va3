@@ -1,11 +1,7 @@
 from .console_utils import get_lines_until_empty
 from .sentence_tui import show_snt_draft
-from ..sentence import get_snt, get_snts_from_keywords, refine_snt_draft
-from ..word_def import WordUsage
 from ..db_base import open_session
 from ..sprint import Exercise, ExerciseDraft, Sprint, add_exec_draft, get_exec, get_sprint, parse_exec_draft, refine_exec_draft
-from sqlalchemy.orm import Session
-
 
 def input_exec_draft()->ExerciseDraft:
     print("Paste a new exercise: words, ====, then sentences")
@@ -27,6 +23,20 @@ def add_exec_draft_tui(sp_id):
         add_exec_draft(s, sp, ed)
         s.commit()
         print("OK")
+
+def show_exec_tui(sp_id: int):
+    e_idx=int(input("Input the index (0 or 1, etc.) of the exercise: "))
+    with open_session() as s:
+        sp=get_sprint(s, sp_id)
+        if 0<=e_idx<len(sp.execs):
+            exec=sp.execs[e_idx]
+            for ew in exec.ews:
+                print(f"{ew.wd.word.ljust(20)}{ew.wd.get_meanings()}")
+            print("==========")
+            for snt in exec.snts:
+                print(snt.text)
+        else:
+            raise ValueError(f"Invalid index {e_idx}")
 
 def show_exec_html():
     e_id=str(input("Enter exercise ID: "))
