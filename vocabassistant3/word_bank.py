@@ -1,8 +1,7 @@
 from dataclasses import dataclass, field
-from operator import or_
 import re
 from typing import Dict, Sequence, List, Tuple
-from sqlalchemy import select, ForeignKey, Sequence as Seq
+from sqlalchemy import or_, select, ForeignKey, Sequence as Seq
 from sqlalchemy.orm import Session, Mapped, mapped_column, relationship, joinedload
 from sqlalchemy.types import String, Integer
 from .db_base import Base
@@ -118,10 +117,20 @@ def refine_wb_draft(s: Session, wbd: WordBankDraft):
     elif wd in wbd.word_updates: # update existing WordDef
         wd2=get_word_def_by_id(s, wbd.word_updates[wd])
         wbd.upd_targets[wd]=wd2
-    else: # new WordDef or undecided
+    else: # new WordDef, implicit usage or undecided
         wds=get_word_def(s, wd.word)
         if wds:
-            wbd.cands[wd]=wds
+            if len(wds)==1:  # usually should be only one match
+                wd2=wds[0]
+                m_indice=wd2.infer_m_indice(wd)
+                if m_indice:
+                    wbd.word_usages[wd]=WordUsage(wd2, m_indice)
+                else:
+                    wbd.mismatches[wd]=wd2
+            else:
+                wbd.cands[wd]=wds
+        else:
+            pass #new or error
 
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
     wbd.check_complete()

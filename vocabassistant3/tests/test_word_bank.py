@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_bank import BankWord, WordBankDraft, find_word_banks, load_wb_draft, get_word_bank, add_wb_draft, parse_full_word
+from vocabassistant3.word_bank import BankWord, WordBankDraft, find_word_banks, load_wb_draft, get_word_bank, add_wb_draft, parse_full_word, refine_wb_draft
 from vocabassistant3.word_def import WordDef, WordMeaning, WordUsage, get_word_def_by_id
 
 class TestWordBank(TestCase):
@@ -83,6 +83,16 @@ class TestWordBank(TestCase):
             self.fail()
         except ValueError:
             pass
+    def test_refine_wb_draft_infer(self):
+        wbd=WordBankDraft(name="my wb1")
+        wd=WordDef(word="trunk")
+        wd.add_meaning("n", "象鼻")
+        wbd.wds.append(wd)
+        refine_wb_draft(self.s, wbd)
+        self.assertEquals(len(wbd.word_usages), 1)
+        wu=wbd.word_usages[wd]
+        self.assertEquals(wu.wd.id, 4)
+        self.assertEquals(wu.m_indice, "1")
     def test_add_draft(self):
         self.s.begin()
         wbd=WordBankDraft(name="my wb1")

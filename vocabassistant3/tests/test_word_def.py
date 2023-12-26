@@ -65,7 +65,6 @@ class TestWordDef(TestCase):
         wd.add_meaning("v", "掛", ["hung", "hung"])
         wd.add_meaning("v", "吊死", ["hanged", "hanged"])
         self.assertEquals(wd.get_full_word([0, 1]), "hang; 0:hung,hung; 1:hanged,hanged")
-  
     def test_selected_meanings(self):
         wd=WordDef(id=100, word="cry")
         wd.add_meaning("n", "大叫")
@@ -93,7 +92,6 @@ class TestWordDef(TestCase):
         wd2.add_meaning("n", "大叫")
         wd2.add_meaning("v", "哭")
         self.assertFalse(wd.is_usage(wd2, "1,2"))
-
     def test_is_usage_forms(self):
         wd=WordDef(id=100, word="go")
         wd.add_meaning("v", "去", ["went", "gone"])
@@ -101,7 +99,22 @@ class TestWordDef(TestCase):
         wd2.add_meaning("v", "去")
         self.assertTrue(wd.is_usage(wd2, "0"))
         self.assertTrue(wd.is_usage(wd2, "0F"))
-
+    def test_infer_m_indice(self):
+        wd=WordDef(id=100, word="cry")
+        wd.add_meaning("n", "大叫")
+        wd.add_meaning("v", "大叫")
+        wd.add_meaning("v", "哭")
+        wd2=WordDef(word="cry")
+        wd2.add_meaning("v", "哭")
+        wd2.add_meaning("v", "大叫")
+        self.assertEquals(wd.infer_m_indice(wd2), "1,2")
+    def test_infer_m_indice_forms(self):
+        wd=WordDef(id=100, word="fly")
+        wd.add_meaning("v", "飛", ["flew", "flown"])
+        wd.add_meaning("n", "蒼蠅")
+        wd2=WordDef(word="fly")
+        wd2.add_meaning("v", "飛", ["flew", "flown"])
+        self.assertEquals(wd.infer_m_indice(wd2), "0F")
     def test_add_word_def(self):
         self.s.begin()
         wd=WordDef(word="hand")

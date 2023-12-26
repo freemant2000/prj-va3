@@ -73,7 +73,19 @@ class WordDef(Base):
             else:
                 return False
         return True
-
+    def infer_m_indice(self, wd: "WordDef")->str:
+        if wd.word != self.word:
+            return None
+        m_indice=[]
+        for wm in wd.meanings:
+            m_idx=next((idx for idx, wm2 in enumerate(self.meanings) if wm2.is_same_cnt(wm)), -1)
+            if m_idx>=0:
+                m_indice.append(str(m_idx)+("F" if wm.has_forms() else ""))
+            else:
+                return None
+        m_indice=sorted(m_indice)
+        return ",".join(m_indice)
+    
 @dataclass
 class WordUsage:
     wd: WordDef
@@ -120,6 +132,8 @@ class WordMeaning(Base):
         return forms
     def get_display(self)->str:
         return f"{self.p_of_s},{self.meaning}"
+    def is_same_cnt(self, wm: "WordMeaning")->bool:
+        return self.p_of_s==wm.p_of_s and self.meaning==wm.meaning and self.get_forms()==wm.get_forms() 
 
 def get_word_meaning(s: Session, wd_id: int, idx: int)->WordMeaning:
     q=select(WordMeaning).where(WordMeaning.wd_id==wd_id, WordMeaning.idx==idx)\
@@ -157,13 +171,13 @@ def del_word_def(s: Session, wd_id: int)->None:
   wd=r.unique().first()
   s.delete(wd)
 
-def get_similar_words(s: Session, pref: str, limit:int=5)->Sequence[WordDef]:
+def get_similar_words(s: Session, pref: str, limit:int=5)->List[WordDef]:
   return get_words_by_pattern(s, pref+"%", limit)
 
-def get_word_def(s: Session, word: str, limit:int=5)->Sequence[WordDef]:
+def get_word_def(s: Session, word: str, limit:int=5)->List[WordDef]:
   return get_words_by_pattern(s, word, limit)
 
-def get_words_by_pattern(s: Session, pattern: str, limit:int=5)->Sequence[WordDef]:
+def get_words_by_pattern(s: Session, pattern: str, limit:int=5)->List[WordDef]:
   q=select(WordDef).where(WordDef.word.like(pattern)).options(joinedload(WordDef.meanings)) \
       .order_by(WordDef.id.asc())
   r=s.scalars(q)
