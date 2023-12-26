@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_def import get_word_defs, get_similar_words, WordDef, get_word_meaning, get_word_meanings
+from vocabassistant3.word_def import get_word_defs, get_similar_words, WordDef, get_word_meaning, get_word_meanings, load_wd_draft, parse_wd_draft
 
 class TestWordDef(TestCase):
     def setUp(self) -> None:
@@ -115,6 +115,19 @@ class TestWordDef(TestCase):
         wd2=WordDef(word="fly")
         wd2.add_meaning("v", "飛", ["flew", "flown"])
         self.assertEquals(wd.infer_m_indice(wd2), "0F")
+    def test_load_wd_draft(self):
+        wdd=load_wd_draft("vocabassistant3/tests/test_wd_draft2.txt")
+        self.assertEquals(wdd.wd.word, "rock")
+        self.assertEquals(len(wdd.wd.meanings), 2)
+        self.assertEquals(wdd.wd.meanings[0].meaning, "岩石")
+        self.assertEquals(wdd.wd.meanings[1].meaning, "搖動")
+    def test_load_wd_draft_forms(self):
+        wdd=load_wd_draft("vocabassistant3/tests/test_wd_draft5.txt")
+        self.assertEquals(wdd.wd.word, "fly")
+        self.assertEquals(len(wdd.wd.meanings), 2)
+        self.assertEquals(wdd.wd.meanings[0].meaning, "飛")
+        self.assertEquals(wdd.wd.meanings[0].get_forms(), ["flew", "flown"])
+        self.assertEquals(wdd.wd.meanings[1].meaning, "蒼蠅")
     def test_add_word_def(self):
         self.s.begin()
         wd=WordDef(word="hand")

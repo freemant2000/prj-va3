@@ -4,7 +4,7 @@ from operator import and_
 from sqlalchemy import ForeignKey, Sequence as Seq, select, or_
 from sqlalchemy.orm import Session, joinedload, Mapped, mapped_column, relationship
 from sqlalchemy.types import String, Integer
-from typing import Sequence, List
+from typing import Sequence, List, Tuple
 from .db_base import Base
 
 class WordDef(Base):
@@ -134,6 +134,76 @@ class WordMeaning(Base):
         return f"{self.p_of_s},{self.meaning}"
     def is_same_cnt(self, wm: "WordMeaning")->bool:
         return self.p_of_s==wm.p_of_s and self.meaning==wm.meaning and self.get_forms()==wm.get_forms() 
+
+class WordDefDraft:
+    wd: WordDef
+    target: WordDef
+    cands: List[WordDef]
+
+def refine_wd_draft(s: Session, wdd: WordDefDraft):
+    wds=get_word_def(s, wdd.wd.word)
+    wdd.cands=[]
+    wdd.target=None
+    wdd.is_extends=False
+    wdd.is_set_meaning_text=False
+    if len(wds):
+        if len(wds)==1:
+            wdd.target=wds[0]
+            wdd.is_extends=wdd.wd.extends(wdd.target)
+            wdd.is_set_meaning_text=wdd.wd.diff_meaning_text(wdd.target)
+        else:
+            wdd.cands=wds
+    else:
+        wdd.target=None
+
+def parse_full_word(fw: str)->Tuple[str, List[str]]:
+    ps=fw.split(",")
+    ps=[p.strip() for p in ps]
+    word=ps.pop(0)
+    return (word, ps)
+
+def load_wd_draft(path: str)->WordDefDraft:
+  with open(path) as f:
+    lines=f.readlines()
+    wdd=parse_wd_draft(lines)
+    return wdd
+
+def parse_wd_draft(lines: List[str])->WordDefDraft:    
+    wdd=WordDefDraft()
+    word_str=lines.pop(0).strip()
+    word, forms=parse_full_word(word_str)
+    wd=WordDef(id=None, word=word)
+    wdd.wd=wd
+    wmp=WordMeaningsParser(wd, forms)
+    for line in lines:
+        wmp.parse_line(line)
+    return wdd
+
+class WordMeaningsParser:
+    def __init__(self, wd: WordDef, forms: List[str]) -> None:
+        self.wd=wd
+        self.forms=forms
+    def parse_line(self, line: str):
+        if line.startswith(" ") or line.startswith("\t"): # a meaning
+            line=line.strip()
+            if line:
+                ps=line.split(":")
+                if len(ps)==2:
+                    if self.forms:
+                        raise ValueError(f"Forms provided along with the word, but are specified again in {line}")
+                    self.forms=[f.strip() for f in ps[1].split(",")]
+                elif len(ps)==1:
+                    pass #apply the forms following the word (if any)
+                else:
+                    raise ValueError(f"Too many colons in {line}")
+                try:
+                    p_of_s, m=ps[0].split(",")
+                    self.wd.add_meaning(p_of_s, m, self.forms)
+                    self.forms=[]  
+                except:
+                    raise ValueError(f"comma missing in {ps[0]}")
+        else:
+            raise ValueError(f"Indentation expected in {line}")
 
 def get_word_meaning(s: Session, wd_id: int, idx: int)->WordMeaning:
     q=select(WordMeaning).where(WordMeaning.wd_id==wd_id, WordMeaning.idx==idx)\

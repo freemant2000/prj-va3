@@ -5,7 +5,7 @@ from sqlalchemy import or_, select, ForeignKey, Sequence as Seq
 from sqlalchemy.orm import Session, Mapped, mapped_column, relationship, joinedload
 from sqlalchemy.types import String, Integer
 from .db_base import Base
-from .word_def import get_word_def, WordDef, get_word_def_by_id, WordUsage
+from .word_def import WordMeaningsParser, get_word_def, WordDef, get_word_def_by_id, WordUsage, parse_full_word
 
 class BankWord(Base):
     __tablename__="bank_word"
@@ -159,7 +159,7 @@ def load_wb_draft(path: str)->WordBankDraft:
     wbd=parse_wb_draft(lines)
     return wbd
     
-def parse_wb_draft(lines: Sequence[str])->WordBankDraft:    
+def parse_wb_draft(lines: List[str])->WordBankDraft:    
     wbd=WordBankDraft()
     wbd.wds=[]
     head=lines.pop(0)
@@ -169,23 +169,7 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
     wbd.name=m.group(1)
     for line in lines:
       if line.startswith(" ") or line.startswith("\t"): # a meaning
-            line=line.strip()
-            if line:
-                ps=line.split(":")
-                if len(ps)==2:
-                    if forms:
-                        raise ValueError(f"Forms provided along with the word, but are specified again in {line}")
-                    forms=[f.strip() for f in ps[1].split(",")]
-                elif len(ps)==1:
-                    pass #apply the forms following the word (if any)
-                else:
-                    raise ValueError(f"Too many colons in {line}")
-                try:
-                    p_of_s, m=ps[0].split(",")
-                    wbd.wds[-1].add_meaning(p_of_s, m, forms)
-                    forms=[]  
-                except:
-                    raise ValueError(f"comma missing in {ps[0]}")
+            wmp.parse_line(line)
       else: #start a new word
         line=line.strip()
         if line:
@@ -202,6 +186,7 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
             word, forms=parse_full_word(word_str)
             wd=WordDef(id=None, word=word)
             wbd.wds.append(wd)
+            wmp=WordMeaningsParser(wd, forms)
             if usage_str:
                 wd_id, m_indice=usage_str.split(",")
                 m_indice=m_indice.replace("-", ",")
@@ -213,8 +198,3 @@ def parse_wb_draft(lines: Sequence[str])->WordBankDraft:
                 wd.id=wd_id
     return wbd
 
-def parse_full_word(fw: str)->Tuple[str, List[str]]:
-    ps=fw.split(",")
-    ps=[p.strip() for p in ps]
-    word=ps.pop(0)
-    return (word, ps)

@@ -1,0 +1,3 @@
+fly, flew, flown
+  v,飛
+  n,蒼蠅
