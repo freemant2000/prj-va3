@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from enum import Enum
 from itertools import groupby
 from operator import and_
 from sqlalchemy import ForeignKey, Sequence as Seq, select, or_
@@ -172,6 +173,11 @@ class WordDefDraft:
     is_extends: bool=False
     is_diff_meaning_text: bool=False
 
+class UpdateType(Enum):
+    EXTENDS="E"
+    SET_MEANING="M"
+    DRASTIC="D"
+
 def refine_wd_draft(s: Session, wdd: WordDefDraft):
     wds=get_word_def(s, wdd.wd.word)
     wdd.cands=[]
@@ -212,6 +218,23 @@ def parse_wd_draft(lines: List[str])->WordDefDraft:
     for line in lines:
         wmp.parse_line(line)
     return wdd
+
+def save_wd_draft(s: Session, wdd: WordDefDraft, upd_type: UpdateType):
+    refine_wd_draft(s, wdd)
+    if not wdd.target:
+        raise ValueError("No target identified in the word def draft")
+    if upd_type==UpdateType.EXTENDS:
+        if wdd.is_extends:
+            raise ValueError("The word def draft is not extending an old word def")
+    elif upd_type==UpdateType.SET_MEANING:
+        if wdd.is_diff_meaning_text:
+            raise ValueError("The word def draft is not updating a meaning in an old word def")
+    elif upd_type==UpdateType.DRASTIC:
+        pass
+    else:
+        raise ValueError(f"Unknown update type: {upd_type}")
+    wdd.wd.id=wdd.target.id
+    s.merge(wdd.wd)
 
 class WordMeaningsParser:
     def __init__(self, wd: WordDef, forms: List[str]) -> None:

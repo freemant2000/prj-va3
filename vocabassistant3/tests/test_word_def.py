@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_def import WordDefDraft, get_word_defs, get_similar_words, WordDef, get_word_meaning, get_word_meanings, load_wd_draft, parse_wd_draft, refine_wd_draft
+from vocabassistant3.word_def import UpdateType, WordDefDraft, get_word_def_by_id, get_word_defs, get_similar_words, WordDef, get_word_meaning, get_word_meanings, load_wd_draft, parse_wd_draft, refine_wd_draft, save_wd_draft
 
 class TestWordDef(TestCase):
     def setUp(self) -> None:
@@ -131,8 +131,8 @@ class TestWordDef(TestCase):
     def test_refine_wd_draft(self):
         wdd=load_wd_draft("vocabassistant3/tests/test_wd_draft2.txt")
         refine_wd_draft(self.s, wdd)
-        self.assertEquals(wdd.wdd.target.id, 7)
-        self.assertTrue(wdd.wdd.is_extends)
+        self.assertEquals(wdd.target.id, 7)
+        self.assertTrue(wdd.is_extends)
     def test_is_extends(self):
         wd2=WordDef(word="hand")
         wd2.add_meaning("n", "手")
@@ -166,6 +166,19 @@ class TestWordDef(TestCase):
         self.assertTrue("hand" in d)
         self.s.rollback()
         self.reset_word_seq() # seq is done outside transaction
+    def test_save_wd_draft(self):
+        self.s.begin()
+        wd=WordDef(word="squirrel")
+        wd.add_meaning("n", "狗")
+        wd.add_meaning("v", "走")
+        wdd=WordDefDraft(wd=wd)
+        save_wd_draft(self.s, wdd, UpdateType.DRASTIC)
+        self.s.flush()
+        wd2=get_word_def_by_id(self.s, 5)
+        self.assertEquals(wd2.word, "squirrel")
+        self.assertEquals(wd2.meanings[0].meaning, "狗")
+        self.assertEquals(wd2.meanings[1].meaning, "走")
+        self.s.rollback()
     def reset_word_seq(self):
         set_seq_val(self.s, "word_defs")
 
