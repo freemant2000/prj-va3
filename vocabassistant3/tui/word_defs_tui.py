@@ -49,13 +49,15 @@ def show_wd_draft(wdd: WordDefDraft):
         status="extends"
     elif wdd.is_diff_meaning_text:
         status="set meaning"
+    elif wdd.is_same:
+        status="no change"
     else:
         status="drastic change"
-    print(f"{wdd.wd.word} ({status})")
+    print(f"{wdd.wd.word}")
     for wm in wdd.wd.meanings:
         show_meaning(wm)
     if wdd.target:
-        print("Update target")
+        print(f"Update target ({status})")
         show_word_def(wdd.target)
     elif wdd.cands:
         print(f"Possible matches")
@@ -63,7 +65,7 @@ def show_wd_draft(wdd: WordDefDraft):
             show_word_def(wd)
 
 def show_word_def(wd: WordDef):
-    print(f"{wd.word}<={wd.id},{wd.get_all_m_indice().replace(',', '-')}")
+    print(f"{wd.word}@{wd.id}")
     for m in wd.meanings:
         show_meaning(m)
 

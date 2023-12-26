@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from itertools import groupby
 from operator import and_
 from sqlalchemy import ForeignKey, Sequence as Seq, select, or_
@@ -103,7 +103,15 @@ class WordDef(Base):
             if not wm.is_diff_meaning_text(wm2):
                 return False
         return True
-
+    def is_same(self, wd: "WordDef")->bool:
+        if wd.word != self.word:
+            return False
+        if len(self.meanings)!=len(wd.meanings):
+            return False;
+        for wm, wm2 in zip(self.meanings, wd.meanings):
+            if not wm.is_same_cnt(wm2):
+                return False
+        return True
 @dataclass
 class WordUsage:
     wd: WordDef
@@ -155,24 +163,28 @@ class WordMeaning(Base):
     def is_diff_meaning_text(self, wm: "WordMeaning")->bool:
         return self.p_of_s==wm.p_of_s and self.meaning!=wm.meaning and self.get_forms()==wm.get_forms() 
 
+@dataclass
 class WordDefDraft:
-    wd: WordDef
-    target: WordDef
-    cands: List[WordDef]
-    is_extends: bool
-    is_diff_meaning_text: bool
+    wd: WordDef=None
+    target: WordDef=None
+    cands: List[WordDef]=field(default_factory=list)
+    is_same: bool=False
+    is_extends: bool=False
+    is_diff_meaning_text: bool=False
 
 def refine_wd_draft(s: Session, wdd: WordDefDraft):
     wds=get_word_def(s, wdd.wd.word)
     wdd.cands=[]
     wdd.target=None
+    wdd.is_same=False
     wdd.is_extends=False
-    wdd.is_set_meaning_text=False
+    wdd.is_diff_meaning_text=False
     if len(wds):
         if len(wds)==1:
             wdd.target=wds[0]
+            wdd.is_same=wdd.wd.is_same(wdd.target)
             wdd.is_extends=wdd.wd.is_extends(wdd.target)
-            wdd.is_set_meaning_text=wdd.wd.is_diff_meaning_text(wdd.target)
+            wdd.is_diff_meaning_text=wdd.wd.is_diff_meaning_text(wdd.target)
         else:
             wdd.cands=wds
     else:
@@ -271,7 +283,7 @@ def get_word_def(s: Session, word: str, limit:int=5)->List[WordDef]:
 
 def get_words_by_pattern(s: Session, pattern: str, limit:int=5)->List[WordDef]:
   q=select(WordDef).where(WordDef.word.like(pattern)).options(joinedload(WordDef.meanings)) \
-      .order_by(WordDef.id.asc())
+      .order_by(WordDef.id.asc()).limit(limit)
   r=s.scalars(q)
   wds=r.unique().all()
   return wds
