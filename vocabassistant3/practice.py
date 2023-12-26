@@ -37,6 +37,8 @@ class Practice(Base):
         return bws
     def get_no_words(self)->int:
         return self.to_idx-self.fr_idx+1 if not self.hard_only else len(self.hard_w_indice)
+    def get_word_counts(self)->Tuple[int, int]:
+        return (len(self.hard_w_indice), len(self.get_all_bws()))
     def is_hard(self, bw: BankWord)->bool:
         bws=self.get_all_bws()
         return any(bws[ph.w_idx-self.fr_idx].is_same(bw) for ph in self.hard_w_indice)
@@ -78,7 +80,8 @@ class Student(Base):
 
 def get_student(s: Session, stu_id: int)->Student:
     q=select(Student).where(Student.id==stu_id)\
-        .options(joinedload(Student.pracs).joinedload(Practice.wb).joinedload(WordBank.bws))
+        .options(joinedload(Student.pracs).joinedload(Practice.wb).joinedload(WordBank.bws)) \
+        .options(joinedload(Student.pracs).joinedload(Practice.hard_w_indice))
     stu=s.scalars(q).first()
     return stu
 

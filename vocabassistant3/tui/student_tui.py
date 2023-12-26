@@ -16,6 +16,7 @@ def show_student_tui():
     cmds={"show": ("List practices and sprints for the student", show_student),
           "ap": ("Add a practice for the student", add_practice_tui),
           "dp": ("Delete a practice for the student", del_practice_tui),
+          "tp": ("Toggle the hard words only switch of a practice", toggle_hard_practice_tui),
           "asp": ("Add a sprint", lambda: add_sprint_tui(stu_id)),
           "dsp": ("Delete a sprint", del_sprint_tui),
           "sp": ("Work on a sprint", sprint_main_tui)}
@@ -37,7 +38,8 @@ def show_student():
             show_sprint_struct(sp, pr)
 
 def show_practice(p: Practice, pr=print):
-    pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {p.get_no_words()} {p.hard_only} {p.assess_dt}")
+    h_wc, all_wc=p.get_word_counts()
+    pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {h_wc}/{all_wc} {p.hard_only} {p.assess_dt}")
 
 def del_practice_tui():
     p_id=int(input("Input practice ID: "))
@@ -45,6 +47,17 @@ def del_practice_tui():
         prac=get_practice(s, p_id)
         if prac:
             s.delete(prac)
+            s.commit()
+            print("OK")
+        else:
+            print(f"Practice with ID {p_id} not found")
+
+def toggle_hard_practice_tui():
+    p_id=int(input("Input practice ID: "))
+    with open_session() as s:
+        prac=get_practice(s, p_id)
+        if prac:
+            prac.hard_only=not prac.hard_only
             s.commit()
             print("OK")
         else:
@@ -70,5 +83,5 @@ def add_practice_tui():
             s.commit()
             print("OK")
     else:
-        raise ValueError(f"Invalid range {fr_idx}-{to_idx}")
+        raise ValueError(f"Range {fr_idx}-{to_idx} is outside 0-{max_idx}")
 

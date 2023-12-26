@@ -1,0 +1,146 @@
+[working holiday]
+red tape
+	n phr,官僚手續
+give sb an edge
+	v phr,給某人優勢
+bucket list
+	n phr,人生願望清單
+enrol on
+	v phr,報名
+hustle and bustle
+	n phr,熙來攘往
+criss-cross
+	v,綜橫走遍
+brush up
+	v,改善（技能）
+Romania
+	n,羅馬尼亞
+recruitment
+	n,招聘
+agency
+	n,代理
+permanent
+	adj,永久的
+cuisine
+	n,飲食
+perspective
+	n,（看待事物的）角度
+settle in
+	v phr,安定下來
+nursery
+	n,幼稚園（1-2歲）
+colleague
+	n,同事
+European
+	adj,歐洲的
+special
+	adj,特別的
+experience
+	n,經驗
+castle
+	n,城堡
+fiance
+	n,未婚夫
+opportunity
+	n,機緣
+abroad
+	adv,在外國
+requirement
+	n,需求
+valid
+	adj,有效的
+  adj,符合邏輯的
+visa
+	n,簽證
+passport
+	n,護照
+Dracula
+	n,杜拉基拉（吸血鬼）
+involve
+	v,（使）涉及
+suit
+	v,適合
+  n,套裝
+apply for
+	v phr,申請
+eager
+	adj,熱切的
+scheme
+	n,（組識一個系統的）計劃
+certificate
+	n,證書
+account
+	n,賬戶
+accountant
+	n,會計師
+advice
+	n,建議
+finance
+	v,為...提供資金
+getaway
+	n,短期旅行
+retail
+	n,零售
+  adj,零售的
+outlet
+	n,銷售點
+continent
+	n,大陸
+sponsorship
+	n,贊助
+government
+	n,政府
+definitely
+	adj,肯定地
+scoop up
+	v phr,快速地拿走
+seek<=514,0F
+        v,找尋（努力，正式）:sought, sought
+appointment
+	n,預約
+comfort
+	n,舒適
+zone
+	n,區域
+rarely
+	adv,很少（發生）
+document
+	n,文件
+tick
+	v,剔
+	n,剔
+rare
+	adj,罕見的
+application
+	n,申請
+  n,應用
+  n,應用程式
+form
+	n,表格
+flight
+	n,航班
+  n,飛行
+Paris
+	n,巴黎
+fare
+	n,車費
+role=>847
+	n,角色
+  n,作用
+brilliant
+	adj,極好的
+in general
+	adv phr,一般來說
+difficult
+	adj,困難的
+launch
+	v,推出
+  n,推出
+retailer
+	n,零售商
+applicant
+	n,申請者
+fiancee
+	n,未婚妻
+look forward to
+	v phr,盼望
