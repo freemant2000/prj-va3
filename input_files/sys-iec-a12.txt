@@ -1,0 +1,29 @@
+[英文整合班高小12]
+friend
+	n,朋友
+busy
+	adj,忙碌的
+fat
+	adj,肥的
+free=>351
+  adj,空閒的
+	adj,免費的
+  adj,自由的
+ask
+	v,詢問
+send, sent, sent=>510
+	v,發送
+tell, told, told
+	v,告訴
+Saturday
+	n,星期六
+hour
+	n,小時
+bring, brought, brought
+	v,帶來
+bag
+	n,袋
+careful
+	adj,小心的
+green
+	adj,綠色的

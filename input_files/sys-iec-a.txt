@@ -66,8 +66,6 @@ arrive
 	v,到達
 art
 	n,藝術
-ask
-	v,詢問
 assistance
 	n,協助
 at 5pm
@@ -84,8 +82,6 @@ axe
 	n,斧頭
 bad
 	adj,壞的
-bag
-	n,袋
 balloon
 	n,氣球
 band
@@ -165,8 +161,6 @@ breathe
 	v,呼吸
 bridge
 	n,橋
-bring, brought, brought
-	v,帶來
 bring up
 	v phr,提出
 brother
@@ -184,8 +178,6 @@ burn
 	v,燃燒
 burn up
 	v phr,燒毀
-busy
-	adj,忙的
 calculate
 	v,計算
 call
@@ -198,8 +190,6 @@ candy
 captain
 	n,船長
   n,隊長
-careful
-	adj,小心的
 carefully
 	adv,小心地
 carrot
@@ -490,8 +480,6 @@ farming
 fast
 	adj,快的
   adv,快地
-fat
-	adj,肥的
 favourite
 	adj,最喜愛的
   n,最愛的東西
@@ -550,16 +538,10 @@ Form one
 	n phr,中一
 four
 	num,四
-free
-	adj,免費的
-  adj,自由的
-  adj,有空的
 French
 	n,法文
   adj,法國的
   n,法國人（整體）
-friend
-	n,朋友
 friendship
 	n,友誼
 fry
@@ -595,8 +577,6 @@ gram
 	n,克
 great
 	adj,大的
-green
-	adj,綠色的
 ground
 	n,地面
 grow
@@ -658,8 +638,6 @@ hope
   n,希望
 hospital
 	n,醫院
-hour
-	n,小時
 how
 	adv,怎樣
 however
@@ -1194,8 +1172,6 @@ sand
 	n,沙
 sandwich
 	n,三文治
-Saturday
-	n,星期六
 save
   v,救
 	v,儲存
@@ -1219,8 +1195,6 @@ seldom
 	adj,很少（做某事）
 sell, sold, sold
 	v,賣
-send, sent, sent
-	v,發送
 senior high school
 	n phr,高中
 sense
@@ -1379,8 +1353,6 @@ tear
 	n,眼淚
 teenager
 	n,年青人
-tell, told, told
-	v,告訴
 temperature
 	n,溫度
 ten
