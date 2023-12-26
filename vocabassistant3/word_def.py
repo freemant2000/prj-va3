@@ -223,6 +223,8 @@ def save_wd_draft(s: Session, wdd: WordDefDraft, upd_type: UpdateType):
     refine_wd_draft(s, wdd)
     if not wdd.target:
         raise ValueError("No target identified in the word def draft")
+    if not wdd.wd.meanings:
+        raise ValueError("No meaning specified")
     if upd_type==UpdateType.EXTENDS:
         if wdd.is_extends:
             raise ValueError("The word def draft is not extending an old word def")

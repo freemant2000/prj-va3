@@ -1,16 +1,15 @@
 from .cmd_handler import CmdHandler
 from .console_utils import get_lines_until_empty
-from ..word_def import WordDef, WordDefDraft, WordMeaning, get_similar_words, parse_wd_draft, refine_wd_draft
+from ..word_def import UpdateType, WordDef, WordDefDraft, WordMeaning, get_similar_words, parse_wd_draft, refine_wd_draft, save_wd_draft
 from ..db_base import open_session
 
 def word_defs_tui():
     cmds={
       "find": ("Find a word def", search_word_def),
       "refine": ("Refine a word def draft", refine_wd_draft_tui),
-    #   "extend": ("Save a word def draft to extend a word def", save_wd_draft_tui),
-    #   "update": ("Save a word def draft to update a meaning in a word def", save_wd_draft_tui),
-    #   "force-save": ("Save a word def draft to drastically update a word def", save_wd_draft_tui),
-      }
+      "extend": ("Save a word def draft to extend a word def", lambda: save_wd_draft_tui(UpdateType.EXTENDS)),
+      "update": ("Save a word def draft to update a meaning in a word def", lambda: save_wd_draft_tui(UpdateType.SET_MEANING)),
+      "force-save": ("Save a word def draft to drastically update a word def", lambda: save_wd_draft_tui(UpdateType.DRASTIC))}
     ch=CmdHandler("wds>", cmds)
     ch.main_loop()
 
@@ -36,13 +35,13 @@ def input_wd_draft()->WordDefDraft:
     wdd=parse_wd_draft(lines)
     return wdd
 
-# def save_wd_draft_tui():
-#     wbd=input_wd_draft()
-#     with open_session() as s:
-#         s.begin()
-#         add_wd_draft(s, wbd)
-#         s.commit()
-#         print("OK")
+def save_wd_draft_tui(upd_type: UpdateType):
+    wbd=input_wd_draft()
+    with open_session() as s:
+        s.begin()
+        save_wd_draft(s, wbd, upd_type)
+        s.commit()
+        print("OK")
 
 def show_wd_draft(wdd: WordDefDraft):
     if wdd.is_extends:
