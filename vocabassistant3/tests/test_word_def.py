@@ -1,6 +1,6 @@
 from unittest import TestCase
 from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.word_def import get_word_defs, get_similar_words, WordDef, get_word_meaning, get_word_meanings, load_wd_draft, parse_wd_draft
+from vocabassistant3.word_def import WordDefDraft, get_word_defs, get_similar_words, WordDef, get_word_meaning, get_word_meanings, load_wd_draft, parse_wd_draft, refine_wd_draft
 
 class TestWordDef(TestCase):
     def setUp(self) -> None:
@@ -128,6 +128,31 @@ class TestWordDef(TestCase):
         self.assertEquals(wdd.wd.meanings[0].meaning, "飛")
         self.assertEquals(wdd.wd.meanings[0].get_forms(), ["flew", "flown"])
         self.assertEquals(wdd.wd.meanings[1].meaning, "蒼蠅")
+    def test_refine_wd_draft(self):
+        wdd=load_wd_draft("vocabassistant3/tests/test_wd_draft2.txt")
+        refine_wd_draft(self.s, wdd)
+        self.assertEquals(wdd.wdd.target.id, 7)
+        self.assertTrue(wdd.wdd.is_extends)
+    def test_is_extends(self):
+        wd2=WordDef(word="hand")
+        wd2.add_meaning("n", "手")
+        wd2.add_meaning("v", "遞給")
+        wd=WordDef(word="hand")
+        wd.add_meaning("n", "手")
+        self.assertTrue(wd2.is_extends(wd))
+        self.assertFalse(wd.is_extends(wd2))
+        wd2=WordDef(word="hand")
+        wd2.add_meaning("v", "遞給")
+        self.assertFalse(wd2.is_extends(wd))
+    def test_is_diff_meaning(self):
+        wd2=WordDef(word="ear")
+        wd2.add_meaning("n", "耳朶")
+        wd=WordDef(word="ear")
+        wd.add_meaning("n", "耳")
+        self.assertTrue(wd.is_diff_meaning_text(wd2))
+        wd2=WordDef(word="hand")
+        wd2.add_meaning("n", "耳")
+        self.assertFalse(wd.is_diff_meaning_text(wd2))
     def test_add_word_def(self):
         self.s.begin()
         wd=WordDef(word="hand")

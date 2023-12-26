@@ -85,7 +85,25 @@ class WordDef(Base):
                 return None
         m_indice=sorted(m_indice)
         return ",".join(m_indice)
-    
+    def is_extends(self, wd: "WordDef")->bool:
+        if wd.word != self.word:
+            return False
+        if len(self.meanings)<=len(wd.meanings):
+            return False;
+        for m_idx, wm in enumerate(wd.meanings):
+            if not wm.is_same_cnt(self.meanings[m_idx]):
+                return False
+        return True
+    def is_diff_meaning_text(self, wd: "WordDef")->bool:
+        if wd.word != self.word:
+            return False
+        if len(self.meanings)!=len(wd.meanings):
+            return False;
+        for wm, wm2 in zip(self.meanings, wd.meanings):
+            if not wm.is_diff_meaning_text(wm2):
+                return False
+        return True
+
 @dataclass
 class WordUsage:
     wd: WordDef
@@ -134,11 +152,15 @@ class WordMeaning(Base):
         return f"{self.p_of_s},{self.meaning}"
     def is_same_cnt(self, wm: "WordMeaning")->bool:
         return self.p_of_s==wm.p_of_s and self.meaning==wm.meaning and self.get_forms()==wm.get_forms() 
+    def is_diff_meaning_text(self, wm: "WordMeaning")->bool:
+        return self.p_of_s==wm.p_of_s and self.meaning!=wm.meaning and self.get_forms()==wm.get_forms() 
 
 class WordDefDraft:
     wd: WordDef
     target: WordDef
     cands: List[WordDef]
+    is_extends: bool
+    is_diff_meaning_text: bool
 
 def refine_wd_draft(s: Session, wdd: WordDefDraft):
     wds=get_word_def(s, wdd.wd.word)
@@ -149,8 +171,8 @@ def refine_wd_draft(s: Session, wdd: WordDefDraft):
     if len(wds):
         if len(wds)==1:
             wdd.target=wds[0]
-            wdd.is_extends=wdd.wd.extends(wdd.target)
-            wdd.is_set_meaning_text=wdd.wd.diff_meaning_text(wdd.target)
+            wdd.is_extends=wdd.wd.is_extends(wdd.target)
+            wdd.is_set_meaning_text=wdd.wd.is_diff_meaning_text(wdd.target)
         else:
             wdd.cands=wds
     else:

@@ -1,3 +1,4 @@
+from vocabassistant3.tui.word_defs_tui import show_meaning
 from .word_bank_search_tui import search_word_banks
 from .cmd_handler import CmdHandler
 from .console_utils import get_lines_until_empty
@@ -55,7 +56,7 @@ def refine_wb_draft_tui():
         show_wb_draft(wbd)
 
 def input_wb_draft()->WordBankDraft:
-    print("Paste a Word Bank Draft and then press Enter:")
+    print("Paste a word bank draft and then press Enter:")
     lines=get_lines_until_empty()
     wbd=parse_wb_draft(lines)
     return wbd
@@ -102,12 +103,4 @@ def show_word_def(wd: WordDef):
     print(f"{wd.word}<={wd.id},{wd.get_all_m_indice().replace(',', '-')}")
     for m in wd.meanings:
         show_meaning(m)
-
-def show_meaning(m: WordMeaning):
-    forms=m.get_forms()
-    if forms:
-        fs=":"+", ".join(forms)
-    else:
-        fs=""
-    print("\t"+m.get_display()+fs)
 

@@ -1,4 +1,5 @@
 from .cmd_handler import CmdHandler
+from .word_defs_tui import word_defs_tui
 from .sentence_tui import snts_tui
 from .student_tui import show_student_tui
 from .word_bank_tui import word_banks_tui
@@ -17,7 +18,8 @@ def main_tui():
     cmds={"ss": ("Show students", show_students_tui),
         "s": ("Work on a student", show_student_tui),
         "wbs": ("Work on the word banks", word_banks_tui),
-        "snts": ("Work on the sentences", snts_tui)}
+        "snts": ("Work on the sentences", snts_tui),
+        "wds": ("Work on the word defs", word_defs_tui)}
     ch=CmdHandler(">", cmds)
     ch.main_loop()
 
