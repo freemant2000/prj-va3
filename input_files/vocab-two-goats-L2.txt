@@ -34,18 +34,60 @@ throw, threw, thrown
   mountain
   steep
 這條河裡的水在快速地流動。
+	river
+	flow<=1421,0
+	quickly
 一隻松鼠爬上了這條樹幹。
+	squirrel
+	trunk<=1422,0
 一隻松鼠住在這個山谷裡。
+	squirrel
+	valley
 這個山上的岩石很堅硬。
+	rock
+	mountain
+	hard<=92,2
 這個山谷裡的空氣慢慢地流動。
+	air
+	valley
+	flow<=1421,0
 那隻害怕的松鼠去了相反的方向。
+	scared
+	squirrel
+	opposite
+	direction
 那隻松鼠跑上了那個陡峭的山。
+	squirrel
+	steep
+	mountain
 這些松鼠沒有角。
+	squirrel
+	horn<=1428,0
 這兩個大木箱之間有一個空隙。
+	trunk<=1422,2
+	gap
 那條河流向了了相反的方向。
+	river
+	flow<=1421,0
+	opposite
+	direction
 這條路很陡峭（斜）。
+	steep
 一隻松鼠住在那樹幹裡的一個洞裡。
+	squirrel
+	trunk<=1422,0
 那條河流落那座山。
-那把那塊岩石拋向了相反的方向。
+	river
+	flow<=1421,0
+	mountain
+那把那塊岩石被拋向了相反的方向。
+	rock
+	throw
+	opposite
+	direction
 那隻山羊有三隻角。
+	goat
+	horn<=1428,0
 他的成績(grade)同我之間有一定的空隙。
+	gap
+
