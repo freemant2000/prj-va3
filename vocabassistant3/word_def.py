@@ -1,6 +1,5 @@
 from dataclasses import dataclass, field
 from enum import Enum
-from itertools import groupby
 from operator import and_
 from sqlalchemy import ForeignKey, Sequence as Seq, select, or_
 from sqlalchemy.orm import Session, joinedload, Mapped, mapped_column, relationship
@@ -177,6 +176,7 @@ class UpdateType(Enum):
     EXTENDS="E"
     SET_MEANING="M"
     DRASTIC="D"
+    NEW="N"
 
 def refine_wd_draft(s: Session, wdd: WordDefDraft):
     wds=get_word_def(s, wdd.wd.word)
@@ -221,22 +221,29 @@ def parse_wd_draft(lines: List[str])->WordDefDraft:
 
 def save_wd_draft(s: Session, wdd: WordDefDraft, upd_type: UpdateType):
     refine_wd_draft(s, wdd)
-    if not wdd.target:
-        raise ValueError("No target identified in the word def draft")
+    if upd_type==UpdateType.NEW:
+        if wdd.target:
+            raise ValueError("Target identified but trying to add as new")
+    else:
+        if not wdd.target:
+            raise ValueError("No target identified in the word def draft")
     if not wdd.wd.meanings:
         raise ValueError("No meaning specified")
-    if upd_type==UpdateType.EXTENDS:
-        if wdd.is_extends:
-            raise ValueError("The word def draft is not extending an old word def")
-    elif upd_type==UpdateType.SET_MEANING:
-        if wdd.is_diff_meaning_text:
-            raise ValueError("The word def draft is not updating a meaning in an old word def")
-    elif upd_type==UpdateType.DRASTIC:
-        pass
+    if upd_type==UpdateType.NEW:
+        s.add(wdd.wd)
     else:
-        raise ValueError(f"Unknown update type: {upd_type}")
-    wdd.wd.id=wdd.target.id
-    s.merge(wdd.wd)
+        if upd_type==UpdateType.EXTENDS:
+            if wdd.is_extends:
+                raise ValueError("The word def draft is not extending an old word def")
+        elif upd_type==UpdateType.SET_MEANING:
+            if wdd.is_diff_meaning_text:
+                raise ValueError("The word def draft is not updating a meaning in an old word def")
+        elif upd_type==UpdateType.DRASTIC:
+            pass
+        else:
+            raise ValueError(f"Unknown update type: {upd_type}")
+        wdd.wd.id=wdd.target.id
+        s.merge(wdd.wd)
 
 class WordMeaningsParser:
     def __init__(self, wd: WordDef, forms: List[str]) -> None:

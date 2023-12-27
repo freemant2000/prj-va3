@@ -7,6 +7,7 @@ def word_defs_tui():
     cmds={
       "find": ("Find a word def", search_word_def),
       "refine": ("Refine a word def draft", refine_wd_draft_tui),
+      "add": ("Add a word def from a draft", lambda: save_wd_draft_tui(UpdateType.NEW)),
       "extend": ("Save a word def draft to extend a word def", lambda: save_wd_draft_tui(UpdateType.EXTENDS)),
       "update": ("Save a word def draft to update a meaning in a word def", lambda: save_wd_draft_tui(UpdateType.SET_MEANING)),
       "force-save": ("Save a word def draft to drastically update a word def", lambda: save_wd_draft_tui(UpdateType.DRASTIC))}
@@ -34,7 +35,6 @@ def input_wd_draft()->WordDefDraft:
     lines=get_lines_until_empty()
     wdd=parse_wd_draft(lines)
     return wdd
-
 def save_wd_draft_tui(upd_type: UpdateType):
     wbd=input_wd_draft()
     with open_session() as s:

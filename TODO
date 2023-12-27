@@ -3,3 +3,5 @@ check for invalid characters such as >= in a word
 update a worddef
 update a word in a word bank
 update or delete a sentence
+when showing the summary of a sprint, should show the sentences used.
+when deleting a sprint, no need to input the ID.
