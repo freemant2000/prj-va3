@@ -133,6 +133,7 @@ def refine_wb_draft(s: Session, wbd: WordBankDraft):
             pass #new or error
 
 def add_wb_draft(s: Session, wbd: WordBankDraft)->WordBank:
+    refine_wb_draft(s, wbd)
     wbd.check_complete()
     for wd in wbd.wds:
         if wd in wbd.word_usages:

@@ -7,6 +7,13 @@
 -- mysqldump -u root -p va3 > va3.dump
 -- mysql -u root -p va3 < va3.dump
 
+-- merge two worddefs
+-- select * from word_defs where word='us';
+-- select * from snt_keywords where wd_id=1283;
+-- update bank_word set wd_id=652 where wd_id=1283;
+-- delete from word_meanings where wd_id=1283;
+-- delete from word_defs where id=1283;
+
 create table word_defs(id integer auto_increment primary key, word varchar(50));
 create index word_defs_idx_word on word_defs(word);
 create table word_meanings(wd_id integer, idx integer, p_of_s varchar(10), 

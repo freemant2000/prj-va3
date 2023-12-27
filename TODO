@@ -1,6 +1,3 @@
-when updating a word, check if it shrinks the # of meanings
-check for invalid characters such as >= in a word
-update a worddef
 update a word in a word bank
 update or delete a sentence
 when showing the summary of a sprint, should show the sentences used.
