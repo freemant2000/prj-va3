@@ -2,7 +2,7 @@ from datetime import date
 from .console_utils import indent_pr
 from .cmd_handler import CmdHandler, ExitException
 from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec_summary, show_exec_tui
-from ..practice import Practice
+from ..practice import Practice, get_practice
 from ..db_base import open_session
 from ..sprint import Sprint, add_sprint, get_revision_dates, get_sprint
 
@@ -31,6 +31,7 @@ def sprint_main_tui():
         sp=get_sprint(s, sp_id)
     cmds={"show": ("List practices and exercises in the sprint", show_sprint_tui),
           "sum": ("Show a summary of the sprint", show_sprint_summary_tui),
+          "ap": ("Add a practice to the sprint", lambda: add_prac_tui(sp_id)),
           "re": ("Refine an exercise draft for the sprint", lambda: refine_exec_draft_tui(sp_id)),
           "ae": ("Add an exercise to the sprint", lambda: add_exec_draft_tui(sp_id)),
           "se": ("Show an exercise in the sprint", lambda: show_exec_tui(sp_id)),
@@ -54,6 +55,15 @@ def show_words_in_sp(sp: Sprint):
     for idx, bw in enumerate(sp.get_bws()):
         status="*" if sp.is_hard(bw) else ""
         print(f"{str(idx).ljust(3)} {(bw.wd.word+status).ljust(20)}\t{bw.wd.get_meanings()}")
+
+def add_prac_tui(sp_id: int):
+    p_id=int(input("Input the practice ID: "))
+    with open_session() as s:
+        sp=get_sprint(s, sp_id)
+        prac=get_practice(s, p_id)
+        sp.add_prac(prac)
+        s.commit()
+        print("OK")
 
 def mark_words_tui():
     with open_session() as s:
@@ -79,6 +89,7 @@ def mark_hard_words(sp: Sprint, hard: bool):
     else:
         indice=[int(idx.strip()) for idx in indice.split(",")]
         sp.mark_words_hard(indice, hard)
+    sp.set_assessed_dt()
     print("OK")
 
 def show_sprint_struct(sp: Sprint, pr=print):

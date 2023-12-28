@@ -105,7 +105,7 @@ class TestWordBank(TestCase):
         wd.add_meaning("n", "山")
         wbd.wds.append(wd)
         wbd.word_usages[wd]=WordUsage(
-            WordDef(id=1, word="mountain", meanings=[WordMeaning(wd_id=1, p_of_s="n", meaning="山")]),
+            WordDef(id=2, word="mountain", meanings=[WordMeaning(wd_id=2, p_of_s="n", meaning="山")]),
             m_indice="0")
         add_wb_draft(self.s, wbd)
         self.s.flush()

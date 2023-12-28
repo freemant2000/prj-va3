@@ -64,7 +64,8 @@ class Practice(Base):
                     ph2=next((ph for ph in self.hard_w_indice if ph.w_idx==self.fr_idx+idx), None)
                     if ph2:
                         self.hard_w_indice.remove(ph2)
-
+    def set_assessed_dt(self):
+        self.assess_dt=date.today()
     def find_bank_words(self, word: str)->Sequence[BankWord]:
         return [bw for bw in self.get_bws() if bw.wd.word==word]
     def get_display(self)->str:

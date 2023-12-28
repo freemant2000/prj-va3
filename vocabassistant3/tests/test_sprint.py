@@ -65,6 +65,21 @@ class TestSprint(TestCase):
        self.assertEquals(p.hard_w_indice[0].w_idx, 1)
        self.s.rollback()
 
+    def test_contains_prac(self):
+       sp=get_sprint(self.s, 1)
+       self.assertTrue(sp.contains_prac(get_practice(self.s, 2)))
+       self.assertFalse(sp.contains_prac(get_practice(self.s, 3)))
+
+    def test_add_prac(self):
+       self.s.begin()
+       sp=get_sprint(self.s, 1)
+       prac=get_practice(self.s, 3)
+       sp.add_prac(prac)
+       self.s.flush()
+       sp2=get_sprint(self.s, 1)
+       self.assertTrue(sp2.contains_prac(prac))
+       self.s.rollback()
+
     def reset_seq(self):
         set_seq_val(self.s, "sprints")
        

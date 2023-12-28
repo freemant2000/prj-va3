@@ -66,7 +66,6 @@ class Sprint(Base):
                 if bw not in bws:
                     bws.append(bw)
         return bws
-    
     def get_all_bws(self)->Sequence[BankWord]:
         bws=[]
         for p in self.pracs:
@@ -90,12 +89,22 @@ class Sprint(Base):
             selected_bws.append(bws[idx])
         for p in self.pracs:
             p.mark_words_hard(selected_bws, hard)
+    def set_assessed_dt(self):
+        for p in self.pracs:
+            p.set_assessed_dt()
     def del_exec(self, idx: int)->Exercise:
         if 0<=idx<len(self.execs):
             exec=self.execs.pop(idx)
             return exec
         else:
             raise ValueError(f"Index must be 0-{len(self.execs)-1}")
+    def contains_prac(self, prac: Practice)->bool:
+        return any(p for p in self.pracs if p.id==prac.id)
+    def add_prac(self, prac: Practice):
+        if self.contains_prac(prac):
+            raise ValueError("The practice is already in the sprint")
+        else:
+            self.pracs.append(prac)
 
 def add_sprint(s: Session, stu_id: int, p_ids: Sequence[int])->Sprint:
     sp=Sprint()

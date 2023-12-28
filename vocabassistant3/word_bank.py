@@ -84,7 +84,8 @@ class WordBankDraft:
         if self.get_strict_cands():
             raise ValueError("There are words identical to existing ones")
         if self.mismatches:
-            raise ValueError("Trying to use a word but the word or meanings are different")
+            wd=next(iter(self.mismatches.keys()))
+            raise ValueError(f"Trying to use a word but the word or meanings are different: {wd.word}")
         for wd in self.wds:
             if wd in self.word_usages:
                 pass
