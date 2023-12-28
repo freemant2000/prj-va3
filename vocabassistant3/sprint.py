@@ -145,6 +145,15 @@ def get_sprints_for(s: Session, stu_id: int)->List[Sprint]:
   sps=r.unique().all()
   return sps
 
+def get_sprint_for_exec(s: Session, e_id: int)->Sprint:
+    q=select(Sprint).join(Sprint.execs).where(Exercise.id==e_id) \
+        .options(joinedload(Sprint.pracs).joinedload(Practice.hard_w_indice)) \
+        .options(joinedload(Sprint.pracs).joinedload(Practice.wb).selectinload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
+        .options(joinedload(Sprint.execs).selectinload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
+    r=s.scalars(q)
+    sp=r.unique().first()
+    return sp
+
 def get_revision_dates(s: Session, sp_id: int)->Dict[ExeciseWord, List[datetime.date]]:
     q=select(Exercise, ExeciseWord).join(sprint_exec_tbl).join(Sprint) \
         .where(Sprint.id==sp_id, ExeciseWord.e_id==Exercise.id) \

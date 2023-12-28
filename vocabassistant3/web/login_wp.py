@@ -8,6 +8,8 @@ def on_login(c, ev: Dict):
     try:
         with open_session() as s:
             tch=get_teacher(s, 1)
+            if not tch:
+                raise ValueError("Login failed")
             set_current_user(ev.session_id, tch)
     except Exception as e:
         ev.page.err.text="Error: "+str(e)

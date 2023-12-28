@@ -3,7 +3,7 @@ from datetime import date
 from vocabassistant3.db_base import open_session, set_seq_val
 from vocabassistant3.practice import get_practice
 from vocabassistant3.sentence import Sentence
-from vocabassistant3.sprint import add_sprint, get_revision_dates, get_sprint
+from vocabassistant3.sprint import add_sprint, get_revision_dates, get_sprint, get_sprint_for_exec
 
 class TestSprint(TestCase):
     def setUp(self) -> None:
@@ -86,6 +86,10 @@ class TestSprint(TestCase):
        self.assertTrue(sp.uses_snt(Sentence(id=1)))
        self.assertTrue(sp.uses_snt(Sentence(id=6)))
        self.assertFalse(sp.uses_snt(Sentence(id=7)))
+
+    def test_get_sprint_for_exec(self):
+       sp=get_sprint_for_exec(self.s, 2)
+       self.assertEquals(sp.id, 1)
 
     def reset_seq(self):
         set_seq_val(self.s, "sprints")
