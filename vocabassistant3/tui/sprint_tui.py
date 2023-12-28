@@ -125,6 +125,9 @@ def show_sprint_summary_tui():
                 rev_info=""
             fw=bw.get_full_word()
             print(f"{str(idx).ljust(3)} {fw.ljust(20)}\t{bw.wd.get_meanings()}\t{rev_info}")
+        print("Sentences used")
+        for snt in (s for exec in sp.execs for s in exec.snts):
+            print(snt.text)
 
 def del_exec_tui():
     idx=int(input("Input the index (0 or 1, etc.) of the exercise: "))
