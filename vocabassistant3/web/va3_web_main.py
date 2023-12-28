@@ -1,4 +1,5 @@
 import justpy as jp
+from . import exec_wp
 from .sprint_wp import sprint_wp
 
 jp.WebPage.tailwind=False

@@ -1,6 +1,5 @@
 from datetime import date
 from io import StringIO
-from tkinter.ttk import Style
 import justpy as jp
 from starlette.requests import Request
 from sqlalchemy.orm import Session
@@ -16,8 +15,7 @@ def sprint_wp(r: Request):
         with open_session() as s:
             sp=get_sprint(s, sp_id)
             if sp:
-                buf=show_sprint_buf(s, sp)
-                buf_cnt=buf.getvalue()
+                buf_cnt=show_sprint_buf(s, sp)
                 jp.Textarea(value=buf_cnt, rows=buf_cnt.count("\n"), cols=80, style="font-family: monospace;", a=wp)
                 execs_ul=jp.Ul(a=wp)
                 for exec in sp.execs:
@@ -29,7 +27,7 @@ def sprint_wp(r: Request):
         jp.H3(text="Error: "+str(e), a=wp)
     return wp
 
-def show_sprint_buf(s: Session, sp)->StringIO:
+def show_sprint_buf(s: Session, sp)->str:
     buf, pr=buf_pr()
     pr(f"Sprint {sp.id} started on {sp.start_dt}")
     pr("Revision summary")
@@ -49,5 +47,5 @@ def show_sprint_buf(s: Session, sp)->StringIO:
     pr("Sentences used")
     for snt in (s for exec in sp.execs for s in exec.snts):
         pr(snt.text)
-    return buf
+    return buf.getvalue()
 
