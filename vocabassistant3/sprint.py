@@ -127,16 +127,16 @@ def get_exec(s: Session, e_id: int)->Exercise:
 def get_sprint(s: Session, sp_id: int)->Sprint:
   q=select(Sprint).where(Sprint.id==sp_id) \
     .options(joinedload(Sprint.pracs).joinedload(Practice.hard_w_indice)) \
-    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
-    .options(joinedload(Sprint.execs).joinedload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
+    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).selectinload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
+    .options(joinedload(Sprint.execs).selectinload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
   r=s.scalars(q)
   sp=r.unique().first()
   return sp
 
 def get_sprints_for(s: Session, stu_id: int)->List[Sprint]:
   q=select(Sprint).where(Sprint.stu_id==stu_id) \
-    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
-    .options(joinedload(Sprint.execs).joinedload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
+    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).selectinload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
+    .options(joinedload(Sprint.execs).selectinload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
   r=s.scalars(q)
   sps=r.unique().all()
   return sps

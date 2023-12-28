@@ -12,7 +12,7 @@ def set_dbname(dbn: str):
     dbname=dbn
     
 def open_session()->Session:
-    eng=create_engine(f"mysql+pymysql://dba:abc123@localhost/{dbname}", echo=False)
+    eng=create_engine(f"mysql+pymysql://dba:abc123@localhost/{dbname}", echo=True)
     s=Session(eng)
     return s
 
