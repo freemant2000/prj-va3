@@ -92,8 +92,12 @@ def refine_snt_draft(s: Session, sd: SentenceDraft):
         if sd.text.startswith("/"):  # search using keywords
             kws=sd.text[1:].split(",")
             sd.snt_candidates=[t[0] for t in get_snts_from_keywords(s, kws)]
-        else:
-            pass # new sentence
+        else: # just text
+            snts=get_snts_from_text(s, sd.text)
+            if snts: # found an existing one
+                sd.snt_id=snts[0].id
+            else:
+                pass # new sentence
     sd.kw_cands.clear()
     for kw in sd.keywords:
         if kw in sd.kw_meanings:

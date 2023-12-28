@@ -36,8 +36,11 @@ def refine_snt_draft_tui():
         refine_snt_draft(s, sd)
     show_snt_draft(sd)
 
-def show_snt_draft(sd: SentenceDraft):
-    status="Complete" if sd.is_complete() else "Incomplete"
+def show_snt_draft(sd: SentenceDraft, used=False):
+    if used:
+        status="Used in sprint"
+    else:
+        status="Complete" if sd.is_complete() else "Incomplete"
     print(f"{sd.text} ({status})")
     if sd.snt_candidates:
         print("Sentence candidates")

@@ -33,6 +33,8 @@ class Exercise(Base):
     snts: Mapped[List[Sentence]]=relationship("Sentence", secondary=exec_snt_tbl)
     def __str__(self) -> str:
         return f"exercise {self.id} {len(self.ews)} words"
+    def uses_snt(self, snt: Sentence)->bool:
+        return any(s for s in self.snts if s.id==snt.id)
 
 sprint_prac_tbl=Table("sprint_practice", Base.metadata, 
                     Column("sp_id", Integer, ForeignKey("sprints.id"), primary_key=True),
@@ -105,6 +107,8 @@ class Sprint(Base):
             raise ValueError("The practice is already in the sprint")
         else:
             self.pracs.append(prac)
+    def uses_snt(self, snt: Sentence)->bool:
+        return any(exec for exec in self.execs if exec.uses_snt(snt))
 
 def add_sprint(s: Session, stu_id: int, p_ids: Sequence[int])->Sprint:
     sp=Sprint()
@@ -162,7 +166,8 @@ class ExerciseDraft:
     sds: List[SentenceDraft] = field(default_factory=list)
     snt_cands: List[Sentence] = field(default_factory=list)
     extra_kws: List[str] = field(default_factory=list)
-    
+    used_sds: List[SentenceDraft] = field(default_factory=list)
+
     def check_complete(self):
         for word in self.words:
             if word not in self.wus:
@@ -252,12 +257,15 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
         refine_snt_draft(s, sd)
     ed.snt_cands=[t[0] for t in get_snts_from_keywords(s, ed.words)]
     ed.extra_kws.clear()
+    ed.used_sds.clear()
     for sd in ed.sds:
         if sd.snt_id!=None:
             snt=get_snt(s, sd.snt_id)
             for wm in snt.keywords:
                 if wm.wd.word not in ed.words:
                     ed.extra_kws.append(wm.wd.word)
+            if sp.uses_snt(snt):
+                ed.used_sds.append(sd)
         else:
             for kw in sd.keywords:
                 if kw not in ed.words:

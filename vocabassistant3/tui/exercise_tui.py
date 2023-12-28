@@ -78,7 +78,7 @@ def show_exec_draft(ed: ExerciseDraft, sp: Sprint):
             print(word)
     print("===========")
     for sd in ed.sds:
-        show_snt_draft(sd)
+        show_snt_draft(sd, sd in ed.used_sds)
     if ed.extra_kws:
         bws=sp.get_bws()
         all_bws=sp.get_all_bws()

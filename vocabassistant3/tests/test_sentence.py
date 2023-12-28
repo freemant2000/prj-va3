@@ -42,6 +42,10 @@ class TestWordBank(TestCase):
             self.fail()
         except Exception as e:
             self.assertTrue("text of sentence" in str(e))
+    def test_use_existing_snt_(self):
+        sd=load_snt_draft("vocabassistant3/tests/test_snt_draft5.txt")
+        refine_snt_draft(self.s, sd)
+        self.assertEquals(sd.snt_id, 6)
     def test_add_snt_draft(self):
         self.s.begin()
         sd=SentenceDraft(text="這個山谷有巨大的有角的松鼠。", 

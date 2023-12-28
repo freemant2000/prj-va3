@@ -2,6 +2,7 @@ from unittest import TestCase
 from datetime import date
 from vocabassistant3.db_base import open_session, set_seq_val
 from vocabassistant3.practice import get_practice
+from vocabassistant3.sentence import Sentence
 from vocabassistant3.sprint import add_sprint, get_revision_dates, get_sprint
 
 class TestSprint(TestCase):
@@ -79,6 +80,12 @@ class TestSprint(TestCase):
        sp2=get_sprint(self.s, 1)
        self.assertTrue(sp2.contains_prac(prac))
        self.s.rollback()
+
+    def test_uses_snt(self):
+       sp=get_sprint(self.s, 1)
+       self.assertTrue(sp.uses_snt(Sentence(id=1)))
+       self.assertTrue(sp.uses_snt(Sentence(id=6)))
+       self.assertFalse(sp.uses_snt(Sentence(id=7)))
 
     def reset_seq(self):
         set_seq_val(self.s, "sprints")
