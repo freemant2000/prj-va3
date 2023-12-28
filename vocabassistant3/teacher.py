@@ -1,6 +1,7 @@
 from sqlalchemy import ForeignKey, Sequence as Seq, select, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship, Session, joinedload
 from sqlalchemy.types import Integer, String
+
 from .db_base import Base
 from .practice import Student, Practice, WordBank
 
@@ -13,6 +14,8 @@ class Teacher(Base):
     id: Mapped[int]=mapped_column(Integer, Seq("teacher_seq"), primary_key=True)
     gmail: Mapped[str]=mapped_column(String)
     stus: Mapped[Student]=relationship(Student, secondary=tch_stu_tbl)
+    def teaches(self, stu: Student)->bool:
+        return any(s for s in self.stus if s.id==stu.id)
 
 def get_teacher(s: Session, tch_id: int)->Teacher:
     q=select(Teacher).where(Teacher.id==tch_id) \

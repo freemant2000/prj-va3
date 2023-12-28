@@ -1,20 +1,27 @@
 from datetime import date
-from io import StringIO
 import justpy as jp
 from starlette.requests import Request
 from sqlalchemy.orm import Session
+from .user_prod_web import get_current_user
 from ..buf_print import buf_pr
 from ..db_base import open_session
 from ..sprint import get_revision_dates, get_sprint
 
 @jp.SetRoute("/sprints/{sp_id:int}")
 def sprint_wp(r: Request):
-    sp_id=int(r.path_params["sp_id"])
     wp=jp.WebPage()
+    wp.err=jp.P(text="", a=wp)
     try:
+        tch=get_current_user(r.session_id)
+        if not tch:
+            wp.redirect="/login"
+            return wp
+        sp_id=int(r.path_params["sp_id"])
         with open_session() as s:
             sp=get_sprint(s, sp_id)
             if sp:
+                if not tch.teaches(sp.stu):
+                    raise ValueError(f"You are teaching that student")
                 buf_cnt=show_sprint_buf(s, sp)
                 jp.Textarea(value=buf_cnt, rows=buf_cnt.count("\n"), cols=80, style="font-family: monospace;", a=wp)
                 execs_ul=jp.Ul(a=wp)
@@ -24,7 +31,7 @@ def sprint_wp(r: Request):
             else:
                 raise ValueError(f"Sprint {sp_id} not found")
     except Exception as e:
-        jp.H3(text="Error: "+str(e), a=wp)
+        wp.err.text="Error: "+str(e)
     return wp
 
 def show_sprint_buf(s: Session, sp)->str:

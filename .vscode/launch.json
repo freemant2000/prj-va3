@@ -29,6 +29,7 @@
             "name": "Web (Test)",
             "type": "python",
             "request": "launch",
+            "justMyCode": false,
             "module": "vocabassistant3.web.va3_web_main"
         }
     ]

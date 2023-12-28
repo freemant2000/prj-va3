@@ -10,15 +10,14 @@ def on_login(c, ev: Dict):
             tch=get_teacher(s, 1)
             set_current_user(ev.session_id, tch)
     except Exception as e:
-        wp=jp.WebPage()
-        jp.H3(text="Error: "+str(e), a=wp)
-        ev.page.redirect(wp)
+        ev.page.err.text="Error: "+str(e)
 
 @jp.SetRoute("/login")
 def login_wp():
     wp=jp.WebPage()
+    wp.err=jp.P(text="", a=wp)
     try:
         jp.Button(text="Login", click=on_login, a=wp)
     except Exception as e:
-        jp.H3(text="Error: "+str(e), a=wp)
+        wp.err.text="Error: "+str(e)
     return wp
