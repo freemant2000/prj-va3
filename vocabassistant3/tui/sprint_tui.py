@@ -110,6 +110,8 @@ def show_practice(p: Practice, pr=print):
 def show_sprint_summary_tui():
     with open_session() as s:
         sp=get_sprint(s, sp_id)
+        if not sp:
+            raise ValueError(f"Sprint {sp_id} not found")
         print(f"Sprint {sp.id} started on {sp.start_dt}")
         print("Revision summary")
         today=date.today()

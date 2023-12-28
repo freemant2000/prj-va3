@@ -24,6 +24,12 @@
             "request": "launch",
             "module": "vocabassistant3.tui.main_tui",
             "args": ["-d", "va3"]
+        },
+        {
+            "name": "Web (Test)",
+            "type": "python",
+            "request": "launch",
+            "module": "vocabassistant3.web.va3_web_main"
         }
     ]
 }

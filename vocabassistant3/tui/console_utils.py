@@ -1,6 +1,4 @@
-
 from typing import List
-
 
 def get_lines_until_empty()->List[str]:
     lines=[]
