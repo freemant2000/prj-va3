@@ -1,10 +1,7 @@
-from typing import Dict
-from ..teacher import Teacher
 from flask import session
 
+def set_current_user(user_id: int):
+    session["user"]=user_id
 
-def set_current_user(user_gmail: str):
-    session["user"]=user_gmail
-
-def get_current_user()->str: 
+def get_current_user()->int: 
     return session.get("user", None)

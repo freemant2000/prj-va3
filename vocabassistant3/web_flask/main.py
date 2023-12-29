@@ -24,7 +24,7 @@ def oauth2_cb():
             tch=get_teacher_by_email(s, email)
             if not tch:
                 raise ValueError("Login failed")
-            set_current_user(tch.gmail)
+            set_current_user(tch.id)
         return "OK!"
     except Exception as e:
         return "Error: "+str(e)
