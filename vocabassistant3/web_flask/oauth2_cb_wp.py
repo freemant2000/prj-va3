@@ -1,10 +1,9 @@
-from flask import Flask, request
-from disl import Disl
+from flask import request
 from ..db_base import open_session
 from ..teacher import get_teacher_by_email
 from .g_auth import get_user_email
-from .g_oauth2 import GoogleOAuth2
 from .user_prod_flask import set_current_user
+from .main_disl import di
 
 def oauth2_cb():
     try:
