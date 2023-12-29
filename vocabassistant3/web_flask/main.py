@@ -1,16 +1,18 @@
 from flask import Flask, request
 from disl import Disl
+from ..config_reader import get_config_parser
 from ..db_base import open_session
 from ..teacher import get_teacher_by_email
 from .g_auth import get_user_email
 from .g_oauth2 import GoogleOAuth2
 from .user_prod_flask import set_current_user
 
+cp=get_config_parser()
 app=Flask(__name__)
-app.secret_key="kvgfi88lmb993gf09823923en2r3"
+app.secret_key=cp.get("va3", "session_encrpt_key")
 di=Disl()
-di.add_raw_bean("client_secret_file", "/home/kent/prj-va3/client-secret.json")
-di.add_raw_bean("redirect_uri", "http://localhost:8000/oauth2_callback")
+di.add_raw_bean("client_secret_file", cp.get("va3", "client-secret-file"))
+di.add_raw_bean("redirect_uri", cp.get("va3", "redirect_uri"))
 di.add_raw_bean("goa", GoogleOAuth2())
 
 @app.route("/oauth2_callback")
