@@ -1,4 +1,4 @@
-from flask import request, redirect, render_template
+from flask import redirect, render_template
 from datetime import date
 from sqlalchemy.orm import Session
 from ..teacher import get_teacher
@@ -17,11 +17,11 @@ def sprint_wp(sp_id):
             sp=get_sprint(s, sp_id)
             if sp:
                 if not tch.teaches(sp.stu):
-                    raise ValueError(f"You are teaching that student")
+                    raise ValueError(f"You are not teaching that student")
                 buf_cnt=show_sprint_buf(s, sp)
                 return render_template("sprint_wp.html", 
                                     ta_cnt=buf_cnt, 
-                                    rows=buf_cnt.count("\n"),
+                                    rows=int(1.5*buf_cnt.count("\n")),
                                     execs=sp.execs)
             else:
                 raise ValueError(f"Sprint {sp_id} not found")

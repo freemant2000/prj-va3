@@ -21,7 +21,7 @@ def stud_main_wp(r: Request):
             if not stu:
                 raise ValueError(f"Student {stu_id} not found")
             if not tch.teaches(stu):
-                raise ValueError(f"You are teaching that student")
+                raise ValueError(f"You are not teaching that student")
             sps=get_sprints_for(s, stu_id)
             buf_cnt=show_stu_buf(stu, sps)
             jp.Textarea(value=buf_cnt, rows=buf_cnt.count("\n"), cols=80, style="font-family: monospace;", a=wp)

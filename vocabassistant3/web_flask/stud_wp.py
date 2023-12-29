@@ -17,12 +17,12 @@ def stud_main_wp(stu_id):
             if not stu:
                 raise ValueError(f"Student {stu_id} not found")
             if not tch.teaches(stu):
-                raise ValueError(f"You are teaching that student")
+                raise ValueError(f"You are not teaching that student")
             sps=get_sprints_for(s, stu_id)
             buf_cnt=show_stu_buf(stu, sps)
             return render_template("stud_wp.html", 
                                    ta_cnt=buf_cnt, 
-                                   rows=buf_cnt.count("\n"),
+                                   rows=int(1.5*buf_cnt.count("\n")),
                                    sps=sps)
     except Exception as e:
         return "Error: "+str(e)

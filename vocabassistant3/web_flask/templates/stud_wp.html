@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 <body>
-  <textarea rows="{{rows}}" cols="80" style="font-family: monospace;">{{ta_cnt}}</textarea>  
+  <textarea readonly rows="{{rows}}" cols="80" style="font-family: monospace;">{{ta_cnt}}</textarea>  
   <ul>
     {% for sp in sps %}
     <li><a href="../sprints/{{sp.id}}">{{sp.id}}</a></li>

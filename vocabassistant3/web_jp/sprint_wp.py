@@ -21,7 +21,7 @@ def sprint_wp(r: Request):
             sp=get_sprint(s, sp_id)
             if sp:
                 if not tch.teaches(sp.stu):
-                    raise ValueError(f"You are teaching that student")
+                    raise ValueError(f"You are not teaching that student")
                 buf_cnt=show_sprint_buf(s, sp)
                 jp.Textarea(value=buf_cnt, rows=buf_cnt.count("\n"), cols=80, style="font-family: monospace;", a=wp)
                 execs_ul=jp.Ul(a=wp)
