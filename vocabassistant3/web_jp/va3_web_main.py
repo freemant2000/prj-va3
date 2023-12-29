@@ -1,5 +1,5 @@
 import justpy as jp
-from . import stud_main_wp, exec_wp, login_wp, sprint_wp
+from . import exec_wp, login_wp, sprint_wp, stud_wp
 
 jp.WebPage.tailwind=False
-jp.justpy(stud_main_wp.stud_main_wp)
+jp.justpy(stud_wp.stud_main_wp)
