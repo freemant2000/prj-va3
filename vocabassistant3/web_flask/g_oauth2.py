@@ -1,11 +1,11 @@
 from google_auth_oauthlib.flow import Flow
 from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
+from disl import Inject
 
 class GoogleOAuth2:
-    def __init__(self, client_secret_file: str, redirect_uri: str) -> None:
-        self.client_secret_file=client_secret_file
-        self.redirect_uri=redirect_uri
+    def __init__(self) -> None:
+        self.client_secret_file=Inject()
+        self.redirect_uri=Inject()
 
     def get_redirect_uri(self)->str:
         flow=self.make_flow()

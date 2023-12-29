@@ -22,6 +22,15 @@ def get_teacher(s: Session, tch_id: int)->Teacher:
         .options(joinedload(Teacher.stus) \
                  .joinedload(Student.pracs) \
                  .joinedload(Practice.wb) \
-                 .joinedload(WordBank.bws))
-    tch=s.scalars(q).first()
+                 .selectinload(WordBank.bws))
+    tch=s.scalars(q).unique().first()
+    return tch
+
+def get_teacher_by_email(s: Session, email: str)->Teacher:
+    q=select(Teacher).where(Teacher.gmail==email) \
+        .options(joinedload(Teacher.stus) \
+                 .joinedload(Student.pracs) \
+                 .joinedload(Practice.wb) \
+                 .selectinload(WordBank.bws))
+    tch=s.scalars(q).unique().first()
     return tch
