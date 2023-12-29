@@ -1,0 +1,110 @@
+[fisherman-1]
+humble
+	adj,謙卑的
+fisherman
+	n,漁夫
+sick=>801
+	adj,生病的
+  adj,想嘔的
+  adj,厭倦的
+wife
+	n,妻子
+mango, mangoes
+	n,芒果
+peach
+	n,桃
+hut
+	n,（如石或草造的）小屋
+hook
+	n,鈎
+  v,鈎
+fish<=486,0
+	n,魚
+climb
+	v,爬
+cliff
+	n,懸崖
+smell=>1086
+        v,聞到:smelt, smelt
+        n,氣味
+  v,聞起來
+filthy
+	adj,極骯髒的
+like<=475,0-1
+        v,喜歡
+        prep,像
+angry<=440,0
+        adj,生氣的
+complain
+	v,投訴
+  v,抱怨
+find<=882,0F
+        v,找到、發現:found, found
+nothing
+	pron,沒有東西
+living
+	n,生計
+life=>675
+        n,生命
+	n,生活
+happy
+	adj,快樂的
+clean
+	v,清潔
+  adj,清潔的
+ask for
+	v phr,要求／索取
+for a living
+	adv phr,（做...）以維生
+complain about
+	v phr,投訴／抱怨某物
+make<=648,0F-1F
+        v,造:made, made
+        v,令:made, made
+face
+	n,臉
+grow<=806,0F-1F
+        v,生長:grew, grown
+        v,種植:grew, grown
+那個謙卑的漁夫有一個病的妻子。
+  humble
+  fisherman
+  sick<=801,0
+  wife
+那個漁夫放了一個芒果和一個桃在那間小石屋裡。
+  fisherman
+  mango
+  peach
+  hut
+他鈎住了那條魚。
+  hook<=1434,1
+  fish
+那個謙卑的漁夫爬上了那個懸崖。
+  humble
+  fisherman
+  climb
+  cliff
+那個謙卑的男人聞了一下那條極骯髒的魚。
+  humble
+  man
+  smell<=1086,0
+  filthy
+  fish
+他的妻子喜歡那個芒果的氣味。
+  wife
+  like
+  smell<=1086,1
+  mango
+那個憤怒的漁夫鈎住了那個桃。
+那個謙卑的漁夫有一個鈎。
+他在懸崖上找不到任何東西(不用anything)。
+他有一個快樂的生活。
+他的妻子清潔了那些芒果。
+那個謙卑的漁夫只索取一個鈎。
+他鈎魚以維生。
+他經常抱怨他的生活。
+這條魚令我快樂。
+這條極骯髒的魚令我想作嘔。
+他索取了一個桃。
+他種芒果以維生。
+他經常抱怨他的鈎。

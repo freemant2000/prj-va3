@@ -190,7 +190,10 @@ def parse_wb_draft(lines: List[str])->WordBankDraft:
             wbd.wds.append(wd)
             wmp=WordMeaningsParser(wd, forms)
             if usage_str:
-                wd_id, m_indice=usage_str.split(",")
+                try:
+                    wd_id, m_indice=usage_str.split(",")
+                except:
+                    raise ValueError(f"Comma expected in {usage_str}")
                 m_indice=m_indice.replace("-", ",")
                 wbd.word_usages[wd]=WordUsage(WordDef(id=int(wd_id)), m_indice)
                 wd.id=wd_id

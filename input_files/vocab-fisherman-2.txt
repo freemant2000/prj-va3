@@ -1,0 +1,54 @@
+[fisherman-2]
+stinky
+	adj,臭的
+make sb adj
+	v phr,令某人怎樣
+guess
+	v,猜
+person<=557,0
+        n,人
+live on
+	v phr,靠吃...維生
+wait
+	v,等待
+deep
+	adj,深的
+sea
+	n,海
+hour
+	n,小時
+pass
+	v,經過
+dear=>474
+	adj,親愛的
+	n,（古）親愛的
+cliff
+	n,懸崖
+sell, sold, sold
+	v,賣
+fruit
+	n,生果
+sit, sat, sat
+	v,坐
+ask for
+	v phr,要求／索取
+few=>259
+        det,少的（可數）
+				det,幾個
+fish, fish
+	n,魚
+foot, feet
+	n,腳
+feel<=1026,0F
+        v,感覺到:felt, felt
+tired
+	adj,疲倦的
+prince
+	n,王子
+calm
+	adj,冷靜的
+	adj,平靜的
+swim, swam, swum
+	v,游泳
+catch<=308,0F
+        v,捉住:caught, caught

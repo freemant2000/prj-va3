@@ -14,6 +14,7 @@ def show_student_tui():
     with open_session() as s:
         stu=get_student(s, stu_id)
     cmds={"show": ("List practices and sprints for the student", show_student),
+          "sw": ("Show the words in a practice", show_wds_in_prac_tui),
           "ap": ("Add a practice for the student", add_practice_tui),
           "dp": ("Delete a practice for the student", del_practice_tui),
           "tp": ("Toggle the hard words only switch of a practice", toggle_hard_practice_tui),
@@ -40,6 +41,16 @@ def show_student():
 def show_practice(p: Practice, pr=print):
     h_wc, all_wc=p.get_word_counts()
     pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {h_wc}/{all_wc} {p.hard_only} {p.assess_dt}")
+
+def show_wds_in_prac_tui():
+    p_id=int(input("Input practice ID: "))
+    with open_session() as s:
+        prac=get_practice(s, p_id)
+        if prac:
+            for bw in prac.get_bws():
+                print(f"{bw.get_full_word().ljust(20)}{bw.get_meanings()}")
+        else:
+            print(f"Practice with ID {p_id} not found")
 
 def del_practice_tui():
     p_id=int(input("Input practice ID: "))
