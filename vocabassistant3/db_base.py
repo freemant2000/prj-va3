@@ -1,20 +1,21 @@
 from sqlalchemy.orm import DeclarativeBase, Session
 from sqlalchemy import create_engine, text
-
+from disl import Inject
 
 class Base(DeclarativeBase):
     pass
 
-dbname="va3_test"
+class DBConnector:
+    def __init__(self) -> None:
+        self.db_url=Inject()
+    def open_session(self)->Session:
+        eng=create_engine(self.db_url, echo=False)
+        s=Session(eng)
+        return s
+dbc=None
 
-def set_dbname(dbn: str):
-    global dbname
-    dbname=dbn
-    
 def open_session()->Session:
-    eng=create_engine(f"mysql+pymysql://dba:abc123@localhost/{dbname}", echo=False)
-    s=Session(eng)
-    return s
+    return dbc.open_session()
 
 def set_seq_val(s: Session, tbl_name: str):
     s.execute(text(f"alter table {tbl_name} auto_increment=1"))

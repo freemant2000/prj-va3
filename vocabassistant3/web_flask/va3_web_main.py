@@ -1,6 +1,5 @@
 from flask import Flask, request
 from disl import Disl
-
 from ..config_reader import get_config_parser
 from ..db_base import open_session
 from ..teacher import get_teacher_by_email
@@ -10,6 +9,7 @@ from .user_prod_flask import set_current_user
 from .stud_wp import stud_main_wp
 from .sprint_wp import sprint_wp
 from .exec_wp import exec_wp
+from .. import db_base
 
 cp=get_config_parser()
 app=Flask(__name__)
@@ -17,11 +17,13 @@ app.secret_key=cp.get("va3", "session_encrpt_key")
 app.add_url_rule("/stus/<int:stu_id>", view_func=stud_main_wp)
 app.add_url_rule("/sprints/<int:sp_id>", view_func=sprint_wp)
 app.add_url_rule("/execs/<int:e_id>", view_func=exec_wp)
-
 di=Disl()
-di.add_raw_bean("client_secret_file", cp.get("va3", "client-secret-file"))
+di.add_raw_bean("db_url", cp.get("va3", "db_url"))
+di.add_raw_bean("client_secret_file", cp.get("va3", "client_secret_file"))
 di.add_raw_bean("redirect_uri", cp.get("va3", "redirect_uri"))
 di.add_raw_bean("goa", GoogleOAuth2())
+di.add_raw_bean("dbc", db_base.DBConnector())
+db_base.dbc=di.get_wired_bean("dbc")
 
 @app.route("/oauth2_callback")
 def oauth2_cb():
