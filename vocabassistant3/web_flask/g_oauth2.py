@@ -1,0 +1,26 @@
+from google_auth_oauthlib.flow import Flow
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+
+class GoogleOAuth2:
+    def __init__(self, client_secret_file: str, redirect_uri: str) -> None:
+        self.client_secret_file=client_secret_file
+        self.redirect_uri=redirect_uri
+
+    def get_redirect_uri(self)->str:
+        flow=self.make_flow()
+        url, state=flow.authorization_url(access_type="offline")
+        return url
+
+    def make_flow(self)->Flow:
+        flow=Flow.from_client_secrets_file(self.client_secret_file,
+                                        scopes=["https://www.googleapis.com/auth/userinfo.email",
+                                                "openid"])
+        flow.redirect_uri=self.redirect_uri
+        return flow
+
+    def get_creds_with_code(self, code: str)->Credentials:
+        flow=self.make_flow()
+        flow.fetch_token(code=code)
+        creds=flow.credentials
+        return creds

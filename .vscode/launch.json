@@ -5,6 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: Flask",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "vocabassistant3/web_flask/main.py",
+                "FLASK_DEBUG": "1"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload",
+                "-p 8000"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        },
+        {
             "name": "Run Current Test Module",
             "type": "python",
             "request": "launch",
@@ -16,14 +34,16 @@
             "type": "python",
             "request": "launch",
             "module": "vocabassistant3.tui.main_tui"
-        }
-        ,
+        },
         {
             "name": "TUI (Production)",
             "type": "python",
             "request": "launch",
             "module": "vocabassistant3.tui.main_tui",
-            "args": ["-d", "va3"]
+            "args": [
+                "-d",
+                "va3"
+            ]
         },
         {
             "name": "Web (Test)",
