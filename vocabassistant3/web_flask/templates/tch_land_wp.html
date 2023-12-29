@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <h3>Choose a student</h3>
+  <ul>
+    {% for stu in stus %}
+    <li><a href="../stus/{{stu.id}}">{{stu.name}}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
