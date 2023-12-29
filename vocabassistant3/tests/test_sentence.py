@@ -1,9 +1,10 @@
 from unittest import TestCase
-from vocabassistant3.db_base import open_session, set_seq_val
-from vocabassistant3.sentence import Sentence, SentenceDraft, add_snt_draft, get_snt, get_snts, get_snts_from_keywords, load_snt_draft, refine_snt_draft
+from test_db_connector import open_session
+from vocabassistant3.db_base import set_seq_val
+from vocabassistant3.sentence import SentenceDraft, add_snt_draft, get_snt, get_snts, get_snts_from_keywords, load_snt_draft, refine_snt_draft
 from vocabassistant3.word_def import WordMeaning
 
-class TestWordBank(TestCase):
+class TestSentence(TestCase):
     def setUp(self) -> None:
         self.s=open_session()
     def tearDown(self) -> None:
@@ -46,6 +47,13 @@ class TestWordBank(TestCase):
         sd=load_snt_draft("vocabassistant3/tests/test_snt_draft5.txt")
         refine_snt_draft(self.s, sd)
         self.assertEquals(sd.snt_id, 6)
+    def test_refine_snt_draft_unset_wd_id(self):
+        sd=load_snt_draft("vocabassistant3/tests/test_snt_draft6.txt")
+        with open_session() as s:
+            refine_snt_draft(s, sd)
+        wm=sd.kw_meanings["horn"]            
+        self.assertEquals(wm.wd_id, 11)
+        self.assertEquals(wm.idx, 1)
     def test_add_snt_draft(self):
         self.s.begin()
         sd=SentenceDraft(text="這個山谷有巨大的有角的松鼠。", 

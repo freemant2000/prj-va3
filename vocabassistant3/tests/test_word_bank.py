@@ -1,5 +1,6 @@
 from unittest import TestCase
-from vocabassistant3.db_base import open_session, set_seq_val
+from test_db_connector import open_session
+from vocabassistant3.db_base import set_seq_val
 from vocabassistant3.word_bank import BankWord, WordBankDraft, find_word_banks, load_wb_draft, get_word_bank, add_wb_draft, parse_full_word, refine_wb_draft
 from vocabassistant3.word_def import WordDef, WordMeaning, WordUsage, get_word_def_by_id
 

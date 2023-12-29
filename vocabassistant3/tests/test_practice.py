@@ -1,5 +1,6 @@
 from unittest import TestCase
-from vocabassistant3.db_base import open_session, set_seq_val
+from test_db_connector import open_session
+from vocabassistant3.db_base import set_seq_val
 from vocabassistant3.practice import Practice, PracticeHard, add_practice, get_practice, get_student
 from vocabassistant3.word_bank import BankWord
 

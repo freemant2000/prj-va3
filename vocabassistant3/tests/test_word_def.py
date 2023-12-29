@@ -1,5 +1,6 @@
 from unittest import TestCase
-from vocabassistant3.db_base import open_session, set_seq_val
+from test_db_connector import open_session
+from vocabassistant3.db_base import set_seq_val
 from vocabassistant3.word_def import UpdateType, WordDefDraft, get_word_def_by_id, get_word_defs, get_similar_words, WordDef, get_word_meaning, get_word_meanings, load_wd_draft, parse_wd_draft, refine_wd_draft, save_wd_draft
 
 class TestWordDef(TestCase):

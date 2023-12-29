@@ -1,5 +1,5 @@
 from unittest import TestCase
-from vocabassistant3.db_base import open_session
+from test_db_connector import open_session
 from vocabassistant3.teacher import get_teacher, get_teacher_by_email
 
 class TestTeacher(TestCase):

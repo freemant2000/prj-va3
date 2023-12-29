@@ -1,6 +1,7 @@
 from unittest import TestCase
 from datetime import date
-from vocabassistant3.db_base import open_session, set_seq_val
+from test_db_connector import open_session
+from vocabassistant3.db_base import set_seq_val
 from vocabassistant3.practice import get_practice
 from vocabassistant3.sentence import Sentence
 from vocabassistant3.sprint import add_sprint, get_revision_dates, get_sprint, get_sprint_for_exec

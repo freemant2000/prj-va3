@@ -102,7 +102,21 @@ def refine_snt_draft(s: Session, sd: SentenceDraft):
     for kw in sd.keywords:
         if kw in sd.kw_meanings:
             wm=sd.kw_meanings[kw]
-            wm2=get_word_meaning(s, wm.wd_id, wm.idx)
+            if not wm.wd_id:
+                wds=get_word_def(s, kw)
+                if len(wds)==1:
+                    wd=wds[0]
+                    if 0<=wm.idx<len(wd.meanings):
+                        wm.wd_id=wd.id
+                        wm2=wd.meanings[wm.idx]
+                    else:
+                        raise ValueError(f"Invalid index for {kw}")
+                elif len(wds)==0:
+                    raise ValueError(f"No WordDef found for {kw}")
+                else:
+                    raise ValueError(f"Multiple WordDefs found for {kw}. You must specify the ID.")
+            else:
+                wm2=get_word_meaning(s, wm.wd_id, wm.idx)
             if wm2:
                 sd.kw_meanings[kw]=wm2
             else:
@@ -151,7 +165,9 @@ def parse_snt_draft(lines: List[str])->SentenceDraft:
                     if n!=2 and n!=4:
                         raise ValueError(f"Invalid WordMeaning {wm_str}")
                     sd.keywords.append(kw)
-                    sd.kw_meanings[kw]=WordMeaning(wd_id=int(wm_parts[0]), idx=int(wm_parts[1]))
+                    sd.kw_meanings[kw]=WordMeaning(
+                        wd_id=None if wm_parts[0]=="?" else int(wm_parts[0]), 
+                        idx=int(wm_parts[1]))
       else:
           raise ValueError("Indented keyword expected")
     return sd
