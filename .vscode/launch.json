@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "vocabassistant3/web_flask/main.py",
+                "FLASK_APP": "vocabassistant3/web_flask/va3_web_main.py",
                 "FLASK_DEBUG": "1"
             },
             "args": [
