@@ -16,7 +16,7 @@ def stud_main_wp(stu_id):
             stu=get_student(s, stu_id)
             if not stu:
                 raise ValueError(f"Student {stu_id} not found")
-            tch.check_teaches(sp.stu)
+            tch.check_teaches(stu)
             sps=get_sprints_for(s, stu_id)
             buf_cnt=show_stu_buf(stu, sps)
             return render_template("stud_wp.html", 

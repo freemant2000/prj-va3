@@ -11,12 +11,12 @@ from .sprint_wp import sprint_wp
 from .exec_wp import exec_wp
 from .. import db_base
 
+cp=get_config_parser()
 app=Flask(__name__)
 app.secret_key=cp.get("va3", "session_encrpt_key")
 app.add_url_rule("/stus/<int:stu_id>", view_func=stud_main_wp)
 app.add_url_rule("/sprints/<int:sp_id>", view_func=sprint_wp)
 app.add_url_rule("/execs/<int:e_id>", view_func=exec_wp)
-cp=get_config_parser()
 di=Disl()
 di.add_raw_bean("db_url", cp.get("va3", "db_url"))
 di.add_raw_bean("client_secret_file", cp.get("va3", "client_secret_file"))
