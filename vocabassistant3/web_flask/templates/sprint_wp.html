@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <textarea rows="{{rows}}" cols="80" style="font-family: monospace;">{{ta_cnt}}</textarea>  
+  <ul>
+    {% for exec in execs %}
+    <li><a href="../execs/{{exec.id}}">{{exec.id}}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
