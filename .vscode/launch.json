@@ -40,10 +40,7 @@
             "type": "python",
             "request": "launch",
             "module": "vocabassistant3.tui.main_tui",
-            "args": [
-                "-d",
-                "va3"
-            ]
+            "env": {"va3_cfg": "va3-cfg-prod.ini"}
         },
         {
             "name": "Web (Test)",

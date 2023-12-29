@@ -5,15 +5,18 @@ from .student_tui import show_student_tui
 from .word_bank_tui import word_banks_tui
 from .teacher_tui import show_students_tui
 from .user_prod_tui import set_current_user
-from ..db_base import open_session, set_dbname
+from ..config_reader import get_config_parser
+from ..db_base import open_session
 from ..teacher import get_teacher
-from argparse import ArgumentParser
+from disl import Disl
+from .. import db_base
 
 def main_tui():
-    ap=ArgumentParser()
-    ap.add_argument("-d", "--dbname", default="va3_test")
-    args=ap.parse_args()
-    set_dbname(args.dbname)
+    cp=get_config_parser()
+    di=Disl()
+    di.add_raw_bean("db_url", cp.get("va3", "db_url"))
+    di.add_raw_bean("dbc", db_base.DBConnector())
+    db_base.dbc=di.get_wired_bean("dbc")
     log_in()
     cmds={"ss": ("Show students", show_students_tui),
         "s": ("Work on a student", show_student_tui),

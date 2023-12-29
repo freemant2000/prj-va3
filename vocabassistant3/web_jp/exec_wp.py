@@ -19,8 +19,7 @@ def exec_wp(r: Request):
             sp=get_sprint_for_exec(s, e_id)
             if not sp:
                 raise ValueError(f"No sprint contains that exercise")
-            if not tch.teaches(sp.stu):
-                raise ValueError(f"You are not teaching that student")
+            tch.check_teaches(sp.stu)
             exec=get_exec(s, e_id)
             if not exec:
                 raise ValueError(f"Exercise {e_id} not found")

@@ -16,8 +16,7 @@ def sprint_wp(sp_id):
             tch=get_teacher(s, tch_id)
             sp=get_sprint(s, sp_id)
             if sp:
-                if not tch.teaches(sp.stu):
-                    raise ValueError(f"You are not teaching that student")
+                tch.check_teaches(sp.stu)
                 buf_cnt=show_sprint_buf(s, sp)
                 return render_template("sprint_wp.html", 
                                     ta_cnt=buf_cnt, 

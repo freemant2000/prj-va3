@@ -16,6 +16,9 @@ class Teacher(Base):
     stus: Mapped[Student]=relationship(Student, secondary=tch_stu_tbl)
     def teaches(self, stu: Student)->bool:
         return any(s for s in self.stus if s.id==stu.id)
+    def check_teaches(self, stu: Student):
+        if not self.teaches(stu):
+            raise ValueError(f"You are not teaching that student")
 
 def get_teacher(s: Session, tch_id: int)->Teacher:
     q=select(Teacher).where(Teacher.id==tch_id) \
