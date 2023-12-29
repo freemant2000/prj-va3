@@ -96,15 +96,51 @@ grow<=806,0F-1F
   smell<=1086,1
   mango
 那個憤怒的漁夫鈎住了那個桃。
+  angry
+  fisherman
+  hook<=?,1
+  peach
 那個謙卑的漁夫有一個鈎。
+  humble
+  fisherman
+  hook<=?,0
 他在懸崖上找不到任何東西(不用anything)。
+  find
+  nothing
+  cliff
 他有一個快樂的生活。
+  happy
+  life<=?,1
 他的妻子清潔了那些芒果。
+  wife
+  clean<=?,0
+  mango
 那個謙卑的漁夫只索取一個鈎。
+  humble
+  fisherman
+  ask for
+  hook<=?,0
 他鈎魚以維生。
+  hook<=?,1
+  for a living
 他經常抱怨他的生活。
+  complain about
+  life<=?,1
 這條魚令我快樂。
+  fish
+  make sb adj
+  happy
 這條極骯髒的魚令我想作嘔。
+  filthy
+  make sb adj
+  sick<=801,1
 他索取了一個桃。
+  ask for
+  peach
 他種芒果以維生。
+  grow<=?,1
+  mango
+  for a living
 他經常抱怨他的鈎。
+  complain about
+  hook<=?,0

@@ -52,3 +52,74 @@ swim, swam, swum
 	v,游泳
 catch<=308,0F
         v,捉住:caught, caught
+那個漁夫正在吃一個臭的芒果。
+	fisherman
+	stinky
+	mango
+這幾個臭的桃令我想嘔。
+	stinky
+	peach	
+	make sb adj
+	sick<=?,1
+我猜他變得(不用become或get)弱了。
+	guess
+	grow<=806,2
+那幾個謙卑的人靠吃桃維生。
+	few<=259,1
+	humble
+	person
+	peach
+	live on
+等等，你曾經去過深海嗎？
+	wait
+	deep
+	sea
+兩小時已過去了。
+	hour
+	pass<=99,1
+古時：親，這個懸崖很深。
+	dear<=474,1
+	cliff
+	deep
+親愛的朋友，你喜歡這間小屋嗎？
+	dear<=474,0
+	like<=?,0
+	hut
+他們賣生果來維生。
+	sell
+	fruit
+	for a living
+他坐在懸崖上。
+	sit
+	cliff
+他索取了幾條深海魚。
+	ask for
+	few<=?,1
+	deep
+	sea
+	fish
+他的妻子抱怨他的臭腳。
+	wife
+	complain about
+	stinky
+	foot
+我猜他種生果以維生。
+	guess
+	grow<=?,1
+	fruit
+	for a living
+古時：親，你覺得疲倦嗎？
+	dear<=?,1
+	feel
+	tired
+那個王子昨天在平靜的海裡游了泳。
+	prince
+	swim
+	calm<=?,1
+	sea
+那個冷靜的王子抓住了幾條魚。
+	calm<=?,0
+	prince
+	catch
+	few<=?,1
+	fish
