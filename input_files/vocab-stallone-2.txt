@@ -1,4 +1,4 @@
-[stallon-2]
+[stallone-2]
 boxing
 	n,拳擊
 match<=928,0-1-2

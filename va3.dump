@@ -386,7 +386,7 @@ CREATE TABLE `word_banks` (
 
 LOCK TABLES `word_banks` WRITE;
 /*!40000 ALTER TABLE `word_banks` DISABLE KEYS */;
-INSERT INTO `word_banks` VALUES (1,'Primary 3'),(2,'Primary 4'),(3,'Primary 5'),(4,'Primary 6'),(5,'irregular verbs'),(6,'英文整合班低小'),(7,'英文整合班低小補充1'),(8,'約翰內斯堡'),(9,'canterville-1'),(10,'英文整合班高小1'),(11,'英文整合班高小2'),(12,'英文整合班高小3'),(13,'英文整合班高小4'),(14,'英文整合班高小5'),(15,'英文整合班高小6'),(16,'英文整合班高小7'),(17,'英文整合班高小8'),(18,'英文整合班高小9'),(19,'英文整合班高小10'),(20,'英文整合班高小11'),(21,'working holiday'),(22,'英文整合班高小12'),(23,'two goats L2'),(24,'fisherman-1'),(25,'fisherman-2'),(26,'stallon-1'),(27,'stallon-2');
+INSERT INTO `word_banks` VALUES (1,'Primary 3'),(2,'Primary 4'),(3,'Primary 5'),(4,'Primary 6'),(5,'irregular verbs'),(6,'英文整合班低小'),(7,'英文整合班低小補充1'),(8,'約翰內斯堡'),(9,'canterville-1'),(10,'英文整合班高小1'),(11,'英文整合班高小2'),(12,'英文整合班高小3'),(13,'英文整合班高小4'),(14,'英文整合班高小5'),(15,'英文整合班高小6'),(16,'英文整合班高小7'),(17,'英文整合班高小8'),(18,'英文整合班高小9'),(19,'英文整合班高小10'),(20,'英文整合班高小11'),(21,'working holiday'),(22,'英文整合班高小12'),(23,'two goats L2'),(24,'fisherman-1'),(25,'fisherman-2'),(26,'stallone-1'),(27,'stallone-2');
 /*!40000 ALTER TABLE `word_banks` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -453,4 +453,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-30 14:35:07
+-- Dump completed on 2023-12-30 17:41:28

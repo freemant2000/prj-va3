@@ -1,4 +1,4 @@
-[stallon-1]
+[stallone-1]
 lip
 	n,嘴唇
 birth
