@@ -1,4 +1,4 @@
-from flask import request
+from flask import request, redirect
 from ..db_base import open_session
 from ..teacher import get_teacher_by_email
 from .g_auth import get_user_email
@@ -16,6 +16,6 @@ def oauth2_cb():
             if not tch:
                 raise ValueError("Login failed")
             set_current_user(tch.id)
-        return "OK!"
+        return redirect("/teacher")
     except Exception as e:
         return "Error: "+str(e)
