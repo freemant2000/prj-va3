@@ -1,14 +1,19 @@
 Deploy to pythonanywhere
 ========================
 Perform git pull in the prj-va3 folder.
-Copy va3-cfg-prod.ini and update the content as needed.
-Copy client-secret.json.
-The wsgi config file should be like below:
 
-import sys
-import os
-path = '/home/kenttong/prj-va3'
-if path not in sys.path:
-   sys.path.insert(0, path)
-os.environ['va3_cfg'] = '/home/kenttong/prj-va3/va3-cfg-prod.ini'
-from vocabassistant3.web_flask.va3_web_main import app as application
+Copy va3-cfg-prod.ini and update the content as needed.
+
+Copy client-secret.json.
+
+The wsgi config file should be like below:
+   import sys
+   import os
+   path = '/home/kenttong/prj-va3'
+   if path not in sys.path:
+      sys.path.insert(0, path)
+   os.environ['va3_cfg'] = '/home/kenttong/prj-va3/va3-cfg-prod.ini'
+   from vocabassistant3.web_flask.va3_web_main import app as application
+
+Restore the DB:
+   mysql -u kenttong -h kenttong.mysql.pythonanywhere-services.com -p kenttong\$va3 < va3.dump
