@@ -17,3 +17,9 @@ The wsgi config file should be like below:
 
 Restore the DB:
    mysql -u kenttong -h kenttong.mysql.pythonanywhere-services.com -p kenttong\$va3 < va3.dump
+
+Running the TUI on pythonanywhere
+=================================
+$ . .virtualenvs/env1/bin/activate
+$ cd prj-va3
+$ va3_cfg="va3-cfg-prod-tui.ini" python -m vocabassistant3.tui.main_tui

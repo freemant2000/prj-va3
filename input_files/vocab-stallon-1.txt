@@ -1,0 +1,101 @@
+[stallon-1]
+lip
+	n,嘴唇
+birth
+	n,出生
+act
+	v,演戲
+  v,行動
+trouble=>798
+	n,麻煩
+apartment
+	n,公寓（住宅單位）
+chase
+	v,追
+van
+	n,小貨車
+role
+	n,角色
+  n,作用
+marriage
+	n,婚姻
+has trouble doing xxx
+	v phr,難以（做甚麼）
+kick
+	v,踢
+rob
+	v,打刧
+station=>42
+	n,（火車等）車站
+acting
+	n,演戲
+terrible
+	adj,可怕的
+  adj,極差的
+main
+	adj,主要的
+actor
+	n,演員
+main actor
+	n phr,主角
+choose, chose, chosen
+	v,選擇
+choice
+	n,選擇
+option
+	n,選項
+believe
+	v,相信
+accept
+	v,接受
+
+他的嘴唇很干。
+	lip
+	dry<=144,0
+在出生時他就能演戲。
+	act<=1452,0
+	birth
+他難以賣出他的住宅單位。
+	has trouble doing xxx
+	sell
+	apartment
+他在追那架小貨車。
+	chase
+	van
+他在這套戲裡有一個角色。
+	role<=?,0
+	movie
+在出生時他的嘴唇很簿。
+	lip
+	thin<=?,1
+他們有一個快樂的的婚姻。
+	marriage
+他難以駕駛這架小貨車。
+	has trouble doing xxx
+	drive
+	van
+他踢了我一下，所以我在追他。
+	kick
+	chase
+在那套戲中他的角色打刧了我。
+	rob
+	role<=?,0
+	movie
+那架巴士離開了那個車站。
+	leave<=?,0
+	station
+他的演技很差勁。
+	acting
+	terrible<=?,1
+他打刧了那個主角。
+	rob
+	main actor
+他選擇了選項A。
+	choose
+	option
+我相信你會作出一個好的選擇。
+	believe
+	choice
+他接受了這個住宅單位。
+	accept
+	apartment

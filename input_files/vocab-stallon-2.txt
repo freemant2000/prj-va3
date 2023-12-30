@@ -1,0 +1,105 @@
+[stallon-2]
+boxing
+	n,拳擊
+match<=928,0-1-2
+        v,匹配
+        n,火柴
+        n,比賽
+boxer
+	n,拳手
+determination
+	n,決心
+inspire
+	v,啟發
+round=>649
+	adj,圓的
+	n,輪
+	n,圈
+script
+	n,（電影／視）劇本
+	n,稿件
+studio
+	n,製片商
+	n,製片廠
+	n,錄音室
+believe in
+	v phr,信任、信奉
+turn down
+	v phr,拒絕
+offer
+	v,（提供某物）提議
+	n,（提供某物）提議
+belief
+	n,信念
+underdog
+	n,處於劣勢的人
+
+那場拳搫比賽很可怕。
+	boxing
+	match<=?,2
+	terrible<=?,0
+那個拳擊選手追著那個主角。
+	boxer
+	chase
+	main actor
+我不能接受這個選項。
+	accept
+	option
+在一場拳搫比賽中你可以踢。
+	boxing
+	match<=?,2
+	kick
+你的選擇是好的。
+	choice
+我相信你的主要的選項是婚姻。
+	believe
+	major
+	option
+	marriage
+他的決心是清楚的。
+	determination
+	clear<=?,0
+這個角色啟發了我。
+	role<=?,0
+	inspire
+他贏了比賽的第一輪。
+	win
+	match<=?,2
+	round<=649,1
+我寫了一個關於一個拳擊手的劇本。
+	write
+	boxer
+	script<=?,0
+他的決心啟發了很多人。
+	determination
+	inspire
+他在比賽的第二輪被KO了。
+	second<=?,0
+	round<=?,1
+那個主角已經到達了製片廠。
+	main
+	actor
+	studio<=?,1
+我信任你的選擇。
+	believe in
+	choice
+他拒絕了我的（提供某物的）提議。
+	turn down
+	offer<=?,1
+他的信念是他是處於劣勢的人。
+	belief
+	underdog
+他信任我的劇本。
+	believe in
+	script<=?,0
+那個製片商的（提供某物的）提議不太好。
+	studio<=?,0
+	offer<=?,1
+我的信念是：即使處於劣勢，我們也要有決心。
+	belief
+	underdog
+	determination
+他的信念是我們不應該拒絕別人的提議。
+	belief
+	turn down
+	offer<=?,1
