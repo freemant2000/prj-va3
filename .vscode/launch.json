@@ -41,7 +41,7 @@
             "type": "python",
             "request": "launch",
             "module": "vocabassistant3.tui.main_tui",
-            "env": {"va3_cfg": "va3-cfg-prod.ini"}
+            "env": {"va3_cfg": "va3-cfg-prod-home.ini"}
         },
         {
             "name": "Web (Test)",
