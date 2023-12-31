@@ -144,3 +144,179 @@ fiancee
 	n,未婚妻
 look forward to
 	v phr,盼望
+
+他們的官僚手續給了我們一個優勢。
+	red tape
+	advantage
+他的人生願望清單包括報讀這個課程。
+	bucket list
+	enrol on
+	course<=1448,0
+他享受這個城市的熙來攘往。
+	hustle and bustle
+	city
+他綜橫走遍羅馬尼亞去改善(不用improve)他的英文。
+	criss-cross
+	brush up
+	Romania
+那個招聘代理幫我找到一份永久的工作。
+	recruitment
+	agency
+	permanent
+羅馬尼亞的飲食永久地改變了我看食物的角度。
+	Romania
+	cuisine
+	permanently
+	perspective
+我的兒子（兩歲以下）在幼稚園安定了下來。
+	nursery
+	settle in
+我的歐洲同事有管理城堡的特殊的經驗。
+	European
+	colleague
+	experience
+	manage
+	castle
+	special
+他習慣於這個幼稚園（兩歲以下）的人聲鼎沸。
+	be used to
+	hustle and bustle
+	nursery
+她的未婚夫現在有機緣去綜橫走遍歐洲。
+	fiance
+	opportunity
+	criss-cross
+	Europe
+她的未婚夫在外國一間招聘代理工作。
+	finance
+	recruitment
+	agency
+	abroad
+他現在有機緣去報名參加這個比賽。
+	opportunity
+	enrol on
+	match<=?,2
+他綜橫走遍中國並嘗試不同飲食去改善(不用improve)他的烹餁技能。
+	criss-cross
+	cuisine
+	brush up
+	skill
+這份工的一個需求是喜歡熱鬧。
+	requirement
+	hustle and bustle
+這個簽證是有效的但這本護照不是。
+	visa
+	valid<=?,0
+	passport
+杜拉基拉先生是涉及在這個招聘裡的。
+	Dracula
+	involve
+	recruitment
+	agency
+羅馬尼亞的飲食適合她的未婚夫。
+	Romania
+	cuisine
+	suit<=1370,0
+	fiance
+他的同事申請了一個永久的簽證。
+	colleague
+	apply for
+	permanent
+	visa
+你看待幼稚園（兩歲以下）的角度是符合邏輯。
+	perspective
+	nursery
+	valid<=?,1
+我好熱切報名參加這個（服務）計劃去取得那張證書。
+	eager
+	enrol on
+	scheme
+	certificate
+那個會計師給了我一個建議(不用suggestion)。
+	accountant
+	advice
+杜拉基拉先生會為那個短假期提供資金。
+	Dracula
+	finance
+	getaway
+在歐洲大陸有很多零售銷售點。
+	European
+	continent
+	retail<=1380,1
+	outlet
+那個來自政府的資助計劃會為這間幼稚園（兩歲以下）提供資金。
+	sponsorship
+	scheme
+	nursery
+	finance
+	government
+他快速地拿走了那個機緣。
+	scoop up
+	opportunity
+我正在找尋（正式）一個招聘機緣。
+	seek
+	recruitment
+	opportunity
+我同他有了一個預約。
+	appointment
+他肯定會走出他的舒適區。
+	definitely
+	comfort
+	zone
+他很少閱讀這些文件(不用file)。
+	rarely
+	document
+他剔了那項需求。
+	tick<=?,0
+	requirement
+他快速地拿走了那張罕見的申請表格。
+	scoop up
+	rare
+	application<=?,0
+	form
+那個去巴黎的航班是滿的。
+	flight<=1396,0
+	Paris
+這個巴士車費很平宜。
+	fare
+	cheap
+一般來說，扮演了一個極好的角色是困難的。
+	generally
+	play<=?,2
+	brilliant
+	role<=847,0
+	difficult
+這種飲食很罕見。
+	cuisine
+	rare
+政府推出了一個計劃(不用plan)去支持零售商。
+	government
+	launch<=1402,0
+	scheme
+	support<=1458,0
+	retailer
+你的申請已經失敗了。
+	application<=?,0
+	fail<=?,0
+他的未婚妻盼望在外國改善(不用improve)她的零售技能。
+	fiancee
+	look forward to
+	brush up
+	retail<=?,1
+	skill
+他的未婚夫尚未找出那些申請步驟。
+	fiance
+	application<=1394,0
+	step<=276,0
+這個零售商快速地要了那個申請者。
+	retailer
+	scoop up
+	applicant
+他的未婚妻在外國參加了一個短期旅行。
+	fiancee
+	abroad
+	getaway
+這個計劃(不用plan)的推出是相當突然的。
+	scheme
+	launch<=?,1
+	sudden

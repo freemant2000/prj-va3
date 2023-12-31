@@ -92,3 +92,242 @@ class=>149
 	n,課、班
 fish<=486,0F
         n,魚:fish
+
+他經常吃新鮮的蘋果 。
+    often
+    eat
+    fresh
+    apple
+爸爸經常閱讀筆記本。
+    father
+    often
+    read
+    notebook
+那隻馬每日都吃新鮮的橙。
+    horse
+    eat
+    fresh
+    orange<=?,0
+    every day
+他經常騎馬。
+    often
+    ride<=?,0
+    horse
+他昨天吃了一個新鮮的蘋果 。 
+    eat
+    fresh
+    apple
+    yesterday
+那個嬰兒昨天吃了一塊膠擦。
+    baby
+    eat
+    eraser
+    yesterday
+爸爸每日去祖母的家。
+    father
+    go
+    grandmother
+    home<=?,0
+    every day
+我經常用膠擦。
+    often
+    use
+    eraser
+我昨天去了祖母的家。
+    go
+    grandmother
+    home<=?,0
+    yesterday
+他經常穿濕的衣服。
+    often
+    wear
+    wet
+    clothes
+他昨天買了一本筆記本。
+    buy
+    notebook
+    yesterday
+祖母每日都看見我。
+    grandmother
+    see
+    every day
+我昨天買了一塊膠擦。
+    buy
+    eraser
+    yesterday
+祖母經常買新鮮的蘋果。
+    grandmother
+    often
+    buy
+    fresh
+    apple
+他經常在濕的床上睡覺。
+    often
+    sleep
+    wet
+    bed
+他喜歡便宜的筆記本。
+    like<=?,0
+    cheap
+    notebook
+他10分鐘前買了一塊便宜的膠擦。
+    buy
+    cheap
+    eraser
+    minute
+    ago
+他住在一個農場裡。
+    live<=?,1
+    farm
+優秀的學生討厭慢的老師。
+    excellent
+    hate
+    slow
+    teacher
+我們有時在農場騎馬。
+    sometimes
+    ride<=?,0
+    horse
+    farm
+我有一本優秀的筆記本。
+    excellent
+    notebook
+這匹優秀的馬住在這個農場裡。
+    excellent
+    horse
+    live<=?,1
+    farm
+她10分鐘前買了一條（全身）裙。
+    buy
+    dress<=?,1
+這個學生想要一塊便宜的膠擦。
+    student
+    want
+    cheap
+    eraser
+這個優秀的農場經常賣新鮮的橙。
+    excellent
+    farm
+    often
+    sell
+    fresh
+    orange<=?,0
+這個優秀的學生每日都騎馬。
+    excellent
+    student
+    ride<=?,0
+    horse
+    every day
+這隻馬討厭這個農場。
+    horse
+    hate
+    farm
+這隻貓住在這個車站。
+    cat
+    live<=?,1
+    station
+十分鐘前我去了這個車站背後的農場。
+    go
+    farm
+    behind
+    station
+    minute
+    ago
+一隻濕的狗經常坐在這個學生背後。
+    wet
+    dog
+    often
+    sit
+    behind
+    student
+這隻馬討厭這極好的車站。
+    horse
+    hate
+    excellent
+    station
+他喝了一些綠色的水。
+    drink<=362,0
+    green<=?,0
+    water
+這隻貓經常坐在這棵樹背後。
+    cat
+    often
+    sit
+    behind
+    tree
+這隻狗住在第三個車站。
+    dog
+    live<=?,1
+    third
+    station
+這隻貓經常清潔牠自己。
+    cat
+    often
+    clean<=?,0
+    itself
+今天天空是很清的。
+    sky
+    clear
+    today<=?,0
+這個湖裡的水是很清的。
+    water
+    lake
+    clear
+這個優秀的車站是濕的，但是它很清潔。
+    excellent
+    station
+    wet
+    clean<=?,1
+我的第三個學生經常坐在我背後。
+    third
+    student
+    sit
+    behind
+這個學生有一個清晰的想法。
+    student
+    clear
+    idea
+你能在車站裡面騎馬。
+    can
+    ride<=?,0
+    horse
+    station
+他經常坐在他的祖母背後。
+    often
+    sit
+    behind
+    grandmother
+這間極好的（優秀的）學校有十三個班。
+    excellent
+    school
+    thirteen
+    class
+這個小農場是在第三個車站的後面。
+    small
+    farm
+    behind
+    third
+    station
+一條小魚住在這個清澈的湖裡。
+    little<=?,0
+    fish
+    live<=?,1
+    clear
+    lake
+他三十分鐘之前買了十三塊膠擦。
+    buy
+    thirteen
+    eraser
+    thirty
+    ago
+這隻小馬經常去我們班。
+    little<=?,0
+    horse
+    often
+    go
+    class    
+這隻小貓討厭這個湖。
+    little<=?,0
+    cat
+    hate
+    lake
