@@ -6,7 +6,7 @@ from sqlalchemy.types import String, Integer, Date
 from typing import Dict, List, Sequence
 import datetime   
 from .db_base import Base
-from .word_def import WordDef, WordUsage, get_word_meaning
+from .word_def import WordDef, WordUsage, get_word_def, get_word_meaning
 from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft
 from .practice import Practice, Student, get_practice
 from .word_bank import WordBank, BankWord
@@ -262,6 +262,12 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
             if bws:
                 wu=WordUsage(wd=bws[0].wd, m_indice=bws[0].m_indice)
                 ed.wus[word]=wu
+            else:
+                wds=get_word_def(s, word)
+                if len(wds)==1:
+                    wd=wds[0]
+                    wu=WordUsage(wd=wd, m_indice=wd.get_all_m_indice())
+                    ed.wus[word]=wu
     for sd in ed.sds:
         refine_snt_draft(s, sd)
     ed.snt_cands=[t[0] for t in get_snts_from_keywords(s, ed.words)]

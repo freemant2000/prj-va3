@@ -1,5 +1,5 @@
 from unittest import TestCase
-from test_db_connector import open_session
+from vocabassistant3.tests.test_db_connector import open_session
 from vocabassistant3.db_base import set_seq_val
 from vocabassistant3.sentence import Sentence
 from vocabassistant3.sprint import add_exec_draft, get_sprint, get_exec, load_exec_draft, refine_exec_draft
@@ -33,7 +33,14 @@ class TestExercise(TestCase):
         wu=ed.wus["squirrel"]
         self.assertEquals(wu.wd.id, 5)
         self.assertEquals(wu.m_indice, "0")
-
+    def test_refine_exec_draft_wu_outside_sp(self):
+        ed=load_exec_draft("vocabassistant3/tests/test_exec_draft5.txt")
+        sp=get_sprint(self.s, 1)
+        refine_exec_draft(self.s, sp, ed)
+        self.assertEquals(len(ed.wus), 2)
+        wu=ed.wus["person"]
+        self.assertEquals(wu.wd.id, 21)
+        self.assertEquals(wu.m_indice, "0F")
     def test_refine_exec_draft_snt_cands(self):
         ed=load_exec_draft("vocabassistant3/tests/test_exec_draft2.txt")
         sp=get_sprint(self.s, 1)

@@ -1,4 +1,4 @@
-from test_disl import di
+from vocabassistant3.tests.test_disl import di
 from sqlalchemy.orm import Session
 
 dbc=di.get_wired_bean("dbc")

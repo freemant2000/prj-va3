@@ -24,10 +24,10 @@
             "justMyCode": true
         },
         {
-            "name": "Run Current Test Module",
+            "name": "Run Test",
             "type": "python",
             "request": "launch",
-            "module": "vocabassistant3.tests.${fileBasenameNoExtension}",
+            "module": "run_test",
             "justMyCode": true
         },
         {
