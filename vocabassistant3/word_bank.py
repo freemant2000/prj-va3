@@ -118,12 +118,16 @@ def refine_wb_draft(s: Session, wbd: WordBankDraft):
             if len(wds)==1:
                 wd2=wds[0]
                 wu.wd.id=wd2.id
-            else:
+            elif wds:
                 raise ValueError(f"Multiple matches found for {wd.word}")
+            else:
+                raise ValueError(f"Word {wd.word} not found")
         wd.id=wu.wd.id
         if wd.meanings:
             if not wd2.is_usage(wd, wu.m_indice):
                 wbd.mismatches[wd]=wd2
+        else:
+            wd.meanings=wd2.get_meanings_subset(wu.m_indice)
     elif wd in wbd.word_updates: # update existing WordDef
         wd2=get_word_def_by_id(s, wbd.word_updates[wd])
         wbd.upd_targets[wd]=wd2

@@ -56,6 +56,22 @@ class WordDef(Base):
         return ",".join([str(idx)+("F" if self.meanings[idx].has_forms() else "") for idx in range(len(self.meanings))])
     def __str__(self) -> str:
         return f"WordDef {self.word} with {len(self.meanings)} meanings"
+    def get_meanings_subset(self, m_indice: str)->List["WordMeaning"]:
+        wms=[]
+        for m_idx in m_indice.split(","):
+            if m_idx.endswith("F"):
+                m_idx=m_idx.rstrip("F")
+                incl_forms=True
+            else:
+                incl_forms=False
+            m_idx=int(m_idx)
+            if m_idx<len(self.meanings):
+                wm=self.meanings[m_idx].clone()
+                if not incl_forms:
+                    wm.clear_forms()
+                wms.append(wm)
+        return wms
+
     def is_usage(self, wd: "WordDef", m_indice: str)->bool:
         if wd.id != self.id or wd.word != self.word:
             return False
@@ -162,6 +178,15 @@ class WordMeaning(Base):
         return self.p_of_s==wm.p_of_s and self.meaning==wm.meaning and self.get_forms()==wm.get_forms() 
     def is_diff_meaning_text(self, wm: "WordMeaning")->bool:
         return self.p_of_s==wm.p_of_s and self.meaning!=wm.meaning and self.get_forms()==wm.get_forms() 
+    def clear_forms(self):
+        self.form1=self.form2=self.form3=None
+    def clone(self)->"WordMeaning":
+        wm=WordMeaning()
+        wm.p_of_s=self.p_of_s
+        wm.meaning=self.meaning
+        wm.idx=self.idx
+        wm.set_forms(self.get_forms())
+        return wm
 
 @dataclass
 class WordDefDraft:

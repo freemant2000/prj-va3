@@ -72,6 +72,17 @@ class TestWordDef(TestCase):
         wd.add_meaning("v", "大叫")
         wd.add_meaning("v", "哭")
         self.assertEquals(wd.get_selected_meanings([0, 2]), "大叫(n)、哭(v)")
+    def test_get_meanings_subset(self):
+        wd=WordDef(id=100, word="cry")
+        wd.add_meaning("n", "大叫")
+        wd.add_meaning("v", "大叫")
+        wd.add_meaning("v", "哭")
+        wms=wd.get_meanings_subset("0,2")
+        self.assertEquals(len(wms), 2)
+        self.assertEquals(wms[0].p_of_s, "n")
+        self.assertEquals(wms[0].meaning, "大叫")
+        self.assertEquals(wms[1].p_of_s, "v")
+        self.assertEquals(wms[1].meaning, "哭")
     def test_is_usage(self):
         wd=WordDef(id=100, word="cry")
         wd.add_meaning("n", "大叫")

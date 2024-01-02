@@ -48,3 +48,83 @@ alternative
     n,替代品
     n,選項
 
+Sick的一個同義詞是ill。
+    synonym
+Good的一個反義詞是bad。
+    antonym
+根據這篇節錄，我們應使用不同的同義詞。
+    according to
+    different
+    synonym
+第二段的主要的想法是甚麼？
+    main
+    idea
+    second<=?,0
+    paragraph
+作者使用了good的哪一個同義詞？
+    author
+    antonym
+寫出bad的一個反義詞。
+    antonym
+在第三段作者是怎樣描寫John的？
+    third
+    paragraph
+    describe
+在第二行，it指甚麼？
+    second<=?,0
+    line<=?,1
+    refer to
+那個旁述者懂很多詞語。
+    narrator
+    know
+    word
+這篇短文的標題是甚麼?
+    title
+    essay
+這個片語的一個同義詞是happy。
+    antonym
+    phrase
+這兩個片語有相似的意思。
+    phrase
+    similar
+    meaning
+這個作者寫了兩篇短文。
+    author
+    write
+    essay
+那個旁述者沒有說那個標題。
+    narrator
+    title
+這本書的標題是country的一個同義詞。
+    title
+    synonym
+根據我的老師，poor是rich的一個反義詞。
+    according to
+    antonym
+這個段落的主要的想法同上一段相反。
+    main
+    idea
+    paragraph
+    opposite to
+這個詞的意思同那個片語相反。
+    meaning
+    word
+    phrase
+    opposite
+這兩個作者很相似。
+    similar
+    author
+我們有三個選項(不用choice或option)。
+    alternative<=?,2
+這個片語包含兩個詞。
+    phrase
+    contain
+    word
+這篇短文的一個可替代的標題是甚麼？
+    alternative<=?,0
+    title
+    essay
+根據這篇節錄，有兩種學校的替代品。
+    according to
+    passage<=?,0
+    alternative<=?,1

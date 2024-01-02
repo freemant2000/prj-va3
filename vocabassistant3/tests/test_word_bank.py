@@ -92,6 +92,9 @@ class TestWordBank(TestCase):
         self.assertEquals(wbd.word_usages[wbd.wds[1]].wd.id, 3)
         self.assertEquals(wbd.word_usages[wbd.wds[2]].wd.id, 6)
         self.assertEquals(len(wbd.mismatches), 1)
+        wms=wbd.wds[0].meanings
+        self.assertEquals(len(wms), 1)
+        self.assertEquals(wms[0].meaning, "象鼻")
     def test_refine_wb_draft_infer(self):
         wbd=WordBankDraft(name="my wb1")
         wd=WordDef(word="trunk")
