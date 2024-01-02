@@ -12,6 +12,11 @@ class WordDef(Base):
     id: Mapped[int]=mapped_column(Integer, Seq("word_def_seq"), primary_key=True)
     word: Mapped[str]=mapped_column(String)
     meanings: Mapped[List["WordMeaning"]]=relationship("WordMeaning", order_by="asc(WordMeaning.idx)", back_populates="wd", cascade="all, delete-orphan")
+    @staticmethod
+    def get_forms_indice(m_indice: str)->List[int]:
+        m_indice=m_indice.split(",")
+        forms_indice=[int(m_idx.rstrip("F")) for m_idx in m_indice if m_idx.endswith("F")]
+        return forms_indice
     def add_meaning(self, p_of_s: str, meaning: str, forms:Sequence[str]=[])->None:
         m=WordMeaning()
         m.p_of_s=p_of_s

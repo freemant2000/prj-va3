@@ -31,7 +31,8 @@ def show_exec_tui(sp_id: int):
         if 0<=e_idx<len(sp.execs):
             exec=sp.execs[e_idx]
             for ew in exec.ews:
-                print(f"{ew.wd.word.ljust(20)}{ew.wd.get_meanings()}")
+                fw=ew.get_full_word()
+                print(f"{fw.ljust(20)}{ew.wd.get_meanings()}")
             print("==========")
             for snt in exec.snts:
                 print(snt.text)

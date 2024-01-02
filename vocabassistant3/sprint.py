@@ -20,6 +20,10 @@ class ExeciseWord(Base):
     m_indice: Mapped[str]=mapped_column(String)
     def __str__(self) -> str:
         return f"exercise word {self.wd.word}"
+    def get_full_word(self)->str:
+        forms_indice=WordDef.get_forms_indice(self.m_indice)
+        fw=self.wd.get_full_word(forms_indice)
+        return fw
 
 exec_snt_tbl=Table("exercise_snt", Base.metadata, 
                     Column("e_id", Integer, ForeignKey("exercises.id"), primary_key=True),
