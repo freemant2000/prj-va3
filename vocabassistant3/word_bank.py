@@ -111,10 +111,19 @@ def refine_wb_draft(s: Session, wbd: WordBankDraft):
   for wd in wbd.wds:
     if wd in wbd.word_usages: # use existing WordDef
         wu=wbd.word_usages[wd]
+        if wd.id:
+            wd2=get_word_def_by_id(s, wu.wd.id)
+        else:
+            wds=get_word_def(s, wd.word)
+            if len(wds)==1:
+                wd2=wds[0]
+                wu.wd.id=wd2.id
+            else:
+                raise ValueError(f"Multiple matches found for {wd.word}")
         wd.id=wu.wd.id
-        wd2=get_word_def_by_id(s, wu.wd.id)
-        if not wd2.is_usage(wd, wu.m_indice):
-            wbd.mismatches[wd]=wd2
+        if wd.meanings:
+            if not wd2.is_usage(wd, wu.m_indice):
+                wbd.mismatches[wd]=wd2
     elif wd in wbd.word_updates: # update existing WordDef
         wd2=get_word_def_by_id(s, wbd.word_updates[wd])
         wbd.upd_targets[wd]=wd2
@@ -194,9 +203,14 @@ def parse_wb_draft(lines: List[str])->WordBankDraft:
                     wd_id, m_indice=usage_str.split(",")
                 except:
                     raise ValueError(f"Comma expected in {usage_str}")
+                wd_id=wd_id.strip()
                 m_indice=m_indice.replace("-", ",")
-                wbd.word_usages[wd]=WordUsage(WordDef(id=int(wd_id)), m_indice)
+                if wd_id=="?":
+                    wd_id=None
+                else:
+                    wd_id=int(wd_id)
                 wd.id=wd_id
+                wbd.word_usages[wd]=WordUsage(WordDef(id=wd_id), m_indice)
             elif update_str:
                 wd_id=int(update_str)
                 wbd.word_updates[wd]=wd_id

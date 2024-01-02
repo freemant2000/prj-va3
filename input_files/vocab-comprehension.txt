@@ -1,0 +1,50 @@
+[閱讀理解問題中的常見詞語]
+synonym
+    n,同義詞
+antonym
+	n,反義詞
+passage
+	n,節錄
+    n,走廊
+according to
+	prep phr,根據
+different
+	adj,不同的
+second<=?,0
+paragraph
+	n,段落
+main
+	adj,主要的
+author
+	n,作者
+third<=?,0
+describe
+	v,描寫
+refer to
+	v phr,指稱
+line<=?,1
+narrator
+	n,旁述者
+word
+	n,詞
+title
+	n,標題（文章、書等）
+essay
+	n,短文
+phrase
+	n,片語
+similar
+	adj,相似的
+meaning
+	n,意思
+say, said, said
+	v,說
+opposite
+	adj,相反的
+opposite to
+	adj phr,同某物相反
+alternative
+	adj,可替代的
+    n,替代品
+    n,選項
+

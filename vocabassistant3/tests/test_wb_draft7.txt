@@ -1,0 +1,6 @@
+[wb-C]
+trunk<=?,1
+flow<=?,0
+    v,流動
+valley<=6,0
+    n,谷
