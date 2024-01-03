@@ -41,6 +41,14 @@ class TestWordBank(TestCase):
         wd.add_meaning("v", "吊死", ["hanged", "hanged"])
         bw=BankWord(wd=wd, m_indice="0F,1F")
         self.assertEquals(bw.get_full_word(), "hang; 0:hung,hung; 1:hanged,hanged")
+    def test_get_meanings(self):
+        wd=WordDef(id=100, word="fly")
+        wd.add_meaning("v", "飛", ["flew", "flown"])
+        wd.add_meaning("n", "蒼蠅")
+        bw=BankWord(wd=wd, m_indice="0F")
+        self.assertEquals(bw.get_meanings(), "飛(v)")
+        bw=BankWord(wd=wd, m_indice="0F,1")
+        self.assertEquals(bw.get_meanings(), "飛(v)、蒼蠅(n)")
     def test_find_word_banks_name(self):
         wbs=find_word_banks(self.s, "jackal")
         self.assertEquals(len(wbs), 1)

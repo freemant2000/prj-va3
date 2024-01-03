@@ -17,6 +17,11 @@ class WordDef(Base):
         m_indice=m_indice.split(",")
         forms_indice=[int(m_idx.rstrip("F")) for m_idx in m_indice if m_idx.endswith("F")]
         return forms_indice
+    @staticmethod
+    def get_int_m_indice(m_indice: str)->List[int]:
+        m_indice=m_indice.split(",")
+        m_indice=[int(m_idx.rstrip("F")) for m_idx in m_indice]
+        return m_indice
     def add_meaning(self, p_of_s: str, meaning: str, forms:Sequence[str]=[])->None:
         m=WordMeaning()
         m.p_of_s=p_of_s
@@ -63,13 +68,9 @@ class WordDef(Base):
         return f"WordDef {self.word} with {len(self.meanings)} meanings"
     def get_meanings_subset(self, m_indice: str)->List["WordMeaning"]:
         wms=[]
-        for m_idx in m_indice.split(","):
-            if m_idx.endswith("F"):
-                m_idx=m_idx.rstrip("F")
-                incl_forms=True
-            else:
-                incl_forms=False
-            m_idx=int(m_idx)
+        forms_indice=WordDef.get_forms_indice(m_indice)
+        for m_idx in WordDef.get_int_m_indice(m_indice):
+            incl_forms=m_idx in forms_indice
             if m_idx<len(self.meanings):
                 wm=self.meanings[m_idx].clone()
                 if not incl_forms:
@@ -80,10 +81,7 @@ class WordDef(Base):
     def is_usage(self, wd: "WordDef", m_indice: str)->bool:
         if wd.id != self.id or wd.word != self.word:
             return False
-        for idx, m_idx in enumerate(m_indice.split(",")):
-            if m_idx.endswith("F"):
-                m_idx=m_idx.rstrip("F")
-            m_idx=int(m_idx)
+        for idx, m_idx in enumerate(WordDef.get_int_m_indice(m_indice)):
             if m_idx<len(self.meanings):
                 wm1=self.meanings[m_idx]
                 if idx>=len(wd.meanings):

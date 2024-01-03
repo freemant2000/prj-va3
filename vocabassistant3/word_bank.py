@@ -17,9 +17,7 @@ class BankWord(Base):
     m_indice: Mapped[str]=mapped_column(String)
     
     def get_meanings(self)->str:
-        m_indice=self.m_indice.split(",")
-        m_indice=[int(m_idx.rstrip("F")) for m_idx in m_indice]
-        return self.wd.get_selected_meanings(m_indice)
+        return self.wd.get_selected_meanings(WordDef.get_int_m_indice(self.m_indice))
     def get_full_word(self)->str:
         forms_indice=WordDef.get_forms_indice(self.m_indice)
         fw=self.wd.get_full_word(forms_indice)

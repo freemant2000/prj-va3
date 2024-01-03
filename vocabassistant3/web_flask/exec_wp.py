@@ -30,7 +30,8 @@ def show_exec_buf(exec: Exercise)->str:
     buf, pr=buf_pr()
     pr(f"Exercise created on {exec.dt}")
     for ew in exec.ews:
-        pr(f"{ew.wd.word.ljust(20)}{ew.wd.get_meanings()}")
+        fw=ew.get_full_word()
+        pr(f"{fw.ljust(20)}{ew.get_meanings()}")
     pr("============")
     for snt in exec.snts:
         pr(snt.text)
