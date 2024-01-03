@@ -277,3 +277,202 @@ swear, swore, sworn
   v,爆粗: swore, sworn
 dive, dived/dove, dived
 	v,潜水
+
+他變成了一個好人。
+	become
+	person
+他已經變成了一個醫生。
+	become
+	doctor
+我已經變成了一個父親。
+	become
+	father
+今早他打破了那隻窗。
+	break<=?,0
+	window
+他已經打破了那個記錄(record)。
+	break<=?,0
+他已經打破了我們的規則。
+	break<=?,0
+	rule
+中國人建造了長城(Great Wall)。
+	Chinese<=?,2
+	build
+我建造了一張椅子。
+	build
+	chair
+他選擇了蘋果。
+	choose
+	apple
+他選擇了那枝筆。
+	choose
+	pen
+他已經選擇了那架車。
+	choose
+	car
+個嬰兒三分鐘前開始(不用start)哭。
+	baby
+	begin
+	cry<=?,0
+雨三分鐘前開始(不用start)。
+	rain<=?,0
+	begin
+我十分鐘前寫了一封信。
+	write
+	letter
+我昨天寫了一封信。
+	write
+	letter
+我已經寫了十封信。
+	write
+	letter
+他帶來了一些食物。
+	bring
+	food
+他經常帶給我一些消息。
+	bring
+	news<=?,1
+他已經帶來了很多水。
+	bring
+	water
+我兩天前買了一些橙。
+	buy
+	orange<=?,0
+他每星期都買蘋果。
+	buy
+	apple
+	every
+	week
+我已經買兩間屋。
+	buy
+	house
+我的貓捉了一隻老鼠。
+	cat
+	catch
+	mouse
+警察捉住了那個男人。
+	policeman
+	catch
+	man
+我看見了你的未來(future)。
+	see	
+我已經看見了那個答案。
+	see
+	answer<=?,0
+我看見了他的名字。
+	see
+	name
+他昨天來了我家。
+	come
+	home<=?,0
+他已經來了澳門。
+	come
+	Macao
+他明天會來。
+	come
+	tomorrow
+我找到了那枝筆。
+	find
+	pen
+你已經找到了他了嗎？
+	find
+	yet
+我會找到他的。
+	find
+我昨天聽到了那消息。
+	hear
+	news<=?,1
+你已經聽到了那個結果嗎？
+	hear
+	result
+他掘了一個洞。
+	dig
+	hole
+我已經掘了一個井(well)。
+	dig
+他們正在掘路。
+	dig
+	road
+他昨天做了全部的家課。
+	do
+	all
+	homework
+我已經做了那個報告。
+	do
+	report<=?,0
+他今早喝了橙汁。
+	drink<=?,0
+	orange<=?,0
+	juice
+你曾經喝過綠色的可樂嗎？
+	drink<=?,0
+	green<=?,1
+	Coke
+	ever
+
+......
+
+我原諒了他。
+	forgive
+你已經原諒了他嗎？
+	forgive
+	yet
+我不會原諒你的。
+	forgive
+他把那幅畫掛了在牆上。
+	hang<=?,0
+	picture
+	wall
+他把那些衣服掛在了晾衫繩(clothesline)上。
+	hang<=?,0
+	clothes
+他已經把那件大衣掛在了衣架(hanger)上。
+	hang<=?,0
+	coat
+那隻小雞結了冰。
+	chicken<=?,1
+	freeze
+他冷凍了那雞肉。
+	freeze
+	chicken<=?,0
+他討厭這個令人結冰的天氣。
+	hate
+	freezing
+	weather
+他不吃被冷凍了的食物。
+	frozen
+	food
+他去年種了一些蘋果。
+	grow<=?,1
+這棵樹已經長高了。
+	tree
+	grow<=?,0
+	taller
+他會種一些橙。
+	grow<=?,1
+我以前經常騎我的單車。
+	ride<=?,0
+	bicycle
+你曾經騎過一隻馬嗎？
+	ride<=?,0
+	horse
+	ever
+他經常騎單車。
+	ride<=?,0
+	bicycle
+
+........
+
+那時，他躺下並開始休息。
+	then<=?,1
+	lie<=?,1
+	down<=?,0
+	begin
+	rest<=?,0
+他躺到床上。
+	lie<=?,1
+	bed
+他已經躺下了。
+	lie<=?,1
+	down<=?,0
+

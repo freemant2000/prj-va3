@@ -54,7 +54,7 @@ def show_words_tui():
 def show_words_in_sp(sp: Sprint):
     for idx, bw in enumerate(sp.get_bws()):
         status="*" if sp.is_hard(bw) else ""
-        print(f"{str(idx).ljust(3)} {(bw.wd.word+status).ljust(20)}\t{bw.wd.get_meanings()}")
+        print(f"{str(idx).ljust(3)} {(bw.get_full_word()+status).ljust(20)}\t{bw.get_meanings()}")
 
 def add_prac_tui(sp_id: int):
     p_id=int(input("Input the practice ID: "))
@@ -126,7 +126,7 @@ def show_sprint_summary_tui():
             else:
                 rev_info=""
             fw=bw.get_full_word()
-            print(f"{str(idx).ljust(3)} {fw.ljust(20)}\t{bw.wd.get_meanings()}\t{rev_info}")
+            print(f"{str(idx).ljust(3)} {fw.ljust(20)}\t{bw.get_meanings()}\t{rev_info}")
         print("Sentences used")
         for snt in (s for exec in sp.execs for s in exec.snts):
             print(snt.text)

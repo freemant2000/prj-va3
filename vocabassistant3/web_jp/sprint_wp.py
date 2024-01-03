@@ -49,7 +49,7 @@ def show_sprint_buf(s: Session, sp)->str:
         else:
             rev_info=""
         fw=bw.get_full_word()
-        pr(f"{str(idx).ljust(3)} {fw.ljust(20)}\t{bw.wd.get_meanings()}\t{rev_info}")
+        pr(f"{str(idx).ljust(3)} {fw.ljust(20)}\t{bw.get_meanings()}\t{rev_info}")
     pr("Sentences used")
     for snt in (s for exec in sp.execs for s in exec.snts):
         pr(snt.text)
