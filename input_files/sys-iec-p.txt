@@ -767,3 +767,4 @@ understand<=1194,0F
         v,明白:understood, understood
 grandma
         n,嫲嫲
+
