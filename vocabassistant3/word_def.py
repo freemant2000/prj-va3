@@ -118,10 +118,15 @@ class WordDef(Base):
             return False
         if len(self.meanings)!=len(wd.meanings):
             return False;
+        dm=False
         for wm, wm2 in zip(self.meanings, wd.meanings):
-            if not wm.is_diff_meaning_text(wm2):
+            if wm.is_same_cnt(wm2):
+                continue
+            if wm.is_diff_meaning_text(wm2):
+                dm=True
+            else:
                 return False
-        return True
+        return dm
     def is_same(self, wd: "WordDef")->bool:
         if wd.word != self.word:
             return False
@@ -261,10 +266,10 @@ def save_wd_draft(s: Session, wdd: WordDefDraft, upd_type: UpdateType):
         s.add(wdd.wd)
     else:
         if upd_type==UpdateType.EXTENDS:
-            if wdd.is_extends:
+            if not wdd.is_extends:
                 raise ValueError("The word def draft is not extending an old word def")
         elif upd_type==UpdateType.SET_MEANING:
-            if wdd.is_diff_meaning_text:
+            if not wdd.is_diff_meaning_text:
                 raise ValueError("The word def draft is not updating a meaning in an old word def")
         elif upd_type==UpdateType.DRASTIC:
             pass

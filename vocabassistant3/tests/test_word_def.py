@@ -165,6 +165,18 @@ class TestWordDef(TestCase):
         wd2=WordDef(word="hand")
         wd2.add_meaning("n", "耳")
         self.assertFalse(wd.is_diff_meaning_text(wd2))
+    def test_is_diff_meaning_multi_meanings(self):
+        wd2=WordDef(word="hand")
+        wd2.add_meaning("n", "手")
+        wd2.add_meaning("v", "交給")
+        wd=WordDef(word="hand")
+        wd.add_meaning("n", "手")
+        wd.add_meaning("v", "交")
+        self.assertTrue(wd.is_diff_meaning_text(wd2))
+        wd=WordDef(word="hand")
+        wd.add_meaning("n", "腳")
+        wd.add_meaning("v", "交給")
+        self.assertTrue(wd.is_diff_meaning_text(wd2))
     def test_add_word_def(self):
         self.s.begin()
         wd=WordDef(word="hand")
