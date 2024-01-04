@@ -51,7 +51,7 @@ def get_word_banks(s: Session, offset: int, limit: int)->List[WordBank]:
   return wbs
 
 def find_word_banks(s: Session, kw: str, limit: int=20)->List[WordBank]:
-  q=select(WordBank) \
+  q=select(WordBank).distinct() \
     .join(WordBank.bws).join(BankWord.wd) \
     .where(or_(WordBank.name.contains(kw), WordDef.word==kw)) \
     .options(joinedload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \

@@ -1,0 +1,110 @@
+[sushi legend]
+craft
+  n,手工藝
+Tokyo
+	n,東京
+boredom
+	n,悶
+sushi
+	n,壽司
+genius
+	n,天才
+mastery
+	n,精通
+Michelin
+	n,米芝蓮
+restaurant
+	n,餐廳
+ingredient
+  n,成份
+	n,食材
+vinegar
+	n,醋
+delicate
+	adj,精美易破的
+ethic
+	n,（業務的）道德
+standard
+  n,標準
+	adj,標準的
+rigorous
+	adj,嚴格的
+peek
+	v,窺看
+  n,窺看
+purchase
+	v,購買
+insist on
+	v phr,堅持某物
+trash=>742
+  n,（美）垃圾
+	v,棄置
+  v,唱衰
+philosophy
+	n,哲學
+  n,哲學思想
+schedule
+	n,時間安排
+  v,時間安排
+incredible
+	adj,難以置信的
+  adj,極好的
+achieve
+	v,達成
+technique
+	n,技術
+raw
+	adj,生的（未熟）
+imagination
+  n,想象力
+	n,想象
+success
+	n,成功
+inspect
+	v,檢查／檢視
+examine
+	v,檢查／檢視
+fascinating
+	adj,令人著迷的
+employee
+	n,僱員
+repetition
+	n,重覆
+trade
+	n,行業
+  v,交易
+extreme
+	adj,極端的
+dedicate
+	v,奉獻
+  v,投入、專注
+invention
+  n,發明
+method
+	n,方法
+
+他的手工藝在東京很出名。
+因為悶，他去了學造壽司。
+他不是一個天才，他只是不斷追求(pursue)精通而已。
+這間在東京的米芝蓮餐廳用最好的食材。
+因為悶，那個天才喝了一瓶醋。
+這個精美易破的菜會用到一些常見的源材料。
+他有很高的（業務的）道德標準。
+這些壽司學員(trainee)經過了嚴格的培訓。
+因為悶，他偷看入我的房間。
+我在東京丟棄了那些醋。
+他購買了一間米芝蓮餐廳。
+他堅持做嚴格的測試。
+他唱衰我的哲學思想。
+你知道那個手工藝培訓的時間安排嗎？
+讓我們窺探一下他的（業務的）道德。
+他已達致了在這個技術的精通。
+這個哲學天才堅持吃醋伴生的飯。
+這是一個有創意的時間安排。
+他在東京唱衰我的極好的想象力。
+他堅決去達致成功。
+他的哲學思想是每日檢視那些生的牛肉。
+他有一些令人著迷的僱員。
+通過重覆你可以達致在這個行業的精通。
+這個標準有點極端。
+他專注於新的方法的發明。
