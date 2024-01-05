@@ -1,0 +1,21 @@
+[monkey and wedge L2]
+wedge
+	n,楔
+log
+	n,日誌
+	v,記錄入日誌
+	n,一截樹幹
+stick, stuck, stuck<=?,0F
+escape
+	v,逃走
+until=>752
+        conj,直至
+        prep,直至
+garden
+	n,花園
+tool
+	n,工具
+trouble
+	n,麻煩
+pay, paid, paid
+	v,支付
