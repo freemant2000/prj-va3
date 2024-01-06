@@ -1,0 +1,47 @@
+[fisherman-3]
+colourful
+	adj,五顏六色的
+surprised=>1173
+	adj,吃驚的
+tightly
+	adv,緊緊地
+tooth, teeth=>921
+	n,牙齒
+husband
+	n,丈夫
+rod
+	n,杆
+fishing rod
+	n phr,魚杆
+hold, held, held
+	v,拿著
+mouth=>199
+	n,口
+open<=575,0-1
+weigh
+	v,重
+flounder
+	n,比目魚
+pull
+	v,拉
+sea
+	n,海
+shiny
+	adj,（反光）閃亮的
+grow<=806,0F-1F-2F
+        v,生長:grew, grown
+        v,種植:grew, grown
+        v,變得:grew, grown
+heavy
+	adj,重的
+out of
+	prep phr,出來
+prince
+	n,王子
+sixty
+	num,六十
+kilogram
+	n,公斤
+maybe
+	adv,也許
+
