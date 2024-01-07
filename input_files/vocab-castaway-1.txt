@@ -1,0 +1,22 @@
+[castaway-1]
+evil
+	adj,邪惡的
+Lord<=1324,0-1
+kill
+	v,殺死
+king
+	n,國王
+Lady
+	n,夫人
+    n,女士
+cousin<=1005,0
+major=>888
+	adj,主要的
+    n,少校
+sailor
+	n,水手
+captain
+	n,船長
+    n,隊長
+shark
+	n,鯊魚

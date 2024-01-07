@@ -1,0 +1,29 @@
+[castaway-2]
+exciting<=471,0
+order
+	n,命令
+	v,命令
+kind<=692,0-1
+        adj,仁慈的
+        n,種類
+place
+	n,地方
+agree
+	v,同意
+throw, threw, thrown
+	v,拋
+hit<=905,0
+hook
+	v,鈎
+pork
+	n,豬肉
+smell, smelt, smelt
+	v,聞到
+row
+	n,一行
+teeth
+	n pl,牙
+head
+	n,頭
+hammer
+	n,錘子
