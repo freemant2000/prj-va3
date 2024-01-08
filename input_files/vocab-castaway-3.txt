@@ -1,0 +1,19 @@
+[castaway-3]
+hard<=92,0-1-2-3
+pull
+	v,拉
+same=>725
+	adj,相同的
+rope
+	n,繩
+carefully
+	adv,小心地
+tail
+	n,尾
+axe
+	n,斧頭
+fight<=1190,0F-1
+afraid
+	adj,害怕的
+stomach
+	n,胃
