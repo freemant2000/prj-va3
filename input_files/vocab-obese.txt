@@ -1,0 +1,73 @@
+[obesity]
+diabetes
+	n,糖尿病
+calorie
+	n,卡路里
+physician
+	n,內科醫生
+educate
+	v,教育
+nutrition
+	n,營養
+educator
+	n,教育工作者
+starvation
+	n,捱餓
+struggle
+	v,爭扎
+  n,爭扎
+junk
+	n,垃圾（無用、無價值）
+endanger
+	v,危及
+health
+	n,健康
+processed
+	adj,處理過的
+void of
+	adj phr,不包含...的
+anticipate
+	v,預期
+defeat
+	v,打敗
+majority
+	n,大多數
+affordable
+	adj,價錢大眾化的
+obese
+	adj,痴肥的
+originally
+	adv,原先
+stay in shape
+	v phr,保持健美
+for starters
+	adv phr,例如
+ensure
+	v,確保
+mention
+	v,提及
+statistics
+	n,統計數據
+contribute to
+	v phr,有份導致
+	v phr,對...作貢獻
+childhood
+	n,童年
+obesity
+	n,痴肥
+corporate
+	adj,大企業的
+campaign
+	n,宣傳運動
+million<=229,0
+        num,一百萬
+alarming
+	adj,發出警號的
+local
+	adj,本地的
+  n,本地人
+population
+	n,人口
+consume
+	v,消耗
+

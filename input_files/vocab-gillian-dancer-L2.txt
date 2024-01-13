@@ -1,0 +1,52 @@
+[Gillian the dancer L2]
+confused
+	adj,困惑的
+recommend
+	v,推薦
+worry=>523
+	v,（使）擔心
+	n,擔心
+punish
+	v,懲罰
+punishment
+	n,懲罰
+scold
+	v,責駡
+pay attention
+	v phr,留心
+mental
+	adj,心理的
+disorder
+	n,失調
+medicine<=780,0
+        n,藥物
+radio=>685
+	n,收音機
+	n,電台
+alone
+	adj,單獨的
+immediately
+	adv,立即
+receive
+	v,收到
+international
+	adj,國際的
+award
+	n,獎項
+musical
+	n,音樂劇
+misunderstand, misunderstood, misunderstood
+	v,誤解
+long live xxx
+	c,xxx萬歲
+sentence
+	n,句子
+explain
+	v,解釋
+list<=777,0
+        n,清單、列表
+strong
+	adj,強壯的
+exercise<=187,0-1
+        n,運動、鍛練
+        v,運動、鍛練

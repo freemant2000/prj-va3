@@ -1,0 +1,56 @@
+[Math vocab-1]
+line
+	n,線
+straight line
+	n phr,直線
+angle
+	n,角
+rectangle
+	n,長方形
+square=>166
+        n,正方形
+        n,廣場
+	n,平方
+side
+	n,邊
+triangle
+	n,三角形
+circle
+	n,圓
+radius
+	n,半徑
+diameter
+	n,直徑
+parallelogram
+	n,平行四邊形
+parallel
+	adj,平行的
+perpendicular
+	adj,垂直的
+intersect
+ 	v,相交
+circumference
+	n,圓周
+base=>1053
+        n,底部
+		n,根基
+height
+	n,高
+area
+	n,面積
+perimeter
+	n,周界
+base angle
+	n phr,底角
+isosceles triangle
+	n phr,等腰三角形
+right angle
+	n phr,直角
+right triangle
+	n phr,直角三角形
+equilateral triangle
+	n phr,等邊三角形
+angle bisector
+	n phr,角平分線
+mid-point
+	n,中點
