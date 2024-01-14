@@ -1,0 +1,133 @@
+[忠心的朋友內文-1]
+sight<=1151,0-1
+        n,景象
+        n,視力
+Scotland
+    n,蘇格蘭
+night watchman
+   n phr,看更（值夜的）
+fight off
+   v phr,擊退
+terrier
+    n,鬥牛㹴（一種狗）
+accompany
+   v,陪伴
+dawn=>1183
+    n,黎明（即日出時）
+dusk
+   n,黃昏
+loneliness
+  n,孤獨
+position
+    n,位置
+    n,職位
+heat
+    n,熱力
+inseparable
+    adj,不可分開的
+require
+    v,要求
+lead=>836
+    v,帶領
+    n,狗帶
+desire
+   n,渴望
+   v,渴望
+master=>846
+   n,主人
+   n,師傅
+   n,大師
+mealtime
+    n,吃飯時候
+cough
+   v,咳
+lung
+    n,肺
+tuberculosis
+    n,肺癆
+
+
+frequently  頻繁地
+take a sad turn 發生不愉快的改變
+common  常見的
+disease 疾病
+whine   （狗等）嗚嗚叫
+eventually  最終（之前都未確定）
+bond    （感情上）聯系（名）
+bury    埋葬
+lay 擺放、生蛋
+rest    安息、休息
+lay sb to rest    把某人安葬（片）
+distressed  痛苦的
+refuse  拒絕
+faithfully  忠誠地
+paw 爪
+grave   坟墓
+occasion    場合
+on many occasions   很多時候（片）
+gardener    花匠
+keeper  看守人
+chase   追
+chase away    趕走（片）
+realize 意識到
+pointless   無意義的、無作用的
+discouraged 受打擊的
+unending    永不停止的
+loyalty 忠誠（名）
+townspeople 城鎮居民
+warm sb's heart  暖某人的心
+carpenter   木匠
+treat   奬勵小零食
+shelter 容身之所、庇護所
+mayor   市長
+involve 涉及
+special 特別的
+license 執照、許可（名）
+statue  雕象
+inspiring   啟發的
+tombstone   墓碑
+devotion    全心的愛和忠誠（名）
+
+
+
+usual   平常的
+familiar    熟識的
+round   循迴路線
+leave   離開
+took    take的過去式
+side    身邊
+local   本地的
+coffee  咖啡
+share  分享
+bite    小餐、咬
+friendship  友誼
+became  become的過去式
+heard   hear的過去式和過去分詞
+end 結束
+life    生命
+strong   強的、強壯的
+between 在...之間
+present 在場的、現在
+watch   觀看
+side    身邊、側邊
+leave   離開
+afterwards  之後（副）
+stood   stand的過去式
+however 然而（副）
+
+
+
+never   永不、從不
+always  總是
+return  返回（動）
+word    消息、詞語
+travel  旅行
+area    地區
+lunchtime   午飯時間
+built   build的過去式
+beside  在...旁邊
+town    城鎮
+watch over  照看
+visitor 探訪者
+animal  動物
+lesson  教訓、課堂

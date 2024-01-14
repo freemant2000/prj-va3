@@ -6,7 +6,7 @@ birth
 act
 	v,演戲
   v,行動
-trouble=>798
+trouble
 	n,麻煩
 apartment
 	n,公寓（住宅單位）
