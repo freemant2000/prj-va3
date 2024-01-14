@@ -1,0 +1,60 @@
+[Shouting record L2]
+British
+        adj,不列顛的
+        n,不列顛人
+actor
+	n,演員
+recently
+	adv,近來
+science
+	n,科學
+lover
+	n,愛好者
+	n,愛人
+scream
+	v,尖叫
+	n,尖叫
+none
+	pron,沒有一個
+challenge
+	n,挑戰
+	v,挑戰
+scale
+	n,磅
+	n,度量
+	n,刻度
+	n,規模
+shout
+	v,大叫
+	n,大叫
+during
+	prep,在...期間
+hold, held, held=>1090
+	v,拿著
+	n,保留
+record
+	v,記錄
+	n,記錄
+hold a record
+	v phr,保持記錄
+ironically
+	adv,諷刺地
+break a record
+	v phr,打破記錄
+jet
+	n,噴射機
+engine
+	n,引擎
+sound
+	n,聲音
+	v,聽起來
+level=>838
+        n,程度、水準
+	n,層級
+helper
+	n,助手、幫助者
+difficult
+	adj,困難的
+able
+	adj,能夠的
+

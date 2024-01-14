@@ -71,3 +71,76 @@ population
 consume
 	v,消耗
 
+有糖尿病的人不能吃高卡路里食物。
+	diabetes
+	calorie
+這個內科醫生在營養上教育我們。
+	physician
+	educate
+	nutrition
+一些教育工作者在捱餓中爭扎。
+	educator
+	struggle<=?,0
+	starvation
+垃圾食物危及我們的健康。
+	junk
+	endanger
+	health
+這些處理過的食物沒有(不用have)任何營養。
+	processed
+	void of
+	nutrition
+無人預期(不用expect)這個內科醫生會打敗糖尿病。
+	anticipate
+	physician
+	defeat
+	diabetes
+大多數的人只吃價錢大眾化的食物。
+	majority
+	affordable
+這個痴肥的男人原先想保持健美。
+	obese
+	stay in shape
+	originally
+例如(不用example)，飯是一種高卡路里食物。
+	for starters
+	rice<=?,1
+	calorie
+我們要確保這份報告會提及這些統計數字。
+	ensure
+	mental
+	statistics
+垃圾食物是很差的。例如(不用example)，它有份導致童年痴肥。
+	junk
+	for starters
+	contribute to<=?,0
+	childhood
+	obesity
+數以百萬元被花在大企業的宣傳運動之上。
+	million
+	spend
+	corporate
+	campaign
+無人預期(不用expect)到一些如此發出警號的統計數字。
+	anticipate
+	alarming
+	statistics
+例如(不用example)，我們可以為本地人口組織一個宣傳運動。
+	for starters
+	organise
+	campaign
+	local<=?,0
+	population
+這個糖尿病人的數目是發出警號的。
+	number<=?,0
+	diabetes
+	alarming
+一個人每日只需消耗1000卡路里。
+	consume
+	calorie
+因為他的大企業的背境，他在本地人中是相當出名的。
+	corporate
+	background
+	famous
+	local<=?,1
+	among

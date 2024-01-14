@@ -50,3 +50,100 @@ strong
 exercise<=187,0-1
         n,運動、鍛練
         v,運動、鍛練
+
+我推薦這個醫生。
+	recommend
+	doctor
+這個困惑的男孩有一個心理失調。
+	confused
+	mental
+	disorder
+我媽媽經常駡我。
+	scold
+請留心！
+	pay attention
+他收到了那些藥物。
+	receive
+	medicine
+他參加了一個國際比賽。
+	enter<=?,1
+	international
+	competition<=?,1
+他立即贏了一個獎。
+	win
+	award
+	immediately
+他推薦這齣音樂劇。
+	recommend
+	musical
+我那時很困惑並誤解了他。
+	confused
+	misunderstand
+那個困惑的男人收到了一封信。
+	confused
+	receive
+	letter
+他推薦了一隻藥。
+	recommend
+	medicine
+我誤解了那句句子。
+	misunderstand
+	sentence
+這個老師經常懲罰學生。
+	punish
+	student
+我推薦了那部電話。
+	recommend
+	phone
+雖然我解釋了，但是他還是很困惑。
+	explain
+	still
+	confused
+我收到了那個清單。
+	receive
+	list
+我不想懲罰任何人。
+	punish
+	anyone
+他有強大的精神力量(power)。
+	strong
+	mental
+這個困惑的男人有一種心理失調。
+	confused
+	mental
+	disorder
+他經常在電台上駡人。
+	scold
+	radio<=?,1
+那齣音樂劇得了一個國際獎項。
+	musical
+	international
+	award
+她有進食(eating)失調。
+	disorder
+這個爸爸從不駡他的孩子們，雖然他有時懲罰他們。
+	never<=?,0
+	scold
+	sometimes
+	punish
+我誤解了那封信。
+	misunderstand
+	letter
+這個收音機得到了一個獎。
+	radio<=?,0
+	receive
+	award
+這個困惑的男人有睡眠失調。
+	confused
+	sleep
+	disorder
+他立即服了那些藥。
+	take<=?,1
+	medicine
+	immediately
+他經常不留心。
+	pay attention
+我推薦這個心理練習。
+	recommend
+	mental
+	exercise<=?,0
