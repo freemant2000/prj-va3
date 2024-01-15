@@ -54,3 +54,56 @@ angle bisector
 	n phr,角平分線
 mid-point
 	n,中點
+
+這兩條直線是平行的。
+	straight line
+	parallel
+一個正方形也是一個平行四邊形。
+	square<=?,0
+	parallelogram
+一個正方形也是一個長方形。
+	square<=?,0
+	rectangle
+這兩條直線是垂直的。
+	straight line
+	perpendicular
+這兩條直線不相交。
+	straight line
+	intersect
+三條直線可形成(form)一個三角形。
+	straight line
+	triangle
+一個平行四邊有四條邊。
+	parallelogram
+	side<=?,0
+這個圓的半徑是5，所以它的直徑是10。
+	radius
+	circle
+	diameter
+這個三角形的一隻底角是40度。
+	base angle
+	triangle
+	degree<=?,2
+這個圓的周長是它的半徑的3.14倍(time)。
+	circumference
+	circle
+	radius
+這條直線同這個圓的這條半徑平行。
+	straight line
+	parallel
+	radius
+	circle
+這條直線同這個平行四邊的一條邊垂直。
+	straight line
+	perpendicular
+	side<=?,0
+	parallelogram
+這個圓的周長等於這個正方形的一條邊。
+	circumference
+	circle
+	side<=?,0
+	square<=?,0
+這條直線和這個圓的這條直徑之間的角是60度。
+	angle
+	straight line
+	diameter
