@@ -1,0 +1,127 @@
+[mind fitness]
+workout
+	n,健身
+strengthen
+	v,強化
+physique
+	n,體格
+sculpt
+	v,塑造
+chest
+	n,胸部
+neglect
+	v,忽視
+caffeine
+	n,咖啡因
+effect
+	n,影響
+	n,效果
+brain
+	n,腦
+cognitive
+	adj,認知的
+ability
+	n,能力
+decline
+	v,下跌
+	n,下跌
+agile
+	adj,敏捷的
+accomplish
+	v,達成
+optimal
+	adj,最優的
+perfect
+	adj,完美的
+	v,使完美
+rave about
+	v phr,大力讚賞
+function
+	n,功能
+	v,發揮功能
+major
+	adj,主要的
+task
+	n,任務
+neuron
+	n,神經元
+connection
+	n,聯系
+	n,連線
+halt
+	v,停止（暫時）
+category
+	n,類別
+program=>934
+        n,節目
+        n,計劃
+	n,程式
+	v,寫程式
+shrink, shrank, shrunk
+	v,縮小
+cortex
+	n,腦皮層
+jiffy
+	n,瞬間
+in a jiffy
+	adv phr,一瞬間之後
+fare better
+	v phr,更順風順水
+specific
+	adj,特定的
+hack
+	v,（黑客等）入侵
+	n,好招數
+concentrate
+	v,集中精神
+nap
+	n,小睡
+	v,小睡
+recall
+	v,回憶
+pathway
+	n,路徑
+	n,生物中訊息傳遞路徑
+maintain
+	v,維持、維護
+attention
+	n,注意力
+calculate
+	v,計算
+reason
+	n,原因
+offer
+        v,（提供某物）提議
+        n,（提供某物）提議
+sharp=>560
+	adj,尖的
+	adj,清醒的
+poet
+	n,詩人
+overdo
+	v,過量地做
+damage
+	v,損毀
+	n,損毀
+	n,（因損毀）賠償
+memory
+	n,記憶
+	n,記憶力
+recommend
+	v,推薦
+sound=>1057
+        n,聲音
+        v,聽起來
+	adj,完好的
+divide
+	v,分割
+	v,除
+vocabulary
+	n,詞彙
+target
+	n,目標
+	v,以...為目標
+long term
+	n phr,長期
+prefrontal
+	adj,前額葉的
