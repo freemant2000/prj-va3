@@ -58,3 +58,119 @@ difficult
 able
 	adj,能夠的
 
+那個英國演員喜歡科學。
+	British<=?,0
+	actor
+	science
+一些英國人近來來了澳門。
+	British<=?,1
+	recently
+	come
+	Macao
+他是一個科學愛好者。
+	science
+	lover<=?,0
+當她看見那隻老鼠時，她尖叫。
+	see
+	mouse
+	scream<=?,0
+沒有任何一個演員挑戰我。
+	none
+	actor
+	challenge<=?,1
+他近來買了一個磅。
+	recently
+	buy
+	scale<=?,0
+在1至10的度量裡，我會給這個演員8分。
+	scale<=?,2
+	give
+	actor
+作為一個挑戰，他向那個英國男人大叫 。
+	as
+	challenge<=?,0
+	shout<=?,0
+	British<=?,0
+在科學考試期間，一個學生突然尖叫。
+	during
+	science
+	exam
+	student
+	scream<=?,0
+他拿著一個磅。
+	hold<=?,0
+	scale<=?,0
+他保持著最高的男人的記錄。
+	hold a record
+	tallest
+他近來挑戰了一個愛中國的人。
+	recently
+	challenge<=?,1
+	lover<=?,0
+	China
+諷刺地，我的老師並不學習新的東西。
+	ironically
+	teacher
+	learn
+	thing
+我在今個科學測驗中打破了我的記錄。
+	science
+	test<=?,0
+	break a record
+他拿著一架玩具噴射機。
+	hold<=?,0
+	toy
+	jet
+那架車的引擎發出了 （即造出了）一聲尖叫。
+	engine
+	make<=?,0
+	scream<=?,1
+他聽起來像一個低層（即低水平）的學生。
+	sound<=?,1
+	low
+	level<=?,0
+諷刺地，我的科學老師很怕鬼(ghost)。
+	ironically
+	science
+	afraid<=?,0
+我的助手會檢查這個引擎。
+	helper
+	check
+	engine
+這架噴射機打破了我們的記錄。
+	jet
+	break a record
+這個挑戰聽起來很困難。
+	challenge<=?,0
+	sound<=?,1
+	difficult
+他的英文能夠(不用can)達到這個水平。
+	English<=?,0
+	able
+	reach<=?,0
+	level<=?,0
+諷刺地，一個磅不知道它自己的重量(weight)。
+	ironically
+	scale<=?,0
+	know
+	its
+	own<=?,1
+這些演員中沒有一個能(不用can)駕駛這架噴射機。
+	none
+	actor
+	able
+	drive
+	jet
+他去到了這個遊戲的第十級。
+	reach<=?,0
+	level<=?,1
+	game
+諷刺地，這些愛中國的人都想要一個英國護照(passport)。
+	ironically
+	China
+	lover<=?,0
+	British<=?,0
+我能夠(不用can)修理這個引擎。
+	able
+	repair
+	engine
