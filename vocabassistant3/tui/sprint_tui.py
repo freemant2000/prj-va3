@@ -32,6 +32,7 @@ def sprint_main_tui():
     cmds={"show": ("List practices and exercises in the sprint", show_sprint_tui),
           "sum": ("Show a summary of the sprint", show_sprint_summary_tui),
           "ap": ("Add a practice to the sprint", lambda: add_prac_tui(sp_id)),
+          "dp": ("Delete a practice from the sprint", lambda: del_prac_tui(sp_id)),
           "re": ("Refine an exercise draft for the sprint", lambda: refine_exec_draft_tui(sp_id)),
           "ae": ("Add an exercise to the sprint", lambda: add_exec_draft_tui(sp_id)),
           "se": ("Show an exercise in the sprint", lambda: show_exec_tui(sp_id)),
@@ -62,6 +63,14 @@ def add_prac_tui(sp_id: int):
         sp=get_sprint(s, sp_id)
         prac=get_practice(s, p_id)
         sp.add_prac(prac)
+        s.commit()
+        print("OK")
+
+def del_prac_tui(sp_id: int):
+    p_id=int(input("Input the practice ID: "))
+    with open_session() as s:
+        sp=get_sprint(s, sp_id)
+        sp.del_prac(p_id)
         s.commit()
         print("OK")
 

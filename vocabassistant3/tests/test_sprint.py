@@ -82,6 +82,16 @@ class TestSprint(TestCase):
        self.assertTrue(sp2.contains_prac(prac))
        self.s.rollback()
 
+    def test_del_prac(self):
+       self.s.begin()
+       sp=get_sprint(self.s, 1)
+       sp.del_prac(2)
+       self.s.flush()
+       sp2=get_sprint(self.s, 1)
+       self.assertEquals(len(sp2.pracs), 1)
+       self.assertEquals(sp2.pracs[0].id, 1)
+       self.s.rollback()
+
     def test_uses_snt(self):
        sp=get_sprint(self.s, 1)
        self.assertTrue(sp.uses_snt(Sentence(id=1)))

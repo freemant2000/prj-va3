@@ -127,35 +127,130 @@ prefrontal
 	adj,前額葉的
 
 健身可強化你的體格。
+	workout
+	strengthen
+	physique
 他想塑造一個強壯的胸部。
-不要忽視咖啡因對你的大腦的影響。
-他的認知的能力下跌了。
-那個敏捷的男人達成了一個最優的效果。
+	sculpt
+	chest
+不要忽視咖啡因對你的腦的影響。
+	neglect
+	caffeine
+	effect<=?,0
+	brain
+他的認知的能力下跌(不用fall或drop)了。
+	cognitive
+	ability
+	decline<=?,0
+那個敏捷的男人達成(不用achieve)了一個最優的效果。
+	agile
+	accomplish
+	optimal
+	effect<=?,1
 他想塑造一個完美的體格。
+	sculpt
+	perfect<=?,0
+	physique
 他大力讚賞這個新功能。
+	rave about
+	function<=?,0
 我們的主要的任務是增加這些神經元之間的聯系。
-那個下跌已經（暫時）停止了。
+	major<=?,0
+	task
+	increase<=?,0
+	connection<=?,0
+	neuron
+那個下跌(不用fall或drop)已經（暫時）停止了。
+	decline<=?,1
+	halt
 有兩類別的健身計劃。
-我們的大腦怎樣發揮功能的?
+	category
+	workout
+	program<=?,1
+我們的腦怎樣發揮功能的?
+	brain
+	function<=?,1
 這個神經元縮小了。
+	neuron
+	shrink
 一瞬間之後咖啡因就進入了我的腦皮層。
+	in a jiffy
+	caffeine
+	cortex
 那個敏捷的男人做得比其他人更好。
+	agile
+	fare better
 有更強的認知能力的學生在學校會更順風順水。
+	cognitive
+	ability
+	fare better
 你想要任何特定的功能嗎？
+	specific
+	function<=?,0
 一個好招數是集中於最重要的任務。
+	hack<=?,1
+	concentrate
+	important
+	task
 他大力讚賞那個敏捷的男人。
-你能回憶那條路徑(不用route)嗎？
+	rave about
+	agile
+你能回憶那條路徑(不用route或path)嗎？
+	recall
+	pathway<=?,0
 他只可以維持他的注意力一瞬間。
-他有一個好招數去計算出大腦裡神經元的數目。
+	maintain
+	attention
+	jiffy
+他有一個好招數去計算出腦裡神經元的數目。
+	hack<=?,1
+	calculate
+	neuron
+	brain
 他有一個特定的原因去提供一個免費的健身計劃。
+	specific
+	reason
+	offer<=?,0
+	free<=?,1
+	workout
+	program<=?,1
 小睡了之後，他覺得很清醒。
+	nap<=?,0
+	sharp<=?,1
 在這個類別裡的詩人會更順風順水。
+	category
+	poet
+	fare better
 如果你做得太過量，你會損毀你的記憶。
-他推薦了這條路徑。
+	overdo
+	damage<=?,0
+	memory<=?,0
+他推薦了這條路徑(不用route或path)。
+	recommend
+	pathway<=?,0
 那隻貓在我的胸膛上小睡了一會。
+	nap<=?,1
+	chest
+	jiffy
 雖然我沒有一個最優的計劃，但我有一個完好的體格。
+	optimal
+	sound<=?,2
+	physique
 那個神經元分裂（分割）了。
+	neuron
+	divide<=?,0
 你不應該忽視你的詞彙，你應強化它。
+	neglect
+	vocabulary
+	strengthen
 那個詩人分散了他的注意力。
-這個一個長前的目標。
-前額葉的腦皮層同我們的記憶力有關。
+	poet
+	divide<=?,0
+	attention
+這是一個長期的目標。
+	long term
+	target<=?,0
+前額葉的腦皮層同我們的記憶力有關聯(connected with)。
+	prefrontal
+	cortex
+	memory<=?,1

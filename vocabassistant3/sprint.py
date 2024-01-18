@@ -113,6 +113,12 @@ class Sprint(Base):
             raise ValueError("The practice is already in the sprint")
         else:
             self.pracs.append(prac)
+    def del_prac(self, p_id: int):
+        p=next((p for p in self.pracs if p.id==p_id), None)
+        if p:
+            self.pracs.remove(p)
+        else:
+            raise ValueError("The practice is not in the sprint")
     def uses_snt(self, snt: Sentence)->bool:
         return any(exec for exec in self.execs if exec.uses_snt(snt))
 
