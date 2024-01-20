@@ -1,0 +1,41 @@
+[忠心的朋友內文-2]
+frequently
+  adv,頻繁地
+take a xxx turn
+  v phr,發生了一個xxx的改變
+common
+  adj,常見的
+disease
+ n,疾病
+whine
+   v,（哭著）抱怨
+   v,（狗等）嗚嗚叫
+eventually
+  adv,最終（之前都未確定）
+bond
+    n,（感情上）聯系（名）
+bury
+    v,埋葬
+lay<=1195,0-1
+rest=>656
+        v,休息
+        pron,其餘的東西
+    v,安息
+lay sb to rest
+    v phr,把某人安葬
+distressed
+  adj,極痛苦的
+refuse
+  v,拒絕
+faithfully
+  adv,忠誠地
+paw
+ n,爪
+grave
+   n,坟墓
+occasion
+    n,場合
+on many occasions
+   adv phr,很多時候
+gardener
+    n,花匠

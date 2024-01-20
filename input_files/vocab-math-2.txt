@@ -1,0 +1,34 @@
+[Math vocab-2]
+sum
+ 	n,總和
+difference
+	n,差
+product
+	n,產品
+	n,乘積
+quotient
+	n,商
+remainder
+	n,餘數
+subtract
+	n,減
+minus
+	n,減
+multiply
+ 	n,乘
+time<=?,2
+divide
+	v,除
+fraction
+	n,分數
+integer
+	n,整數
+formula
+	n,公式
+equation
+	n,等式、方程
+variable
+	n,變量
+unknown
+	adj,未知的
+	n,未知數

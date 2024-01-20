@@ -1,0 +1,47 @@
+[忠心的朋友內文-1]
+sight<=1151,0-1
+        n,景象
+        n,視力
+Scotland
+    n,蘇格蘭
+night watchman
+   n phr,看更（值夜的）
+fight off
+   v phr,擊退
+terrier
+    n,鬥牛㹴（一種狗）
+accompany
+   v,陪伴
+dawn=>1183
+    n,黎明（即日出時）
+dusk
+   n,黃昏
+loneliness
+  n,孤獨
+position
+    n,位置
+    n,職位
+heat
+    n,熱力
+inseparable
+    adj,不可分開的
+require
+    v,要求
+lead=>836
+    v,帶領
+    n,狗帶
+desire
+   n,渴望
+   v,渴望
+master=>846
+   n,主人
+   n,師傅
+   n,大師
+mealtime
+    n,吃飯時候
+cough
+   v,咳
+lung
+    n,肺
+tuberculosis
+    n,肺癆
