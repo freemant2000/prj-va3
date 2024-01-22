@@ -1,0 +1,44 @@
+[fisherman-5]
+excited
+ 	adj,興奮的
+rush
+	v,衝
+hesitant
+	adj,猶䂊的、無決心的
+cottage
+	n,鄉村小屋
+honey
+	n,蜜糖
+	n,甜心
+look=>745
+	v,望
+	v,看起來
+at least
+	adv phr,至少
+only<=747,0
+        adv,只有
+spare
+	v,放過、不傷害
+live<=349,0-1
+        v,生活
+        v,居住
+forget, forgot, forgotten
+	v,忘記
+know<=1049,0F
+magic
+	n,魔術
+turn<=717,2
+	v,變成
+better
+	adj,更好的
+surprise<=1004,0-1
+        v,使驚訝
+        n,驚訝
+to my surprise
+	adv phr,令我吃驚
+house<=297,0
+        n,房子
+king<=1114,0
+        n,國王
+already
+	adv,已經

@@ -902,25 +902,62 @@ dive, dived/dove, dived
 他經常騎單車。
 	ride<=?,0
 	bicycle
+去年價格上升了很多。
+	price
+	rise
+太陽已經升起了。
+	sun
+	rise
+那個價格已上升了5%。
+	price
+	rise
+那條死屍(body)由死亡中站了起來(不用stand)。
+	rise
+	dead
+昨天溫度(temperature)上升了。
+	rise
+她在那條裙上縫了一朶花圖案(pattern) 。
+	skirt
+	sew
+	flower
+她在那條裙子上繡了一個小豬圖案(pattern) 。
+	skirt
+	sew
+她已經繡了一幅花圖案(pattern) 嗎？
+	sew
+	flower
+她每個月都繡一些東西。
+	sew
+	something
+我昨晚掃了地。
+	sweep
+	floor
+你曾經掃過這條街嗎？
+	sweep
+	street
+	ever
+他每日都掃這個地板。
+	sweep
+	floor
+他撕爛了他的習作簿(workbook)。
+	tear
+他撕爛了那張紙。
+	tear
+	piece
+	paper
+他拿著一張被撕爛了的地圖。
+	hold<=?,0
+	torn
+	map
+他穿著一件被撕爛了的恤衫。
+	wear
+	torn
+	shirt
+他撕爛了的那封信。
+	tear
+	letter
 
 ........
-去年價格上升了很多。
-太陽已經升起了。
-那個價格已上升了5%。
-那條死屍由死亡中站了起來(不用stand)。
-昨天溫度(temperature)上升了。
-她在那條裙上縫了一朶花圖案(pattern) 。
-她在那條裙子上繡了一個小豬圖案。
-她已經繡了一幅花圖案嗎？
-她每個月都繡一個圖案。
-我昨晚掃了地。
-你曾經掃過這條街嗎？
-他每日都掃這個地板。
-他撕爛了他的家課簿。
-他撕爛了那頁紙。
-他拿著一張被撕爛了的地圖。
-他穿著一件被撕爛了的恤衫。
-他撕爛了的那封信。
 他昨天讓我早點離開。
 我讓他拿走那些錢。
 他打(不用hit)了我幾下。

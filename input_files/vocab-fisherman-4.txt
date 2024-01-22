@@ -1,0 +1,25 @@
+[fisherman-4]
+normal
+	adj,正常的
+	adj,普通的
+enchanted
+	adj,被魔法影響的
+fish=>486
+	n,魚:fish
+	v,釣魚
+taste=>1135
+	n,品味
+	v,嚐起來
+	n,味道
+twelve
+	num,十二
+off<=689,0
+        prep,向側離開
+off you go
+	c,你走吧
+certainly
+	adv,肯定地
+kill
+	v,殺死
+mouse<=445,0
+	n,老鼠
