@@ -956,17 +956,44 @@ dive, dived/dove, dived
 他撕爛了的那封信。
 	tear
 	letter
-
-........
+上星期這個球縮小了。
+	shrink
+那個蘋果已經縮小了。
+	shrink
+他們的GDP已經收縮了5%。
+	shrink
+他由銀行提了100元。
+	withdraw<=?,0
+	dollar
+	bank
 他昨天讓我早點離開。
+	let
+	leave<=?,0
+	earlier
 我讓他拿走那些錢。
+	let
+	take<=?,0
+	money
 他打(不用hit)了我幾下。
+	beat<=?,0
 他已經打敗了我們。
+	beat<=?,2
 他點著了一枝煙(cigarette)。
+	light<=?,3
 他扭曲了那把間尺。
+	bend
+	ruler
 不要彎曲你的身體。
+	bend
+	body
 他彎低身去看那條蟲(worm)。
+	bend
 那地震動搖了整個城市(city)。
+	earthquake
+	shake
+	
+........
+
 他昨天流了很多血。
 你曾經流這麼多血嗎？
 他已經雪藏了那個正在流血的男人嗎？
@@ -1083,16 +1110,7 @@ Android的用戶數目很多年前超越了iPhone。
 不要開槍！
 他（用槍）射了我。
 我們已經射跌了那個氣球。
-上星期這個球縮小了。
-那個蘋果已經縮小了。
-他們的GDP已經收縮了5%。
-他由銀行提了100元。
-	withdraw<=?,0
-	dollar
-	bank
 他退出(不用quit)了那場比賽。
 他潜入了海中。
 你曾經在這裡潜水嗎？
 他喜歡在夏天潜水。
-
-
