@@ -3,7 +3,7 @@ from starlette.requests import Request
 from .user_prod_web import get_current_user
 from ..buf_print import buf_pr
 from ..db_base import open_session
-from ..sprint import Exercise, get_exec, get_sprint_for_exec
+from ..sprint import ExeciseWord, Exercise, get_exec, get_sprint_for_exec
 
 @jp.SetRoute("/execs/{e_id:int}")
 def exec_wp(r: Request):
