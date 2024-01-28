@@ -1,0 +1,129 @@
+[future cure]
+baldness
+	n,光頭
+genetic
+	adj,基因的
+Alzheimer
+	n,老年痴呆症
+patient
+	n,病人
+reckless
+	adj,魯莽的
+dread
+	adj,可怕的
+remedy
+	n,救治
+	n,補救
+clone
+	v,克隆
+	n,克隆
+organ
+	n,器官
+eliminate
+	v,消除
+capability
+	n,能力（包括外在支援）
+defeat
+	v,打敗
+cure
+	v,治好
+reawaken
+	v,重新喚醒
+intellectual
+	adj,智力上的
+senior citizen
+	n phr,長者
+optimistic
+	adj,樂觀的
+pipe dream
+	n phr,美夢
+throughout
+	prep,遍佈
+extend
+	v,延長
+regimen
+	n,療程（用藥規則等）
+maintain<=1708,0
+        v,維持、維護
+forever
+	adv,永久地
+envision
+	v,設想
+approach
+	v,走近
+	n,處理方式
+once and for all
+	adv phr,徹底地
+effect
+	n,影響
+	n,效果
+routine
+	n,每日的例程
+	adj,例行的
+follicle
+	n,毛囊
+pill
+	n,藥丸
+hit the market
+	v phr,上市
+develop
+	v,發展
+on the horizon
+	adv phr,即將來臨
+prove to be
+	v phr,證明是
+effective
+	adj,有效的
+vaccine
+	n,疫苗
+manageable
+	adj,可管理的
+deadly
+	adj,致命的
+spread
+	v,擴散
+	n,擴散
+ensure
+	v,確保
+golden years
+	n phr,晚年
+neglect
+	v,忽視
+pump
+	n,泵
+	v,泵
+fall apart
+	v phr,破碎
+	v phr,失效
+yet=>579
+        adv,尚（配合「未」）
+	adv,依然
+as=>329
+        prep,作為
+	conj,隨著
+age=>275
+	n,年齡
+	v,變老
+affect
+	v,影響
+condition
+	n,條件
+decade
+	n,十年
+option
+	n,選項
+treatment
+	n,治療
+sufferer
+	n,受苦者
+realise
+	v,意識到
+weakness
+	n,弱點
+reduce
+	v,減少
+primarily
+	adv,主要地
+strike
+	v,打擊:struck, struck
+	v,襲擊:struck, struck
