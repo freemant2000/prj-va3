@@ -53,7 +53,7 @@ underdog
 	choice
 我相信你的主要的選項是婚姻。
 	believe
-	major
+	major<=?,0
 	option
 	marriage
 他的決心是清楚的。
