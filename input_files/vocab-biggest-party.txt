@@ -1,0 +1,175 @@
+[最大的派對]
+million<=229,0
+        num,一百萬
+noisy
+   adj,嘈吵的
+excited
+ adj,興奮的
+line<=485,0-1
+        n,線
+        n,行（文字等）
+cheer
+   v,歡呼
+performer
+   n,表演者
+costume
+	n,特殊服裝
+deafening
+	adj,震耳欲聾的
+blind=>273
+        adj,盲的
+   v,使盲
+movement
+    n,移動
+    n,動作
+dizzying
+	adj,令人頭暈的
+definition
+	n,定義
+yearly
+  adj,每年的
+carnival
+    n,嘉年華
+Brazilian
+  n,巴西人
+  adj,巴西的
+attend
+	v,出席
+festival
+	n,節日
+ornament
+    n,裝飾
+    v,裝飾
+feather
+    n,羽毛
+make-up
+    n,化妝
+bowl
+    n,碗
+restaurant
+  n,餐廳
+flavourful
+	adj,濃味的
+bean
+    n,豆
+stew
+    n,慢火燉的餸菜
+popular
+	adj,受歡迎的
+throughout=>1791
+  prep,遍佈（地方）
+  prep,貫穿（時期）
+Brazil
+  n,巴西
+basket<=457,0
+        n,籃子
+slightly
+  adv,輕微地  
+potato
+  n,馬鈴薯
+tasty
+   adj,美味的
+head=>653
+        n,頭
+    v,前往
+immediately
+	adv,立即
+samba
+   n,森巴舞
+band
+    n,樂隊
+drum
+    n,鼓
+shaker
+  n,沙鈴
+cowbell
+ n,牛鈴
+crowd
+   n,一群人
+whistle
+ n,哨子
+element
+	n,元件
+    n,元素
+fusion
+	n,融合
+African
+ adj,非洲的
+culture
+	n,文化
+beat=>1209
+        v,打（幾下）:beat, beaten
+        v,心跳:beat, beaten
+        v,打敗:beat, beaten
+    n,拍子
+highlight
+	n,最精彩的部份
+    v,使特出
+special<=910,0
+        adj,特別的
+parade
+  n,巡遊
+  v,巡遊
+rare
+    adj,罕見的
+excellent<=26,0
+        adj,優秀的、極好的
+ahead
+   adv,提前
+event
+	n,事件
+    n,（社交）活動
+twelve
+  num,十二
+organise
+	v,組織
+float
+   n,花車
+particular
+	adj,特定的
+theme
+	n,主題
+approach<=1796,0-1
+        v,走近
+        n,處理方式
+gigantic
+	adj,巨大的
+sparkling
+	adj,閃光的（珠寶等）
+crocodile
+   n,鱷魚
+dedicate<=1513,0-1
+        v,奉獻
+        v,投入、專注
+native
+  adj,本土的
+  n,土著
+feature
+  n,特徵
+  v,以...為重點
+golden
+  adj,金的
+  adj,金色的
+headpiece
+   n,頭飾
+traditional
+	adj,傳統的
+festivity
+  n,慶祝活動
+Wednesday
+   n,星期三
+exhausted
+	adj,極疲倦的
+entire
+  adj,整個的
+intend
+	v,打算
+company
+    n,公司
+	n,陪伴
+hopefully 
+  adv,希望地
+starchy
+  adj,多澱粉的
+chip
+    n,薯片
