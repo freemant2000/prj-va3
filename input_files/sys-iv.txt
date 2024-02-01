@@ -991,35 +991,80 @@ dive, dived/dove, dived
 那地震動搖了整個城市(city)。
 	earthquake
 	shake
-	
-........
-
 他昨天流了很多血。
+	bleed
 你曾經流這麼多血嗎？
+	ever
+	bleed
 他已經雪藏了那個正在流血的男人嗎？
-噢，你的傷口正在流血！
-他的傷口經常流血。
+	freeze
+	bleed
+噢，你的傷口(wound)正在流血！
+	bleed
+他的傷口(wound)經常流血。
+	bleed
 噢，你的鼻子正在流血！
+	nose
+	bleed
 那架車滑過了那條馬路。
+	slide<=?,0
+	across
 他滑過了那條路。
+	slide<=?,0
+	across
 那架飛機滑行一百米。
+	airplane
+	slide<=?,0
+	hundred
+	metre
 那架車滑行了十米。
+	slide<=?,0
+	metre
 他經常滑落那個小山。
+	slide<=?,0
+	hill
 我的狗昨天聞起來有點香(nice)。
+	smell<=?,2
 那隻狗聞了我的腳一下。
+	smell<=?,0
+	foot
 我聞了一下那隻狗。
+	smell<=?,0
 那個溜冰選手(ice-skater)在快速自轉。
-那個舞蹈員正在（快速）自轉。
+	spin
+那個舞蹈員(dancer)正在（快速）自轉。
+	spin
 那個球（快速）自轉了一分鐘。
+	ball
+	spin
 那隻猴子在樹上搖擺。
-蜘蛛俠搖晃穿過這個城市。
+	swing<=?,0
+蜘蛛俠(Spiderman)搖晃穿過這個城市。
+	swing<=?,0
+	through
+	city
 那隻猴子搖晃到了另一棵樹。
-他把郵票貼上信封(envelope)。
+	swing<=?,0
+	another
+他把郵票(stamp)貼上信封(envelope)。
+	stick<=?,0
 我被卡住了。
+	stick<=?,0
 他把手指塞入了那個洞裡。
-我貼了一張貼紙在他的背上。
-我們被卡在了車流之中。
+	finger
+	stick<=?,2
+	hole
+我貼了一張貼紙(sticker)在他的背上。
+	stick<=?,0
+	back
+我們被卡在了車流(traffic)之中。
+	stick<=?,0
 那隻老鼠的頭被卡在了那個瓶子裡。
+	head<=?,0
+	stick<=?,0
+	bottle
+
+........
 他證明了我沒有把那封信塞入那個信箱。
 他想塞他的鼻子入我的事務裡。
 一隻蚊(mosquito)咬了我。

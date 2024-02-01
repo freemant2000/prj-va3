@@ -1,0 +1,18 @@
+[castaway-4]
+cruel
+	adj,殘忍的
+alive
+	adj,活的
+metre<=1894,0
+	n,米（公尺）
+pound
+	n,（重量）磅
+	n,英鎊
+soon
+	adv,不久
+empty
+	adj,空的
+strange
+	adj,古怪的
+rock
+	n,岩石

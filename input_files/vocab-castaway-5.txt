@@ -1,0 +1,27 @@
+[castaway-5]
+bottle<=328,0
+	n,瓶子
+contain
+	v,包含
+important
+	adj,重要的
+letter
+	n,信
+wash
+	v,洗
+dirty<=729,0
+	adj,骯髒的
+find<=882,0F
+	v,找到、發現:found, found
+secret
+	adj,秘密的
+wait
+	v,等待
+check
+	v,檢查
+neck
+	n,頸
+side<=794,1
+	n,旁邊
+thick
+	adj,厚的

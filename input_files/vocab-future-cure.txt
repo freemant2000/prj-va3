@@ -133,11 +133,32 @@ strike
 	defeat
 	Alzheimer
 光頭是因為基因的不同。
+	baldness
+	due to
+	genetic
+	difference<=?,1
 這個老年痴呆病人是魯莽的。
+	Alzheimer
+	patient<=?,0
+	reckless
 這個可怕的(不用terrible)基因疾病是沒有救治的。
+	dread
+	genetic
+	disease
+	remedy<=?,0
 克隆人類器官是魯莽的。
+	clone<=?,0
+	human
+	organ
+	reckless
 我們沒有能力（包括外在支援）去消除老年痴呆症。
+	capability
+	eliminate
+	Alzheimer
 我們會打敗這個可怕的疾病。
+	defeat
+	dread
+	disease
 這個救治法可治好光頭。
 他重新喚醒了他的智力上的興趣。
 這些長者都很樂觀。
