@@ -160,13 +160,34 @@ strike
 	dread
 	disease
 這個救治法可治好光頭。
+	remedy<=?,0
+	cure
+	baldness
 他重新喚醒了他的智力上的興趣。
+	reawaken
+	intellectual
+	interest
 這些長者都很樂觀。
+	senior citizen
+	optimistic
 他的美夢是在全澳門都有他的商店。
+	pipe dream
+	throughout<=?,0
 這些長者正在玩一個智力遊戲。
+	senior citizen
+	intellectual
 他魯莽地想延長這個老年痴呆症療程。
+	recklessly
+	extend
+	Alzheimer
+	regimen
 他要永遠保持他的光頭。
-他設想一個新的方法。
+	baldness
+	forever
+他設想了一個新的方式(不用method)。
+	envision
+	approach<=?,1
+
 我的美夢是徹底地消除它的影響。
 他每日的例程包括清楚他的毛囊。
 請延長這個假期。
