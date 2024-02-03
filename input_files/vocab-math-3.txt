@@ -1,0 +1,29 @@
+[Math vocab-3]
+solve
+	v,解決
+prove<=1197,0F
+	v,證明:proved, proven
+percent
+	n,百分數
+decimal
+	n,小數
+positive
+	adj,正的
+	adj,積極的、正面的
+negative
+	adj,負的
+	adj,消極的、負面的
+root
+	n,根
+square root
+	n phr,平方根
+distance
+	n,距離
+speed
+	n,速度
+volume
+	n,體積
+coordinate
+	n,座標
+point
+	n,點
