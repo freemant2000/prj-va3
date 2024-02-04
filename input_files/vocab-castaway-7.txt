@@ -1,0 +1,22 @@
+[castaway-7]
+study<=652,0-1-2
+        v,學習（做題等）
+        v,研究
+        n,研究
+ship<=36,0
+        n,（大）船
+carry<=377,0
+        v,攜帶
+direction
+	n,方向
+wind
+	n,風
+blow, blew, blown
+	v,吹
+wave
+	n,波浪
+push
+	v,推
+right
+	adj,正確的
+	n,右邊

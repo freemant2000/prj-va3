@@ -1,0 +1,13 @@
+[castaway-6]
+travel
+	v,旅行
+answer<=431,0-1
+        n,答案
+        v,回答
+question
+	n,問題
+bring, brought, brought
+	v,帶來
+damage
+	v,損毀
+	n,損毀
