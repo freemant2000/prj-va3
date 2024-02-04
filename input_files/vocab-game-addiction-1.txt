@@ -1,0 +1,38 @@
+[遊戲成癮-1]
+degree<=1674,0-2
+        n,程度
+        n,學位
+coursework
+  n,課程作業
+presentation
+    n,簡報
+    n,（正式）演溝
+addiction
+   n,上癮
+secondary
+   adj,第二的
+   adj,中學的
+chilling
+    adj,令人驚心的
+    adj,令人凍的
+estimate
+    v,估算
+    n,估算
+addicted to
+    adj phr,對...上癮的
+former
+  adj,前度的
+addict
+  n,上癮者
+  v,使上癮
+downhearted
+  adj,失落的
+cut sb off
+  v phr,不讓某人接觸某物
+favourite
+   adj,最喜愛的
+   n,最喜愛的東西
+counter-strike
+   n,反擊
+recall
+  v,回憶
