@@ -1,51 +1,112 @@
 [遊戲成癮-2]
-intervene   介入
-eventually  最終
-rehabilitate   使康復
-firearm 火器（槍等）
-refuse  拒絕
-violent 暴力的
-tragic  悲劇的
-Korean    韓國的、韓國人、韓語
-hooked    被吸引著
-simulation  模擬（名）
-ironically  諷刺地
-couple  夫婦、一對
-digital 數碼的
-avatar  虛擬化身
-infant  嬰兒（一歲以下）
-excellent   極好的
-survey  統計調查
-prevalent   普遍的、常見的
-psychologist    心理學家
-warn    警告（動）
-lead to 導致（片）
-obesity 痴肥
-eyesight    視力
-social  社交的、社會的
-interaction 互動（名）
-dealt   deal的過去式和過去分詞
-combat  打擊
-epidemic    流行病
-recover 恢復、康復
-struggle    爭扎（動、名）
-several 幾個
-occasion    場合
-inspire 啟發
-audience    觀眾
-mentor  良師
-professor   教授
-PhD 博士
-psychology  心理學 
-session 一節（課等）
-insight 精僻見解
-whether 是否
-hypnosis    催眠（名）
-cure    治好
-further 推進、進一步的
-research    研究（動、名）
-compile 匯編
-counsellor  心理輔導員
-rehabiliation   康復（名）
-challenge   挑戰（動、名）
-overcome    克服
+intervene
+   v,介入
+eventually<=1731,0
+        adv,最終（之前都未確定）
+rehabilitate
+   v,使康復
+firearm
+  n,火器（槍等）
+refuse
+  v,拒絕
+violent
+  adj,暴力的
+tragic
+  adj,悲劇的
+Korean
+    adj,韓國的
+    n,韓國人
+    n,韓語
+hooked
+    adj,被吸引著
+simulation
+   n,模擬
+ironically
+  adv,諷刺地
+couple
+   n,夫婦
+   n,一對
+digital
+  adj,數碼的
+avatar
+  n,虛擬化身
+infant
+  n,嬰兒（一歲以下）
+excellent<=26,0
+        adj,優秀的、極好的
+survey
+  n,統計調查
+  v,統計調查
+prevalent
+   adj,普遍的、常見的
+psychologist
+    n,心理學家
+warn
+    v,警告
+lead to
+   v phr,導致
+obesity
+   n,痴肥
+eyesight
+    n,視力
+social
+  adj,社交的
+  adj,社會的
+interaction
+  n,互動
+deal<=1225,0F-1F
+        v,處理:dealt, dealt
+        v,買賣（非法）:dealt, dealt
+combat
+  v,打擊
+epidemic
+    n,流行病
+recover
+   v,恢復、康復
+struggle
+    v,爭扎
+    n,爭扎
+several
+   det,幾個
+occasion
+    n,場合
+inspire
+   v,啟發
+audience
+    n,觀眾
+mentor
+    n,良師
+professor
+   n,教授
+PhD
+   n,博士
+psychology
+  n,心理學 
+session
+  n,一節（課等）
+insight
+  n,精辟見解
+whether
+  conj,是否
+hypnosis
+    n,催眠
+cure
+    v,治好
+further
+  adj,進一步的
+  adv,進一步地
+  v,推進
+research
+    n,研究
+    v,研究
+compile
+   v,匯編
+counsellor
+  n,（個人問題）輔導員
+rehabiliation
+   n,康復
+challenge
+   v,挑戰
+   n,挑戰
+overcome<=1226,0F
+        v,克服:overcame, overcome
