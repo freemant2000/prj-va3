@@ -25,3 +25,21 @@ side<=794,1
 	n,旁邊
 thick
 	adj,厚的
+
+他把他的大衣掛在那個鈎上。
+	hang<=?,0
+	hook<=?,0
+	coat
+這封信是很重要的。
+	letter
+	important
+這個瓶包含了一些骯髒的水。
+	bottle
+	contain
+	dirty
+他正在洗他的頸。
+	wash
+	head<=?,0
+我發現了他的秘密。
+	find
+	secret<=?,1

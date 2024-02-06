@@ -20,3 +20,18 @@ captain
     n,隊長
 shark
 	n,鯊魚
+
+這個邪惡的領主想殺死國王。
+	evil
+	Lord<=?,0
+	kill
+	King
+林少校是這艘船的船長。
+	major<=?,1
+	captain<=?,0
+	ship
+如果你不能游泳，你就不能成為一個水手。
+	sailor
+鯊魚是海中的王。
+	shark
+	King

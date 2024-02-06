@@ -16,3 +16,15 @@ strange
 	adj,古怪的
 rock
 	n,岩石
+
+那個殘忍的領主不是活的。
+	cruel
+	Lord<=?,0
+	alive
+他吃了兩磅豬肉。
+	pound<=?,0
+	pork
+他的胃不是空的。
+	stomach
+	empty
+

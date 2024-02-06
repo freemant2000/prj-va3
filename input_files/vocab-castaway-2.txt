@@ -27,3 +27,19 @@ head
 	n,頭
 hammer
 	n,錘子
+
+那個領主命令少校留在船上。
+	Lord<=?,0
+	order<=?,1
+	major<=?,1
+	ship
+他用一個鈎打中了那條鯊魚。
+	hit<=?,1
+	shark
+	hook<=?,0
+我聞到豬肉。
+	smell<=?,0
+	pork
+他把一個桘子拋給了我。
+	throw
+	hammer

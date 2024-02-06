@@ -17,3 +17,14 @@ afraid
 	adj,害怕的
 stomach
 	n,胃
+
+他喜歡吃豬肉和豬尾。
+	pork
+	tail
+他大力地拉那條繩。
+	pull
+	rope
+	hard<=?,3
+牠的胃裡有一把斧頭。
+	axe
+	stomach
