@@ -1,0 +1,69 @@
+[Road of love L2]
+village
+	n,村莊
+India
+	n,印度
+social
+	adj,社會的
+	adj,社交的
+class=>149
+	n,課、班
+	n,等級
+dig, dug, dug
+	v,掘
+coal
+	n,煤
+worker=>171
+	n,工人、工作者
+burn
+	v,燃燒
+decide
+	v,決定
+hammer
+	n,錘子
+adult
+	n,成年人
+top=>177
+	n,頂端
+	adj,頂端的
+distance
+	n,距離
+town
+	n,城鎮
+mile
+	n,英里
+injure
+	v,使受傷
+chisel
+	n,鑿
+reduce=>1819
+	v,減少、減小
+use=>660
+	v,使用
+	n,使用
+receive
+	v,收到
+complete
+	v,完成、使完整
+	adj,完整的
+point=>816
+	n,觀點、論點
+	n,點
+	n,分數
+	v,指著
+chief
+	adj,首要的
+	n,首領
+release
+	v,發佈、釋放
+	n,發佈、釋放
+minister
+	n,大臣、部長
+award=>1559
+	n,獎項
+	v,奬勵
+stamp
+	n,郵票
+feature
+	n,特徵
+	v,以...為重點
