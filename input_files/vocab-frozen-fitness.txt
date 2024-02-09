@@ -1,0 +1,141 @@
+[frozen fitness]
+bathtub
+	n,浴缸
+submerge
+	v,浸入、使浸入
+icy
+	adj,冰冷的
+shiver
+	v,發抖
+	n,顫抖
+mammal
+	n,哺乳類動物
+thermogenesis
+	n,生熱作用
+slide, slid, slid
+	v,滑行
+	n,滑梯
+undergo
+	v,經歷
+drastic
+	adj,激烈的、激進的
+internal
+	adj,內部的
+process
+	v,處理
+	n,過程
+recent
+	adj,近來的
+study
+	v,學習（做題等）
+	v,研究
+	n,研究
+indicate
+	v,指示出
+boost
+	v,提升
+metabolism
+	n,新陳代謝
+tub
+	n,浴缸
+	n,圓柱形盒（牛油等）
+underneath
+	prep,在...底下（難見、深）
+testosterone
+	n,睪丸素（雄性賀爾蒙）
+subject sb to sth
+	v phr,使某人承受某物
+subjected to
+	v phr,承受某物（被動）
+regularly
+	adv,有規律地
+	adv,經常地
+extreme
+	adj,極端的
+heat
+	n,熱力
+muscular
+	adj,肌肉的
+	adj,充滿肌肉的
+benefit
+	n,好處
+	v,使得益
+generate
+	v,（特定機制）產生
+entrepreneur
+	n,創業家
+regimen
+	n,療程（用藥規則等）
+conduct
+	v,進行
+experiment
+	n,實驗
+craze
+	n,（一窩蜂的）熱情
+craze for
+	n phr,對某物的（一時）熱情
+spark
+	v,引發
+	v,點燃
+dunk
+	v,（吃之前）浸一浸
+Olympics
+	n,奧運會
+expose
+	v,曝露、使同某物接觸
+rarely
+	adv,很少（發生）
+lift
+	v,提升（水平、數量、快樂）
+overcome<=1226,0
+        v,克服
+temperature
+	n,溫度
+initial
+	adj,初始的
+miss out on
+	v phr,錯過
+routine
+	n,每日的例程
+progress
+	n,進展
+article
+	n,文章
+shock
+	n,震驚
+	v,震驚、使震驚
+take advantage of
+	v phr,好好利用
+convenient
+	adj,方便的
+function
+	n,功能
+several
+	det,幾個
+packet
+	n,小包
+average
+	adj,平均的
+shower
+	n,淋浴
+	n,驟雨
+	v,淋浴
+willing
+	adj,願意的
+give it a go
+	v phr,試一試某物
+gradually
+	adv,漸漸地
+adopt
+	v,採納
+	v,收養
+besides
+	prep,除了...之外（也...）
+settle down
+	v phr,定居、安定下來
+trend
+	n,趨勢
+improve
+	v,改善
+blockbuster
+	n,電影大片
