@@ -189,18 +189,54 @@ strike
 	approach<=?,1
 
 我的美夢是徹底地消除它的影響。
+	pipe dream
+	eliminate
+	effect<=?,0
+	once and for all
 他每日的例程包括清楚他的毛囊。
+	routine<=?,0
+	follicle
 請延長這個假期。
+	extend	
 他設想一種強大的藥丸。
+	envision
+	pill
 這隻藥將會在下個月上市。
-發展出一器官需要很強的能力。
+	medicine
+	hit the market
+發展出一個器官需要很強的能力。
+	develop
+	organ
+	require
+	capability
 他很樂觀一種新方法很快會來臨(不用come)。
+	optimistic
+	approach<=?,1
+	on the horizon
 療程證明是有效的。
+	regimen
+	prove to be
+	effective
 他發展了一種為長者而設的疫苗。
+	develop
+	vaccine
+	senior citizen
 這個每日例程證明是可管理的。
+	routine<=?,0
+	prove to be
+	manageable
 這個致命的病擴散至全中國。
+	deadly
+	disease
+	spread<=?,0
+	throughout<=?,0
 AI年代會很快來臨(不用come)。
+	age<=?,2
+	on the horizon
 請確保人們在他們的晚年不會被忽視。
+	ensure
+	neglect
+	golden years
 這可以延長這個泵的壽命。
 他的器官開始失效。
 這件新玩具會在全中國上市。
