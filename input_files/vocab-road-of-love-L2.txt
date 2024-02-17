@@ -78,6 +78,7 @@ feature
 我掘出了一些煤。
 	dig
 	coal
+	
 他是一個社工（即社會的工作者）。
 	social<=?,1
 	worker
