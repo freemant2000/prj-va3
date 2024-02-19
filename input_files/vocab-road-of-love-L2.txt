@@ -17,7 +17,7 @@ worker=>171
 	n,工人、工作者
 burn
 	v,燃燒
-decide
+ede
 	v,決定
 hammer
 	n,錘子

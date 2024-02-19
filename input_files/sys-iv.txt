@@ -1063,7 +1063,43 @@ dive, dived/dove, dived
 	head<=?,0
 	stick<=?,0
 	bottle
-
+他克服了他的恐惧(fear)。
+	overcome
+他克服了他的擔憂(worry)。
+	overcome
+他克服了他的弱點(weakness)。
+	overcome
+他已經克服了那個困難(difficulty)。
+	overcome
+那架車超越（爬頭）了那架巴士。
+	overtake
+Android的用戶數目很多年前超越了iPhone。
+	number<=?,2
+	user
+	overtake
+中國已經超越了日本作為在亞洲(Asia)最大的市場。
+	China
+	overtake
+	Japan
+	market
+那個人潜行入那間屋。
+	creep
+那隻貓經常在屋頂(roof)上潜行。
+	creep
+他潜行走出那課室（以免影響他人）。
+	creep
+	classroom
+他潜行走過那間睡房（以免影響他人）。
+	creep
+	bedroom
+她編織了一頂帽。
+	knit
+	hat
+她編織了一隻襪。
+	knit
+	sock
+她編織了一隻手套(glove)。
+	knit
 ........
 他證明了我沒有把那封信塞入那個信箱。
 他想塞他的鼻子入我的事務裡。
@@ -1102,23 +1138,9 @@ dive, dived/dove, dived
 他緊靠著他們的友誼。
 他緊靠他們的支持。
 他緊靠著他的家人。
-那個人潜行入那間屋。
-那隻貓經常在屋頂上潜行。
-他潜行走出那課室（以免影響他人）。
-他潜行走過那間睡房（以免影響他人）。
-她編織了一頂帽。
-她編織了一隻襪。
-她編織了一隻手套。
 我已經處理了那個難題。
 他明天會處理那封電郵。
 他已經處理了那個考試。
-他克服了他的恐惧。
-他克服了他的擔憂。
-他克服了他的弱點。
-他已經克服了那個困難。
-那架車超越（爬頭）了那架巴士。
-Android的用戶數目很多年前超越了iPhone。
-中國已經超越了日本作為在亞洲(Asia)最大的市場。
 那個賊潜行走入那間屋。
 那隻貓潜行向那隻老鼠。
 那隻老虎潜行向那隻山羊。
