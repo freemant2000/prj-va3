@@ -1,0 +1,127 @@
+[Keep goal private L2-1]
+imagine
+	v,想像
+achieve
+	v,達成
+goal
+	n,目標
+shut<=1198,0F
+	v,關閉（大力、封閉）:shut, shut
+identity
+	n,身份、自我形象
+personal
+	adj,個人的
+data
+	n,數據
+satisfied
+	adj,滿意的
+satisfied with
+	adj phr,對某物滿意的
+ideally
+	adv,理想地
+psychologist
+	n,心理學家
+repeat
+	v,重複
+password
+	n,密碼
+commitment
+	n,決意
+likely
+	adv,很可能地
+acknowledge
+	v,確認／認同
+wisdom
+	n,智慧
+motivated
+	adj,有動機的
+trigger
+	v,觸發
+switch
+	n,開關
+social
+	adj,社交的
+	adj,社會的
+satisfaction
+	n,滿足
+reality
+	n,現實
+average
+	adj,平均的
+on average
+	adv phr,平均來說
+
+他想像達成他的目標。
+	imagine
+	achieve
+	goal
+他緊閉了那隻窗。
+	shut
+我不知道他的身份。
+	identity
+這是我的個人的數據。
+	personal
+	data
+他很滿意他自己的自我形像。
+	satisfied
+	identity
+理想地我們應嘗試達成我們的目標。
+	ideally
+	achieve
+	goal
+他想像成為一個心理學家。
+	imagine
+	psychologist
+請重覆你的密碼。
+	repeat
+	password
+我不能想像他的決意。
+	imagine
+	commitment
+他很可能(不用probably)會偷走我的身份。
+	likely
+	steal
+	identity
+那個心理學家很滿意我的決意(不用determination)。
+	psychologist
+	satisfied
+	commitment
+那個心理學家重覆了那個測試。
+	psychologist
+	repeat
+	test<=?,0
+他很可能(不用probably)會確認我的智慧。
+	likely
+	acknowledge
+	wisdom
+他有動機去達成這個目標。
+	motivated
+	achieve
+	goal
+他很可能(不用probably)觸發了那個開關。
+	likely
+	trigger
+	switch
+理想地，每個學生都應該是有動機的。
+	ideally
+	motivated
+我認同了他的決意(不用determination)。
+	acknowledge
+	commitment
+他需要社交上的滿足。
+	social<=?,0
+	satisfaction
+智慧是他的自我形像的一部分。
+	wisdom
+	identity
+事實(不用fact)是，這個心理學家有很多智慧。
+	reality
+	psychologist
+	wisdom
+這很可能(不用probably)會觸發他的滿足。
+	likely
+	trigger
+	satisfaction
+平均來說，只有10%的學生是有動機的。
+	on average
+	motivated
