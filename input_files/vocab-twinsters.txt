@@ -1,0 +1,73 @@
+[twinsters]
+notice
+  v,注意到
+resemblance
+ n,相似
+curious
+ adj,好奇的
+chat
+    v,傾談
+    n,傾談
+immediately
+ adv,立即
+discover
+    v,發現（重大的東西）
+similar
+ adj,相似的
+hairstyle
+   n,髮型
+carrot
+  n,蘿蔔
+startle
+  v,使驚愕
+therefore
+   adv,因此
+twins
+    n,孿生兄弟姐妹（眾）
+upon
+    prep,同on
+initial
+  adj,初始的
+London
+  n,倫敦
+staggering
+  adj,令人震驚的
+slight
+  adj,輕微的
+difference<=?,1
+  n,差異、不同
+fascinating
+  adj,令人著迷的
+raise<=1824,0-1
+	v,養
+	v,舉起
+mind
+    n,思想
+warn
+    v,警告
+chance
+  n,機會
+slim
+    adj,細微的
+    adj,纖瘦的
+separate
+    v,分開
+    adj,分開的
+connection<=1695,0
+   n,聯系
+heart-warming
+   adj,溫暖人心的
+Hollywood
+   n,荷里活
+fairy-tale
+  n phr,童話故事
+long-lost
+   adj,失散很久的
+birthplace
+  n,出生地
+prove<=1197,0
+   v,證明
+truth
+   n,真相
+strange
+    adj,古怪的
