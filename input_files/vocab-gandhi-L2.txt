@@ -1,0 +1,62 @@
+[Gandhi L2]
+India
+	n,印度
+British
+	adj,不列顛的
+	n,不列顛人
+rule=>825
+	n,規則
+	v,統治
+	n,統治
+then
+	adv,那時
+few<=259,0
+	det,少的（可數）
+Indian
+	adj,印度的
+	n,印度人
+support
+	v,支持
+	n,支持
+law
+	n,法律
+government
+	n,政府
+a lot of=>1276
+	det phr,很多
+salt
+	n,鹽
+break the law
+	v phr,犯法
+call for
+	v phr,呼籲
+march=>188
+  n,三月
+	v,（列隊）行進
+challenge
+	v,挑戰
+	n,挑戰
+accept
+	v,接受
+independence
+	n,獨立
+inspire
+	v,啟發
+violent
+	adj,暴力的
+headline
+	n,頭條
+violence
+	n,暴力
+non-violence
+	n,非暴力
+powerful
+	adj,強而有力的
+contribute
+	v,作貢獻
+	v,有份導致
+contribute to<=1587,0-1
+	v phr,有份導致
+	v phr,對...作貢獻
+price=>871
+	n,價格
