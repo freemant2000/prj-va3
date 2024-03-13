@@ -60,3 +60,93 @@ contribute to<=1587,0-1
 	v phr,對...作貢獻
 price=>871
 	n,價格
+
+那時印度在英國的統治之下。
+	India
+	British<=?,0
+	rule<=?,2
+	then<=?,1
+很少印度人支持這個法律。
+	few<=?,0
+	Indian<=?,1
+	support<=?,0
+	law
+印度的政府買了很多鹽。
+	Indian<=?,0
+	government
+	salt
+一些印度人犯了法。
+	Indian<=?,1
+	break the law
+他們呼籲更多的支援。
+	call for
+	support<=?,1
+他們（列隊）行去了那間屋。
+	march<=?,1
+他們挑戰英國的統治。
+	challenge<=?,1
+	British<=?,0
+	rule<=?,2
+他接受了那些鹽。
+	accept
+	salt
+他們（列隊）行進去挑戰那個政府。
+	march<=?,1
+	challenge<=?,1
+	government
+他呼籲獨立。
+	call for
+	independence
+這個（列隊）遠行啟發了那個印度人。
+	march<=?,2
+	inspire
+	Indian<=?,1
+那個暴力的男人不支持印度的獨立。
+	violent
+	support<=?,0
+	independence
+	India
+我接受了他的挑戰。
+	accept
+	challenge<=?,0
+印度的獨立成為了新聞頭條。
+	independence
+	India
+	headline
+這個暴力的英國男人啟發了我。
+	violence
+	British<=?,0
+	inspire
+我不會接受任何暴力。
+	accept
+	violence
+他們用非暴力得到了獨立。
+	independence
+	non-violence
+這條新法律成為了新聞頭條。
+	law
+	headline
+他呼籲非暴力。
+	call for
+	non-violence
+英國的統治是強而有力的。
+	British<=?,0
+	rule<=?,2
+	powerful
+他對家庭作出很多的貢獻。
+	contribute to<=?,1
+	family<=?,0
+這些鹽有份導致他的暴力。
+	salt
+	contribute to<=?,0
+	violence
+你知道這些鹽的價格嗎？
+	price
+	salt
+非暴力是非常強而有力的。
+	non-violence
+	powerful
+他有份導致印度的獨立。
+	contribute to<=?,0
+	independence
+	India
