@@ -1,0 +1,110 @@
+[Dean Cain L2]
+able
+	adj,能夠的
+play<=419,0-1-2
+        v,玩
+        v,彈奏（音樂等）
+        v,扮演
+priority
+	n,優先級
+	n,優先事項
+make money
+	v phr,賺錢
+Japanese
+	n,日本人
+	n,日文
+	adj,日本的
+actor
+	n,演員
+biological
+	adj,生物的
+abandon
+	v,放棄
+	v,拋棄
+promise
+	v,承諾
+	n,承諾
+raise=>1824
+	v,養
+	v,舉起
+	v,籌（款等）
+arise, arose, arisen<=1220,0F
+split, split, split
+	v,劈開
+	v,裂開
+	v,分割
+a split second
+	n phr,幾分之一秒（一瞬）
+ex-
+	prefix,前度的
+choice
+	n,選擇
+
+他能夠(不用can)彈音樂。
+	able
+	play<=?,1
+	music
+他的優先事項是賺錢。
+	priority<=?,1
+	make money
+這個日本演員能夠(不用can)唱歌。
+	Japanese<=?,2
+	actor
+	able
+	sing
+他能夠(不用can)明白我的優先事項。
+	able
+	understand
+	priority<=?,1
+他的生物上的（即親生的）父親扮演了超人(Superman)。
+	biological
+	play<=?,2
+我拋棄了我的狗。
+	abandon<=?,1
+他放棄了他的承諾。
+	abandon<=?,0
+	promise<=?,1
+他的親生（即生物的）母親養了一隻狗。
+	biological
+	raise<=?,0
+一個疑問出現了。
+	question
+	arise
+讓我們分割這些工作吧。
+	split<=?,2
+一瞬之內他進入了那間屋。
+	a split second
+一瞬之內他給出了答案(answer)。
+	a split second
+你應該給睡眠更高的優先級。
+	priority<=?,0
+他的前妻能夠賺很多錢。
+	ex-
+	able
+	make money
+那個演員放棄了那件生物武器(weapon)。
+	actor
+	abandon<=?,0
+	biological
+一個低的價格出現了。
+	low
+	price
+	arise
+他的前度女朋友籌了十元。
+	ex-
+	raise<=?,2
+那些日本人會分割那張賬單(bill)。
+	Japanese<=?,0
+	split<=?,2
+我的生物鐘通常都工作。
+	biological
+	clock
+他沒有任何選擇。
+	choice
+他給他的家庭高的優先級。
+	priority<=?,0
+	family<=?,0
+他放棄了他的兄弟。
+	abandon<=?,0
+一瞬之內他就來到了我家。
+	a split second
