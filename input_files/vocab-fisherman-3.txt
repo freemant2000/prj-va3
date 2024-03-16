@@ -45,3 +45,55 @@ kilogram
 maybe
 	adv,也許
 
+他緊握著一枝閃亮又重的魚杆。
+	hold<=?,0
+	shiny
+	heavy
+	fishing rod
+	tightly
+那個謙卑的男人種了一些五顏六色的桃。
+	humble
+	grow<=?,1
+	colourful
+	peach
+她把她的重的丈夫由海裡拉出來。
+	pull
+	heavy
+	husband
+	out of
+	sea
+我很吃驚她投訴了那個極骯髒的男人。
+	surprised
+	complain about
+	filthy
+那條比目魚索取了一個芒果。
+	flounder
+	ask for
+	mango
+當那王子張開口時，我看見他的閃亮的牙齒。
+	prince
+	open<=?,0
+	mouth
+	shiny
+	tooth
+我猜這個臭的漁夫重六十公斤。
+	guess
+	stinky
+	fisherman
+	weigh
+	sixty
+	kilogram
+也許他靠吃比目魚維生。
+	maybe
+	live on
+	flounder
+他把那閃亮的枝魚杆由海裡拉了出來。
+	pull
+	shiny
+	fishing rod
+	out of
+	sea
+我很吃驚見在懸崖上見到那王子。
+	surprised
+	prince
+	cliff
