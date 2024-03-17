@@ -1,0 +1,36 @@
+[goat and jackal L2]
+wise
+	adj,明智的
+jackal
+	n,豺
+greedy
+	adj,貪心的
+blood
+	n,血液
+goat
+	n,山羊
+injure
+	v,使受傷
+fight
+	v,打鬥:fought, fought
+	n,打鬥
+
+那隻明智的豺吃了那隻貪心的山羊。
+	wise
+	jackal
+	greedy
+	goat
+那隻明智的山羊只有很少血。
+	wise
+	goat
+	little<=?,1
+	blood
+那隻山羊使那隻貪心的豺受了傷。
+	goat
+	injure
+	greedy
+	jackal
+兩個明智的豺正在打鬥。
+	wise
+	jackal
+	fight<=?,0
