@@ -1,0 +1,54 @@
+[Ankita-L2]
+college
+	n,大專院校
+alive=>1897
+	adj,活的
+  adv,活生生地
+turn down
+	v phr,拒絕
+request
+	n,請求
+  v,請求
+response
+	n,回應
+hospital
+	n,醫院
+media
+  n,媒體（眾數）
+politician
+	n,政治家
+election
+	n,選舉
+matter=>584
+	n,物質
+	n,事情
+	v,重要
+justice
+	n,正義
+guilty
+	adj,有罪的
+guilty of xx
+	adj phr,犯了xx罪的
+soul
+	n,靈魂
+murder
+	v,謀殺
+  n,謀殺
+sentence sb to sth
+	v phr,判處某人某刑罰
+prison
+	n,監獄
+system
+	n,系統、制度
+may=>262
+	aux,可能
+  aux,祝願
+peace
+	n,安寧
+  n,和平
+strength
+	n,力量
+heal
+	v,治療、痊瘉
+pain
+	n,痛
