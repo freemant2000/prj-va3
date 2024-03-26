@@ -1,0 +1,72 @@
+[forensics]
+commit
+  v,犯
+  v,有決心（去做）
+culprit
+ n,罪魁禍首
+scene
+   n,現場、場景
+crucial
+  adj,關鍵的、極重要的
+gimmick
+ n,（推銷等）花招
+suspect
+ v,懷疑
+ n,疑犯
+identify
+    v,確定身份
+forensic
+    adj,鑑證的
+derive sth from sth
+  v phr,由...推導出
+exaggerate
+   v,誇大
+secure
+  adj,安全的
+  v,使安全
+  v,落實（會有）
+investigator
+    n,調查員
+examine
+ v,檢查／檢視
+tissue
+  n,紙巾
+  n,（細胞）組織
+particle
+    n,粒子
+preserve
+    v,保存（使完好）
+laboratory
+  n,實驗室
+testify
+ v,作證供
+finding
+ n,（研究結論）發現
+archive
+ v,存檔
+ n,檔存
+crack
+   n,裂縫
+   v,使裂開、裂開
+   v,拆解（難題等）
+yield
+   v,產出（強調品質或數量）
+witness
+ v,見證
+ n,證人
+advance in sth
+  n phr,在（某領域）...的進展
+weaponry
+    n,武器（集合）
+arsenal
+  n,武器庫
+  n,可用的設備或手段
+multiple
+    adj,多個的
+innocent
+    adj,無辜的
+    adj,天真的
+speculate
+   v,猜測
+footage
+ n,片段

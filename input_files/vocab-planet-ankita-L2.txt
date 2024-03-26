@@ -52,3 +52,86 @@ heal
 	v,治療、痊瘉
 pain
 	n,痛
+
+他會去大專院校。
+	college
+那條魚被活生生地吃掉。
+	alive<=?,1
+他拒絕了我的請求。
+	turn down
+	request<=?,0
+牠沒有任何回應。
+	response
+這間大專院校裡有一間醫院。
+	college
+	hospital
+很多媒體請求去見那個政治家。
+	media
+	request<=?,1
+	politician
+那個政治家被活生生地埋葬(bury)了。
+	politician
+	alive<=?,1
+我請求參加那個選舉，被他們拒絕了。
+	request<=?,1
+	join
+	election
+	turn down
+他的回應並不重要。
+	response
+	matter<=?,2
+正義很重要。
+	justice
+	matter<=?,2
+很多媒體說那個政治家是有罪的。
+	media
+	politician
+	guilty
+他的靈魂沒有反應。
+	soul
+	response
+那個大專學生是犯了謀殺罪的。
+	college
+	guilty of xx
+	murder<=?,1
+這次選舉很重要。
+	election
+	matter<=?,2
+他們判他入監獄。
+	sentence sb to sth
+	prison
+他贏了選舉，但輸了他的靈魂。
+	election
+	soul
+這個監獄裡的人都是有罪的。
+	prison
+	guilty
+在這個制度中我們不能找到正義。
+	justice
+	system
+祝願他的靈魂處於安寧之中。
+	may<=262,1
+	soul
+	peace<=?,0
+這個選舉制度是好的。
+	election
+	system
+和平會給我們力量。
+	peace<=?,1
+	strength
+這會治療你的痛。
+	heal
+	pain
+他的靈魂處於痛苦之中。
+	soul
+	pain
+祝願你們有足夠的力量。
+	may<=262,1
+	enough
+	strength
+他是有破壞(destroy)這個制度的罪的。
+	guilty of xx
+	system
+我的痛已經痊癒了。
+	pain
+	heal
