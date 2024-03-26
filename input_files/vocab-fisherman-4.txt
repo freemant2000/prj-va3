@@ -23,3 +23,52 @@ kill
 	v,殺死
 mouse<=445,0
 	n,老鼠
+
+一個正常的桃重⅕公斤。
+	normal<=?,0
+	peach
+	weigh
+	kilogram
+他的受魔法影響的妻子緊緊地抓著那枝竿。
+	enchanted
+	wife
+	hold<=?,0
+	rod
+	tightly
+他通過在那懸崖上捕魚來維生。
+	fish<=?,1
+	cliff
+	for a living
+這生果嚐起來很好味。
+	fruit
+	taste<=?,1
+他的受魔法影響的丈夫爬上了那個懸崖。
+	enchanted
+	husband
+	climb
+	cliff
+這些臭的芒果重十二公斤。
+	stinky
+	mango
+	weigh
+	twelve
+	kilogram
+你走吧！
+	off you go
+他肯定會殺死那個極骯髒的漁夫。
+	certainly
+	kill
+	filthy
+	fisherman
+那個王子緊緊地抓著一個重的、五顏六色的鈎。
+	prince
+	hold<=?,0
+	heavy
+	colourful
+	hook<=?,0
+	tightly
+那條比目魚很吃驚看到了冷靜的王子。
+	flounder
+	surprised
+	calm<=?,0
+	prince
