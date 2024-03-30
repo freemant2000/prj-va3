@@ -1,0 +1,59 @@
+[商業英語1]
+require
+        v,要求
+fund
+        n,資金
+notice
+        n,告示
+administration
+        n,行政
+administrative
+        adj,行政的
+manager
+        n,經理
+assistant
+        n,助理
+technology
+        n,技術
+charge
+        v,收費
+        n,收費
+business
+        n,生意
+New Zealand
+        n,新西蘭
+wish=>679
+        v,希望（不現實的）、希望（正式）
+        n,希望（不現實的）
+        v,祝
+in two weeks' time
+        adv phr,兩星期後
+transfer
+        v,轉移
+        n,轉移
+account<=1375,0
+        n,賬戶
+information<=1100,0
+        n,資訊、訊息
+understand<=962,0F
+        v,明白:understood, understood
+computer
+        n,電腦
+part=>1061
+        n,部份
+        n,部件
+equipment
+        n,設備
+suitable
+        adj,合適的
+interested in
+        adj phr,對...有興趣的
+software
+        n,軟件
+available=>993
+        adj,可提供的、可使用的
+reply
+        v,回覆
+        n,回覆
+details
+        n,細節（眾）
