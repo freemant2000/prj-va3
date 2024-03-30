@@ -1,7 +1,7 @@
 from random import shuffle
 from flask import render_template
 from ..db_base import open_session
-from ..sprint import Exercise, get_exec
+from ..sprint import get_exec
 
 def exec_pub_wp(e_id):
     try:
