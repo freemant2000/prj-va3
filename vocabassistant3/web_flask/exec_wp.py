@@ -35,5 +35,6 @@ def show_exec_buf(exec: Exercise)->str:
     pr("============")
     for snt in exec.snts:
         pr(snt.text)
+    pr(f"https://kenttong.pythonanywhere.com/execs/pub/{exec.id}")
     return buf.getvalue()
 
