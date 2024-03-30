@@ -18,6 +18,10 @@ The wsgi config file should be like below:
 Restore the DB:
    mysql -u kenttong -h kenttong.mysql.pythonanywhere-services.com -p kenttong\$va3 < va3.dump
 
+Install 3rd packages:
+   . .virtualenvs/env1/bin/activate
+   pip install pyttsx3
+
 Running the TUI on pythonanywhere
 =================================
 $ . .virtualenvs/env1/bin/activate

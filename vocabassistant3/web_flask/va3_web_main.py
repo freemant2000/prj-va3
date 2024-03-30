@@ -19,7 +19,7 @@ app.add_url_rule("/execs/pub/<int:e_id>", view_func=exec_pub_wp)
 app.add_url_rule("/teacher", view_func=tch_land_wp)
 app.add_url_rule("/login", view_func=login_wp)
 app.add_url_rule("/oauth2_callback", view_func=oauth2_cb)
-app.add_url_rule("/pronounce/<int:wd_id>", view_func=pronounce)
+app.add_url_rule("/pronounce/<int:wd_id>", view_func=lambda wd_id: pronounce(di.get_wired_bean("temp_dir", wd_id)))
 
 @app.route("/")
 def home_page():

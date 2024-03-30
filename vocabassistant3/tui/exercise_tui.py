@@ -36,6 +36,7 @@ def show_exec_tui(sp_id: int):
             print("==========")
             for snt in exec.snts:
                 print(snt.text)
+            print(f"https://kenttong.pythonanywhere.com/execs/pub/{exec.id}")
         else:
             raise ValueError(f"Invalid index {e_idx}")
 
