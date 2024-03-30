@@ -1,4 +1,4 @@
-from flask import request, redirect, render_template
+from flask import redirect, render_template
 from ..teacher import get_teacher
 from ..sprint import Exercise, Sprint, get_sprints_for
 from ..buf_print import buf_pr, indent_pr

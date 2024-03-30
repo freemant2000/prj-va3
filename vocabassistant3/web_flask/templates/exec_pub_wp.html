@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <div style="display: grid; grid-template-columns: max-content max-content max-content; place-items: center;">
+    {% for ew in exec.ews %}
+      <span>{{ew.get_full_word()}}</span>
+      <span style="text-align: end; padding: 8px;">{{ew.get_meanings()}}</span>
+    <audio controls>
+      <source type="audio/mpeg" src="/pronounce/{{ew.wd_id}}"/>
+    </audio>
+    {% endfor %}
+  </div>
+<ul>
+  {% for snt in exec.snts %}
+  <li>{{snt.text}}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
