@@ -1,0 +1,63 @@
+[商業英語2]
+draft
+        v,草擬
+        n,草稿
+contact
+        v,聯絡
+address
+        n,地址
+requirement
+        n,需求
+farm
+        n,農場
+explain
+        v,解釋
+suggest
+        v,建議
+diary
+        n,日誌
+arrange
+        v,安排
+London
+        n,倫敦
+catalogue
+        n,產品目錄
+urgently
+        adv,緊急地
+discuss
+        v,討論
+sort out
+        v phr,理清
+customer
+        n,顧客
+further to
+        prep phr,跟進
+enclose
+        v,放入（信封）
+representative
+        n,代表
+appointment
+        n,預約
+exactly
+        adv,精確地
+special offer
+        n phr,特別優惠
+account=>1375
+        n,賬戶
+        n,經常性的客戶
+purchase=>1496
+        v,購買
+        n,購買
+package=>997
+        n,包裹
+        n,套裝
+at least
+        adv phr,至少
+possible
+        adj,可能的
+Tuesday
+        n,星期二
+Thursday
+        n,星期四
+above
+        prep,在...上方（沒有接觸）
