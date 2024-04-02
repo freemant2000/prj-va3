@@ -1,0 +1,128 @@
+[parachute L2]
+about to
+	aux phr,即將會
+fan<=566,0-1
+        n,（歌、影）迷
+        n,風扇
+passenger
+	n,乘客
+parachute
+	n,降落傘
+sacrifice
+	v,犠牲
+    n,犠牲
+board
+	n,板
+    v,登上（大交通工具）
+president
+	n,總統
+    n,主席
+history
+	n,歷史
+on board
+	adv,在大交通工具上
+Pope
+	n,教宗
+crash
+	v,（使）撞毀
+    v,衝撞
+shout
+	v,大叫
+afford
+	v,夠錢買
+    v,有條件做
+pack=>1081
+        n,（緊紮著的）一包
+        v,執行李
+smart
+	adj,醒目的
+ahead=>1872
+	adv,提前
+    adv,向前
+    adv,在前面
+
+我即將吃這個蘋果。
+    about to
+他即將走入那間屋。
+    about to
+    enter<=?,0
+我即將會致電這個粉絲。
+    about to
+    fan<=?,0
+每一個乘客都有一個降落傘。
+    passenger
+    parachute
+他即將會打開那個降落傘。
+    about to
+    parachute
+那個乘客犠牲了他的風扇。
+    passenger
+    sacrifice<=?,0
+    fan<=?,1
+他即將會登上那架飛機。
+    about to
+    board<=?,1
+    airplane
+總統犠牲了他的家庭。
+    president<=?,0
+    sacrifice<=?,0
+    family<=?,0
+這是歷史上第一個降落傘。
+    parachute
+    history
+機上的所有人都是總統的朋友。
+    on board
+    president<=?,0
+在歷史上沒有教宗同總統衝撞了。
+    history
+    Pope
+    crash<=?,1
+    president<=?,0
+機上的乘客大叫。
+    passenger
+    on board
+    shout<=?,0
+我不夠錢買這架車。
+    afford<=?,0
+我不夠錢買這部電話。
+    afford<=?,0
+我沒有條件去旅行。
+    afford<=?,1
+    travel
+我沒有條件去住在這裡。
+    afford<=?,1
+我不夠錢買這塊白板。
+    afford<=?,0
+    whiteboard
+機上的所有人都是教宗的朋友。
+    on board
+    Pope
+那架車撞毀了。
+    crash<=?,0
+我用一包冰去冷凍(cool)這部智能（即醒目的）電話。
+    smart
+    pack<=?,0
+我沒有條件去犠牲這個降落傘。
+    afford<=?,1
+    sacrifice<=?,0
+    parachute
+那個醒目的教宗向機上的乘客大叫。
+    smart
+    Pope
+    shout<=?,0
+    passenger
+    on board
+我有很多在前面的工作。
+    ahead<=?,2
+主席拿著一包筆。
+    president<=?,1
+    hold<=?,0
+    pack<=?,0
+我沒條件去用撞毀這架車。
+    afford<=?,1
+    crash<=?,0
+教宗明白機上的人的犠牲。
+    Pope
+    understand
+    sacrifice<=?,1
+    on board
