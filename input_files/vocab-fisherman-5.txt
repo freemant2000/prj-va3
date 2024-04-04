@@ -42,3 +42,88 @@ king<=1114,0
         n,國王
 already
 	adv,已經
+
+我沒有決心買一間屋。
+	hesitant
+我沒有決心邀請她。
+	hesitant
+	invite
+那條興奮的比目魚衝入了海中。
+	excited
+	rush
+	sea
+他沒有決心買一間鄉村小屋。
+	hesitant
+	cottage
+甜心，你不是看起來很正常。
+	honey<=?,1
+	look<=?,1
+	normal<=?,0
+我很興奮看見一個王子。
+	excited
+	prince
+他沒有決心去吃那些蜜糖。
+	hesitant
+	honey<=?,0
+他很興奮去買了那間鄉村小屋。
+	excited
+	cottage
+至少他是一個謙卑的人。
+	at least
+	humble
+	person
+一個人只有一條命。
+	person
+	only
+	life<=?,0
+不要傷他的性命！
+	spare
+	life<=?,0
+放過那個男孩！
+	spare	
+甜心，我沒有傷害那個王子的性命。
+	honey<=?,1
+	spare
+	prince
+	life<=?,0
+他無決心去索取一枝魚杆。
+	hesitant
+	ask for
+	fishing rod
+至少他住在一個閃亮的鄉村小屋裡。
+	at least
+	live<=?,1
+	shiny
+	cottage
+我忘記了他懂得魔術。
+	forget
+	know
+	magic
+他肯定會變更好。
+	certainly
+	turn<=?,2
+	better
+我很吃驚找到一個桃。
+	surprised
+	find
+	peach
+令我吃驚，這是一個被魔法影響的芒果。
+	to my surprise
+	enchanted
+	mango
+令他吃驚，這些五顏六色的水果嚐起來很好。
+	to my surprise
+	colourful
+	fruit
+	taste<=?,1
+我肯定會拉他出這間屋。
+	certainly
+	pull
+也許那國王已經衝去那間小屋。
+	maybe
+	King
+	rush
+	hut
+我放過了那條魚。
+	spare
+	fish<=?,0
