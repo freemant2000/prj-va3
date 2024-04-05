@@ -1,0 +1,46 @@
+[技術-懶散之路-4]
+take over
+	v phr,佔領（取代某人）
+consequence
+	n,後果
+shift
+	v,（想法、工作方式等）變化
+  n,（想法、工作方式等）變化
+habit
+	n,習慣
+spell
+	v,拼寫
+spellchecker
+	n,拼寫檢查器
+self-driving
+	adj,自我駕駛的
+breathe
+	v,呼吸
+physician
+	n,內科醫生
+notice=>860
+	v,注意到
+  n,通告、告示
+patient
+	n,病人
+average
+	adj,平均的
+health
+	n,健康
+generally
+	adv,一般來說
+out of shape
+	adv phr,體態不良
+unfortunately
+	adv,不幸地
+collective
+	adj,集體的、集合的
+humble
+	adj,謙卑的
+opinion
+	n,意見
+chief
+	adj,首要的
+association
+  n,聯系
+  n,協會

@@ -1,0 +1,45 @@
+[技術-懶散之路-1]
+technology
+	n,技術
+transform
+	v,變換
+decade
+	n,十年
+smartphone
+	n,智能手機
+laptop
+	n,膝上電腦
+exist
+	v,存在
+mention
+	v,提及
+virtual
+	adj,虛擬的
+reality
+	n,現實
+artificial
+	adj,人工的
+intelligence
+	n,智能、智力
+entirely
+	adv,完全地
+different
+	adj,不同的
+era
+	n,時代
+gadget
+	n,小工具、小設備
+gizmo
+	n,（新式的）小工具、小設備
+history
+	n,歷史
+improve
+	v,改善
+quality
+	n,質量
+diminish
+	v,（使）變小、變弱
+capability
+	n,能力（包括外在支援）
+boon
+	n,恩賜（很有用的東西）

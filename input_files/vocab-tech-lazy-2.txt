@@ -1,0 +1,45 @@
+[技術-懶散之路-2]
+modern
+	adj,現代的
+convenience
+	n,方便
+time-consuming
+	adj,費時的
+errand
+	n,跑腿工作
+technological
+	adj,技術的
+improvement
+	n,改善
+connectivity
+  n,連通性
+	n,連接能力
+logistics
+	n,後勤
+  n,物流
+access
+  v,存取
+	n,存取
+position
+	n,位置
+comfort=>1388
+	n,舒適
+  v,使舒適
+tap
+  v,按一下
+	n,按一下
+button
+	n,按鈕
+capture
+	v,捕捉
+information
+	n,資訊、訊息
+click
+	v,點擊
+  n,點擊
+development
+	n,發展
+intelligent
+	adj,智能的
+system
+	 n,系統、制度

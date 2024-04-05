@@ -1,0 +1,47 @@
+[技術-懶散之路-3]
+Amazon
+	n,亞馬遜
+Google
+	n,谷歌
+further
+	adj,進一步的
+lifestyle
+	n,生活方式
+voice
+	n,語音
+command
+	n,命令
+  v,命令
+provide
+	v,提供
+current
+	adj,目前的
+affair
+	n,事
+set
+	v,設定
+alarm
+	n,鬧鍾、警鍾
+  n,警示
+direction
+	n,方向
+look up
+	v phr,查找（字典等）
+housework
+	n,家務
+run errands
+	v phr,做跑腿工作
+beyond
+	prep,超越
+delegate
+	v,授權分工
+actual
+	adj,實際上的
+execution
+	n,執行
+increasingly
+	adv,越來越多地
+scope
+	n,範圍
+task
+	n,任務
