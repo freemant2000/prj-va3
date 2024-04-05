@@ -1,0 +1,251 @@
+[技術-懶散之路]
+technology
+	n,技術
+transform
+	v,變換
+decade
+	n,十年
+smartphone
+	n,智能手機
+laptop
+	n,膝上電腦
+exist
+	v,存在
+mention
+	v,提及
+virtual
+	adj,虛擬的
+reality
+	n,現實
+artificial
+	adj,人工的
+intelligence
+	n,智能、智力
+entirely
+	adv,完全地
+different
+	adj,不同的
+era
+	n,時代
+gadget
+	n,小工具、小設備
+gizmo
+	n,（新式的）小工具、小設備
+history
+	n,歷史
+improve
+	v,改善
+quality
+	n,質量
+diminish
+	v,（使）變小、變弱
+capability
+	n,能力
+boon
+	n,恩賜（很有用的東西）
+modern
+	adj,現代的
+convenience
+	n,方便
+time-consuming
+	adj,費時的
+errand
+	n,跑腿工作
+technological
+	adj,技術的
+improvement
+	n,改善
+connectivity
+  n,連通性
+	n,連接能力
+logistics
+	n,後勤
+  n,物流
+access
+  v,存取
+	n,存取
+position
+	n,位置
+comfort
+  v,使舒適
+	n,舒適
+tap
+  v,按一下
+	n,按一下
+button
+	n,按鈕
+capture
+	v,捕捉
+information
+	n,資訊
+click
+	v,點擊
+  n,點擊
+development
+	n,發展
+intelligent
+	adj,智能的
+system
+	n,系統
+Amazon
+	n,亞馬遜
+Google
+	n,谷歌
+further
+	adj,進一步的
+lifestyle
+	n,生活方式
+voice
+	n,語音
+command
+	n,命令
+  v,命令
+provide
+	v,提供
+current
+	adj,目前的
+affair
+	n,事
+set
+	v,設置
+alarm
+	n,鬧鍾、警鍾
+  n,警示
+direction
+	n,方向
+look up
+	v phr,查找（字典等）
+housework
+	n,家務
+run errands
+	v phr,做跑腿工作
+beyond
+	prep,超越
+delegate
+	v,授權分工
+actual
+	adj,實際上的
+execution
+	n,執行
+increasingly
+	adv,越來越多地
+scope
+	n,範圍
+task
+	n,任務
+take over
+	v phr,佔領（取代某人）
+consequence
+	n,後果
+shift
+	v,（想法、工作方式等）變化
+  n,（想法、工作方式等）變化
+habit
+	n,習慣
+spell
+	v,拼寫
+spellchecker
+	n,拼寫檢查器
+self-driving
+	adj,自我駕駛的
+breathe
+	v,呼吸
+physician
+	n,內科醫生
+notice
+	v,注意到
+  n,通告
+patient
+	n,病人
+average
+	adj,平均的
+health
+	n,健康
+generally
+	adv,一般地
+out of shape
+	adv phr,體態不良
+unfortunately
+	adv,不幸地
+collective
+	adj,集體的、集合的
+humble
+	adj,謙卑的
+opinion
+	n,意見
+chief
+	adj,主要的
+association
+  n,聯系
+  n,協會
+questionable
+	adj,可被質疑的
+community
+	n,社區
+organizer
+	n,組織者（美）
+towards
+	prep,向著
+event
+  n,事件
+	n,（社交等）活動
+organization
+	n,組織（美）
+claim
+	v,聲稱
+  n,聲稱
+mobilize
+	v,動員（美）
+activity
+	n,活動
+publicize
+	v,使人注意到（美）
+social	社交的、社會的
+media	媒體
+turnout	出席人數
+declare	宣佈
+enthusiastically	熱情地
+instrumental	（為達成某目的）極重要的
+spread	散播、撒
+trend	變得受人關注、趨勢
+physical	體力的
+direct	直接的
+advantage	優勢
+popular	受歡迎的
+augment	擴充
+mobile	移動的
+globe	地球、球體
+require	需要（動）
+progress	進展（動、名）
+in-game	在遊戲裡（片）
+wearable	可穿戴的
+fitness	健美（名）
+tracker	追綜器
+develop	發展
+specifically	特定地
+exercise	鍛練（動、名）
+mind	思想、介意
+keep track of	留意著某人／物的動向
+number	數目、數字
+per	每
+as well as	以及（片）
+heart	心
+rate	率、速率
+heart rate	心率（片）
+pattern	模式
+increase	增加（動、名）
+incentive	誘因
+engage	投入、使投入
+put sth to bed	決定性地解決（片）
+label	標籤
+psychologist	心理學家
+whether	是否
+machine	機器
+men	男人（眾）
+ultimately	最終
+final say	最終話語權
+behaviour	行為
+choice	選擇（名）
+lie	躺、位於
+squarely	直接地、乾脆地
+tool	工具

@@ -1,0 +1,50 @@
+[Babylonian letter L2]
+God
+	n,神
+following
+	adj,以下的
+message
+	n,訊息
+health
+	n,健康
+in good health
+	adv phr,身體好
+gentleman
+	n,紳士
+for xxx's sake
+	adv phr,為了某人
+worse
+	adj,更差的
+forever=>1794
+	adv,永久地
+	adj,永遠的
+wool
+	n,羊毛
+use up
+	v phr,用光
+for the sake of xxx
+	adv phr,為了某物
+sweater
+	n,毛衣
+assistant=>2161
+	n,助手、助理
+fuss about
+	v phr,對某物大驚小怪
+set=>500
+	v,設定
+	n,套
+indeed
+	adv,確實
+adopt
+	v,採納
+	v,收養
+poor<=280,0-1
+	adj,可憐的
+	adj,貧窮的
+give birth to
+	v phr,生（小孩等）
+while
+	conj,當（長動作）
+	conj,而
+single
+	adj,單一的
