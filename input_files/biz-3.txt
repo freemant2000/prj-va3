@@ -1,0 +1,80 @@
+[商業英語3]
+mention
+        v,提及
+Wednesday
+        n,星期三
+whole
+        adj,整個的
+convenient
+        adj,方便的
+stress
+        v,強調
+finalise
+        v,落實
+sincerely
+        adj,忠誠的
+pleased
+        adj,高興的
+reserve
+        v,預留
+stand=>527
+        v,站:stood, stood
+        n,攤位、攤檔
+trade=>1511
+        n,行業
+        v,交易
+        n,貿易
+fair
+        n,交易會、展銷會
+arrangements
+        n,安排（眾）
+exact
+        adj,精確的
+location
+        n,位置
+space
+        n,空間
+allocate
+        v,分配
+power point
+        n,電源插座
+whether
+        conj,是否
+provide
+        v,提供
+seating
+        n,就座
+await
+        v,等待
+advise
+        v,（專業）建議
+provisional
+        adj,臨時的
+conference
+        n,（較大型）會議
+march<=188,0
+        n,三月
+list
+        n,清單、列表
+partner
+        n,伴侶、夥伴
+therefore
+        adv,因此
+single
+        adj,單一的
+double
+        adj,雙的
+approximate
+        adj,大約的
+cost
+        n,成本
+expense
+        n,開支
+likely=>1092
+        adv,很可能地
+        adj,很可能的
+member of staff
+        n phr,僱員
+man=>876
+        n,男人:men
+        v,看守
