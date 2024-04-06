@@ -1,29 +1,97 @@
 [planet-chicken-L2]
 這個行星有十億人。
+    billion
+    planet
 人類養了十億隻狗。
+    human
+    raise<=?,0
+    billion
 一齣近來的電影談及一個細小的行星。
+    recent
+    movie
+    talk about
+    planet
 這是一道鐵門。
+    iron
 一個近來的研究是關於肉類的。
+    recent
+    study<=?,2
+    meat
 在鐵器時代人們養豬。
+    raise<=?,0
+    iron age
 他舉起了一隻鐵窗。
+    raise<=?,1
 二十億人經常吃肉。
+    billion
+    meat
 他埋了一鐵盒。
+    bury
+    iron
 人們認為這個研究很好。
+    consider<=?,1
+    study<=?,2
 他把我看作兄弟。
+    consider<=?,1
 他很尊敬這個神聖的男人。
-把他作為一個學生看待
-懷著仁愛(kindness)地對待他
+    respect<=?,0
+    sacred
+我把他作為一個學生看待。
+    treat
+我懷著仁愛(kindness)地對待他。
+    treat
 他把狗狗作為人類對待。
+    treat
+    as<=?,0
+    human
 他很尊重這個研究。
+    respect<=?,0
+    study<=?,2
 人們很尊敬這個神聖的女王。
+    respect<=?,0
+    sacred
 那個教授有一隻神聖的公雞。
+    professor
+    sacred
+    rooster
 那個科學家很好地對待那隻母雞。
+    scientist
+    treat
+    hen
 在印度人們養了二十億隻公雞。
+    India
+    raise<=?,0
+    billion
+    rooster
 那個教授在印度埋葬了那隻神聖的母雞。
+    professor
+    bury
+    sacred
+    hen
+    India
 在印度人們認為這間大學很好。
+    India
+    consider<=?,1
+    university
 羅馬人圈養了很多公雞。
+    Roman<=?,1
+    farm<=?,2
+    rooster
 這間大學引入了一些新近的想法。
+    university
+    introduce<=?,1
+    recent
 她的學校叫做聖心（即神聖的心）。
+    sacred
+    heart
 這個教授正在圈養著一些羅馬牛。
+    professor
+    farm<=?,2
+    Roman<=?,0
+    cow<=?,1
 這個教授為這間大學工作。
+    professor
+    university
 他向我介紹了這個科學家。
+    introduce<=?,0
+    scientist
