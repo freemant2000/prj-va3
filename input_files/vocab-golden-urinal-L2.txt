@@ -1,0 +1,80 @@
+[Golden urinal L2]
+election
+	n,選舉
+victory
+	n,勝利
+if=>555
+	conj,如果
+	conj,是否
+president
+	n,總統
+	n,主席
+beer
+	n,啤酒
+office
+	n,辦公室
+several
+	det,幾個
+organise
+	v,組織
+mine
+	pron,我的xx
+play<=419,1
+        v,彈奏（音樂等）
+saxophone
+	n,色士風（樂器）
+bathroom=>396
+        n,浴室、洗手間
+gold
+	n,金
+glass<=417,1
+        n,玻璃杯
+White House
+	n phr,白宮
+guess
+	v,猜
+personal
+	adj,個人的
+assistant<=2161,0
+        n,助手、助理
+surprised
+	adj,吃驚的
+ready
+	adj,準備好的
+pee
+	v,小便
+	n,小便
+impress sb
+	v phr,使某人印象深刻
+impressed
+	adj,覺得印象深刻的
+impressed with
+	adj phr,對某物印象深刻的
+solid
+	n,固體
+	adj,實心的
+
+我知道他是否一個老師。
+我知道他是否每日都吃蘋果。
+他在選舉中得到了一個大的勝利。
+我不知道總統是否在辦公室喝了一些啤酒。
+我不知道總統是否有幾個辦公室。
+他們組織了一個啤酒選舉。
+勝利是我的。
+他經常在浴室吹奏色士風。
+他放了幾個金的啤酒酒杯在白宮。
+我準備好去跑去學校了。
+我估主席有幾個個人助手。
+我很吃驚他能吹奏色士風。
+我準備好去小便了。
+他使我印象深刻。
+我使他印象深刻。
+他用一首歌使我印象深刻。
+他覺得印象深刻。
+他對我的歌印象深刻。
+他準備好去使我們印象深刻。
+我對他的選舉勝利印象深刻。
+我很吃驚他小便到這個啤酒杯裡。
+我對這個實心的金浴室印象深刻。
+這是他的個人的勝利。
+我估這個色士風是很好的。
