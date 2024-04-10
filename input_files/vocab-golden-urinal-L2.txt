@@ -55,26 +55,84 @@ solid
 	adj,實心的
 
 我知道他是否一個老師。
+	if<=?,1
 我知道他是否每日都吃蘋果。
+	if<=?,1
 他在選舉中得到了一個大的勝利。
+	victory
+	election
 我不知道總統是否在辦公室喝了一些啤酒。
+	if<=?,1
+	president<=?,0
+	beer
+	office
 我不知道總統是否有幾個辦公室。
+	if<=?,1
+	president<=?,0
+	several
+	office
 他們組織了一個啤酒選舉。
+	organise
+	beer
+	election
 勝利是我的。
+	victory
+	mine
 他經常在浴室吹奏色士風。
+	play<=?,1
+	saxophone
+	bathroom
 他放了幾個金的啤酒酒杯在白宮。
+	several
+	beer
+	glass<=?,1
+	White House
 我準備好去跑去學校了。
+	ready
 我估主席有幾個個人助手。
+	guess
+	president<=?,1
+	several
+	assistant
 我很吃驚他能吹奏色士風。
+	surprised
+	play<=?,1
+	saxophone
 我準備好去小便了。
+	ready
+	pee<=?,0
 他使我印象深刻。
+	impress sb
 我使他印象深刻。
+	impress sb
 他用一首歌使我印象深刻。
+	impress sb
+	song
 他覺得印象深刻。
+	impressed
 他對我的歌印象深刻。
+	impressed with
+	song
 他準備好去使我們印象深刻。
+	ready
+	impress sb
 我對他的選舉勝利印象深刻。
+	impressed with
+	election
+	victory
 我很吃驚他小便到這個啤酒杯裡。
+	surprised
+	pee<=?,0
+	beer
+	glass<=?,1
 我對這個實心的金浴室印象深刻。
+	impressed with
+	solid<=?,1
+	gold
+	bathroom
 這是他的個人的勝利。
+	personal
+	victory
 我估這個色士風是很好的。
+	guess
+	saxophone

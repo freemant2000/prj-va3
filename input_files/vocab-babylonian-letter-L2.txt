@@ -48,3 +48,93 @@ while
 	conj,而
 single
 	adj,單一的
+
+神給了我以下的訊息。
+	God
+	following
+	message
+他的身體好。
+	in good health
+那個紳士的身體好。
+	gentleman
+	in good health
+為了我的原故，那個紳士發了一個訊息給神。
+	for xxx's sake
+	gentleman
+	God
+	message
+他的健康變得差了。
+	health
+	get<=?,1
+	worse
+這個紳士會永遠是我的朋友。
+	gentleman
+	forever<=?,0
+這些羊毛比以前差了。
+	wool
+	worse
+	than
+我們已用光了我們的錢。
+	use up
+為了健康的原故，他總是穿羊毛毛衣。
+	for the sake of xxx
+	health
+	wool
+	sweater
+以下的人都是他的助手。
+	following
+	people
+	assistant
+他對我的羊毛毛衣大驚小怪。
+	fuss about
+	wool
+	sweater
+他的助手買了一套茶杯。
+	assistant
+	set<=?,1
+那個紳士的助手給了他一條訊息。
+	gentleman
+	assistant
+	message
+確實，我收養了一隻貓並給了牠一個永遠的家。
+	indeed
+	adopt<=?,1
+	forever<=?,1
+他變得越來越年青。
+	get<=?,1
+	young
+這間屋變得越來越舊。
+	get<=?,1
+	old<=?,1
+他總是對神的訊息大驚小怪。
+	fuss about
+	God
+	message
+確實，他的助手變得越來越窮。
+	indeed
+	assistant
+	get<=?,1
+	poor<=?,1
+她生了一個男孩，而我則收養了一個女孩。
+	give birth to
+	adopt<=?,1
+她確實是一個單親母親。
+	indeed
+	single
+我已用光了我的錢，而他還有很多。
+	use up
+	while<=?,1
+	still
+	a lot
+他的媽媽生他時用光了所有的力氣(strength)。
+	use up
+	give birth to
+那個紳士有單一的一個助手。
+	gentleman
+	single
+	assistant
+確實，羊毛變得越來越便宜。
+	indeed
+	wool
+	get<=?,1
+	cheap
