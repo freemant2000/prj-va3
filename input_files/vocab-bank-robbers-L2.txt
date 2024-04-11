@@ -1,0 +1,76 @@
+[Bank robbers L2]
+belong
+	v,屬於
+belong to sb
+	v phr,屬於某人
+robber
+	n,劫匪
+robbery
+	n,搶劫
+change
+	v,改變
+	n,改變
+mind
+	n,思想
+important
+	adj,重要的
+concept
+	n,概念
+challenge
+	n,挑戰
+	v,挑戰
+professional
+	adj,專業的
+	n,專業人士
+MBA
+	n,工商管理碩士
+experience
+	n,經驗
+education
+	n,教育
+scream
+	v,尖叫
+focus
+	v,專注
+	n,焦點
+focus on xx
+	v phr,專注於某物
+task
+	n,任務
+turn down
+	v phr,拒絕
+primary school
+	n phr,小學
+mine
+	pron,我的xx
+instead
+	adv,取而代之、反之
+manager
+	n,經理
+take advantage of
+	v phr,好好利用
+situation
+	n,情況
+worth xx
+	adj,值xx的
+suggest
+	v,建議
+knowledge
+	n,知識
+tide
+	n,潮水、潮汐
+count
+	v,數
+immediately
+	adv,立即
+at hand
+	adv phr,手頭上的
+realise
+	v,意識到
+important
+	adj,重要的
+total
+	adj,總的
+amount
+	n,數量（不可數）
+	n,金額
