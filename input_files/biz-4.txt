@@ -1,0 +1,100 @@
+[商業英語4]
+accommodation
+        n,住宿
+involve
+        v,（使）涉及
+complete
+        v,完成、使完整
+training
+        n,培訓
+additional
+        adj,額外的
+bear
+        v,承擔:bore, born
+problem
+        n,難題
+candidate
+        n,候選人
+applicant
+        n,申請者
+procedure
+        n,程序／手續
+shareholder
+        n,股東
+general assembly
+        n phr,股東大會
+shareholders' meeting
+        n phr,股東大會
+per
+        n,每（計費時用）
+prepaid
+        adj,預付的
+catering
+        n,（餐飲）到會
+quote
+        v,報價
+        n,報價
+office building
+        n phr,辦公樓
+layout
+        n,排版版面
+brainstorming session
+        n phr,集思會
+women's clothing
+        n phr,女裝
+machine
+        n,機器
+seek=>514
+        v,找尋、尋求（努力，正式）:sought, sought
+legal advice
+        n phr,法律意見
+cash flow
+        n phr,現金流
+undertake
+        v,承接
+promote
+        v,宣傳
+storey
+        n,樓層（英）
+printer paper
+        n phr,打印用紙
+third party
+        n phr,第三者
+expire
+        v,過期（不再有效）
+overdue 
+       adj,過期的（應做但未做）
+membership card
+        n phr,會員卡
+fee
+        n,費用
+ceremony
+        n,儀式
+exhibition
+        n,展覽
+prefer
+        v,更喜歡
+inquiry
+        n,查詢
+notify
+        v,通知
+further
+        adj,進一步的
+quarter
+        n,季（三個月）
+seminar
+        n,講座
+contract
+        n,合約
+monthly
+        adj,每月的
+data
+        n,數據
+backup
+        n,備份
+follow up
+        v phr,跟進
+furniture
+        n,家俬
+carpet
+        n,地毯
