@@ -1,0 +1,50 @@
+[Egyptian tablet L2]
+employer
+	n,僱主
+employee
+	n,僱員
+scorpion
+	n,蝎子
+day off
+	n phr,休假日
+ancient
+	adj,古代的
+Egypt
+	n,埃及
+important
+	adj,重要的
+relative
+	n,親戚
+	adj,相對的
+keep records of
+	v phr,保存記錄
+tablet
+	n,平板
+bite, bit, bitten
+	v,咬
+bleed, bled, bled
+	v,流血
+prepare
+	v,準備
+beer
+	n,啤酒
+absent
+	adj,缺席的
+reason
+	n,原因
+consider
+	v,考慮
+	v,認為
+list=>777
+	n,清單、列表
+	v,列出
+record
+	n,記錄
+related to
+	adj phr,同...有關的
+drink
+	n,飲品
+refer to
+	v phr,指稱
+bury
+	v,埋、埋葬
