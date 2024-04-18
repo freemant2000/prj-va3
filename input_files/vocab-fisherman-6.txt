@@ -1,0 +1,86 @@
+[fisherman-6]
+reach
+	v,到達
+moon
+	n,月亮
+surface
+	n,表面
+wooden
+	adj,木的
+furniture
+	n,家俬
+fireplace
+	n,火爐
+by
+	prep,在...旁邊（四周）
+to my surprise
+	adv phr,令我吃驚
+cottage
+	n,鄉村小屋
+beautiful
+	adj,漂亮的
+excited
+	adj,興奮的
+stand, stood, stood
+	v,站
+Mars
+	n,火星
+hesitate
+	adj,猶䂊的、無決心的
+buy, bought, bought
+	v,買
+off you go
+	c,你走吧
+forget, forgot, forgotten
+	v,忘記
+guess
+	v,猜
+prince
+	n,王子
+weigh
+	v,重
+at least
+	adv phr,至少
+fifty
+	num,五十
+kilogram
+	n,公斤
+fishing rod
+	n phr,魚杆
+shiny
+	adj,（反光）閃亮的
+house
+	n,房子
+in no time
+	adv phr,馬上
+dear
+	adj,親愛的
+peach
+	n,桃
+taste
+	v,嚐起來
+well-known
+	adj,出名的
+fisherman
+	n,漁夫
+make
+	v,造:made, made
+	v,令:made, made
+tired
+	adj,疲倦的
+well-kept
+	adj,被好好地保養
+
+他們到達了月球的表面。
+他有一些木家俬。
+他坐在火爐旁邊。
+令我吃驚，這間鄉村小屋有這麼漂亮的家俬。
+我很興奮站在火星的表面。
+他沒有決心去建造一個火爐。
+他馬上(不用at once或immediately)買了一間鄉村小屋。
+你走吧。我會馬上(不用at once或immediately)忘記你。
+我猜這個王子重至少五十公斤。
+他馬上(不用at once或immediately)把那枝魚杆放在這間閃亮的屋裡。
+（古時）親愛的，這個桃吃起來很好。
+這個出名的(不用famous)漁夫令我疲倦。
+這些家俬被保養得好好。
