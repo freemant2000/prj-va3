@@ -1,0 +1,51 @@
+[Kim Jong Un L2]
+Switzerland
+	n,瑞士
+swiss
+	adj,瑞士的
+secretly
+	adv,秘密地
+order
+	v,命令
+	n,命令
+international
+	adj,國際的
+studies
+	n,學業
+Korea
+	n,韓國
+grade
+	n,等級
+	n,成績
+develop=>872
+	v,發展、開發
+instead
+	adv,取而代之、反之
+due to
+	prep phr,因為
+chief=>1966
+        adj,首要的
+        n,首領、首長
+powerful
+	adj,強而有力的
+make sure
+	v phr,確保
+cage
+	n,籠
+according to
+	prep phr,根據
+shoot, shot, shot
+	v,（用槍等）射擊
+assistant=>2161
+	n,助手、助理
+	adj,助理的
+professor
+	n,教授
+army
+	n,軍隊
+drunk
+	adj,喝醉了的
+overthrow, overthrew, overthrown
+	v,推翻
+government
+	n,政府
