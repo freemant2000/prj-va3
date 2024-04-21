@@ -1,0 +1,105 @@
+[商業英語5]
+chair
+        n,椅子
+poster
+         n,海報
+table=>538
+        n,枱（桌子）
+personnel
+        n,人員
+warehouse
+         n,貨倉
+necessary
+        adj,必要的
+ensure
+        v,確保
+shipment
+        n,運輸
+managing director
+        n phr,董事總經理
+take place
+        v phr,發生
+aware
+        adj,知道的
+personal assistant
+        n phr,個人助理
+attend
+        v,出席
+latter
+        n,後者
+digital
+        adj,數碼的
+photograph
+        n,照片
+produce
+        v,產生
+advertisement
+        n,廣告
+gaming
+        n,博彩
+scale
+        n,規模
+round
+        n,輪
+selection
+        n,篩選
+wharf
+        n,碼頭
+continued
+        adj,持續的
+setup
+        n,安裝
+free
+        adj,空閒的
+profit
+        n,利潤
+market share
+         n phr,市場佔有率
+interest=>1113
+        n,興趣
+        n,利息
+place an order
+        v phr,下訂單
+declare
+        v,宣佈
+bankruptcy
+        n,破產
+briefing
+        n,講解會
+expensive
+        adj,昂貴的
+cooperation
+        n,合作
+out of stock
+        adv phr,無庫存
+shampoo
+        n,洗頭水
+budget
+        n,預算
+quarter=>2349
+        n,季度（三個月）
+successful
+        adj,成功的
+career
+        n,職業生涯
+sample
+        n,樣本
+retail=>1380
+        n,零售
+        adj,零售的
+        v,零售
+credit limit
+        n phr,信用額
+professional
+        adj,專業的
+        n,專業人士
+perfect
+        adj,完美的
+wedding
+        n,婚禮
+postpone
+        v,延期
+receive
+        v,收到
+magazine
+        n,雜誌
