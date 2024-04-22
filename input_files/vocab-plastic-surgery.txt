@@ -1,0 +1,180 @@
+[plastic surgery]
+fellow
+  n,同儕（地位相似）
+  adj,同儕的（地位相似）
+honoured
+    adj,受尊敬的
+debate
+  v,辯論
+	n,辯論
+motion
+  n,動議
+	v,動議
+plastic surgery
+  n phr,整容手術
+harmful
+ adj,有害的
+significant
+ adj,相當重大／多的
+possibility
+ n,可能性
+regret
+  v,後悔
+	n,後悔
+especially
+  adv,尤其是
+present=>1097
+        adj,現在的
+        n,禮物
+        adj,出席的
+ 			v,展示
+chief
+   adj,首要的
+oppose
+  v,反對
+encourage
+   v,鼓勵
+focus
+   v,專注
+	 n,焦點
+outward
+  adj,向外的
+appearance
+  n,外貌
+society
+ n,社會
+attention
+   n,注意力
+emphasis
+    n,強調
+physical
+    adj,身體的、體力的
+		adj,物理的
+wrongly
+  adv,錯誤地
+self-worth
+  n,自我價值
+reliant
+ adj,依賴的
+constantly
+  adv,不斷地
+image
+   n,形像
+	 n,影像、圖像
+supposedly
+  adv,一般認為的那樣
+uphold
+  v,支撐
+ideal
+   n,理想
+	 adj,理想的
+inevitable
+  adj,不可避免的
+judge
+   v,判斷
+	 n,評判
+comparison
+  n,比較
+slim
+  adj,纖瘦的
+straight
+ adj,直的
+cheekbone
+   n,顴骨
+eyelid
+  n,眼皮
+long for xx
+    v phr,渴望得到xx
+feature
+  n,特徵
+attain
+  v,（經努力）取得
+purposeless
+ adj,無目的的
+devastating
+  adj,破壞性的
+	adj,打擊人心的
+self-esteem
+  n,自專心
+proponent
+   n,支持者
+procedure=>2323
+	 n,流程／手續
+   n,手術
+in addition to
+   prep,除了...（也...）
+superficial
+ adj,表面的
+solution
+    n,解決方案
+depend on xx
+	v phr,依靠xx
+  v phr,取決於xx
+notion
+  n,信念（相信某事是真）
+subjectivity
+    n,主觀
+truth
+   n,真相
+diverse
+  adj,多樣的
+form=>1395
+        n,表格
+    n,形式
+specific
+    adj,特定的
+receptive
+   adj,接納的
+towards
+  prep,向著
+standard
+    n,標準
+medical
+  adj,醫學的
+severe
+  adj,嚴重的
+risk
+    n,風險
+		v,冒險
+excessive
+   adj,過量的
+loss
+    n,損失
+organ
+   n,器官
+life-threatening
+    adj,危及生命的
+infection
+   n,感染
+recommend
+   v,推薦
+undergo=>1976
+  v,經歷、經受
+patient
+  n,病人
+unnecessary
+  adj,不必要的
+multitudinous
+    adj,各種各樣的
+needlessly
+  adv,不必要地
+complications
+   n,併發症
+lengthy
+  adj,冗長的
+recovery
+    n,恢復、康復
+associated with xx
+  adj phr,同xx有聯系的
+process
+  n,過程
+toll
+    n,損傷
+magazine
+    n,雜誌
+beautiful
+   adj,漂亮的
+ourselves
+   pron,我們自己
+body
+  n,身體
