@@ -49,3 +49,98 @@ overthrow, overthrew, overthrown
 	v,推翻
 government
 	n,政府
+punishment
+  n,懲罰
+
+他在瑞士秘密地給出了一個命令。
+	secretly
+	order<=?,2
+	Switzerland
+香港是一個國際化的城市。
+	international
+	city
+在瑞士他的學業是好的。
+	studies
+	Switzerland
+在韓國你不能買到瑞士的食物。
+	swiss
+	Korea
+他秘密地告訴了我他的成績。
+	secretly
+	grade<=?,0
+他們在韓國發展了一個友誼。
+	develop
+	friendship
+	Korea
+他不喜歡KFC。反之，他經常吃瑞士雞翼(wing)。
+	instead
+	swiss
+	chicken<=?,1
+因為他的好成績，他在韓國參加了一個國際性的比賽(competition)。
+	grade<=?,0
+	enter<=?,1
+	international
+	Korea
+他在瑞士開發了一架飛機。
+	develop
+	airplane
+	Switzerland
+我命令他去開發一個app。
+	order<=?,1
+	develop
+我們的首長是強而有力的。
+	chief<=?,1
+	powerful
+請確保這個籠是強的。
+	make sure
+	cage
+	strong
+他不會贏。取而代之，他會在韓國得到懲罰。
+	win
+	instead
+	punishment
+	Korea
+根據新聞，我們的首長在韓國被射中了。
+	according to
+	news<=?,0
+	chief<=?,1
+	shoot
+	Korea
+他是這間國際學校的助理教授。
+	assistant<=?,1
+	professor
+	international
+在瑞士他們不發展自己的軍隊。
+	develop
+	army
+	Switzerland
+根據這封電郵，那個喝醉了的首長在籠裡睡了。
+	according to
+	drunk
+	chief<=?,1
+	cage
+他命令我們射擊那個籠。
+	order<=?,1
+	shoot
+	cage
+當他喝醉了，他總說他會推翻這個政府。
+	drunk
+	overthrow
+	government
+請確保那枝軍隊不會射擊。
+	make sure
+	army
+	shoot
+根據這個助理教授，我今次的成績是好的。
+	according to
+	assistant<=?,1
+	professor
+	grade<=?,0
+我確保了他會得到懲罰。
+	make sure
+	punishment
+因為金錢，他們想推翻瑞士的政府。
+	due to
+	overthrow
+	swiss
+	government

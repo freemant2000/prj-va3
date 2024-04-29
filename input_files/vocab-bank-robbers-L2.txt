@@ -74,3 +74,112 @@ total
 amount
 	n,數量（不可數）
 	n,金額
+
+這些錢屬於那個劫匪。
+	belong to sb
+	robber
+那場搶劫改變了我的思想。
+	robbery
+	change<=?,0
+	mind<=?,0
+這是一個重要的概念。
+	important
+	concept
+不要挑戰那個劫匪。
+	challenge<=?,1
+	robber
+那是一場專業的搶劫。
+	professional<=?,0
+	robbery
+在我的思想中他是一個專業人士。
+	mind<=?,0
+	professional<=?,1
+這個工商管理碩士知道這個概念。
+	MBA
+	concept
+他在教育有很多經驗。
+	experience
+	education
+在那場搶劫中他尖叫了。
+	scream<=?,0
+	robbery
+我們應該專注於這個任務。
+	focus on xx
+	task
+我拒絕了他的挑戰。
+	turn down
+	challenge<=?,0
+這間小學不是我的。取而代之，它屬於一個經理。
+	primary school
+	mine
+	instead
+	belong to sb
+	manager
+這個概念很專業。
+	concept
+	professional<=?,0
+教育的焦點不應該是分數(marks)。
+	focus<=?,1
+	education
+當我們專注於那任務時她突然尖叫。
+	focus on xx
+	task
+	scream<=?,0
+	suddenly
+在那個差的情況中他利用了他的經驗。
+	situation
+	take advantage of
+	experience
+這間小學值很多錢。
+	primary school
+	worth
+這個工商管理碩士建議留在這裡。
+	MBA
+	suggest
+這個經理建議取得更多的知識。
+	manager
+	suggest
+	knowledge
+他利用了這個潮水。
+	take advantage of
+	tide
+他建議數一數那些蘋果。
+	suggest
+	count
+那個經理的經驗值很多錢。
+	manager
+	experience
+	worth
+很多年前人們就有關於潮汐的概念。
+	concept
+	tide
+那個經理立即拒絕了那個專業人士。
+	manager
+	turn down
+	professional<=?,1
+	immediately
+我的手頭上的任務是一個挑戰。
+	task
+	at hand
+	challenge<=?,0
+他意識到教育是重要的。
+	realise
+	education
+	important
+他在潮水中游泳。
+	tide
+總的金額是100元。
+	total<=?,1
+	amount<=?,1
+這個工商管理碩士意識到這個情況是差的。
+	MBA
+	realise
+	situation
+他建議數一數手頭上的任務。
+	suggest
+	count
+	task
+	at hand
+他的知識的數量是令人驚訝的(amazing)。
+	amount<=?,0
+	knowledge
