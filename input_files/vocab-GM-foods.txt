@@ -1,0 +1,68 @@
+[GM foods]
+agriculture
+	n,農業
+papaya
+	n,木瓜
+plum
+	n,李子
+eliminate
+	v,消除
+weed
+	n,雜草
+biotechnology
+	n,生物技術
+alter
+	v,（重大、性質）修改
+resistant
+	adj,抵抗的
+resistant to xx
+	adj phr,抗xx的
+pest
+	n,害蟲
+economical
+	adj,經濟的（平的）
+mess with
+	v phr,搞、干擾
+opponent
+	n,反對者
+ban
+	v,禁止
+    n,禁止
+convince
+	v,說服
+debate
+    n,辯論
+	v,辯論
+current
+	adj,目前的
+controversy
+	n,爭議
+interference
+	n,干擾
+upset
+	v,使不快
+require
+	v,要求
+climate
+	n,氣候
+develop
+	v,發展、開發
+genetically
+	adv,基因地
+modify
+	v,修改
+trade
+	n,貿易
+agreement
+	n,協議
+consumer
+	n,消費者
+label
+	n,標纖
+    v,作標纖
+block
+	v,阻擋
+assume
+	v,假定
+nature
+	　n,大自然
