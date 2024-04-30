@@ -1,0 +1,47 @@
+[fisherman-7]
+as if
+	conj phr,就好像
+dining table
+	n phr,餐桌
+go to bed
+	 v phr,去睡覺
+happen
+	v,發生
+palace
+	n,皇宮
+piece=>591
+        n,張、塊、片、件
+queen=>1039
+	n,皇后、女皇
+road
+	n,路
+rough
+	adj,粗糙的
+	adj,波濤洶湧的
+strange
+	adj,古怪的
+throw, threw, thrown
+	v,拋
+wait for xx
+	v phr,等待xx
+wait for sb to
+	v phr,等某人做某事
+
+我等他賣了那間（石或草造的）小屋。
+我馬上(不用at once或immediately)就忘記了那個魔術。
+他有一件重的家俬。
+這條路的表面很粗糙。
+他們靠吃臭的蜜糖為生。
+你走吧。我會等你去中國的。
+他很平靜，就好像無事發生了一樣。
+這個火爐被保養得很好，就好像它是新的一樣。
+（古時）甜心，你想吃一條比目魚嗎?
+我會等他放那個鈎在那間鄉村小屋裡。
+他看起來很古怪，就好像他受到魔法影響。
+我向他索取了一件家俬。
+我對這個王子很厭倦。
+他立即(不用at once或immediately)把那個鈎拋出了那個著名的懸崖。
+他對他的妻子感到厭倦。
+那個皇宮裡的女皇投訴了那張餐桌。
+我會永遠等你。
+我要去睡了。
