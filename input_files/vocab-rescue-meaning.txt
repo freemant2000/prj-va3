@@ -1,0 +1,35 @@
+[rescue meaning]
+skin
+	n,皮膚
+sharp
+	adj,尖的
+doctor
+	n,醫生
+person<=?,0
+	n,人
+search
+	v,搜尋
+ground
+	n,地面
+tool
+	n,工具
+sound
+	n,聲音
+wind
+	n,風
+rain
+	n,雨
+loud=>577
+	adj,大聲的、嘈吵的
+sick
+	adj,生病的
+hospital
+	n,醫院
+end
+	v,結束
+  n,結束
+care
+	v,關心、在乎
+  n,關心
+care for
+	v phr,照顧

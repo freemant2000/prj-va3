@@ -1,0 +1,22 @@
+[rescue內文-1]
+twelve
+  num,十二
+Nigeria
+  n,尼日利亞（非洲國家）
+special
+  adj,特別的
+medicine
+  n,藥物
+Africa
+  n,非洲
+helicopter
+  n,直升機
+enough
+  det,足夠的
+  adv,足夠
+service
+  n,服務
+become, became, become=>1162
+  v,變成
+quickly
+  adv,快速地
