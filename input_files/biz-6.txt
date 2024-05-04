@@ -1,0 +1,99 @@
+[商業英語6]
+in order to
+        prep phr,為了
+deadline
+        n,限期
+deliver
+        v,遞送
+schedule
+        n,時間安排
+        v,時間安排
+facility
+        n,設施
+offer
+        v,（提供某物）提議
+equip
+        v,向...配設備
+fully equipped
+        adj phr,配完善設備的
+centre
+        n,中心
+indoor
+        adj,室內的
+heated
+        adj,被加熱的
+pool
+        n,池
+fitness suite
+        n phr,健身室
+suite
+        n,套間
+comment
+        n,評語
+illustration
+        n,插圖
+suit
+        v,適合
+explanatory
+        adj,解釋的
+due
+        adj,到時間做的
+apologise
+        v,道歉
+on his behalf
+        adv phr,代表他
+delegate=>2252
+        v,授權分工
+        n,（參會）代表
+October
+        n,十月
+system
+        n,系統、制度
+touring
+        adj,四處旅行的
+theatre
+        n,劇院
+donation
+        n,捐獻
+raise
+        v,籌（款等）
+stock
+        n,存貨
+        v,存貨
+charity
+        n,慈善機構
+imagine
+        v,想像
+wonder
+        v,想知道
+acceptable
+        adj,可接受的
+request
+        n,請求
+        v,請求
+department
+        n,部門
+inter-departmental
+        adj,跨部門的
+social
+        adj,社交的
+platform
+        n,平台
+traditional
+        adj,傳統的
+media
+        n,媒體（眾數）
+focus
+        v,專注
+implement
+        v,實施
+study
+        v,研究
+Taiwan
+        n,台灣
+market
+        n,市場
+strategy
+        n,策略
+promotion
+        n,宣傳
