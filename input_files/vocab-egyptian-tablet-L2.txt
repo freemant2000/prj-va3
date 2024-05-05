@@ -48,3 +48,93 @@ refer to
 	v phr,指稱
 bury
 	v,埋、埋葬
+
+這個僱主有三個僱員。
+	employer
+	employee
+這隻蝎子有一日休假。
+	scorpion
+	day off
+在古代的埃及他是一個重要的僱主。
+	ancient
+	Egypt
+	important
+	employer
+我的一個親戚是他的僱員。
+	relative<=?,0
+	employee
+在古代的埃及人們在平板上保存天氣的記錄。
+	ancient
+	Egypt
+	keep records of
+	weather
+	tablet
+一隻蝎子咬了我的親戚，所以他現在在流血。
+	scorpion
+	bite<=?,0
+	relative<=?,0
+	so<=?,0
+	bleed
+我的僱主給了我一日休假。
+	employer
+	give
+	day off
+我在埃及為他們準備了三杯啤酒。
+	prepare
+	glass<=?,1
+	beer
+	Egypt
+他保存他的流血的記錄。
+	keep records of
+	bleed
+他經常缺席，你知道原因嗎?
+	absent
+	reason
+我認為這個清單很重要。
+	consider<=?,1
+	list<=?,0
+	important
+那隻蝎子喝了我的啤酒。
+	scorpion
+	drink<=?,0
+	beer
+這些記錄同那個僱員有關。
+	record<=?,1
+	related to
+	employee
+我的親戚昨天缺席了，所以他沒有使用這塊平板。
+	relative<=?,0
+	absent
+	so<=?,0
+	tablet
+他沒有任何原因就咬了我一下。
+	bite<=?,0
+	without
+	reason
+這裡「飲品」指的是古代的啤酒。
+	drink<=?,1
+	refer to
+	ancient
+	beer
+他把那塊平板埋葬了在埃及。
+	bury
+	tablet
+	Egypt
+他列出了他的所有的親戚。
+	list<=?,1
+	relative<=?,0
+我認為我的僱主是重要的。
+	consider<=?,1
+	employer
+	important
+這裡「親戚」指的是他的叔叔。
+	relative<=?,0
+	refer to
+	uncle
+他為那隻蝎子準備了一些飲品。
+	prepare
+	drink<=?,1
+	scorpion
+這個清單同我們的食物有關。
+	list<=?,0
+	related to
