@@ -1,18 +1,36 @@
 [rescue內文-2]
 student
+  n,學生
 happen
+  v,發生
 sad
+  adj,傷心的
 sister
+  n,姊妹
 visit
+  v,探訪
 family
-sick 
+  n,家庭
+  n,家人
+sick
+  adj,生病的
 need
+  v,需要
 ambulance
+  n,救傷車
 reach
+  v,（努力後）到達
 road
-find
+  n,路
+find, found, found
+  v,找到、發現
 flying
-West
-plane 
+  adj,飛的
+west
+  n,西方
+plane
+  n,飛機（簡寫）
 die
+  v,死
 because
+  conj,因為
