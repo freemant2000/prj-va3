@@ -5,3 +5,8 @@ when deleting a sprint, no need to input the ID.
 in a one-many relationship, show the index instead of ID?
 merge worddefs
 merge sentences
+
+bugs:
+marking and saving doesn't update the date for all the involved practices
+if a word appears multiple times in a sprint, even if it is used in an exercise,
+it won't show as such.

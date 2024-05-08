@@ -1,0 +1,27 @@
+[rescue]
+patient
+	n,病人
+whistle
+	n,哨子
+mountain
+	n,山
+rescue
+	v,拯救
+	n,拯救
+storm
+	n,暴風雨
+fall over
+	v phr,跌倒
+break
+	v,打破:broke, broken
+	v,折斷:broke, broken
+ambulance
+	n,救傷車
+team
+	n,團隊
+cut, cut, cut
+	v,切
+death
+	n,死亡
+mountain rescue teams
+	n phr,登山拯救隊
