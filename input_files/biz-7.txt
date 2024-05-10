@@ -1,0 +1,113 @@
+[商業英語7]
+nursing home
+        n phr,老人院
+surprise
+        v,使驚訝
+        n,驚訝
+gift        
+        n,禮物
+glad
+        adj,高興的（放心）
+the day after tomorrow
+        n phr,後天
+adopt
+        v,採納
+assure
+        v,向...保證
+effort
+        n,努力
+content
+        n,內容
+typo
+        n,錯字
+attachment
+        n,附件
+correct
+        v,改正
+spelling
+        n,拼寫
+strength=>2125
+        n,力量、力氣
+        n,強項
+at present
+        adv phr,目前
+attention
+        n,注意力
+management
+        n,管理層
+value=>2038
+        n,值、價值
+        v,重視
+pack
+        n,（緊紮著的）一包
+spell checker
+        n phr,拼字檢查器
+support
+        v,支持
+        n,支持
+behind
+        prep,在...背後
+quality
+        n,質量
+perform
+        v,進行
+company
+        n,公司
+complaint
+        n,投訴
+smoke
+        v,抽煙
+construction
+        n,建造
+site
+        n,場地
+prohibit
+        v,禁止
+law
+        n,法律
+owner
+        n,主人
+premises
+        n,場所
+accountable
+        adj,要負責任的
+hold, held, held
+        v,拿著、持有
+express
+        v,表達
+concern=>1158
+        n,關心、擔心
+        v,使關心、使擔心
+issue
+        n,事情
+promptly
+        adv,迅速地
+consider
+        v,考慮
+elsewhere
+        adv,別的地方
+action
+         n,行動
+propose
+        v,建議
+address=>2177
+        n,地址
+        v,處理
+credit
+        n,信貨
+bill
+        n,賬單
+coupon
+        n,贈券
+collection agency
+        n phr,收數公司
+cheque
+        n,支票
+unfortunately
+        adv,不幸地
+insufficient
+        adj,不足夠的
+avoid
+        v,避免
+accrue
+        v,積累（金錢或好處等）
