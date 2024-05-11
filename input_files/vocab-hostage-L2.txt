@@ -1,0 +1,65 @@
+[Hostage L2]
+notice
+	v,注意到
+break into
+	v phr,闖入
+hostage
+	n,人質
+value
+	n,值、價值
+tie
+	v,綁
+    n,領呔
+tie up
+	v phr,綁起、綁緊
+untie
+	v,鬆綁
+freedom
+	n,自由
+struggle
+	v,爭扎
+    n,爭扎
+prevent sb from sth
+	v phr,防止某人做某事
+yell
+	v,大叫（負面情緒）
+neighbour
+	n,鄰居
+decision
+	n,決定
+in two days
+	adv phr,兩日後
+risk
+	n,風險
+take risk
+	v pr,冒險
+remain
+	v,停留、依然是
+firm
+	adj,堅實的
+touch=>1140
+	v,接觸、碰到
+    v,感動
+touching
+	adj,感人的
+worry
+	v,（使）擔心
+    n,擔心
+promise
+	v,承諾
+    n,承諾
+desperately
+	adv,拼命地
+    adv,絕望地
+either of you
+	n phr,你們兩者中其中一個
+crime
+	n,罪案
+beg
+	v,乞求
+explain
+	v,解釋
+thief
+	n,賊
+steal, stole, stolen
+	v,偷
