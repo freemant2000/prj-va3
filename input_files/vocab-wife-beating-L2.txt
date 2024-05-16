@@ -44,3 +44,104 @@ absence
 	n,缺席
 take care of=>1450
 	v phr,照顧、看管
+
+他正在花越來越多的錢。
+	spend
+	more and more
+我在巴基斯坦打了他。
+	beat<=?,0
+	Pakistan
+我很可能會遵從他。
+	likely<=?,0
+	obey
+在巴基斯坦，越來越多的人支持我的決定。
+	Pakistan
+	more and more
+	people
+	support<=?,0
+	decision
+不要進一步打他。
+	beat<=?,0
+	further<=?,1
+我很可能不會接受這個決定。
+	likely<=?,0
+	accept
+	decision
+他經常忤逆他的強而有力的爸爸。
+	disobey
+	powerful
+他進一步地花費金錢。
+	spend
+	further<=?,1
+他在巴基斯坦有一些財產。
+	property<=?,1
+	Pakistan
+我可以成為你的學生，這是我的榮譽。
+	become	
+	student
+	honour
+越來越多人違抗我們。
+	more and more
+	people
+	disobey
+我沒有懲罰那個聽話的小孩。
+	punish
+	obedient
+	child
+他很可能失去了他的所有財產。
+	likely<=?,0
+	lose<=?,0
+	property<=?,1
+我的決定是去保護那個聽話的小孩。
+	decision
+	protect
+	obedient
+	child
+他為榮譽而死了，之後人們就忘記了他。
+	die
+	honour
+	afterwards
+	people
+	forget
+他進一步地賣他的財產。
+	sell	
+	property<=?,1
+	further<=?,1
+我和他分開地去了巴基斯坦。
+	Pakistan
+	separately
+你會因為缺席而被懲罰。
+	punish
+	absence
+這是一個強而有力的決定。
+	powerful
+	decision
+他很快會死。之後我會看管他的財產。
+	die
+	soon
+	afterwards
+	take care of
+	property<=?,1
+我們分開地接受了一份新的工作。
+	accept
+	job
+	separately
+你需要進一步的支持嗎？
+	need<=?,0
+	further<=?,0
+	support<=?,1
+之後他變得更聽話了。
+	afterwards
+	become
+	obedient
+他們分開地去了離開了。
+	leave<=?,0
+	separately
+越來越多人支持我，這是我的榮譽。
+	more and more
+	people
+	support<=?,0
+	honour
+如果你違抗我，我就不會保護你。
+	disobey
+	protect
