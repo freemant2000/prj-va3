@@ -1,0 +1,188 @@
+[電影製作內文]
+shadowy
+  adj,藏身黑暗中的、神祕的
+figure
+  n,人物
+  n,身影
+  n,數字
+perch
+   v,處於高處
+atop
+    prep,在...的頂端
+slumber
+  v,（安寧地）睡眠
+metropolis
+  n,大都市
+lie
+        v,說謊:lied, lied, lying
+        v,躺:lay, lain, lying
+        n,謊言
+pan
+  v,向橫掃過（鏡頭等）
+reveal
+  v,揭示
+shimmer
+  v,發微光
+skyscraper
+  n,摩天大廈
+leap
+  v,（優美）跳
+unfurl
+  v,展開
+suit
+    n,套裝
+    v,適合
+swoop
+   v,俯衝
+downwards
+   adv,向下
+swiftly
+  adv,迅速地
+crash
+   v,衝撞
+opponent=>2491
+  n,反對者、對手
+so as to
+  conj phr,為了（做某動作）
+capture
+  v,捕捉
+enthralling
+  adj,令人著迷的
+scene
+   n,現場、場景
+knight
+  n,騎士
+demonstrate
+  v,展示出
+Hollywood
+   n,荷里活
+modern
+  adj,現代的
+futuristic
+  adj,先進的（好像來自未來）
+soar
+    v,上升
+formidable
+  adj,令人敬畏的
+corporation
+  n,（大）公司
+setting
+  n,（故事的）背境
+adventure
+   n,冒險
+cameramen
+   n,攝影師
+spectacular
+  adj,壯觀的
+scenery
+  n,景色
+producer
+    n,生產者
+    n,製片人
+pro-business
+    adj,對生意友善的
+attitude
+    n,態度
+extremely
+   adv,極端地
+stunt double
+    n phr,特技替身
+show off
+    v phr,（驕傲地）展示
+martial arts
+   n phr,功夫
+expertise
+   n,專業知識
+hometown
+    n,故鄉
+legendary
+   adj,傳奇的
+costume
+  n,特殊服裝
+drape
+   v,（用布等）覆蓋
+fusion
+  n,融合
+fashion
+  n,時尚
+  n,時裝
+amusing
+  adj,搞笑的
+the big screen
+  n phr,大銀幕
+thrill
+  v,使心驚
+  v,使興奮
+  n,興奮
+sense
+        n,感覺
+        v,感應、感受
+superstar
+   n,超級巨星
+frequent
+   adj,頻繁的
+    v,經常去
+in ruins
+    adv,在砙礫之中
+devastated
+  adj,極度受挫的
+adrenaline
+  n,腎上線素
+sci-fi
+  n phr,科幻（縮寫）
+flick
+   n,（口語）電影
+Pacific
+  adj,太平洋的
+rim
+  n,邊緣
+honoured
+    adj,受尊敬的
+destroy
+  v,破壞
+colossal
+    adj,巨大的
+exotic
+  adj,奇特的（來自外地等）
+traditionally
+   adv,傳統上
+romance
+  n,浪漫
+hot spot
+    n phr,熱點
+criminal
+    n,罪犯
+    adj,犯罪的
+spy
+   n,間諜
+artist
+  n,藝術家
+martial artist
+  n phr,懂武術的人
+superhero
+  n,超級英雄
+alien
+  n,外星人
+wonder=>2541
+  v,想知道
+  n,奇境
+  n,神奇
+  n,猛人
+comedy
+  n,喜劇
+envision
+    v,設想
+major
+   adj,主要的
+studio
+  n,製片廠
+  n,錄音室
+musical=>1560
+  n,音樂劇
+  adj,音樂的
+perfect
+  adj,完美的
+set=>500
+        v,設定
+        n,套
+  v,（某故事）以...為背境
