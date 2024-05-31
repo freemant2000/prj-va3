@@ -1,0 +1,108 @@
+[它是怎麼製造的]
+cardboard
+	n,紙皮
+box
+	n,盒、箱
+glass
+	n,玻璃
+  n,玻璃杯
+jar
+	 n,闊口瓶
+put, put, put
+	v,放
+spoon=>505
+	n,匙羹
+heat
+	v,加熱
+wooden
+	adj,木的
+pan
+	n,平底鑊
+metal
+	n,金屬
+mix
+	v,混合
+cool
+  adj,涼的
+	v,使冷凍
+jewel
+	n,珠寶
+burn
+	v,燃燒
+pour
+	v,傾倒
+pearl
+	n,珍珠
+natural
+	adj,天然的、自然的
+rare
+	adj,罕見的
+look
+	v,看起來
+look adj
+	v phr,看起來是怎樣的
+like
+	prep,像
+look like
+	v phr,看起來像
+container
+	n,容器
+mixture
+	n,混合物
+oyster
+	n,蠔
+nacre
+	n,珍珠母（白色物料）
+burn out
+	v phr,燒完
+cool down
+	v phr,冷靜下來
+heat up
+	v phr,變得白熱化
+problem
+	n,難題
+feeling
+	n,感受
+mix up
+	v phr,混淆
+flame
+	n,火焰
+different
+	adj,不同的
+material
+	n,物料
+hollow
+	adj,空心的
+substance
+	n,物質
+hard
+	adj,硬的
+  adj,困難的
+shell
+	n,貝殼
+thick
+	adj,厚的
+calm
+	adj,冷靜的
+excited
+	adj,興奮的
+produce=>2396
+	v,產生、生產
+shiny
+	adj,（反光）閃亮的
+diamond
+	n,礸石
+angry
+	adj,生氣的
+creature
+	n,生物
+recognise
+	v,認得
+active
+	adj,活躍的
+similar
+	adj,相似的
+precious
+	adj,寶貴的
+common
+	adj,常見的

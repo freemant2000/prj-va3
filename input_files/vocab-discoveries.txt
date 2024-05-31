@@ -1,0 +1,71 @@
+[大發現]
+invent
+	v,發明
+invention
+	n,發明
+needle
+	n,針
+sailor
+	n,水手
+magnet
+	n,磁石
+compass
+	n,指南針
+navigate
+	v,導航（決定航行方向）
+navigation
+	n,導航
+sink, sank, sunk
+	v,沉、使沉
+submarine
+	n,潛艇
+design
+	v,設計
+	n,設計
+breathe
+	v,呼吸
+breath
+	n,呼吸
+wreck
+	n,沉船
+solo
+	adj,單人的
+create
+	v,創建
+direct
+	v,使...前往某方向
+direction
+	n,方向
+travel
+	v,旅行
+process
+	n,過程
+plan=>507
+	v,計劃
+	n,計劃
+	n,圖則
+route
+	n,路徑
+destroy
+	v,破壞
+moving
+	adj,移動的
+point
+	v,指著
+object
+	n,物件
+attract
+	v,吸引
+iron
+	n,鐵
+bottom
+	n,底部
+liquid
+	n,液體
+move
+	v,移動、搬運
+lung
+	n,肺
+alone
+	adj,單獨的
+
