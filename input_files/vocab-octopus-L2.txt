@@ -1,0 +1,70 @@
+[Octopus]
+octopus
+	n,八爪魚
+venomous
+	adj,有毒的（被咬）
+shoot, shot, shot
+	v,（用槍等）射擊
+female
+        adj,女性的、雌性的
+heart
+	n,心
+centre
+	n,中心
+harm
+	v,傷害
+	n,傷害
+offer
+        v,（提供某物）提議
+        n,（提供某物）提議
+human
+	n,人類
+species
+	n,物種
+object
+	n,物件
+annoyed
+	adj,不快的、厭惡的
+annoyed at xx
+	adj phr,對xx感到不快的
+failure
+	n,失敗
+power
+	n,力量、動力
+arm
+	n,手臂
+bright
+	adj,明亮的
+brain
+	n,腦
+antisocial
+	adj,反社會的
+lay
+        v,輕放:laid, laid, laying
+        v,生（蛋）:laid, laid, laying
+arrange=>2179
+	v,安排
+	v,精心擺放
+rearrange
+	v,重新安排
+	v,重新擺放
+edge
+	n,邊緣
+power failure
+	n phr,停電
+cause
+	v,導致
+	n,原因
+throw, threw, thrown
+	v,拋
+tank
+	n,水缸
+	n,坦克
+rock=>31
+	n,岩石、石頭
+naughty
+	adj,頑皮的
+fact
+	n,事實
+amazing
+	adj,令人驚訝的、極好的
