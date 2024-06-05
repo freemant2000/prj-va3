@@ -1,0 +1,143 @@
+[商業英語9]
+reminder
+    n,提醒
+computer printout
+        n,電腦打印出來的文件
+health insurance
+    n,醫療保險
+employee
+    n,僱員
+convenience
+  n,方便
+competitive
+  adj,有競爭力的
+  adj,競爭的
+responsive
+  adj,積極回應的
+review
+  v,檢視（看是否合適等）
+eager
+   adj,熱切的
+go through
+  v phr,看一遍
+realise
+ v,意識到
+neglect
+ v,忽視
+replace
+ v,取代
+original
+    adj,原本的
+durability
+  n,耐用性
+actually
+    adv,實際上
+in the long term
+    adv phr,長遠來說
+answer<=431,0-1
+        n,答案
+        v,回答
+survey<=1937,0-1
+        n,統計調查
+        v,統計調查
+congratulations
+  n,恭喜
+outstanding
+ adj,傑出的
+campaign
+    n,宣傳運動
+volume=>1909
+  n,體積
+  n,量
+commend
+ v,讚揚
+impressive
+  adj,令人印像深刻的
+qualify for
+  v phr,使有資格去享用
+quantity discount
+   n phr,數量多而得到的折扣
+success
+  n,成功
+trunk
+   n,大木箱
+satisfied with
+   adj phr,對某物滿意的
+apparel
+ n,服裝
+June
+    n,六月
+September
+   n,九月
+determine
+   v,確定
+50-count case
+        n phr,50件裝的箱
+logo
+        n,（公司等）標誌
+registration packets
+        n phr,（會議或入學等）註冊包
+name recognition
+        n phr,知名度
+announce
+        v,宣佈
+hardly
+        adv,難以
+gigantic
+        adj,巨大的
+slashed
+        adj,被切割（如價格等）
+flyer
+        n,單張
+cordially
+        adv,衷心地
+formal
+        adj,正式的
+in honour of
+        prep phr,向某人表示敬意
+associate
+        n,同事
+briefly
+        adv,簡短地
+RSVP
+        c,請回覆
+reputation
+        n,聲譽
+entrepreneur
+        n,創業家
+field
+        n,領域
+clearing house
+        n phr,集散地
+seed money
+        n phr,種子資金
+article
+        n,文章
+recommend
+        v,推薦
+project
+        n,項目
+progress
+        n,進展
+ticket
+        n,票
+website
+        n,網站
+transportation
+        n,運輸
+translate
+        v,翻譯
+Internet
+        n,互聯網
+repair
+        v,修理
+provide
+        v,提供
+equipment
+        n,設備
+accelerate
+        v,加快
+require
+        v,要求
+advanced
+        adj,先進的
