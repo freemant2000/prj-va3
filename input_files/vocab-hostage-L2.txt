@@ -63,3 +63,140 @@ thief
 	n,賊
 steal, stole, stolen
 	v,偷
+
+我注意到某人闖入了我們的家。
+	notice<=?,0
+	break into
+這個人質現在沒有價值了。
+	hostage
+	value<=?,0
+他挷起了那個人質。
+	tie up
+	hostage
+我們為自由而爭扎。
+	struggle<=?,0
+	freedom
+他防止我們大叫。
+	prevent sb from sth
+	yell
+她挷起了她的頭髮。
+	tie up
+	hair<=?,0
+我注意到自由的價值。
+	notice<=?,0
+	value<=?,0
+	freedom
+他解開了那個人質。
+	untie
+	hostage
+這會防止我們注意到他的領呔。
+	prevent sb from sth
+	notice<=?,0
+	tie<=?,1
+某人闖入了我們的鄰居的家。
+	someone
+	break into
+	neighbour
+那個人質爭扎和大叫了一聲。
+	hostage
+	struggle<=?,0
+	yell
+他兩日後會作出一個決定。
+	make<=?,0
+	decision
+	in two days
+那個風險依然高。
+	risk<=?,0
+	remain
+	high
+我留(不用stay)在我的鄰居的屋裡。
+	remain
+	neighbour
+他的決定是堅實的。
+	decision
+	firm
+他爭扎著去觸摸他自己的背部(back)。
+	struggle<=?,0
+	touch<=?,0
+	own<=?,1
+我擔心他會大叫。
+	worry<=?,0
+	yell
+他防止我去冒險。
+	prevent sb from sth
+	take risk
+我擔心你可能會失去自由。
+	worry<=?,0
+	lose<=?,0
+	freedom
+我應承你我不會冒險。
+	promise<=?,0
+	take risk
+我注意到這個地板不是太堅固。
+	notice<=?,0
+	floor
+	firm
+他拼命地大叫。
+	yell
+	desperately<=?,0
+我擔心我們兩個其中一個將會成為人質。
+	worry<=?,0
+	either<=?,1
+	hostage
+不要闖入別人的屋。那是一個罪行。
+	break into
+	crime
+他乞求我去告訴他一個感人的故事。
+	beg
+	tell<=?,0
+	touching
+	story
+我只會解開你們其中一個。
+	untie
+	either of you
+他乞求我去觸摸那個人質。
+	beg
+	touch<=?,0
+	hostage
+我答應他我兩日後會解釋這個決定。
+	promise<=?,0
+	explain
+	decision
+	in two days
+他沒有拿走任何有價值的東西。
+	take<=?,0
+	anything
+	value<=?,0
+我擔心這幅牆不是很堅固。
+	worry<=?,0
+	wall
+	firm
+那個賊拼命地嘗試向我解釋。
+	thief
+	explain
+	desperately<=?,0
+他沒有偷任何有價值的東西。
+	steal
+	anything
+	value<=?,0
+我挷起了我的鄰居。
+	tie up
+	neighbour
+他承諾去打擊(fight)罪行。
+	promise<=?,0
+	crime
+我擔心它的價值可能會在一個月後下跌。
+	worry<=?,0
+	value<=?,0
+	fall
+	in a month
+自由是有很大價值的一個東西。
+	freedom
+	something
+	value<=?,0
+他的思想(mind)依然是清晰的。
+	remain
+	clear<=?,0
+他拼命地跑。
+	run
+	desperately<=?,0
