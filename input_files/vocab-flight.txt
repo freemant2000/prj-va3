@@ -1,0 +1,53 @@
+[flight]
+suitcase
+	n,行李喼
+passenger
+	n,乘客
+board
+	v,登上（大交通工具）
+boarding pass
+	n phr,登機證
+pilot
+	n,機師
+flight
+	n,飛行
+flight attendant
+	n,乘務員
+rucksack
+	n,（旅行等）背囊
+seat
+	n,座位
+belt
+	n,皮帶
+seat belt
+	n phr,安全帶
+souvenir
+	n,紀念品
+local
+	adj,本地的
+local time
+	n phr,本地的時間
+destination
+	n,目的地
+security
+	n,保安
+security checkpoint
+	n,安檢站
+airport
+	n,飛機場
+itinerary
+	n,行程
+flight itinerary
+	n phr,飛行行程
+passport
+	n,護照
+air ticket
+	n phr,飛機票
+luggage
+	n,行李
+fasten
+	v,扣緊
+tag
+	n,（無黏性）標籤
+shuttle bus
+	n phr,穿梭巴士

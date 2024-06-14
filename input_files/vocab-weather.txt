@@ -1,0 +1,56 @@
+[weather conditions]
+drought
+	n,旱災
+flood
+	n,水災、洪水
+ice storm
+	n,冰雪風暴
+thunder
+	n,雷
+thunderstorm
+	n,雷暴雨
+typhoon
+	n,颱風
+earthquake
+	n,地震
+tsunami
+	n,海嘯
+freezing
+	adj,令人結冰的（很冷的）
+broadcast
+	v,廣播:broadcast, broadcast
+	n,廣播
+weather
+	n,天氣
+cloudy
+	adj,多雲的
+tornado
+	n,龍捲風
+snowflake
+	n,雪花
+breeze
+	n,清風
+partly
+	adv,部份地
+temperature
+	n,溫度
+partly cloudy
+	adj phr,部份地多雲的
+weather broadcast
+	n phr,天氣廣播
+Celsius
+	n,攝氐
+lightning
+	n,閃電
+shower
+	n,驟雨
+wildfire
+	n,山火
+landslide
+	n,山泥傾瀉
+volcanic
+	adj,火山的
+eruption
+	n,爆發
+volcanic eruption
+	n phr,火山爆發
