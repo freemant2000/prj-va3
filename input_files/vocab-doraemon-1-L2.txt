@@ -1,0 +1,38 @@
+[Doraemon-1 L2]
+peaceful
+	adj,和平的
+	adj,安寧的
+trust
+	v,信任
+hang
+	v,掛:hung,hung
+	v,吊死:hanged,hanged
+in 2 minutes
+	adv phr,（現在）兩分鐘後
+terrible
+        adj,可怕的
+        adj,極差的
+headache
+	n,頭痛
+stake
+	n,木樁
+weird
+	adj,古怪的
+detail
+	n,細節
+scare
+	v,嚇
+care
+        v,關心、在乎
+        n,關心
+care about xx
+	v phr,在乎xx
+fate
+	n,命運
+tell, told, told
+	v,告訴
+lie
+        v,說謊:lied, lied, lying
+	n,謊言
+nothing
+	pron,沒有東西
