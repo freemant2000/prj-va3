@@ -36,3 +36,112 @@ lie
 	n,謊言
 nothing
 	pron,沒有東西
+我信任那個和平的男人。
+	trust
+	peaceful<=?,0
+請在10分鐘後來我的家。
+	in 2 minutes
+他在一個安寧的下午吊死了她。
+	hang<=?,1
+	peaceful<=?,1
+他有一個可怕的頭痛。
+	terrible<=?,0
+	headache
+他會在10分鐘後把衣服掛在那枝木樁上。
+	hang<=?,0
+	clothes
+	stake
+	in 2 minutes
+在一個安寧的上午他吊死了他自己。
+	hang<=?,1
+	himself
+	peaceful<=?,1
+那是一條很差的木樁。
+	terrible<=?,1
+	stake
+信我吧，我不是一個古怪的男人。
+	trust
+	weird
+那些細節嚇壞了我。
+	detail
+	scare
+我記不起那些細節。
+	remember
+	detail
+那是一條古怪的木樁。
+	weird
+	stake
+我不在乎我的頭痛。
+	care about xx
+	headache
+我燒了那枝木樁。
+	burn
+	stake
+我不信任那個古怪的男人。
+	trust
+	weird
+他不在乎他的命運。
+	care about xx
+	fate
+他的命運是成為一個老師。
+	fate
+	teacher
+他可怕的命運嚇壞了我。
+	terrible<=?,0
+	fate
+	scare
+他告訴了我很多細節。
+	tell<=?,0
+	detail
+那是一個古怪的謊言。
+	weird
+	lie<=?,2
+我不在乎你的謊言。
+	care about xx
+	lie<=?,2
+兩分鐘後我會掛起這幅相(photo)。
+	hang<=?,0
+	in 2 minutes
+三分鐘後我會把你吊死在這棵樹上。
+	hang<=?,1
+	tree
+	in 2 minutes
+他是一個很差的教師。
+	terrible<=?,1
+	teacher
+不要嚇我！
+	scare
+不要說謊！
+	lie<=?,0
+停止說謊！
+	stop
+	lie<=?,0
+停止告訴我那些細節！
+	stop
+	tell<=?,0
+	detail
+停止使用那枝古怪的木椿！
+	stop
+	use<=?,0
+	weird
+	stake
+停止信任他！
+	stop
+	trust
+我沒有看到任何東西。
+	see
+	nothing
+他沒有拿走到任何東西。
+	take<=?,0
+	nothing
+我沒有看到任何和平的東西。
+	see
+	nothing
+	peaceful<=?,0
+我沒有吃任何東西。
+	eat
+	nothing
+我沒有吃任何古怪的東西。
+	eat
+	nothing
+	weird
