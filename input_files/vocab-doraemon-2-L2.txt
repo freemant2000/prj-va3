@@ -1,1 +1,23 @@
 [Doraemon-2 L2]
+delicious	美味的
+thanks for xx	謝謝某物
+machine	機器
+idiot	白痴
+dream	夢、夢見
+grandson	孫子
+silly	傻乎乎的
+drawer	抽屜
+exit	出口
+such	如此（一個xx）
+stupid	愚蠢的
+robot	機械人
+probably	很可能
+dream about xx	夢見xx
+grandpa	爺爺
+kid	小孩
+hang, hanged, hanged	吊死
+play	玩（遊戲或運動）、彈（樂器）
+sport	運動（名）
+well	很好地
+worry	擔心
+worry about xx	擔心xx
