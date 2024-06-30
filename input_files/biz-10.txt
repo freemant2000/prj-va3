@@ -1,0 +1,129 @@
+[商業英語10]
+misplace
+        v,不知放了在哪裡
+recently
+        adv,近來
+question
+        n,問題
+setup=>2402
+        n,安裝
+        n,設立
+vehicle
+        n,車輛
+checkup
+        n,檢查（如車輛或健康等）
+design
+        v,設計
+        n,設計
+payment
+        n,付款
+photocopier
+        n,影印機
+membership
+        n,會籍、會員身份
+fee=>724
+        n,（服務等）費用
+membership fee
+        n phr,會費
+tuition
+        n,教學工作
+        n,學費
+concerned
+        adj,擔心的
+turnover
+        n,人員流失
+team
+        n,團隊
+problem
+        n,難題
+thought
+        n,想法
+        n,思想
+        n,思考
+modify
+        v,修改
+hire
+        v,聘請
+raise
+        v,舉起、提高
+experience
+        n,經驗
+expect
+        v,期望
+clearly
+        adv,清楚地
+launch
+        v,推出
+manage
+        v,管理
+outsource
+        v,外判
+standard
+        adj,標準的
+socket
+        n,電源插座
+cause
+        v,導致
+mistake
+        n,錯誤
+commitment
+        n,決意
+state
+        v,指出
+interview
+        v,面談
+        n,面談
+expand
+        v,擴大
+pool
+        n,池
+increase
+        v,增加
+        n,增加
+workout
+        n,健身
+day care
+        n phr,托兒
+free
+        adj,免費的
+construction
+        n,建造
+offset
+        v,抵消
+family
+        n,家庭
+effective
+        adj,有效的
+immediately
+        adv,立即
+withdraw<=1204,0F
+        v,提款:withdrew, withdrawn
+familiar
+        adj,熟悉的
+security
+        n,保安
+policy
+        n,政策
+battery
+        n,電池
+recycle
+        v,循環再造
+bin
+        n,箱
+appoint
+        v,指派
+incoming
+        adj,進來的
+document
+        n,文件
+stamp
+        n,印章
+        v,蓋印
+price
+        n,價格
+list price
+        n phr,標價
+selling price
+        n phr,實際價格
+protect
+        v,保護

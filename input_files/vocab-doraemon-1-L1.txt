@@ -1,0 +1,116 @@
+[Doraemon-1 L1]
+future
+	n,將來
+beautiful
+	adj,漂亮的
+	adj,美妙的
+hope
+	v,希望
+better
+	adj,更好的
+see, saw, seen
+	v,看見
+hang<=1178,0-1
+	v,掛
+	v,吊死
+burn
+	v,燃燒
+in 2 minutes
+	adv phr,（現在）兩分鐘後
+strange
+	adj,古怪的
+question
+	n,問題
+show<=800,0
+	v,展示、顯示
+yourself
+	pron,你自己
+himself
+	pron,他自己
+ask=>468
+	v,詢問
+	v,請求
+afraid
+	adj,害怕的
+afraid of xx
+	adj phr,害怕xx的
+nobody
+	pron,沒有人
+nothing
+	pron,沒有東西
+happen
+	v,發生
+life
+	n,生命
+	n,生活
+eat, ate, eaten
+	v,吃
+take, took, taken
+	v,拿走
+我希望你有一個美好的將來。
+	hope<=?,0
+	beautiful<=?,1
+	future
+我希望你有一更好的將來。
+	hope<=?,0
+	better
+	future
+我看見了你的將來。
+	see
+	future
+兩分鐘後我會掛起這幅相(photo)。
+	in 2 minutes
+	hang<=?,0
+在將來我會燒這棵樹(tree)。
+	burn
+	future
+三分鐘後我會把你吊死在這棵樹(tree)上。
+	in 2 minutes
+	hang<=?,1
+這是一個古怪的問題。
+	strange
+	question
+兩分鐘後他會展示給我一個問題。
+  in 2 minutes
+	show<=?,0
+	question
+展示你自己！
+	show<=?,0
+	yourself
+這是一個更好的問題。
+	better
+	question
+他問了他自己一個問題。
+	ask<=?,0
+	himself
+	question
+他有一個古怪的將來。
+	strange
+	future
+他害怕他自己。
+	afraid of xx
+	himself
+沒有人害怕他。
+	nobody
+		afraid of xx
+我希望沒有東西會發生。
+	hope<=?,0
+	nothing
+	happen
+他有一個美好的生活。
+	beautiful<=?,1
+	life<=?,1
+我沒有看到任何東西。
+	see
+	nothing
+他沒有拿走到任何東西。
+	take<=?,0
+	nothing
+我沒有看到任何漂亮的東西。
+	see
+	nothing
+	beautiful<=?,0
+我沒有吃任何古怪的東西。
+	eat
+	nothing
+	strange

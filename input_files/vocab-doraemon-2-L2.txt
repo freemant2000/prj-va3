@@ -1,23 +1,130 @@
 [Doraemon-2 L2]
-delicious	美味的
-thanks for xx	謝謝某物
-machine	機器
-idiot	白痴
-dream	夢、夢見
-grandson	孫子
-silly	傻乎乎的
-drawer	抽屜
-exit	出口
-such	如此（一個xx）
-stupid	愚蠢的
-robot	機械人
-probably	很可能
-dream about xx	夢見xx
-grandpa	爺爺
-kid	小孩
-hang, hanged, hanged	吊死
-play	玩（遊戲或運動）、彈（樂器）
-sport	運動（名）
-well	很好地
-worry	擔心
-worry about xx	擔心xx
+delicious
+	adj,美味的
+thanks for xx
+	v phr,謝謝某物
+machine
+	n,機器
+idiot
+	n,白痴
+dream
+	n,夢
+  v,造夢
+grandson
+	n,孫子
+silly
+	adj,傻乎乎的
+drawer
+	n,抽屜（櫃桶）
+exit
+	n,出口（如房間的出口）
+such
+	det,如此（一個xx）
+stupid
+	adj,愚蠢的
+robot
+	n,機械人
+probably
+	adv,很可能
+dream about xx
+	v phr,夢見xx
+grandpa
+	n,爺爺
+kid
+	n,小孩
+hang, hanged, hanged
+	v,吊死
+play
+	 v,玩（遊戲或運動）
+   v,彈奏（音樂等）
+sport
+	n,運動
+well
+	adv,很好地
+worry
+	v,（使）擔心
+worry about xx
+	v phr,擔心xx
+
+這些食物是美味的。
+  delicious
+謝謝你的機器！
+  thanks for xx
+  machine
+謝謝你的美味的食物！
+  thanks for xx
+  delicious
+我是一個白痴。
+  idiot
+在我的夢中他是一個白痴。
+  idiot
+  dream<=?,0
+我的孫子是傻乎乎的。
+  grandson
+  silly
+我把那枝筆放在了櫃桶裡。
+  drawer
+那個白痴找到了出口。
+  idiot
+  find<=?,0
+  exit
+謝謝你的傻乎乎的想法。
+  thanks for xx
+  silly
+  idea
+這部機器能造出美味的食物。
+  machine
+  make<=?,0
+  delicious
+它是如此一個愚蠢的機械人。
+  such
+  stupid
+  robot
+我的孫子在出口找到了那個白痴。
+  grandson
+  find<=?,0
+  idiot
+  exit
+那枝筆很可能會在那個櫃桶裡。
+  pen
+  probably
+  drawer
+它是如此一個大的櫃桶！
+  such
+  drawer
+他夢見了他的爺爺。
+  dream about xx
+  grandpa
+他夢見了一個傻乎乎的小孩。
+  dream about xx
+  silly
+  kid
+他很可能會吊死那個愚蠢的機械人。
+  probably
+  hang<=?,1
+  stupid
+  robot
+他玩運動玩得很好。
+  play<=?,0
+  sport
+  well
+這是我第一次吃蘋果。
+  first<=?,0
+  time<=?,1
+  eat
+  apple
+這是我第一次喝茶。
+  first<=?,0
+  time<=?,1
+  drink<=?,0
+  tea
+我擔心我的傻乎乎的孫子。
+  worry about xx
+  silly
+  grandson
+這很可能是我第一次睡在櫃桶裡。
+  probably
+  first<=?,0
+  time<=?,1
+  sleep
+  drawer
