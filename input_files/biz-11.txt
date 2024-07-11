@@ -1,0 +1,148 @@
+[商業英語11]
+staff
+        n,僱員（集體）
+regard
+        prep,關於
+accounting
+        n,會計
+safe
+        adj,安全的
+safe box        
+        n phr,甲萬
+allow
+        v,允許
+online
+        adj,線上的
+        adv,線上
+file
+        n,檔案
+        v,存檔
+properly
+        adv,適當地
+bank
+        n,銀行
+pay attention to
+        v phr,注意
+month
+        n,月份
+popular
+        adj,受歡迎的
+unacceptable
+        adj,不能接受的
+however=>824
+        adv,但是、然而
+great=>620
+        adj,大的
+        adj,偉大的
+        adj,很好的
+might
+        m,可能
+even
+        adv,甚至
+really
+        adv,真正地
+appreciate
+        v,感激
+so that
+        conj phr,為了、以便
+look forward to
+        v phr,盼望
+suggestion
+        n,提議
+promise
+        v,承諾
+        n,承諾
+so
+        adv,如此
+unreliable
+        adj,不可靠的
+entrust
+        v,把...交托給...
+important
+        adj,重要的
+commit
+        v,有決心（去做）
+short
+        adj,短的
+time frame
+        n phr,一段時間（要完成任務等）
+difficulty
+        n,困難
+remember
+        v,記得
+correctly
+        adv,正確地
+targeted
+        adj,被當為目標的
+completion
+        n,完成
+date
+        n,日期
+yesterday
+        n,昨天
+ready
+        adj,準備好的
+hesitate
+        v,猶䂊、無決心
+assistance
+        n,協助
+do our best
+        v phr,盡力做
+ASAP
+        adv phr,盡快
+urgently
+        adv,緊急地
+CEO
+        n,行政總裁
+formulate
+        v,構思和擬定（計劃等）
+strategy
+        n,策略
+believe
+        v,相信
+shout at
+        v phr,向著...大叫（無禮）
+in public
+        adv,在公眾場合
+customer oriented
+        adj phr,客戶導向的
+organisation
+        n,機構
+simply
+        adv,簡單地
+        adv,明顯地
+look for
+        v phr,找尋
+job
+        n,職業、工作
+frustrating
+        adj,令人受挫的
+argument
+        n,爭拗
+occur
+        v,發生
+aware
+        adj,知道的
+responsible
+        adj,負責任的
+dedicated
+        adj,全情投入的
+reason
+        n,原因
+dispute
+        v,爭端
+        n,爭端
+understand, understood, understood
+        v,明白
+frontline
+        n,前線
+constantly
+        adv,不斷地
+pressure
+        n,壓力
+rarely
+        adv,很少（發生）
+unreasonable
+        adj,不講理的、不合理的
+politely
+        adv,禮貎地
