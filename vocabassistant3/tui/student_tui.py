@@ -13,7 +13,7 @@ def show_student_tui():
     stu_id=int(input("Input student ID: "))
     with open_session() as s:
         stu=get_student(s, stu_id)
-    cmds={"show": ("List practices and sprints for the student", show_student),
+    cmds={"s": ("List practices and sprints for the student", show_student),
           "sw": ("Show the words in a practice", show_wds_in_prac_tui),
           "ap": ("Add a practice for the student", add_practice_tui),
           "dp": ("Delete a practice for the student", del_practice_tui),

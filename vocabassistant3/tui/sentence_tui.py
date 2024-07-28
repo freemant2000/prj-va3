@@ -1,12 +1,13 @@
 from .cmd_handler import CmdHandler
 from .console_utils import get_lines_until_empty
 from ..db_base import open_session
-from ..sentence import Sentence, SentenceDraft, add_snt_draft, get_snts_from_keywords, parse_snt_draft, refine_snt_draft
+from ..sentence import Sentence, SentenceDraft, add_snt_draft, get_snt, get_snts_from_keywords, get_snts_from_part_text, parse_snt_draft, refine_snt_draft
 
 def snts_tui():
     cmds={"find": ("Search for sentences with keywords", find_snts_tui),
           "rs": ("Refine a sentence draft", refine_snt_draft_tui),
-          "as": ("Add an exercise", add_snt_draft_tui)}
+          "as": ("Add an exercise", add_snt_draft_tui),
+          "cs": ("Change the text of an exercise", change_snt_txt_tui)}
     ch=CmdHandler("snts>", cmds)
     ch.main_loop()
 
@@ -16,6 +17,26 @@ def find_snts_tui():
         snts=get_snts_from_keywords(s, kws)
     for snt, mc in snts:
         show_snt(snt)
+
+def change_snt_txt_tui():
+    pt=input("Input a part of the sentence text: ")
+    with open_session() as s:
+        snts=get_snts_from_part_text(s, pt)
+    for idx, snt in enumerate(snts):
+        print(idx, snt.text)
+    while True:
+        idx=int(input("Input the index: "))
+        new_text=input("Input the new text: ")
+        if 0<=idx<len(snts):
+            snt=snts[idx]
+            with open_session() as s:
+                snt=get_snt(s, snt.id)
+                snt.text=new_text
+                s.commit()
+            print("OK")
+            return
+        else:
+            print("Invalid index")
 
 def input_snt_draft()->SentenceDraft:
     print("Paste a new sentence, followed by indented keywords:")

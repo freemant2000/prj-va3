@@ -48,6 +48,12 @@ def get_snts_from_text(s: Session, text: str)->Sequence[Sentence]:
   r=s.scalars(q)
   return r.unique().all()
 
+def get_snts_from_part_text(s: Session, part_text: str)->Sequence[Sentence]:
+  q=select(Sentence).where(Sentence.text.contains(part_text)) \
+      .order_by(Sentence.id.asc())
+  r=s.scalars(q)
+  return r.unique().all()
+
 @dataclass
 class SentenceDraft:
     text: str = ""
