@@ -1,0 +1,114 @@
+[商業英語12]
+decline=>1686
+        v,下跌
+        n,下跌
+        v,拒絕
+demand
+        v,要求
+        n,要求
+forward=>1150
+        adj,向前的
+        adv,向前
+        v,轉發
+handle
+        v,處理
+best
+        adj,最好的
+professional
+        adj,專業的
+        n,專業人士
+calmly
+        adv,冷靜地
+deal with
+        v phr,處理
+difficult
+        adj,困難的
+dedication
+        n,全情投入
+towards=>2466
+        prep,向著（強調過程）
+goal
+        n,目標
+conscientious
+        adj,勤勞的
+intact
+        adj,完好無缺的
+undamaged
+        adj,沒有受損的
+on time
+        adv phr,準時
+supervisor
+        n,主管
+pleasure
+        n,愉快
+eliminate
+        v,消除
+certificate of merit
+        n phr,獎狀
+frequently
+        adv,頻繁地
+exchange
+        v,交換
+confident
+        adj,有信心的
+vendor=>1169
+        n,小販
+        n,銷售商（給用戶）
+concise
+        adj,簡潔的
+constructive
+        adj,有建設性的
+bill
+        n,賬單
+penalty
+        n,罰款
+encourage
+        v,鼓勵
+positive
+        adj,積極的、正面的
+recipient
+        n,收信人
+checklist
+        n,檢查清單
+remind
+        v,提醒
+envelope
+        n,信封
+asset
+        n,資產
+accurate
+        adj,精確的
+excellence
+        n,卓越
+salary
+        n,工資
+reward
+        v,回報
+        n,回報
+indicate
+        v,指示出
+liability
+        n,負債
+        n,（法律上的）責任
+improve
+        v,改善
+terminate
+        v,中止
+faithfully
+        adv,忠誠地
+career
+        n,職業生涯
+outlook
+        n,展望
+punctuality
+        n,守時
+reliable
+        adj,可靠的
+make sense
+        v phr,合理
+impression
+        n,印象
+latter
+        n,後者
+clock-in time
+        n phr,打卡時間
