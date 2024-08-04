@@ -1,0 +1,148 @@
+[商業英語13]
+figure out
+        v phr,想出
+option
+        n,選項
+view
+        n,觀點、看法
+a bit
+        det phr,一點
+early=>774
+        adv,早
+        adj,早的
+frank
+        adj,誠實的
+draft
+        v,草擬
+        n,草稿
+crisis
+        n,危機
+stretch
+        v,拉長
+timeline
+        n,任務進度時間表
+probably
+        adv,很可能
+honest
+        adj,誠實的
+chime in
+        v phr,加入評論
+perfectly
+        adv,完美地
+obviously
+        adv,明顯地
+hardline
+        adj,強硬的
+appendix
+        n,附錄
+tend
+        v,傾向
+admit
+        v,承認
+knowledge
+        n,知識
+fair=>2274
+        n,交易會、展銷會
+        adj,公平的
+messy
+        adj,混亂的
+ventilation
+        n,通風
+possibility
+        n,可能性
+copy=>452
+        v,覆制
+        v,抄襲
+        n,一份（文件）
+        n,文稿（用於出版等）
+cut loose
+        v phr,同...疏遠
+choose
+        v,選擇:chose, chosen
+trade show
+        n phr,工商展覽會
+freelancer
+        n,自由工作者
+stupid
+        adj,愚蠢的
+tension
+        n,緊張局面／氣氛
+teleconference
+        n,電話會議
+disagree
+        v,不同意
+conflict
+        n,衝突
+financially
+        adv,財務地
+depend on
+        v phr,取決於
+chairperson
+        n,主席
+steady
+        adj,隱定的
+remain
+        v,停留、依然是
+festival
+        n,節日
+demanding
+        adj,要求高的
+found
+        v,成立
+waitress
+        n,女侍應生
+refreshments
+        n,小食（派對或會議期間）
+agenda
+        n,議程
+calendar
+        n,日曆
+diary=>2178
+        n,日誌
+        n,日程安排簿
+cafe
+        n,咖啡室
+board of directors
+        n phr,理事會
+boardroom
+        n,理事會議室
+reception
+        n,接待處
+restructure
+        v,改組
+Asia
+        n,亞洲
+opinion
+        n,意見
+consultant
+        n,顧問
+win-win situation
+        n phr,雙贏局面
+out of order
+        adv phr,壞了
+courier
+        n,速遞公司
+chef
+        n,大廚
+meal
+        n,餐
+investigate
+        v,調查
+replacement part
+        n phr,替代部件
+luggage
+        n,行李
+trouble
+        n,麻煩
+tourism
+        n,旅遊業
+diploma
+        n,文憑
+proficient
+        adj,熟練的
+invoice
+        n,發票
+receipt
+        n,收據
+disappointed
+        adj,失望的

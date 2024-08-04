@@ -1,0 +1,44 @@
+[Doraemon-3 L2]
+descendant
+	n,後代
+album
+	n,相簿
+wedding
+	 n,婚禮
+adult
+	n,成年人
+marry
+	v,結婚、娶、嫁
+scary
+	adj,可怕的（嚇人的）
+amazing
+	adj,令人驚訝的、極好的
+imagination
+  n,想象
+	n,想象力
+force
+   n,力
+	 v,強逼
+force sb to do sth
+	v phr,逼某人去做某事
+paint
+	v,涂上（油漆或顏料）
+insult
+	v,侮辱
+  n,侮辱
+sure
+	adj,肯定的
+wife
+	n,妻子
+lie
+	v,說謊:lied, lied, lying
+	n,謊言
+married=>1050
+	adj,結了婚的
+writer
+	n,作家
+life
+  n,生命
+	n,生活
+live
+	v,居住
