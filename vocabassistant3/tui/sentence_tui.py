@@ -57,8 +57,8 @@ def refine_snt_draft_tui():
         refine_snt_draft(s, sd)
     show_snt_draft(sd)
 
-def show_snt_draft(sd: SentenceDraft, used=False):
-    if used:
+def show_snt_draft(sd: SentenceDraft, used_sds=[], used_l2_snt_cands=[]):
+    if sd in used_sds:
         status="Used in sprint"
     else:
         status="Complete" if sd.is_complete() else "Incomplete"
@@ -66,7 +66,8 @@ def show_snt_draft(sd: SentenceDraft, used=False):
     if sd.snt_candidates:
         print("Sentence candidates")
         for snt in sd.snt_candidates:
-            print(f"{snt.text}<={snt.id}")
+            used_warning="(used in sprint)" if snt in used_l2_snt_cands else ""
+            print(f"{snt.text}<={snt.id} {used_warning}")
     for kw in sd.keywords:
         if kw in sd.kw_meanings:
             wm=sd.kw_meanings[kw]

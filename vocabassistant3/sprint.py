@@ -188,6 +188,7 @@ class ExerciseDraft:
     snt_cands: List[Sentence] = field(default_factory=list)
     extra_kws: List[str] = field(default_factory=list)
     used_sds: List[SentenceDraft] = field(default_factory=list)
+    used_l2_snt_cands: List[Sentence] = field(default_factory=list)
 
     def check_complete(self):
         for word in self.words:
@@ -285,6 +286,7 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
     ed.snt_cands=[t[0] for t in get_snts_from_keywords(s, ed.words)]
     ed.extra_kws.clear()
     ed.used_sds.clear()
+    ed.used_l2_snt_cands.clear()
     for sd in ed.sds:
         if sd.snt_id!=None:
             snt=get_snt(s, sd.snt_id)
@@ -297,4 +299,6 @@ def refine_exec_draft(s: Session, sp: Sprint, ed: ExerciseDraft):
             for kw in sd.keywords:
                 if kw not in ed.words:
                     ed.extra_kws.append(kw)
-
+            for snt in sd.snt_candidates:
+                if sp.uses_snt(snt):
+                    ed.used_l2_snt_cands.append(snt)
