@@ -8,7 +8,7 @@ class CmdHandler:
         self.prompt=prompt
         self.cmds=cmds
         self.cmds["help"]=("Show available commands", self.show_help)
-        self.cmds["quit"]=("Quit", self.do_quit)
+        self.cmds["q"]=("Quit", self.do_quit)
 
     def main_loop(self):
         while not self.quit:

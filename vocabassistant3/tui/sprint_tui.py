@@ -29,7 +29,7 @@ def sprint_main_tui():
     sp_id=int(input("Input a Sprint ID: "))
     with open_session() as s:
         sp=get_sprint(s, sp_id)
-    cmds={"show": ("List practices and exercises in the sprint", show_sprint_tui),
+    cmds={"s": ("List practices and exercises in the sprint", show_sprint_tui),
           "sum": ("Show a summary of the sprint", show_sprint_summary_tui),
           "ap": ("Add a practice to the sprint", lambda: add_prac_tui(sp_id)),
           "dp": ("Delete a practice from the sprint", lambda: del_prac_tui(sp_id)),

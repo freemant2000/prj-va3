@@ -1,0 +1,58 @@
+[Doraemon-2 L1]
+taste
+	v,嚐起來
+	n,味道
+never
+	adv,從不
+	adv,永不
+silly
+	adj,傻乎乎的
+kid
+	n,小孩
+study
+	v,學習（做題等）
+dream
+	n,夢
+	v,造夢
+well
+	adv,很好地
+stupid
+	adj,愚蠢的
+robot
+	n,機械人
+dream about xx
+	v phr,夢見xx
+play
+	v,玩（遊戲或運動）
+	v,彈奏（音樂等）
+sport
+	n,運動
+right
+	adj,正確的
+	n,右邊
+should
+	m,應該
+wait
+	v,等待
+wait for xx
+	v phr,等待xx
+machine
+	n,機器
+thanks for xx
+	v phr,謝謝某物
+idea
+	n,想法
+grandpa
+	n,爺爺
+grandson
+	n,孫子
+Hey
+	excl,嘻
+busy
+	adj,忙碌的
+Haha
+	excl,哈哈
+really
+	adv,真正地
+start
+	v,開始
