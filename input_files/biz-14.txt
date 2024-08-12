@@ -1,0 +1,151 @@
+[商業英語14]
+presentation
+        n,簡報
+        n,（正式）演溝
+brand new
+        adj phr,嶄新的
+existing
+        adj,現有的
+version
+        n,版本
+directly
+        adv,直接地
+technique=>1502
+        n,技巧、技術
+relate
+        v,使相關
+related to xx
+        adj phr,同xx有關的
+audience
+        n,觀眾
+overview
+        n,概覽
+screen
+        n,屏幕
+mess up
+        v phr,弄糟（損壞）
+upgrade
+        v,升級
+        n,升級
+solution
+        n,解決方案
+decision
+        n,決定
+isolation
+        n,孤立、分離狀態
+integrate
+        v,整合
+integrate with xx
+        v,同xx整合
+feedback
+        n,反饋
+payroll
+        n,工資表
+tool
+        n,工具
+match
+        v,匹配
+report
+        n,報告
+        v,報告
+basic=>726
+        adj,基本的、基礎的
+projector
+        n,投影機
+monitor
+        n,顯示器
+recognise
+        v,認得
+functionality
+        n,功能（總稱）
+engage
+        v,投入、使投入
+engage in xx
+        v phr,投入到xx裡
+respond
+        v,作回應
+definitely
+        adv,肯定地
+obtain
+        v,取得
+van
+        n,小貨車
+hope
+        v,希望
+cancel
+        v,取消
+shirt
+        n,恤衫
+manufacture
+        v,製造
+abroad
+        adv,在外國
+vital
+        adj,必不可小的
+labour
+        n,勞動力
+ingredient
+        n,成份
+fabric
+        n,布料
+mass production
+        n phr,大規模生產
+factory
+        n,工廠
+chocolate
+        n,朱古力
+production line
+        n phr,生產線
+light bulb
+        n phr,燈膽
+latest
+        adj,最新近的
+extensively
+        adv,廣泛地
+develop
+        v,發展、開發
+ignore=>1059
+        v,忽略、不理
+engine
+        n,引擎
+weld
+        v,焊接
+component
+        n,元件
+profitable
+        adj,有營利的
+leather
+        n,皮革
+incredible
+        adj,難以置信的
+        adj,極好的
+billboard
+        n,室外大型廣告版
+career
+        n,職業生涯
+chance
+        n,機會
+field
+        n,領域
+curious
+        adj,好奇的
+conversation
+        n,對話
+often
+        adv,經常、時常
+spend, spent, spent
+        v,花費
+employer
+        n,僱主
+graphic
+        n,圖形
+finance=>1378
+        v,為...提供資金
+        n,財務
+explore
+        v,探索
+past
+        adj,過去的
+        n,以前
+workplace
+        n,職場
