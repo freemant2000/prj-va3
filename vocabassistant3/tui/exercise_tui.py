@@ -95,5 +95,6 @@ def show_exec_draft(ed: ExerciseDraft, sp: Sprint):
             print(f"\t{kw} ({status})")
     print("\nAvailable sentences")
     for snt in ed.snt_cands:
-        print(f"{snt.text}<={snt.id}")
+        status="(used in sprint)" if snt in ed.used_snt_cands else ""
+        print(f"{snt.text}<={snt.id} {status}")
 
