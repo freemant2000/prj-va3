@@ -25,9 +25,13 @@ def add_exec_draft_tui(sp_id):
         print("OK")
 
 def show_exec_tui(sp_id: int):
-    e_idx=int(input("Input the index (0 or 1, etc.) of the exercise: "))
+    e_idx_str=input("Input the index (0 or 1, Enter for last) of the exercise: ")
     with open_session() as s:
         sp=get_sprint(s, sp_id)
+        if e_idx_str:
+            e_idx=int(e_idx_str)
+        else:
+            e_idx=len(sp.execs)-1
         if 0<=e_idx<len(sp.execs):
             exec=sp.execs[e_idx]
             for ew in exec.ews:
