@@ -1,0 +1,155 @@
+[商業英語15]
+daily
+        adj,每日的、日常的
+minute
+        n,分鐘
+Japanese
+        n,日本人
+        n,日文
+        adj,日本的
+bookkeeping
+        n,簿記
+excellent
+        adj,優秀的、極好的
+especially
+        adv,尤其是
+afraid
+        adj,害怕的
+taxi
+        n,的士
+overseas
+        adj,海外的
+trip=>848
+        n,旅行、旅程
+hundred
+        num,一百
+city
+        n,城市
+easy
+        adj,容易的
+interpret
+        v,理解
+        v,翻譯
+subway
+        n,地下鐵（美）
+destination
+        n,目的地
+confusion
+        n,困惑
+always
+        adv,總是
+communicate
+        v,溝通
+understand
+        v,明白:understood, understood
+taxi ride
+        n phr,一程的士
+specific
+        adj,特定的
+route=>2770
+        n,路徑、路線
+change course
+        v phr,改變路線
+Shanghai
+        n,上海
+immigration
+        n,移民
+        n,入境處（機場等）
+collect=>1062
+        v,收集
+        v,領取
+located in xx
+        adj phr,位於xx
+downtown
+        n,商業區
+describe
+        v,描寫
+international
+        adj,國際的
+after you
+        c,你先（如入升降機等）
+heavy traffic
+        n phr,繁忙的交通
+ahead
+        adv,提前
+        adv,向前
+        adv,在前面
+expressway
+        n,高速公路
+previous
+        adj,之前的
+impatient
+        adj,無耐性的
+internship
+        n,實習
+intern
+        n,實習生
+law firm
+        n phr,律師樓
+fashion
+        n,時裝
+motivated
+        adj,有動機的
+concentrate
+        v,集中精神
+inspire
+        v,啟發
+flexible
+        adj,靈活的
+responsibility
+        n,責任
+current
+        adj,目前的
+leader
+        n,領導者
+rough=>2510
+        adj,粗糙的
+        adj,波濤洶湧的
+        adj,粗略的
+cut corners
+        v phr,做事馬虎
+competitor
+        n,競爭者
+form
+        n,表格
+rely
+        v,依靠
+rely on xx
+        v phr,依靠某物
+image
+        n,形像
+        n,影像、圖像
+modern
+        adj,現代的
+awareness
+        n,認知
+outcome
+        n,結果
+recruit
+        v,招聘
+vacation
+        n,假期
+fire=>247
+        n,火
+        v,開除
+bonus
+        n,花紅
+appraisal
+        n,績效評定
+analysis
+        n,分析
+teamwork
+        n,團隊精神
+negotiate
+        v,協商
+leadership
+        n,帶領
+        n,領導力
+interpersonal
+        adj,人際的
+optician
+        n,眼鏡店
+beauty parlour
+        n phr,美容院
+cosmetics shop
+        n phr,化妝品店
