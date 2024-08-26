@@ -1,0 +1,175 @@
+[商業英語16]
+the jeweler's
+        n phr,珠寶店
+electronics shop
+        n phr,電器店
+confectioner
+        n,甜品店
+delicatessen
+        n,肉類和芝士店
+pharmacy
+        n,藥房
+personal care shop
+        n phr,個人護理用品店
+down payment
+    n phr,首期
+ideal
+	adj,理想的
+superior
+	adj,優越的
+assortments of
+	det phr,各種各樣的
+refund
+	v,退款
+        n,退款
+guarantee
+	v,保證
+        n,保證
+dispose of
+	v phr,處理（不要）
+confidence
+	n,信心
+obligation
+	n,義務
+secure
+        adj,安全的
+	v,落實（會有）
+appeal to
+	v phr,吸引
+        v phr,呼籲
+expert
+	n,專家
+salesmanship
+	n,銷售技巧
+clerk
+	n,文員
+periodic
+	adj,週期性的
+brochure
+	n,小冊子（摺起的）
+booklet
+	n,小冊子（翻頁的）
+strengthen
+	v,強化
+loss=>2469
+	n,損失（事件）
+        n,（金錢上的）損失
+direct
+	v,使...前往某方向
+local
+	adj,本地的
+viewpoint
+	n,觀點
+convey
+	v,傳送
+        v,傳達
+sick day
+	n phr,病假
+personal day
+	n phr,事假
+doctor's note
+	n phr,醫生紙
+lack
+	v,缺乏
+        n,缺乏
+compensate
+	v,補償
+paycheck
+	n,出糧支票
+        n,工資
+wage
+	n,工資（時薪）
+pay raise
+	n phr,長工資
+grateful
+	adj,感激的
+work ethic
+        n phr,工作道德
+privacy
+	n,私穩
+sign
+	n,跡象
+        n,標誌
+        v,簽署
+possess
+	v,擁有、持有
+vision
+	n,願景
+mission
+	n,使命
+burnout
+	n,過勞
+remedy
+	n,補救
+core
+        n,核心
+	adj,核心的
+environment
+	n,環境
+clarify
+	v,使清晰、澄清
+common=>1165
+        adj,常見的
+	adj,共同的
+key=>749
+        n,鎖匙
+	adj,關鍵的
+factor
+	n,因素
+waste
+	v,浪費
+        n,廢品
+relationship
+	n,關係
+trust=>2870
+	v,信任
+        n,信任
+objective
+	n,目標
+underestimate
+	v,低估
+gain
+	v,取得
+intensive
+	adj,密集的
+practical
+	adj,實用的
+secretary
+	n,秘書
+topic
+	n,（討論、廣泛）主題
+organiser
+	n,組識者
+register
+	v,註冊
+delighted
+	adj,高興的
+outline
+	n,大綱
+        n,描述某物的大綱
+bullet point
+	n phr,項目符號
+anniversary
+	n,年度紀念日
+subject=>906
+        n,學科
+        n,主語
+	n,（討論、具體）主題
+margin
+	n,頁邊空白
+        n,（賣買）利潤
+paragraph
+	n,段落
+vague
+	adj,含糊的
+outdated
+	adj,過時的
+capital
+	n,資本
+        n,大寫
+        adj,大寫的
+panic
+	v,恐慌:panicked,panicked
+        n,恐慌
+enable
+	v,使能夠

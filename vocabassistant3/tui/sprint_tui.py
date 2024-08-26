@@ -4,7 +4,7 @@ from .cmd_handler import CmdHandler, ExitException
 from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec_summary, show_exec_tui
 from ..practice import Practice, get_practice
 from ..db_base import open_session
-from ..sprint import Sprint, add_sprint, get_revision_dates, get_sprint
+from ..sprint import Sprint, add_sprint, get_revision_dates, get_sprint, get_sprints_for
 
 def add_sprint_tui(stu_id: int):
     p_ids=[int(p_id) for p_id in input("Input one or more practice IDs like 2,4,5: ").split(",")]
@@ -24,11 +24,22 @@ def del_sprint_tui():
         else:
             print(f"Sprint {sp_id} not found")
 
-def sprint_main_tui():
+def sprint_main_tui(stu_id):
     global sp_id
-    sp_id=int(input("Input a Sprint ID: "))
-    with open_session() as s:
-        sp=get_sprint(s, sp_id)
+    sp_id_str=input("Input a Sprint ID (Enter for the one with most exercises): ")
+    if sp_id_str:
+        sp_id=int(sp_id_str)
+        with open_session() as s:
+            sp=get_sprint(s, sp_id)
+    else:
+        with open_session() as s:
+            sps=get_sprints_for(s, stu_id)
+        if sps:
+            sps=sorted(sps, key=lambda sp: len(sp.execs), reverse=True)
+            sp=sps[0]
+            sp_id=sp.id
+        else:
+            raise ValueError("The student has no sprints")
     cmds={"s": ("List practices and exercises in the sprint", show_sprint_tui),
           "sum": ("Show a summary of the sprint", show_sprint_summary_tui),
           "ap": ("Add a practice to the sprint", lambda: add_prac_tui(sp_id)),

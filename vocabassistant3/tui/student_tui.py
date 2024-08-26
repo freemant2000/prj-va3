@@ -20,7 +20,7 @@ def show_student_tui():
           "tp": ("Toggle the hard words only switch of a practice", toggle_hard_practice_tui),
           "asp": ("Add a sprint", lambda: add_sprint_tui(stu_id)),
           "dsp": ("Delete a sprint", del_sprint_tui),
-          "sp": ("Work on a sprint", sprint_main_tui)}
+          "sp": ("Work on a sprint", lambda: sprint_main_tui(stu_id))}
     ch=CmdHandler(f"{stu.name}>", cmds)
     ch.main_loop()
 
