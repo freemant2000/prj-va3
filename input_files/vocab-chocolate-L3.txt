@@ -1,0 +1,81 @@
+[Chocolate L3]
+Switzerland
+	n,瑞士
+swiss
+    adj,瑞士的
+cocoa
+	n,可可
+prestigious
+	adj,著名的、受人景仰的
+federal
+	adj,聯邦的
+institute
+	n,學院、機構
+pulp
+	n,漿、泥狀物
+husk
+	n,（米或生果等）外殼
+come up with
+	v phr,想出（方案等）
+rather than
+	prep phr,而不是
+develop
+	v,發展、開發
+a way to xx
+	n phr,做某事的方式
+process
+    v,處理
+        n,過程
+attention
+	n,注意力
+attract
+    v,吸引
+sustainable
+	adj,可持續發展的
+sustainability	
+    n,可持續發展性
+traditional
+    adj,傳統的
+involve
+    v,（使）涉及
+nutritious
+    adj,有營養的
+pumpkin
+    n,南瓜
+rot
+	v,腐爛
+field=>2822
+        n,領域
+	n,田野
+pineapple
+	n,菠蘿
+distill
+	v,蒸溜
+concentrated
+	adj,濃的
+syrup
+	n,糖漿
+combine xx with yy
+    v,把xx和yy組合
+gel
+    n,（粘性）膠
+eliminate
+	v,消除
+invention
+	n,發明
+innovation
+	n,
+producer
+    n,生產者
+production
+    n,生產
+crucial
+    adj,關鍵的、極重要的
+deliciously
+    adv,美味地
+roll
+	v,使滾動
+mass
+	n,一團東西
+mixer
+    n,混合器

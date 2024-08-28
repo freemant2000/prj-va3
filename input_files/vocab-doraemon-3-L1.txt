@@ -1,0 +1,36 @@
+[Doraemon-3 L1]
+married
+	adj,結了婚的
+wife
+	n,妻子
+name
+	n,名字
+little sister
+	n phr,妹妹
+hate=>336
+	v,憎恨、討厭
+after
+	conj,在...之後（緊接某事）
+	prep,在...之後
+true=>1126
+	adj,真正的、真的（是事實）
+away
+	adv,離開
+get married
+	v phr,結婚
+sure
+	adj,肯定的
+creative
+	adj,有創意的
+writer
+	n,作家
+talk about
+	v phr,談及
+Japanese
+	        n,日本人
+        n,日文
+        adj,日本的
+one day
+	n phr,某一日
+might
+	m,可能
