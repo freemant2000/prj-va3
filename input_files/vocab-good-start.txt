@@ -1,0 +1,26 @@
+[好的開始]
+arrive
+	v,到達
+tidy
+	v,執拾
+	adj,整潔的
+friendly
+	adj,友善的
+join
+	v,參與
+practice
+	n,練習
+study
+	v,學習（做題等）
+early
+	adv,早
+take exercise
+	v phr,鍛鍊
+equipment
+	n,設備
+special
+	adj,特別的
+material
+	n,物料
+discover
+	v,發現（重大的東西）
