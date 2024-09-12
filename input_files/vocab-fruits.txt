@@ -1,0 +1,33 @@
+[生果]
+durian
+	n,榴槤
+grape
+	n,提子
+watermelon
+	n,西瓜
+papaya
+	n,木瓜
+sugarcane
+	n,蔗
+pineapple
+	n,菠蘿
+fig
+	n,無花果
+coconut
+	n,椰子
+mango,mangoes
+	n,芒果
+blueberry
+	n,藍莓
+guava
+	n,番石榴
+dragonfruit
+	n,火龍果
+jackfruit
+	n,菠蘿蜜
+avocado
+	n,牛油果
+persimmon
+	n,柿子
+grapefruit
+	n,西柚

@@ -1,0 +1,33 @@
+[蔬菜]
+broccoli
+	n,西蘭花
+tomato
+	n,番茄
+sweet potato
+	n,番薯
+onion
+	n,洋䓤
+cabbage
+	n,卷心菜
+cauliflower
+	n,椰菜花
+potato
+	n,馬鈴薯
+pumpkin
+	n,南瓜
+mushroom
+	n,蘑菇
+corn
+	n,粟米
+carrot
+	n,蘿蔔
+cucumber
+	n,青瓜
+garlic
+	n,蒜頭
+ginger
+	n,薑
+eggplant
+	n,矮瓜、茄子
+okra
+	n,秋葵
