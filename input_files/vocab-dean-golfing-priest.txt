@@ -1,0 +1,90 @@
+[Golfing priest L2]
+priest
+	n,神父
+scold
+	v,駡
+nun
+	n,修女
+golf
+	n,哥爾夫球（運動）
+roll
+	v,滾動
+strike, struck, struck
+	v,（大力）打擊
+lightning
+	n,閃電
+warn
+	v,警告
+warn sb not to do sth
+	v phr,警告某人不要做某事
+unfortunately
+	adv,不幸地
+hit, hit, hit
+	v,打（一下）、擊中
+voice
+	n,語音
+thunder
+	n,雷
+exclaim
+	v,（激動）高聲說
+incredibly
+	adv,難以置信地、極端地
+hole
+	n,洞
+damn it
+	v phr,該死的
+God damn it
+	c,該死的
+continue
+	v,繼續
+shot
+	n,（槍等）一擊
+loud
+	adj,大聲的
+miss
+	v,錯過、打不中
+Lord
+	n,上主、領主
+land
+	n,土地
+	v,著陸
+next to xx
+	prep phr,在xx旁邊（左右）
+punish
+	v,懲罰
+father
+	n,爸爸
+	n,神父（稱謂）
+watch
+	v,觀看
+	v,小心（自控）
+crash
+	v,撞擊
+	n,撞擊
+	n,巨響
+sister
+	n,姐妹
+	n,修女（稱謂）
+language
+	n,語言
+rest
+	v,休息
+	n,靜止（狀態）
+at rest
+	prep phr,處於靜止
+come to rest
+	v phr,停了下來
+word
+	n,詞
+	n,說話
+Bible
+	n,聖經
+inch
+	n,吋
+flash
+	v,閃光
+	n,閃光
+message
+	n,訊息
+towards
+	prep,向著（強調過程）
