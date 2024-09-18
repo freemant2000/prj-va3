@@ -1,0 +1,25 @@
+[取代very]
+scrawny
+	adj,極瘦的
+malicious
+	adj,極邪惡的
+cautious
+	adj,極小心的
+impressive
+	adj,令人印像深刻的
+furious
+	adj,極生氣的
+starving
+	adj,極餓的
+adorable
+	adj,極可愛的
+petrified
+	adj,震驚的
+spotless
+	adj,潔淨無瑕的
+depressed
+	adj,憂鬱的
+colossal
+	adj,巨大的
+courageous=>1318
+	adj,極勇敢的
