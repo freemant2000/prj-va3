@@ -1,0 +1,17 @@
+[好的開始2]
+demonstration
+	n,展示
+bench
+	n,長凳
+intention
+	n,動機
+take part in
+	v phr,參與
+simple
+	adj,簡單的
+cabinet
+	n,櫃
+resolution
+	n,決議
+biography
+	n,傳記
