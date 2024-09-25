@@ -1,0 +1,33 @@
+[好的開始定義]
+activity
+	n,活動
+seat
+	n,座位
+decide
+	v,決定
+course
+	n,課程
+	n,路線
+action
+	n,行動
+tool
+	n,工具
+active
+	adj,活躍的
+understand,understood,understood
+	v,明白
+furniture
+	n,家俬
+drawer
+	n,抽屜（櫃桶）
+shelf,shelves
+	n,貨架
+sincere
+	adj,誠懇的
+promise
+        v,承諾
+        n,承諾
+fact
+	n,事實
+event
+	n,事件
