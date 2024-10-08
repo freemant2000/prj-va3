@@ -1,0 +1,29 @@
+[令人驚訝的動物]
+artist
+	n,藝術家
+creature
+	n,生物
+ocean
+	n,海洋
+protect
+	v,保護
+damage
+	v,損毀
+environment
+	n,環境
+disappear
+	v,消失
+extinct
+	adj,滅絕的
+squirrel
+	n,松鼠
+cheetah
+	n,獵豹
+donkey
+	n,騾子
+rattlesnake
+	n,響尾蛇
+scorpion
+	n,蝎子
+spider
+	n,蜘蛛
