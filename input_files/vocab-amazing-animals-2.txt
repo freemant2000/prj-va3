@@ -1,0 +1,18 @@
+[令人驚訝的動物2]
+stripe
+	n,條紋
+fur
+	n,毛皮
+survival
+	n,倖存
+survival skills
+	n,生存技能（眾）
+frighten
+	v,嚇
+wag
+	v,搖擺（尾等）
+lift=>2000
+  v,提升（水平、數量、快樂）
+	v,舉起
+tale
+	n,故事（精彩）
