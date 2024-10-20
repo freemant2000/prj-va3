@@ -1,0 +1,34 @@
+[在室外工作]
+lifeguard
+	n,救生員
+marine
+	adj,海洋的
+biologist
+	n,生物學家
+marine biologist
+	n phr,海洋生物學家
+mechanic
+	n,機械技師
+mountain
+	n,山
+guide
+	n,嚮導
+mountain guide
+	n phr,山間嚮導
+photojournalist
+	n,攝影記者
+coach
+	n,教練
+look after
+	v phr,照顧
+mural
+	n,壁畫
+wonder
+	v,想知道
+technology
+	n,技術
+ranger
+	n,護林人員
+popular
+	adj,受歡迎的
+
