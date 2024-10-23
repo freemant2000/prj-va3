@@ -1,0 +1,42 @@
+[Doraemon-6 L2]
+run over
+	v phr,撞倒
+run, ran, run
+	v,跑
+magical
+	adj,魔術的
+hand
+	n,手
+truck
+	n,貨車
+idiotic
+	adj,白痴的
+call=>401
+	v,致電
+	v,呼叫
+	n,來電
+brain
+	n,腦
+comic
+	n,漫畫
+promise
+	v,承諾
+	n,承諾
+keep your promise
+	v phr,守你的承諾
+hospital
+	n,醫院
+lonely
+	adj,孤寂的
+homemade
+	adj,自家製的
+on the way to xx
+	adv phr,去某地途中
+funny
+	adj,好笑的
+see, saw, seen
+	v,看見
+worse
+	adj,更差的
+have to
+	m phr,必須（責任等）

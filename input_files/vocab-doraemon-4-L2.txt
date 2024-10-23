@@ -1,0 +1,22 @@
+[Doraemon-4 L2]
+destroy
+	v,破壞
+university
+	n,大學
+company
+	n,公司
+pocket
+	n,口袋
+reliable
+	adj,可靠的
+repay
+	v,償還
+debt
+	n,債務
+born
+	v,出生（被動）
+party
+	n,派對
+change
+	v,改變
+	n,改變
