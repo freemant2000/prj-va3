@@ -1,0 +1,37 @@
+[Doraemon-7 L2]
+act
+	v,行動
+strangely
+	adv,古怪地
+parent
+	n,父／母親
+take care of=>1450
+	v phr,照顧、看管
+	v phr,處理
+pay attention
+	v phr,留心
+pay attention to xx
+	v phr,留心某物
+direction
+	n,方向
+hit<=905,0F-1F
+        v,打（一下）:hit, hit
+        v,擊中:hit, hit
+or=>658
+	conj,或者
+	conj,否則
+guess=>1020
+	v,猜
+	n,猜測
+dangerous
+	adj,危險的
+careful
+	adj,小心的
+way=>625
+        n,方式
+        n,道路
+				n,方向
+safe
+	adj,安全的
+break, broke, broken
+	v,打破
