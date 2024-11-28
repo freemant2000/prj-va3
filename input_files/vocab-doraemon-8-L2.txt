@@ -1,0 +1,39 @@
+[Doraemon-8 L2]
+ahead
+	adv,向前
+behind=>37
+  prep,在...背後
+	adv,後面
+from behind
+	adv phr,由後面
+path
+	n,路徑
+wide
+	adj,濶的
+towards
+	prep,向著（強調過程）
+watch out
+	v phr,小心
+practise
+	v,練習
+both
+	det,兩者都
+excuse
+	v,原諒
+get out of the way
+	v phr,讓路
+look for
+	v phr,找尋
+option
+	n,選項
+thief
+	n,賊
+backyard
+	n,後園
+further
+	adv,進一步地
+	adj,進一步的
+through
+	prep,穿過、通過
+follow
+	v,跟隨
