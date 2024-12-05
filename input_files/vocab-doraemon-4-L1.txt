@@ -1,0 +1,29 @@
+[Doraemon-4 L1]
+force
+	n,力
+	v,強逼
+paint
+        n,油漆
+        v,涂上（油漆或顏料）
+lose, lost, lost
+	v,失去
+	v,輸
+face
+	n,臉
+photo
+	n,照片
+make sb xx
+	v phr,令某人做某事
+change
+	v,改變
+marry
+	v,結婚、娶、嫁
+clothes
+	n,衣服
+change clothes
+	v phr,換衣服
+quickly
+	adv,快速地
+sure=>797
+        adj,肯定的
+	adv,無問題
