@@ -1,0 +1,46 @@
+[Bat and friends-1]
+cat
+	n,貓
+mouse<=445,0
+	n,老鼠
+hunt
+	v,打獵、捕獵
+bat
+	n,蝙蝠
+live
+	v,居住
+	v,生活
+cave
+	n,山洞
+find<=882,0F
+	v,找到、發現:found, found
+tree
+	n,樹
+bug
+	n,蟲子
+	n,軟件錯誤
+wake, woke, woken
+	v,醒來、喚醒
+wake up
+	v phr,醒來
+dark
+	adj,黑暗的
+cold
+	adj,冷的
+fly, flew, flown
+	v,飛
+sky
+	n,天空
+house=>297
+	n,房屋
+home
+	n,家
+eat, ate, eaten
+	v,吃
+wind
+	n,風
+rain
+	n,雨
+little
+	adj,（年齡或可愛）細小的
+
