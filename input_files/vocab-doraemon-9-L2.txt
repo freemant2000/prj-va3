@@ -1,0 +1,56 @@
+[Doraemon-9 L2]
+break into
+	v phr,闖入
+wrong
+	adj,錯誤的
+steep<=1420,0
+        adj,陡峭（斜）的
+driver
+	n,司機
+place
+	n,地方
+rooftop
+	n,屋頂
+speed
+	n,速度
+neighbouring
+	adj,鄰居的
+bored
+	adj,感到悶的
+feel, felt, felt
+	v,感覺到
+ashamed
+	adj,羞耻的
+on sale
+	adv phr,發售
+tired of xx
+	adj phr,對某物感到厭倦
+fight=>1190
+        v,打鬥:fought, fought
+        n,打鬥
+   v,抗拒:fought, fought
+injury
+	n,傷
+better than xx
+ 	adj phr,比xx更好
+mine
+	pron,我的xx
+stay away from xx
+	v phr,遠離某物
+hill
+	n,小山
+come over
+	v phr,來訪（去某人的家）
+know, knew, known
+	v,知道、認識、懂得
+accident
+	n,意外
+happen
+	v,發生
+or
+	conj,或者
+	conj,否則
+bottom
+	n,底部
+something=>627
+	pron,一些東西、某東西
