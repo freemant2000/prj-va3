@@ -1,0 +1,101 @@
+[Pirate L2]
+pirate
+	n,海盜
+command
+	v,命令
+	n,命令
+attention=>1709
+	n,注意力
+	n,注意
+pay attention to xx
+	v phr,留心某物
+prostitute
+	n,娼妓
+powerful
+	adj,強而有力的
+catch sb's attention
+	v phr,吸引某人的注意
+intelligent=>2241
+	adj,智能的、有智慧的
+attack
+	v,攻擊
+	n,攻擊
+together
+	adv,一起
+fleet
+	n,船隊、車隊
+navy
+	n,海軍
+leader
+	n,領導者
+history
+	n,歷史
+continue
+	v,繼續
+code
+	n,代碼
+	n,守則
+famous
+	adj,著名的
+history
+	n,歷史
+inspire
+	v,啟發
+along
+	prep,沿著
+coast
+	n,海岸
+rob=>1622
+	v,搶刧、打刧
+goods
+	n,貨物
+treat
+	v,對待
+well
+	adv,很好地
+off the coast
+	prep phr,海岸對開
+treat xx as yy
+	v phr,把xx作為yy對待
+prisoner
+	n,囚犯
+punish
+	v,懲罰
+worst
+	adj,最差的
+crime
+	n,罪案
+beat<=1209,0F-2F
+	v,打（幾下）:beat, beaten
+	v,打敗:beat, beaten
+grow=>806
+        v,生長、成長:grew, grown
+        v,種植:grew, grown
+        v,變得:grew, grown
+quit<=1201,0F-1F
+        v,退出:quit, quit
+        v,辭職:quit, quit
+fight=>1190
+        v,打鬥、戰鬥:fought, fought
+        n,打鬥
+        v,抗拒:fought, fought
+century
+	n,世紀
+marry
+	v,結婚、娶、嫁
+country
+	n,國家
+government
+	n,政府
+control
+	v,控制
+	n,控制
+rule
+	n,規則
+amazing
+	adj,令人驚訝的、極好的
+challenge
+	v,挑戰
+	n,挑戰
+village
+	n,村莊
