@@ -1,0 +1,71 @@
+[Road safety hero L2]
+serious
+	adj,嚴重的
+seriously
+	adv,嚴重地
+severity
+	n,嚴重性
+injure
+	v,使受傷
+injury
+	n,傷
+Sweden
+	n,瑞典
+crash
+	v,（使）撞毀
+official
+	n,官員
+	adj,正式的
+worried
+	adj,擔心的
+worried about xx
+	adj phr,擔心xx的
+responsible=>2953
+	adj,負責任的
+	adj,有責任的
+responsible for xx
+	adj phr,對xx負有責任的
+industry
+	n,工業
+	n,行業
+blame
+	v,責備
+promote=>2087
+        v,宣傳、推廣
+professional
+	adj,專業的
+	n,專業人士
+community
+	n,社區、社群
+result in
+	v phr,導致
+install
+	v,安裝
+rope
+	n,繩
+barrier
+	n,障礙物
+go ahead
+	v phr,（依計劃）前進
+trial
+	n,試行（名）
+	n,試用（名）
+research
+	v,研究
+	v,研究
+increase
+	v,增加
+	n,增加
+decrease=>917
+	v,減少
+	n,減少
+deadly
+	adj,致命的
+strategy
+	n,策略
+EU
+	n,歐盟（縮寫）
+safety
+	n,安全
+mistake
+  n,錯誤
