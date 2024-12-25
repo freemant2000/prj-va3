@@ -1,0 +1,54 @@
+[Math vocab-4]
+ratio
+	n,比例
+equal
+	adj,相等的
+	v,等於
+factor=>3229
+        n,因素
+	n,因數
+multiple=>2151
+        adj,多個的
+	n,倍數
+prime number
+	n phr,質數
+prime factor
+	n phr,質因數
+odd number
+	n phr,奇數
+even number
+	n phr,偶數
+whole number
+	n,整數
+constant
+	n,常數
+term
+	n,項
+bracket
+	n,括號
+expand the brackets
+	v phr,拆括號
+simplify
+	v,化簡
+expression
+	n,表達式
+let x be...
+	v phr,設x是...
+function=>1692
+        n,功能
+        v,發揮功能
+	n,函數
+graph
+	n,（數學）圖象
+axis
+	n,軸
+origin
+	n,原點
+inequality
+	n,不等式
+proportional
+	adj,成比例的
+directly proportional
+	adj phr,成正比例的
+inversely proportional
+	adj phr,成正比例的
