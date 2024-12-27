@@ -1,0 +1,42 @@
+[Doraemon-10 L2]
+guest
+	n,賓客
+animal
+	n,動物
+biscuit
+	n,餅乾
+could you please do sth?
+	c,請您做某事
+snack
+	n,小食
+trouble
+	n,麻煩
+appropriate
+	adj,合適的
+change=>341
+        v,改變
+        n,改變
+	n,找續
+correct
+	adj,正確的
+	v,改正
+Huh
+	excl,吓
+face
+	n,臉
+too
+	adv,太
+	adv,也
+amount
+	n,數量（不可數）
+scared
+	adj,害怕的
+have got
+	v phr,有（非正式）
+What happened to xx?
+	c,xx出了甚麼事
+neighbour
+	n,鄰居
+enough
+	det,足夠的
+	adv,足夠
