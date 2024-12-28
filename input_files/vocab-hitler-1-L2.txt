@@ -1,0 +1,79 @@
+[Hitler-1 L2]
+Austria
+	n,奧地利
+Austrian
+	n,奧地利人
+	adj,奧地利的
+birth
+	n,出生
+German
+	n,德文
+	n,德國人
+	adj,德國的
+alcohol
+	n,酒精
+regularly
+        adv,有規律地
+        adv,經常地
+beat
+	v,打（幾下）:beat, beaten
+	v,打敗:beat, beaten
+relationship
+	n,關係
+completely
+	adv,完全地
+mad
+	adj,瘋狂的
+	adj,生氣的
+pain
+	n,痛
+artist
+	n,藝術家
+painter
+	n,畫家
+reject
+	v,拒絕
+desperately=>2614
+	adv,拼命地（無效）
+	adv,絕望地
+Jewish
+	adj,猶太的
+priest
+	n,神父
+author
+	n,作者
+reality
+	n,現實
+complex
+	adj,複雜的
+violent
+	adj,暴力的
+abuse
+	v,虐待
+	v,濫用
+	n,虐待
+	n,濫用
+crush
+	v,壓碎
+	n,（不成熟）傾慕
+have a crush on
+	v phr,傾慕某人
+on the other hand
+	adv phr,另一方面
+protection
+	n,保護
+law
+	n,法律
+cruelty
+	n,殘忍
+allow
+	v,允許
+unable
+	adj,不能的
+drunk
+	adj,喝醉了的
+youth=>2879
+        n,青年人
+        n,青年時期
+government
+	n,政府
