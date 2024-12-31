@@ -1,0 +1,57 @@
+[Math vocab-5]
+reduce=>1819
+        v,減少、減小
+	v,約分
+in lowest terms
+	adv,以最簡分數的形式
+number line
+	n phr,數軸
+mixed number
+	n phr,帶分數
+improper fraction
+	n phr,假分數
+time
+	n,時間
+length
+	n,長度
+width
+	n,寬度
+diagonal
+	n,對角線
+gradient
+	n,斜率（英）
+slope
+	n,斜率（美）
+intercept
+	n,截距
+factorise
+	v,因式分解
+quadratic
+	adj,二次的
+quadratic equation
+	n phr,二次方程
+theorem
+	n,定理
+pythagorean theorem
+	n,畢定定理（勾股）
+congruent
+	adj,全等的
+similar
+	adj,相似的
+corresponding angles
+	n phr,對應角
+	n phr,同位角
+corresponding sides
+	n phr,對應邊
+common angle
+	n phr,公共角
+common side
+	n phr,公共邊
+alternate angles
+	n phr,內錯角
+interior angle
+	n phr,內角、同旁內角
+exterior angle
+	n phr,外角
+polygon
+	n,多邊形
