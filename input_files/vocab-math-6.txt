@@ -1,0 +1,35 @@
+[Math vocab-6]
+expand
+	v,展開
+extend
+	v,延長
+quadrilateral
+	n,四邊形
+hexagon
+	n,六邊形
+identity
+	n,恆等式
+make x the subject
+	v phr,使x成為主項
+figure
+	n,圖（包括圖表、示意圖、相片等）
+hence
+	adv,因此（可推導出）
+decimal point
+	n phr,小點數
+digit
+	n,（個位或十位等）數字
+round
+	v,取整
+significant figures
+	n phr,有效數字
+decimal places
+	n phr,小數位
+scientific notation
+	n phr,科學記數法
+linear
+	adj,線性的
+line segment
+	n phr,線段
+collinear
+	adj,共線的
