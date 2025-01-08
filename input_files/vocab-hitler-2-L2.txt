@@ -1,0 +1,67 @@
+[Hitler-2 L2]
+vegetarian=>2098
+	n,素食者
+	adj,素食主義的
+cause
+	v,導致
+	n,原因
+health
+	n,健康
+issue=>2577
+	n,（需討論的）事情／問題
+blood
+	n,血液
+treat=>1832
+	v,對待
+	v,醫治
+diet=>1132
+	n,飲食（習慣）
+adopt
+	v,採納
+	v,收養
+image<=2442,0-1
+        n,形像
+        n,影像、圖像
+Jew
+	n,猶太人
+Jewish=>3498
+	adj,猶太的、猶太人的
+allow
+	v,允許
+Europe
+	n,歐洲
+escape
+	v,逃走
+scary
+	adj,可怕的（嚇人的）
+pleasant
+	adj,令人愉快的
+in person
+	adv phr,親身、當面
+profit
+	n,利潤
+struggle
+	v,爭扎
+	n,爭扎
+charity
+	n,慈善機構
+artwork
+	n,藝術品
+right=>278
+        n,右邊
+        adj,右邊的
+        adj,正確的
+	n,權利
+own
+	v,擁有
+	adj,自己的
+accept
+	v,接受
+has difficulty doing
+	v phr,做xx有困難
+consider xx yy
+	pred,認為xx是yy
+hunt
+	v,打獵、捕獵
+hunt down
+	v phr,追捕
