@@ -1,0 +1,71 @@
+[Math vocab-7]
+ones digit
+	n phr,個位數
+tens digit
+	n phr,十位數
+tenths digit
+	n phr,十分位數
+correct to 2 decimal places
+	adj phr,取2位小數
+trapezium
+ 	n,梯形（英）
+trapezoid
+ 	n,梯形（美）
+rhombus
+	n,菱形
+horizontal
+	adj,水平的
+vertical
+	adj,豎直的
+discount
+	n,折扣
+three times A
+	adj phr,A的三倍
+twice A
+	adj phr,A的兩倍
+two more than A
+	adj phr,比A再多2
+two less than A
+	adj phr,比A再小2
+5 squared
+	n phr,5的平方
+5 cubed
+	n phr,5的立方
+cubic root
+	n phr,立方根
+2 raised to the power of 5
+	n phr,2的5次方
+2 to the 5th power
+	n phr,2的5次方（簡化說法）
+numerator
+	n,分子
+denominator
+	n,分母
+common factor
+	n phr,公因數／式
+cross method
+	n phr,十字相乘法
+quadratic formula
+	n phr,（二次方程）求根公式
+coefficient
+	n,系數
+perfect square
+	n phr,完全平方
+complete the square
+	pred,配方
+domain
+	n,定義域
+range
+	n,值域
+map
+	v,影射
+index
+	n,指數
+exponent
+	n,指數
+power
+	n,冪
+polynomial
+	n,多項式
+map
+				v,影射
