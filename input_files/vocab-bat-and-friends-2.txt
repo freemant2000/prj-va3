@@ -1,0 +1,49 @@
+[Bat and friends-2]
+hang, hung, hung
+	v,掛
+clothes
+	n,衣服
+wall
+	n,牆壁
+foot<=865,0
+	n,腳
+toe
+	n,腳趾
+place
+	n,地方
+look for
+	v phr,找尋
+far
+	adj,遠的
+lost
+	adj,迷路的
+over
+	prep,越過
+barn
+	n,谷倉
+bird
+	n,小鳥
+stand, stood, stood
+	v,站
+roof
+	n,屋頂
+dig, dug, dug
+	v,掘
+hole
+	n,洞
+safe
+	adj,安全的
+feel, felt, felt
+	v,感覺到
+wet
+	adj,濕的
+side
+	n,側面
+dry
+	adj,乾的
+strong=>248
+	adj,強的、強壯的
+see, saw, seen
+	v,看見、見到
+around
+	prep,圍繞
