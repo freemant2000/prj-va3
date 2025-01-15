@@ -1,0 +1,29 @@
+[Doraemon-5 L1]
+take photo
+	pred,拍照
+can=>76
+	m,能夠（有能力）:could
+university
+	n,大學
+better
+	adj,更好的
+feel, felt, felt
+	v,感覺到
+worry
+	v,（使）擔心
+party
+	n,派對
+have a party=>1259
+	pred,開派對
+pay, paid, paid
+	v,支付
+burn down
+	v phr,燒毀
+company
+	n,公司
+find, found, found
+	v,找到、發現
+job=>899
+	n,職業、（一份）工作
+others
+	pron,其他人
