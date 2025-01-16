@@ -1,0 +1,44 @@
+[Doraemon-6 L1]
+pocket
+	n,口袋
+pocket money
+	n phr,零用（錢）
+family
+	n,家庭
+	n,家人
+always
+	adv,總是
+poor
+	adj,貧窮的
+so
+	conj,因此
+	adv,如此
+only
+	adv,只、只有
+change
+	v,改變
+	n,改變
+may<=262,0
+	m,可能
+dollar
+	n,（貨幣）元
+train
+	n,火車
+take
+	v,乘搭:took, taken
+arrive
+	v,到達
+even if=>3400
+	conj phr,即使
+airplane
+	n,飛機（美）
+born
+	v,出生（被動）
+example
+	n,例子
+about
+	prep,關於
+for example
+	marker phr,例如
+a lot of
+	det phr,很多
