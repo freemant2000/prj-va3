@@ -1,0 +1,33 @@
+[Doraemon-7 L1]
+take care of
+	v phr,照顧、看管
+mom
+	n,媽媽（日常用語）
+angry
+	adj,生氣的
+finally
+	adv,最終
+town
+	n,城鎮
+understand, understood, understood
+  v,明白
+worry
+	v,（使）擔心
+        n,擔心
+another
+	det,另一個
+place
+	n,地方
+home
+	n,家
+	adv,在家
+get home
+	pred,回到家
+get
+	v,得到:got, got
+	v,變得:got, got
+	v,走到:got, got
+put, put, put
+	v,放
+use
+	v,使用
