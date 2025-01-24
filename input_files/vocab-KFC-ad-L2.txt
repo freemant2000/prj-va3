@@ -1,0 +1,79 @@
+[KFC ad L2]
+delivery
+	n,遞送
+	n,（送來的）貨
+company
+	n,公司
+restaurant
+	n,餐廳
+operation
+	n,運作
+	n,操作
+minor
+	adj,次要的
+serious
+	adj,嚴重的
+issue
+	n,（需討論的）事情／問題
+continue
+	v,繼續
+shortage
+	n,短缺
+response
+	n,回應
+humour
+	n,幽默
+humourous
+	adj,幽默的
+successful
+	adj,成功的
+advertisement
+	n,廣告
+ad
+	n,廣告（簡寫）
+logo
+	n,（公司等）標誌
+rearrange
+	v,重新擺放
+effective
+	adj,有效的
+frustration
+	n,沮喪
+frustration with xx
+	n phr,對xx的沮喪
+situation
+	n,情況
+creative
+	adj,有創意的
+approach
+	n,處理方式
+responsibility
+	n,責任
+responsibility for xx
+	n phr,對xx的責任
+honesty
+	n,誠實
+newspaper
+	n,報紙
+control
+	v,控制
+	n,控制
+customer
+	n,顧客
+share
+	v,分享
+change
+	v,改變
+	n,改變
+mix
+	v,混合
+popular
+	adj,受歡迎的
+letter=>491
+	n,信
+	n,字母
+full=>608
+	adj,充滿的
+	adj,完全的
+difficult
+	adj,困難的
