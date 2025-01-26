@@ -1,0 +1,67 @@
+[Math vocab-8]
+solution=>2460
+        n,解決方案
+	n,（方程等的）解
+simultaneous equations
+	n phr,聯立方程
+substitute
+	v,代入
+substitution method
+	n phr,代入法
+elimination method
+	n phr,消去法
+degree
+	n,度
+centre
+	n,中心
+construct
+	v,構造
+	v,作（圖等）
+vertex
+	n,頂點
+surface
+	n,表面
+surface area
+	n phr,表面積
+tangent
+	n,切線
+average=>2009
+	adj,平均的
+	n,平均值
+median
+	n,中位數
+	n,中線
+mode
+	n,眾數
+translation
+	n,平移
+rotation
+	n,旋轉
+reflection
+	n,鏡像映射
+stretch=>3009
+	v,拉長、伸展
+symmetry
+	n,對稱性
+symmetric
+	adj,對稱的
+discriminant
+	n,判別式
+sum of roots
+	n phr,兩根之和（韋達定理）
+product of roots
+	n phr,兩根之積（韋達定理）
+rejected
+	adj,（答案等）不合的
+open upwards
+	pred,向上開口
+open downwards
+	pred,向下開口
+cube
+	n,立方體
+cylinder
+	n,圓柱體
+prism
+	n,稜柱體
+cone
+	n,圓錐
