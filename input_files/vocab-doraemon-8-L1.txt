@@ -1,0 +1,46 @@
+[Doraemon-8 L1]
+magical
+	adj,魔術的
+lonely
+	adj,孤寂的
+hand
+	n,手
+need
+	v,需要
+talk
+	v,談話
+often
+	adv,經常、時常
+again
+	adv,再次
+leave<=1154,0F
+	v,離開:left, left
+talk to sb
+	v phr,向某人說話
+know<=1049,0F
+        v,知道、認識、懂得:knew, known
+show<=800,0F
+        v,展示、顯示:showed, shown
+phone
+	n,電話（簡寫）
+stay
+	v,停留
+accident
+	n,意外
+get<=1123,0F-1F-2F
+        v,得到:got, got
+        v,變得:got, got
+        v,走到:got, got
+brain
+	n,腦
+hospital
+	n,醫院
+tell<=24,0F
+        v,告訴:told, told
+worse
+	adj,更差的
+call
+	v,致電
+	n,來電
+comic
+	n,漫畫
