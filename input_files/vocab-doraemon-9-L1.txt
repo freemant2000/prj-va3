@@ -1,0 +1,38 @@
+[Doraemon-9 L1]
+make<=648,0F-1F
+        v,造:made, made
+        v,令:made, made
+cake
+	n,蛋糕
+read, read, read
+	v,讀
+promise
+	v,承諾
+        n,承諾
+parent
+	n,父／母親
+care
+	v,關心、在乎
+way
+	n,方式
+        n,道路
+care about xx
+	v phr,在乎xx
+break
+	v,打破:broke, broken
+	v,折斷:broke, broken
+second
+	        ord,第二
+        n,秒
+careful
+	adj,小心的
+should
+	m,應該
+stop
+	v,停止
+thing
+	n,東西
+soon
+	adv,不久
+which
+	det,哪一個
