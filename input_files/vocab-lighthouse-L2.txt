@@ -1,0 +1,87 @@
+[Lighthouse L2]
+painter
+	n,畫家
+engineer
+	n,工程師
+businessman
+	n,生意人
+capture=>2238
+	v,捕獲
+earn
+	v,賺
+destroy
+	v,破壞
+reef
+	n,（一片）礁石
+wreck=>2766
+        n,沉船
+	v,損毀而沉
+believe in
+	v phr,信任、信奉
+humanity
+	n,人道精神／立場
+lighthouse
+	n,燈塔
+fleet
+	n,船隊、車隊
+war
+	n,戰爭
+protect
+	v,保護
+tower
+	n,塔
+assign
+	v,指派
+worker
+	n,工人、工作者
+provide sb with sth
+	v phr,向某人提供某物
+navy
+	n,海軍
+official
+	n,官員
+	adj,正式的
+release
+        v,發佈、釋放
+        n,發佈、釋放
+dangerous
+	adj,危險的
+construction
+	n,建造
+event
+        n,事件
+        n,（社交）活動
+happen
+	v,發生
+France
+	n,法國
+in charge of xx
+	prep phr,負責領導xx的
+join
+	v,參與
+French
+	adj,法國的
+	n,法文
+	n,法國文
+England
+ n,英格蘭
+at war
+	prep phr,在交戰之中
+immediately
+	adv,立即
+agree
+	v,同意
+area=>1607
+	n,面積
+	n,地區
+order
+	v,命令
+	n,命令
+storm
+	n,暴風雨
+strength=>2125
+        n,力量、力氣
+        n,強項
+	n,強度
+protection
+	n,保護
