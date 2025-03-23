@@ -1,0 +1,74 @@
+[Rice ball L2]
+trend
+	n,趨勢
+shape=>904
+	n,形狀
+	v,使成形
+unusual
+	adj,不平常的
+female
+	adj,女性的、雌性的
+	n,女性
+chef
+	n,大廚
+rice ball
+	n phr,飯糰
+snack
+	n,小食
+unique=>2660
+	adj,唯一的、獨特的
+element
+	n,元素
+technique
+	n,技巧、技術
+culture
+	n,文化
+process
+	v,處理
+	n,過程
+armpit
+	n,腋窩
+ingredient
+	n,成份
+sweat
+	v,流汗
+	n,汗
+customer
+	n,顧客
+desire
+        n,渴望
+        v,渴望
+disgusting
+	adj,令人惡心的
+regular=>817
+        adj,有規律的
+        adj,恆常的
+		adj,普通的
+find sth adj
+	pred phr,覺得某物怎樣
+certain=>930
+	adj,肯定的
+	adj,某、某些
+experience=>1112
+	n,經驗
+	n,體驗
+restaurant
+	n,餐廳
+surprisingly
+	adv,令人吃驚地
+taste
+        v,嚐起來
+        n,味道
+kitchen
+	n,廚房
+Japan
+	n,日本
+Japanese
+	n,日文
+	n,日本人
+	adj,日本的
+rice
+        n,米
+        n,飯
+touch
+	v,接觸、碰到
