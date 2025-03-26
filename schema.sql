@@ -14,6 +14,11 @@
 -- delete from word_meanings where wd_id=1283;
 -- delete from word_defs where id=1283;
 
+-- add a keyword to a sentence
+-- select * from sentences where text='...';
+-- select * from word_defs where word='...';
+-- insert into snt_keywords values(9413, 1554);
+
 create table word_defs(id integer auto_increment primary key, word varchar(50));
 create index word_defs_idx_word on word_defs(word);
 create table word_meanings(wd_id integer, idx integer, p_of_s varchar(10), 
