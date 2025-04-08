@@ -17,7 +17,7 @@
 -- add a keyword to a sentence
 -- select * from sentences where text='...';
 -- select * from word_defs where word='...';
--- insert into snt_keywords values(9413, 1554);
+-- insert into snt_keywords values(9413, 1554, 0);
 
 create table word_defs(id integer auto_increment primary key, word varchar(50));
 create index word_defs_idx_word on word_defs(word);
