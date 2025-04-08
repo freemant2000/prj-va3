@@ -1,0 +1,42 @@
+[Doraemon-10 L1]
+hit<=905,0F-1F
+        v,打（一下）:hit, hit
+        v,擊中:hit, hit
+dangerous
+	adj,危險的
+should
+	m,應該
+TV
+	n,電視（縮寫）
+long
+	adj,長的
+time
+	n,時間
+still
+	adv,仍然
+same
+	adj,相同的
+check=>443
+        v,檢查、查看
+        n,檢查
+safe
+	adj,安全的
+or
+	conj,否則
+break, broke, broken
+	v,打破
+let's
+	v phr,讓我們
+ahead
+	adv,向前
+longer
+	adj,更長的
+look
+	v,望
+look at xx
+	v phr,望著某物
+behind
+	prep,在...背後
+	adv,後面
+from behind
+	adv phr,由後面
