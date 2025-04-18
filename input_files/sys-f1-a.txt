@@ -1,0 +1,617 @@
+[Form 1a]
+behind
+	prep,在...背後
+figurine
+	n,小雕像
+collection
+	n,一套收藏品
+blind
+	adj,盲的
+website
+	n,網站
+below
+	prep,低於、小於
+raise
+	v,舉起、提高
+usually
+	adv,通常
+aid
+	n,援助
+first aid
+	n phr,急救
+listen to	xx
+	v phr,傾聽
+annual
+	adj,年度的
+explore
+	v,探索
+except
+	prep,除了...之外（其他都...）
+mention
+	v,提及
+friendship
+	n,友誼
+approach
+	v,走近
+word
+	n,詞
+quickly=>1292
+	adv,很快地（時間短）
+dance
+	v,跳舞
+stroke
+	v,輕撫
+orphan
+	n,孤兒
+famous
+	adj,著名的
+tail
+	n,尾
+keep up with
+	v phr,跟上
+mountaintop
+	n,山頂
+own
+	adj,自己的
+	v,擁有
+international
+	adj,國際的
+song=>735
+	n,歌
+Thursday
+	n,星期四
+slip
+	v,溜走
+	v,滑
+by now
+	adv phr,到了現在（應該已經）
+anywhere
+	adv,任何地方
+student
+	n,學生
+make it
+	pred,成功做到
+scold
+	v,責駡
+loft
+	n,閣樓
+college
+	n,大專院校
+grumpy
+	adj,脾氣壞的
+ready
+	adj,準備好的
+get ready
+	v phr,準備好
+reach=>691
+        v,（努力後）到達
+        v,觸碰到
+	n,能觸碰到的範圍
+spread=>1808
+        v,擴散
+        n,擴散
+			v,撒
+go over
+	v phr,走過去
+keep sb company
+	pred,陪伴某人
+flat
+	n,住宅單位
+title=>1470
+	n,標題（文章、書等）
+	n,頭銜
+birthday
+	n,生日
+beyond
+	prep,超越
+special
+	adj,特別的
+grandpa
+	n,爺爺
+ambulance
+	n,救傷車
+coloured
+	adj,著了顏色的
+care
+	v,關心、在乎
+	n,關心
+dragonfly
+	n,蜻蜓
+hut
+	n,（如石或草造的）小屋
+in sight
+	adv phr,在視線範圍內
+riddle
+	n,謎語
+true
+	adj,真正的、真的（是事實）
+result
+	n,結果
+frown
+	v,皺眉
+active
+	adj,活躍的
+member
+	n,成員
+slogan
+	n,口號
+life
+	n,生命
+webpage
+	n,網頁
+split<=2082,0F-1-2
+        v,劈開:split, split
+        v,裂開
+        v,分割
+Hong Kong
+	n phr,香港
+smile
+	v,微笑
+busy
+	adj,忙碌的
+take
+	v,拿走:took, taken
+	v,服（藥）:took, taken
+another
+	det,另一個
+chance
+	n,機會
+share
+	v,分享
+well=>741
+	adv,很好地
+	n,井
+race=>594
+        n,賽跑
+        v,賽跑
+	v,全速行駛
+online game
+	n phr,網上遊戲
+yellow
+	adj,黃色的
+finish=>819
+	v,完成、結束
+first
+	ord,第一
+homepage
+	n,網站首頁
+stand up for xx
+	v phr,為xx挺身而出
+disappear
+	v,消失
+collector
+	n,收藏家
+Chinese
+	n,中文
+        adj,中國的
+        adj,中國人的
+outing
+	n,出外活動
+morning
+	n,早晨
+throw
+	v,拋:threw, thrown
+set=>500
+        v,設定
+        n,套
+        v,（某故事）以...為背境
+	v,下沉（太陽等）
+the rest of xx
+	n phr,其餘的xx
+hold=>1090
+        v,拿著、持有:held, held
+        v,保留:held, held
+        v,有（會議等）:held, held
+        v,扶著:held, held
+cheerleader
+	n,啦啦隊
+every
+	det,每一個
+best
+	adj,最好的
+love
+	v,愛
+	n,愛
+champion
+	n,冠軍得主
+Mrs
+	n,太太（稱謂）
+medal
+	n,獎牌
+closer
+	adj,更接近的
+teacher
+	n,老師
+final=>3586
+	adj,最終的
+	n,決賽
+break
+	v,打破:broke, broken
+second
+	ord,第二
+	n,秒
+by the way
+	adv phr,順便說一說
+study
+	v,學習（做題等）
+cup
+	n,（有耳、白色等）茶杯
+sport
+	n,運動
+Sunday
+	n,星期日
+pompom
+	n,絨球
+show
+	v,展示、顯示:showed, shown
+through
+	prep,穿過、通過
+leave=>1154
+        v,離開:left, left
+        v,把...留低:left, left
+comfort
+	n,舒適
+	v,使舒適
+several
+	det,幾個
+guide=>3376
+  n,嚮導、導遊
+	v,引導
+begin
+	v,開始:began, begun
+winner
+	n,勝利者
+sight=>1151
+        n,景象
+        n,視力
+	n,視覺
+	n,視線
+fun
+	adj,有趣的
+blue
+	adj,藍色的
+gold=>2296
+	n,金
+	n,金牌
+excellent
+	adj,優秀的、極好的
+red
+	adj,紅色的
+always
+	adv,總是
+need
+	v,需要
+ladder
+	n,（扶手）梯
+herder
+	n,牧人
+grandparent
+	n,祖父母
+record holder
+	n phr,紀錄保持者
+continue
+	v,繼續
+foreign
+	adj,外國的
+scoreboard
+	n,記分牌
+deep
+	adj,深的
+ourselves
+	pron,我們自己
+orange
+      n,橙、橙色
+        adj,橙色的
+performance
+	n,表演
+	n,表現（績效）
+yum cha
+	v phr,（中式）飲茶
+at once
+	adv phr,立刻
+cheer
+	v,歡呼
+	n,歡呼
+same
+	adj,相同的
+why=>562
+	adv,為甚麼
+ferry
+	n,渡輪
+less
+	adj,較少的（不可數）
+twelve
+	num,十二
+greet
+	v,打招呼
+newspaper
+	n,報紙
+keen
+	adj,熱愛的
+thing
+	n,東西
+forward
+	adv,向前
+agree
+	v,同意
+nature
+	n,大自然
+tape recorder
+	n phr,磁帶錄音機
+prepare
+	v,準備
+scout
+	v,童軍
+club
+	n,俱樂部
+countryside
+	n,鄉下地方
+move into
+	v phr,搬進
+promise
+        v,承諾
+        n,承諾
+line
+	n,線
+underwear
+	n,內衣
+display
+ v,展示
+ n,屏幕
+cabinet
+	n,櫃
+display cabinet
+	n phr,陳列櫃
+probably
+	adv,很可能
+English-speaking
+	adj phr,說英文的
+meanwhile
+	adv,同時
+piano
+	n,鋼琴
+family
+	n,家庭
+the first time
+	n phr,第一次
+assembly
+	n,集會
+wildlife
+	n,野生動物
+total
+	adj,總的
+runner-up
+	n,亞軍得主
+pollution
+	n,污染
+rearrange
+	v,重新安排
+	v,重新擺放
+station
+	n,（火車等）車站、站
+without
+	prep,沒有
+carry
+	v,攜帶
+term=>3463
+        n,詞語
+        n,項
+	n,學期
+Hakka
+	n,客家
+figure out
+	v phr,想通
+think
+        v,思考:thought, thought
+        v,認為:thought, thought
+immediately
+	adv,立即
+mind
+	v,介意
+conflict
+	n,衝突
+follow
+	v,跟隨
+never
+	adv,從不
+	adv,永不
+hello
+	intj,哈佬
+treasure
+	n,寶藏
+treasure hunt
+	n phr,尋寶
+metre
+	n,米（公尺）
+track
+	n,跑道
+	n,徑類運動
+trouble
+	n,麻煩
+hurray
+	intj,太好了
+not...any more
+	adv phr,不再
+argue
+	v,爭論
+stare at xx
+	v phr,凝視xx
+close=>376
+	v,關閉
+	adj,靠近的
+	adj,親密的
+everyone=>998
+	n,每一個人
+dish
+	n,碟
+secondary
+        adj,第二的
+        adj,中學的
+the Alps
+	n phr,阿爾卑斯山
+answer
+	v,回答
+	n,答案
+loudly
+	adv,大聲地
+speed
+	n,速度
+please=>612
+        intj,請
+	adv,請
+remember
+	v,記得
+sew
+	v,繡、縫紉:sewed, sewn
+flag
+	n,旗
+tiger
+	n,老虎
+article
+	n,文章
+picture=>573
+        n,圖畫
+	n,相片
+encourage
+	v,鼓勵
+nurse
+	n,護士
+jump
+	v,跳
+together
+	adv,一起
+silver
+	n,銀
+	n,銀牌
+everywhere
+	adv,到處（每一處）
+trial=>3460
+        n,試行
+        n,試用
+	n,選拔賽
+speech
+	n,演講
+important
+	adj,重要的
+place
+	n,地方
+computer
+	n,電腦
+shot put
+	n phr,推鉛球
+wag
+	v,搖擺（尾等）
+dam
+	n,水壩
+principal
+	n,校長
+representative
+	n,代表
+September
+	n,九月
+list
+	n,清單、列表
+better
+	adj,更好的
+field=>2822
+        n,領域
+        n,田野
+	n,（籃球、足球等）場
+record
+	v,記錄
+	n,記錄
+item
+	n,物件
+traffic
+	n,交通
+award
+	n,獎項
+empty
+	adj,空的
+once a month
+	adv phr,每月一次
+though
+	conj,雖然（簡寫）
+louder
+	adj,更大聲的
+	adv,更大聲地
+knee
+	n,膝蓋
+tend=>3016
+        v,傾向
+	v,照料
+chance
+	n,機會
+excitedly
+	adv,興奮地
+green
+	adj,綠色的
+suit
+	n,套裝
+grandma
+	n,嫲嫲
+rescue
+	v,拯救
+during
+	prep,在...期間
+touch
+	v,接觸、碰到
+closely
+	adv,親近地
+ceremony
+	n,儀式
+prize
+  n,獎（有金錢價值）
+prize giving ceremony
+	n phr,頒獎儀式
+PE
+	n,體育科（縮寫）
+later
+	adv,遲些
+stressful
+	adj,造成壓力的
+bye
+	intj,再見（簡寫）
+athlete
+	n,運動員
+leading
+	adj,領先的
+fetch
+	v,取來
+feeling
+	n,感受
+hold out
+	v phr,伸出
+	v phr,堅持
+night shift
+	n phr,夜班
+dash
+	v,猛衝
+New Territories
+	n phr,新界
+weather
+	n,天氣
+deal with
+	v phr,處理
+desert
+	n,沙漠
+	v,抛棄
+nor
+	conj,也不
+chess
+	n,西洋棋
+minute
+	n,分鐘
+reporter
+	n,記者
+hope
+	v,希望
+score
+	n,分數
+sing
+	v,唱:sang, sung
+spectator
+	n,（個人）觀眾
+signal=>2919
+	n,信號
+	v,發信號
