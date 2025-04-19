@@ -1,0 +1,29 @@
+[Doraemon-11 L1]
+road
+	n,路
+wide
+	adj,濶的
+house
+	n,房屋
+watch out
+	v phr,小心
+thief
+	n,賊
+drive, drove, driven
+	v,駕駛
+can't
+	m,不能（縮寫）
+excuse
+	v,原諒
+follow
+	v,跟隨
+backyard
+	n,後園
+run, ran, run
+	v,跑
+through
+	prep,穿過、通過
+people
+	n,人們
+learn=>695
+	v,學懂、學習:learnt, learnt
