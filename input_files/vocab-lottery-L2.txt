@@ -1,0 +1,76 @@
+[lottery L2]
+customer
+	n,顧客
+tip=>821
+	n,貼士
+	v,給貼士
+waitress
+	n,女侍應生
+serve
+	v,上菜
+	v,服務
+bill
+	n,賬單
+lottery
+	n,彩票博彩
+divorce
+	v,離婚、同某人離婚
+coworker
+	n,同事
+claim
+	v,聲稱
+	n,聲稱
+personal
+	adj,個人的
+argue
+	v,爭論
+ticket
+	n,票
+sue
+	v,控告
+sue sb for sth
+	pred,控告某人做了某事
+kidnap
+	v,綁架
+owe
+	v,欠
+supreme
+	adj,最高的
+lawyer
+	n,律師
+rat
+	n,（大）老鼠
+rule against sb
+	v phr,判某人輸
+case=>1007
+        n,情形，個案
+        n,箱
+	n,案件
+court
+	n,法院
+illegal
+	adj,非法的
+gamble
+	v,賭博
+agreement
+	n,協議
+tax
+	n,稅
+equally
+	adv,相同地
+restaurant
+	n,餐廳
+share
+	v,分享
+winnings
+	n,（賭贏的）錢
+truck
+	n,貨車
+husband
+	n,丈夫
+ex-
+	prefix,前度的
+shoot, shot, shot
+	v,（用槍等）射擊
+hospital
+	n,醫院
