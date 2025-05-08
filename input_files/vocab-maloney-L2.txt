@@ -1,0 +1,72 @@
+[Maloney L2]
+political
+	adj,政治的
+politician
+	n,政治家
+social
+	adj,社會的
+	adj,社交的
+network
+	n,網絡
+movement=>1843
+        n,移動
+	n,動作
+	n,（社會）運動
+vote
+	v,投票
+	n,選票
+election
+	n,選舉
+act=>1617
+        v,演戲
+        v,行動
+	n,行動
+right
+	n,右邊
+	adj,正確的
+	n,權利
+tie
+	v,綁
+tie xx to yy
+	pred,把xx綁到yy
+railing
+	n,鐵欄
+attention
+	n,注意力
+bring sb's attention to
+	pred,令某人注意
+comment=>2531
+        n,評語
+	v,評論
+set fire
+	v phr,放火
+set fire to xx
+	pred,放火燒xx
+oppose
+	v,反對
+insult
+	v,侮辱
+demand
+	v,要求
+	n,要求
+apologise
+	v,道歉
+refuse
+	v,拒絕
+Irish
+	adj,愛爾蘭的
+	n,愛爾蘭人
+bell
+	n,鈴
+ring=>428
+        n,戒指
+        v,（使）響響:rang, rung
+fight, fought, fought
+	v,打鬥、戰鬥
+follow
+	v,跟隨
+crowd
+	n,一群人
+challenge
+	v,挑戰
+	n,挑戰
