@@ -28,11 +28,23 @@ def get_snt(s: Session, id: int)->Sentence:
   return r.unique().first()
 
 def get_snts(s: Session, words: Sequence[str], limit: int=20)->Sequence[Sentence]:
-  q=select(Sentence).where(Sentence.keywords.any(WordMeaning.wd.has(WordDef.word.in_(words)))) \
+    snt_cnts={}
+    for word in words:
+        snts_containing_word=get_snt_containing(s, word, limit)
+        for snt in snts_containing_word:
+            n=snt_cnts.setdefault(snt, 0)
+            snt_cnts[snt]=n+1
+    rs=snt_cnts.keys()
+    rs=sorted(rs, key=lambda snt: snt_cnts[snt], reverse=True)
+    return rs[:limit]
+
+def get_snt_containing(s: Session, word: str, limit: int=20)->Sequence[Sentence]:
+  q=select(Sentence).where(Sentence.keywords.any(WordMeaning.wd.has(WordDef.word==word))) \
       .options(joinedload(Sentence.keywords).joinedload(WordMeaning.wd)) \
       .order_by(Sentence.id.asc()).limit(limit)
   r=s.scalars(q)
   return r.unique().all()
+
 
 def get_snts_from_keywords(s: Session, kws: Sequence[str], limit: int=20)->Sequence[Tuple[Sentence, int]]:
     kws=[kw.strip() for kw in kws]

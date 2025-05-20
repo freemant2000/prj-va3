@@ -12,7 +12,7 @@ class TestSentence(TestCase):
     def test_find_snts(self):
         snts=get_snts(self.s, ["squirrel", "river", "trunk"])
         self.assertEquals(len(snts), 4)
-        self.assertEquals(snts[0].text, "這條河裡的水在快速地流動。")
+        self.assertEquals(snts[0].text, "一隻松鼠爬上了這條樹幹。")
     def test_count_matches(self):
         snt=get_snt(self.s, 1)
         self.assertEquals(snt.count_matches(["steep", "egg", "mountain"]), 2)
