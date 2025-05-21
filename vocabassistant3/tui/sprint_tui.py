@@ -1,4 +1,6 @@
 from datetime import date
+
+from vocabassistant3.tui.practice_tui import show_wds_in_prac_tui, toggle_hard_practice_tui
 from .console_utils import indent_pr
 from .cmd_handler import CmdHandler, ExitException
 from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec_summary, show_exec_tui
@@ -49,7 +51,9 @@ def sprint_main_tui(stu_id):
           "se": ("Show an exercise in the sprint", lambda: show_exec_tui(sp_id)),
           "de": ("Delete an exercise from the sprint", del_exec_tui),          
           "del": ("Delete this sprint", del_sprint_tui),
-          "mw": ("Mark the words in the sprint", mark_words_tui)}
+          "mw": ("Mark the words in the sprint", mark_words_tui),
+          "tp": ("Toggle the hard words only switch of a practice", toggle_hard_practice_tui),
+          "sw": ("Show the words in a practice", show_wds_in_prac_tui),}
     ch=CmdHandler("sp>", cmds)
     ch.main_loop()
 

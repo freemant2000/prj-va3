@@ -1,3 +1,4 @@
+from vocabassistant3.tui.practice_tui import show_wds_in_prac_tui, toggle_hard_practice_tui
 from .cmd_handler import CmdHandler
 from .console_utils import indent_pr
 from .word_bank_search_tui import search_word_bank_tui
@@ -42,16 +43,6 @@ def show_practice(p: Practice, pr=print):
     h_wc, all_wc=p.get_word_counts()
     pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {h_wc}/{all_wc} {p.hard_only} {p.assess_dt}")
 
-def show_wds_in_prac_tui():
-    p_id=int(input("Input practice ID: "))
-    with open_session() as s:
-        prac=get_practice(s, p_id)
-        if prac:
-            for bw in prac.get_bws():
-                print(f"{bw.get_full_word().ljust(20)}{bw.get_meanings()}")
-        else:
-            print(f"Practice with ID {p_id} not found")
-
 def del_practice_tui():
     p_id=int(input("Input practice ID: "))
     with open_session() as s:
@@ -63,16 +54,6 @@ def del_practice_tui():
         else:
             print(f"Practice with ID {p_id} not found")
 
-def toggle_hard_practice_tui():
-    p_id=int(input("Input practice ID: "))
-    with open_session() as s:
-        prac=get_practice(s, p_id)
-        if prac:
-            prac.hard_only=not prac.hard_only
-            s.commit()
-            print("OK")
-        else:
-            print(f"Practice with ID {p_id} not found")
 
 def add_practice_tui():
     wb=search_word_bank_tui()
