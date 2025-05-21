@@ -30,7 +30,7 @@ def get_snt(s: Session, id: int)->Sentence:
 def get_snts(s: Session, words: Sequence[str], limit: int=20)->Sequence[Sentence]:
     snt_cnts={}
     for word in words:
-        snts_containing_word=get_snt_containing(s, word, limit)
+        snts_containing_word=get_snt_containing(s, word, 5*limit)
         for snt in snts_containing_word:
             n=snt_cnts.setdefault(snt, 0)
             snt_cnts[snt]=n+1
