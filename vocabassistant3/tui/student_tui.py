@@ -1,10 +1,13 @@
+from random import choice, choices, sample
+from vocabassistant3.sampling import calc_sample_size
 from vocabassistant3.tui.practice_tui import show_wds_in_prac_tui, toggle_hard_practice_tui
+from vocabassistant3.tui.word_bank_tui import show_bank_word
 from .cmd_handler import CmdHandler
 from .console_utils import indent_pr
 from .word_bank_search_tui import search_word_bank_tui
 from .sprint_tui import del_sprint_tui, add_sprint_tui, show_sprint_struct, sprint_main_tui
 from ..db_base import open_session
-from ..practice import Practice, add_practice, get_practice, get_student
+from ..practice import Practice, add_practice, get_all_bws, get_practice, get_student
 from ..sprint import get_sprints_for
 
 stu_id=0
@@ -21,7 +24,8 @@ def show_student_tui():
           "tp": ("Toggle the hard words only switch of a practice", toggle_hard_practice_tui),
           "asp": ("Add a sprint", lambda: add_sprint_tui(stu_id)),
           "dsp": ("Delete a sprint", del_sprint_tui),
-          "sp": ("Work on a sprint", lambda: sprint_main_tui(stu_id))}
+          "sp": ("Work on a sprint", lambda: sprint_main_tui(stu_id)),
+          "sm": ("Get a sample for assessment", get_sample_tui)}
     ch=CmdHandler(f"{stu.name}>", cmds)
     ch.main_loop()
 
@@ -42,6 +46,15 @@ def show_student():
 def show_practice(p: Practice, pr=print):
     h_wc, all_wc=p.get_word_counts()
     pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {h_wc}/{all_wc} {p.hard_only} {p.assess_dt}")
+
+def get_sample_tui():
+    with open_session() as s:
+        bws=get_all_bws(s, stu_id)
+    sz=calc_sample_size(len(bws), 10, 95)
+    sm=sample(bws, sz)
+    print(f"{sz} out of {len(bws)}")
+    for idx, bw in enumerate(sm):
+        print(f"{idx}\t{bw.get_meanings()}")
 
 def del_practice_tui():
     p_id=int(input("Input practice ID: "))

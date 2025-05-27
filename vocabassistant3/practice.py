@@ -4,6 +4,7 @@ from sqlalchemy.types import Integer, Date, Boolean, String
 from datetime import date
 from .db_base import Base
 from .word_bank import WordBank, BankWord, get_word_bank
+from .word_def import WordDef
 from typing import List, Sequence, Tuple
 
 class PracticeHard(Base):
@@ -85,6 +86,12 @@ def get_student(s: Session, stu_id: int)->Student:
         .options(joinedload(Student.pracs).joinedload(Practice.hard_w_indice))
     stu=s.scalars(q).first()
     return stu
+
+def get_all_bws(s: Session, stu_id: int)->Sequence[BankWord]:
+    q=select(BankWord).select_from(Student).join(Student.pracs).join(Practice.wb).join(WordBank.bws).join(BankWord.wd).where(Student.id==stu_id).order_by(WordBank.id, BankWord.idx)\
+        .options(joinedload(BankWord.wd).joinedload(WordDef.meanings))
+    bws=s.scalars(q).unique().all()
+    return bws
 
 def get_practice(s: Session, p_id: int)->Practice:
     q=select(Practice).where(Practice.id==p_id)\
