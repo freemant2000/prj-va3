@@ -19,6 +19,12 @@
 -- select * from word_defs where word='...';
 -- insert into snt_keywords values(9413, 1554, 0);
 
+-- change a keyword in a sentence
+-- select * from sentences where text='...';
+-- select * from word_defs where word='...';
+-- select * from snt_keywords where snt_id=10961 and wd_id=;
+-- update snt_keywords set wd_id=3551, wm_idx=0 where snt_id=10961 and wd_id=1829;
+
 create table word_defs(id integer auto_increment primary key, word varchar(50));
 create index word_defs_idx_word on word_defs(word);
 create table word_meanings(wd_id integer, idx integer, p_of_s varchar(10), 
