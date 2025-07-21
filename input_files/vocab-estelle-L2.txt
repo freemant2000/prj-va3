@@ -1,0 +1,72 @@
+[Estelle L2]
+Mexico
+	n,墨西哥
+generation
+	n,一代（人）
+race=>594
+        n,賽跑
+        v,賽跑
+        v,全速行駛
+	n,種族
+illegal
+	adj,非法的
+couple
+	n,一對
+	n,夫婦
+watercolour
+	n,水彩
+artist
+	n,藝術家
+law
+	n,法律
+marry
+	v,結婚、娶、嫁
+Dutch
+	adj,荷蘭的
+	n,荷蘭人
+president
+	n,總統
+	n,主席
+sign
+        n,標誌
+        v,簽署
+executive
+	adj,行政的
+	n,行政人員
+order
+	v,命令
+	n,命令
+military
+	n,軍隊
+	adj,軍事的
+area
+	n,地區
+remove
+	v,移除
+lock up
+	v phr,鎖起
+citizen
+	n,市民
+	n,公民
+ancestor
+	n,祖先
+detention
+	n,拘留
+document=>1391
+	n,文件
+	v,用文件記錄
+documentary
+	n,記錄片
+pearl
+	n,珍珠
+harbour
+	n,海港
+attack
+	v,攻擊
+	n,攻擊
+fire
+	v,開除
+centre
+	n,中心
+last name
+	n phr,姓
