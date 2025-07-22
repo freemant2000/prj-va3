@@ -1,0 +1,71 @@
+[Roofman L2]
+area
+	n,地區
+schedule=>1499
+	n,時間安排
+	v,安排時間
+employee
+	n,僱員
+freezer
+	n,冷藏庫
+polite=>350
+	adj,有禮貌的
+athletic
+	adj,擅於運動的
+	adj,有關運動的
+cunning
+	adj,狡猾的
+believe
+	v,相信
+identity
+	n,身份、自我形象
+shock=>2006
+        n,震驚
+        v,使震驚
+shocking
+	adj,令人震驚的
+shocked
+	adj,覺得震驚的
+describe=>1170
+	v,描述、描寫
+display
+	v,展示
+        n,屏幕
+roof=>3592
+	n,屋頂（結構）
+series
+	n,系列
+prison
+	n,監獄
+escape=>1527
+	v,逃走
+	n,逃走
+break into
+	v phr,闖入
+pretend
+	v,假裝
+church
+	n,教堂
+volunteer
+	v,做義工
+	v,主動提議（服務等）
+	n,義工
+member
+	n,成員
+secret=>1898
+	adj,秘密的
+	n,秘密
+government
+	n,政府
+store=>1157
+        n,士多（較大的商店）
+        v,儲存
+rob=>1622
+	v,搶劫、打劫
+robber
+	n,劫匪
+robbery
+	n,搶劫
+lock
+	v,鎖
+	n,鎖

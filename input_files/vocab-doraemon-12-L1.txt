@@ -1,0 +1,46 @@
+[Doraemon-12 L1]
+bottom
+	n,底部
+stop
+	v,停止
+want
+	v,想要
+live
+	v,居住
+	v,生活
+here
+	adv,這裡
+know<=1049,0F
+        v,知道、認識、懂得:knew, known
+driver
+	n,司機
+safe
+	adj,安全的
+down<=661,0-1
+        adv,向下
+        prep,向下
+difficult
+	adj,困難的
+TV=>1248
+	n,電視（縮寫）
+	n,電視機
+speed
+	n,速度
+high school
+	n phr,中學
+small
+	adj,（體積）小的
+hit<=905,0F-1F
+        v,打（一下）:hit, hit
+        v,擊中:hit, hit
+must=>589
+	m,必須
+	m,必定
+brain
+	n,腦
+high
+	adj,高的（離地面）
+hill
+	n,小山
+stay away from xx
+	v phr,遠離某物
