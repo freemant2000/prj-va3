@@ -1,0 +1,76 @@
+[Black kid borrower L2]
+advanced=>2828
+	adv,先進的
+	adv,高階的
+mile
+	n,英里
+reluctantly
+	adv,不情願地
+science
+	n,科學
+astronaut
+	n,太空人
+space=>2278
+	n,空間
+	n,太空
+graduate
+	v,畢業
+PhD=>1950
+	n,博士（縮寫）
+physics
+	n,物理學
+physicist
+	n,物理學家
+check out
+	v phr,外借（書等）
+officer
+	n,長官（警察或政府部門）
+passion
+	n,熱情
+passion for xx
+	n phr,對某物的熱情
+library
+	n,圖書館
+librarian
+	n,圖書館管理員
+shuttle
+	v,穿梭（巴士、飛機）
+honour=>2596
+	n,榮譽
+	v,（向某人／物）致敬
+public=>884
+	adj,公共的、公立的
+explode
+	v,爆炸
+refuse
+	v,拒絕（做某事）
+counter
+	n,櫃枱
+include
+	v,包括
+line=>485
+        n,線
+        n,行（文字等）
+	n,（排的）隊
+politely=>2959
+	adv,有禮地
+museum
+	n,博物館
+in line
+	adv phr,在排隊中
+kid
+	n,小孩
+grow up
+	v phr,長大
+grow, grew, grown
+	v,生長、成長
+dream about
+	v phr,夢見、夢想
+university
+	n,大學
+get in line
+	v phr,加入排隊
+challenger
+	n,挑戰者
+parent
+	n,父／母親
