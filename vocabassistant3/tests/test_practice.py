@@ -1,7 +1,7 @@
 from unittest import TestCase
 from test_db_connector import open_session
 from vocabassistant3.db_base import set_seq_val
-from vocabassistant3.practice import Practice, PracticeHard, add_practice, get_practice, get_student
+from vocabassistant3.practice import Practice, PracticeHard, add_practice, get_practice, get_student, get_student_full_assess
 from vocabassistant3.word_bank import BankWord
 
 class TestPractice(TestCase):
@@ -108,3 +108,9 @@ class TestPractice(TestCase):
         stu=get_student(self.s, 1)
         self.assertEquals(stu.name, "Jodie")
         self.assertEquals(len(stu.pracs), 2)
+
+    def test_get_student_full_assess(self):
+        stu=get_student_full_assess(self.s, 1)
+        self.assertEquals(stu.name, "Jodie")
+        self.assertEquals(len(stu.pracs), 2)
+        self.assertEquals(len(stu.pracs.full_assess_list), 2)

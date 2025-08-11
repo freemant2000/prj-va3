@@ -13,6 +13,14 @@ class PracticeHard(Base):
     prac: Mapped["Practice"]=relationship("Practice", back_populates="hard_w_indice")
     w_idx: Mapped[int]=mapped_column(Integer, primary_key=True)
 
+class PracticeFullAssess(Base):
+    __tablename__="practice_full_assess"
+    p_id: Mapped[int]=mapped_column(Integer, ForeignKey("practices.id"), primary_key=True)
+    idx: Mapped[int]=mapped_column(Integer, primary_key=True)
+    assess_dt: Mapped[date]=mapped_column(Date)
+    err_cnt: Mapped[int]=mapped_column(Integer)
+
+
 class Practice(Base):
     __tablename__="practices"
     id: Mapped[int]=mapped_column(Integer, Seq("practice_seq"), primary_key=True)
@@ -26,6 +34,7 @@ class Practice(Base):
     student: Mapped["Student"]=relationship("Student", back_populates="pracs")
     # the indice are relative to the WordBank
     hard_w_indice: Mapped[List[PracticeHard]]=relationship(PracticeHard, back_populates="prac", cascade="all, delete-orphan")
+    full_assess_list: Mapped[List[PracticeFullAssess]]=relationship(PracticeFullAssess, cascade="all, delete-orphan")
 
     def get_bws(self)->Sequence[BankWord]:
         bws=self.wb.bws[self.fr_idx:self.to_idx+1]
@@ -82,10 +91,19 @@ class Student(Base):
 
 def get_student(s: Session, stu_id: int)->Student:
     q=select(Student).where(Student.id==stu_id)\
-        .options(joinedload(Student.pracs).joinedload(Practice.wb).joinedload(WordBank.bws)) \
-        .options(joinedload(Student.pracs).joinedload(Practice.hard_w_indice))
+        .options(joinedload(Student.pracs).joinedload(Practice.wb).selectinload(WordBank.bws)) \
+        .options(joinedload(Student.pracs).selectinload(Practice.hard_w_indice))
     stu=s.scalars(q).first()
     return stu
+
+def get_student_full_assess(s: Session, stu_id: int)->Student:
+    q=select(Student).where(Student.id==stu_id)\
+        .options(joinedload(Student.pracs).selectinload(Practice.full_assess_list)) \
+        .options(joinedload(Student.pracs).selectinload(Practice.wb).selectinload(WordBank.bws)) \
+        .options(joinedload(Student.pracs).selectinload(Practice.hard_w_indice))
+    stu=s.scalars(q).first()
+    return stu
+
 
 def get_all_bws(s: Session, stu_id: int)->Sequence[BankWord]:
     q=select(BankWord).select_from(Student).join(Student.pracs).join(Practice.wb).join(WordBank.bws).join(BankWord.wd).where(Student.id==stu_id).order_by(WordBank.id, BankWord.idx)\

@@ -37,6 +37,8 @@ create table bank_word(wb_id integer, idx integer, wd_id integer, m_indice varch
 
 create table practices(id integer auto_increment primary key, wb_id integer, fr_idx integer, to_idx integer, hard_only boolean, assess_dt date, stu_id integer);
 create table practice_hard(p_id integer, w_idx integer, primary key(p_id, w_idx));
+create table practice_full_assess(p_id integer, idx integer, assess_dt date, err_cnt integer, primary key(p_id, idx));
+
 create table sprints(id integer auto_increment primary key, start_dt date, stu_id integer);
 create index sprints_idx_stu_id on sprints(stu_id);
 create table sprint_practice(sp_id integer, p_id integer, primary key(sp_id, p_id));
@@ -150,6 +152,10 @@ insert into practices values(2, 2, 0, 6, false, '2023-12-2', 1);
 insert into practices values(3, 1, 4, 9, true, '2023-12-4', 2);
 insert into practice_hard values(3, 5);
 insert into practice_hard values(3, 6);
+
+insert into practice_full_assess values(1, 0, '2023-6-20', 5);
+insert into practice_full_assess values(1, 1, '2023-8-23', 3);
+insert into practice_full_assess values(2, 0, '2023-6-20', 2);
 
 insert into sprints values(1, '2023-12-4', 1);
 insert into sprint_practice values(1, 1);

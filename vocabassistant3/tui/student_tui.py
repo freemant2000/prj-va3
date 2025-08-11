@@ -7,7 +7,7 @@ from .console_utils import indent_pr
 from .word_bank_search_tui import search_word_bank_tui
 from .sprint_tui import del_sprint_tui, add_sprint_tui, show_sprint_struct, sprint_main_tui
 from ..db_base import open_session
-from ..practice import Practice, add_practice, get_all_bws, get_practice, get_student
+from ..practice import Practice, add_practice, get_all_bws, get_practice, get_student, get_student_full_assess
 from ..sprint import get_sprints_for
 
 stu_id=0
@@ -18,6 +18,7 @@ def show_student_tui():
     with open_session() as s:
         stu=get_student(s, stu_id)
     cmds={"s": ("List practices and sprints for the student", show_student),
+          "sf": ("List practices with full assessment history", show_student_full_assess),
           "sw": ("Show the words in a practice", show_wds_in_prac_tui),
           "ap": ("Add a practice for the student", add_practice_tui),
           "dp": ("Delete a practice for the student", del_practice_tui),
@@ -46,6 +47,21 @@ def show_student():
 def show_practice(p: Practice, pr=print):
     h_wc, all_wc=p.get_word_counts()
     pr(f"{p.id} {p.wb.name} {p.fr_idx}-{p.to_idx} {h_wc}/{all_wc} {p.hard_only} {p.assess_dt}")
+
+def show_student_full_assess():
+    with open_session() as s:
+        stu=get_student_full_assess(s, stu_id)
+    pr=indent_pr(print)
+    if stu.pracs:
+        print("Practices")
+        for prac in stu.pracs:
+            show_practice(prac, pr)
+            show_full_assess(prac, pr)
+
+def show_full_assess(p: Practice, pr=print):
+    for fa in p.full_assess_list:
+        pr(f"\tDate: {fa.assess_dt}\tMisses: {fa.err_cnt}")
+
 
 def get_sample_tui():
     with open_session() as s:
