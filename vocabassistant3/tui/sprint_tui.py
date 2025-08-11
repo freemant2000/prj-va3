@@ -6,7 +6,7 @@ from .cmd_handler import CmdHandler, ExitException
 from .exercise_tui import add_exec_draft_tui, refine_exec_draft_tui, show_exec_summary, show_exec_tui
 from ..practice import Practice, get_practice
 from ..db_base import open_session
-from ..sprint import Sprint, add_sprint, get_revision_dates, get_sprint, get_sprints_for
+from ..sprint import Sprint, add_sprint, get_revision_dates, get_sprint, get_sprint_for_marking, get_sprints_for
 
 def add_sprint_tui(stu_id: int):
     p_ids=[int(p_id) for p_id in input("Input one or more practice IDs like 2,4,5: ").split(",")]
@@ -91,16 +91,22 @@ def del_prac_tui(sp_id: int):
 
 def mark_words_tui():
     with open_session() as s:
-        sp=get_sprint(s, sp_id)
+        sp=get_sprint_for_marking(s, sp_id)
     cmds={"sw": ("Show the words in the sprint", lambda: show_words_in_sp(sp)),
           "ch": ("Clear the hard words in the sprint", lambda: mark_hard_words(sp, False)),
           "sh": ("Set the hard words in the sprint", lambda: mark_hard_words(sp, True)),
+          "fa": ("Add full assessment records as needed", lambda: add_full_assess(sp)),
           "save": ("Save the markings and quit", lambda: save_sp(sp))}
     ch=CmdHandler("mw>", cmds)
     ch.main_loop()
 
+def add_full_assess(sp: Sprint):
+    sp.add_full_assess()
+    print("OK")
+
 def save_sp(sp: Sprint):
     with open_session() as s:
+
         s.merge(sp)
         s.commit()
         print("OK")

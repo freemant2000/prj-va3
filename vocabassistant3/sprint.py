@@ -8,7 +8,7 @@ import datetime
 from .db_base import Base
 from .word_def import WordDef, WordUsage, get_word_def, get_word_meaning
 from .sentence import Sentence, SentenceDraft, get_snt, get_snts_from_keywords, parse_snt_draft, refine_snt_draft
-from .practice import Practice, Student, get_practice
+from .practice import Practice, Student, get_practice, PracticeFullAssess
 from .word_bank import WordBank, BankWord
 
 class ExeciseWord(Base):
@@ -59,6 +59,15 @@ class Sprint(Base):
     stu_id: Mapped[int]=mapped_column(Integer, ForeignKey("students.id"))
     stu: Mapped[Student]=relationship(Student)
     
+    def add_full_assess(self):
+        for prac in self.pracs:
+            if not prac.hard_only:
+                fa=PracticeFullAssess()
+                fa.idx=len(prac.full_assess_list)
+                fa.assess_dt=datetime.date.today()
+                fa.err_cnt=prac.get_word_counts()[0]
+                prac.full_assess_list.append(fa)
+
     def is_hard(self, bw: BankWord)->bool:
         return any(prac.is_hard(bw) for prac in self.pracs)
     def find_bank_words(self, word: str)->Sequence[BankWord]:
@@ -145,6 +154,15 @@ def get_sprint(s: Session, sp_id: int)->Sprint:
     .options(joinedload(Sprint.pracs).joinedload(Practice.hard_w_indice)) \
     .options(joinedload(Sprint.pracs).joinedload(Practice.wb).selectinload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
     .options(joinedload(Sprint.execs).selectinload(Exercise.ews).joinedload(ExeciseWord.wd).joinedload(WordDef.meanings))
+  r=s.scalars(q)
+  sp=r.unique().first()
+  return sp
+
+def get_sprint_for_marking(s: Session, sp_id: int)->Sprint:
+  q=select(Sprint).where(Sprint.id==sp_id) \
+    .options(joinedload(Sprint.pracs).joinedload(Practice.hard_w_indice)) \
+    .options(joinedload(Sprint.pracs).joinedload(Practice.wb).selectinload(WordBank.bws).joinedload(BankWord.wd).joinedload(WordDef.meanings)) \
+    .options(joinedload(Sprint.pracs).joinedload(Practice.full_assess_list))
   r=s.scalars(q)
   sp=r.unique().first()
   return sp
