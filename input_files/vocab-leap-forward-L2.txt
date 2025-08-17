@@ -1,0 +1,87 @@
+[Great leap forward L2]
+leap=>2674
+	v,（優美）跳躍
+	n,（優美）跳躍
+forward
+	adv,向前
+produce
+	v,產生、生產
+production
+	n,生產
+sparrow
+	n,麻雀
+crop
+	n,農作物（種或收割，一棵或一類）
+develop
+	v,發展、開發
+industry
+	n,工業
+increase
+	v,增加
+	n,增加
+steel
+	n,鋼鐵
+prove
+	v,證明:proved, proven
+locust
+	n,蝗蟲
+organise
+	v,組織
+private
+	adj,私人的
+project
+	n,項目
+method
+	n,方法
+engineer
+	n,工程師
+abuse
+	v,虐待
+	v,濫用
+praise
+	v,讚償
+force
+	v,強逼
+	n,力
+output
+	v,輸出
+	n,輸出
+level
+	n,程度、水準、水平
+report
+	v,報告
+	n,報告
+lie<=761,0F-1F-2
+        v,說謊:lied, lied, lying
+        v,躺:lay, lain, lying
+        n,謊言
+lie about xx
+	v phr,謊報xx
+punish
+	v,懲罰
+farm
+	n,農場
+	v,耕作
+farmer
+	n,農夫
+share
+	v,分享
+control
+	v,控制
+	n,控制
+government
+	n,政府
+sharp=>560
+	adj,尖的
+	       adj,清醒的
+	adj,急速的（變化等）
+escape
+	v,逃走
+	n,逃走
+test
+        n,測試、測驗
+        v,測試
+lead, led, led
+	v,帶領
+lead to
+	v phr,導致
