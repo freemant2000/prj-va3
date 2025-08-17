@@ -9,8 +9,8 @@
 
 -- merge two worddefs
 -- select * from word_defs where word='us';
--- select * from snt_keywords where wd_id=1283;
 -- update bank_word set wd_id=652 where wd_id=1283;
+-- update snt_keywords set wd_id=652 where wd_id=1283;
 -- delete from word_meanings where wd_id=1283;
 -- delete from word_defs where id=1283;
 
