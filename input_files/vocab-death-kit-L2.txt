@@ -1,0 +1,95 @@
+[Death kit L2]
+era
+	n,時代
+practise=>3410
+	v,練習
+	v,實踐
+education
+	n,教育
+skill
+	n,技能
+encourage
+	v,鼓勵
+role
+	n,（某人扮演的）角色
+	n,作用
+date=>312
+	n,日期
+	v,約會
+	n,約會
+gender
+	n,性別
+priority
+	n,優先事項
+	n,優先級
+funeral
+	n,葬禮
+include
+	v,包括
+coffin
+	n,棺材
+lay
+	v,輕放:laid, laid, laying
+	v,生（蛋）:laid, laid, laying
+sew, sewed, sewn
+	v,繡、縫紉
+knit, knit, knit
+	v,編織
+kit
+	n,（工具或部件）套裝
+relative
+	adj,相對的
+	n,親戚
+common
+	adj,常見的
+	adj,共同的
+place=>145
+	n,地方
+	v,擺放
+comfort=>1388
+        n,舒適
+        v,使舒適
+ 	v,安慰
+receive
+	v,收到
+contain
+	v,包含
+probably
+	adv,很可能
+social
+	adj,社會的
+	adj,社交的
+hold=>1090
+        v,拿著、持有:held, held
+        v,保留:held, held
+        v,有（會議等）:held, held
+        v,扶著:held, held
+	v,舉行:held, held
+mean
+	v,意味著
+prepare
+	v,準備
+dress=>494
+        n,衣服
+        n,全身裙
+        v,穿衣
+ 	 v,給...穿衣
+organise
+	v,組織
+pretend=>3832
+	v,假裝
+	adj,假裝的
+century
+	n,世紀
+important
+	adj,重要的
+doll
+	n,洋娃娃
+sweet
+	adj,甜的
+death
+	n,死亡
+dead
+	adj,死的
+the dead
+	n phr,死了的人
