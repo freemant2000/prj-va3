@@ -1,0 +1,74 @@
+[Robinhood L2]
+stock
+	n,股票
+share=>890
+	v,分享
+	n,股分
+	n,份額
+invest
+	v,投資
+invest in xx
+	v phr,投資於某物
+graduate
+	v,畢業
+balance=>2628
+        n,餘額、結存
+	n,平衡
+restrict
+	v,限制
+negative
+	adj,負的
+	adj,消極的、負面的
+positive
+	adj,正的
+	adj,積極的、正面的
+demand
+	v,要求
+	n,要求
+response
+	n,回應
+panic
+	v,恐慌:panicked, panicked
+	n,恐慌
+despair
+	n,絕望
+owe
+	v,欠
+worth
+	adj,值得的
+unfortunately
+	adv,不幸地
+tragic
+	adj,悲劇的
+pocket money
+	n phr,零用（錢）
+college
+	n,大專院校
+fee
+	n,（服務等）費用
+show up
+	v phr,（按安排）現身、顯現出來
+experience
+	n,經驗
+receive
+	v,收到
+account
+	n,賬戶
+savings=>2369
+	n,積蓄
+customer
+	n,顧客
+service
+	n,服務
+reply
+	v,回覆
+take his own life
+	pred,自殺
+allow
+	v,允許
+decision
+	n,決定
+lead to
+	v phr,導致
+without
+	prep,沒有
