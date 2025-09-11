@@ -1,0 +1,40 @@
+[Doraemon-13 L1]
+better than xx
+	adj phr,比xx更好
+bored
+	adj,感到悶的
+call sb adj
+	pred,說某人是怎樣的
+call xx yy
+	pred,叫xx做yy
+come over
+	v phr,來訪（去某人的家）
+come, came, come
+	v,來
+glad
+	adj,高興的（放心）
+just
+	adv,只是
+late
+	adj,遲的
+	adv,遲
+next door
+	n phr,隔壁
+on sale
+	adv phr,發售
+roof
+	n,屋頂（結構）
+safely
+	adv,安全地
+tired of xx
+	adj phr,對某物感到厭倦
+too
+	adv,太
+	adv,也
+walk
+	v,走路
+worry about xx
+	v phr,擔心xx
+you
+	pron,你
+	pron,你們
