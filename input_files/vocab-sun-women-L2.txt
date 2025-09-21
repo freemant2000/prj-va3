@@ -1,0 +1,84 @@
+[Women of Sun L2]
+arrange
+	v,安排
+	v,精心擺放
+bankrupt
+	adj,精心破產的
+Hawaii
+	n,夏威夷
+rarely
+	adv,很少（發生）
+political
+	adj,政治的
+activity
+	n,活動
+publicly
+	adv,公開地
+acknowledge
+	v,確認／認同
+relationship
+	n,關係
+support
+	v,支持
+	n,支持
+adopt
+	v,收養
+	v,採納
+deliver
+	v,遞送
+weapon
+	n,武器
+reputation
+	n,聲譽
+contact=>2176
+	v,聯絡
+	n,聯絡
+cut off
+	v phr,切斷
+divorce
+	v,離婚、同某人離婚
+partner
+	n,伴侶、夥伴
+pocket
+	n,口袋
+about to
+	aux phr,即將會
+hand=>635
+	n,手
+	v,遞給
+gold
+	n,金
+gift
+	n,禮物
+watch
+	v,觀看
+	n,手錶
+secret
+	n,秘密
+	adj,秘密的
+message
+	n,訊息
+village
+	n,村莊
+marriage
+	n,婚姻
+danger
+	n,危險
+protect
+	v,保護
+daughter
+	n,女兒
+businessman
+	n,生意人
+due to
+	prep phr,因為
+against
+	prep,反對
+government
+	n,政府
+key=>749
+	n,鎖匙
+	adj,關鍵的
+	n,關鍵
+join
+	v,參與
