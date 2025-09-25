@@ -1,0 +1,30 @@
+[Doraemon-14 L1]	
+animal
+	n,動物
+biscuit
+	n,餅乾
+change
+	v,改變
+	n,改變
+	n,找續
+correct
+	adj,正確的
+	v,改正
+could you please
+	m+s+adv,請您（做某事）
+do, did, done
+	v,做
+guest
+	n,賓客
+look
+	v,望
+	v,看起來
+love
+	v,愛
+	n,愛
+much
+	det,多（不可數、否定）
+scared
+	adj,害怕的
+something
+	pron,一些東西、某東西
