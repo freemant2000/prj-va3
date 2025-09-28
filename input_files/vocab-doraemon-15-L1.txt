@@ -1,0 +1,36 @@
+[Doraemon-15 L1]	
+angry with sb
+	adj phr,生某人的氣
+bathroom
+	n,浴室、洗手間
+for
+	prep,持續了（多久）
+horse
+	n,馬
+important
+	adj,重要的
+let
+	v,讓:let,let
+let sb do sth
+	v phr,讓某人做某事
+like
+	v,喜歡
+    prep,像
+many
+	det,許多的（可數）
+rude
+	adj,粗魯的
+sir
+	n,先生（稱謂）
+sound
+	v,聽起來
+    n,聲音
+Thank goodness
+	v+obj,謝天謝地
+turn xx into yy
+	v phr,將xx變成yy
+What happened to xx?
+	c,xx出了甚麼事
+work
+	v,工作
+    n,工作（要做的事情）
