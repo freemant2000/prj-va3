@@ -26,7 +26,7 @@ sound
 	v,聽起來
     n,聲音
 Thank goodness
-	v+obj,謝天謝地
+	intj,謝天謝地
 turn xx into yy
 	v phr,將xx變成yy
 What happened to xx?
