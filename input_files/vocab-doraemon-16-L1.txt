@@ -1,0 +1,40 @@
+[Doraemon-16 L1]	
+call
+        v,致電
+        v,呼叫
+        n,來電
+chicken
+        n,雞肉
+        n,雞、小雞
+get out
+	v phr,出去
+hear, heard, heard
+	v,聽到
+hello=>644
+	intj,哈佬
+	intj,喂
+minute
+	n,分鐘
+nice=>782
+	adj,友好的
+	adj,良好的
+play a trick on sb
+	v phr,作弄某人
+please
+	adv,請
+someone
+	pron,某人
+sorry
+	adj,抱歉的
+speak, spoke, spoken
+	v,講
+table
+	n,枱（桌子）
+talk with sb
+	v phr,同某人談話
+trick=>1184
+        n,把戲
+        v,戲弄
+		n,惡作劇
+who
+	pron,誰
