@@ -1,0 +1,71 @@
+[Henry's wife L2]
+Spain
+	n,西班牙
+frustrated
+	adj,沮喪的
+take his place
+	v+obj,取代他
+male
+	adj,男性的、雄性的
+	n,男性
+fall in love with xx
+	v phr,愛上xx
+Pope
+	n,教宗
+grant
+	v,允許（某請求）、同意給予
+request
+	v,請求
+	n,請求
+divorce
+	v,離婚、同某人離婚
+refuse
+	v,拒絕（做某事）
+appoint=>2913
+	v,指派、委任
+contribute to
+        v phr,有份導致
+        v phr,對...作貢獻
+establishment
+	n,設立
+branch
+	n,分枝
+	n,分公司、分行
+separate
+	v,分開
+	adj,分開的
+church=>923
+	n,教堂
+	n,教庭
+England
+	n,英格蘭
+Roman
+	adj,羅馬的
+	n,羅馬人
+major
+	adj,主要的
+event
+        n,事件
+        n,（社交）活動
+create=>2768
+	v,創造、創建
+leader=>985
+	n,領袖、領導者
+marry
+	v,結婚、娶、嫁
+marriage
+	n,婚姻
+believe
+	v,相信
+die of xx
+	v phr,死於某病
+history
+	n,歷史
+death
+	n,死亡
+husband
+	n,丈夫
+give birth to
+	v phr,生（小孩等）
+gender
+	n,性別
