@@ -1,0 +1,82 @@
+[Henry's 2nd wife L2]
+brief
+	adj,簡短的
+battle
+	n,戰鬥（名）
+	n,戰役（名）
+Rome
+	n,羅馬
+France
+	n,法國
+relationship
+	n,關係
+refuse
+	v,拒絕（做某事）
+mistress
+	n,情婦
+fierce
+	adj,兇猛的
+	adj,激烈的
+political
+	adj,政治的
+remain
+	v,停留、依然是
+hopeful
+	adj,有希望的
+pregnancy
+	n,懷孕
+successful
+	adj,成功的
+unsuccessful
+	adj,不成功的
+series
+	n,系列
+give birth to
+	v phr,生（小孩等）
+date
+	n,日期
+	v,約會
+	n,約會
+interest=>1113
+        n,興趣
+        n,利息
+        n,利益
+	v,使有興趣
+desire=>1669
+	v,渴望
+	n,欲望
+desperate
+	adj,絕望的
+claim
+	v,聲稱
+	n,聲稱
+divorce
+	v,離婚、同某人離婚
+sentence sb to sth
+	v phr,判處某人某刑罰
+crime
+	n,罪案
+sighting
+	n,目擊
+wander
+	v,遊蕩
+attract
+	v,吸引
+church
+	n,教堂
+	n,教庭
+cut off
+	v phr,切斷
+report
+	v,報告
+	n,報告
+childhood
+	n,童年
+tower
+	n,塔
+London
+	n,倫敦
+grounds
+	n,一片地域（某目的）
+death
+	n,死亡
