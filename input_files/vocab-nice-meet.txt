@@ -1,0 +1,34 @@
+[Nice to meet you]
+president=>2193
+   n,總統
+        n,主席、會長
+association
+	n,協會
+during
+	prep,在...期間
+strict
+	adj,嚴格的
+normal
+        adj,正常的
+        adj,普通的
+even
+	adv,甚至
+cope with
+	v phr,處理
+manage
+	v,管理
+complete
+	v,完成、使完整
+assignment
+	n,作業、任務
+note down
+	v phr,記下來
+due
+	adj,到時間做的
+receive
+	v,收到
+extracurricular activity
+	n phr,餘暇活動
+match
+	v,匹配
+
