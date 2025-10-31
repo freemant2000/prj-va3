@@ -1,0 +1,249 @@
+[Form 1-b]                                                                                    
+starter
+	n,發令員
+pick up=>657
+	v phr,拾起
+	v phr,（非正式途徑）學會
+guess
+	v,猜
+	n,猜測
+letter
+	n,信
+	n,字母
+catch up with
+	v phr,趕上
+skateboarding
+	n,滑板運動
+well
+	adv,很好地
+	n,井
+in order to
+	prep phr,為了
+favourite
+	adj,最喜愛的
+there
+	adv,那裡
+principal=>3751
+	n,（美）校長
+glow
+	v,（熱等）發光
+	n,光輝
+sled
+	n,雪橇
+opening ceremony
+	n phr,開幕儀式
+coach=>3379
+	n,教練
+	n,長途巴士
+grannie
+	n,（小孩用語）嫲嫲
+boring
+	adj,（令人覺得）悶的
+prize
+	n,獎（有金錢價值）
+village
+	n,村莊
+rather
+	adv,相當
+electronic
+	adj,電子的
+finish line
+	n phr,終點線
+poem
+	n,詩
+competition
+	n,競爭
+	n,比賽
+hurdle
+	n,欄
+	n,障礙
+full of xx
+	adj phr,充滿xx的
+energy
+	n,能量
+class   
+	n,課、班
+smart
+	adj,醒目的                                                                                                                           
+ground=>645
+	n,地面
+	n,（體育等）場地
+sky
+	n,天空
+relay
+	v,接力
+	n,接力
+neither xx nor yy
+	conj phr,不xx也不yy
+team
+	n,團隊
+start
+	v,開始
+	n,開始
+anywhere
+	adv,任何地方
+gardening
+	n,園藝
+bark
+	v,吠
+have a word
+	v phr,談一談
+boy scout
+	n phr,童子軍
+tape=>1117
+	n,錄音帶
+	n,膠紙
+	v,錄音	
+	n,終點線
+shopping
+	n,購物
+injury
+	n,傷
+wonderful
+	adj,奇妙的、美妙的
+third
+	ord,第三
+friendly
+	adj,友善的
+long jump
+	n,跳遠
+yell
+	v,大叫（負面情緒）
+near
+	prep,近
+        adj,近的
+remember
+	v,記得
+evening
+	n,傍晚
+look around
+	v phr,四處看
+everyone
+	n,每一個人
+tackle
+	v,著手處理                                                                                                                         
+get out of xx
+	v phr,走出xx
+ceremony
+	n,儀式
+as=>329
+        prep,作為
+        conj,隨著
+        conj,當（同時發生）
+	conj,因為
+	conj,正如
+fix
+	v,修理
+event
+	n,事件
+	n,（社交）活動
+job
+	n,職業、（一份）工作
+reservoir
+	n,水庫
+hurt,hurt,hurt
+	v,傷害
+pass
+	v,經過
+lead,led,led
+	v,帶領
+free
+	adj,自由的
+cute
+	adj,可愛的
+lovely
+	adj,可愛的
+most
+      adv,最（xx的）
+        det,最多的
+dull
+	adj,沉悶的
+November
+	n,十一月
+concentrate
+	v,集中精神
+housing agent
+	n phr,地產商
+excerpt
+	n,摘錄（一篇文中抽出一部份）
+often
+	adv,經常、時常
+golfer
+	n,打高爾夫球者
+amaze
+	v,使覺得神奇
+bore
+	v,使人感到悶
+confuse
+	v,使混亂
+excite
+	v,使興奮
+surprise
+	v,使驚訝
+gallop
+	v,奔馳（馬等）                                                                                                                     
+wool
+	n,羊毛
+wipe
+	n,抹
+meat
+	n,肉
+rubbish
+	n,（英）垃圾
+fly
+	v,飛:flew, flown
+	n,蒼蠅
+butcher
+	n,肉販
+umbrella
+	n,雨傘
+raincoat
+	n,雨衣
+wind
+	n,風
+blow, blew, blown
+	v,吹
+egg
+	n,蛋  
+hen
+	n,母雞
+lay
+	v,輕放:laid,laid,laying
+	v,生（蛋）:laid,laid,laying
+clock
+	n,時鐘
+nest
+	n,巢  
+bird=>511
+	n,雀鳥
+ear
+	n,耳朵
+smell
+	v,聞到:smelt,smelt
+nose
+	n,鼻子
+teacup
+	n,茶杯
+bitter
+	adj,苦的
+jigsaw puzzle
+	n phr,砌圖玩具
+piano
+	n,鋼琴
+pea
+	n,碗豆
+snail
+	n,蝸牛
+paper folding
+	n phr,摺紙                                                                                                             
+invitation
+	n,邀請
+soup
+	n,湯
+soap
+	n,肥皂 
+construction=>2570
+	n,建造
+	n,構造
+song    
+	n,歌
