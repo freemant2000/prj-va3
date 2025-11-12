@@ -1,0 +1,31 @@
+bathroom
+effect
+greedy
+important
+like
+normal
+problem
+rude
+scold
+shortly
+sir
+suit
+taste
+until
+without
+
+bathroom	浴室
+effect	效果
+greedy	貪心的
+important	重要的
+like	似、喜歡
+normal	正常的
+problem	難題
+rude	粗魯的
+scold	駡
+shortly	不久
+sir	先生（稱謂）
+suit	適合
+taste	口味、味道、嚐起來
+until	直至
+without	沒有（前置詞）
