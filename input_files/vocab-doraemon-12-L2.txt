@@ -1,0 +1,12 @@
+[Doraemon-12 L2]
+apologise
+	v,道歉
+chat=>2048
+	v,傾談、聊天
+	n,傾談、聊天
+chicken=>310
+	n,雞肉
+	n,雞
+not...yet
+	adv phr,尚未
+

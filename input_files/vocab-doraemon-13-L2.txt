@@ -1,0 +1,27 @@
+[Doraemon-13 L2]
+forget, forgot, forgotten
+	v,忘記
+God
+	n,神
+gram
+	n,克
+hate
+	v,憎恨、討厭
+kind
+	adj,仁慈的
+	n,種類
+late
+	adj,遲的
+market
+	n,市場
+meat
+	n,肉
+nice=>782
+	adj,友好的
+	adj,良好的、令人愉快的
+secret
+	n,秘密
+	adj,秘密的
+vase
+	n,花瓶
+

@@ -1,0 +1,276 @@
+[Form 3a]
+announce
+	v,宣佈
+estimate
+	v,估算
+	n,估算
+predator
+	n,捕食者
+chemical
+	v,化學物品
+swallow
+	v,呑
+	n,燕子
+Philippines
+	n,菲律賓
+express
+	v,表達
+concern
+ 	n,關心、擔心
+        v,使關心、使擔心
+violation
+	n,侵犯、違反
+export
+	v,（貨物等）出口
+	n,（貨物等）出口
+knock over
+	v phr,撞倒
+sunscreen
+	n,太陽油
+sunburn
+	n,曬傷
+blame
+	v,責備
+position
+	n,位置
+album=>2999
+	n,相簿
+	n,唱片
+abroad
+	adv,在外國
+host
+	n,主人家
+	n,主持人
+	n,宿主
+host family
+	n phr,寄宿家庭
+e-learning
+	n,電子學習
+chef
+	n,大廚
+territorial
+	adj,領土的
+dispute
+    v,爭端
+        n,爭端
+rule against
+	v phr,判...輸
+claim
+	v,聲稱
+	n,聲稱
+survey
+	v,統計調查
+	n,統計調查
+majority
+	n,大多數
+lead to
+	v phr,導致
+result in
+	v phr,導致
+conflict
+	n,衝突
+Australia
+	n,澳大利亞（澳洲）
+tank
+	n,水缸
+	n,坦克
+saltwater
+	n,鹹水
+dive
+	v,潜水:dived/dove, dived
+option
+	n,選項
+enter
+	v,進入
+without
+	prep,沒有
+attend
+	v,出席
+research
+	v,研究
+	n,研究
+show
+	v,展示、顯示:showed, shown
+	n,展示、顯示
+regularly
+	adv,有規律地
+	adv,經常地
+recommend
+	v,推薦
+stress=>2269
+	v,強調
+	n,（感受）壓力
+per=>2327
+	prep,每（用於計算）
+grade level
+	v phr,年級
+guide dog
+	n phr,導盲犬
+heaven
+	n,天堂
+guard
+	v,守衞
+	n,守衞
+president
+	n,總統
+	n,主席
+human right
+	n phr,人權
+self-confidence
+	n,自信
+skill
+	n,技能
+quality
+	n,質量
+not only...but also...
+	conj phr,不旦...也...
+Atlantic
+	n,大西洋
+mile
+	n,英里
+coast
+	n,海岸
+overseas
+	adj,海外的
+Argentina
+	n,阿根庭
+last=>626
+        det,最後的
+        det,上一個的
+        adv,最後一個（做某事
+	v,持續
+landmine
+	n,地雷
+warn
+	v,警告
+stay away
+	 v phr,保持距離（片語）
+trigger
+	v,觸發
+no longer
+	adv,不再
+mammal
+	n,哺乳類動物
+impression
+	n,印象
+India
+	n,印度
+Korea
+	n,韓國
+pleasure
+	n,愉快
+cage
+	n,籠
+study
+	v,學習（做題等）
+        v,研究
+        n,研究
+kindergarten
+	n,幼稚園
+data
+	n,數據
+beneficial
+	adj,有益的
+harmful
+	adj,有害的
+peel
+	v,削皮
+caught in the rain
+	v phr,下雨而措手不及
+lorry
+	n,貨車
+hairstyle
+	n,髮型
+vase
+	n,花瓶
+headache
+	n,頭痛
+put on weight
+	v phr,增加了體重
+melt
+	v,融
+remark
+	v,評論
+	n,評語
+apologise
+	v,道歉
+recess
+	n,小息
+detention=>3845
+	n,拘留
+	n,留堂
+herring
+	n,鯡魚
+locust
+	n,蝗蟲
+peninsula
+	n,半島
+spaceship
+	n,太空船
+Mars
+	n,火星
+terrorist
+	n,恐怖分子
+blow up
+	v phr,炸毀
+fortunately
+	adv,幸運地
+drop out of
+	v phr,離開（學校等）
+reflection=>3621
+	n,鏡像映射
+	n,反射
+	n,反省
+image
+	n,形像
+        n,影像、圖像
+real
+	adj,真實的
+	adj,真正的
+virtual
+	adj,虛擬的
+vertically
+	adv,垂直地
+invert
+	v,倒轉
+mix in
+	v phr,混入
+vinegar
+	n,醋
+forecast
+	v,預告
+	n,預告
+worship
+	v,崇拜
+tulip
+	n,鬱金香
+lily
+	n,百合花
+vehicle
+	n,車輛
+manufacture
+	v,製造
+mechanic
+	n,機械技師
+plastic surgery
+	n phr,整容手術
+projector
+	n,投影機
+worksheet
+	n,工作紙
+fried food
+	n phr,煎炸食物
+kangaroo
+	n,袋鼠
+confrontation
+	n,對峙
+scratch
+	v,抓、抓損
+	n,抓、抓損
+come to his assistance
+	v phr,去幫他
+currently
+	adv,目前
+pepper
+	n,胡椒
+

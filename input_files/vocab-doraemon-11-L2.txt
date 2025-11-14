@@ -1,19 +1,4 @@
-bathroom
-effect
-greedy
-important
-like
-normal
-problem
-rude
-scold
-shortly
-sir
-suit
-taste
-until
-without
-
+[Doraemon-11 L2]
 bathroom	浴室
 effect	效果
 greedy	貪心的
