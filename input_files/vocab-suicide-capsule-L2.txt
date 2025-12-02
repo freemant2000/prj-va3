@@ -1,0 +1,88 @@
+[Suicide-capsule L2]
+suicide
+	n,自殺
+capsule
+	n,囊
+futuristic
+	adj,先進的（好像來自未來）
+oxygen
+	n,氧氣
+identity
+	n,身份、自我形象
+coffin
+	n,棺材
+process
+	v,處理
+	n,過程
+Switzerland
+	n,瑞士
+swiss
+	adj,瑞士的
+minister
+	n,大臣、部長
+suffer
+	v,受苦／損
+suffer from xx
+	v phr,因xx而受苦／損
+describe
+	v,描述、描寫
+peaceful
+	adj,和平的
+take his own life
+	v+obj,自殺
+mental
+	adj,內心的、心理的
+health
+	n,健康
+press
+	v,按、壓
+button
+	n,按鈕
+raise=>1824
+        v,養
+        v,舉起、提高
+        v,籌（款等）
+	v,提出
+legal
+	adj,法律的
+illegal
+	adj,非法的
+request
+	n,請求
+product
+	n,產品
+safety
+	n,安全
+meet=>543
+	v,遇見:met, met
+	v,達到／滿足（某要求）:met, met
+law
+	n,法律
+serious
+	adj,嚴重的
+issue
+	n,（需討論的）事情／問題
+president
+	n,總統
+	n,主席、會長
+organisation=>2947
+	n,組織、機構
+cost
+	v,值（多少錢）:cost, cost
+	n,成本
+pleased
+	adj,高興的
+invent
+	v,發明
+develop
+	v,發展、開發
+take
+	v,需要（時間）:took, taken
+choose, chose, chosen
+	v,選擇
+provide
+	v,提供
+final
+	adj,最終的
+action
+	n,行動
