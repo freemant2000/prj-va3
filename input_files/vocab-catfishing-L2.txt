@@ -1,0 +1,112 @@
+[Catfishing L2]
+confirm
+	v,確認
+request
+	v,請求
+	n,請求
+fake
+	v,偽造
+	adj,偽造的
+jackpot
+	n,頭獎（彩票等）
+hit, hit, hit
+	v,擊中
+hit the jackpot
+	v+obj,中頭獎、發達
+marriage
+	n,婚姻
+realise
+	v,意識到
+matter
+	n,事情
+	n,物質
+mourn
+	v,哀悼
+receive
+	v,收到
+communicate
+	v,溝通
+exist
+	v,存在
+operate
+	v,操作
+statement
+	n,聲明
+private
+	adj,私人的
+resolve
+	v,解決（矛盾等）
+cancer
+	n,癌症
+stroke=>3679
+        v,輕撫
+	n,中風
+heart attack
+	n phr,心臟病發
+witness
+	n,證人
+in person
+	adv phr,親身、當面
+it turns out that
+	s+v,最終發現
+common
+	adj,共同的
+handsome
+	adj,英俊的
+relationship
+	n,關係
+female=>1051
+ 	adj,女性的、雌性的
+        n,女性、雌性
+cousin
+	n,堂／表兄弟姊妹
+claim
+	v,聲稱
+	n,聲稱
+protection
+	n,保護
+account
+	n,賬戶
+brain
+	n,腦
+message
+	n,訊息
+lie
+	v,說謊:lied, lied, lying
+        v,躺:lay, lain, lying
+        n,謊言
+stranger
+	n,陌生人
+community
+	n,社區、社群
+break down
+	v phr,（機器等）壞
+plan
+	v,計劃
+	n,計劃
+actually
+	adv,實際上
+show up
+	v phr,（按安排）現身、顯現出來
+shoot, shot, shot
+	v,（用槍等）射擊
+hospital
+	n,醫院
+death
+	n,死亡
+search=>2517
+	v,搜尋
+	n,搜尋
+answer
+	v,回答
+	n,答案
+address
+	n,地址
+total=>669
+        n,總數
+	adj,總的
+	adj,完全的
+group=>790
+	n,群組、小組
+London
+	n,倫敦
