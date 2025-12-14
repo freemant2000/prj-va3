@@ -1,0 +1,73 @@
+[Online predator L2]
+gradually=>2013
+	adv,逐漸地
+admit
+	v,承認
+publish
+	v,出版、發佈
+tear=>1208
+        v,撕爛:tore, torn
+	n,眼淚
+demand=>2963
+	v,要求
+	n,要求
+	n,需求
+plunge
+	v,急跌
+managed to xx
+	v phr,成功做了xx
+abuse
+	v,虐待
+	n,虐待
+	v,濫用
+	n,濫用
+charge=>2163
+        v,收費
+        n,收費
+	v,起訴
+	n,起訴
+fake
+	v,偽造
+	adj,偽造的
+nude
+	adj,（藝術）裸體的
+involve
+	v,（使）涉及
+would rather
+	v phr,寧願
+it turns out that
+	s+v,最終發現
+target
+	n,目標
+	v,以...為目標
+refuse
+	v,拒絕（做某事）
+receive
+	v,收到
+accept
+	v,接受
+request
+	v,請求
+	n,請求
+praise
+	v,讚償
+contact
+	v,聯絡
+	n,聯絡
+sentence=>1076
+	n,句子
+	v,判處
+	n,刑罰
+life sentence
+	n phr,終身監禁
+elephant
+	n,大象
+gun
+	n,槍
+chat
+	v,傾談、聊天
+	n,傾談、聊天
+account
+	n,賬戶
+darkness
+	n,黑暗
