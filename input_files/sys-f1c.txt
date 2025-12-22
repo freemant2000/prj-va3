@@ -1,0 +1,269 @@
+[Form 1c]
+skip
+     v,跳過（不做）
+     v,跳繩
+old
+	adj,舊的
+country
+	n,國家
+skill
+   n,技能
+field
+	n,（籃球、足球等）場
+cheese
+  n,芝士
+choose
+  v,選擇:chose,chosen
+waffle
+  n,窩夫
+poem
+    n,詩
+worse than xx
+	adj phr,比xx更差
+careful
+ 	adj,小心的
+tall
+	adj,高的（如身高等）
+seeded
+	adj,有核的
+fried
+	adj,炸的
+housework
+   n,家務
+slow
+    adj,慢的
+strong
+  adj,強的、強壯的
+tortoise
+    n,陸龜
+durian
+  n,榴槤
+sour
+     adj,酸的
+food festival
+   n phr,美食節
+table tennis
+    n phr,乒乓球
+dried raisin
+    n,提子乾
+ripe
+    adj,熟的
+light
+   adj,輕的
+   n,光
+shell
+   n,貝殼
+model
+   n,模型
+watermelon
+  n,西瓜
+health
+  n,健康
+lifeguard
+   n,救生員
+juice
+   n,果汁
+lift weight
+  v phr,舉重
+Japan
+   n,日本
+dragon fruit
+    n phr,火龍果（片語）
+TV station
+  n phr,電視台
+flat
+    n,住宅單位
+expensive
+   adj,昂貴的
+patient
+  adj,有耐性的
+clearly
+  adv,清楚地
+trick=>1184
+        n,把戲
+        v,戲弄
+        n,惡作
+   n,計謀
+worst
+   adj,最差的
+centimetre
+  n,公分／厘米
+fly kites
+     v phr,放風箏
+competition
+ 	n,比賽
+fire engine
+		n,消防車
+engine
+	n,引擎
+club
+    n,俱樂部
+noodle
+  n,麵
+tennis
+  n,網球
+collect coins
+	v phr,收集硬幣
+roll=>3278
+        v,滾動、使滾
+        v,卷動
+        n,卷
+juicy
+    adj,多汁的
+cook
+    n,廚師
+scene
+   n,現場、場景
+bar
+	n,棒  
+bread
+   n,麵包
+vegetable
+	n,蔬菜
+fire station
+	 n phr,消防局
+magic
+	n,魔術
+fast food
+   n phr,快餐
+singer
+  n,歌手
+egg roll
+   n phr,蛋卷
+fresh
+   adj,新鮮的  
+take care of
+    v phr,照顧、看管
+guard
+   n,守衞    
+cute
+    adj,可愛的
+kind
+	 adj,仁慈的
+        n,種類
+surprise
+    v,使驚訝
+strawberry
+   n,士多啤梨
+bunch
+	n,一束
+balloon
+ 	n,汽球
+play tricks
+	v phr,玩魔術
+	v phr,玩把戲
+bow pasta
+   n phr,蝴蝶形通心粉
+delicious
+   adj,美味的
+festival
+    n,節日
+banana
+  n,香蕉    
+lime
+    n,青檸
+fold
+    v,摺
+lemon
+   n,檸檬
+dry
+ adj,乾的
+world
+   n,世界
+present
+  n,禮物
+shell pasta
+  n phr,貝瞉通心粉
+sandwich
+    n,三文治
+streamer
+    n,飄帶 
+basketball
+  n,籃球
+kim chi
+	n phr,泡菜
+curry   
+	n,咖喱
+pineapple
+	n,菠蘿
+bow
+	n,弓
+	n,蝴蝶結
+peanut
+	n,花生
+longan
+  	n,龍眼
+life
+    n,生命
+egg tart
+    n phr,蛋撻
+popper
+  n,砲竹、發出砲竹聲的東西
+waiter
+  n,侍應生
+sashimi
+	n,魚生
+gym
+	n,體育館（簡寫）
+French fries
+	n phr,薯條（全寫）
+candle
+  n,爉燭
+tart
+    n,（點心）撻
+clinic
+  n,診所
+green pea soup
+  n phr,綠碗豆湯
+sing
+    v,唱:sang,sung
+cycle
+	v,踏單車
+shell picture
+	n phr,貝瞉畫
+musician
+    n,音樂家
+plum=>2482
+    n,梅、李子
+pear
+    n,梨
+home helper
+ 	n phr,家傭
+bravely
+  adv,勇敢地
+sports camp
+	n phr,運動營
+pasta
+	n,意粉 
+interesting
+	adj,有趣的
+hippo
+	n,河馬
+lift
+	v,舉起
+net
+	n,網
+cherry
+	n,車厘子
+fried chicken wing
+	n phr,炸雞翼
+biscuit
+	n,餅乾
+music
+   n,音樂
+hat
+	 n,帽子
+fish ball
+	n phr,魚蛋（丸）
+place
+	n,地方
+next to xx
+	prep phr,在xx旁邊（左右）
+weak
+	adj,虛弱的
+sit up
+	v phr,仰卧起坐
+filling
+	n,饀料
+dentist
+ 	n,牙醫
