@@ -1,0 +1,30 @@
+[Doraemon-16 L2]
+revenge
+	n,復仇
+going to
+	v phr,會（之前決定了）
+study
+	v,學習（做題等）
+take revenge
+	v phr,復仇
+backward
+	adv,向後
+corner
+	n,角落
+amaze=>4064
+	v,使覺得神奇、使驚訝
+liar
+	n,說謊者
+myself=>734
+	pron,我自己
+	adv,獨力
+turn
+	v,轉向
+screen
+	n,屏幕
+right
+	n,右邊
+        adj,右邊的
+        adj,正確的	
+others
+	pron,其他人

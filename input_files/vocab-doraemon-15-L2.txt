@@ -1,0 +1,62 @@
+[Doraemon-15 L2]
+[Doraemon-15 L2]
+adult
+	n,成年人
+anger
+	n,憤怒（名）
+angry with sb
+	生某人的氣
+apologise
+	道歉
+ashamed
+	羞耻的
+backyard
+	後院
+don't have to
+	不必
+find out
+	找出（某重大資訊）
+find
+	找到、發現
+forget
+	忘記
+go too far
+	做得太過份
+imagination
+	想象力、想象（名）
+injury
+	傷（名）
+insult
+	侮辱（動、名）
+magic spell
+	魔術咒語
+mention
+	提及
+nap
+	小睡（名）
+robot
+	機械人
+secret
+	秘密、秘密的
+spy
+	間諜、收集情報
+spy on sb
+	（偷偷）監視某人
+take a nap
+	小睡
+take
+	拿走、採用
+teach sb a lesson
+	教訓某人
+tell
+	判斷、告訴
+terrible
+	可怕的、極差的
+trash can
+	垃圾桶（美）
+want sb to do sth
+	想某人做某事
+worry
+	擔心（動、名）
+yeah
+	（非正式）對(yes)

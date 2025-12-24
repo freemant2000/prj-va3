@@ -1,0 +1,98 @@
+[Wrong-leaders-1 L2]
+pretend
+	v,假裝
+pole
+	n,極（南北極、磁極等）
+polar
+	adj,極的、極地的
+explore
+	v,探索
+explorer
+	n,探索家
+exploration
+	n,探索
+target
+	n,目標
+overlook
+	v,忽視
+brilliant
+	adj,極好的
+alternative
+	adj,可替代的
+        n,替代品
+        n,選項
+documentary=>3846
+	n,紀錄片
+hire
+	v,聘請
+Irish
+	adj,愛爾蘭的
+	n,愛爾蘭人
+captain
+ 	n,船長
+        n,隊長	
+Norway
+	n,挪威
+consistently
+	adv,往往
+achieve
+	v,達成
+end up
+	v phr,（沒料到）最終
+disaster
+	n,災難
+in charge of sth
+	prep phr,負責領導某物
+admire
+	v,（心裡）讚賞
+	v,仰望
+praise=>3880
+	v,（語言上）讚賞
+meanwhile=>3732
+	adv,與此同時
+leader=>985
+	n,領袖、領導者
+leadership
+	n,領導力
+failure
+	n,失敗
+set off
+	v phr,出發
+set off for xx
+	v phr,出發去某地
+largely
+	adv,基本上
+age=>985
+	n,年齡
+        v,變老
+        n,年代、時代
+north
+	n,北方
+south
+	n,南方
+successful
+	adj,成功的
+library
+	n,圖書館
+university
+	n,大學
+social
+	adj,社會的
+	adj,社交的
+search
+	v,搜尋
+	n,搜尋
+search for xx
+	v phr,搜尋（尋找）某物
+century
+	n,世紀
+trip
+	n,旅行、旅程
+post=>3807
+        v,寄出
+        v,張貼
+        n,貼文
+result in
+	v phr,導致
+death
+	n,死亡
