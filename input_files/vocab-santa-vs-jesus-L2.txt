@@ -1,0 +1,106 @@
+[Santa-vs-Jesus L2]
+Santa
+	n,聖誕老人
+Christmas
+	n,聖誕節
+Christian
+	n,基督徒
+item=>3752
+	n,（一件件的）物品
+elf, elves
+	n,小矮人
+religious
+	adj,宗教的
+	adj,有宗教信仰的
+bishop
+	n,主教
+Jesus
+	n,耶穌
+hell
+	n,地獄
+comment
+      n,評語
+        v,評論
+ready
+	adj,準備好的
+colour=>3972
+        n,顏色
+	v,填色
+restaurant
+	n,餐廳
+lesson=>784
+	n,課
+	n,教訓
+take time to do sth
+	v phr,花時間去做某事
+at least
+	adv phr,至少
+message
+	n,訊息
+coal
+	n,煤
+naughty
+	adj,頑皮的
+instead of xx
+	prep phr,而不是xx
+believe in
+	v phr,信任、信奉
+exist
+	v,存在
+actual
+	adj,實際上的
+church
+	n,教堂
+adult
+	n,成年人
+print
+	v,打印
+child, children
+	n,孩子
+parent
+	n,父／母親
+fill out
+	v phr,填寫（表格等）
+leave
+	v,離開:left,left
+	v,把...留低:left,left
+early=>774
+       adv,早
+        adj,早的、早期的
+typo=>2562
+	n,拼寫錯誤
+lie
+     v,說謊:lied, lied, lying
+        v,躺:lay, lain, lying
+        n,謊言
+lie to sb
+	v phr,向某人說謊
+stranger
+	n,陌生人
+danger
+	n,危險
+truth
+	n,真相
+real
+	adj,真實的
+notice
+	v,注意到
+belief
+	n,信念
+magically
+	adj,魔術地、像變魔術地
+glad
+	adj,高興的（放心）
+wrong
+	adj,錯誤的
+right
+	  n,右邊
+        adj,右邊的
+        adj,正確的
+push
+	v,推
+decide
+	v,決定
+show
+	v,展示、顯示:showed,shown
+
