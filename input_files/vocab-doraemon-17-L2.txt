@@ -1,0 +1,33 @@
+[Doraemon-17 L2]
+think
+	v,思考:thought, thought
+	v,認為:thought, thought
+whenever
+	conj,每當
+think of
+	v phr,想起
+asleep
+	adj,睡著的
+actually
+	adv,實際上
+serious=>739
+	adj,嚴重的
+	adj,嚴肅的、認真的
+beautiful
+	adj,漂亮的
+word
+	n,詞
+fall, fell, fallen
+	v,跌
+fall asleep
+	v phr,睡著
+notice
+	v,注意到
+mirror
+	n,鏡
+look at xx=>3668
+	v phr,望著xx
+selfish
+	adj,自私的
+wonder
+	v,想知道
