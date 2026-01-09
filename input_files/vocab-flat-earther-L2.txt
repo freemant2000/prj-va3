@@ -1,0 +1,110 @@
+[Flat-earther L2]
+pastor
+	n,牧師
+experiment
+	n,實驗
+debate
+	v,辯論
+	n,辯論
+admit
+	v,承認
+explorer
+	n,探索家
+statement
+	n,聲明
+expedition
+	n,遠征
+ahead
+	adv,提前
+	adv,在前面
+mistaken
+	adj,搞錯了的
+flat=>3692
+	n,住宅單位
+	adj,平的（不曲）
+planet
+	n,行星
+belief
+	n,信念
+believe
+	v,相信
+barrier
+	n,障礙物
+shine=>1219
+	v,發光、照耀:shone, shone
+honest
+	adj,誠實的
+honestly
+	adv,誠實地
+glad
+	adj,高興的（放心）
+as for
+	prep phr,至於
+waste=>3230
+        v,浪費
+        n,廢品、廢物
+        n,浪費
+shape
+	n,形狀
+create=>2768
+	v,創造、創立、創建
+video
+	n,短片、視頻
+indeed
+	adv,確實
+prevent sb from doing 
+	v phr,防止某人做
+group
+	n,群組、小組
+shock
+	v,使震驚
+round=>649
+        adj,圓的
+        n,輪
+        n,圈
+        v,取
+	prep,（英）圍繞
+globe
+	n,球體、地球
+prove
+	v,證明:proved,proven
+goal
+	n,目標
+happen
+	v,發生
+south
+	n,南方
+pole
+	n,極（南北極、磁極等）
+passenger
+	n,乘客
+final
+	adj,最終的
+managed to
+	v phr,成功做了
+reach
+	v,（努力後）到達
+safely
+	adv,安全地
+wrong
+	adj,錯誤的
+YouTuber
+	n,YouTube網紅
+voice=>967
+	n,語音、聲音
+        v,發聲表達（問題等）
+science
+	n,科學
+behind
+	prep,在...背後
+seem
+	v,似乎
+change
+	v,改變
+	n,改變
+accept
+	v,接受
+data
+	n,數據
+explain
+	v,解釋
