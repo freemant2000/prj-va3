@@ -1,0 +1,71 @@
+[商業英語17]
+procurement
+	n,採購
+limited
+	adj,有限的
+machinery
+	n,機械（類別）
+major
+	adj,主要的
+premium
+	adj,極優質的
+	n,保費
+term=>3463
+        n,詞語
+        n,項
+        n,學期
+	n,條款
+head=>653
+        n,頭
+        v,前往
+	n,主管
+condition=>1813
+        n,條件
+	n,條款	
+commodity
+	n,商品
+specification
+	n,規格
+executive
+      adj,行政的
+        n,行政人員
+firm=>2612
+        adj,堅實的
+	n,公司（專業服務）
+aforementioned
+	adj,以上提到的
+attractive
+	adj,吸引人的
+garment
+	n,服裝
+Europe
+	n,歐洲
+costly
+	adj,昂貴的
+upcoming
+	adj,即將來臨的
+fixed
+	adj,固定的
+take advantage of xx
+	v phr,利用xx
+inform
+	v,通知
+customary
+	adj,慣例的
+colour fast
+	adj,不褪色的
+multipurpose
+	adj,多用途的
+net weight
+	n,淨重
+gross weight
+	n,毛重
+operation
+	n,操作
+assembly=>3734
+        n,（正式）集會
+	n,組裝
+maintenance
+	n,維護
+partial
+	adj,部份的
