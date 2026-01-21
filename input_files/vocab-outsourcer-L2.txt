@@ -1,0 +1,86 @@
+[Outsourcer L2]
+daily
+	adj,每日的、日常的
+routine=>1798
+  n,每日的例程（經常做的一串活動）
+       adj,例行的
+server
+	n,伺服器
+virus
+	n,病毒
+security
+	n,保安
+investigate
+	v,調查
+theory
+	n,理論
+a fifth of xx
+	n phr,xx的五分之一
+lead, led, led
+	v,導致
+lead xx to do sth
+	v phr,導致xx去做某事
+update
+	v,更新
+	n,更新
+management
+	n,管理
+	n,管理層
+forum
+	n,討論區、論壇
+firm
+	n,公司（專業服務）
+programmer
+	n,程序員
+skill
+	n,技能
+salary
+	n,工資
+outsource
+	v,外判
+employee
+	n,僱員
+company
+	n,公司
+language
+	n,語言
+set up
+	v phr,設置
+log
+	n,日誌
+log in
+	v phr,登入
+login
+	n,登入
+account
+	n,賬戶
+hire
+	v,聘請
+allow
+	v,允許
+make=>648
+        v,造:made, made
+        v,令:made, made
+        v,作出:made, made
+	v,（使）賺（錢）:made, made
+it turns out that
+	s+v,最終發現
+regular=>817
+        adj,有規律的
+        adj,恆常的、常態的
+        adj,普通的
+activity
+	n,活動
+online=>2925
+	adj,線上的
+	adv,在線上
+while
+	conj,而
+team
+	n,團隊
+several
+	det,幾個
+quarter
+	n,季度（三個月）
+wrong
+	adj,錯誤的
