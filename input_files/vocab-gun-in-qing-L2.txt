@@ -1,0 +1,96 @@
+[Gun in Qing L2]
+middle
+	adj,中間的
+	n,中間
+Europe
+	n,歐洲
+battle=>3942
+        n,（軍事）戰鬥
+        n,戰役
+        n,鬥爭
+import
+	v,進口
+	n,進口
+interact
+	v,互動
+accuracy
+	n,準確性
+range=>3582
+	n,值域
+	n,（可達到的）距離、範圍
+butt
+	n,屁股
+struggle
+	v,爭扎
+		n,爭扎
+catch up
+	v phr,追上
+superior
+	adj,優越的
+adopt
+	v,採納
+	v,收養
+mobile
+	adj,移動的
+powder
+	n,粉末
+gunpowder
+	n,火藥
+invent
+	v,發明
+weapon
+	n,武器
+fall behind
+	v phr,落後
+army
+	n,軍隊（陸軍）
+gun
+	n,槍
+remove
+	v,移除
+arrow
+	n,箭
+	n,箭咀
+load
+	v,裝載（貨物或子彈等）
+bullet
+	n,子彈
+develop
+	v,發展、開發
+achieve
+	v,達成
+solve
+	v,解決
+in contrast
+	adv phr,形成對照地
+belief
+	n,信念
+kingdom
+	n,王國
+set up
+	v phr,設置
+enemy
+	n,敵人
+main
+	adj,主要的
+reason
+	n,原因
+problem
+	n,難題
+shoot, shot, shot
+	v,（用槍等）射擊
+lead to
+	v phr,導致
+lead
+	v,帶領:led, led
+	v,導致:led, led
+protect
+	v,保護
+fight, fought, fought
+	v,打鬥、戰鬥
+make a difference
+	v phr,有作用
+face=>753
+	n,臉
+		v,面對
+
