@@ -1,0 +1,75 @@
+[Doraemon-17 L2]
+liar
+	n,說謊者
+kid
+	n,小孩
+	v,開玩笑
+screen
+	n,屏幕
+anger
+	n,憤怒
+bingo
+	intj,（嘆詞）找到了、成功了
+vase
+	n,花瓶
+bully
+	v,欺凌
+diaper
+	n,尿片
+descendant
+	n,後代
+corner
+	n,角落
+can't
+	m,不可能
+notice
+	v,注意到
+amazing
+	adj,令人驚訝的、極好的
+forget about xx
+	v phr,忘記某事
+injury
+	n,傷
+path
+	n,路徑
+option
+	n,選項
+laugh at xx
+	v phr,嘲笑xx
+truck
+	n,貨車
+mention
+	v,提及
+wonder
+	v,想知道
+wear, wore, worn
+	v,穿著
+show, showed, shown
+	v,顯示
+revenge
+	n,復仇
+idiot
+	n,白痴
+forget, forgot, forgotten
+	v,忘記
+on sale
+	v phr,發售
+wedding
+	n,婚禮
+broken
+	adj,打破了的、壞了的
+fall asleep
+	v phr,睡著
+serious
+	adj,嚴重的
+	adj,嚴肅／認真的
+frustrating
+	adj,令人受挫的
+come over
+	v phr,（邀請）過來、來訪
+selfish
+	adj,自私的
+habit
+	n,習慣
+album
+	n,相簿
