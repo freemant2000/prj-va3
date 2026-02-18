@@ -1,0 +1,9 @@
+[Doraemon-17 L1]
+dad
+	n,爸爸（日常用語）
+for
+	prep,持續了（多久）
+	prep,為了（某受益人）
+say, said, said
+	v,說
+

@@ -1,0 +1,99 @@
+[Bungee jump L2]
+Australian
+	n,澳洲的、澳洲人
+tourist
+	n,遊客
+hit
+   v,打（一下）:hit, hit
+        v,擊中:hit, hit
+bungee jump
+	n phr,笨豬跳
+cord
+	n,（用於連結）帶
+tangle up
+	v phr,纏住（亂）
+crazy
+	adj,瘋狂的
+rugby
+	n,㰖球
+crocodile
+	n,鱷魚
+despite=>3397
+	prep,儘管（有）
+scare the hell out of sb
+	v phr,嚇到某人很嚴重
+survive
+	v,倖存
+hell
+	n,地獄
+slam
+	v,大力拍打／撞擊
+creep, crept, crept
+	v,潜行（小心）
+prey
+	n,獵物
+tie up
+	v phr,綁起、綁緊
+scare
+	v,嚇
+remaining
+	adj,餘下的
+suffer=>4091
+	v,受苦／損
+	v,經受
+severe
+	adj,嚴重的
+injury
+	n,傷
+struggle
+	v,爭扎
+	n,爭扎
+pull
+	v,拉
+avoid
+	v,避免
+Africa
+	n,非洲
+bridge
+	n,橋樑
+scary
+	adj,可怕的（嚇人的）
+moment
+	n,時刻
+drop
+	v,掉落
+fall=>1009
+	v,跌:fell, fallen
+	n,跌
+decide
+	v,決定
+creep up on xx
+	v phr,潛行向xx
+speed
+	n,速度
+prepare
+	v,準備
+get out of here
+	v phr,（避走）離開這裡
+get the hell out of here
+	v phr,馬上離開
+player
+	n,球員
+	n,玩家
+move
+	v,移動、搬運
+metre
+	n,米（公尺）
+travel
+	v,旅行
+probably
+	adv,很可能
+comment
+	n,評語
+	v,評論
+river
+	n,河流
+Lady
+	n,女士
+full of xx
+	adj phr,充滿xx的

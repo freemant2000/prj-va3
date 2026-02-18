@@ -1,0 +1,246 @@
+[Form 1d]
+bun
+	n,小麵包
+banner
+	n,橫額
+finger food
+	n phr,用手拿來吃的食物
+chocolate bar
+	n phr,朱古力捧
+coin
+	n,硬幣
+kite
+	n,風箏
+lychee
+	n,荔枝
+grapefruit
+	n,西柚
+reporter
+	n,記者
+season
+	n,季節
+seedless
+	adj,無核的
+make a wish
+	v phr,許願
+chip=>1892
+	n,（英）薯片
+	n,籌碼
+nan
+	n,印度簿餅
+snack
+	n,小食
+salad
+	n,沙律
+peach
+	n,桃
+banquet
+	n,宴會
+magician
+	n,魔術師
+put out
+	v phr,撲滅（火等）
+decoration
+	n,裝飾
+poem
+	n,詩
+dental clinic
+	n phr,牙醫診所
+stone=>941
+        n,石頭（小塊）
+	n,（桃等的）果核
+party blower
+	n phr,派對哨子
+customer
+	n,顧客
+cheerful
+	n,心情愉快的
+construction worker
+	n phr,建築工人
+grape
+	n,提子
+skillful
+	adj,有技能的
+fit=>4191
+	v,（尺寸等）適合
+	adj,健美的
+	adj,（尺寸等）適合的
+climb
+	v,爬
+play the piano
+	v phr,彈鋼琴
+wrapping paper
+	n phr,包裝紙
+weight
+	n,重量
+photographer
+	n,攝影師
+hamburger
+	n,漢堡包
+dried mango
+	n phr,芒果乾
+Italy
+	n,意大利
+seasonal
+	adj,季節性的
+hobby
+	n,嗜好
+clown
+	n,小丑
+stalk
+	n,莖
+Thailand
+	n,泰國
+rind
+	n,（厚的生果如西柚）皮
+program
+	v,寫程式
+neighbour
+	n,鄰居
+gift
+	n,禮物
+appetite
+	n,胃口
+dried
+	adj,被弄乾的
+programmer
+	n,程序員
+v-necked
+	adj,V領的
+collar
+	n,（衫）領
+knit
+	v,編織:knit,knit
+stick=>1216
+        v,卡住、粘住、貼:stuck, stuck
+        n,棒
+        v,插入:stuck, stuck
+envelope
+	n,信封
+raincoat
+	n,雨衣
+windbreaker
+	n,風褸
+sausage
+	n,香腸
+tomato
+	n,番茄
+cruelly
+	adv,殘忍地
+gramophone
+	n,留聲機
+quite
+	adv,相當
+listen to music
+	v phr,聽音樂
+cinema
+	n,電影院
+school uniform
+	n phr,校服
+dice
+	v,切粒
+	n,骰仔
+tissue
+	n,紙巾
+spring onion
+	n phr,葱
+chop
+	v,刴碎
+mass=>3279
+        n,一團東西
+	n,質量
+	adj,涉及很多人的、大規模的
+beat
+	v,打（幾下）:beat, beaten
+formal
+	adj,正式的
+uniform
+	n,制服
+casual clothes
+	n phr,便裝
+sleeve
+	n,袖
+pyjamas
+	n,睡衣
+blouse
+	n,女人或兒童的短襯衫
+zip
+	n,拉鏈
+blazer
+	n,西裝外套
+replace
+	v,取代
+strike
+	 v,（大力）打擊:struck, struck
+American food
+	n phr,美國食物
+pray
+	v,祈禱
+radio
+	n,收音機
+button
+	n,按鈕
+shoe string
+	n phr,鞋帶
+handkerchief
+	n,手帕
+comfortable
+	adj,舒服的
+uncomfortable
+	adj,不舒服
+suit
+	n,（衣服）套裝
+next to xx
+	prep phr,在xx旁邊（左右）
+church
+	n,教堂
+chow mein
+	n phr,炒麵
+harbour
+	n,海港
+tunnel
+	n,隧道
+onion
+	n,洋䓤
+London
+	n,倫敦
+weekend
+	n,週末
+punish
+	v,懲罰
+cardigan
+	n,羊毛衫
+lightning
+	n,閃電
+washboard
+	n,洗衣板
+dim sum
+	n phr, 點心
+stable=>3662
+        adj,穩定的
+	n,馬槽
+stir-fry
+	v phr,炒
+pillow
+	n,枕頭
+tie
+	v,綁
+	n,領呔
+tunnel
+	n,隧道
+Jesus
+	n,耶穌
+bean curd
+	n phr,豆腐
+polo neck
+	n,馬球領（高圓領）
+top
+	n,上衣
+spread=>1808
+        v,（使）擴散
+        n,擴散
+        v,塗抹（一層）
+long-sleeved
+	adj,長袖的
+formal clothes
+	n phr,正裝

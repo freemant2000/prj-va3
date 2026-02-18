@@ -1,0 +1,18 @@
+[Doraemon-19 L1]
+baseball
+	n,棒球
+make sb do sth
+	v phr,令某人做某事
+make sth adj
+	v phr,令某物變得怎樣
+want sb to do sth
+	v phr,想某人做某事
+market
+	n,市場
+meat
+	n,肉
+order
+	v,命令
+	n,命令
+kind
+	adj,仁慈的

@@ -1,0 +1,38 @@
+[Doraemon-18 L1]
+teacher
+	n,老師
+secret
+	n,秘密
+	adj,秘密的
+forget about xx
+	v phr,忘記某事
+stand, stood, stood
+	v,站
+know, knew, known
+	v,知道、認識、懂得
+outside=>665
+        adv,在...外面
+        n,外面
+        prep,在...外面
+forget, forgot, forgotten
+	v,忘記
+scold
+	v,駡
+myself
+	pron,我自己
+leave
+	v,離開:left, left
+	v,把...留低:left, left
+keep xx a secret
+	v phr,把xx作為機密
+classroom
+	n,課室
+clean
+	v,清潔
+	adj,清潔的
+keep
+	v,保持、不斷:kept, kept
+help
+	v,幫助
+	n,幫助
+

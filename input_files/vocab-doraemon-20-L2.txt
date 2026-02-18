@@ -1,0 +1,48 @@
+[Doraemon-20 L2]
+air-conditioner
+	n,冷氣機
+antique
+	n,古董
+bark
+	v,吠
+class=>149
+	n,課、班
+	n,等級、階級
+collect
+	v,收集
+expect=>2904
+	v,預期
+expensive
+	adj,昂貴的
+high-class
+	adj phr,高級的
+hobby
+	n,嗜好
+interesting
+	adj,有趣的
+junk
+	n,垃圾（無用、無價值）
+microwave
+	n,微波
+	n,微波爐
+online
+	adj,線上的
+	adv,在線上
+oven
+	n,焗爐
+player=>1043
+	n,球員
+	n,玩家
+	n,播放器
+rare
+	adj,罕見的
+record=>1648
+        v,記錄
+	n,記錄
+	n,唱片
+trade in xx
+	v phr,以舊換新
+useful
+	adj,有用的
+What happened to xx?
+	c,xx出了甚麼事
