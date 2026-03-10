@@ -1,0 +1,28 @@
+[Doraemon-21 L2]
+believe
+	v,相信
+decide
+	v,決定
+think=>272
+	v,思考、想:thought,thought
+	v,認為:thought,thought
+all right
+	intj,OK
+this time
+	adv phr,今次
+turn xx into yy
+	v phr,將xx變成yy
+excited
+	adj,興奮的
+so do I
+	c,我也是
+may<=262,0
+	m,可能
+radio=>685
+	n,收音機
+	n,電台
+	n,無線電
+that=>705
+	det,那
+	adv,那麼
+

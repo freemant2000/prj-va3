@@ -1,0 +1,44 @@
+[PH value]
+value
+	n,值、價值
+PH value
+	n phr,PH值
+acidity
+	n,酸性
+alkalinity
+	n,鹼性
+litmus
+	n,石蕊
+litmus paper
+	n phr,石蕊試紙
+solution
+	n,溶液
+acidic
+	adj,酸性的
+alkaline
+	adj,鹼性的
+litmus solution
+	n,石蕊溶液
+indicate
+	v,指示出
+indicator
+	n,指示劑
+natural indicator
+	n phr,天然指示劑
+pigment
+	n,色素
+universal
+	adj,通用的
+universal indicator
+	n phr,通用指示劑
+cabbage
+	n,卷心菜
+PH meter
+	n,PH計
+probe
+	n,探測針
+sensor
+	n,感應器
+PH sensor
+	n phr,PH感應器
+
