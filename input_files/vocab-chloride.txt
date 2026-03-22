@@ -1,0 +1,14 @@
+[Chloride]
+chlorine
+	n,氯
+chloride
+	n,氯化物
+sodium
+	n,鈉
+sodium chloride
+	n phr,氯化鈉
+calcium
+	n,鈣
+calcium chloride
+	n phr,氯化鈣
+

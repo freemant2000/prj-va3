@@ -1,0 +1,21 @@
+[Neutralisation (HCl)]
+sodium
+	n,鈉
+hydroxide=>4505
+	n,氫氧化物
+	n,氫氧根
+sodium hydroxide
+	n phr,氫氧化鈉
+potassium
+	n,鉀
+potassium hydroxide
+	n phr,氫氧化鉀
+hydrochloric acid
+	n phr,氫氯酸
+sodium chloride
+	n phr,氯化鈉
+potassium chloride
+	n phr,氯化鉀
+neutral
+	adj,中性的
+
