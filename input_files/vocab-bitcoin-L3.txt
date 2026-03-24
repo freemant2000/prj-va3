@@ -1,0 +1,160 @@
+[Bitcoin L3]
+determined
+	adj,有決心的
+propose=>2581
+	v,（正式）建議
+substance=>2751
+	n,（學術、性質）物質
+toxic
+	adj,（接觸或吸入）有毒的
+landfill
+	n,垃圾堆填區
+desperate
+	adj,絕望的
+retrieve
+	v,（放入後）取出
+potential
+	adj,潛在的
+permanently
+	adv,永久地
+wallet=>4308
+	n,錢包
+bitcoin
+	n,比特幣
+recover=>1947
+	v,恢復、康復
+	v,取回（失物）
+recovery=>1947
+	n,恢復、康復
+	n,取回（失物）
+minimise
+	v,使最小化
+be met with xx
+	v phr,遇到xx（回應）
+fund=>2157
+	n,資金、基金
+	v,提供資金
+cleanup
+	n,清理
+access
+	v,存取
+	n,存取
+shocking
+	adj,令人震驚的
+skyrocket
+	v,急升
+complex
+	adj,複雜的
+permission
+	n,允許
+predict
+	v,預告
+fortune
+	n,運氣
+	n,一大筆錢
+grant
+	v,允許（某請求）、同意給予
+routine=>1798
+	n,例程（經常做的一串活動）
+	adj,例行的
+gas
+	n,氣體
+effort=>945
+	n,努力
+	n,嘗試
+reject=>3497
+	v,拒絕（接受）
+refuse=>1736
+	v,拒絕（去做）
+environmental
+	adj,環境的
+value
+	n,值、價值
+severity
+	n,嚴重性
+hurdle
+	n,障礙
+own
+	v,擁有
+legal
+	adj,法律的
+request
+	v,請求
+	n,請求
+surrounding
+	adj,周圍的
+worth
+	adj,值得（某物）的
+judge
+	n,法官
+	v,判斷
+damage
+	v,損毀
+	n,損毀
+official
+	n,官員
+	adj,正式的
+in addition
+	adv phr,除此之外（也...）
+expect
+	v,預期
+concerned about xx
+	adj phr,擔心xx的
+release
+	v,發佈、釋放
+	n,發佈、釋放
+hard drive
+	n phr,硬碟
+bury
+	v,埋、埋葬
+waste
+	v,浪費
+	n,廢品、廢物
+site
+	n,場地
+management
+	n,管理
+	n,管理層
+key
+	n,鎖匙
+office
+	n,辦公室
+eventually=>1731
+	adv,（一翻波折後）最終
+realise
+	v,意識到
+private
+	adj,私人的
+prove to be
+	v phr,證明是
+more and more xx
+	det phr,越來越xx
+garbage
+	n,垃圾（有機）
+search
+	v,搜尋
+	n,搜尋
+safely
+	adv,安全地
+mistake
+	n,錯誤
+harm
+	v,損害（人或事物）
+	n,損害（人或事物）
+harmful
+	adj,有害的
+area
+	n,地區
+offer=>1637
+	v,提議（給予）
+	n,提議（給予）
+project
+	n,項目
+million
+	n,百萬
+thousand=>67
+	n,千
+ton
+	n,噸
+robot
+	n,機械人

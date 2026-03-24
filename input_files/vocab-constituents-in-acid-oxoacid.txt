@@ -1,0 +1,14 @@
+[Constituents in acid (Oxoacid)]
+hydrogen
+	n,氫
+sulphur
+	n,硫
+sulphate
+	n,硫酸根
+sulphuric acid
+	n phr,硫酸
+nitric acid
+	n phr,硝酸（含有氮的）
+nitrate
+	n,硝酸根
+
