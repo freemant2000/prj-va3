@@ -1,0 +1,19 @@
+[PH meter (features)]
+precision
+	n,精確度
+reuse
+	v,重複使用
+PH meter=>4525
+	n phr,PH計
+probe
+	n,探測針
+distill
+	v,蒸餾
+distilled water
+	n phr,蒸餾水
+rinse
+	v,沖洗
+calibrate
+	v,校準
+accurate=>2984
+	adj,準確的

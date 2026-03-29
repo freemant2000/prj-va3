@@ -1,0 +1,8 @@
+[Salt]
+salt
+	n,鹽
+common salt
+	n phr,食鹽
+table salt
+	n phr,餐桌鹽
+

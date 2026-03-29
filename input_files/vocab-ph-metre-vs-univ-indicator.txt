@@ -1,0 +1,15 @@
+[PH metre vs univ indicator]
+advantage=>1451
+	n,優勢
+	n,優點
+disadvantage
+	n,缺點
+expensive
+	adj,昂貴的
+cheap
+	adj,便宜的
+convenient
+	adj,方便的
+carry
+	v,攜帶
+

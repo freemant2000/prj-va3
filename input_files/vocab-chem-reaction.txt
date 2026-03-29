@@ -1,0 +1,6 @@
+[Chemical reaction]
+chemical=>3974
+	n,化學物品
+	adj,化學的
+reaction
+	n,反應

@@ -1,0 +1,9 @@
+[Nitrate]
+nitrate=>4574
+	n,硝酸根
+	n,硝酸鹽
+sodium
+	n,鈉
+calcium
+	n,鈣
+

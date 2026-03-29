@@ -1,0 +1,9 @@
+[Chemical equation]
+equation=>1755
+        n,等式、方程
+	n,反應式
+word
+	n,文字
+word equation
+	n phr,文字反應式
+

@@ -1,0 +1,9 @@
+[Sulphate]
+sulphate=>4573
+	n,硫酸根
+	n,硫酸鹽
+sodium
+	n,鈉
+calcium
+	n,鈣
+
