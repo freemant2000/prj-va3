@@ -1,0 +1,17 @@
+[Conservation of mass]
+substance
+	n,（學術、性質）物質
+mass
+	n,質量
+conserve
+	v,保存（不變）
+conservation
+	n,守恆
+conservation of mass
+	n phr,質量守恆
+reaction
+	n,反應
+produce
+	v,產生、生產
+total
+	adj,總的

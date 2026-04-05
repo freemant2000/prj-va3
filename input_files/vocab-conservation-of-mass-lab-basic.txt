@@ -1,0 +1,19 @@
+[Conservation of mass lab (basic)]
+acid
+	n,酸
+hydroxide
+	n,氫氧化物
+procedure
+	n,流程／手續
+mix
+	v,混合
+measure
+	v,測量
+record
+	v,記錄
+	n,記錄
+total
+	adj,總的
+mass
+	n,質量
+
