@@ -1,0 +1,8 @@
+[Mass]
+mass
+	n,質量
+particle
+	n,粒子
+matter
+	n,物質
+

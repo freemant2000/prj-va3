@@ -1,0 +1,10 @@
+[Electronic balance (solid)]
+solid
+	n,固體
+electronic
+	adj,電子的
+balance
+	n,秤
+electronic balance
+	n phr,電子秤
+

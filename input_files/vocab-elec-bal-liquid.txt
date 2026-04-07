@@ -1,0 +1,12 @@
+[Electronic balance (liquid)]
+electronic
+	adj,電子的
+balance
+	n,秤
+electronic balance
+	n phr,電子秤
+liquid
+	n,液體
+beaker
+	n,燒杯
+
