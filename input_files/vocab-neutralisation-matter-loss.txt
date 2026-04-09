@@ -1,0 +1,23 @@
+[Neutralisation experiment (matter loss)]
+conical flask
+	n phr,錐形瓶
+test tube
+	n phr,試管
+cotton
+	n,綿花
+thread
+	n,線
+cotton thread
+	n phr,綿線
+tie
+	v,綁
+stopper
+	n,塞子
+	v,塞住
+shake=>1211
+        v,（往反）搖晃:shook, shaken
+mix
+	v,混合
+reaction
+	n,反應
+

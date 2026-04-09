@@ -1,0 +1,132 @@
+[Venezuela inflation L3]
+inflation
+	n,通貨膨脹
+literally=>3855
+	adv,真的（不是比喻）
+currency
+	n,貨幣
+short of xx
+	adj phr,缺少xx
+occur
+	v,發生
+platform
+	n,平台
+chaos
+	n,混亂
+skyrocket=>4561
+	v,暴漲、急升
+broke
+	adj,身無分文的（非正式）
+economy
+	n,經濟
+purchase
+	v,購買
+charge
+	v,收費
+	n,收費
+	v,起訴
+worth
+	adj,值得（某物）的
+plunge
+	v,急跌
+heat
+	v,加熱
+	n,熱力
+strike, struck, struck
+	v,（大力）打擊
+nationwide
+	adj,全國性的
+wallpaper
+	n,牆紙
+measure=>4537
+	v,測量
+	n,措施
+take measures
+	v phr,採取措施
+remind sb of sth
+	v phr,令某人想起某事
+power
+	n,力量、動力
+	n,權力
+power failure
+	n phr,停電
+rate
+	n,率
+increase
+	v,增加
+	n,增加
+goods
+	n,貨物
+no matter
+	conj,不管
+raise
+	v,養
+	v,舉起、提高
+tax
+	n,稅
+cut
+	v,切:cut,cut
+	v,削減:cut,cut
+toilet
+	n,廁所
+withdraw, withdrew, withdrawn
+	v,提款
+value
+	n,值、價值
+in-game
+	adj,遊戲內的
+accidentally
+	adv,意外地
+prevent sb from doing
+	v phr,防止某人做
+coin
+	n,硬幣
+make a living
+	v phr,謀生
+cause
+	v,導致
+	n,原因
+government
+	n,政府
+market
+	n,市場
+Germany
+	n,德國
+spider
+	n,蜘蛛
+leg
+	n,腿
+throw away
+	v phr,丟掉
+price
+	n,價格
+apparently
+	adv,明顯地
+believe
+	v,相信
+garbage
+	n,垃圾（有機）
+example
+	n,例子
+cash
+	n, 現金
+gold
+	n,金
+instead of xx
+	prep phr,而不是xx
+spend, spent, spent
+	v,花費
+thousand
+	n,千
+item
+	n,（一件件的）物品
+bow
+	n,弓
+suddenly=>1332
+	adv,突然
+sword
+	n,劍
+picture
+	n,圖畫
+	n,相片
+	

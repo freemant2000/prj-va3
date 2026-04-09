@@ -1,0 +1,12 @@
+[Matter (water) loss in experiments]
+experiment
+	n,實驗
+water vapor
+	n phr,水氣
+produce
+	v,產生、生產
+heat
+	n,熱力
+loss
+	n,流失
+	
