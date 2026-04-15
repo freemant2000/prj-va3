@@ -1,0 +1,12 @@
+[Metal appearance]
+metal
+	n,金屬
+iron
+	n,鐵
+copper
+	n,銅
+solid
+	n,固體
+shiny
+	adj,（反光）閃亮的
+

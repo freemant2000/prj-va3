@@ -1,0 +1,12 @@
+[Charged particles]
+particle
+	n,粒子
+charged
+	adj,帶電的
+positive
+	adj,正的
+negative
+	adj,負的
+neutral
+	adj,中性的
+
