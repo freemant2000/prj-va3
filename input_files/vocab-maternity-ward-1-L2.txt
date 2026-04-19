@@ -1,0 +1,109 @@
+[Maternity ward-1 L2]
+Hungarian
+	adj,匈牙利的
+	n,匈牙利人
+	n,匈牙利語
+scientific
+	adj,科學的
+training
+	n,培訓
+illness=>3809
+	n,（身體不適）疾病
+differently
+	adv,不同地
+cause
+	v,導致
+	n,原因
+air=>90
+	n,空氣、空中
+evil
+	adj,邪惡的
+spirit
+	n,精神
+	n,靈體
+focus on xx=>2310
+	v phr,專注於xx
+understand,understood,understood
+	v,明白
+health
+	n,健康
+clinic
+	n,診所
+Austria
+	n,奧地利
+fever
+	n,發燒
+pregnant
+	adj,懷孕的
+give birth
+	v phr,生嬰兒
+ward
+	n,病房
+male
+	adj,男性的、雄性的
+	n,男性
+female
+	adj,女性的、雌性的
+	n,女性、雌性
+midwife
+	n,助產士
+keep track of
+	v phr,持續注視
+instead
+	adv,取而代之、反之
+believe
+	v,相信
+study
+	v,學習（做題等）
+	v,研究
+notice
+	v,注意到
+time
+	n,時間
+	n,倍
+almost
+	adv,幾乎、差不多
+sidefin
+	n,側面
+back
+	n,背部、背面
+priest
+	n,神父
+	
+ring, rang, rung
+	v,（使）響起
+bell
+	n,鈴
+scare
+	v,嚇
+route
+	n,路徑、路線
+change
+	v,改變
+		n,改變
+observe
+	v,觀察、觀察到
+whenever
+	conj,每當
+trip
+	n,旅行、旅程
+take a break
+	v phr,（暫時）放下工作
+colleague
+	n,同事
+learn=>695
+	v,學懂、學習:learnt, learnt
+        v,知悉、了解到:learnt, learnt
+frustrated
+	adj,沮喪的
+realise
+	v,意識到
+affect
+	v,影響
+spread
+	v,（使）擴散:spread,spread
+hospital
+	n,醫院
+disease=>1808
+	n,（發病機制）疾病
+

@@ -1,0 +1,138 @@
+[US beef L3]
+Australia
+	n,澳大利亞（澳洲）
+inheritance
+	n,繼承
+	n,繼承物
+venture
+	n,（商業、有風險和回報）項目
+stumble
+	v,絆倒
+	v,跌跌撞撞
+stumble into xx
+	v phr,意外地進入某情況
+scratch
+	v,抓、抓損
+scratch his head
+	v phr,抓頭（不明白）
+context
+	n,上下文
+agriculture
+	n,農業
+an abundance of xx
+	n phr,（不缺）大量的xx
+leverage
+	n,（談判等）籌碼
+negotiation
+	n,談判
+tariff
+	n,關稅
+deploy
+	v,部署
+consume=>1594
+	v,消耗
+	v,消費
+navigate
+	v,導航（決定航行方向）
+confidently
+	adv,自信地
+Pacific
+	adj,太平洋的
+ocean
+	n,海洋
+container
+	n,容器
+refrigerate
+	v,（0-4度）冷藏
+cargo
+	n,（運輸中）貨物
+biosecurity
+	n,生物安全
+standard
+	n,標準
+	adj,標準的
+stock
+	n,股票
+meet
+	v,遇見:met,met
+	v,達到／滿足（某要求）:met,met
+corn-fed
+	adj phr,谷飼的
+grass-fed
+	adj phr,草飼的
+ton
+	n,噸
+a ton of xx
+	n phr,（非正式）很多xx
+deal
+	n,（雙方、落實）合作安排
+business dealings
+	n phr,商業往來
+so far
+	adv phr,到目前為止
+export
+	v,（貨物等）出口
+	n,（貨物等）出口
+serious
+	adj,嚴重的
+	adj,嚴肅的、認真的
+fact check
+	v phr,查核（某物的）真實性
+importer
+	n,進口商
+average
+	adj,平均的
+	n,平均值
+failed
+	adj,失敗了的
+amount
+	n,數量（不可數）
+quality=>2226
+	n,質量
+	adj,質量好的
+absolutely
+	adv,絕對地
+obviously
+	adv,明顯地
+market
+	n,市場
+tier
+	n,（等級）級
+trash-tier
+	n phr,垃圾級
+no way
+	n phr,不可能（不相信）、不行
+well known for
+	adj phr,以...而聞名
+shipping
+	n,運輸
+shipping container
+	n phr,貨櫃箱
+non-existent
+	adj phr,不存在的
+plus
+	v,加上
+	adv,除些之外
+fresh
+	adj,新鮮的
+local
+	adj,本地的
+worrying
+	adj,令人擔心的
+major
+	adj,主要的
+beef
+	n,牛肉
+farmer
+	n,農夫
+New Zealand
+	n,新西蘭
+New Zealander
+	n phr,紐西蘭人
+Australian
+	adj,澳洲的
+	n,澳洲人
+business=>388
+	n,生意
+	n,商業
+	

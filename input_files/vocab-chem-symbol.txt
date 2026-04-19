@@ -1,0 +1,6 @@
+[Chemical symbol]
+symbol
+	n,符號
+chemical symbol
+	n phr,元素符號
+

@@ -1,0 +1,6 @@
+[Element group and charges]
+group
+	n,（化學）族
+charge
+	n,電荷
+

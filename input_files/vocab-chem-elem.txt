@@ -1,0 +1,6 @@
+[Chemical element]
+element
+	n,元素
+particle
+	n,粒子
+
