@@ -1,0 +1,6 @@
+[Common metals (MG, AL)]
+magnesium
+	n,鎂
+aluminum
+	n,鋁
+
