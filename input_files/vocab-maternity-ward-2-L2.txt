@@ -1,0 +1,85 @@
+[Maternity ward-2 L2]
+examination=>2618
+	n,（仔細）檢查、檢視
+remove
+	v,移除
+particle
+	n,粒子
+tiny
+	adj,細小的
+hand
+	n,手
+smell=>1086
+	v,聞到:smelt,smelt
+	n,氣味
+	v,聞起來
+	n,嗅覺
+powerful
+	adj,強而有力的
+enemy
+	n,敵人
+mental
+	adj,內心的、心理的
+discovery
+	n,（重大）發現
+significantly
+	adv,顯著地
+Europe
+	n,歐洲
+excited
+	adj,興奮的
+germ
+	n,病菌
+disorder
+	n,失調
+scare
+	v,嚇
+criticise
+	v,批評
+drop=>1182
+	v,掉（落）、放下
+	n,滴
+theory=>4324
+	n,理論
+	n,猜想
+beat
+	v,打（幾下）:beat,beaten
+	v,打敗:beat,beaten
+infection
+	n,感染
+publicly
+	adv,公開地
+institute=>3258
+	n,學院、研究院、機構
+decide
+	v,決定
+adopt
+	v,採納
+	v,收養
+method
+	n,方法
+while
+	conj,當（長動作）
+	conj,而
+play nice
+	v phr,做好人
+eventually=>1731
+	adv,（一翻波折後）最終
+discover
+	v,發現（重大的東西）
+mental institute
+	n phr,精神病院
+prevent
+	v,防止
+disagree
+	v,不同意
+upset=>2496
+	v,使不快:upset,upset
+	adj,不快的
+blame
+	v,責備
+develop
+	v,發展、開發
+health
+	n,健康
+
