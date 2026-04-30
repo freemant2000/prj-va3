@@ -1,0 +1,120 @@
+[Thai rescue-1 L2]
+cave
+	n,山洞
+consist of xx
+	v phr,由xx組成
+coach
+	n,教練
+Thailand
+	n,泰國
+flood=>2831
+	n,水災、洪水
+	v,淹浸
+marine
+	adj,海洋的
+submarine
+	n,潛艇
+prototype
+	n,原型
+block
+	n,街區
+	v,阻擋
+	n,塊
+puddle
+	n,水窪
+Thai
+	adj,泰國的
+	n,泰國人
+	n,泰國文
+rescue
+	v,拯救
+	n,拯救
+rescuer
+	n,拯救者
+dive
+	v,潜水:dived/dove,dived
+entrance
+	n,入口
+relieved
+	adj,鬆一口氣的
+risky
+	adj,有風險的
+involve
+	v,（使）涉及
+snack
+	n,小食
+navy
+	n,海軍
+condition
+	n,條件
+	n,（健康、運作）狀況
+billionaire
+	n,億萬富翁
+known for xx
+	adj,以xx而聞名
+offer
+	v,提議（給予）
+	n,提議（給予）
+suggest
+	v,建議
+alive=>1897
+ 	adj,活的、活生生的
+        adv,活生生地
+meanwhile
+	adv,與此同時
+tiny
+	adj,細小的
+heavy
+	adj,重的
+heavy rain
+	n phr,大雨
+practice
+	n,練習
+fun=>569
+	n,樂趣、趣味
+        adj,有趣的（給你樂趣）
+dirty
+	adj,骯髒的
+international
+	adj,國際的
+search
+	v,搜尋
+	n,搜尋
+system
+	n,系統、制度
+dangerous
+	adj,危險的
+safely
+	adv,安全地
+healthy
+	adj,健康的
+underwater
+	adj,水底的
+during
+	prep,在...期間
+mini
+	adj,迷你的
+post
+	v,張貼
+	n,貼文
+ready
+	adj,準備好的
+team
+	n,團隊
+difficult
+	adj,困難的
+group
+	n,群組、小組
+area
+	n,地區
+	n,面積
+company
+	n,公司
+way
+	n,道路、路向
+	n,方式
+way out
+	n phr,出去的路
+plan
+	v,計劃
+	n,計劃
