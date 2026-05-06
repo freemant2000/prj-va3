@@ -1,0 +1,100 @@
+[Thai rescue-2 L2]
+reputation
+	n,聲譽
+harm
+        v,損害（人或事物）
+        n,損害（人或事物）
+mean=>1033
+    	v,意味著:meant,meant
+	v,原意想:meant,meant
+sue
+	v,控告
+take place=>2392
+	v phr,發生、進行
+guide
+        n,嚮導、導遊
+solution
+	n,解決方案
+narrow
+	adj,窄的
+passage=>1463
+   n,走廊、過道
+publicity
+	n,公眾的關注
+accuse sb of sth
+	v phr,指責某人做了某事
+ensure
+	v,確保
+gear
+	n,（個人，某目的）裝備
+criticise
+	v,批評
+criticism
+	n,批評
+apologise
+	v,道歉
+court=>3784
+	n,法院、法庭
+take xx seriously
+	v phr,認真地看待xx
+jury
+	n,陪審團
+trial
+	n,審訊
+evidence
+	n,證據
+expert
+	n,專家
+complex
+	adj,複雜的
+remaining
+	adj,餘下的
+experienced
+	adj,有經驗的
+well organised
+	adj phr,被良好地組織的
+response
+	n,回應
+spread
+	v,（使）擴散、散播:spread,spread
+operation
+	n,操作
+	n,運作
+serious
+	adj,嚴重的
+	adj,嚴肅的、認真的
+anger=>3531
+	n,憤怒
+	v,使憤怒
+diver
+	n,潛水員
+believe
+	v,相信
+simple
+	adj,簡單的
+safely
+	adv,安全地
+safety
+	n,安全
+through
+	prep,穿過、通過
+public=>884
+	adj,公共的、公眾的、公立的
+comment
+	n,評語
+	v,評論
+seem
+	v,似乎
+falsely
+	adv,（不符事實）錯誤地
+dry
+	adj,乾的
+British=>1330
+	adj,（不列顛）英國的
+	n,（不列顛）英國人
+guy
+	n,傢伙
+reaction
+	n,反應
+include
+	v,包括
