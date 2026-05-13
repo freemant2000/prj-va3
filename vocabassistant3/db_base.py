@@ -8,9 +8,11 @@ class Base(DeclarativeBase):
 class DBConnector:
     def __init__(self) -> None:
         self.db_url=Inject()
+        self.eng=None
     def open_session(self)->Session:
-        eng=create_engine(self.db_url, echo=False)
-        s=Session(eng)
+        if not self.eng:
+            self.eng=create_engine(self.db_url, echo=False)
+        s=Session(self.eng)
         return s
 dbc=None
 

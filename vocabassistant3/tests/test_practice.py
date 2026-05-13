@@ -113,4 +113,4 @@ class TestPractice(TestCase):
         stu=get_student_full_assess(self.s, 1)
         self.assertEquals(stu.name, "Jodie")
         self.assertEquals(len(stu.pracs), 2)
-        self.assertEquals(len(stu.pracs.full_assess_list), 2)
+        self.assertEquals(len(stu.pracs[0].full_assess_list), 2)
