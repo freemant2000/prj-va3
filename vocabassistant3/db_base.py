@@ -11,7 +11,7 @@ class DBConnector:
         self.eng=None
     def open_session(self)->Session:
         if not self.eng:
-            self.eng=create_engine(self.db_url, echo=False)
+            self.eng=create_engine(self.db_url, echo=False, pool_recycle=300)
         s=Session(self.eng)
         return s
 dbc=None
