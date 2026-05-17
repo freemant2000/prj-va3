@@ -1,0 +1,122 @@
+[Gorilla tour L3]
+clip
+	n,錄像片段
+misinterpret
+	n,錯誤解讀
+escalate
+	v,（衝突、麻煩等）升級
+lucrative
+	adj,利潤豐厚的
+habitat
+	n,棲息地
+ranger
+	n,護林人員
+briefing=>2408
+	n,講解會
+	n,講解
+population=>1593
+	n,人口
+	n,總人數
+revenue
+	n,（公司得到的錢）收入
+income=>1054
+	n,（賺到的錢）收入
+foreign
+	adj,外國的
+exotic
+	adj,奇特的（來自外地等）
+gorilla
+	n,大猩猩
+aggressive
+	adj,攻擊性的
+not...at all
+	adv phr,一點也不
+as for
+	prep phr,至於
+silence
+	n,安靜、沉默
+current
+	adj,目前的
+post
+	v,張貼
+	n,貼文
+relatively
+	adv,相對地
+distance
+	n,距離
+exist
+	v,存在
+capture
+	v,捕獲
+camera
+	n,相機
+source
+	n,來源
+tourist
+	n,遊客
+cost=>529
+	v,值、花費（多少錢）:cost,cost
+	n,成本
+management
+	n,管理
+	n,管理層
+set up
+	v phr,設置
+for sale
+	adv phr,出售
+jungle
+	n,叢林
+situation
+	n,情況
+thick=>129
+	adj,厚的
+	adj,茂密的
+include
+	v,包括
+sudden
+	adj,突然的
+movement
+	n,動作
+take photo of xx
+	v phr,給xx拍照
+keep xx alive
+	v phr,讓xx存活
+pet
+	n,寵物
+gone
+	adj,不見了的
+Lady
+	n,女士
+main
+	adj,主要的
+visitor=>3896
+	n,探訪者、參觀者
+shoot, shot, shot
+	v,（用槍等）射擊
+metre
+	n,米（公尺）
+safe
+	adj,安全的
+towards
+	prep,向著（強調過程）
+turn out to be
+	v phr,最終被發現是
+nest
+	n,巢
+ant
+	n,螞蟻
+catch sb's attention
+	v phr,吸引某人的注意
+near by
+	adv phr,在附近（副，片）
+unfortunately
+	adv,不幸地
+experience
+	n,經驗
+period
+	n,期間
+bite, bit, bitten
+	v,咬
+choose, chose, chosen
+	v,選擇
+
