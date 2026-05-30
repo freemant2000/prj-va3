@@ -1,0 +1,125 @@
+[Fuji rescue L2]
+climber
+	n,攀登者
+tremble
+	v,顫抖
+helicopter
+	n,直升機
+gear
+	n,（個人，某目的）裝備
+station
+	n,（火車等）車站、站
+trail
+	n,小徑
+collapse
+	v,倒塌
+rescue
+	v,拯救
+	n,拯救
+complain of/about xx
+	v phr,投訴xx
+investigation
+	n,調查
+suffer
+	v,受苦／損
+suffer from xx
+	v phr,因xx而受苦／損
+hike
+	v,遠足
+male
+	adj,男性的、雄性的
+	n,男性
+Tokyo
+	n,東京
+further
+	adj,進一步的
+	adv,進一步地
+whether
+	conj,是否
+item
+	n,（一件件的）物品
+mountaintop
+	n,山頂
+madness
+	n,瘋狂
+	n,鬧劇
+nice touch
+	n phr,神來之筆、畫龍點晴
+remind
+	v,提醒
+nearby
+	adj,附近的
+injure
+	v,使受傷
+injury
+	n,傷
+mountain sickness
+	n phr,高山症
+skin
+	n,皮膚
+danger
+	n,危險
+university
+	n,大學
+carry
+	v,攜帶
+report
+	n,報告
+	v,報告
+alone
+	adj,單獨的
+	adv,單獨地
+mountain
+	n,山
+team
+	n,團隊
+able
+	adj,能夠的
+unable
+	adj,不能的
+sickness
+	n,疾病
+Japanese
+	adj,日本的
+	n,日文
+	n,日本人
+hospital
+	n,醫院
+chance=>983
+	n,機會、機率
+twice
+	adj,兩次
+limit
+	v,限制
+	n,限制、限度
+same
+	adj,相同的
+earlier
+	adv,更早
+whole
+	adj,整個的
+police
+	n,警方
+according to
+	prep phr,根據
+about to
+	aux phr,即將會
+dragon
+	n,龍
+dragon ball
+	n phr,龍珠
+character
+	n,（人物）角色
+perhaps
+	adv,也許
+minor=>3599
+	adj,次要的
+	adj,輕微的
+unlucky
+	adj,不幸的
+it is time to do xx
+	c,夠鐘做xx
+it is time for sb to do xx
+	c,某人夠鐘做xx
+in two days
+	adv phr,兩日後

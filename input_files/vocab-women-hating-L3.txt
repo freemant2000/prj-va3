@@ -1,0 +1,123 @@
+[Women hating L3]
+discomfort
+	n,不適
+	n,不安
+attitude
+	n,態度
+political
+	adj,政治的
+experience=>1112
+	n,經驗
+	n,體驗
+	v,體驗
+express
+	v,表達
+prospect
+	n,前景（可能發生的情況）
+consistent
+	adj,一致的
+bias
+	n,偏見
+domestic
+	adj,國內的
+	adj,家內的
+blow sb's mind
+	v phr,震撼某人
+reshape
+	v,重塑
+stab
+	v,（用刀）捅
+backstabbing
+	n,背後中傷
+perceive
+	v,感知到
+slight=>2057
+	adj,輕微的
+	v,得罪
+	n,得罪
+all bets are off
+	c,所有默契都無效
+keep sb's head down
+	v phr,保持低調
+bonnet
+	n,（傳統英式）女裝帽
+get a bee in sb's bonnet
+	v phr,某想法盤繞心中
+supportive
+	adj,支持的
+population
+	n,人口
+	n,總人數
+reveal
+	v,揭示
+gender
+	n,性別
+presence
+	n,在場
+	n,存在
+violence
+	n,暴力
+domestic violence
+	n phr,家庭暴力
+jury
+	n,陪審團
+furthermore
+	adv,除此之外（也）
+access
+	v,存取
+	n,存取
+non-existent
+	adj phr,不存在的
+gratitude
+	n,感激
+deserve
+	v,值得（被怎樣對待）
+continued
+	adj,持續的
+disagreement
+	n,意見不合
+result in
+	v phr,導致
+stay out of xx
+	v phr,避免卷入xx（麻煩）
+directly
+	adv,直接地
+assume
+	v,假定
+completely
+	adv,完全地
+gender-based
+	adj phr,基於性別的
+highlight
+	v,突顯
+president
+	n,總統
+	n,主席、會長
+female
+	adj,女性的、雌性的
+	n,女性、雌性
+note
+	v,注意
+uncomfortable=>4447
+	adj,不舒服的
+case
+	n,情形、個案
+interesting
+	adj,有趣的
+hate
+	v,憎恨、討厭
+each other
+	pron phr,互相
+American
+	adj,美國的
+	adj,美洲的
+actually
+	adv,實際上
+study
+	v,研究
+	n,研究
+fight
+	v,打鬥、戰鬥、鬥爭:fought, fought
+	n,打鬥、戰鬥、鬥爭
+race
+	n,種族

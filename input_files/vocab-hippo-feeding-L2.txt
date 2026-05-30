@@ -1,0 +1,143 @@
+[Hippo feeding L2]
+hippo=>4178
+	n,河馬（簡寫）
+insane
+	adj,瘋狂的
+territory
+	n,領土
+territorial=>3985
+	adj,領土的
+	adj,領土意識強的
+cuddle
+	v,依偎
+cuddly
+	adj,看似親人（想要依偎）的
+be used to xx
+	adj phr,習慣於xx
+creature
+	n,生物
+touch
+	v,觸碰、觸摸
+	n,觸碰、觸摸
+encounter
+	v,遇到
+	n,相遇
+opposite
+	adj,相反的
+tax
+	n,稅
+combine
+	v,組合、放在一起
+pop=>4486
+	v,弄爆、爆開
+miss out on xx
+	v phr,錯過xx
+pet=>911
+	n,寵物
+	v,輕撫
+bro
+	n,兄弟、哥們
+get used to xx
+	v phr,適應xx
+comparison
+	n,比較
+compared with xx
+	adj phr,與xx相比
+on the other hand
+	adv phr,另一方面
+fair
+	adj,公平的
+wildlife=>3735
+	n,野生動物（總體）
+mosquito
+	n,蚊子
+outrun
+	v,比（某物）跑得更快
+out fight
+	v phr,打敗
+feed, fed, fed
+	v,餵、飼養
+hand feed
+	v phr,用手餵
+watermelon
+	n,西瓜
+grape
+	n,提子
+annually
+	adv,每年
+incredibly
+	adv,難以置信地、極端地
+deadly
+	adj,致命的
+deadliest
+	adj,最致命的
+scared of xx
+	adj phr,害怕xx的
+crocodile
+	n,鱷魚
+shark
+	n,鯊魚
+snake
+	n,蛇
+elephant
+	n,大象
+stupid
+	adj,愚蠢的
+waste
+	v,浪費
+	n,廢品、廢物
+exactly
+	adv,確切地
+juice
+	n,果汁
+cute
+	adj,可愛的
+even
+	adv,甚至
+similar
+	adj,相似的
+ground
+	n,地面
+foot, feet
+	n,腳
+common
+	adj,常見的
+million
+	n,百萬
+around=>152
+	prep,圍繞
+	adv,大概
+simply
+	adv,簡單地
+die
+	v,死
+death
+	n,死亡
+pay, paid, paid
+	v,支付
+grow
+	v,生長、成長:grew, grown
+	v,種植:grew, grown
+time
+	n,時間
+	n,次數
+fun
+       n,樂趣、趣味
+        adj,有趣的（給你樂趣）
+fact
+	n,事實
+lion
+	n,獅子
+tiger
+	n,老虎
+bear
+	n,熊
+cause
+	v,導致
+	n,原因
+probably
+	adv,很可能
+head
+	n,頭
+city
+	n,城市
